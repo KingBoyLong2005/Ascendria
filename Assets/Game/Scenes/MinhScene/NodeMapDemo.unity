@@ -919,41 +919,6 @@ MonoBehaviour:
   EButton: {fileID: 1218862028}
   playerController: {fileID: 1754514824}
   cameraController: {fileID: 1100197400}
---- !u!1 &421613320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 421613321}
-  m_Layer: 5
-  m_Name: MapContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &421613321
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421613320}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 999458971}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &509079529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1174,6 @@ GameObject:
   - component: {fileID: 999458971}
   - component: {fileID: 999458970}
   - component: {fileID: 999458969}
-  - component: {fileID: 999458972}
   m_Layer: 5
   m_Name: MapPanel
   m_TagString: Untagged
@@ -1269,7 +1233,6 @@ RectTransform:
   m_Children:
   - {fileID: 10750925}
   - {fileID: 159009166}
-  - {fileID: 421613321}
   m_Father: {fileID: 339650175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1277,22 +1240,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &999458972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999458968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1a82ac3c352814bb5678ffb7a9a998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapGenerate: {fileID: 10750926}
-  mapChoose: {fileID: 159009167}
-  roomPrefab: {fileID: 1635411010748141393, guid: 2f9a3039b4063524088f08691801d6d4, type: 3}
-  mapContainer: {fileID: 421613321}
 --- !u!1 &1061104866
 GameObject:
   m_ObjectHideFlags: 0
