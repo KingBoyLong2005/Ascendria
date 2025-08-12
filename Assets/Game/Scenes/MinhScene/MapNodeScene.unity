@@ -369,10 +369,10 @@ RectTransform:
   - {fileID: 1307286328}
   m_Father: {fileID: 638143624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: -970, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650539610
 MonoBehaviour:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1495191502}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -472,6 +472,7 @@ RectTransform:
   m_Children:
   - {fileID: 1173693417}
   - {fileID: 885548749}
+  - {fileID: 1519341051}
   m_Father: {fileID: 638143624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -533,8 +534,8 @@ MonoBehaviour:
     roomPrefab: {fileID: 704850828176001323, guid: 1609f28c874173c43aaba5c5867ebac2, type: 3}
     scrollRectHorizontal: {fileID: 1867121914}
     scrollRectVertical: {fileID: 650539610}
-    unitsToPixelsMultiplier: 60
-    padding: 1000
+    unitsToPixelsMultiplier: 50
+    padding: 300
     backgroundPadding: {x: -100, y: -100}
     backgroundPPUMultiplier: 2
     uiLinePrefab: {fileID: 0}
@@ -546,11 +547,11 @@ MonoBehaviour:
     offsetFromNodes: 0.5
     xSize: 0
     yOffset: 0
+    orientationOffset: 0
   mapManager: {fileID: 1173693418}
-  orientation: 3
+  orientation: 0
   allMapConfigs:
   - {fileID: 11400000, guid: 5c76ab7dd4db8e1419db7dc0aad7b06f, type: 2}
-  orientationOffset: 0
   background: {fileID: 21300000, guid: f34024f3acabc3b47ae02a8e723a557e, type: 3}
   backgroundColor:
     serializedVersion: 2
@@ -958,6 +959,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &1519341050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519341051}
+  - component: {fileID: 1519341052}
+  m_Layer: 5
+  m_Name: MapPlayerTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1519341051
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519341050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 656211672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1519341052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519341050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1564433eb203c1541b453a64b7da9f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockAfterSelecting: 0
+  enterNodeDelay: 1
+  mapManager: {fileID: 1173693418}
+  view: {fileID: 885548750}
 --- !u!1 &1523384710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1317,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 800}
+  m_SizeDelta: {x: 0, y: 950}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867121914
 MonoBehaviour:

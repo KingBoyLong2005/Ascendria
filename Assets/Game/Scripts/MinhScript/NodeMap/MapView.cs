@@ -28,6 +28,8 @@ namespace Map
         [Header("Background Settings")]
         public float xSize;
         public float yOffset;
+        [Tooltip("Offset of the start/end rooms of the map from the edges of the screen")]
+        public float orientationOffset;
     }
 
     [System.Serializable]
@@ -41,13 +43,13 @@ namespace Map
         [Tooltip("ScrollRect that will be used for orientations: Top To Bottom, Bottom To Top")]
         [SerializeField] public ScrollRect scrollRectVertical;
         [Tooltip("Multiplier to compensate for larger distances in UI pixels on the canvas compared to distances in world units")]
-        [SerializeField] public float unitsToPixelsMultiplier = 10f;
+        [SerializeField] public float unitsToPixelsMultiplier = 50f;
         [Tooltip("Padding of the first and last rows of nodes from the sides of the scroll rect")]
-        [SerializeField] public float padding;
+        [SerializeField] public float padding = 300;
         [Tooltip("Padding of the background from the sides of the scroll rect")]
-        [SerializeField] public Vector2 backgroundPadding;
+        [SerializeField] public Vector2 backgroundPadding = new Vector2(-100,-100);
         [Tooltip("Pixels per Unit multiplier for the background image")]
-        [SerializeField] public float backgroundPPUMultiplier = 2;
+        [SerializeField] public float backgroundPPUMultiplier = 2f;
         [Tooltip("Prefab of the UI line between the nodes (uses scripts from Unity UI Extensions)")]
         [SerializeField] public UILineRenderer uiLinePrefab;
     }
@@ -74,8 +76,6 @@ namespace Map
 
         [Tooltip("List of all the MapConfig scriptable objects from the Assets folder that might be used to construct maps.")]
         public List<MapConfig> allMapConfigs;
-        [Tooltip("Offset of the start/end rooms of the map from the edges of the screen")]
-        public float orientationOffset;
 
         [Header("Background Settings")]
         [Tooltip("If the background sprite is null, background will not be shown")]
@@ -115,7 +115,6 @@ namespace Map
             }
         }
 
-        //OK
         public void ShowMap(Map m)
         {
             if (m == null)
@@ -320,7 +319,11 @@ namespace Map
         // Uses the map's length and adjusts the position with background padding and room position, flipped for horizontal orientations.
         private Vector2 GetNodePosition(Room room)
         {
+            //Debug.Log($"Total distance: {Map.DistanceBetweenFirstAndLastFloors()}");
             float length = canvasUISettings.padding + Map.DistanceBetweenFirstAndLastFloors() * canvasUISettings.unitsToPixelsMultiplier;
+
+            //Debug.Log($"Total length: {length}");
+            Debug.Log($"Room: {room.roomAddress}");
 
             switch (orientation)
             {
@@ -334,6 +337,9 @@ namespace Map
                     return new Vector2((length - canvasUISettings.padding) / 2f, canvasUISettings.backgroundPadding.y / 2f) -
                            Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
                 case MapOrientation.LeftToRight:
+                    Vector2 a = new Vector2((canvasUISettings.padding - length) / 2f, -canvasUISettings.backgroundPadding.y / 2f) +
+                           Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
+                    Debug.Log($"Pos: {a}");
                     return new Vector2((canvasUISettings.padding - length) / 2f, -canvasUISettings.backgroundPadding.y / 2f) +
                            Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
                 default:

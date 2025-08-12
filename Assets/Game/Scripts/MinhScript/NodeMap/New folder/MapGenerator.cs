@@ -64,7 +64,7 @@ namespace Map
             //Lấy tên phòng boss ngẫu nhiên từ danh sách (hiện chỉ có 1 boss)
             string bossRoomName = mapConfig.roomNodes.Where(b => b.roomType == RoomType.Boss).ToList().Random().name;
 
-            Debug.Log($"Total distance: {GetDistanceToFloor(5)}");
+            //Debug.Log($"Total distance: {GetDistanceToFloor(5)}");
             //Debug.Log("Rooms: " + string.Join(", ", roomsList.Select(r => $"{r.roomAddress} ({r.roomType})")));
             //Trả về 1 bản lưu bản đồ với tên cấu hình, tên boss, danh sách phòng, danh sách mới đường đi của player
             return new Map(mapConfig.name, bossRoomName, roomsList, new List<Vector2Int>());
@@ -76,9 +76,18 @@ namespace Map
             floorDistances = new List<float>();
 
             //Duyệt từng tầng trong danh sách cấu hình tầng của cấu hình map được sử dụng
-            foreach (FloorConfig floorConfig in mapConfig.floors)
-                //GetValue trả về giá trị ngẫu nhiên giữa min và max của cấu hình tầng
-                floorDistances.Add(floorConfig.distanceFromPreviousFloor.GetValue());
+            for (int i = 0; i < mapConfig.floors.Count; i++)
+            {
+                if (i == 0)
+                {
+                    floorDistances.Add(0f);
+                }
+                else 
+                {
+                    //GetValue trả về giá trị ngẫu nhiên giữa min và max của cấu hình tầng
+                    floorDistances.Add(mapConfig.floors[i].distanceFromPreviousFloor.GetValue());
+                }
+            }    
         }
 
         //Trả về tổng khoảng cách từ tầng đầu (index = 0) đến tầng cần kiểm tra
@@ -143,8 +152,8 @@ namespace Map
 
                 foreach (Room room in list)
                 {
-                    float xRnd = Random.Range(-0.5f, 0.5f);
-                    float yRnd = Random.Range(-0.5f, 0.5f);
+                    float xRnd = Random.Range(-0.4f, 0.4f);
+                    float yRnd = Random.Range(-0.4f, 0.4f);
 
                     float x = xRnd * floorConfig.distanceBetweenRoomsOnFloor;
                     float y = yRnd < 0 ? distToPreviousFloor * yRnd : distanceToNextFloor* yRnd;
