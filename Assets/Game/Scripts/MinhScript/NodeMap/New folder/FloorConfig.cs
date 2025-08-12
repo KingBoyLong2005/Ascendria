@@ -10,10 +10,10 @@ namespace Map
         public RoomType roomType;
 
         [Tooltip("Distance From Previous Floor: Min/Max")]
-        [MinMaxSlider(1, 4)]
+        [MinMaxSlider(2, 5)]
         public MinMaxFloat distanceFromPreviousFloor;
 
-        [Range(1f, 3f)] public float distanceBetweenRoomsOnFloor;
+        [Range(2f, 3f)] public float distanceBetweenRoomsOnFloor;
 
         [Tooltip("If this is set to 0, nodes on this layer will appear in a straight line. Closer to 1f = more position randomization")]
         [Range(0f, 1f)] public float randomizePosition;

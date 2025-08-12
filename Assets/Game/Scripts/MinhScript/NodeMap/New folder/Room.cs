@@ -27,7 +27,7 @@ public class Room
 
     public void Log()
     {
-        Debug.Log($"Room: {roomAddress.x},{roomAddress.y} - Type: {roomType} - Name: {blueprintName} - Pos: {position}");
+        //Debug.Log($"Room: {roomAddress.x},{roomAddress.y} - Type: {roomType} - Name: {blueprintName} - Pos: {position}");
     }
 
 

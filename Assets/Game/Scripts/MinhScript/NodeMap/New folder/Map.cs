@@ -37,7 +37,7 @@ namespace Map
                 return 0f;
             }
 
-            return bossRoom.roomAddress.y - firstFloorRoom.roomAddress.y;
+            return bossRoom.position.y - firstFloorRoom.position.y;
         }
 
         public Room GetRoom(Vector2Int roomAddress)
