@@ -58,9 +58,10 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = forward * moveInput.y + right * moveInput.x;
         characterController.Move( moveDirection * speed * Time.deltaTime);
 
-        if( shouldFaceMoveDirection && moveDirection.sqrMagnitude > 0.001f)
+        
+        if (shouldFaceMoveDirection && moveDirection.sqrMagnitude > 0.001f)
         {
-            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up );
+            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, 10f * Time.deltaTime);
         }
          

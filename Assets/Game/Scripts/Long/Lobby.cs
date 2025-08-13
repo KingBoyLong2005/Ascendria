@@ -1,26 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using QFSW.QC;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
 using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
 using UnityEngine;
-using Unity.Netcode.Components;
 
 public class Lobby : MonoBehaviour
 {
     public static Lobby Instance { get; private set; }
     private Unity.Services.Lobbies.Models.Lobby hostLobby;
-    private Unity.Services.Lobbies.Models.Lobby lobby;
-    private static Unity.Services.Lobbies.Models.Lobby joinLobby;
+    private Unity.Services.Lobbies.Models.Lobby joinLobby;
     private float hearBeatLobbyTimer = 15f;
     private float updateLobbyPollTimer = 5f;
-    private float sendLastSeenTimer = 0f;
-    private float checkInactiveTimer = 0f;
-
-
+    private float sendLastSeenTimer = 10f;
+    private float checkInactiveTimer = 10f;
     private const float HEARTBEAT_INTERVAL = 15f;
     private const float LOBBY_POLL_INTERVAL = 5f;
     private const float LASTSEEN_INTERVAL = 10f;
@@ -28,36 +23,41 @@ public class Lobby : MonoBehaviour
     private const int TIMEOUT_SECONDS = 30;
     private string playerName;
 
-    public event EventHandler OnLeftLobby;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private async void Start()
     {
-        if (!Multiplayer.isAuthenticated)
+        while (!Multiplayer.IsAuthenticated)
         {
-            Debug.Log("Đang chờ xác thực từ Multiplayer...");
-            while (!Multiplayer.isAuthenticated)
-            {
-                await Task.Delay(100); // Chờ cho đến khi xác thực hoàn tất
-            }
+            await Task.Delay(100); // Chờ xác thực từ Multiplayer
         }
         playerName = "Player" + UnityEngine.Random.Range(0, 100);
         Debug.Log("Tên người chơi: " + playerName);
-
-
     }
 
     private void Update()
     {
         HandleLobbyHeartBeat();
         HandleLobbyPollForUpdate();
-        ClientSendLastSeen();        // client heartbeat mỗi 10s
-        HostCheckInactivePlayers();  // host kiểm tra timeout mỗi 10s
+        ClientSendLastSeen();
+        HostCheckInactivePlayers();
     }
 
     private bool IsLobbyHost()
     {
         return joinLobby != null && joinLobby.HostId == AuthenticationService.Instance.PlayerId;
     }
-
 
     private async void HandleLobbyHeartBeat()
     {
@@ -66,8 +66,7 @@ public class Lobby : MonoBehaviour
             hearBeatLobbyTimer -= Time.deltaTime;
             if (hearBeatLobbyTimer <= 0f)
             {
-                const float hearBeatTimerMax = 15f; 
-                hearBeatLobbyTimer = hearBeatTimerMax;
+                hearBeatLobbyTimer = HEARTBEAT_INTERVAL;
                 try
                 {
                     await LobbyService.Instance.SendHeartbeatPingAsync(hostLobby.Id);
@@ -83,27 +82,21 @@ public class Lobby : MonoBehaviour
 
     private async void HandleLobbyPollForUpdate()
     {
-        if (joinLobby == null) return; // Avoid unnecessary checks
+        if (joinLobby == null) return;
 
         updateLobbyPollTimer -= Time.deltaTime;
         if (updateLobbyPollTimer <= 0f)
         {
-            const float updateLobbyTimerMax = 5f; // Increased to 5 seconds
-            updateLobbyPollTimer = updateLobbyTimerMax;
+            updateLobbyPollTimer = LOBBY_POLL_INTERVAL;
             try
             {
-                lobby = await LobbyService.Instance.GetLobbyAsync(joinLobby.Id);
-                joinLobby = lobby;
+                joinLobby = await LobbyService.Instance.GetLobbyAsync(joinLobby.Id);
                 Debug.Log("Lobby updated: " + joinLobby.Id);
             }
             catch (LobbyServiceException e)
             {
-
-                Debug.LogWarning("Rate limit exceeded for lobby polling. Retrying after delay.");
-                updateLobbyPollTimer = updateLobbyTimerMax + 5f; // Add extra delay on rate limit
-
-                Debug.Log($"Lobby update failed: {e.Message}");
-
+                Debug.LogWarning($"Lobby update failed: {e.Message}");
+                updateLobbyPollTimer = LOBBY_POLL_INTERVAL + 5f;
             }
         }
     }
@@ -121,8 +114,10 @@ public class Lobby : MonoBehaviour
                 long unix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
                 await LobbyService.Instance.UpdatePlayerAsync(joinLobby.Id,
                     AuthenticationService.Instance.PlayerId,
-                    new UpdatePlayerOptions {
-                        Data = new Dictionary<string, PlayerDataObject> {
+                    new UpdatePlayerOptions
+                    {
+                        Data = new Dictionary<string, PlayerDataObject>
+                        {
                             { "lastSeen", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, unix.ToString()) }
                         }
                     });
@@ -174,8 +169,7 @@ public class Lobby : MonoBehaviour
         }
     }
 
-    [Command]
-    private async void CreateLobby()
+    public async void CreateLobby()
     {
         try
         {
@@ -190,13 +184,12 @@ public class Lobby : MonoBehaviour
                     { "GameMode", new DataObject(DataObject.VisibilityOptions.Public, "CaptureTheFlag", DataObject.IndexOptions.S1) }
                 }
             };
-            lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayer, createLobbyOptions);
+            var lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayer, createLobbyOptions);
             if (AuthenticationService.Instance.PlayerId == lobby.HostId)
             {
-                hostLobby = lobby; // Chỉ gán hostLobby nếu là host
+                hostLobby = lobby;
             }
-            joinLobby = lobby; // Client và host đều gán joinLobby
-
+            joinLobby = lobby;
 
             string relayCode = await Multiplayer.Instance.SetupRelayForHost();
             if (relayCode != null)
@@ -209,6 +202,7 @@ public class Lobby : MonoBehaviour
                     }
                 });
                 Debug.Log("Created Lobby: " + lobby.Name + " " + lobby.MaxPlayers + " Code join: " + lobby.LobbyCode + " Relay Code: " + relayCode);
+                LobbyUI.Instance.UpdateLobbyCodeJoin(lobby.LobbyCode);
             }
             else
             {
@@ -217,44 +211,11 @@ public class Lobby : MonoBehaviour
         }
         catch (LobbyServiceException e)
         {
-            Debug.Log(e);
+            Debug.LogError("Lỗi khi tạo lobby: " + e);
         }
     }
 
-    [Command]
-    private async void ListLobbies()
-    {
-        try
-        {
-            QueryLobbiesOptions queryLobbiesOptions = new QueryLobbiesOptions
-            {
-                Count = 25,
-                Filters = new List<QueryFilter>
-                {
-                    new QueryFilter(QueryFilter.FieldOptions.AvailableSlots, "0", QueryFilter.OpOptions.GT),
-                    new QueryFilter(QueryFilter.FieldOptions.S1, "CaptureTheFlag", QueryFilter.OpOptions.EQ),
-                },
-                Order = new List<QueryOrder>
-                {
-                    new QueryOrder(false, QueryOrder.FieldOptions.Created)
-                },
-            };
-
-            QueryResponse queryResponse = await LobbyService.Instance.QueryLobbiesAsync();
-            Debug.Log("Tìm thấy " + queryResponse.Results.Count + " lobby");
-            foreach (Unity.Services.Lobbies.Models.Lobby lobby in queryResponse.Results)
-            {
-                Debug.Log(lobby.Name + " " + lobby.MaxPlayers + " " + lobby.Data["GameMode"].Value);
-            }
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    private async void joinLobbyByCode(string lobbyCode)
+    public async void joinLobbyByCode(string lobbyCode)
     {
         try
         {
@@ -262,184 +223,35 @@ public class Lobby : MonoBehaviour
             {
                 Player = GetPlayer(),
             };
-            lobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode, joinLobbyByCodeOptions);
+            var lobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode, joinLobbyByCodeOptions);
             joinLobby = lobby;
             Debug.Log("Đã tham gia lobby với mã " + lobbyCode);
-            // Lấy mã relay từ dữ liệu lobby
+
             if (lobby.Data.TryGetValue("RelayCode", out DataObject relayCodeData))
             {
                 string relayCode = relayCodeData.Value;
-                // Tham gia relay trước, sau đó lobby đã được tham gia ở trên
+                LobbyUI.Instance.UpdateLobbyCodeJoin(lobby.LobbyCode);
                 await Multiplayer.Instance.JoinRelayAsync(relayCode);
             }
             else
             {
                 Debug.LogError("Không tìm thấy RelayCode trong dữ liệu lobby");
             }
-            PrintPlayer(joinLobby);
         }
         catch (LobbyServiceException e)
         {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    private async void quickJoinLobby()
-    {
-        try
-        {
-            await LobbyService.Instance.QuickJoinLobbyAsync();
-            Debug.Log("Đã tham gia Lobby: " + lobby.Name);
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
+            Debug.LogError("Lỗi khi tham gia lobby: " + e);
         }
     }
 
     private Player GetPlayer()
     {
-        return new Player()
+        return new Player
         {
             Data = new Dictionary<string, PlayerDataObject>
             {
-                {"PlayerName", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, playerName)}
+                { "PlayerName", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, playerName) }
             }
         };
-    }
-
-    [Command]
-    private void PrintPlayer()
-    {
-        PrintPlayer(joinLobby);
-    }
-
-    private void PrintPlayer(Unity.Services.Lobbies.Models.Lobby lobby)
-    {
-        Debug.Log("Người chơi trong Lobby: " + lobby.Name + " " + lobby.Data["GameMode"].Value);
-        foreach (Player player in lobby.Players)
-        {
-            Debug.Log("Người chơi: " + player.Id + " Tên: " + player.Data["PlayerName"].Value);
-        }
-    }
-
-    [Command]
-    private async void UpdateLobbyGameMode(string gameMode)
-    {
-        try
-        {
-            hostLobby = await LobbyService.Instance.UpdateLobbyAsync(hostLobby.Id, new UpdateLobbyOptions
-            {
-                Data = new Dictionary<string, DataObject>
-                {
-                    { "GameMode", new DataObject(DataObject.VisibilityOptions.Public, gameMode) }
-                }
-            });
-            joinLobby = hostLobby;
-            PrintPlayer(hostLobby);
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    private async void UpdatePlayerName(string newPlayerName)
-    {
-        try
-        {
-            playerName = newPlayerName;
-            await LobbyService.Instance.UpdatePlayerAsync(joinLobby.Id, AuthenticationService.Instance.PlayerId, new UpdatePlayerOptions
-            {
-                Data = new Dictionary<string, PlayerDataObject>
-                {
-                    { "PlayerName", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, playerName) }
-                }
-            });
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    public async Task LeaveLobby()
-    {
-        if (joinLobby != null)
-        {
-            try
-            {
-                await LobbyService.Instance.RemovePlayerAsync(joinLobby.Id, AuthenticationService.Instance.PlayerId);
-                joinLobby = null;
-                OnLeftLobby?.Invoke(this, EventArgs.Empty);
-            }
-            catch (LobbyServiceException e)
-            {
-                Debug.Log(e);
-            }
-        }
-    }
-
-    [Command]
-    private async void KickLobby()
-    {
-        try
-        {
-            await LobbyService.Instance.RemovePlayerAsync(joinLobby.Id, joinLobby.Players[1].Id);
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    private async void MigrateLobbyHost()
-    {
-        try
-        {
-            Debug.Log("Mỉgrate update");
-            hostLobby = await LobbyService.Instance.UpdateLobbyAsync(hostLobby.Id, new UpdateLobbyOptions
-            {
-                HostId = joinLobby.Players[1].Id
-            });
-            joinLobby = hostLobby;
-
-            // Nếu thiết bị hiện tại trở thành host mới
-            if (AuthenticationService.Instance.PlayerId == hostLobby.HostId)
-            {
-                Debug.Log("Thiết bị hiện tại đã trở thành host mới.");
-            }
-            else
-            {
-                hostLobby = null; // Xóa hostLobby nếu không còn là host
-            }
-            PrintPlayer(hostLobby);
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    [Command]
-    private async void DeleteLobby()
-    {
-        try
-        {
-            await LobbyService.Instance.DeleteLobbyAsync(joinLobby.Id);
-        }
-        catch (LobbyServiceException e)
-        {
-            Debug.Log(e);
-        }
-    }
-
-    public bool IsLobbyActive()
-    {
-        return joinLobby != null;
     }
 }
