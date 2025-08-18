@@ -36,7 +36,7 @@ public class Room
         if(incoming.Any(value  => value.Equals(address))) return;
         incoming.Add(address);
     }
-
+    
     public void AddOutgoing(Vector2Int address)
     {
         if(outgoing.Any(value => value.Equals(address))) return;
@@ -45,12 +45,12 @@ public class Room
 
     public void RemoveIncoming(Vector2Int address)
     {
-        incoming.RemoveAll(value => incoming.Equals(address));
+        incoming.RemoveAll(value => value.Equals(address));
     }
 
     public void RemoveOutgoing(Vector2Int address)
     {
-        outgoing.RemoveAll(value => outgoing.Equals(address));
+        outgoing.RemoveAll(value => value.Equals(address));
     }
 
     public bool HasNoConnections()

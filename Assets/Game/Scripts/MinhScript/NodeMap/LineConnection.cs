@@ -7,11 +7,11 @@ namespace Map
     public class LineConnection
     {
         public LineRenderer lr;
-        public UILineRenderer uilr;
+        public UIDottedCircleLine uilr;
         public RoomView from;
         public RoomView to;
 
-        public LineConnection(LineRenderer lr, UILineRenderer uilr, RoomView from, RoomView to)
+        public LineConnection(LineRenderer lr, UIDottedCircleLine uilr, RoomView from, RoomView to)
         {
             this.lr = lr;
             this.uilr = uilr;

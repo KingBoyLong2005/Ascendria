@@ -29,16 +29,22 @@ public class MapViewEditor : Editor
         }
 
         // Checkbox WorldSpace
-        bool newWorldSpace = EditorGUILayout.Toggle("World Space", mapView.WorldSpace);
-        if (newWorldSpace && !mapView.WorldSpace)
-        {
-            mapView.WorldSpace = true;
-            mapView.CanvasUI = false;
-        }
-        else if (!newWorldSpace && mapView.WorldSpace)
-        {
-            mapView.WorldSpace = false;
-        }
+
+        // Checkbox WorldSpace (disabled)
+        GUI.enabled = false; // Vô hiệu hóa checkbox WorldSpace
+        EditorGUILayout.Toggle("World Space", mapView.WorldSpace);
+        GUI.enabled = true; // Khôi phục trạng thái GUI
+
+        //bool newWorldSpace = EditorGUILayout.Toggle("World Space", mapView.WorldSpace);
+        //if (newWorldSpace && !mapView.WorldSpace)
+        //{
+        //    mapView.WorldSpace = true;
+        //    mapView.CanvasUI = false;
+        //}
+        //else if (!newWorldSpace && mapView.WorldSpace)
+        //{
+        //    mapView.WorldSpace = false;
+        //}
 
         EditorGUILayout.Space();
 
