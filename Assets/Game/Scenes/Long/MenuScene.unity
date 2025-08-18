@@ -1551,6 +1551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   playerPrefab: {fileID: 9144768925846505899, guid: 496e84cb618f30a428f0369edb45b9fb, type: 3}
+  extraPrefab: {fileID: 6043838494468214498, guid: 3ccade6bb2a0d6d4eab5e786aa1ee8de, type: 3}
 --- !u!114 &1318500652
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -555,7 +555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  playerPrefab: {fileID: 5789147463355415299, guid: aadf74b7a417c154eaa1513b962c0346, type: 3}
+  playerPrefab: {fileID: 9144768925846505899, guid: 496e84cb618f30a428f0369edb45b9fb, type: 3}
+  extraPrefab: {fileID: 6043838494468214498, guid: 3ccade6bb2a0d6d4eab5e786aa1ee8de, type: 3}
 --- !u!4 &620173687
 Transform:
   m_ObjectHideFlags: 0
@@ -644,6 +645,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 490e98ce4ffc7d64f9e59bfe7c1ef29e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 39714aab20fc61a44b56d617e2a28834, type: 2}
     - target: {fileID: 919132149155446097, guid: 490e98ce4ffc7d64f9e59bfe7c1ef29e, type: 3}
       propertyPath: m_Name
       value: LobbyMap4
@@ -1910,6 +1915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e1a82ac3c352814bb5678ffb7a9a998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapConfig: {fileID: 0}
+  mapView: {fileID: 0}
 --- !u!114 &1479454387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2727,7 +2734,7 @@ Transform:
   m_GameObject: {fileID: 1731240853}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15212338, y: -0.0000000010157745, z: 1.5634263e-10, w: 0.98836154}
-  m_LocalPosition: {x: 0, y: 4.007058, z: -9.537169}
+  m_LocalPosition: {x: 0.006, y: 4.125058, z: -9.537169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
