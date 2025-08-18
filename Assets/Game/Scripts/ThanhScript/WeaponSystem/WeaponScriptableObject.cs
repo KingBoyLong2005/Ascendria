@@ -55,7 +55,9 @@ public class WeaponScriptableObject : ScriptableObject
 
     public void Shoot() 
     {
-        if(Time.time > LastShootTime + ShootConfig.FireRate)
+        float ShootCooldown = 1/ShootConfig.FireRate;
+
+        if(Time.time > LastShootTime + ShootCooldown)
         {
             LastShootTime = Time.time;
 
