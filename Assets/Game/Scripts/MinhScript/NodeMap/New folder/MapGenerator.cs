@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -56,7 +57,7 @@ namespace Map
                 string outgoingStr = string.Join(", ", room.outgoing.Select(v => $"({v.x},{v.y})"));
                 string incomingStr = string.Join(", ", room.incoming.Select(v => $"({v.x},{v.y})"));
 
-                //Debug.Log($"Room: ({room.roomAddress}) | Incoming: [{incomingStr}] | Outgoing: [{outgoingStr}]");
+                Debug.Log($"Room: ({room.roomAddress}) | Incoming: [{incomingStr}] | Outgoing: [{outgoingStr}]");
                 room.Log();
             }
             
@@ -189,7 +190,7 @@ namespace Map
         private static List<List<Vector2Int>> GeneratePaths()
         {
             Vector2Int finalRoom = GetFinalRoom();
-            //Debug.Log($"Đây là final Room tìm được: {finalRoom}");
+
             //Khởi tạo danh sách đường đi
             var paths = new List<List<Vector2Int>>();
 
@@ -206,14 +207,14 @@ namespace Map
 
             //Trộn
             roomPosXs.Shuffle();
-            //Lấy 3 vị trí đầu
+            //Lấy n vị trí đầu
             IEnumerable<int> startingXs = roomPosXs.Take(numOfStartingRooms);
             //Tạo danh sách vị trí room của tầng đầu tiên
             List<Vector2Int> startingRooms = (from x in startingXs select new Vector2Int(x, 0)).ToList();
 
             //Trộn
             roomPosXs.Shuffle();
-            //Lấy 3 vị trí đầu
+            //Lấy n vị trí đầu
             IEnumerable<int> preBossXs = roomPosXs.Take(numOfPreBossRooms);
             //Tạo danh sách vị trí room của tầng đầu tiên trước boss
             List<Vector2Int> preBossRooms = (from x in preBossXs select new Vector2Int(x, finalRoom.y - 1)).ToList();
@@ -253,7 +254,7 @@ namespace Map
             //Danh sách các phòng có thể đi
             List<int> roomPosXs = new List<int>();
 
-            //Bắt đầu từ tầng 1 tới tầng toRow - 1
+            //Bắt đầu từ tầng 1 tới tầng toRow
             for (int row = 1; row < toRow; ++row)
             {
                 roomPosXs.Clear();
@@ -325,6 +326,7 @@ namespace Map
             {
                 for(int j = 0; j < mapConfig.floors.Count - 1; ++j)
                 {
+                    Debug.Log($"Tầng: {j} phòng {i}");
                     //Nếu không tồn tạo room hoặc room không có kết nối nào thì bỏ qua vòng lặp
                     Room room = GetRoom(new Vector2Int(i, j));
                     if (room == null || room.HasNoConnections()) continue;
@@ -335,9 +337,13 @@ namespace Map
                     Room topRight = GetRoom(new Vector2Int(i + 1, j + 1));
                     if (topRight == null || topRight.HasNoConnections()) continue;
 
+                    Debug.Log($" và 4 cặp ({i}{j}),({i+1}{j}),({i}{j+1}),({i+1}{j+1})");
+
                     //Nếu 2 phòng được duyệt bên dưới không đồng thời nối chéo lên 2 phòng được duyệt bên trên thì bỏ qua
                     if (!room.outgoing.Any(element => element.Equals(topRight.roomAddress))) continue;
                     if (!right.outgoing.Any(element => element.Equals(top.roomAddress))) continue;
+
+                    Debug.Log("Có chéo nhau");
 
                     //Nếu có kết nối chéo
                     //Tạo kết nối dọc
@@ -355,16 +361,28 @@ namespace Map
                         topRight.RemoveIncoming(room.roomAddress);
                         right.RemoveOutgoing(top.roomAddress);
                         top.RemoveIncoming(right.roomAddress);
+
+                        Debug.Log($"Xóa 2 đường chéo");
+
+                        Debug.Log("List: " + string.Join(", ", room.outgoing));
+                        Debug.Log("List: " + string.Join(", ", right.outgoing));
+
                     }
                     else if (rnd < 0.6f) //Xóa 1 đường chéo từ phòng dưới trái đến trên phải
                     {
                         room.RemoveOutgoing(topRight.roomAddress);
                         topRight.RemoveIncoming(room.roomAddress);
+                        Debug.Log($"Xóa 1 đường chéo");
+                        Debug.Log("List: " + string.Join(", ", room.outgoing));
+                        Debug.Log("List: " + string.Join(", ", right.outgoing));
                     }
                     else //Xóa 1 đường chéo từ phòng dưới phải đến trên trái
                     {
                         right.RemoveOutgoing(top.roomAddress);
                         top.RemoveIncoming(right.roomAddress);
+                        Debug.Log($"Xóa 1 đường chéo");
+                        Debug.Log("List: " + string.Join(", ", room.outgoing));
+                        Debug.Log("List: " + string.Join(", ", right.outgoing));
                     }
                 }  
             }    

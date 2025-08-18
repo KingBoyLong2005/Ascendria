@@ -50,8 +50,8 @@ namespace Map
         [SerializeField] public Vector2 backgroundPadding = new Vector2(-100,-100);
         [Tooltip("Pixels per Unit multiplier for the background image")]
         [SerializeField] public float backgroundPPUMultiplier = 2f;
-        [Tooltip("Prefab of the UI line between the nodes (uses scripts from Unity UI Extensions)")]
-        [SerializeField] public UILineRenderer uiLinePrefab;
+        [Tooltip("Distance from the room till the line starting point")]
+        [SerializeField] public float offsetFromRooms = 40f;
     }
 
     //For 2D/3D view
@@ -65,8 +65,8 @@ namespace Map
             LeftToRight
         }
 
-        [HideInInspector] public bool CanvasUI;   // Checkbox Canvas UI
-        [HideInInspector] public bool WorldSpace; // Checkbox World Space
+        public bool CanvasUI;   // Checkbox Canvas UI
+        public bool WorldSpace; // Checkbox World Space
 
         public CanvasUISettings canvasUISettings;
         public WorldSpaceSettings worldSpaceSettings;
@@ -310,20 +310,20 @@ namespace Map
 
             roomView.transform.localPosition = WorldSpace
                                                 ? room.position // If WorldSpace
-                                                : GetNodePosition(room); // If CanvasUI
+                                                : GetRoomPosition(room); // If CanvasUI
 
             return roomView;
         }
 
         // Calculates the 2D position of a Room on the map based on the map's orientation.
         // Uses the map's length and adjusts the position with background padding and room position, flipped for horizontal orientations.
-        private Vector2 GetNodePosition(Room room)
+        private Vector2 GetRoomPosition(Room room)
         {
             //Debug.Log($"Total distance: {Map.DistanceBetweenFirstAndLastFloors()}");
             float length = canvasUISettings.padding + Map.DistanceBetweenFirstAndLastFloors() * canvasUISettings.unitsToPixelsMultiplier;
 
             //Debug.Log($"Total length: {length}");
-            Debug.Log($"Room: {room.roomAddress}");
+            //Debug.Log($"Room: {room.roomAddress}");
 
             switch (orientation)
             {
@@ -337,9 +337,6 @@ namespace Map
                     return new Vector2((length - canvasUISettings.padding) / 2f, canvasUISettings.backgroundPadding.y / 2f) -
                            Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
                 case MapOrientation.LeftToRight:
-                    Vector2 a = new Vector2((canvasUISettings.padding - length) / 2f, -canvasUISettings.backgroundPadding.y / 2f) +
-                           Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
-                    Debug.Log($"Pos: {a}");
                     return new Vector2((canvasUISettings.padding - length) / 2f, -canvasUISettings.backgroundPadding.y / 2f) +
                            Flip(room.position) * canvasUISettings.unitsToPixelsMultiplier;
                 default:
@@ -351,11 +348,11 @@ namespace Map
 
         private void DrawLines()
         {
-            //foreach (RoomView room in roomViews)
-            //{
-            //    foreach (Vector2Int connection in room.room.outgoing)
-            //        AddLineConnection(room, GetRoom(connection));
-            //}
+            foreach (RoomView room in roomViews)
+            {
+                foreach (Vector2Int connection in room.room.outgoing)
+                    AddLineConnection(room, GetRoom(connection));
+            }
         }
 
         private void SetOrientation()
@@ -513,36 +510,36 @@ namespace Map
 
         public void SetLineColors()
         {
-            //// set all lines to grayed out first:
-            //foreach (LineConnection connection in lineConnections)
-            //    connection.SetColor(lineLockedColor);
+            // set all lines to grayed out first:
+            foreach (LineConnection connection in lineConnections)
+                connection.SetColor(lineLockedColor);
 
-            //// set all lines that are a part of the path to visited color:
-            //// if we have not started moving on the map yet, leave everything as is:
-            //if (mapManager.currentMap.path.Count == 0)
-            //    return;
+            // set all lines that are a part of the path to visited color:
+            // if we have not started moving on the map yet, leave everything as is:
+            if (mapManager.currentMap.path.Count == 0)
+                return;
 
-            //// in any case, we mark outgoing connections from the final node with visible/attainable color:
-            //Vector2Int currentPoint = mapManager.currentMap.path[mapManager.currentMap.path.Count - 1];
-            //Room currentRoom = mapManager.currentMap.GetRoom(currentPoint);
+            // in any case, we mark outgoing connections from the final node with visible/attainable color:
+            Vector2Int currentPoint = mapManager.currentMap.path[mapManager.currentMap.path.Count - 1];
+            Room currentRoom = mapManager.currentMap.GetRoom(currentPoint);
 
-            //foreach (Vector2Int point in currentRoom.outgoing)
-            //{
-            //    LineConnection lineConnection = lineConnections.FirstOrDefault(conn => conn.from.room == currentRoom &&
-            //                                                                conn.to.room.roomAddress.Equals(point));
-            //    lineConnection?.SetColor(lineVisitedColor);
-            //}
+            foreach (Vector2Int point in currentRoom.outgoing)
+            {
+                LineConnection lineConnection = lineConnections.FirstOrDefault(conn => conn.from.room == currentRoom &&
+                                                                            conn.to.room.roomAddress.Equals(point));
+                lineConnection?.SetColor(lineVisitedColor);
+            }
 
-            //if (mapManager.currentMap.path.Count <= 1) return;
+            if (mapManager.currentMap.path.Count <= 1) return;
 
-            //for (int i = 0; i < mapManager.currentMap.path.Count - 1; i++)
-            //{
-            //    Vector2Int current = mapManager.currentMap.path[i];
-            //    Vector2Int next = mapManager.currentMap.path[i + 1];
-            //    LineConnection lineConnection = lineConnections.FirstOrDefault(conn => conn.@from.room.roomAddress.Equals(current) &&
-            //                                                                conn.to.room.roomAddress.Equals(next));
-            //    lineConnection?.SetColor(lineVisitedColor);
-            //}
+            for (int i = 0; i < mapManager.currentMap.path.Count - 1; i++)
+            {
+                Vector2Int current = mapManager.currentMap.path[i];
+                Vector2Int next = mapManager.currentMap.path[i + 1];
+                LineConnection lineConnection = lineConnections.FirstOrDefault(conn => conn.@from.room.roomAddress.Equals(current) &&
+                                                                            conn.to.room.roomAddress.Equals(next));
+                lineConnection?.SetColor(lineVisitedColor);
+            }
         }
 
         
@@ -553,34 +550,29 @@ namespace Map
 
         protected virtual void AddLineConnection(RoomView from, RoomView to)
         {
-            //if (linePrefab == null) return;
+            if (WorldSpace)
+            { 
 
-            //GameObject lineObject = Instantiate(linePrefab, mapParent.transform);
-            //LineRenderer lineRenderer = lineObject.GetComponent<LineRenderer>();
-            //Vector3 fromPoint = from.transform.position +
-            //                    (to.transform.position - from.transform.position).normalized * offsetFromNodes;
+            }
+            if (CanvasUI)
+            {
+                GameObject line = new GameObject("Line Connection");
+                line.transform.SetParent (mapParent.transform, false);
+                line.transform.SetAsFirstSibling();
 
-            //Vector3 toPoint = to.transform.position +
-            //                  (from.transform.position - to.transform.position).normalized * offsetFromNodes;
+                UIDottedCircleLine dottedLine = line.AddComponent<UIDottedCircleLine>();
+                dottedLine.maskable = true;
 
-            //// drawing lines in local space:
-            //lineObject.transform.position = fromPoint;
-            //lineRenderer.useWorldSpace = false;
+                Vector2 start = from.transform.localPosition;
+                Vector2 end = to.transform.localPosition;
 
-            //// line renderer with 2 points only does not handle transparency properly:
-            //lineRenderer.positionCount = linePointsCount;
-            //for (int i = 0; i < linePointsCount; i++)
-            //{
-            //    lineRenderer.SetPosition(i,
-            //        Vector3.Lerp(Vector3.zero, toPoint - fromPoint, (float)i / (linePointsCount - 1)));
-            //}
+                Vector2 dir = (end - start).normalized;
+                start += dir * canvasUISettings.offsetFromRooms;
+                end -= dir * canvasUISettings.offsetFromRooms;
 
-            //DottedLineRenderer dottedLine = lineObject.GetComponent<DottedLineRenderer>();
-            //if (dottedLine != null) dottedLine.ScaleMaterial();
-
-            //lineConnections.Add(new LineConnection(lineRenderer, null, from, to));
-
-
+                dottedLine.SetLine(start, end);
+                lineConnections.Add(new LineConnection(null, dottedLine, from, to));
+            }
         }
 
         protected RoomView GetRoom(Vector2Int p)
