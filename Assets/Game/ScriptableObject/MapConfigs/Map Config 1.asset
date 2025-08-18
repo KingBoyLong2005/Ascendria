@@ -21,10 +21,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a9314c9ec6ae6e34aa45c3f751d95c80, type: 2}
   randomRooms: 0000000001000000030000000400000002000000
   numOfPreBossRooms:
-    min: 2
+    min: 4
     max: 5
   numOfStartingRooms:
-    min: 2
+    min: 4
     max: 5
   extraPaths: 0
   floors:
@@ -33,40 +33,40 @@ MonoBehaviour:
       min: 2
       max: 2
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0.5
   - roomType: 1
     distanceFromPreviousFloor:
       min: 5
       max: 5
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0.5
   - roomType: 2
     distanceFromPreviousFloor:
       min: 5
       max: 5
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0.5
   - roomType: 3
     distanceFromPreviousFloor:
-      min: 4
-      max: 4
+      min: 5
+      max: 5
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0.5
   - roomType: 4
     distanceFromPreviousFloor:
-      min: 4
-      max: 4
+      min: 5
+      max: 5
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0.5
   - roomType: 5
     distanceFromPreviousFloor:
-      min: 4
-      max: 4
+      min: 5
+      max: 5
     distanceBetweenRoomsOnFloor: 3
-    randomizePosition: 0.5
+    randomizePosition: 0
     randomizeRooms: 0
