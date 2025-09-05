@@ -19,12 +19,16 @@ public class GameManager : MonoBehaviour {
         if (Instance == null) Instance = this;
     }
 
-    public void AddKill() {
+    public void AddKill()
+    {
         killCount++;
         UIManager.Instance.UpdateKillProgress(killCount, killsToTriggerEvent);
-
-        // Kiểm tra trigger event
+        // Tăng thời gian khi giết thêm quái
+        if (currentPhase == GamePhase.NormalWave) {
         EventManager.Instance.CheckEventTrigger();
+        } else if (currentPhase == GamePhase.EventActive) {
+            EventManager.Instance.AddEventTime(0.3f); 
+        }
     }
 
     public void ResetProgress() {

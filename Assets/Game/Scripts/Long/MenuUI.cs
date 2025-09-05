@@ -4,12 +4,26 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
-{   
+{
+
+    public static MenuUI Instance { get; private set; }
     [SerializeField] private Button CreateLobby;
     [SerializeField] public TMP_InputField CodeJoin;
     [SerializeField] private Button JoinLobby;
+    [SerializeField] private TMP_Text Error;
     private void Awake()
     {
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         if (CreateLobby == null || JoinLobby == null || CodeJoin == null)
         {
             Debug.LogError("Một hoặc nhiều thành phần UI (CreateLobby, JoinLobby, CodeJoin) chưa được gán trong Inspector.");
@@ -30,7 +44,7 @@ public class MenuUI : MonoBehaviour
         JoinLobby.onClick.RemoveListener(OnJoinLobbyClicked);
     }
 
-    private  void OnCreateLobbyClicked()
+    private void OnCreateLobbyClicked()
     {
         CreateLobby.interactable = false; // Vô hiệu hóa nút trong khi xử lý
         Lobby.Instance.CreateLobby();
@@ -39,7 +53,7 @@ public class MenuUI : MonoBehaviour
 
         // Debug.LogError("Tạo lobby thất bại, không chuyển scene.");
         CreateLobby.interactable = true; // Kích hoạt lại nút nếu thất bại
-        
+
     }
 
     private void OnJoinLobbyClicked()
@@ -47,10 +61,16 @@ public class MenuUI : MonoBehaviour
         JoinLobby.interactable = false; // Vô hiệu hóa nút trong khi xử lý
         Lobby.Instance.joinLobbyByCode(CodeJoin.text);
 
-        SceneManager.LoadScene(1);
+        // SceneManager.LoadScene(1);
+        JoinLobby.interactable = true;
+    }
 
-        // Debug.LogError("Tham gia lobby thất bại, không chuyển scene.");
-        JoinLobby.interactable = true; // Kích hoạt lại nút nếu thất bại
-        
+    public void EnableJoinButton()
+    {
+        JoinLobby.interactable = true;
+    }
+    public void UpdateErrorLog(string error)
+    {
+        Error.text = error;
     }
 }

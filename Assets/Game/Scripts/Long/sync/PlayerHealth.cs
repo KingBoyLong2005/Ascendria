@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerHealth : NetworkBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int maxHealth = 20;
 
     public NetworkVariable<int> Health = new NetworkVariable<int>(
         default,
@@ -12,6 +12,7 @@ public class PlayerHealth : NetworkBehaviour
 
     private void Start()
     {
+
         if (IsServer)
         {
             Health.Value = maxHealth;
@@ -21,28 +22,18 @@ public class PlayerHealth : NetworkBehaviour
         Health.OnValueChanged += OnHealthChanged;
     }
 
-    private void Update()
+    public void ApplyDamage(int damage, ulong attackerId)
     {
-        // Chỉ người chơi điều khiển local mới được bấm Q
-        if (IsOwner && Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log($"[Client {OwnerClientId}] Q Pressed - sending damage to server");
-            LoseHpServerRpc(10); // Trừ 10 máu
-        }
-    }
-
-    [ServerRpc(RequireOwnership = false)]
-    public void LoseHpServerRpc(int damage)
-    {
+        if (!IsServer) return;
         if (Health.Value <= 0) return;
 
         Health.Value -= damage;
-        Debug.Log($"[Server] Player {OwnerClientId} lost {damage} HP. Current: {Health.Value}");
+        Debug.Log($"[Server] Player {OwnerClientId} took {damage} from {attackerId}. HP = {Health.Value}");
 
         if (Health.Value <= 0)
         {
             Die();
-            NotifyDeathClientRpc(OwnerClientId); // Gọi ClientRpc để thông báo cho tất cả client
+            NotifyDeathClientRpc(OwnerClientId);
         }
     }
 

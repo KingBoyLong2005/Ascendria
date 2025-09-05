@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wall
+  - CinemachineTarget
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

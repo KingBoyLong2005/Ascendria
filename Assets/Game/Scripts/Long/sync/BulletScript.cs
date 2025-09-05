@@ -1,87 +1,91 @@
 using Unity.Netcode;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody), typeof(NetworkObject), typeof(Collider))]
 public class BulletScript : NetworkBehaviour
 {
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float speed = 20f;
     [SerializeField] private float lifeTime = 5f;
 
-    private Vector3 direction;
-    private float timer = 0f;
     private ulong creatorClientId;
-    private bool isMoving = false; // cho client-side prediction
-    private bool hasDespawned = false;
+    private float timer = 0f;
 
-    public void SetDirection(Vector3 dir)
+    private Rigidbody rb;
+
+    public void SetCreator(ulong clientId) => creatorClientId = clientId;
+
+    private void Awake()
     {
-        direction = dir.normalized;
-        isMoving = true;
+        rb = GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
-    public void SetCreator(ulong clientId)
+    public void Launch(Vector3 direction)
     {
-        creatorClientId = clientId;
+        rb.linearVelocity = direction.normalized * speed;
     }
 
     private void Update()
     {
-        // Client-side prediction: vẫn di chuyển để hình ảnh không bị trễ
-        if (isMoving)
-        {
-            transform.position += direction * speed * Time.deltaTime;
-        }
-
         if (!IsServer) return;
-        {
-            timer += Time.deltaTime;
-            if (timer >= lifeTime)
-            {
-                Debug.Log($"[Server] Bullet expired. Destroying. Creator: {creatorClientId}, ObjectID: {NetworkObjectId}");
-                GetComponent<NetworkObject>().Despawn();
-            }
-        }
-    }
 
-    private void DespawnBullet()
-    {
-        if (hasDespawned) return;
-        hasDespawned = true;
-
-        if (GetComponent<NetworkObject>().IsSpawned)
+        timer += Time.deltaTime;
+        if (timer >= lifeTime && GetComponent<NetworkObject>().IsSpawned)
         {
             GetComponent<NetworkObject>().Despawn();
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (!IsServer) return;
 
-        GameObject other = collision.gameObject;
-
         // Tránh đạn va chạm với chính người bắn
-        var playerHealth = other.GetComponent<PlayerHealth>();
-        if (other.CompareTag("Player"))
+        var playerHealth = collision.transform.GetComponent<PlayerHealth>();
+        if (collision.transform.CompareTag("Player"))
         {
-            var netObj = other.GetComponent<NetworkObject>();
-            if (playerHealth != null && netObj != null && netObj.OwnerClientId != creatorClientId)
+            var netObj = collision.transform.GetComponent<NetworkObject>();
+            if (playerHealth != null)
             {
-                playerHealth.LoseHpServerRpc(5);
-                DespawnBullet();
-                return;
+                if (netObj != null && netObj.OwnerClientId != creatorClientId)
+                {
+                    playerHealth.ApplyDamage(5, netObj.OwnerClientId);
+                    GetComponent<NetworkObject>().Despawn();
+                    return;
+                }
+                else
+                {
+                    Debug.LogWarning("netobj null");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Playerhealth null");
             }
         }
 
-        // Nếu bắn trúng tường
-        var wall = other.GetComponent<WallHealth>();
-        if (other.CompareTag("Wall"))
+        var enemyHealth = collision.transform.GetComponent<Enemy>();
+        if (collision.transform.CompareTag("Enemy"))
         {
-            if (wall != null)
+            if (enemyHealth != null)
             {
-                wall.TakeDamage(1);
-                DespawnBullet();
+                enemyHealth.TakeDamage(1);
                 return;
             }
+            else
+            {
+                Debug.LogWarning("Enemyhealth null");
+            }
         }
+
+        // Trúng tường
+        // if (other.CompareTag("Wall"))
+        // {
+        //     var wall = other.GetComponent<WallHealth>();
+        //     if (wall != null) wall.TakeDamage(1);
+        //     GetComponent<NetworkObject>().Despawn();
+        // }
     }
-
+    
 }
