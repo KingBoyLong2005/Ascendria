@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerShooting : NetworkBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float spawnOffset = 1f;
+    [SerializeField] private Transform weaponRoot; // gắn từ Inspector
+    [SerializeField] private float spawnOffset = 0.5f; // khoảng cách thêm trước nòng súng
 
     private void Update()
     {
@@ -12,8 +13,10 @@ public class PlayerShooting : NetworkBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 spawnPos = transform.position + transform.forward * spawnOffset;
-            Vector3 direction = transform.forward;
+            // Lấy vị trí ngay nòng súng
+            Vector3 spawnPos = weaponRoot.position + weaponRoot.forward * spawnOffset;
+            Vector3 direction = weaponRoot.forward;
+
             Debug.Log($"[LOCAL] Client {NetworkManager.Singleton.LocalClientId} requested shoot.");
             ShootServerRpc(spawnPos, direction);
         }
@@ -28,12 +31,12 @@ public class PlayerShooting : NetworkBehaviour
         var netObj = bulletInstance.GetComponent<NetworkObject>();
         var bullet = bulletInstance.GetComponent<BulletScript>();
 
-        bullet.SetDirection(direction);
         bullet.SetCreator(shooterId);
+        bullet.Launch(direction); // thay vì SetDirection
 
-        // Spawn and make the shooter the owner of this bullet (tùy bạn có muốn).
         netObj.Spawn();
 
         Debug.Log($"[SERVER] Spawned bullet (NetId:{netObj.NetworkObjectId}) by client {shooterId}");
     }
+
 }

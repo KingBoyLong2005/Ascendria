@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using QFSW.QC;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
 using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
+using UnityEditor;
 using UnityEngine;
 
 public class Lobby : MonoBehaviour
@@ -151,7 +153,7 @@ public class Lobby : MonoBehaviour
                     {
                         if (now - last > TIMEOUT_SECONDS)
                         {
-                            Debug.Log($"Removing inactive {pl.Id} (lastSeen {now-last}s ago)");
+                            Debug.Log($"Removing inactive {pl.Id} (lastSeen {now - last}s ago)");
                             await LobbyService.Instance.RemovePlayerAsync(hostLobby.Id, pl.Id);
                         }
                     }
@@ -217,40 +219,70 @@ public class Lobby : MonoBehaviour
 
     public async void joinLobbyByCode(string lobbyCode)
     {
+        if (string.IsNullOrWhiteSpace(lobbyCode))
+        {
+            MenuUI.Instance.UpdateErrorLog("Mã lobby trống hoặc không hợp lệ");
+            return;
+        }
+
         try
         {
-            JoinLobbyByCodeOptions joinLobbyByCodeOptions = new JoinLobbyByCodeOptions
-            {
-                Player = GetPlayer(),
-            };
-            var lobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode, joinLobbyByCodeOptions);
+            lobbyCode = lobbyCode.Trim().ToUpper();
+            var options = new JoinLobbyByCodeOptions { Player = GetPlayer() };
+            var lobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode, options);
+
             joinLobby = lobby;
             Debug.Log("Đã tham gia lobby với mã " + lobbyCode);
 
             if (lobby.Data.TryGetValue("RelayCode", out DataObject relayCodeData))
             {
                 string relayCode = relayCodeData.Value;
-                LobbyUI.Instance.UpdateLobbyCodeJoin(lobby.LobbyCode);
-                await Multiplayer.Instance.JoinRelayAsync(relayCode);
+                UnityEngine.SceneManagement.SceneManager.sceneLoaded += (scene, mode) =>
+                {
+                    if (scene.buildIndex == 1) // scene menu
+                    {
+                        if (LobbyUI.Instance != null)
+                        {
+                            LobbyUI.Instance.UpdateLobbyCodeJoin(lobby.LobbyCode);
+                        }
+                        if (Multiplayer.Instance != null)
+                        {
+                            _ = Multiplayer.Instance.JoinRelayAsync(relayCode);
+                        }
+                    }
+                };
+                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+
             }
             else
             {
-                Debug.LogError("Không tìm thấy RelayCode trong dữ liệu lobby");
+                MenuUI.Instance.UpdateErrorLog("Không tìm thấy RelayCode trong dữ liệu lobby");
+                MenuUI.Instance.EnableJoinButton();
             }
         }
         catch (LobbyServiceException e)
         {
-            Debug.LogError("Lỗi khi tham gia lobby: " + e);
+            if (e.Reason == LobbyExceptionReason.LobbyNotFound)
+                MenuUI.Instance.UpdateErrorLog($"Mã lobby '{lobbyCode}' không tồn tại hoặc đã hết hạn.");
+            else if (e.Reason == LobbyExceptionReason.ValidationError)
+                MenuUI.Instance.UpdateErrorLog($"Mã lobby '{lobbyCode}' không hợp lệ.");
+            else
+                MenuUI.Instance.UpdateErrorLog("Lỗi khi tham gia lobby: " + e.Message);
+
+                MenuUI.Instance.EnableJoinButton();
         }
     }
 
+
     private Player GetPlayer()
     {
+        long unix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
         return new Player
         {
             Data = new Dictionary<string, PlayerDataObject>
             {
-                { "PlayerName", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, playerName) }
+                { "PlayerName", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, playerName) },
+                { "lastSeen", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Member, unix.ToString()) }
             }
         };
     }
