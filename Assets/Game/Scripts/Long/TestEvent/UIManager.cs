@@ -1,56 +1,51 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
-{
+public class UIManager : MonoBehaviour {
     public static UIManager Instance;
 
     [Header("UI Elements")]
     public Slider killProgressBar;
     public Slider eventTimerBar;
 
-
-    private void Awake()
-    {
+    private void Awake() {
         if (Instance == null) Instance = this;
     }
 
-    public void UpdateKillProgress(int current, int max)
-    {
-        Debug.Log("Kill Progress: " + (float)current / max);
-        killProgressBar.value = (float)current / max;
+    public void UpdateKillProgress(int current, int max) {
+        if (killProgressBar != null) {
+            killProgressBar.value = (float)current / max;
+        }
     }
 
-    public void ShowEventTimer(float duration)
-    {
-        eventTimerBar.gameObject.SetActive(true);
-        eventTimerBar.maxValue = duration;
-        eventTimerBar.value = duration;
+    public void ShowEventTimer(float duration) {
+        if (eventTimerBar != null) {
+            eventTimerBar.gameObject.SetActive(true);
+            eventTimerBar.maxValue = duration;
+            eventTimerBar.value = duration;
+        }
     }
 
-    public void UpdateEventTimer(float timeLeft)
-    {
-        eventTimerBar.value = timeLeft;
+    public void UpdateEventTimer(float timeLeft) {
+        if (eventTimerBar != null) {
+            eventTimerBar.value = timeLeft;
+        }
     }
 
-    public void HideKillProgress()
-    {
-        if (killProgressBar != null)
+    public void HideKillProgress() {
+        if (killProgressBar != null) 
             killProgressBar.gameObject.SetActive(false);
     }
 
-    public void ActiveKillProgress()
-    {
-        if (killProgressBar != null)
+    public void ActiveKillProgress() {
+        if (killProgressBar != null) 
             killProgressBar.gameObject.SetActive(true);
     }
 
-    public void HideEventTimer()
-    {
-        if (eventTimerBar != null)
+    public void HideEventTimer() {
+        if (eventTimerBar != null) 
             eventTimerBar.gameObject.SetActive(false);
     }
-
 
     [Header("Event UI")]
     public Slider captureBar;

@@ -1,10 +1,10 @@
 using UnityEngine;
+using Unity.Netcode;
 
-public class EventManager : MonoBehaviour
-{
+public class EventManager : NetworkBehaviour {
     public static EventManager Instance;
-    public enum EventType
-    {
+
+    public enum EventType {
         None,
         CaptureTheFlag,
         CatchTheOrb,
@@ -13,175 +13,136 @@ public class EventManager : MonoBehaviour
         SlotMachine
     }
 
-    [Header("Event PreFab")]
+    [Header("Event Prefabs")]
     public GameObject flagPrefab;
     public GameObject orbPrefab;
     public GameObject escortPrefab;
     public GameObject escortDestinationPrefab;
 
     [Header("Event Settings")]
-    public float eventDuration = 15f; // thời gian event
+    public float eventDuration = 30f;
     private float timer;
     private bool eventOngoing = false;
     private EventType currentEvent = EventType.None;
 
-    private void Awake()
-    {
+    private void Awake() {
         if (Instance == null) Instance = this;
     }
 
-    public void CheckEventTrigger()
-    {
-        if (GameManager.Instance.killCount >= GameManager.Instance.killsToTriggerEvent
-            && GameManager.Instance.currentPhase == GamePhase.NormalWave)
+    public void CheckEventTrigger() {
+        if (!IsServer) return;
+
+        if (GameManager.Instance.killCount.Value >= GameManager.Instance.killsToTriggerEvent
+            && GameManager.Instance.currentPhase.Value == GamePhase.NormalWave)
         {
             StartEvent();
         }
     }
 
+    private void StartEvent() {
+        if (!IsServer) return;
 
-    void StartEvent()
-    {
-        // Reset progress
-        GameManager.Instance.currentPhase = GamePhase.EventActive;
-        // KHÔNG ResetProgress ở đây
-        UIManager.Instance.HideKillProgress();
+        GameManager.Instance.currentPhase.Value = GamePhase.EventActive;
+        HideKillProgressClientRpc(); // -> cho tất cả client
 
-        // Random event
-        // currentEvent = (EventType)Random.Range(1, 6); // từ 1 -> 5
+        currentEvent = EventType.CaptureTheFlag;
         // currentEvent = EventType.CaptureTheFlag;
-        // currentEvent = EventType.CatchTheOrb;
-        // currentEvent = EventType.EscortObject;
-
-        currentEvent = (EventType)Random.Range(1, 4); // từ 1 -> 5
-
+        // currentEvent = EventType.CaptureTheFlag;
+        // currentEvent = EventType.CaptureTheFlag;
         Debug.Log("Event xuất hiện: " + currentEvent);
 
-        // Bật trạng thái event
         eventOngoing = true;
         timer = eventDuration;
-        UIManager.Instance.ShowEventTimer(eventDuration);
+        ShowEventTimerClientRpc(eventDuration); // -> cho tất cả client
 
-        // Spawn quái/đồ vật nếu cần (sau này thêm)
-        // EnemySpawner.Instance.SpawnEventEnemies();
-
-        if (currentEvent == EventType.CaptureTheFlag)
-        {
-            Debug.Log("Start event " + currentEvent);
-            // SpawnFlag();
+        if (currentEvent == EventType.CaptureTheFlag) {
             SpawnFlag();
-        }
-        else if (currentEvent == EventType.CatchTheOrb)
-        {
-            Debug.Log("Start event " + currentEvent);
-            // SpawnFlag();
+        } else if (currentEvent == EventType.CatchTheOrb) {
             SpawnOrb();
-        }
-        else if (currentEvent == EventType.EscortObject)
-        {
-            Debug.Log("Start event " + currentEvent);
+        } else if (currentEvent == EventType.EscortObject) {
             SpawnEscort();
-        }
-        else
-        {
+        } else {
             EnemySpawner.Instance.SpawnEventEnemies();
         }
+
+        InvokeRepeating(nameof(UpdateEventTimer), 1f, 1f);
     }
 
-    void Update()
-    {
-        if (eventOngoing)
-        {
-            // Đếm ngược thời gian
-            timer -= Time.deltaTime;
-            UIManager.Instance.UpdateEventTimer(timer);
+    private void UpdateEventTimer() {
+        if (!IsServer || !eventOngoing) return;
 
-            // Nhấn F để hoàn thành event
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                EndEvent(true);
-            }
+        timer -= 1f;
+        UpdateEventTimerClientRpc(timer); // -> cho tất cả client
 
-            // Hết giờ thì fail
-            if (timer <= 0)
-            {
-                EndEvent(false);
-            }
+        if (timer <= 0) {
+            EndEvent(false);
         }
     }
 
-    public void EndEvent(bool success)
-    {
+    [ServerRpc(RequireOwnership = false)]
+    public void TryCompleteEventServerRpc(ServerRpcParams rpcParams = default) {
+        if (eventOngoing) {
+            EndEvent(true);
+        }
+    }
+
+    public void EndEvent(bool success) {
         if (!eventOngoing) return;
 
         Debug.Log(success
             ? $"Event {currentEvent} HOÀN THÀNH - Nhận thưởng!"
             : $"Event {currentEvent} THẤT BẠI - Không có thưởng.");
 
-        // Reset state
         eventOngoing = false;
-        currentEvent = EventType.None;
-        UIManager.Instance.HideEventTimer();
+        CancelInvoke(nameof(UpdateEventTimer));
 
-        // Bật kill progress khi hết event
-        UIManager.Instance.ActiveKillProgress();
+        HideEventTimerClientRpc();
+        ActiveKillProgressClientRpc();
         GameManager.Instance.ResetProgress();
 
-        // Xóa flag nếu còn tồn tại
-        if (currentEvent == EventType.CaptureTheFlag)
-        {
+        if (currentEvent == EventType.CaptureTheFlag) {
             var flag = FindFirstObjectByType<Flag>();
-            if (flag != null) Destroy(flag.gameObject);
+            if (flag != null) {
+                // flag sẽ handle UI hide bằng RPC trong OnDestroy của nó
+                flag.gameObject.GetComponent<NetworkObject>().Despawn(true);
+                Destroy(flag.gameObject);
+            }
         }
-
-        // Xóa orb nếu còn tồn tại
-        if (currentEvent == EventType.CatchTheOrb)
-        {
+        if (currentEvent == EventType.CatchTheOrb) {
             var orb = FindFirstObjectByType<Orb>();
             if (orb != null) Destroy(orb.gameObject);
         }
-
-        // Xóa escort nếu còn tồn tại
-        if (currentEvent == EventType.EscortObject)
-        {
+        if (currentEvent == EventType.EscortObject) {
             EndEscortEvent(false);
         }
-
         var escortDestination = FindFirstObjectByType<ParticleSystem>();
         if (escortDestination != null) Destroy(escortDestination.gameObject);
 
-        // Code cũ
-        GameManager.Instance.currentPhase = GamePhase.NormalWave;
+        GameManager.Instance.currentPhase.Value = GamePhase.NormalWave;
         EnemySpawner.Instance.SpawnNormalWave();
-        // Code cũ
-
+        currentEvent = EventType.None;
     }
 
-    // Tăng thời gian khi giết thêm quái
-    public void AddEventTime(float extraTime)
-    {
-        if (eventOngoing)
-        {
-            timer += extraTime;
-            if (timer > eventDuration) timer = eventDuration; // không vượt quá max
-            UIManager.Instance.UpdateEventTimer(timer);
-            Debug.Log($"+{extraTime}s cho event! Thời gian còn lại: {timer:F1}");
-        }
+    public void AddEventTime(float extraTime) {
+        if (!IsServer || !eventOngoing) return;
+
+        timer += extraTime;
+        if (timer > eventDuration) timer = eventDuration;
+        UpdateEventTimerClientRpc(timer);
     }
 
-    void SpawnFlag()
-    {
-        // Tận dụng list spawn point của quái
+    void SpawnFlag() {
         Vector3 pos = EnemySpawner.Instance.GetRandomSpawnPoint();
-        Instantiate(flagPrefab, pos, Quaternion.identity);
-    }
-    void SpawnOrb()
-    {
-        Vector3 pos = EnemySpawner.Instance.GetRandomSpawnPoint();
-        Instantiate(orbPrefab, pos, Quaternion.identity);
+        var flag = Instantiate(flagPrefab, pos, Quaternion.identity);
+        flag.GetComponent<NetworkObject>().Spawn(true);
     }
 
-    // Escort
+    void SpawnOrb() {
+        Vector3 pos = EnemySpawner.Instance.GetRandomSpawnPoint();
+        var orb = Instantiate(orbPrefab, pos, Quaternion.identity);
+        orb.GetComponent<NetworkObject>().Spawn(true);
+    }
+
     GameObject escortInstance;
     GameObject escortDestination;
 
@@ -190,31 +151,71 @@ public class EventManager : MonoBehaviour
 
         int startIndex = Random.Range(0, spawns.Length);
         int endIndex = Random.Range(0, spawns.Length);
-
-        // ép buộc khác nhau
         while (endIndex == startIndex) {
             endIndex = Random.Range(0, spawns.Length);
         }
 
         Vector3 startPos = spawns[startIndex].position;
         Vector3 endPos   = spawns[endIndex].position;
-        // Spawn escort
+
         escortInstance = Instantiate(escortPrefab, startPos, Quaternion.identity);
+        escortInstance.GetComponent<NetworkObject>().Spawn(true);
 
-        // Spawn đích (cột sáng)
         escortDestination = Instantiate(escortDestinationPrefab, endPos, Quaternion.identity);
+        escortDestination.GetComponent<NetworkObject>().Spawn(true);
 
-        // Gán đường đi (có thể là A* hoặc navmesh, ở đây demo 2 điểm start→end)
         escortInstance.GetComponent<EscortObject>().pathPoints = new Transform[] {
             escortDestination.transform
         };
     }
 
     public void EndEscortEvent(bool success) {
-        EndEvent(success);
+        if (escortInstance != null) {
+            escortInstance.GetComponent<NetworkObject>().Despawn(true);
+            Destroy(escortInstance);
+        }
+        if (escortDestination != null) {
+            escortDestination.GetComponent<NetworkObject>().Despawn(true);
+            Destroy(escortDestination);
+        }
 
-        if (escortInstance != null) Destroy(escortInstance);
-        if (escortDestination != null) Destroy(escortDestination);
+        EndEvent(success);
     }
 
+    // ----- ClientRpc UI wrappers -----
+    [ClientRpc]
+    private void ShowEventTimerClientRpc(float duration)
+    {
+        if (UIManager.Instance != null) UIManager.Instance.ShowEventTimer(duration);
+    }
+
+    [ClientRpc]
+    private void UpdateEventTimerClientRpc(float timeLeft)
+    {
+        if (UIManager.Instance != null) UIManager.Instance.UpdateEventTimer(timeLeft);
+    }
+
+    [ClientRpc]
+    private void HideEventTimerClientRpc()
+    {
+        if (UIManager.Instance != null) UIManager.Instance.HideEventTimer();
+    }
+
+    [ClientRpc]
+    private void HideKillProgressClientRpc()
+    {
+        if (UIManager.Instance != null) UIManager.Instance.HideKillProgress();
+    }
+
+    [ClientRpc]
+    private void ActiveKillProgressClientRpc()
+    {
+        if (UIManager.Instance != null) UIManager.Instance.ActiveKillProgress();
+    }
+
+    [ClientRpc]
+    private void UpdateKillProgressClientRpc(int current, int max)
+    {
+        if (UIManager.Instance != null) UIManager.Instance.UpdateKillProgress(current, max);
+    }
 }

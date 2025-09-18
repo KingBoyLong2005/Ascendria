@@ -1,20 +1,46 @@
 using UnityEngine;
+using Unity.Netcode;
 
-public class Enemy : MonoBehaviour {
-    public int hp = 1;
+public class Enemy : NetworkBehaviour
+{
+    public NetworkVariable<int> hp = new NetworkVariable<int>(
+        1, // default hp
+        NetworkVariableReadPermission.Everyone,
+        NetworkVariableWritePermission.Server
+    );
 
-    public void TakeDamage(int dmg) {
-        hp -= dmg;
-        if (hp <= 0) Die();
+    public override void OnNetworkSpawn()
+    {
+        if (IsServer)
+        {
+            hp.Value = 1; // reset máu khi spawn
+        }
     }
 
-    void Die() {
+    [ServerRpc(RequireOwnership = false)]
+    public void TakeDamageServerRpc(int dmg, ServerRpcParams rpcParams = default)
+    {
+        if (!IsServer) return;
+
+        hp.Value -= dmg;
+        if (hp.Value <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
         GameManager.Instance.AddKill();
-        Destroy(gameObject);
+        GetComponent<NetworkObject>().Despawn(); // đồng bộ xóa enemy
     }
 
-    // Tạm test bằng phím chuột trái bắn chết
-    void OnMouseDown() {
-        TakeDamage(1);
+    // Tạm test bằng click chuột trái
+    private void OnMouseDown()
+    {
+        if (IsOwner || IsClient) // client bắn thì gọi RPC lên server
+        {
+            TakeDamageServerRpc(1);
+        }
     }
 }

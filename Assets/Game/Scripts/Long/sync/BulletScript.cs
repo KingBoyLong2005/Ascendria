@@ -41,51 +41,40 @@ public class BulletScript : NetworkBehaviour
     {
         if (!IsServer) return;
 
-        // Tránh đạn va chạm với chính người bắn
-        var playerHealth = collision.transform.GetComponent<PlayerHealth>();
-        if (collision.transform.CompareTag("Player"))
+        var rootObj = collision.transform.root;
+        var netObj = rootObj.GetComponent<NetworkObject>();
+        var playerHealth = rootObj.GetComponent<PlayerHealth>();
+
+        if (rootObj.CompareTag("Player"))
         {
-            var netObj = collision.transform.GetComponent<NetworkObject>();
-            if (playerHealth != null)
+            if (netObj != null && playerHealth != null)
             {
-                if (netObj != null && netObj.OwnerClientId != creatorClientId)
+                // Tránh tự bắn vào mình
+                if (netObj.OwnerClientId != creatorClientId)
                 {
-                    playerHealth.ApplyDamage(5, netObj.OwnerClientId);
+                    playerHealth.ApplyDamage(5, creatorClientId);
                     GetComponent<NetworkObject>().Despawn();
-                    return;
-                }
-                else
-                {
-                    Debug.LogWarning("netobj null");
                 }
             }
             else
             {
-                Debug.LogWarning("Playerhealth null");
+                Debug.LogWarning("Player hoặc NetworkObject null trên root");
             }
         }
-
-        var enemyHealth = collision.transform.GetComponent<Enemy>();
-        if (collision.transform.CompareTag("Enemy"))
+        else if (rootObj.CompareTag("Enemy"))
         {
+            var enemyHealth = rootObj.GetComponent<Enemy>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1);
-                return;
+                enemyHealth.TakeDamageServerRpc(1);
+                GetComponent<NetworkObject>().Despawn();
             }
             else
             {
-                Debug.LogWarning("Enemyhealth null");
+                Debug.LogWarning("EnemyHealth null");
             }
         }
-
-        // Trúng tường
-        // if (other.CompareTag("Wall"))
-        // {
-        //     var wall = other.GetComponent<WallHealth>();
-        //     if (wall != null) wall.TakeDamage(1);
-        //     GetComponent<NetworkObject>().Despawn();
-        // }
     }
+
     
 }
