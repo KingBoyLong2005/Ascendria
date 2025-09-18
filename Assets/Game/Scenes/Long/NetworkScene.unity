@@ -1557,6 +1557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 863431277}
+  - component: {fileID: 863431278}
   - component: {fileID: 863431276}
   m_Layer: 0
   m_Name: EventManager
@@ -1577,11 +1578,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5c7a1842c5b7e40a82ffffafd4a8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   flagPrefab: {fileID: 785612010573231651, guid: 160d9f434a11d664fba637827f60ad06, type: 3}
   orbPrefab: {fileID: 7844961397587246170, guid: 52488054858df4f41bdc4454a27ec048, type: 3}
   escortPrefab: {fileID: 8588583030218913053, guid: cac5fed8fdd5d6f44a4e1e512bfbf246, type: 3}
   escortDestinationPrefab: {fileID: 4048698536347367490, guid: 7cba67417b03d594ea26794dc85133d2, type: 3}
-  eventDuration: 15
+  eventDuration: 60
 --- !u!4 &863431277
 Transform:
   m_ObjectHideFlags: 0
@@ -1597,6 +1599,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &863431278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863431275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1268811181
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &887722262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,6 +2732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1437671236}
+  - component: {fileID: 1437671237}
   - component: {fileID: 1437671235}
   m_Layer: 0
   m_Name: EnemySpawner
@@ -2725,6 +2753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0ba5c93fab20b46adfaf7abeafbd49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   enemyPrefab: {fileID: 6183459272184789502, guid: 82f3eb2fa68b26745a593482c938a9a1, type: 3}
   spawnPoints:
   - {fileID: 659465926}
@@ -2748,6 +2777,31 @@ Transform:
   - {fileID: 1642120970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437671237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437671234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 933720556
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1438432740
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,7 +4313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845276930943762971, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000076293945
+      value: -0.000045776367
       objectReference: {fileID: 0}
     - target: {fileID: 4845637959249703711, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4676,6 +4730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981193081}
+  - component: {fileID: 1981193082}
   - component: {fileID: 1981193080}
   m_Layer: 0
   m_Name: GameManager
@@ -4696,8 +4751,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c3543b52cefed46a33b4f34046c0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPhase: 0
-  killCount: 0
+  ShowTopMostFoldoutHeaderGroup: 1
+  currentPhase:
+    m_InternalValue: 0
+  killCount:
+    m_InternalValue: 0
   killsToTriggerEvent: 5
 --- !u!4 &1981193081
 Transform:
@@ -4714,6 +4772,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981193082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981193079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 4272094445
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1983168899
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,7 +5044,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 2095814263}
-    PlayerPrefab: {fileID: 8435692737921980358, guid: d6070038e60bb6a428e96e43e47dd67e, type: 3}
+    PlayerPrefab: {fileID: 1925873226565265906, guid: b59e0666699654c44bd66e33eb92af64, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: cee659497c7c79749bb13145fabe64f1, type: 2}

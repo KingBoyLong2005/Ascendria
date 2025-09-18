@@ -1,6 +1,9 @@
-﻿﻿using System;
+﻿using System;
 using UnityEngine;
-#if ENABLE_INPUT_SYSTEM 
+using Unity.Netcode;
+using Unity.Cinemachine;
+
+#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 //using UnityEngine.InputSystem.XR;
 #endif
@@ -14,7 +17,7 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM 
     [RequireComponent(typeof(PlayerInput))]
 #endif
-    public class ThirdPersonController : MonoBehaviour
+    public class ThirdPersonControllerLong : NetworkBehaviour
     {
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
@@ -125,19 +128,23 @@ namespace StarterAssets
         }
 
 
-        private void Awake()
+        // private void Awake()
+        // {
+        //     // get a reference to our main camera
+        //     if (_mainCamera == null)
+        //     {
+        //         _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        //     }
+        // }
+
+        private void Start()
         {
-            // get a reference to our main camera
             if (_mainCamera == null)
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
-        }
-
-        private void Start()
-        {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
+
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();

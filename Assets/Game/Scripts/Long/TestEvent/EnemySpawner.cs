@@ -1,39 +1,40 @@
-using System.Threading;
 using UnityEngine;
+using Unity.Netcode;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : NetworkBehaviour
 {
     public static EnemySpawner Instance;
 
-    public GameObject enemyPrefab; // tạm dùng Cube/Sphere
+    public GameObject enemyPrefab; // Cube/Sphere prefab, phải có NetworkObject
     public Transform[] spawnPoints;
-
-    private float TimeSpawn = 0f;
-    private float TimeReset = 100f;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        SpawnNormalWave();
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        if (IsServer)
+        {
+            // spawn wave đầu khi server start
+            SpawnNormalWave();
+        }
     }
 
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.I))
-        // {
-        //     SpawnNormalWave();
-        // }
+        if (!IsServer) return; // chỉ server mới spawn
 
-        TimeSpawn += Time.deltaTime * 1;
-        if (TimeSpawn < 0)
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            TimeSpawn = TimeReset;
             SpawnNormalWave();
         }
     }
+
     public void SpawnNormalWave()
     {
-        Debug.Log("Spawn wave thường");
+        Debug.Log("[SERVER] Spawn wave thường");
         for (int i = 0; i < 5; i++)
         {
             SpawnEnemy();
@@ -42,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEventEnemies()
     {
-        Debug.Log("Spawn quái cho event");
+        Debug.Log("[SERVER] Spawn quái cho event");
         for (int i = 0; i < 5; i++)
         {
             SpawnEnemy();
@@ -52,11 +53,15 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         int index = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefab, spawnPoints[index].position, Quaternion.identity);
+        Vector3 spawnPos = spawnPoints[index].position;
+
+        GameObject enemy = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+        enemy.GetComponent<NetworkObject>().Spawn(true);
     }
-    
+
     // Hàm mới: chỉ lấy vị trí random
-    public Vector3 GetRandomSpawnPoint() {
+    public Vector3 GetRandomSpawnPoint()
+    {
         int index = Random.Range(0, spawnPoints.Length);
         return spawnPoints[index].position;
     }
