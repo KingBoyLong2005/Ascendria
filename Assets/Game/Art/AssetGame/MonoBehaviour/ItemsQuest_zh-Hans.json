@@ -1,0 +1,42 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsQuest_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2548083754371641785
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9788588032,
+      "m_Localized": "黄金钥匙",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40897740800,
+      "m_Localized": "不知道能打开什么呢……",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

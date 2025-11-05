@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "QuestsUi Shared Data",
+  "m_TableCollectionName": "QuestsUi",
+  "m_TableCollectionNameGuidString": "e423ec7b28ab4284a866e7a2bb7e080a",
+  "m_Entries": [
+    {
+      "m_Id": 3223216431104,
+      "m_Key": "CLAIM_REWARD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26860864060653568,
+      "m_Key": "HIDE_COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607401917186139
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607401917186139,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

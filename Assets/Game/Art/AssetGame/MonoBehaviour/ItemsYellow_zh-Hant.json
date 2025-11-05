@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350994
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "武器升級現在可以有額外+1的屬性",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} 現在會觸發 {bloodmark} 疊加。還有 {value1} 機率施加 {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} 機率 BONK 一個敵人，造成 {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "治療超過 {stat1} 後可以使你 {stat2} 增加 {value1}。同時增加 {value2} {stat3}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "擊中敵人時有{value1}機率召喚龍焰。火焰傷害可附加燃燒效果。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "對空中敵人造成 {value1} {stat1}。有 {value2} 的機率將敵人擊飛。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "對敵人發射能量球。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "暴擊有機會變成超級暴擊。你可以用這把叉子吃很多意大利麵！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}。治療將對附近的敵人造成傷害。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "打中敵人時有 {value1} 的機率造成冰霜傷害。冰霜可將敵人凍結。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} 機率 {execute} 一個敵人。執行 {execute} 提升 {stat1} {value2}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "打中敵人時有 {value1} 的機率召喚雷電。雷電可令敵人暈眩。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 機率觸發擊中效果",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "擊殺敵人時召喚 {value1} 個追蹤靈魂",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "當生命值低於{value1}{stat1}時，時間會變慢並造成{value2}傷害。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "攻擊有 {value1} 的機率爆炸，對周圍敵人造成 {value2} {stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "定期吸引你周圍的XP",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "鐵砧",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "血腥菜刀",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "大BONK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "厚重護甲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "龍焰",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "鷹爪",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "能量核心",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "巨型叉子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "聖書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "冰塊",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "喬的匕首",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "閃電球",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "爆能燈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "靈魂收割者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "極速仔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "辣味肉丸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "吸吸磁鐵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "力量手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "打中敵人時有{chance}機率引發巨型爆炸，傷害並擊退敵人。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350994
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "金色戒指",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "看起來好像沒啥用…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350994,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

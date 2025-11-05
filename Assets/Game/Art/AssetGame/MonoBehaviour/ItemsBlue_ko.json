@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350869
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "모든 무기 {stat1} {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "근처 적에게 {value1} 추가 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "가만히 서 있으면 체력 회복",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "피해 받으면 {stat1} 증가. 또한 {value1} {stat1} 획득",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "상자 열 때 {stat1} {value1} 증가",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "치명타 시 {value1} 확률로 체력 회복",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "적 처치 시 {stat1} {value1} 증가 (최대 {value2} 중첩)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "적 처치 시 추가 경험치 조각 {value1} 확률로 생성",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "피해를 받을 때 근처 적에게 전기 충격 발사",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "점프 더 높고 멀리 가능",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "피해 받을 때 추가 골드 획득",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "움직일 때 돈 벌기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "가만히 서 있을수록 데미지 증가. 최대 {value1} 데미지",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "케빈은 너를 싫어한다. 적을 공격할 때마다 {value1} 확률로 케빈이 너를 때릴 것이다. 케빈은 너를 죽일 수 없지만, 정말 그러고 싶어한다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "회피 후 다음 공격에서 {value1} 피해 주고, {stat1}과 {stat2} 임시 상승",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "백팩",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "맥주",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "너클",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "캠프파이어",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "겁쟁이 망토",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "신용카드 (초록)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "신용카드 (빨강)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "악마의 검",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "악마의 피",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "에코 조각",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "전기 플러그",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "깃털",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "황금 방패",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "황금 스니커즈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "게으름 주스",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "케빈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "흡혈 크리스탈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "팬텀 망토",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "천둥 장갑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "곰팡이 장갑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "적을 때리면 번개 쾅! {time_seconds}초 쿨타임.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "적을 맞추면 곰팡이 독구름 생성! 장갑은 축축하고 끈적끈적.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "{charge_shrine} 충전 시 회복 존으로 변함! 다음 스테이지에 {value}개 생성.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350869
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "비콘",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350869,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

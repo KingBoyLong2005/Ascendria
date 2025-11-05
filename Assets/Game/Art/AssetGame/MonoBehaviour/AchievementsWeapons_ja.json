@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409173
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "ダメージを受けずに{value}分耐えろ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "{sir_oofie}で{armor_stat}を使って{value}ダメージをブロックせよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "隠されたバナナを見つけろ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "{sword} を使って {value} 体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "{precision_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "{clank}として{value}体の敵を撃破せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{desert}の{tier}2で、{tumbleweed}を壊すと{value}%の確率で見つかるぜ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "{lightning_staff}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "{desert}で砂嵐中に{charge_shrine}をチャージせよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "{ice_cube}で{value}体の敵を凍結せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "{slutty_rockets}で{value}体の敵を撃破せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "{sword}を使って{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{desert}の{tier}1で{tumbleweed}を壊すと{value}%の確率で見つかる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "{bloody_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "{knockback_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "{desert}で{scorpionussy}の{miniboss}を{value}回倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "{luck_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "{desert}で{fox}として{value}の{wisp}を撃破せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "{tony}として {desert} のティア{tier}をクリアせよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "アイテムやパワーアップを取らず、祭壇も使わずに{stage_boss}を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "10分以内に{difficulty_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409173
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409173,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

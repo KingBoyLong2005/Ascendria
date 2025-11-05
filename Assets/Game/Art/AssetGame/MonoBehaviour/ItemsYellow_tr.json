@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039351001
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Silah Yükseltmeleri artık +1 özellik kazanabilir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} artık {bloodmark} biriktirir. Ayrıca {bloodmark} uygulama şansını {value1} kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} ihtimalle bir düşmanı BONK'larsın ve {value2} {stat1} hasar verirsin",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "{stat1} üzerindeki iyileştirmeler, {stat2} yapmana izin verir ve {value1} artırır. Ayrıca {value2} {stat3} verir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "Düşmana vurduğunda {value1} ihtimalle ejder ateşi samim. Ateş hasarı artık yanma uygulayabilir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Havadaki düşmanlara {value1} {stat1} vur. {value2} ihtimalle düşmanı havaya fırlat.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Düşmanlara enerji küreleri fırlat.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "Kritik vuruşlar Mega Kritiğe dönüşme şansına sahip. Bu çatalla tonlarca makarna yiyebilirsin!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. İyileştirme artık yakındaki düşmanlara zarar verir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "Düşmana vurduğunda {value1} ihtimalle buz hasarı ver. Buz artık düşmanları dondurabilir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} ihtimalle bir düşmanı {execute}. {execute} gerçekleştirmek {value2} kadar {stat1} artırır.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "Düşmana vurduğunda {value1} ihtimalle yıldırım çağır. Yıldırım artık düşmanları sersemletebilir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "Vuruş etkilerini tetikleme şansı +1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Bir düşmanı öldürdüğünde {value1} kılavuzlu ruh çağırır",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "{value1} {stat1} altında hasar aldığında zaman yavaşlar ve {value2} hasar verirsin.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Saldırılar, {value1} ihtimalle patlayarak çevredeki düşmanlara {value2} {stat1} verir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Periyodik olarak çevrendeki tüm XP'yi çeker",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Örs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Kanlı Satır",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Büyük Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonk Plaka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Ejder Ateşi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Kartal Pençesi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Enerji Çekirdeği",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Dev Çatal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Kutsal Kitap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Buz Küpü",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Joe'nun Hançeri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Yıldırım Küresi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Aşırı Güçlü Lamba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Ruh Hasatçısı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Hızlı Çocuk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Baharatlı Köfte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Sucky Mıknatıs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Güç Eldivenleri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "Düşmana vurduğunda {chance} ihtimalle devasa bir patlama yap, düşmanları hasara uğrat ve savur.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351001
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Altın Yüzük",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "Bir işe yarıyormuş gibi görünmüyor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039351001,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

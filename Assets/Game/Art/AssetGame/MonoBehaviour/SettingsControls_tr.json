@@ -1,0 +1,182 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsControls_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -9002525880708672675
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 13558849536,
+      "m_Localized": "Duyarlılık",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16603914240,
+      "m_Localized": "Görünüm Yumuşatma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20051632128,
+      "m_Localized": "Kumanda Duyarlılığı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23344160768,
+      "m_Localized": "Yatay Eksen Ters",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25827188736,
+      "m_Localized": "Dikey Eksen Ters",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28230524928,
+      "m_Localized": "Yere Çömelmeyi Basılı Tut",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32680681472,
+      "m_Localized": "Nişan Almayı Basılı Tut",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35163709440,
+      "m_Localized": "İleri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37273444352,
+      "m_Localized": "Geri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40326897664,
+      "m_Localized": "Sola",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 47062949888,
+      "m_Localized": "Sağa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49768275968,
+      "m_Localized": "Zıpla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52737843200,
+      "m_Localized": "Etkileşim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 54042271744,
+      "m_Localized": "Nişan Al",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 55250231296,
+      "m_Localized": "Kayıyor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 225987764224,
+      "m_Localized": "Kontrolcü",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4358561919115264,
+      "m_Localized": "Kumanda Titreşimi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17638684366077952,
+      "m_Localized": "Kamerayı oklarla döndür",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17931843310583808,
+      "m_Localized": "Kumanda koparsa duraklat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27803156565065728,
+      "m_Localized": "Hızlı Sıfırlama",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30636199503855616,
+      "m_Localized": "Sayı tuşlarıyla yükseltme seç",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39391745866334208,
+      "m_Localized": "Oyun içi harita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

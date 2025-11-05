@@ -1,0 +1,156 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_RoundOver_ru",
+  "m_LocaleId": {
+    "m_Code": "ru"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3880100333228994816
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607539022430314
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6856351744,
+      "m_Localized": "Ты откинулся{newline}может это гитгуд момент?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430314
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173345767923712,
+      "m_Localized": "НОВЫЙ РЕКОРД",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173450159955968,
+      "m_Localized": "{kills} убийств",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430314
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173467704729600,
+      "m_Localized": "# {rank} В мире",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430314
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173567650799616,
+      "m_Localized": "Топ {percentile}% игроков",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430314
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 177146872700928,
+      "m_Localized": "Серебро Получено",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176936297668608,
+      "m_Localized": "Завершено",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177964535488512,
+      "m_Localized": "Источник",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177697538678784,
+      "m_Localized": "Итог",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177755860475904,
+      "m_Localized": "Урон",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180895024390144,
+      "m_Localized": "Время в игре",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180687569920000,
+      "m_Localized": "Убийства",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181037488119808,
+      "m_Localized": "LVL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181081519923200,
+      "m_Localized": "Золота заработано",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607539022430314,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

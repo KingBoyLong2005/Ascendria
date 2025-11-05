@@ -1,0 +1,316 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Characters Shared Data",
+  "m_TableCollectionName": "Characters",
+  "m_TableCollectionNameGuidString": "f6c7c849792e6a64b8ab3a2e40469b2e",
+  "m_Entries": [
+    {
+      "m_Id": 6517481512960,
+      "m_Key": "ROBINETTE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19667685711872,
+      "m_Key": "CL4NK_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19688397185024,
+      "m_Key": "CL4NK_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14406220750848,
+      "m_Key": "BIRDO_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14407441293312,
+      "m_Key": "BIRDO_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2487837499392,
+      "m_Key": "ATHENA_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2522230792192,
+      "m_Key": "ATHENA_DESCRIPTION",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2565239185408,
+      "m_Key": "BANDIT_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2568280055808,
+      "m_Key": "BANDIT_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685133365248,
+      "m_Key": "BUSH_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2689608687616,
+      "m_Key": "BUSH_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2804318707712,
+      "m_Key": "CALCIUM_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2807925809152,
+      "m_Key": "CALCIUM_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2887793745920,
+      "m_Key": "FOX_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2891753168896,
+      "m_Key": "FOX_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2985613303808,
+      "m_Key": "JIMMY_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2988041805824,
+      "m_Key": "JIMMY_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3526166814720,
+      "m_Key": "KNIGHT_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3527295082496,
+      "m_Key": "KNIGHT_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3638968426496,
+      "m_Key": "MEGACHAD_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3640088305664,
+      "m_Key": "MEGACHAD_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3711223701504,
+      "m_Key": "MONKE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3712721068032,
+      "m_Key": "MONKE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4507256463360,
+      "m_Key": "NOELLE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4508766412800,
+      "m_Key": "NOELLE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5173664260096,
+      "m_Key": "OGRE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5174742196224,
+      "m_Key": "OGRE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6516210638848,
+      "m_Key": "ROBINETTE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442138539163648,
+      "m_Key": "HAZMAT_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442140577595392,
+      "m_Key": "HAZMAT_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274304529530880,
+      "m_Key": "SPACEMAN_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274306618294272,
+      "m_Key": "SPACEMAN_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882290591465472,
+      "m_Key": "NINJA_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882292743143424,
+      "m_Key": "NINJA_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503794055479296,
+      "m_Key": "DICEHEAD_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503795133415424,
+      "m_Key": "DICEHEAD_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162423796465664,
+      "m_Key": "VLAD_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162425415467008,
+      "m_Key": "VLAD_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037842271338496,
+      "m_Key": "CHADWELL_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037844410433536,
+      "m_Key": "CHADWELL_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 6827621553972183132
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6827621553972183132,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151670
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Améliore {agility_tome} au Niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Mourir {value} fois",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Bats un {miniboss} en {value} secondes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Obtiens {value}% de {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Survis à la {final_swarm} pendant {value} secondes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Acheter {value} coffres",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Faire {value} coups critiques",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Élimine {value} ennemis cactus avec les dégâts de {thorns_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Vaincs un {stage_boss} en moins de {value} secondes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Améliore {cooldown_tome} au Niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Améliore {regen_tome} au niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Tue {value} ennemis sans bouger",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Récupère {value} {leeching_crystal} en une partie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Tue {value} ennemis avec {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Augmente {max_hp} avec {blood_magic} {value} fois",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Soigne-toi de {value} HP avec {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Casse {value} pots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Améliore {xp_tome} au niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Améliore {cooldown_tome} et {agility_tome} au niveau {value} en une partie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Survis à la {final_swarm} pendant {value} minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Tue {value} ennemis avec des dégâts de {poison}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Améliore {attraction_tome} au niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Tue {value} ennemis avec {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Tue {value} ennemis avec {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Tue {value} ennemis avec {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Bats un {stage_boss} avec moins de {value}% de vie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Atteins le niveau {value} en tant que {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Tue {value} ennemis en tant que {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Survis à la {final_swarm} pendant {value} minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Termine {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Tue {value} ennemis avec des dégâts de feu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Vaincs {final_boss} {value} fois",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Atteins le niveau {value} en tant que {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Tue le premier {stage_boss} sans te prendre un seul dégât dans ce run",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Tue {value} ennemis avec {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Tue {value} ennemis avec des dégâts de foudre",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Termine un niveau avec au moins {value} {cursed_shrine} activé",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Atteins {maxhp_stat} à {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Termine chaque {charge_shrine} sur la carte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Obtiens {value} éliminations avec {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Vaincre {stage_boss} avec {athena}, en portant le coup final avec {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151670
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151670,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

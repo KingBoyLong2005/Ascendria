@@ -1,0 +1,155 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Game_Ui Shared Data",
+  "m_TableCollectionName": "Game_Ui",
+  "m_TableCollectionNameGuidString": "08f8bce21f8587543946404546b7007c",
+  "m_Entries": [
+    {
+      "m_Id": 244802925600768,
+      "m_Key": "INVENTORY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268909415211008,
+      "m_Key": "PLAYER_STATS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 303830817021952,
+      "m_Key": "CHEST_OPEN",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305088785260544,
+      "m_Key": "ENCOUNTER_LEAVE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305144254930944,
+      "m_Key": "ENCOUNTER_TAKE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305183157100544,
+      "m_Key": "ENCOUNTER_BANISH",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305560313110528,
+      "m_Key": "ENCOUNTER_REFRESH",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310397859766272,
+      "m_Key": "ENCOUNTER_SKIP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310538767409152,
+      "m_Key": "HEADER_LEVELUP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310574586765312,
+      "m_Key": "HEADER_MOAI",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310599391879168,
+      "m_Key": "HEADER_SHADY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318971763728384,
+      "m_Key": "SHRINE_CHARGE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318991497928704,
+      "m_Key": "SHRINE_BALANCE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319185828421632,
+      "m_Key": "SHRINE_CHARGE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319750042001408,
+      "m_Key": "IGNORE_OFFERS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328058807230464,
+      "m_Key": "BALANCE_SHRINE_TEXT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 379218125627392,
+      "m_Key": "SHRINE_CHARGE_UPGRADE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607514405273685
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607514405273685,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

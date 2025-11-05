@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Ui_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6532078280720508105
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607538137956448
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 244802925600768,
+      "m_Localized": "인벤토리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268909415211008,
+      "m_Localized": "플레이어 스탯",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 303830817021952,
+      "m_Localized": "열기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305183157100544,
+      "m_Localized": "추방",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305144254930944,
+      "m_Localized": "가져가기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305088785260544,
+      "m_Localized": "떠나기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305560313110528,
+      "m_Localized": "다시고르기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310397859766272,
+      "m_Localized": "패스하기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310538767409152,
+      "m_Localized": "업글 기회",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310574586765312,
+      "m_Localized": "아이템 구경",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310599391879168,
+      "m_Localized": "수상한 가게",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318971763728384,
+      "m_Localized": "성소가 너에게 보상을 준다!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318991497928704,
+      "m_Localized": "성소가 완전 공평한 거래를 제안해!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319185828421632,
+      "m_Localized": "충전의 성소",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319750042001408,
+      "m_Localized": "제안 무시하기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328058807230464,
+      "m_Localized": "성소가 공평한 옵션을 제안합니다:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 379218125627392,
+      "m_Localized": "획득: {upgrade}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607538137956448
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607538137956448,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Maps_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6096067254600861082
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160207927763009746
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 89479946240,
+      "m_Localized": "Grüner Wald",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1017352265728,
+      "m_Localized": "Tiefer Wald",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1027032719360,
+      "m_Localized": "Verfluchter Wald",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48052805632,
+      "m_Localized": "Wald",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1411541344256,
+      "m_Localized": "Ein grüner Ort voller Bäume, Vögel und geiler Stimmung. Und ja, alles will dich umlegen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148044894871552,
+      "m_Localized": "Nur gute Vibes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148086942769152,
+      "m_Localized": "Irgendwas stimmt nicht",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148098963644416,
+      "m_Localized": "äh oh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12064487162118144,
+      "m_Localized": "Riss von {mapname}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160207927763009746
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12346566399524864,
+      "m_Localized": "Staubige Wüste",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346612180353024,
+      "m_Localized": "Dämmerwüste",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346663346667520,
+      "m_Localized": "Versengte Wüste",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346721592967168,
+      "m_Localized": "Riecht nach warmem Sand... Ich hasse warmen Sand.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346478096842752,
+      "m_Localized": "Wüste",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346536393474048,
+      "m_Localized": "Ein heißer, trockener und staubiger Ort.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346969312755712,
+      "m_Localized": "Oh Mist",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346967676977152,
+      "m_Localized": "Trocken und staubig... Erinnert mich an letzte Nacht.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160207927763009746,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350980
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Zwiększ {stat1} o {value1} na każde {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Za każde przemierzone {value1} jednostki przywołaj Boba (on już nie żyje)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Zwiększ {stat1} o {value1} za każde zabójstwo (max {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Zwiększa {stat1} im mniej masz HP. Czacie, lockuję",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Zyskaj {stat1} i {stat2} za każdego przeciwnika zakażonego trucizną",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Krytyczne trafienia mają {value1} szansę na wybuch, zadając {value2} obrażeń pobliskim wrogom",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Odbij wszystkie nadchodzące obrażenia z powrotem do atakującego i zdobądź chwilową nieśmiertelność",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Im szybciej się poruszasz, tym więcej zdobywasz {stat1}. Maks {value1} na stos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Zadawaj {value1} więcej {stat1} będąc w powietrzu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "Odłamki XP teraz przecinają wrogów, zadając obrażenia. Wiedza naprawdę boli",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} szansa na wystrzelenie rakiet po zabiciu wroga",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Zyskaj {value1} {stat1} za każde {value2} {stat2}. Również zyskaj {value3} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Uwolnij toksyczne odpady przy otrzymaniu obrażeń, zatruwając wszystkich pobliskich wrogów",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Przy obrażeniu, które by cię zabiło, zatrzymaj czas. Działa tylko raz",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Mięsisty Pierścień",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Martwy)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Demoniczna Dusza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Okulary Gracza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Maska Gazowa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Tajemniczy Eliksir Babci",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Lustro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Rolki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Szal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Rozbita Wiedza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Luzacka Armata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Kolczasta Tarcza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Toksyczna Beczka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Rękawice Slurp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Przeklęte Chwyty",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Użyj krwawej magii po trafieniu wroga – obrażenia wokół i leczenie {value}. Odnowienie: {time_seconds} sek.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} szansy na rzut klątwą przy trafieniu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Maska Quina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Obrażenia od kolców mają {value1} szansy na wybuch, zadając obrażenia pobliskim wrogom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350980
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350980,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

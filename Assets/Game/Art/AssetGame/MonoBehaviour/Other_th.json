@@ -1,0 +1,193 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Other_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6431438436825214902
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715365
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 5841330176,
+      "m_Localized": "จำนวนรอบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19275685888,
+      "m_Localized": "อันดับ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48220947062784,
+      "m_Localized": "ความท้าทาย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48273694629888,
+      "m_Localized": "ระดับแผนที่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49788157140992,
+      "m_Localized": "ระดับ {tier}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715365
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 59144428822528,
+      "m_Localized": "เสร็จแล้ว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59155489202176,
+      "m_Localized": "ยังไม่เสร็จ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107249635401728,
+      "m_Localized": "เงิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 152229783511040,
+      "m_Localized": "ต้องการ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2488414023426048,
+      "m_Localized": "ทอง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901787545534464,
+      "m_Localized": "ง่าย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901790380883968,
+      "m_Localized": "ธรรมดา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901793035878400,
+      "m_Localized": "ยาก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901795149807616,
+      "m_Localized": "พัง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501400353964032,
+      "m_Localized": "บอสด่าน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501402186874880,
+      "m_Localized": "บอสสุดท้าย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501542654115840,
+      "m_Localized": "มินิบอส",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501575499710464,
+      "m_Localized": "เอลีท",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20782181042487296,
+      "m_Localized": "พยายามได้ดีนี่ ไอ้เจ้าเก่งนัก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20783149427589120,
+      "m_Localized": "เพื่อน แค่ทำชาเลนจ์แบบปกติ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21882863065628672,
+      "m_Localized": "ด่าน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715365,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

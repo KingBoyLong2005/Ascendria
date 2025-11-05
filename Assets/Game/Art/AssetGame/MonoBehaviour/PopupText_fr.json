@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PopupText_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 9026924380927958244
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607508251181152
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1510908600320,
+      "m_Localized": "Il te faut plus d'objets {rarity}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181152
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Localized": "Max {maxAmount} {itemName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181152
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 412076449792,
+      "m_Localized": "Pas assez d'argent",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Localized": "Impossible de bannir un objet possédé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Localized": "Plus de bannissements disponibles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Localized": "Personnage pas encore débloqué",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Localized": "Niveau max",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Localized": "Pas assez d'argent en argent",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Localized": "Pas de remboursement possible",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181152,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

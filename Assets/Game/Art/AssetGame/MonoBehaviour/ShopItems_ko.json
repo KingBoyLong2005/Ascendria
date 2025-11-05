@@ -1,0 +1,175 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ShopItems_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6549869673150466286
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517862019104859
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6483476480,
+      "m_Localized": "붐박스",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Localized": "재생할 음악을 수동으로 선택",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Localized": "구매한 {weapons}, {tomes} 그리고 {items}을 켜거나 꺼라.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Localized": "토글러",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Localized": "새로고침",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Localized": "레벨업 선택지 새로고침",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Localized": "건너뛰기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Localized": "레벨업 선택지 건너뛰기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Localized": "제거",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Localized": "{weapons}, {tomes} 그리고 {items} 제거. 해당 러닝에서 더 이상 등장하지 않음.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Localized": "{weapon} 슬롯",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Localized": "{weapons} 더 많이 장착",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Localized": "{tome} 슬롯",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Localized": "{tomes} 더 많이 장착",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Localized": "{silver} 수입 증가",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104859
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517862019104859,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

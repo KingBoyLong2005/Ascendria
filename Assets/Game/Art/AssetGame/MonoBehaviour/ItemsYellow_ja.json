@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039351004
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "武器のアップグレードが+1のステータスを持つようになる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1}が{bloodmark}スタックを発動！さらに{value1}チャンスで{bloodmark}を付与！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1}の確率で敵にBONKし、{value2} {stat1}ダメージを与える",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "回復が{stat1}を超えると{value1}だけ{stat2}できる。また、{value2}の{stat3}を与える",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "敵を攻撃すると{value1}の確率でドラゴンファイアを召喚。火のダメージで燃焼を付与できる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "空中の敵に{value1}の{stat1}を与える。{value2}の確率で敵を空中に打ち上げる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "敵に向かってエナジーオーブを発射する",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "クリティカルがメガクリティカルになるチャンスがある。このフォークならスパゲッティをたくさん食べられる！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}、{value2} {stat2}。回復が近くの敵にダメージを伝えるようになる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "敵を攻撃したときに{value1}の確率で氷ダメージを与える。氷が敵を凍らせる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1}の確率で敵を{execute}。{execute}成功時に{stat1}が上昇（{value2}）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "敵を攻撃したときに{value1}の確率で落雷を召喚。雷が敵をスタンさせる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "ヒット時に効果を発生させる確率が+1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "敵を倒すと{value1}個の追尾ソウルを召喚",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "{value1}{stat1}以下でダメージを受けると時間がスローに！さらに{value2}ダメージを与える。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "攻撃が{value1}の確率で爆発し、周囲の敵に{value2} {stat1}を与える",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "定期的に周囲のXPを引き寄せる",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "金床",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "血まみれのクリーバー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "ビッグボンク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "チョンクプレート",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "ドラゴンファイア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "イーグルクロー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "エナジーコア",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "ジャイアントフォーク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "聖なる書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "アイスキューブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "ジョーのダガー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "ライトニングオーブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "オーバーパワードランプ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "ソウルハーベスター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "スピードボーイ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "スパイシーミートボール",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "吸引磁石",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "パワーグローブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "敵ヒットで{chance}の確率で大爆発！敵にダメージ＆吹き飛ばす。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351004
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "黄金のリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "なんか効果ないみたい…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039351004,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

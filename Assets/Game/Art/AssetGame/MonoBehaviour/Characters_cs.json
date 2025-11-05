@@ -1,0 +1,308 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Characters_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 130002324225702167
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2487837499392,
+      "m_Localized": "Athena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2565239185408,
+      "m_Localized": "Bandita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2568280055808,
+      "m_Localized": "Mazanec s ostrým mečem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685133365248,
+      "m_Localized": "Křoví",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2689608687616,
+      "m_Localized": "Prostě obyčejné křoví, nic k vidění.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2804318707712,
+      "m_Localized": "Vápník",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2807925809152,
+      "m_Localized": "Nemrtvý frajer, co předvádí totální pecky triky.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2891753168896,
+      "m_Localized": "Šikovný na nohou a až podezřele šťastný.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2887793745920,
+      "m_Localized": "Liška",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2985613303808,
+      "m_Localized": "Tony McZoom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2988041805824,
+      "m_Localized": "Tony si nevybral hoverboard - hoverboard si vybral jeho.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3526166814720,
+      "m_Localized": "Sir Oofie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3527295082496,
+      "m_Localized": "Je pomalý, ale jeho zbroj z něj dělá pořádného bijce.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3640088305664,
+      "m_Localized": "Drží dokonalou, nejmocnější čelist.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3638968426496,
+      "m_Localized": "Megachad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3711223701504,
+      "m_Localized": "Majmoun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3712721068032,
+      "m_Localized": "Nikdo neví, odkud má ty brýle. Nikdo se neptá.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4507256463360,
+      "m_Localized": "Noelle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4508766412800,
+      "m_Localized": "Megabonk Discord mě dotlačil k vytvoření téhle postavy.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5173664260096,
+      "m_Localized": "Ogřík",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5174742196224,
+      "m_Localized": "Velký a silný, s kritickým myšlením mokré ponožky.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6517481512960,
+      "m_Localized": "Krade chudým, dává bohatým.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2522230792192,
+      "m_Localized": "Kapitán Amerika, ale objednaný z Temu (se slevou)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6516210638848,
+      "m_Localized": "Robinette",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14406220750848,
+      "m_Localized": "Birdo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14407441293312,
+      "m_Localized": "Ty brýle jsou pro tvoji bezpečnost, ne jeho.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19667685711872,
+      "m_Localized": "CL4NK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19688397185024,
+      "m_Localized": "Nevím, jak se jeho jméno vyslovuje.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442138539163648,
+      "m_Localized": "Amog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442140577595392,
+      "m_Localized": "Nikdo nezná jeho pravé jméno. Všichni mu začali říkat Amog a on to nikdy neopravil.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274306618294272,
+      "m_Localized": "Kosmoparťák má zákaz vstupu na 7 planet a do většiny NASA obchodů se suvenýry.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274304529530880,
+      "m_Localized": "Kosmoparťák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882290591465472,
+      "m_Localized": "Nindža",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882292743143424,
+      "m_Localized": "Hodně rychlý a nepolapitelný. Daně neviděl od roku 2014. Je v průšvihu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503794055479296,
+      "m_Localized": "Kostková Hlava",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503795133415424,
+      "m_Localized": "Jeho oblíbené číslo je 7. Kdo mu řekne tu špatnou zprávu?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162423796465664,
+      "m_Localized": "Vlad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162425415467008,
+      "m_Localized": "Vypadá pěkně zlověstně, ale je to vlastně fakt super týpek. Vždycky tě pozdraví v obchodě. Pohodář.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037842271338496,
+      "m_Localized": "Sir Chadwell",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037844410433536,
+      "m_Localized": "Přítel manželky Sira Oofieho. Koupil mu novou zbroj a nechává ho být vzhůru po osmé. Fajn týpek!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

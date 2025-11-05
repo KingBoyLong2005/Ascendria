@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188633
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "Besiege {value} Gegner als {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188633
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "Erreiche Level {value} in einem Lauf als {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188633
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "Bezwinge einen {final_boss} auf Stufe {tier} 3 als {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188633
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "Besiege den ersten {stage_boss} in unter {value} Minuten als {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188633
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "Bringe {character} auf {rank} {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188633
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188633,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

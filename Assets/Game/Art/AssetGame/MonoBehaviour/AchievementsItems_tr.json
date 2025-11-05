@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151675
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "{agility_tome} kitabını {value} seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Lanetli Bebek: {value} kez öl",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "{miniboss}'u {value} saniye içinde yen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Skuleg: {value}% {difficulty_stat} elde et",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "{final_swarm} içinde {value} saniye hayatta kal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "{value} sandık satın al",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "{value} kez kritik vur",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "{thorns_stat} hasarıyla {value} kaktüs düşmanını öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "{stage_boss}'u {value} saniyeden kısa sürede yen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "{cooldown_tome} kitabını {value}. seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "{regen_tome} seviyesini {value} seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Durduğun yerde {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Bir turda {value} {leeching_crystal} kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "{sword} ile {value} düşmanı öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "{blood_magic} ile {max_hp} sağlığını {value} kez artır",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "{lifesteal_stat} ile {value} HP iyileştir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "{value} çömlek kır",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "{xp_tome}'ı {value}. seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Bir turda hem {cooldown_tome} hem de {agility_tome}'u {value}. seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "{final_swarm} sırasında {value} dakika hayatta kal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "{poison} hasarıyla {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "{attraction_tome} seviyesini {value}. seviyeye yükselt",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "{slutty_rockets} ile {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "{sniper_rifle} ile {value} düşmanı öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "{Amog} kullanarak {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "{stage_boss}'u {value}% HP'nin altındayken yen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "{Calcium} olarak seviye {value} ol",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "{Birdo} olarak {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "{final_swarm} sırasında {value} dakika hayatta kal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "{value} {challenges} tamamla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "(Dragonfire) = Ateş hasarıyla {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "{final_boss}'ı {value} kez yen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "{vlad} olarak seviye {value} ol",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Bu turda ilk {stage_boss}'u hasar almadan yen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "{dexecutioner} kullanarak {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Yıldırım hasarıyla {value} düşman öldür",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Bir sahneyi en az {value} {cursed_shrine} aktifken tamamla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "{maxhp_stat} değerini {value} yap",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Haritadaki tüm {charge_shrine}'ları tamamla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "{frostwalker} ile {value} düşmanı patakla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "{athena} olarak {aegis} ile son vuruşu yaparak bir {stage_boss} yen!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151675
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151675,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

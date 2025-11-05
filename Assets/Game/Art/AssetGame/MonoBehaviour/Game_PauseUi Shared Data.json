@@ -1,0 +1,78 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Game_PauseUi Shared Data",
+  "m_TableCollectionName": "Game_PauseUi",
+  "m_TableCollectionNameGuidString": "93ebdab9eb1646f4cb1a57bd5e3c9c57",
+  "m_Entries": [
+    {
+      "m_Id": 4612399104,
+      "m_Key": "PAUSED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 967192584192,
+      "m_Key": "RESTART",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1390512396017664,
+      "m_Key": "RESUME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1391313877180416,
+      "m_Key": "EXIT_TO_MENU",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1392122610294784,
+      "m_Key": "SHRINE_LOGS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38739902622466048,
+      "m_Key": "MAP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607441800036454
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607441800036454,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

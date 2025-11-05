@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Ui_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6532078280720508105
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607538137956446
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 244802925600768,
+      "m_Localized": "Inventario",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268909415211008,
+      "m_Localized": "Statistiche",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 303830817021952,
+      "m_Localized": "Apri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305183157100544,
+      "m_Localized": "Ban",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305144254930944,
+      "m_Localized": "Prendi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305088785260544,
+      "m_Localized": "Lascia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305560313110528,
+      "m_Localized": "Rinfresca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310397859766272,
+      "m_Localized": "Salta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310538767409152,
+      "m_Localized": "Offerte Potenziamenti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310574586765312,
+      "m_Localized": "Offerte Oggetti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310599391879168,
+      "m_Localized": "Negozio del Tizio Losco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318971763728384,
+      "m_Localized": "Il santuario ti offre una ricompensa:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318991497928704,
+      "m_Localized": "Il santuario ti fa un'offerta completamente bilanciata:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319185828421632,
+      "m_Localized": "Santuario di Carica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319750042001408,
+      "m_Localized": "Ignora Offerte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328058807230464,
+      "m_Localized": "Il santuario ti propone un'opzione bilanciata:",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 379218125627392,
+      "m_Localized": "Ottieni {upgrade}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607538137956446
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607538137956446,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

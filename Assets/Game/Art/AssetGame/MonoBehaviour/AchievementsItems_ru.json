@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_ru",
+  "m_LocaleId": {
+    "m_Code": "ru"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151664
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Прокачай {agility_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Умри {value} раз",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Одолей {miniboss} за {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Захвати {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Выживи в {final_swarm} {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Купи {value} сундуков",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Сделай {value} критов",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Убей {value} врагов-кактусов с уроном от {thorns_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Победи {stage_boss} за менее чем {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Прокачай {cooldown_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Прокачай {regen_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Убей {value} врагов, стоя на месте",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Собери {value} {leeching_crystal} за один заход",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Убей {value} врагов с помощью {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Увеличь {max_hp} с {blood_magic} {value} раз",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Восстанови {value} HP с помощью {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Разбей {value} горшков",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Прокачай {xp_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Прокачай {cooldown_tome} и {agility_tome} до уровня {value} за один заход",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Выживи в {final_swarm} {value} минут",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Убей {value} врагов с помощью урона {poison}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Прокачай {attraction_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Убей {value} врагов с помощью {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Убей {value} врагов с {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Убей {value} врагов с помощью {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Победи {stage_boss} с менее чем {value}% оставшегося здоровья",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Достигни уровня {value} играя за {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Убей {value} врагов играя за {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Выживи в {final_swarm} {value} минут",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Пройдите {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Убей {value} врагов огненным уроном",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Победите {final_boss} {value} раз",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Достигни уровня {value} играя за {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Победи первого {stage_boss} без получения урона за весь забег",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Убей {value} врагов с помощью {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Убей {value} врагов с помощью электрического урона",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Пройди уровень с минимум {value} активированных {cursed_shrine}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Достигни {maxhp_stat} до {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Заверши каждый {charge_shrine} на карте",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Получай {value} убийств с {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Победи {stage_boss} за {athena}, нанеся финальный удар с помощью {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151664
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151664,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

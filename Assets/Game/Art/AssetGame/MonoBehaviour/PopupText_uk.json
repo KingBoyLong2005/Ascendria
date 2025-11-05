@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PopupText_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 9026924380927958244
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607508251181164
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1510908600320,
+      "m_Localized": "Потрібно більше {rarity} предметів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181164
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Localized": "Максимум {maxAmount} {itemName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181164
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 412076449792,
+      "m_Localized": "Не вистачає грошей",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Localized": "Неможливо вигнати цей предмет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Localized": "Вигнання закінчились",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Localized": "Персонаж ще не відкритий",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Localized": "Максимальний рівень",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Localized": "Не вистачає срібла",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Localized": "Неможливо повернути",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181164,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

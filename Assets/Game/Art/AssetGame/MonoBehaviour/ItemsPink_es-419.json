@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350974
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Aumenta {stat1} en {value1} por cada {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Por cada {value1} unidades movidas, invoca a Bob (está muerto)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Aumenta {stat1} en {value1} por cada enemigo derrotado (máx {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Aumenta {stat1} cuanto más bajo esté tu HP. chat, me estoy lockeando",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Gana {stat1} y {stat2} por cada enemigo infectado con veneno",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Los golpes críticos tienen un {value1} de probabilidad de explotar y dañar a enemigos cercanos con {value2} de daño",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Refleja cualquier daño entrante de vuelta al atacante y obtén invulnerabilidad temporal.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Cuanto más rápido te muevas, más {stat1} ganas. Máx {value1} por acumulación.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Haz {value1} más {stat1} mientras estés en el aire",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "Las esquirlas de XP ahora atraviesan enemigos, causando daño al pasar. El conocimiento realmente duele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} de probabilidad de lanzar misiles al matar a un enemigo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Gana {value1} de {stat1} por cada {value2} {stat2}. También gana {value3} {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Suelta desechos tóxicos al recibir daño, envenenando a todos los enemigos cercanos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Al recibir un daño que te mataría, congela el tiempo. Se rompe después de un uso.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Anillo Musculoso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Muerto)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Alma Demoníaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Gafas de Gamer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Máscara de Gas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Tónico Secreto de la Abuela",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Espejo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Patines",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Bufanda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Conocimiento Fragmentado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Cañón Suelto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Escudo Espinoso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Barril Tóxico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Guantes Slurp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Manitas Malditas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Lanza magia de sangre al golpear a un enemigo, dañando a los cercanos y curándote {value}. Recarga de {time_seconds} segundos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} de activar magia maldita al golpear a un enemigo.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "La Máscara de Quin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "El daño de espinas tiene un {value1} de probabilidad de explotar y dañar a los enemigos cercanos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350974
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350974,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

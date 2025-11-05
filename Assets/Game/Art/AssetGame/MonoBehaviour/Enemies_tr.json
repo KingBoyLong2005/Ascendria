@@ -1,0 +1,266 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Enemies_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 28159099870624084
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 566766575616,
+      "m_Localized": "İskelet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 594281209856,
+      "m_Localized": "Altın İskelet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3902114865152,
+      "m_Localized": "XP İskeleti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3938034884608,
+      "m_Localized": "Zırhlı İskelet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3974709878784,
+      "m_Localized": "Ghoul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4001406623744,
+      "m_Localized": "Korkunç Chunkham",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4086580355072,
+      "m_Localized": "Mumya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4109535780864,
+      "m_Localized": "Slime",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4128913465344,
+      "m_Localized": "Goblin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4157971603456,
+      "m_Localized": "Güçlü Goblin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4229799059456,
+      "m_Localized": "Goblin Tankı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4364792733696,
+      "m_Localized": "Tozlu İskelet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4398623989760,
+      "m_Localized": "Zırhlı Tozlu İskelet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4267090616320,
+      "m_Localized": "Taş Golem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7304806899712,
+      "m_Localized": "Hortlak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7334636789760,
+      "m_Localized": "Büyük Hortlak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7454539358208,
+      "m_Localized": "Arı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7441717370880,
+      "m_Localized": "Golem",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7431982391296,
+      "m_Localized": "Boomer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7423182741504,
+      "m_Localized": "Kabuk Vader",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7409513504768,
+      "m_Localized": "Çabuk Çam",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7389221462016,
+      "m_Localized": "Minik Kabuk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007693176700928,
+      "m_Localized": "Kum Golemi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007809996455936,
+      "m_Localized": "Akrepsavar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007866476953600,
+      "m_Localized": "Dev Akrep",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007921246175232,
+      "m_Localized": "Alevtopu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007937431994368,
+      "m_Localized": "Kaktüs Atıcı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007976862646272,
+      "m_Localized": "Koca Akrep",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008016997941248,
+      "m_Localized": "Mumya Tankı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008070651478016,
+      "m_Localized": "Antik Mumya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008106424696832,
+      "m_Localized": "Yuvarlanan Kemik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008138800529408,
+      "m_Localized": "Küçük Anubis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140008488960,
+      "m_Localized": "Anubruh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140679577600,
+      "m_Localized": "Devasa Anubis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

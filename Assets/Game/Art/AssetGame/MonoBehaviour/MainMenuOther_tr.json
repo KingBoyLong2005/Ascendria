@@ -1,0 +1,173 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "MainMenuOther_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 145501107833668358
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118496016
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6118154240,
+      "m_Localized": "{item} satın alındı!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496016
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Localized": "Harika!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Localized": "{file} dosyasını sıfırlamak istediğine emin misin? Bu, varsayılan ayarları geri yükler",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496016
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Localized": "Yapılandırma dosyası yüklenemedi. Hata günlüğü: {error}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496016
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Localized": "Hata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Localized": "Dosyayı Görüntüle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Localized": "Dosyayı Yenile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Localized": "Dosyayı Sil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Localized": "Yoksay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Localized": "Uyarı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Localized": "BU UYARIYI YOKSAYARSAN İLERLEMEN KAYDEDİLMEYECEK. Sorunu çözmeni öneririm. Emin misin?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Localized": "Yükleniyor...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Localized": "Yok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Localized": "Her şeyi bitirdin, seni haylaz! Tebrikler. Şimdi git çimenlere dokun.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Localized": "Yedek Kaydı Yükle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Localized": "Fotosensitivite Uyarısı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806327639244800,
+      "m_Localized": "Bu oyunda fotosensitif epilepsisi olanlar için nöbet tetikleyebilecek yanıp sönen ışıklar veya desenler olabilir. Oyuncuların dikkatine sunulur.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118496016,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

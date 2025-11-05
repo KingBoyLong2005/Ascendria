@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350864
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} pro všechny zbraně",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Dávej {value1} víc poškození blízkým nepřátelům.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Když stojíš v klidu, léčí tě to",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Zvýší {stat1}, když dostaneš zásah. Taky získáš {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Zvýší {stat1} o {value1}, když otevřeš truhlu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Kritické zásahy mají {value1} šanci tě vyléčit",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Zvyš {stat1} o {value1} za zabití (Max {value2} zásobníky)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} šance, že při zabití nepřítele získáš extra XP střepinu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Při zasažení vyšla elektrický šok na blízké nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Skákej výše a dále",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Získej extra zlato, když jsi zasažen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Vydělávej peníze, když se hýbeš",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Čím déle stojíš, tím více škody způsobíš. Max {value1} poškození.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin tě nesnáší. {value1} šance, že tě Kevin praští, kdykoli zasáhneš nepřítele. Kevin tě nemůže zabít, ale fakt by chtěl.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Po úhybu dej {value1} poškození při dalším útoku a dočasně zvyš {stat1} a {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Batoh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Pivo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Mosazný boxer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Táborák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Plášť zbabělce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Kreditka (zelená)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Kreditka (červená)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Démonická čepel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Démonická krev",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Ozvěnový střep",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Elektrická zástrčka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Pírka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Zlatý štít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Zlaté tenisky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Šťáva flákače",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Vysávací krystal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Fantomský závoj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Thunder Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Plesnivé Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Když trefíš nepřítele, pleskni ho tak, že spustíš bleskovou ránu. {time_seconds} cooldown.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Vytváří plesnivý jedový oblak, když trefíš nepřítele. Tyhle rukavice jsou pěkně vlhké, plesnivé a slizké.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Nabitím {charge_shrine} ho proměníš v léčivou zónu. Navíc přivolej {value} další {charge_shrine} pro další úrovně.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350864
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Maják",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350864,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

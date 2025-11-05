@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Ui_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6532078280720508105
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607538137956442
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 244802925600768,
+      "m_Localized": "物品欄",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 268909415211008,
+      "m_Localized": "屬性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 303830817021952,
+      "m_Localized": "打開",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305183157100544,
+      "m_Localized": "放逐",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305144254930944,
+      "m_Localized": "拿走",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305088785260544,
+      "m_Localized": "離開",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 305560313110528,
+      "m_Localized": "刷新",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310397859766272,
+      "m_Localized": "跳過",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310538767409152,
+      "m_Localized": "升級選擇",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310574586765312,
+      "m_Localized": "道具選擇",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 310599391879168,
+      "m_Localized": "可疑商店",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318971763728384,
+      "m_Localized": "祭壇提供你一個獎勵：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 318991497928704,
+      "m_Localized": "祭壇提供你一個超平衡的交易：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319185828421632,
+      "m_Localized": "充能祭壇",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 319750042001408,
+      "m_Localized": "無視選擇",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328058807230464,
+      "m_Localized": "祭壇給你一個平衡的交易：",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 379218125627392,
+      "m_Localized": "獲得{upgrade}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607538137956442
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607538137956442,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

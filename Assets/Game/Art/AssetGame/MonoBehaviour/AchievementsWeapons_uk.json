@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409162
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Не отримуй шкоди протягом {value} хвилин",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Заблокуй {value} шкоди з {armor_stat} як {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Знищ {value} ворогів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Знайди прихованого Банана",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Знищ {value} ворогів за допомогою {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Підніми {precision_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Знищ {value} ворогів як {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% шанс знайти, розбивши {tumbleweed} у {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Підніми {lightning_staff} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Заряди {charge_shrine} під час Піщаної бурі на {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Заморозь {value} ворогів з {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Знищ {value} ворогів з {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Убий {value} ворогів за допомогою {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% шанс знайти при розбитті {tumbleweed} у {desert} на {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Підніми {bloody_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Підніми {knockback_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Убий {scorpionussy} {miniboss} на {desert} {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Підніми {luck_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Убий {value} {wisp} як {fox} на {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Виконай {desert} {tier} 2 як {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Переможи {stage_boss}, не підбираючи предметів, підсилень і не використовуючи святині",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Отримай {difficulty_tome} до рівня {value} за менш ніж 10 хвилин",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409162
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409162,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

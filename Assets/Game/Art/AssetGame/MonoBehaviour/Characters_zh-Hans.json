@@ -1,0 +1,308 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Characters_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 130002324225702167
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2487837499392,
+      "m_Localized": "雅典娜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2565239185408,
+      "m_Localized": "土匪",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2568280055808,
+      "m_Localized": "偷偷摸摸的小子，拿着快剑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685133365248,
+      "m_Localized": "灌木",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2689608687616,
+      "m_Localized": "只是个普通的灌木，没啥好看的。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2804318707712,
+      "m_Localized": "骷髅钙",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2807925809152,
+      "m_Localized": "一个不死骷髅，招式一个比一个炫。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2891753168896,
+      "m_Localized": "动作敏捷，运气逆天。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2887793745920,
+      "m_Localized": "狐狸",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2985613303808,
+      "m_Localized": "托尼·极速",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2988041805824,
+      "m_Localized": "托尼没有选择悬浮板——是悬浮板选择了他。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3526166814720,
+      "m_Localized": "欧菲爵士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3527295082496,
+      "m_Localized": "虽然动作慢，但他的盔甲让他非常抗揍。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3640088305664,
+      "m_Localized": "他的下巴线条完美无比，强到爆",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3638968426496,
+      "m_Localized": "超级猛男",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3711223701504,
+      "m_Localized": "猴哥",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3712721068032,
+      "m_Localized": "没人知道他哪来的墨镜，也没人敢问。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4507256463360,
+      "m_Localized": "诺艾尔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4508766412800,
+      "m_Localized": "Megabonk Discord 的玩家逼我做的角色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5173664260096,
+      "m_Localized": "食人魔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5174742196224,
+      "m_Localized": "大块头大力气，智商跟湿袜子差不多。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6517481512960,
+      "m_Localized": "劫贫济富。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2522230792192,
+      "m_Localized": "从Temu买的美国队长山寨版（打折中）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6516210638848,
+      "m_Localized": "罗宾娜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14406220750848,
+      "m_Localized": "比尔多",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14407441293312,
+      "m_Localized": "他的墨镜是为了你的安全，不是他的。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19667685711872,
+      "m_Localized": "克兰克",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19688397185024,
+      "m_Localized": "我不知道他的名字该怎么读。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442138539163648,
+      "m_Localized": "阿莫格",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442140577595392,
+      "m_Localized": "没人知道他的真名，大家都叫他阿莫格，而他也从未纠正过。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274306618294272,
+      "m_Localized": "太空人被7个星球和大多数NASA礼品店拉黑了",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274304529530880,
+      "m_Localized": "太空人",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882290591465472,
+      "m_Localized": "忍者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882292743143424,
+      "m_Localized": "速度飞快，来去无踪。从2014年开始就没报过税。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503794055479296,
+      "m_Localized": "骰子头",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503795133415424,
+      "m_Localized": "他最喜欢的数字是7，谁去告诉他坏消息？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162423796465664,
+      "m_Localized": "弗拉德",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162425415467008,
+      "m_Localized": "他看起来挺邪恶，但其实是个好人。总会在超市打招呼。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037842271338496,
+      "m_Localized": "查德威尔爵士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037844410433536,
+      "m_Localized": "欧菲爵士妻子的男朋友。他给欧菲买了新盔甲，还让他八点半以后还能熬夜。真是个好人！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

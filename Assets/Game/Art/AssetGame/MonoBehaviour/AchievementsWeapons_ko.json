@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409159
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "{value}분 동안 피해를 입지 마라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "{sir_oofie}로 {armor_stat}로 {value} 피해를 막아라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "{value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "숨겨진 바나나를 찾아라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "{sword}으로 {value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "{precision_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "{clank}로 {value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{desert} {tier} 2에서 {tumbleweed}를 부수면 {value}% 확률로 발견 가능!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "{lightning_staff}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "{desert}에서 모래 폭풍 동안 {charge_shrine}을 충전하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "{ice_cube}로 {value}명의 적을 얼려라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "{slutty_rockets}로 {value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "{sword}로 {value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{desert} {tier} 1에서 {tumbleweed}를 부수면 {value}% 확률로 발견",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "{bloody_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "{knockback_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "{desert}에서 {scorpionussy} {miniboss}를 {value}번 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "{luck_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "{desert}에서 {fox}로 {value} {wisp}을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "{tony}로 {desert} {tier} 2를 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "아이템이나 파워업을 먹지 않고, 사당도 사용하지 않고 {stage_boss}를 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "10분 안에 {difficulty_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409159
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409159,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

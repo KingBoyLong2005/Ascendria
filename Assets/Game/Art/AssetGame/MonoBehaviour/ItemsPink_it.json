@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350971
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Aumenta {stat1} di {value1} per ogni {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Ogni {value1} unità mosse, evoca Bob (è morto)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Aumenta {stat1} di {value1} per ogni uccisione (max {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Aumenta {stat1} più bassi sono i tuoi HP. chat sto lockando",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Ottieni {stat1} e {stat2} per ogni nemico intossicato",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "I critici hanno {value1} probabilità di esplodere e infliggere {value2} danni ai nemici vicini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Rifletti i danni ricevuti e diventa invincibile per un breve periodo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Più ti muovi veloce, più guadagni {stat1}. Max {value1} per stack.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Fai {value1} più {stat1} mentre sei in aria",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "I frammenti di XP ora attraversano i nemici, facendo danno. La conoscenza fa davvero male.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} di probabilità di lanciare missili uccidendo un nemico",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Guadagni {value1} {stat1} per ogni {value2} {stat2}. Ottieni anche {value3} {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Libera rifiuti tossici subendo danni, avvelenando tutti i nemici vicini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Subendo danni fatali, congela il tempo. Si rompe dopo un uso.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Anello Muscoloso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Morto)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Anima Demoniaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Occhiali da Gamer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Maschera antigas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Tonico Segreto della Nonna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Specchio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Rollerblades",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Sciarpa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Conoscenza Frantumata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Cannonata Pazza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Scudo Spinato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Barile Tossico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Guanti Slurposi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Afferra Maledette",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Scatena la magia del sangue colpendo un nemico, ferisci i nemici vicini e guarisci di {value}. Ricarica di {time_seconds} secondi.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} di scatenare magia maledetta colpendo un nemico, danneggiando i nemici nelle vicinanze.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Maschera di Quin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Il danno delle spine ha una probabilità del {value1} di esplodere e colpire i nemici vicini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350971
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350971,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

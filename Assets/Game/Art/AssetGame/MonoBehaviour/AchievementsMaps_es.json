@@ -1,0 +1,53 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsMaps_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3288989716006205503
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208471681925294
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4702618634027008,
+      "m_Localized": "Teletranspórtate a la 2ª etapa en {forest} {tier} 2 como {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208471681925294
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208471681925294,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

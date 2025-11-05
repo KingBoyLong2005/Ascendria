@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179435
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "每级增加{value1}{stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "靶心",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "暴击来了",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "随机敌人会被标记。每级还会获得 {value1} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "持久",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "秀肌肉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "秀肌肉挡伤害！每级冷却减{value1}秒，秀肌肉时获得{valueDamage}点{statDamage}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "漂浮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "按住“跳跃”键在空中漂浮。每级还能获得{value1}的空中{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "心流",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "强化",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "RNG祝福",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "速度恶魔",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "速度随时间提升，受伤后减半。速度越快，伤害越高。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "猴爪",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "爬墙爬到爽！每级还能拿{value1}{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "战士",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "瘟疫",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "中毒的敌人死亡时会爆炸，并毒害附近敌人。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "量子XP理论",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "闪避敌人后直接{Execute}！每级还能获得{value1}{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "影步",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "小赌侠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "升级时掷骰子，随机提升一项属性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "吸血鬼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "诅咒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "斯通克斯",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "每级获得{value1}{stat1}。存的{gold}越多，{damage}越高。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "锁定",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "血量越低，伤害越高！每级获得{value1}{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "闪电Zap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "通过移动来蓄电攻击。每升一级获得{value1}{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "每级获得{value1}的{stat1}。每个被冻结的敌人会额外增加{damage}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179435
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179435,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

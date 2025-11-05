@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151668
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Aggiorna {agility_tome} a Livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Muori {value} volte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Sconfiggi un {miniboss} in {value} secondi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Ottieni {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Sopravvivi al {final_swarm} per {value} secondi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Compra {value} casse",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Colpisci criticamente {value} volte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Uccidi {value} nemici cactus con il danno di {thorns_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Sconfiggi un {stage_boss} in meno di {value} secondi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Aggiorna {cooldown_tome} a Livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Potenzia {regen_tome} al livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Uccidi {value} nemici stando fermo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Ottieni {value} {leeching_crystal} in una partita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Uccidi {value} nemici con la {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Aumenta {max_hp} con {blood_magic} {value} volte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Guarisci di {value} HP usando {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Rompi {value} vasi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Potenzia {xp_tome} al livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Potenzia sia {cooldown_tome} che {agility_tome} al livello {value} in una partita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Sopravvivi al {final_swarm} per {value} minuti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Uccidi {value} nemici usando danno da {poison}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Potenzia {attraction_tome} al livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Uccidi {value} nemici con {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Elimina {value} nemici con {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Uccidi {value} nemici usando {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Sconfiggi un {stage_boss} con meno del {value}% di HP rimasti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Raggiungi il livello {value} come {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Uccidi {value} nemici come {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Sopravvivi al {final_swarm} per {value} minuti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Completa {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Uccidi {value} nemici usando il danno da fuoco",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Sconfiggi {final_boss} {value} volte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Raggiungi il livello {value} come {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Uccidi il primo {stage_boss} senza subire alcun danno in quella partita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Uccidi {value} nemici usando la {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Uccidi {value} nemici usando il danno da fulmine",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Completa un livello con almeno {value} {cursed_shrine} attivati",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Porta {maxhp_stat} a {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Completa ogni singolo {charge_shrine} sulla mappa",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Ottieni {value} uccisioni con {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Sconfiggi {stage_boss} con {athena}, infliggendo il colpo finale con {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151668
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151668,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

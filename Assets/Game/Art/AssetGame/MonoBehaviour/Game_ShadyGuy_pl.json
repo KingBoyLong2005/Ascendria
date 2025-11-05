@@ -1,0 +1,126 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_ShadyGuy_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -5249773014627793321
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 49826996224,
+      "m_Localized": "Bez zwrotów, paragonów i świadków.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 202143145984,
+      "m_Localized": "Masz kasę? Mam... niekradzione dobra.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 235265564672,
+      "m_Localized": "Między nami... ten Moai nie ma nic na moje oferty.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 260825653248,
+      "m_Localized": "Im więcej kupujesz, tym mniej muszę nosić. Pomóż kumplowi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 282938023936,
+      "m_Localized": "Zaufaj mi. Jestem bardzo niewiarygodny.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 314324000768,
+      "m_Localized": "Hej, nie mów Moaiowi o tym, okej?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 341373067264,
+      "m_Localized": "Czujesz to? To zapach niesamowitej okazji.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 348960563200,
+      "m_Localized": "Nie potrzebuję tylu palców. Weź jeden.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 370913550336,
+      "m_Localized": "Każdy przedmiot jest podejrzanie ciepły, jakby właśnie trzymał go pod płaszczem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 432494321664,
+      "m_Localized": "Mrugasz. Gdy otwierasz oczy, jest jakoś bliżej.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 456225693696,
+      "m_Localized": "Pachnie jak spalony cukier i odrobina ozonu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487045439488,
+      "m_Localized": "Czarny Typ wyciąga talię kart, tasuje i zjada jedną. Odmawia dalszych wyjaśnień.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 556817686528,
+      "m_Localized": "Czujesz, że gdybyś go zapytał o podatki, natychmiast by wyparował.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 582478438400,
+      "m_Localized": "Pochyla się blisko i szepcze: \"Masz piękne oczy.\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

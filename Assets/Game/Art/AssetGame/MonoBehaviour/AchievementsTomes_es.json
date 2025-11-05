@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464678
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "Mejora {axe} a nivel {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "Elimina a {value} enemigos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "Usa {shrine_succ} {value} veces",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "Mata a {value} enemigos como {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "Bloquea {value} ataques con {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "{value}% de probabilidad de obtener al eliminar un enemigo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "Rompe {value} ollas en una sola partida",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "Carga todos los {charge_shrine} en una partida de {tier} 3 sin salir de la zona de carga",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "Derrota al {stage_boss} en menos de {value} minutos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "Dispara {value} proyectiles",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464678
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464678,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

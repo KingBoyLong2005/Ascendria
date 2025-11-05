@@ -1,0 +1,175 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ShopItems_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6549869673150466286
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517862019104855
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6483476480,
+      "m_Localized": "บูมบ็อกซ์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Localized": "เลือกเพลงที่จะเล่นด้วยตัวเอง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Localized": "สลับเปิดปิด {weapons}, {tomes} และ {items} ที่ซื้อแล้วตามใจชอบ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Localized": "ตัวสลับ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Localized": "รีเฟรช",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Localized": "รีเฟรชข้อเสนอเวลอัพ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Localized": "ข้ามไป",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Localized": "ข้ามข้อเสนอเวลอัพ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Localized": "ตกสวรรค์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Localized": "ขับไล่ {weapons}, {tomes} และ {items} ออกไป พวกมันจะไม่มาให้เห็นในรอบนี้แล้ว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Localized": "ช่องใส่ {weapon}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Localized": "พก {weapons} ได้มากขึ้น",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Localized": "ช่องใส่ {tome}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Localized": "พก {tomes} ได้มากขึ้น",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Localized": "เพิ่ม {silver} ที่ได้รับ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104855
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517862019104855,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

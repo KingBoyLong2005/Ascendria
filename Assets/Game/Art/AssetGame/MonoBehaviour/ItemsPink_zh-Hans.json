@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350984
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "每{value2}{stat2}提升{stat1}{value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "每移动{value1}单位，召唤Bob（死了）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "每杀一个敌人增加{stat1}{value1}（上限{value2}）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "血量越低，{stat1}提升越多。兄弟我超猛。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "每感染一名中毒的敌人就获得{stat1}和{stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "暴击有{value1}几率爆炸，对附近的敌人造成{value2}伤害",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "反射所有伤害，并获得短暂无敌",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "你移动越快，获得的{stat1}越多。每层最多{value1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "空中时多造成{value1}的{stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "经验碎片现在穿透敌人，造成伤害。知识好痛啊！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "击杀敌人时{value1}几率生成导弹",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "每{value2}{stat2}获得{value1}的{stat1}。还获得{value3}{stat2}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "受到伤害时释放毒废料，毒害附近敌人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "受到致命伤害时冻结时间。一次性道具。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "壮汉戒指",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob（死了）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "恶魔灵魂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "玩家眼镜",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "防毒面具",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "奶奶的秘制补品",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "镜子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "涡轮溜冰鞋",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "围巾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "破碎知识",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "狂野大炮",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "尖刺盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "毒桶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "嘬嘬手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "诅咒抓抓",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "击中敌人时施展血魔法，伤害周围并回复{value}。冷却{time_seconds}秒。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}。攻击敌人时有{chance}几率释放诅咒魔法。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "奎因的面具",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "荆棘伤害有{value1}概率爆炸，炸伤附近敌人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350984
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350984,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

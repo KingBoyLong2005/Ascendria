@@ -1,0 +1,123 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_HUD_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7527332346932056231
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607514405273708
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 145574567936,
+      "m_Localized": "LVL {level}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607514405273708
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 237371105280,
+      "m_Localized": "Бос з'явився!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 575486533632,
+      "m_Localized": "Нашестя наближається!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 588438544384,
+      "m_Localized": "Фінальний рій наближається!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56157383925760,
+      "m_Localized": "Виклик пройдено!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262338014584832,
+      "m_Localized": "Знайди портал до боса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262395514298368,
+      "m_Localized": "Переможи Боса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262638976868352,
+      "m_Localized": "Переможи Фінального Боса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262437713190912,
+      "m_Localized": "Виживи...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262459607457792,
+      "m_Localized": "Увійди в портал",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16595682113748992,
+      "m_Localized": "Фінальний рій",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607514405273708,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

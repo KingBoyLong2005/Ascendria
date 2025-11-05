@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151662
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Прокачай {agility_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Загинь {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Завали {miniboss} за {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Отримай {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Виживи під час {final_swarm} протягом {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Купи {value} скринь",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Критани {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Знищ {value} ворогів-кактусів завдавши {thorns_stat} пошкодження",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Переможи {stage_boss} менш ніж за {value} секунд",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Прокачай {cooldown_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Прокачай {regen_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Знищи {value} ворогів просто стоячи",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Отримай {value} {leeching_crystal} за один захід",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Знищи {value} ворогів з {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Збільш {max_hp} за допомогою {blood_magic} {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Віднови {value} здоров'я використовуючи {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Розбий {value} глечиків",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Прокачай {xp_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Прокачай {cooldown_tome} та {agility_tome} до рівня {value} за один захід",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Витримай навалу {final_swarm} протягом {value} хвилин",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Знищи {value} ворогів використовуючи {poison}-пошкодження",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Прокачай {attraction_tome} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Знищи {value} ворогів за допомогою {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Убий {value} ворогів з {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Знищи {value} ворогів за допомогою {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Переможи {stage_boss} з менше ніж {value}% залишком здоров'я",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Досягни рівня {value} як {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Знищи {value} ворогів як {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Витримай навалу {final_swarm} протягом {value} хвилин",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Заверши {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Знищи {value} ворогів вогняною атакою",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Здолай {final_boss} {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Досягни рівня {value} як {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Переможи першого {stage_boss} без жодного пошкодження під час цього забігу",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Знищи {value} ворогів з {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Знищи {value} ворогів ударами блискавки",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Заверши рівень з активованими мінімум {value} {cursed_shrine}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Збільши {maxhp_stat} до {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Виконай всі {charge_shrine} на карті",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Здобудь {value} вбивств з {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Переможи {stage_boss} як {athena}, завдавши смертельний удар з {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151662
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151662,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039351006
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Vylepšení zbraní mají nyní +1 ke statistikám",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} teď spouští {bloodmark} stacky. Taky máš {value1} šanci na aplikaci {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} šance na BONK nepřítele, který způsobí {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Léčení nad {stat1} ti umožní {stat2} o {value1}. Navíc dává {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} šance na přivolání dračího ohně při zásahu nepřátel. Ohňový útok nyní může zapálit.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Udeř {value1} {stat1} do vzdušných nepřátel. {value2} šance odhodit nepřítele do vzduchu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Střílej energetické orby na nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "Kritické zásahy mohou být Megakritické. S touhle vidličkou bys mohl sníst hodně špaget!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1},  {value2} {stat2}. Léčení nyní způsobí zranění okolním nepřátelům.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} šance způsobit ledový útok při zásahu nepřátel. Led nyní může zmrazit nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} šance na {execute} nepřítele. Provedení {execute} zvýší {stat1} o {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} šance na přivolání blesku při zásahu nepřátel. Blesk nyní může ohromit nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 šance vyvolat efekt při zásahu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Zabitím nepřítele přivoláš {value1} naváděcí duše",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Když utrpíš zranění pod {value1} {stat1}, zpomal čas a udělej {value2} poškození.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Útoky mají {value1} šanci na výbuch, způsobující {value2} {stat1} okolním nepřátelům",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Pravidelně přitahuje všechen XP kolem tebe",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Kovadlina",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Krvavý Sekáč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Velký Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Dračí Oheň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Orlí Drápy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Energetické Jádro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Obří Vidlička",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Svatá Kniha",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Kostka Ledu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Joeova dýka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Blesková Koule",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Mocná Lampa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Sběrač Duší",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Rychlonožka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Ostrá Koule",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Silný Magnet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Power Gloves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "Šance {chance} při úderu nepřítele spustit obří výbuch, který poškodí a odhodí nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351006
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Zlatý Prsten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "Vypadá to, že nic nedělá…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039351006,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

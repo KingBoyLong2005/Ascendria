@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179442
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "{stat1}가 매 레벨마다 {value1}만큼 증가",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "근육 자랑으로 피해를 막아라! 쿨타임 -{value1}s, {valueDamage} {statDamage} 획득!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "헤드샷!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "치명타 발생",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "무작위 적이 표시됨. 레벨마다 {value1} {stat1} 추가 획득",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "끈질김",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "근육질 포즈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "떠다니기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "점프 버튼을 길게 눌러 공중에 떠 있으세요. 레벨마다 {value1}의 공중 {stat1}를 얻습니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "고수의 경지",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "강화된",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "확률의 축복",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "속도의 악마",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "시간이 지날수록 빨라지지만, 데미지를 받으면 반감. 빠를수록 공격력 증가.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "몽키 그립",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "벽도 탈 수 있음! 레벨마다 {value1}{stat1} 추가 획득!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "전사",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "전염병",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "적을 독살시키면 터져서 주변 적들까지 중독!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "퀀텀 XP 이론",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "적 회피 후 {Execute}! 레벨당 {value1} {stat1} 획득!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "섀도스텝",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "갬바",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "레벨업하면 랜덤으로 능력치 업그레이드! 룰렛 돌려보자!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "뱀파이어",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "저주",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "스톤크스",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "레벨당 {value1} {stat1} 획득하고, 인벤토리에 있는 총 {gold}에 따라 {damage}도 살짝 증가해!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "락인",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "체력이 낮을수록 데미지 업! 레벨마다 {value1}{stat1} 획득.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "잽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "움직이며 전기 공격 충전! 레벨마다 {value1} {stat1} 획득.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "레벨마다 {value1}의 {stat1}를 얻습니다. 얼어붙은 적 하나당 {damage}가 증가합니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179442
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179442,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

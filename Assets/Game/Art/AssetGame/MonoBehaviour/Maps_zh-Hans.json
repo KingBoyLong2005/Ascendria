@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Maps_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6096067254600861082
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160207927763009742
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 89479946240,
+      "m_Localized": "绿森林",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1017352265728,
+      "m_Localized": "深邃森林",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1027032719360,
+      "m_Localized": "诅咒森林",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48052805632,
+      "m_Localized": "森林",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1411541344256,
+      "m_Localized": "一个充满树木、鸟儿和好氛围的绿地。哦，还有致命的敌人。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148044894871552,
+      "m_Localized": "只有好心情",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148086942769152,
+      "m_Localized": "气氛有点不对劲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148098963644416,
+      "m_Localized": "糟了",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12064487162118144,
+      "m_Localized": "{mapname}（裂隙）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160207927763009742
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12346721592967168,
+      "m_Localized": "闻起来像暖沙... 我真心讨厌暖沙。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346566399524864,
+      "m_Localized": "多尘沙漠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346612180353024,
+      "m_Localized": "黄昏沙漠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346663346667520,
+      "m_Localized": "灼烧沙漠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346478096842752,
+      "m_Localized": "沙漠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346536393474048,
+      "m_Localized": "炎热、干燥又满是灰尘的地方。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346969312755712,
+      "m_Localized": "完了完了完了",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346967676977152,
+      "m_Localized": "干巴巴的...让我想起昨晚。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160207927763009742,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

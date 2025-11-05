@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350999
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Waffen-Upgrades können jetzt +1 auf ihre Werte bekommen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} löst jetzt {bloodmark}-Stapel aus. Du bekommst außerdem {value1} Chance, {bloodmark} zuzufügen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} Chance, einen Feind mit einem BONK zu verprügeln, verursacht {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Heilung über {stat1} hinaus lässt dich um {value1} {stat2}. Gibt außerdem {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} Chance, Drachenfeuer zu beschwören, wenn du Feinde triffst. Feuerschaden kann jetzt brennen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Verursacht {value1} {stat1} bei fliegenden Feinden. {value2} Chance, einen Feind in die Luft zu schleudern.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Energiekugeln auf Feinde schießen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "Krits haben eine Chance, Mega-Krits zu werden. Mit dieser Gabel könntest du eine Menge Spaghetti essen!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. Heilung strahlt jetzt Schaden auf nahe Feinde aus.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} Chance auf Eis-Schaden bei Treffer. Eis kann Feinde jetzt einfrieren.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} Chance, einen Feind zu {execute}. Bei {execute} steigt {stat1} um {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} Chance, Blitz zu beschwören, wenn Feinde getroffen werden. Blitze können jetzt betäuben.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 Chance, On-Hit-Effekte auszulösen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Einen Feind zu töten beschwört {value1} homing Seelen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Wenn du Schaden unter {value1}{stat1} erleidest, verlangsamt sich die Zeit und du verursachst {value2} Schaden.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Angriffe haben eine {value1} Chance, zu explodieren und {value2} {stat1} an nahe Feinde zu verursachen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Zieht periodisch alle XP um dich herum an",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Amboss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Blutiges Hackbeil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Gigantischer Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Drachenfeuer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Adlerklaue",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Energiekern",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Riesengabel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Heiliges Buch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Eiswürfel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Joes Dolch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Donnerkugel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Overpowered Lampe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Seelensammler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Speed Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Würzige Fleischbällchen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Saugender Magnet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Power-Handschuhe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "{chance} Chance, beim Treffer eine riesige Explosion zu erzeugen, die Gegnern Schaden zufügt und sie wegschleudert.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350999
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Goldener Ring",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "Sieht cool aus, macht aber nix…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350999,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

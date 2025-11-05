@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179443
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "Zyskujesz {value1} {stat1} na poziom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "Flexuj, by zablokować obrażenia! CD -{value1}s. +{valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "Bullseye",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "Wjechał Kryt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "Losowi wrogowie są oznaczani. Dodatkowo zyskujesz {value1} {stat1} na poziom",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "Wytrwały",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "Flex",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "Lekki Jak Piórko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "Przytrzymaj \"Skok\", by unosić się w powietrzu. Zyskujesz też {value1} Powietrznej {stat1} na poziom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "W Sztosie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "Wzmocniony",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "Błogosławieństwo RNG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "Demon Prędkości",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "Prędkość rośnie z czasem, ale po obrażeniach spada o połowę. Większa prędkość to większe obrażenia.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "Małpi Chwyt",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "Wspinaj się po ścianach! Co level {value1}{stat1} ekstra.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "Wojownik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "Zaraza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "Zatruci wrogowie wybuchają przy śmierci, trując tych w pobliżu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "Teoria kwantowego XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} wroga, gdy unikasz ataku! Zyskujesz też {value1} {stat1} na każdy poziom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "Cieńkrok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "Gamba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "Rzuć kostką i ulepsz losowy atrybut przy każdym awansie!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "Wampir",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "Klątwa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "Stonki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "Zgarnij {value1} {stat1} na poziom. Dodatkowo lekko zwiększ {damage} na bazie ilości {gold} w ekwipunku.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "Zablokuj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "Zadaj więcej obrażeń przy mniejszym zdrowiu. Zyskuj {value1} {stat1} na poziom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "Zap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "Poruszając się, ładujesz atak elektryczny. Zdobywasz {value1} {stat1} na poziom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "Zdobądź {value1} {stat1} na poziom. Ponadto zwiększasz {damage} za każdego zamrożonego przeciwnika.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179443
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179443,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

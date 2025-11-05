@@ -1,0 +1,266 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Enemies_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 28159099870624084
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 566766575616,
+      "m_Localized": "โครงกระดูก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 594281209856,
+      "m_Localized": "โครงกระดูกทองคำ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3902114865152,
+      "m_Localized": "โครงกระดูกเพิ่มพลัง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3938034884608,
+      "m_Localized": "โครงกระดูกเกราะหนัก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3974709878784,
+      "m_Localized": "ภูติผี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4001406623744,
+      "m_Localized": "Chunkham จอมอัด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4086580355072,
+      "m_Localized": "มัมมี่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4109535780864,
+      "m_Localized": "สไลม์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4128913465344,
+      "m_Localized": "ก็อบลิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4157971603456,
+      "m_Localized": "ก็อบลินสายพลัง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4229799059456,
+      "m_Localized": "ก็อบลินแทงค์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4364792733696,
+      "m_Localized": "โครงกระดูกร้าง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4398623989760,
+      "m_Localized": "โครงกระดูกเกราะร้าง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4267090616320,
+      "m_Localized": "โกลเล็มหิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7304806899712,
+      "m_Localized": "ผี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7334636789760,
+      "m_Localized": "ผีตัวใหญ่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7454539358208,
+      "m_Localized": "ผึ้ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7441717370880,
+      "m_Localized": "โกลเล็ม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7431982391296,
+      "m_Localized": "แมงมุมบูมเมอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7423182741504,
+      "m_Localized": "Bark Vader",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7409513504768,
+      "m_Localized": "Chadbark",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7389221462016,
+      "m_Localized": "Lil Bark",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007693176700928,
+      "m_Localized": "โกเลมหินทราย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007809996455936,
+      "m_Localized": "แมงป่อง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007866476953600,
+      "m_Localized": "แมงป่องยักษ์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007921246175232,
+      "m_Localized": "วิสพ์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007937431994368,
+      "m_Localized": "นักยิงกระบองเพชร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007976862646272,
+      "m_Localized": "แมงป่องใหญ่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008016997941248,
+      "m_Localized": "มัมมี่แท็งค์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008070651478016,
+      "m_Localized": "มัมมี่โบราณ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008106424696832,
+      "m_Localized": "ทัมเบิลโบน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008138800529408,
+      "m_Localized": "อนูบิสจิ๋ว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140008488960,
+      "m_Localized": "อนูบล้อออ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140679577600,
+      "m_Localized": "ผู้พิพากษาอนูบิส",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

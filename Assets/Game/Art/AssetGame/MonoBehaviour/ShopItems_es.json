@@ -1,0 +1,175 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ShopItems_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6549869673150466286
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517862019104865
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6483476480,
+      "m_Localized": "Boombox",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Localized": "Elige tú mismo la música que quieres que suene",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Localized": "Activa o desactiva {weapons}, {tomes} y {items} comprados.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Localized": "Toggler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Localized": "Refrescar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Localized": "Refresca las ofertas del Subidón de Nivel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Localized": "Saltar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Localized": "Pasa de las ofertas del Subidón de Nivel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Localized": "Desterrar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Localized": "Destierra {weapons}, {tomes} y {items}. Ya no aparecerán en esa partida.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Localized": "Espacios de {weapon}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Localized": "Lleva más {weapons}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Localized": "Espacios de {tome}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Localized": "Lleva más {tomes}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Localized": "Aumenta el {silver} que ganas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104865
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517862019104865,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

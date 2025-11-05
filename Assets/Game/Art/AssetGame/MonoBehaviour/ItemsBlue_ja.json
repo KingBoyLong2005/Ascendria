@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350868
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "全ての武器に{value1}{stat1}アップ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "近くの敵に{value1}ダメージアップ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "その場にいると体力が回復するぞ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "{stat1}が上がる。さらに{value1}獲得",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "宝箱を開けると{value1}{stat1}アップ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "クリティカルで{value1}の確率で体力回復",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "キルごとに{stat1}が{value1}アップ(最大{value2}スタック)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "敵を倒すと{value1}の確率で追加のXPシャードが出現",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "ダメージを受けると近くの敵に電気攻撃！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "さらに高く遠くへジャンプ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "ダメージを受けるとゴールドをゲット",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "動きまくってお金を稼ごう",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "その場でずっと立ってるとダメージがアップ！最大{value1}ダメージ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "ケビンが君のこと嫌いみたい。敵を攻撃するたびに{value1}の確率でケビンが君を殴るぞ。ただし死なないけど、ケビンは本当に仕留めたがってる。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "回避後、次の攻撃で{value1}ダメージを与え、一時的に{stat1}と{stat2}がアップ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "バックパック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "ビール",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "ナックルダスター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "キャンプファイヤー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "へタレのマント",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "クレジットカード(緑)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "クレジットカード(赤)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "悪魔の刃",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "悪魔の血",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "エコーシャード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "電気プラグ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "羽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "ゴールデンシールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "ゴールデンスニーカー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "アイドルジュース",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "ケビン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "吸血クリスタル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "ファントムシュラウド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "サンダーミット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "カビカビグローブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "敵をぶっ叩くと雷がズドン！  {time_seconds}秒で再充電！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "敵を殴るとカビ臭い毒雲発生！手袋はベタベタカビカビ。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "{charge_shrine}をチャージすると回復ゾーンに変化！次のステージに{value}個追加。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "ビーコン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350868,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

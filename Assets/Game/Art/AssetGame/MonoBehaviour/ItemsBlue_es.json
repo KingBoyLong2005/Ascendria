@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350873
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} para todas las armas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Causa {value1} más daño a enemigos cercanos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Quedarte quieto te cura",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Aumenta {stat1} al recibir daño. También ganas {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Aumenta {stat1} en {value1} al abrir un cofre.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Los críticos tienen {value1} chance de curarte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Aumenta {stat1} en {value1} por cada muerte (Máximo {value2} acumulaciones)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} de probabilidad de generar un fragmento de XP extra al matar un enemigo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Al recibir daño, manda una descarga eléctrica a enemigos cercanos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Salta más alto y lejos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Gana oro extra al recibir daño",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Gana dinero moviéndote",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Cuanto más tiempo estés quieto, más daño haces. Máximo {value1} de daño.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin te odia. {value1} de probabilidad de que Kevin te golpee cada vez que atacas a un enemigo. Kevin no puede matarte, pero realmente quiere hacerlo.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Después de evadir, causa {value1} de daño en el próximo ataque y aumenta temporalmente {stat1} y {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Mochila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Cerveza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Nudillos de Bronce",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Hoguera",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Capa del Cobarde",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Tarjeta de Crédito (Verde)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Tarjeta de Crédito (Roja)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Hoja Demoníaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Sangre Demoníaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Fragmento de Eco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Enchufe Eléctrico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Plumas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Escudo Dorado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Zapatillas Doradas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Zumo del Vago",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Cristal de Absorción",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Sudario Fantasma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Guantes de Trueno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Guantes Mohosos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Cuando golpeas a un enemigo, aplástale las mejillas tan fuerte que generes un rayo. Enfriamiento de {time_seconds}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Crea una nube de veneno mohoso al golpear a un enemigo. Los guantes están cubiertos de una textura húmeda, mohosa y babosa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "¡Carga un {charge_shrine} para convertirlo en una zona de curación! Además, aparecerán {value} {charge_shrine} extra para tus próximas partidas.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350873
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Faro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350873,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

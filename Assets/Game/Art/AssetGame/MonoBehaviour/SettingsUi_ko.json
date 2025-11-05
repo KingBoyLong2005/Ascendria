@@ -1,0 +1,116 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsUi_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -601287146742928815
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118495846
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4549484544,
+      "m_Localized": "게임",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 89098264576,
+      "m_Localized": "비디오",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 101454684160,
+      "m_Localized": "컨트롤",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120538767360,
+      "m_Localized": "오디오",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 133721464832,
+      "m_Localized": "효과",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187881711443968,
+      "m_Localized": "이 해상도로 계속할 거야?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 195232963207168,
+      "m_Localized": "아무 키나 눌러서 {action} 시작!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118495846
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 195424751951872,
+      "m_Localized": "[ESC] 키로 설정 취소!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 219294200471552,
+      "m_Localized": "언어",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4177956665270272,
+      "m_Localized": "컨트롤 리셋",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118495846,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039351007
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Gli upgrade alle armi possono ora avere +1 ai parametri",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} ora attiva le stack di {bloodmark}. Inoltre guadagna {value1} di possibilità di applicare {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} possibilità di BONKare un nemico, infliggendo {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Guarire sopra {stat1} ti permette di {stat2} di {value1}. Inoltre conferisce {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} possibilità di evocare il fuoco di drago colpendo nemici. I danni da fuoco possono ora bruciare.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Infliggi {value1} {stat1} ai nemici in volo. {value2} possibilità di lanciare un nemico in aria.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Spara sfere di energia ai nemici.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "I critici possono diventare Megacritici. Puoi mangiare un sacco di spaghetti con questa forchetta!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. La guarigione ora infligge danni ai nemici vicini.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} possibilità di infliggere danno da ghiaccio colpendo nemici. Il ghiaccio può ora congelare i nemici.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} possibilità di {execute} un nemico. Eseguire {execute} aumenta {stat1} di {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} possibilità di evocare fulmini colpendo nemici. I fulmini possono ora stordire i nemici.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 possibilità di attivare effetti al colpo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Uccidere un nemico evoca {value1} anime che cercano il bersaglio",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Se subisci danni sotto {value1} {stat1}, il tempo rallenta e infliggi {value2} danni.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Gli attacchi hanno {value1} di esplodere, infliggendo {value2} {stat1} ai nemici circostanti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Attira periodicamente tutta l'esperienza intorno a te",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Incudine",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Cleaver Insanguinato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Grande Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Fuocodrago",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Artiglio dell'Aquila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Nucleo Energetico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Forchettone",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Libro Sacro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Cubetto di Ghiaccio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Pugnale di Joe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Sfera Fulmine",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Lampada OP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Mietitore di Anime",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Speed Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Polpetta Piccante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Magnete Succhioso",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Guanti Potenti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "{chance} di probabilità di colpire un nemico e creare un'esplosione gigante, danneggiando e spazzando via i nemici.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Anello Dorato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "Non sembra far nulla…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039351007,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

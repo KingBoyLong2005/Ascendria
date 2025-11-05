@@ -1,0 +1,266 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Enemies_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 28159099870624084
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 566766575616,
+      "m_Localized": "Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 594281209856,
+      "m_Localized": "Золотий Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3902114865152,
+      "m_Localized": "Експі Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3938034884608,
+      "m_Localized": "Броньований Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3974709878784,
+      "m_Localized": "Гуль",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4001406623744,
+      "m_Localized": "Шматхам Жахливий",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4086580355072,
+      "m_Localized": "Мумія",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4109535780864,
+      "m_Localized": "Слизар",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4128913465344,
+      "m_Localized": "Гоблін",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4157971603456,
+      "m_Localized": "Сильний Гоблін",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4229799059456,
+      "m_Localized": "Гоблін Танк",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4364792733696,
+      "m_Localized": "Пиловий Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4398623989760,
+      "m_Localized": "Броньований Пиловий Скелет",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4267090616320,
+      "m_Localized": "Кам'яний Голем",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7304806899712,
+      "m_Localized": "Привид",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7334636789760,
+      "m_Localized": "Великий Привид",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7454539358208,
+      "m_Localized": "Бджола",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7441717370880,
+      "m_Localized": "Голем",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7431982391296,
+      "m_Localized": "Бумер",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7423182741504,
+      "m_Localized": "Кора Вейдер",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7409513504768,
+      "m_Localized": "Чадбарк",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7389221462016,
+      "m_Localized": "Маленька Кора",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007693176700928,
+      "m_Localized": "Піщаний Голем",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007809996455936,
+      "m_Localized": "Скорпіон",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007866476953600,
+      "m_Localized": "Гігантський Скорпіон",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007921246175232,
+      "m_Localized": "Вісп",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007937431994368,
+      "m_Localized": "Кактус Стрілець",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15007976862646272,
+      "m_Localized": "Великий Скорпіон",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008016997941248,
+      "m_Localized": "Мумійний Танк",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008070651478016,
+      "m_Localized": "Стародавня Мумія",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008106424696832,
+      "m_Localized": "Кісткий Галас",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008138800529408,
+      "m_Localized": "Малий Анубіс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140008488960,
+      "m_Localized": "Анубра",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15008140679577600,
+      "m_Localized": "Великий Анубіс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

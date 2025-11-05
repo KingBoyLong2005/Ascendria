@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350880
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Backpack",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} for all Weapons",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Beer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "After evading, deal {value1} damage next attack, and temporarily increase {stat1} and {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Brass Knuckles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Deal {value1} more damage to nearby enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Campfire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Standing still heals you",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Coward's cloak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Boost {stat1} upon taking damage. Also gain {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Credit Card (Green)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Increase {stat1} by {value1} when opening a chest.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Credit Card (Red)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Demonic Blade",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Crits have a {value1} chance to heal you",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Demonic Blood",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Increase {stat1} by {value1} per kill (Max {value2} stacks)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Echo Shard",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} chance to spawn an extra XP shard when killing an enemy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Electric Plug",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Upon taking damage, send out an electric shock to nearby enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Feathers",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Jump higher and further",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Golden Shield",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Get extra gold when taking damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Earn money by moving around",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Golden Sneakers",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "The longer you stand still, the more damage you do. Max {value1} damage.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Idle Juice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin hates you. {value1} chance that Kevin will punch you whenever you hit an enemy. Kevin cannot kill you, but he really wants to.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Leeching Crystal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Phantom Shroud",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Thunder Mitts",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Moldy Gloves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Upon hitting an enemy, clap their cheeks so hard it generates a lightning strike. {time_seconds} cooldown.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Create a moldy poison cloud upon hittin an enemy. The gloves are covered in a moist, moldy and slimy texture.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Beacon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Charging a {charge_shrine} will turn it into a healing zone. Also spawn {value} extra {charge_shrine} for future stages.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350880
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350880,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

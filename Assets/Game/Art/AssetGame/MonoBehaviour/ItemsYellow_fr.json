@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350993
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Les améliorations d'arme peuvent maintenant avoir +1 en stats",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} déclenche maintenant des stacks de {bloodmark}. Vous avez aussi {value1} de chances d'appliquer {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} chance de BONK un ennemi, infligeant {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Se soigner au-dessus de {stat1} te permet de {stat2} de {value1}. Donne aussi {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} chance d'invoquer un feu de dragon en frappant les ennemis. Les dégâts de feu peuvent maintenant brûler.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Inflige {value1} {stat1} aux ennemis en l'air. {value2} chance de faire voler un ennemi dans les airs.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Lance des orbes d'énergie sur les ennemis.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "Les coups critiques peuvent devenir des Méga-crits. Tu pourrais manger beaucoup de spaghettis avec cette fourchette !",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. Les soins irradieront maintenant des dégâts aux ennemis proches.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} chance d'infliger des dégâts de glace en frappant les ennemis. La glace peut maintenant geler les ennemis.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} chance de {execute} un ennemi. Faire un {execute} augmente {stat1} de {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} chance d'invoquer la foudre en frappant les ennemis. La foudre peut maintenant étourdir les ennemis.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 chance d'activer les effets à l'impact",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Tuer un ennemi invoque {value1} âmes qui se dirigent vers toi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Quand tu prends des dégâts en dessous de {value1} {stat1}, le temps ralentit et tu infliges {value2} dégâts.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Les attaques ont {value1} chance d'exploser, infligeant {value2} {stat1} aux ennemis proches",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Attire périodiquement toute l'XP autour de toi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Enclume",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Hachoir Sanguinaire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Gros Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Souffle de Dragon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Griffe d'Aigle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Cœur d'Énergie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Fourchette Géante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Livre Sacré",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Glaçon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Dague de Joe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Orbe Fulgurante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Lampe Surpuissante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Faucheuse d'âmes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Speed Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Boulettes Épicées",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Magnétoche",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Gants de Puissance",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "{chance} de chance à chaque coup porté sur un ennemi de déclencher une énorme explosion, infligeant des dégâts et repoussant les ennemis.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350993
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Anneau Doré",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "Ça a l'air de rien faire…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350993,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

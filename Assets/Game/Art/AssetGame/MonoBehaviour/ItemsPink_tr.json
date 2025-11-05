@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350976
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "{value2} {stat2} başına {value1} {stat1} artır",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Her {value1} birim hareket ettiğinde Bob'u çağır (o ölü)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Her öldürmede {stat1} {value1} artır (maks {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Canın azaldıkça {stat1} artar. Chat, lockluyorum",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Zehirle enfekte olmuş her düşman için {stat1} ve {stat2} kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Critlerin {value1} patlama şansı var ve yakındaki düşmanlara {value2} hasar verir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Gelen hasarı saldırgana geri yansıt ve kısa süreli dokunulmazlık kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Ne kadar hızlı hareket edersen, o kadar {stat1} kazanırsın. Her yığın için maksimum {value1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Havadayken {value1} daha fazla {stat1} hasarı ver",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "XP parçaları, geçerken düşmanları dilimleyip hasar veriyor. Bilgi acıtır bazen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "Bir düşmanı öldürdüğünde {value1} füze fırlatma şansı",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Her {value2} {stat2} için {value1} {stat1} kazan. Ayrıca {value3} {stat2} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Hasar aldığında zehirli atık yayarak yakınındaki tüm düşmanları zehirle",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Seni öldürecek hasar aldığında, zamanı dondur. Bir kullanımdan sonra kırılır.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Kaslı Yüzük",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Ölü Bob",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Şeytani Ruh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Gamer Gözlüğü",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Gaz Maskesi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Büyükannenin Gizli Tonik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Ayna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Patenler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Atkı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Parçalanmış Bilgi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Gevşek Top",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Dikenli Kalkan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Zehirli Varil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Slurp Eldivenleri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Lanetli Tutanlar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Bir düşmanı vurduğunda kan büyüsü yaparak çevrendekileri yarala ve kendini {value} kadar iyileştir. {time_seconds} soğuma süresi.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} ihtimalle lanet büyüsü patlar düşmana vurunca.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Quin'in Maskesi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Diken hasarı {value1} ihtimalle patlayarak yakındaki düşmanlara zarar verir.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350976
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350976,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

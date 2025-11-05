@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188646
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "Mate {value} inimigos como {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "Chegue ao nível {value} em uma rodada como {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "Derrote um {final_boss} no nível {tier} 3 como {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "Derrote o primeiro {stage_boss} em menos de {value} minutos como {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "Leve {character} ao {rank} {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188646
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188646,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

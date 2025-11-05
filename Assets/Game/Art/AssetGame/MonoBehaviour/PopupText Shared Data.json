@@ -1,0 +1,99 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "PopupText Shared Data",
+  "m_TableCollectionName": "PopupText",
+  "m_TableCollectionNameGuidString": "ba8b6f3dfabe9924dba22d2eae5e5511",
+  "m_Entries": [
+    {
+      "m_Id": 412076449792,
+      "m_Key": "CANT_AFFORD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1510908600320,
+      "m_Key": "MICROWAVE_NEED_RARITY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Key": "CANT_BANISH",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Key": "NO_BANISHES",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Key": "MICROWAVE_MAX_ITEMS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Key": "CHARACTER_NOT_UNLOCKED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Key": "SHOP_ITEM_MAX_LEVEL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Key": "CANT_AFFORD_SILVER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Key": "SHOP_CANT_REFUND",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607508251181141
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181141,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_ShadyGuy_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -5249773014627793321
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 49826996224,
+      "m_Localized": "환불도 영수증도 목격자도 없어.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 202143145984,
+      "m_Localized": "돈 있지? 난 절대 안 훔친 물건이 있지.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 235265564672,
+      "m_Localized": "너랑 나만 아는 거야... 모아이보다 내 거래가 낫다고.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 260825653248,
+      "m_Localized": "많이 사면 내가 덜 들고 다녀도 되지. 좀 도와줘.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 282938023936,
+      "m_Localized": "믿어봐. 난 진짜 못 믿을 만한 사람이야.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 314324000768,
+      "m_Localized": "모아이한테 말하지 마, 알겠지?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 341373067264,
+      "m_Localized": "냄새 나지? 이건 대박 거래의 냄새야.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 348960563200,
+      "m_Localized": "난 이 손가락들이 필요 없어. 하나 가져가.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 370913550336,
+      "m_Localized": "모든 아이템이 이상하게 따뜻해. 마치 갓 코트 속에서 꺼낸 것처럼.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 432494321664,
+      "m_Localized": "눈을 깜박였을 뿐인데, 그가 더 가까워져 있어.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 456225693696,
+      "m_Localized": "그는 태운 설탕과 약간의 오존 냄새가 나.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 487045439488,
+      "m_Localized": "수상한 남자가 카드 덱을 꺼내 섞더니 하나를 먹어버려. 설명은 안 해.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 556817686528,
+      "m_Localized": "세금에 대해 물으면 즉시 사라질 것 같은 느낌이 들어.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 582478438400,
+      "m_Localized": "그가 가까이 다가와 속삭여: \"눈이 참 예쁘네.\"",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

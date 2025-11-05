@@ -1,0 +1,26 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -4806130755568216638
+  },
+  "m_Name": "Spanish (es)",
+  "m_Identifier": {
+    "m_Code": "es"
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_LocaleName": "Spanish (es)",
+  "m_CustomFormatCultureCode": "",
+  "m_UseCustomFormatter": 0,
+  "m_SortOrder": 12,
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409161
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Sem levar nenhum dano por {value} minutos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Bloqueie {value} de dano com {armor_stat} como {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Elimine {value} inimigos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Encontre a Banana escondida",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Elimine {value} inimigos usando {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Levante o {precision_tome} para o nível {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Derrote {value} inimigos como {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% de chance de encontrar ao quebrar um {tumbleweed} em {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Suba o {lightning_staff} para o nível {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Carregue um {charge_shrine} durante uma Tempestade de Areia no {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Congele {value} inimigos com o {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Destrua {value} inimigos com {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Derrote {value} inimigos usando a {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% de chance de encontrar ao quebrar um {tumbleweed} no {desert} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Eleve o {bloody_tome} para o nível {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Aumente o {knockback_tome} para o nível {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Derrote o {scorpionussy} {miniboss} no {desert} {value} vezes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Eleve o {luck_tome} para o nível {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Derrote {value} {wisp} como {fox} no {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Conclua o {desert} {tier} 2 como {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Derrote um {stage_boss} sem pegar itens, power-ups ou usar santuários",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Chegue ao nível {value} do {difficulty_tome} em menos de 10 minutos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409161
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409161,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

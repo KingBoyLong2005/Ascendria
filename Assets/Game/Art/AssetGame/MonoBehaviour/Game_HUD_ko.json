@@ -1,0 +1,123 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_HUD_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7527332346932056231
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607514405273700
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 145574567936,
+      "m_Localized": "LV {level}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607514405273700
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 237371105280,
+      "m_Localized": "보스 등장!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 575486533632,
+      "m_Localized": "적들이 몰려온다!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 588438544384,
+      "m_Localized": "최후의 벌떼가 온다!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56157383925760,
+      "m_Localized": "도전 완료!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262338014584832,
+      "m_Localized": "보스 포탈 찾기",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262395514298368,
+      "m_Localized": "보스를 쓰러뜨려라",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262638976868352,
+      "m_Localized": "최종 보스를 처치하라",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262437713190912,
+      "m_Localized": "버텨라...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262459607457792,
+      "m_Localized": "포탈로 들어가라",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16595682113748992,
+      "m_Localized": "최후의 벌떼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607514405273700,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}
