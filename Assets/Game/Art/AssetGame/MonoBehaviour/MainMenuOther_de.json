@@ -1,0 +1,173 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "MainMenuOther_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 145501107833668358
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118496005
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6118154240,
+      "m_Localized": "{item} gekauft!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496005
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Localized": "Nice!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Localized": "Bist du sicher, dass du deine {file}-Datei zurücksetzen willst? Das stellt die Standardeinstellungen wieder her.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496005
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Localized": "Konnte die Konfigurationsdatei nicht laden. Fehlerprotokoll: {error}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496005
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Localized": "Fehler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Localized": "Datei anzeigen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Localized": "Datei neu laden",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Localized": "Datei löschen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Localized": "Ignorieren",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Localized": "Warnung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Localized": "Dein Fortschritt wird NICHT gespeichert, wenn du diese Warnung ignorierst. Ich empfehle, das Problem zu beheben. Bist du sicher?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Localized": "Lädt...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Localized": "Nichts",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Localized": "Du hast echt alles geschafft, du Biest! Glückwunsch. Jetzt geh mal raus und fass Gras an.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Localized": "Sicherungsstand laden",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Localized": "Achtung: Fotosensitivität",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806327639244800,
+      "m_Localized": "In diesem Game gibt’s flackernde Lichter oder Muster, die bei Menschen mit lichtempfindlicher Epilepsie Anfälle auslösen könnten. Zocke auf eigene Gefahr!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118496005,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

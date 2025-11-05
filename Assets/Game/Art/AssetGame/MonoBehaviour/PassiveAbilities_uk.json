@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179450
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "Отримуй {value1} {stat1} за рівень.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "Флексуй, щоб зупинити шкоду! КД -{value1}s. +{valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "Цілься точно",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "Критична Мить",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "Випадкові вороги позначаються. Також отримуєш {value1} {stat1} за рівень",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "Тримайся",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "Флекс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "Летючий",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "Утримуй «Стрибок», щоб зависнути в повітрі. Отримуй {value1} повітряного {stat1} за кожен рівень.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "Флоустейт",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "Зміцнений",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "Судьбоносний Удачі",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "Швидкісний Демон",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "Швидкість росте з часом, але при уроні падає наполовину. Більше швидкості — більше шкоди.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "Мавп'яча хватка",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "Забирайся на стіни. Також отримуй по {value1} {stat1} на кожен рівень.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "Воєвода",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "Чума",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "Вороги з отрутою вибухають, коли гинуть, отруюючи всіх навколо.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "Теорія Квантового XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} ворогів, ухиляючись від них. Кожен рівень дає +{value1} до {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "Тіньокрок",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "Гамба",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "Кидай кості та піднімай випадковий показник, як тільки отримуєш новий рівень!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "Вампір",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "Прокляття",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "Стоункс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "Отримуй по {value1} {stat1} за рівень. Також трохи збільшуй {damage} завдяки кількості {gold} в інвентарі.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "Фіксація",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "Завдавай більше шкоди на низькому рівні HP. Отримуй {value1} {stat1} за кожен рівень.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "Зап",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "Заряджай електроатаку рухаючись туди-сюди. Отримай {value1} {stat1} за рівень.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "Отримуй {value1} {stat1} за рівень. Додатково збільшуй {damage} за кожного замороженого ворога.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179450
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179450,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

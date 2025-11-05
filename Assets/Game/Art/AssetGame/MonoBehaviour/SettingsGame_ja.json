@@ -1,0 +1,161 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsGame_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1058902155890957371
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6190220943360,
+      "m_Localized": "カメラシェイク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6628584431616,
+      "m_Localized": "入力遅延",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6658384961536,
+      "m_Localized": "ヒントを表示",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6693944270848,
+      "m_Localized": "ミニマップサイズ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6699975680000,
+      "m_Localized": "HPバーの色",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6713842049024,
+      "m_Localized": "クロスヘアの高さ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6729126092800,
+      "m_Localized": "クロスヘアのサイズ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6747782356992,
+      "m_Localized": "クロスヘアの透明度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6763557134336,
+      "m_Localized": "デバッグFPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6776785969152,
+      "m_Localized": "デバッグ速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6786458034176,
+      "m_Localized": "デバッグRAM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6800307625984,
+      "m_Localized": "敵のスケーリングをデバッグ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6830770855936,
+      "m_Localized": "クイックリセット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6840845574144,
+      "m_Localized": "スコアをリーダーボードにアップロード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 244998933815296,
+      "m_Localized": "言語",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24114260429897728,
+      "m_Localized": "敵ターゲットモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27825623606099968,
+      "m_Localized": "リーダーボードを隠す",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 29969246854447104,
+      "m_Localized": "ランダム敵ターゲット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30355329144455168,
+      "m_Localized": "ミニマップ回転",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsMaps_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3288989716006205503
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208471681925298
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4702618634027008,
+      "m_Localized": "Teleportiere zur 2. Stage in {forest} {tier} 2 als {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208471681925298
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208471681925298,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

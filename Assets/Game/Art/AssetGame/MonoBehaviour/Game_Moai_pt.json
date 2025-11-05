@@ -1,0 +1,112 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Moai_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6897251382589154511
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8114642944,
+      "m_Localized": "O Moai desvia o olhar com uma desaprovação quieta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 57334800384,
+      "m_Localized": "O Moai sussurra apenas uma palavra: 'Nossa.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 65270423552,
+      "m_Localized": "O Moai tosse desconfortavelmente e evita contato visual.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79816269824,
+      "m_Localized": "O Moai avalia você... e acha que você é mais ou menos aceitável.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107351875584,
+      "m_Localized": "O Moai sussurra apenas uma palavra: 'Meh.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 110858313728,
+      "m_Localized": "O Moai dá de ombros. Um julgamento justo e equilibrado.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 157616414720,
+      "m_Localized": "O Moai acena com aprovação. Uma honra rara.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 160179134464,
+      "m_Localized": "O Moai sussurra apenas uma palavra: 'Legal.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 163081592832,
+      "m_Localized": "O Moai começa a fazer um beatbox. Brevemente.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 224461037568,
+      "m_Localized": "O Moai dá um mortal. Ninguém vai acreditar em você.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 227740983296,
+      "m_Localized": "O Moai sussurra apenas uma palavra: 'Top'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231004151808,
+      "m_Localized": "O Moai te dá um joinha. Você nem sabia que ele tinha polegares.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

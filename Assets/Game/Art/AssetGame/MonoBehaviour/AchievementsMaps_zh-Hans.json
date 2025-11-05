@@ -1,0 +1,53 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsMaps_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3288989716006205503
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208471681925295
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4702618634027008,
+      "m_Localized": "作为 {clank} 传送到 {forest} {tier} 2 的第2阶段",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208471681925295
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208471681925295,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

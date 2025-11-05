@@ -1,0 +1,173 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "MainMenuOther_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 145501107833668358
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118496003
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6118154240,
+      "m_Localized": "{item} zakoupeno!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496003
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Localized": "Paráda!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Localized": "Jsi si jistý, že chceš resetovat svůj soubor {file}? Jdeš zpět na základní nastavení.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496003
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Localized": "Nepodařilo se načíst konfigurační soubor. Chybový záznam: {error}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496003
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Localized": "Chyba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Localized": "Zobrazit soubor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Localized": "Znovu načíst soubor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Localized": "Smazat soubor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Localized": "Ignorovat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Localized": "Upozornění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Localized": "Tvůj postup se NEULOŽÍ, pokud ignoruješ toto varování. Doporučuji problém opravit. Jsi si jistý?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Localized": "Nahrávám...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Localized": "Nic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Localized": "Dokončil jsi všechno! Gratulace. Teď běž ven na trávu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Localized": "Načíst záložní uloženou hru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Localized": "Upozornění na fotosenzitivitu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806327639244800,
+      "m_Localized": "Tahle hra může mít blikající světla nebo vzory, které by mohly způsobit záchvaty u lidí s fotosenzitivní epilepsií. Buď opatrnej, hráči!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118496003,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

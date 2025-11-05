@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350871
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} para todas as armas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Dê {value1} de dano extra aos inimigos próximos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Ficar parado te cura",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Aumenta {stat1} ao sofrer dano. Também ganha {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Aumenta {stat1} em {value1} ao abrir um baú.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Críticos têm {value1} de chance de te curar",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Aumenta {stat1} por {value1} por inimigo derrotado (Máx {value2} acumulações)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} chance de surgir um fragmento de XP extra ao matar um inimigo",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Quando sofre dano, libera um choque elétrico nos inimigos próximos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Pule mais alto e mais longe",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Obtenha ouro extra ao sofrer dano",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Ganha dinheiro se movimentando",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Quanto mais tempo você fica parado, mais dano você causa. Máx {value1} de dano.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin te odeia. {value1} chance de Kevin te socar sempre que você acerta um inimigo. Kevin não pode te matar, mas ele quer muito.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Depois de desviar, cause {value1} de dano no próximo ataque e aumente temporariamente {stat1} e {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Mochila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Cerveja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Soco Inglês",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Fogueira",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Capa do Covarde",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Cartão de Crédito (Verde)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Cartão de Crédito (Vermelho)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Lâmina Demoníaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Sangue Demoníaco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Pedaço de Eco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Tomada Elétrica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Penas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Escudo Dourado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Tênis Dourado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Suco da Inércia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Cristal Sugador",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Manto Fantasma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Luvas do Trovão",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Luvas Bolorentas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Quando acertas um inimigo, dá um tapa tão forte que gera um raio. Recarrega em {time_seconds} segundos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Cria uma nuvem de veneno mofado quando acertas um inimigo. As luvas estão cobertas por uma textura úmida, bolorenta e pegajosa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Carregar um {charge_shrine} transforma-o numa zona de cura e gera {value} extra para a próxima fase.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350871
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Farol",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350871,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

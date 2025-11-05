@@ -1,0 +1,339 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsGray_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7711942901044892201
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350912
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9118574944256,
+      "m_Localized": "{value1} šance na otevření truhly zdarma",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18323628566380544,
+      "m_Localized": "{value1} šance na vyvolání Borgara po zabití nepřítele",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324384077971456,
+      "m_Localized": "{value1} více poškození na Elitách a Bossech",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324566240788480,
+      "m_Localized": "Střílí trny při zranění. Poškození roste s {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325049177145344,
+      "m_Localized": "Prokletí nepřítele, které způsobuje {value1} z jejich max. HP každou sekundu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325558210461696,
+      "m_Localized": "Použij objekt k přivolání duchů",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325640972468224,
+      "m_Localized": "Získáš o {value1} více zlata za zabití nepřátel",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326181765054464,
+      "m_Localized": "{value1} šance na otravu nepřátel při zásahu. Plesnivý Sýr můj milovaný <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326961658134528,
+      "m_Localized": "{value1} více poškození na nepřátele s více než 90% HP",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18327373572341760,
+      "m_Localized": "{value1} šance na aplikaci vrstvy {bloodmark} při zásahu nepřítele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10274709504,
+      "m_Localized": "Baterka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9112086355968,
+      "m_Localized": "Klíč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18323336491827200,
+      "m_Localized": "Borgar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324381305536512,
+      "m_Localized": "Boss Buster",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324562939871232,
+      "m_Localized": "Kaktus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324853366063104,
+      "m_Localized": "Jetel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325022769807360,
+      "m_Localized": "Prokletá Panenka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325356309250048,
+      "m_Localized": "Zakázaná Šťáva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325557027667968,
+      "m_Localized": "Duch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325640372682752,
+      "m_Localized": "Zlatá Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325852533161984,
+      "m_Localized": "Posilovací Omáčka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326014991138816,
+      "m_Localized": "Lékárnička",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326180775198720,
+      "m_Localized": "Plesnivý Sýr",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326487261380608,
+      "m_Localized": "Oves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326638285684736,
+      "m_Localized": "Skuleg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326697127575552,
+      "m_Localized": "Klouzačka",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326959774892032,
+      "m_Localized": "Taktické Brýle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327177463463936,
+      "m_Localized": "Turbo Ponožky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327231469322240,
+      "m_Localized": "Nestabilní Transfuze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24829136370532352,
+      "m_Localized": "{value1} šance zamrazit nepřátele při zásahu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24829135066103808,
+      "m_Localized": "Ledový krystal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953193266642944,
+      "m_Localized": "Náramek času",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953195078582272,
+      "m_Localized": "{value1} {stat1}. Určitě to není jen obyčejné hodinky.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289249149124608,
+      "m_Localized": "{charge_shrine}: Nabíjej o {value1}% rychlejc a získej {value2} víc odměn.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350912
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289248587087872,
+      "m_Localized": "Klíč",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350912,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

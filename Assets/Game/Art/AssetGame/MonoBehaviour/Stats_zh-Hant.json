@@ -1,0 +1,546 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Stats_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2333985896604320188
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 11411298951168,
+      "m_Localized": "最大 HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12024481030144,
+      "m_Localized": "HP 回復",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12321492279296,
+      "m_Localized": "每分鐘恢復的HP量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12454221029376,
+      "m_Localized": "護盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12566083117056,
+      "m_Localized": "護盾會在破碎前承受傷害，代替損失HP。不受傷害一段時間後會迅速恢復。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12884846026752,
+      "m_Localized": "荊棘",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12982942408704,
+      "m_Localized": "敵人攻擊你時會受到傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13124810547200,
+      "m_Localized": "護甲",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13160562794496,
+      "m_Localized": "護甲可以減少你受到的傷害。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13348484390912,
+      "m_Localized": "閃避",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13361235075072,
+      "m_Localized": "閃避是讓你有機率躲開攻擊並不受傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13626319282176,
+      "m_Localized": "大小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13628353519616,
+      "m_Localized": "你的攻擊、彈幕、爆炸等的大小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13932146958336,
+      "m_Localized": "持續時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13933384278016,
+      "m_Localized": "你的攻擊和彈幕的持續時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14128209698816,
+      "m_Localized": "投射物速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14169276129280,
+      "m_Localized": "投射物的飛行速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14279779262464,
+      "m_Localized": "傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14282090323968,
+      "m_Localized": "提高攻擊傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14666708000768,
+      "m_Localized": "效果持續時間",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14668243116032,
+      "m_Localized": "效果的持續時間，例如中毒或冰凍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14800854425600,
+      "m_Localized": "攻擊速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15228329500672,
+      "m_Localized": "發射投射物和進行攻擊的速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15429710618624,
+      "m_Localized": "投射物數量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15430247489536,
+      "m_Localized": "增加攻擊或投射物的數量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698171240448,
+      "m_Localized": "吸血",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698712305664,
+      "m_Localized": "攻擊敵人時有機率恢復1點HP。超過100%時保證恢復1點，並有機會恢復2點",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967261007872,
+      "m_Localized": "爆擊機率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967873376256,
+      "m_Localized": "爆擊機率。超過100％的爆擊機率會觸發「超爆擊」，造成更多傷害。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175109742592,
+      "m_Localized": "爆擊傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175835357184,
+      "m_Localized": "增加爆擊傷害。默認情況下爆擊造成雙倍傷害。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16480819978240,
+      "m_Localized": "精英傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16481419763712,
+      "m_Localized": "增加對精英敵人的傷害。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16640631349248,
+      "m_Localized": "擊退",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16641403101184,
+      "m_Localized": "擊中敵人時將其擊退的距離。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16888908980224,
+      "m_Localized": "移動速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16890188242944,
+      "m_Localized": "移動速度快慢。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17000058036224,
+      "m_Localized": "跳躍高度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17001215664128,
+      "m_Localized": "跳跃高度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069079502848,
+      "m_Localized": "墜落傷害減免",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069855449088,
+      "m_Localized": "減少你因墜落而受的傷害。超過100％會因墜落恢復生命。閉嘴，這是",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17244841811968,
+      "m_Localized": "拾取範圍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17246204960768,
+      "m_Localized": "增加拾取经验值的距离",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17377222434816,
+      "m_Localized": "運氣",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17378044518400,
+      "m_Localized": "增加從升級、神龕等獲得高稀有度獎勵的機率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17565831897088,
+      "m_Localized": "金幣獲取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17566733672448,
+      "m_Localized": "讓你從各種來源獲得更多金幣。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17680923598848,
+      "m_Localized": "讓你從各種來源獲得更多經驗值。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17679753388032,
+      "m_Localized": "經驗獲取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17787811241984,
+      "m_Localized": "難度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17958506831872,
+      "m_Localized": "難度會增加敵人的數量、生命值、速度和強度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18004530929664,
+      "m_Localized": "精英刷新率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18009035612160,
+      "m_Localized": "提升精英敵人的刷新機率。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18132130045952,
+      "m_Localized": "強化倍數",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18139709153280,
+      "m_Localized": "提升強化效果和持續時間。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18365530480640,
+      "m_Localized": "強化掉落機率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18368768483328,
+      "m_Localized": "增加敵人掉落強化的機率",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18497495867392,
+      "m_Localized": "投射物反彈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501094580224,
+      "m_Localized": "让某些投射物可以反弹",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18526608531456,
+      "m_Localized": "額外跳躍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18530010112000,
+      "m_Localized": "額外跳躍讓你在空中多跳幾次",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23882051067904,
+      "m_Localized": "银币获取",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23886740299776,
+      "m_Localized": "從所有來源獲得更多銀幣",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381305404235776,
+      "m_Localized": "寶箱倍數",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381343001976832,
+      "m_Localized": "地圖上會出現更多寶箱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698515575767040,
+      "m_Localized": "超量治療",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698517517729792,
+      "m_Localized": "讓你治療超過最大HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098208234176512,
+      "m_Localized": "敵人數量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098210771730432,
+      "m_Localized": "敵人大小",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098214437552128,
+      "m_Localized": "敵人速度",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098216379514880,
+      "m_Localized": "敵人血量",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098229126004736,
+      "m_Localized": "敵人傷害",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323851693686784,
+      "m_Localized": "敵人成長",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323853509820416,
+      "m_Localized": "寶箱價格",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

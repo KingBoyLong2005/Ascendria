@@ -1,0 +1,140 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_ScoreUi_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1666161080439839172
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2413497655296,
+      "m_Localized": "Pylon หยุดแล้ว!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2555764252672,
+      "m_Localized": "ศาลเจ้าเต็มแล้ว!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3672191508480,
+      "m_Localized": "สปีด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3728558759936,
+      "m_Localized": "ต้องเร็วแสบเกิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3739765940224,
+      "m_Localized": "แม่เหล็ก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3757658841088,
+      "m_Localized": "ดูด XP ทั้งหมด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4154557440000,
+      "m_Localized": "ตูม!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4140582019072,
+      "m_Localized": "นิวเคลียร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3806266630144,
+      "m_Localized": "เดือด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3823379390464,
+      "m_Localized": "ความเร็วโจมตีและพลังโจมตี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3833131147264,
+      "m_Localized": "โล่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3852982788096,
+      "m_Localized": "ปั๋งกัน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3862965231616,
+      "m_Localized": "สต๊องค์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3880417730560,
+      "m_Localized": "เวลาทำเงิน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3898792976384,
+      "m_Localized": "นาฬิกา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3932552929280,
+      "m_Localized": "หยุดเวลา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

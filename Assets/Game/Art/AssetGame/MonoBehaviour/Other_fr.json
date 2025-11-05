@@ -1,0 +1,193 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Other_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6431438436825214902
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715355
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 5841330176,
+      "m_Localized": "Courses",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19275685888,
+      "m_Localized": "Rang",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48220947062784,
+      "m_Localized": "Défis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48273694629888,
+      "m_Localized": "Niveau",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49788157140992,
+      "m_Localized": "Niveau {tier}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715355
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 59144428822528,
+      "m_Localized": "Fini",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59155489202176,
+      "m_Localized": "Pas encore fini",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107249635401728,
+      "m_Localized": "Argent",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 152229783511040,
+      "m_Localized": "Requiert",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2488414023426048,
+      "m_Localized": "Or",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901787545534464,
+      "m_Localized": "Facile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901790380883968,
+      "m_Localized": "Normal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901793035878400,
+      "m_Localized": "Difficile",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901795149807616,
+      "m_Localized": "Cuit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501400353964032,
+      "m_Localized": "Boss du Niveau",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501402186874880,
+      "m_Localized": "Boss Final",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501542654115840,
+      "m_Localized": "Mini-boss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501575499710464,
+      "m_Localized": "Élite",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20782181042487296,
+      "m_Localized": "Beau essai p'tit malin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20783149427589120,
+      "m_Localized": "Frérot, fais juste le défi normalement",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21882863065628672,
+      "m_Localized": "Niveau",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715355,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

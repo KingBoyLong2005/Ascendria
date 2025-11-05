@@ -1,0 +1,190 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "SettingsControls Shared Data",
+  "m_TableCollectionName": "SettingsControls",
+  "m_TableCollectionNameGuidString": "b75ab39dacde2bc4da67d0e6b661b516",
+  "m_Entries": [
+    {
+      "m_Id": 13558849536,
+      "m_Key": "sensitivity",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16603914240,
+      "m_Key": "look_smoothing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20051632128,
+      "m_Key": "controller_sensitivity",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23344160768,
+      "m_Key": "inverted_horizontal_axis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25827188736,
+      "m_Key": "inverted_vertical_axis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28230524928,
+      "m_Key": "hold_crouch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32680681472,
+      "m_Key": "hold_aim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35163709440,
+      "m_Key": "move_forward",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37273444352,
+      "m_Key": "move_backward",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40326897664,
+      "m_Key": "move_left",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 47062949888,
+      "m_Key": "move_right",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49768275968,
+      "m_Key": "jump",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52737843200,
+      "m_Key": "interact",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 54042271744,
+      "m_Key": "aim",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 55250231296,
+      "m_Key": "slide",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 225987764224,
+      "m_Key": "controller",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4358561919115264,
+      "m_Key": "vibration",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17638684366077952,
+      "m_Key": "rotate_camera_with_arrow_keys",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17931843310583808,
+      "m_Key": "pause_on_controller_disconnect",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27803156565065728,
+      "m_Key": "quick_reset",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30636199503855616,
+      "m_Key": "select_upgrades_with_number_keys",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39391745866334208,
+      "m_Key": "map_overlay",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607404190498896
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607404190498896,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

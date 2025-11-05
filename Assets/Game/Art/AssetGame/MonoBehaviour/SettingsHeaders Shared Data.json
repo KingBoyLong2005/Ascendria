@@ -1,0 +1,120 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "SettingsHeaders Shared Data",
+  "m_TableCollectionName": "SettingsHeaders",
+  "m_TableCollectionNameGuidString": "ff6b76393deb9cf4bbeb427d23750a6a",
+  "m_Entries": [
+    {
+      "m_Id": 21639901978624,
+      "m_Key": "GAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21643660075008,
+      "m_Key": "UI",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21645992108032,
+      "m_Key": "DEBUG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21649301413888,
+      "m_Key": "SCREEN",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21652610719744,
+      "m_Key": "GRAPHICS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21655576092672,
+      "m_Key": "GENERAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21657660661760,
+      "m_Key": "KEYBOARD INPUT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21660034637824,
+      "m_Key": "CONTROLLER INPUT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21663033565184,
+      "m_Key": "AUDIO",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22040294432768,
+      "m_Key": "VISUALS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17945366392602624,
+      "m_Key": "EXTRA",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27817376845266944,
+      "m_Key": "OTHER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607401917186178
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607401917186178,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

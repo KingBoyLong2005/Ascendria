@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151667
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "อัปเกรด {agility_tome} ไปที่ Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "ออกลุยให้ตาย {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "โค่น {miniboss} ใน {value} วินาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "เก็บสะสม {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "เอาตัวรอดจาก {final_swarm} เป็นเวลา {value} วินาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "ซื้อกล่อง {value} กล่อง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "ตีคริติคอล {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "ปราบศัตรูหนาม {value} ตัวด้วยความเสียหาย {thorns_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "ปราบ {stage_boss} ได้ในไม่เกิน {value} วินาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "อัปเกรด {cooldown_tome} ไปที่เลเวล {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "อัปเกรด {regen_tome} ถึงระดับ {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "จัดการศัตรู {value} ตัวในขณะที่ยืนนิ่ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "เก็บ {leeching_crystal} จำนวน {value} ในการวิ่งครั้งเดียว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วย {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "เพิ่ม {max_hp} ด้วย {blood_magic} {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "ฟื้น HP {value} ด้วย {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "ทุบหม้อ {value} ลูก",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "อัปเกรด {xp_tome} เป็นเลเวล {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "อัปเกรดทั้ง {cooldown_tome} และ {agility_tome} ถึงระดับ {value} ในการวิ่งครั้งเดียว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "รอดจาก {final_swarm} เป็นเวลา {value} นาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วยดาเมจ {poison}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "อัปเกรด {attraction_tome} ถึงระดับ {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วย {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วย {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "จัดการศัตรู {value} ตัวโดยใช้ {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "เอาชนะ {stage_boss} เมื่อมี HP น้อยกว่า {value}%",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "ถึงระดับ {value} เป็น {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "จัดการศัตรู {value} ตัวเป็น {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "รอดจาก {final_swarm} เป็นเวลา {value} นาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "ทำ {value} {challenges} ให้ครบ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วยความเสียหายไฟ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "จัดการ {final_boss} {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "ถึงระดับ {value} เป็น {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "จัดการ {stage_boss} ตัวแรกให้ล้มโดยที่ไม่โดนเจ็บซักนิด",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วย {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "จัดการศัตรู {value} ตัวด้วยความเสียหายสายฟ้า",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "{value} {cursed_shrine} เปิดใช้งาน แล้วผ่านด่านให้สำเร็จ.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "ทำให้ {maxhp_stat} ถึง {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "ทำทุก {charge_shrine} ในแผนที่ให้ครบ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "สังหารศัตรู {value} ตัวด้วย {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "ใช้{athena}เอาชนะ{stage_boss} โดยโจมตีสุดท้ายด้วย {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151667
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151667,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

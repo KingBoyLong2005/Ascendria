@@ -1,0 +1,546 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Stats_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2333985896604320188
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 11411298951168,
+      "m_Localized": "Maksimum Can",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12024481030144,
+      "m_Localized": "Can Yenileme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12321492279296,
+      "m_Localized": "Can Yenileme dakikada ne kadar can yenilediğini artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12454221029376,
+      "m_Localized": "Kalkan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12566083117056,
+      "m_Localized": "Kalkan kırılmadan önce hasar alır, can kaybetmezsin. Bir süre hasar almazsan kalkan hızla yenilenir.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12884846026752,
+      "m_Localized": "Diken",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12982942408704,
+      "m_Localized": "Düşmanlar seni her vurduğunda onlara hasar verir.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13124810547200,
+      "m_Localized": "Zırh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13160562794496,
+      "m_Localized": "Zırh alacağın hasarı azaltır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13348484390912,
+      "m_Localized": "Kaçınma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13361235075072,
+      "m_Localized": "Kaçınma, saldırılardan sıyrılma ve hasar almama şansını gösterir.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13626319282176,
+      "m_Localized": "Boyut",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13628353519616,
+      "m_Localized": "Saldırıların, mermilerin, patlamaların ve daha fazlasının boyutu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13932146958336,
+      "m_Localized": "Süre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13933384278016,
+      "m_Localized": "Saldırıların ve mermilerin süresi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14128209698816,
+      "m_Localized": "Mermi Hızı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14169276129280,
+      "m_Localized": "Mermilerinin hızı.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14279779262464,
+      "m_Localized": "Hasar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14282090323968,
+      "m_Localized": "Saldırıların hasarını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14666708000768,
+      "m_Localized": "Etkili Süre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14668243116032,
+      "m_Localized": "Zehir veya buz gibi etkilerin süresi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14800854425600,
+      "m_Localized": "Saldırı Hızı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15228329500672,
+      "m_Localized": "Mermileri ne kadar hızlı fırlattığın ve saldırıları gerçekleştirdiğin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15429710618624,
+      "m_Localized": "Mermi Sayısı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15430247489536,
+      "m_Localized": "Saldırı ve mermi sayısını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698171240448,
+      "m_Localized": "Can Çalma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698712305664,
+      "m_Localized": "Düşmanı vurduğunda can çalma şansın. %+100, garanti 1 can iyileştirir ve 2 cana kadar çıkabilir.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967261007872,
+      "m_Localized": "Kritik Şans",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967873376256,
+      "m_Localized": "Kritik hasar verme şansı. %+100 kritik şansın varsa daha da fazla hasar için Overkrit elde edersin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175109742592,
+      "m_Localized": "Kritik Hasar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175835357184,
+      "m_Localized": "Kritik vuruşlarının hasarını artırır. Kritik vuruşlar varsayılan olarak iki kat hasar verir.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16480819978240,
+      "m_Localized": "Seçkinlere Karşı Hasar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16481419763712,
+      "m_Localized": "Seçkin düşmanlara verdiğin hasarı artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16640631349248,
+      "m_Localized": "Geri Tepme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16641403101184,
+      "m_Localized": "Düşmanları vurduğunda ne kadar uzağa iteceğin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16888908980224,
+      "m_Localized": "Hareket Hızı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16890188242944,
+      "m_Localized": "Ne kadar hızlı hareket ettiğin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17000058036224,
+      "m_Localized": "Zıplama Yüksekliği",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17001215664128,
+      "m_Localized": "Ne kadar yükseğe zıplayabileceğin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069079502848,
+      "m_Localized": "Düşüş Hasarı Azaltma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069855449088,
+      "m_Localized": "Düşüş Hasarı Azaltma düşmekten aldığın hasarı azaltır. %+100 üzeri, düşüşten iyileşmene bile neden olur. Saçmalama bu bir özellik, hata değil.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17244841811968,
+      "m_Localized": "Alım Menzili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17246204960768,
+      "m_Localized": "XP'yi ne kadar uzaktan alabileceğin.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17377222434816,
+      "m_Localized": "Şans",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17378044518400,
+      "m_Localized": "Seviye atlamada, türbelerde ve daha fazla yerden daha üst düzey teklifler alma şansını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17565831897088,
+      "m_Localized": "Altın Artışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17566733672448,
+      "m_Localized": "Tüm kaynaklardan elde ettiğin altını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17680923598848,
+      "m_Localized": "Tüm kaynaklardan daha fazla XP elde etmeni sağlar.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17679753388032,
+      "m_Localized": "XP Artışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17787811241984,
+      "m_Localized": "Zorluk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17958506831872,
+      "m_Localized": "Zorluk, düşman sayısını, canını, hızını ve kuvvetini artırır. Sadece oyuncular bunu seçer.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18004530929664,
+      "m_Localized": "Seçkin Doğma Artışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18009035612160,
+      "m_Localized": "Seçkin düşmanların doğma şansını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18132130045952,
+      "m_Localized": "Güç Artışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18139709153280,
+      "m_Localized": "Güç Artışı, güçlendiricilerin etkisini ve süresini artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18365530480640,
+      "m_Localized": "Güçlendirici Bırakma Şansı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18368768483328,
+      "m_Localized": "Düşmanların güçlendirici ve sandık bırakma şansını artırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18497495867392,
+      "m_Localized": "Mermi Zıplaması",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501094580224,
+      "m_Localized": "Bazı mermilerin zıplamasını sağlar.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18526608531456,
+      "m_Localized": "Ekstra Zıplamalar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18530010112000,
+      "m_Localized": "Ekstra Zıplamalar havada daha fazla zıplama yapmanı sağlar.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23882051067904,
+      "m_Localized": "Gümüş Artışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23886740299776,
+      "m_Localized": "Gümüş artışı, tüm kaynaklardan daha fazla gümüş kazandırır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381305404235776,
+      "m_Localized": "Ganimet Çarpanı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381343001976832,
+      "m_Localized": "Haritaya daha fazla sandık bırakır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698515575767040,
+      "m_Localized": "Aşırı İyileşme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698517517729792,
+      "m_Localized": "Maksimum can sınırının üstünde iyileş!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098208234176512,
+      "m_Localized": "Düşman Sayısı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098210771730432,
+      "m_Localized": "Düşman Boyutu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098214437552128,
+      "m_Localized": "Düşman Hızı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098216379514880,
+      "m_Localized": "Düşman Canı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098229126004736,
+      "m_Localized": "Düşman Hasarı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323851693686784,
+      "m_Localized": "Düşman güçlendirme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323853509820416,
+      "m_Localized": "Hazine sandığı fiyatı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Interactables_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2275801272863999494
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607532830326900
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 876520120320,
+      "m_Localized": "Mikrodalga'yı Kullan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 902474473472,
+      "m_Localized": "{item}'i Al",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607532830326900
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 233172606976,
+      "m_Localized": "Çömleği Kır",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328890818560,
+      "m_Localized": "Parlayan muzu kap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 598844612608,
+      "m_Localized": "Boss'u Çağır",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 640930258944,
+      "m_Localized": "Son Boss'la Savaş",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2057841647616,
+      "m_Localized": "Portal'a Gir",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2464471031808,
+      "m_Localized": "Ayrıl",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2561594335232,
+      "m_Localized": "Tip ile konuş",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2620230705152,
+      "m_Localized": "Sağ ol ahmak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2943762538496,
+      "m_Localized": "Dengenin Tapınağı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3076302544896,
+      "m_Localized": "Meydan Okumayı Çağır!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3221341577216,
+      "m_Localized": "Succ Tapınağı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3366309306368,
+      "m_Localized": "Moai'ye Danış",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 102210636324864,
+      "m_Localized": "Mikrodalga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108906825883648,
+      "m_Localized": "Bir eşyayı klonlamak için seç.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108965088960512,
+      "m_Localized": "Aynı seviyeden rastgele bir eşyayı kullanır.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10864125864443904,
+      "m_Localized": "Yuvarlanan otu parçala",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305293611892736,
+      "m_Localized": "Succ Tapınağı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305348158816256,
+      "m_Localized": "Doldurma Tapınağı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16307420941910016,
+      "m_Localized": "Tumbleweed",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17746737476272128,
+      "m_Localized": "Kafesi aç",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058737481809920,
+      "m_Localized": "Gizemli çalıyı salla",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058864309174272,
+      "m_Localized": "Heykele dokun",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18499026583420928,
+      "m_Localized": "Boss Laneti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20729263719317504,
+      "m_Localized": "Patlat Müziği",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25306747039252480,
+      "m_Localized": "Açgözlülük Tapınağı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607532830326900,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

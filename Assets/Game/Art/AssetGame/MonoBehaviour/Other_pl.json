@@ -1,0 +1,193 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Other_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6431438436825214902
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715360
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 5841330176,
+      "m_Localized": "Rundy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19275685888,
+      "m_Localized": "Poziom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48220947062784,
+      "m_Localized": "Wyzwania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48273694629888,
+      "m_Localized": "Poziom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49788157140992,
+      "m_Localized": "Poziom {tier}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715360
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 59144428822528,
+      "m_Localized": "Ukończone",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59155489202176,
+      "m_Localized": "Nieukończone",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107249635401728,
+      "m_Localized": "Srebro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 152229783511040,
+      "m_Localized": "Wymaga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2488414023426048,
+      "m_Localized": "Złoto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901787545534464,
+      "m_Localized": "Łatwy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901790380883968,
+      "m_Localized": "Normalny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901793035878400,
+      "m_Localized": "Trudny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901795149807616,
+      "m_Localized": "Spalny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501400353964032,
+      "m_Localized": "Boss Poziomu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501402186874880,
+      "m_Localized": "Ostateczny Boss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501542654115840,
+      "m_Localized": "Miniboss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501575499710464,
+      "m_Localized": "Elita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20782181042487296,
+      "m_Localized": "Niezła próba, cwaniaku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20783149427589120,
+      "m_Localized": "Stary, zrób to wyzwanie normalnie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21882863065628672,
+      "m_Localized": "Poziom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715360,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsGame_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1058902155890957371
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6190220943360,
+      "m_Localized": "สั่นหน้าจอ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6628584431616,
+      "m_Localized": "ใส่ดีเลย์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6658384961536,
+      "m_Localized": "แสดงทิปส์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6693944270848,
+      "m_Localized": "ขนาดมินิแมพ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6699975680000,
+      "m_Localized": "สีแถบพลังชีวิต",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6713842049024,
+      "m_Localized": "ความสูงจุดเล็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6729126092800,
+      "m_Localized": "ขนาดจุดเล็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6747782356992,
+      "m_Localized": "ความชัดของจุดเล็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6763557134336,
+      "m_Localized": "ดีบั๊ก FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6776785969152,
+      "m_Localized": "ดีบั๊กความเร็ว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6786458034176,
+      "m_Localized": "ดีบั๊ก RAM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6800307625984,
+      "m_Localized": "ดีบั๊กการเติบโตของศัตรู",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6830770855936,
+      "m_Localized": "รีเซ็ทด่วน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6840845574144,
+      "m_Localized": "อัปโหลดคะแนนขึ้นบอร์ด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 244998933815296,
+      "m_Localized": "ภาษา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24114260429897728,
+      "m_Localized": "โหมดล็อกเป้าศัตรู",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27825623606099968,
+      "m_Localized": "ซ่อนตารางคะแนน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 29969246854447104,
+      "m_Localized": "เล็งศัตรูสุ่ม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30355329144455168,
+      "m_Localized": "หมุนมินิแม็พ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

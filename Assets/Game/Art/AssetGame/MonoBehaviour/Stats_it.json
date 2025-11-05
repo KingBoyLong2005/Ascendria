@@ -1,0 +1,546 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Stats_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2333985896604320188
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 11411298951168,
+      "m_Localized": "Vita Massima",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12024481030144,
+      "m_Localized": "Recupero Vita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12321492279296,
+      "m_Localized": "Il Recupero Vita aumenta l'ammontare di vita che rigeneri al minuto.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12454221029376,
+      "m_Localized": "Scudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12566083117056,
+      "m_Localized": "Lo Scudo assorbe i danni al posto della vita finché non si rompe. Rigenera velocemente dopo una pausa dai danni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12884846026752,
+      "m_Localized": "Spine",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12982942408704,
+      "m_Localized": "Infliggi danni ai nemici quando ti attaccano.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13124810547200,
+      "m_Localized": "Armatura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13160562794496,
+      "m_Localized": "L'Armatura riduce il danno che subisci.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13348484390912,
+      "m_Localized": "Schivata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13361235075072,
+      "m_Localized": "La Schivata è la possibilità di evitare un attacco, senza subire danni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13626319282176,
+      "m_Localized": "Dimensione",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13628353519616,
+      "m_Localized": "La dimensione dei tuoi attacchi, proiettili, esplosioni e altro.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13932146958336,
+      "m_Localized": "Durata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13933384278016,
+      "m_Localized": "La durata dei tuoi attacchi e proiettili.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14128209698816,
+      "m_Localized": "Velocità Proiettili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14169276129280,
+      "m_Localized": "La velocità dei tuoi proiettili.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14279779262464,
+      "m_Localized": "Danno",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14282090323968,
+      "m_Localized": "Aumenta il danno dei tuoi attacchi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14666708000768,
+      "m_Localized": "Durata Effetti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14668243116032,
+      "m_Localized": "La durata degli effetti come veleno o ghiaccio.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14800854425600,
+      "m_Localized": "Velocità Attacco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15228329500672,
+      "m_Localized": "Quanto velocemente lanci proiettili ed esegui attacchi.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15429710618624,
+      "m_Localized": "Numero Proiettili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15430247489536,
+      "m_Localized": "Aumenta il numero di attacchi/proiettili.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698171240448,
+      "m_Localized": "Rubavita",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698712305664,
+      "m_Localized": "La possibilità di curarti di 1 quando colpisci un nemico. Oltre il 100% garantisce 1 cura e una possibilità di curarti di 2.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967261007872,
+      "m_Localized": "Probabilità Critica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967873376256,
+      "m_Localized": "Probabilità di infliggere danno critico. Oltre il 100% di Probabilità Critica permette di Overcrit, infliggendo ancora più danni.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175109742592,
+      "m_Localized": "Danno Critico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175835357184,
+      "m_Localized": "Aumenta il danno dei tuoi colpi critici. Di default, i critici fanno il doppio del danno.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16480819978240,
+      "m_Localized": "Danno agli Elite",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16481419763712,
+      "m_Localized": "Aumenta il danno che infliggi ai nemici elite.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16640631349248,
+      "m_Localized": "Rinculo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16641403101184,
+      "m_Localized": "La distanza con cui spingi i nemici quando li colpisci.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16888908980224,
+      "m_Localized": "Velocità Movimento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16890188242944,
+      "m_Localized": "Quanto ti muovi veloce.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17000058036224,
+      "m_Localized": "Altezza Salto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17001215664128,
+      "m_Localized": "Quanto puoi saltare in alto.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069079502848,
+      "m_Localized": "Riduzione Danno da Caduta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069855449088,
+      "m_Localized": "La Riduzione Danno da Caduta riduce i danni che prendi cadendo. Se supera il 100%, ti curi cadendo. È una feature, non un bug.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17244841811968,
+      "m_Localized": "Distanza Raccolta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17246204960768,
+      "m_Localized": "La Distanza Raccolta aumenta la distanza da cui raccogli l'esperienza.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17377222434816,
+      "m_Localized": "Fortuna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17378044518400,
+      "m_Localized": "La Fortuna aumenta le tue chance di ottenere offerte di livello più alto da livellamento, santuari e altro.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17565831897088,
+      "m_Localized": "Aumento Oro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17566733672448,
+      "m_Localized": "L'Aumento Oro ti dà più oro da tutte le fonti.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17680923598848,
+      "m_Localized": "L'Aumento XP ti dà più esperienza da tutte le fonti.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17679753388032,
+      "m_Localized": "Aumento XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17787811241984,
+      "m_Localized": "Difficoltà",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17958506831872,
+      "m_Localized": "La Difficoltà aumenta la quantità, vita, velocità e forza dei nemici. Solo i giocatori veri scelgono questa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18004530929664,
+      "m_Localized": "Aumento Generazione Elite",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18009035612160,
+      "m_Localized": "L'Aumento Generazione Elite aumenta la possibilità che i nemici elite appaiano.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18132130045952,
+      "m_Localized": "Moltiplicatore Potenziamenti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18139709153280,
+      "m_Localized": "Il Moltiplicatore Potenziamenti aumenta la potenza e la durata degli effetti potenziatori.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18365530480640,
+      "m_Localized": "Probabilità Drop Potenziamenti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18368768483328,
+      "m_Localized": "La Probabilità Drop Potenziamenti aumenta la possibilità che i nemici lascino potenziamenti e forzieri.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18497495867392,
+      "m_Localized": "Rimbalzi Proiettili",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501094580224,
+      "m_Localized": "Fa rimbalzare alcuni proiettili.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18526608531456,
+      "m_Localized": "Salti Extra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18530010112000,
+      "m_Localized": "I Salti Extra ti danno più salti in aria.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23882051067904,
+      "m_Localized": "Aumento d'argento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23886740299776,
+      "m_Localized": "L'aumento d'argento ti dà più argento da tutte le fonti.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381305404235776,
+      "m_Localized": "Moltiplicatore di Forzieri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381343001976832,
+      "m_Localized": "Appaiono più forzieri sulla mappa.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698515575767040,
+      "m_Localized": "Extra Cura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698517517729792,
+      "m_Localized": "Ti fa curare oltre il tuo massimo HP!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098208234176512,
+      "m_Localized": "Quantità di nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098210771730432,
+      "m_Localized": "Dimensioni dei nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098214437552128,
+      "m_Localized": "Velocità dei nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098216379514880,
+      "m_Localized": "Vita dei nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098229126004736,
+      "m_Localized": "Danni dei nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323851693686784,
+      "m_Localized": "Crescita dei nemici",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323853509820416,
+      "m_Localized": "Prezzo dei forzieri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

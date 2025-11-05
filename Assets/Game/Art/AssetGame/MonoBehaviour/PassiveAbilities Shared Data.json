@@ -1,0 +1,267 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "PassiveAbilities Shared Data",
+  "m_TableCollectionName": "PassiveAbilities",
+  "m_TableCollectionNameGuidString": "f2f37496fd9c4024084f2f9a4e7b18c4",
+  "m_Entries": [
+    {
+      "m_Id": 8336941056,
+      "m_Key": "STAT_CHANGE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Key": "BULLSEYE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Key": "BULLSEYE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Key": "CRIT_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Key": "ENDURING_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Key": "FLEX_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Key": "FLEX_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Key": "FLOAT_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Key": "FLOAT_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Key": "FLOWSTATE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Key": "REINFORCED_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Key": "RNG_BLESSING_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Key": "SPEED_DEMON_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Key": "SPEED_DEMON_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Key": "WALL_CLIMB_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Key": "WALL_CLIMB_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Key": "WARRIOR_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Key": "PLAGUE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Key": "PLAGUE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Key": "QUANTUM_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Key": "SHADOWSTEP_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Key": "SHADOWSTEP_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Key": "GAMBA_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Key": "GAMBA_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Key": "VAMPIRE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Key": "CURSE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Key": "STONKS_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Key": "STONKS_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Key": "LOCKIN_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Key": "LOCKIN_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Key": "ZAP_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Key": "ZAP_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Key": "ENDURING_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607393822179427
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179427,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

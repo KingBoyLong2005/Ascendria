@@ -1,0 +1,235 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Interactables_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2275801272863999494
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607532830326887
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 876520120320,
+      "m_Localized": "用微波爐",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 902474473472,
+      "m_Localized": "拿走{item}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607532830326887
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 233172606976,
+      "m_Localized": "打破罐子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328890818560,
+      "m_Localized": "摸那根闪亮的香蕉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 598844612608,
+      "m_Localized": "召喚Boss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 640930258944,
+      "m_Localized": "挑戰最終Boss",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2057841647616,
+      "m_Localized": "進入傳送門",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2464471031808,
+      "m_Localized": "離開",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2561594335232,
+      "m_Localized": "跟可疑人物說話",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2620230705152,
+      "m_Localized": "謝啦蠢貨",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2943762538496,
+      "m_Localized": "平衡之神殿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3076302544896,
+      "m_Localized": "平衡之神殿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3221341577216,
+      "m_Localized": "吸吸神殿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3366309306368,
+      "m_Localized": "請教摩艾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 102210636324864,
+      "m_Localized": "微波爐",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108906825883648,
+      "m_Localized": "選一個道具來複製吧！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108965088960512,
+      "m_Localized": "這會消耗一個相同等級的隨機道具",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10864125864443904,
+      "m_Localized": "打爆風滾草",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305293611892736,
+      "m_Localized": "吸吸神殿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305348158816256,
+      "m_Localized": "充能神殿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16307420941910016,
+      "m_Localized": "風滾草",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17746737476272128,
+      "m_Localized": "開啟籠子",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058737481809920,
+      "m_Localized": "搖動可疑的灌木",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058864309174272,
+      "m_Localized": "觸碰雕像",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18499026583420928,
+      "m_Localized": "Boss的詛咒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20729263719317504,
+      "m_Localized": "播放音樂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25306747039252480,
+      "m_Localized": "貪婪祭壇",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607532830326887,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

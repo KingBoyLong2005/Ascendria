@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208323210903646
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Don't take any damage for {value} minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Block {value} damage with {armor_stat} as {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Kill {value} enemies",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Find the hidden Banana",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Kill {value} enemies using the {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Get the {precision_tome} to level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Kill {value} enemies as {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% chance to find upon breaking a {tumbleweed} on {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Get the {lightning_staff} to level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Charge a {charge_shrine} during a Sandstorm on {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Freeze {value} enemies with the {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Kill {value} enemies with {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Kill {value} enemies using the {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% chance to find upon breaking a {tumbleweed} on {desert} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Get the {bloody_tome} to level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Get {knockback_tome} to level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Kill {scorpionussy} {miniboss} on {desert} {value} times",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Get {luck_tome} to level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Kill {value} {wisp} as {fox} on {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Complete {desert} {tier} 2 as {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Defeat a {stage_boss} without picking up any items, powerups or using shrines.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Get {difficulty_tome} to level {value} in under 10 minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208323210903646
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208323210903646,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

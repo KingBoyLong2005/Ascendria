@@ -1,0 +1,339 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsGray_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7711942901044892201
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350910
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9118574944256,
+      "m_Localized": "{value1} ลุ้นเปิดหีบฟรี!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18323628566380544,
+      "m_Localized": "มี {value1} โอกาสให้เบอร์เกอร์เมื่อกำจัดศัตรู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324384077971456,
+      "m_Localized": "{value1} ดาเมจเพิ่มใส่บอส",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324566240788480,
+      "m_Localized": "ยิงหนามเมื่อโดนโจมตี ดาเมจตาม {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325049177145344,
+      "m_Localized": "สาปศัตรู ทำ % {value1} ของ HP สูงสุดทุกวินาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325558210461696,
+      "m_Localized": "ใช้ของเรียกผี",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325640972468224,
+      "m_Localized": "ได้เงินมากขึ้น {value1} % จากการฆ่าศัตรู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326181765054464,
+      "m_Localized": "มี {value1} โอกาสวางยาพิษศัตรู ชีสขึ้นราของฉันที่รัก! <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326961658134528,
+      "m_Localized": "ทำดาเมจ {value1} กับศัตรู HP เกิน 90%",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18327373572341760,
+      "m_Localized": "โจมตีศัตรูมีโอกาส {value1} สะสม {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10274709504,
+      "m_Localized": "แบตเตอรี่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9112086355968,
+      "m_Localized": "กุญแจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18323336491827200,
+      "m_Localized": "บอก้าร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324381305536512,
+      "m_Localized": "บอสบัสเตอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324562939871232,
+      "m_Localized": "กระบองเพชร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324853366063104,
+      "m_Localized": "โคลเวอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325022769807360,
+      "m_Localized": "ตุ๊กตาต้องคำสาป",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325356309250048,
+      "m_Localized": "น้ำต้องห้าม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325557027667968,
+      "m_Localized": "ผี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325640372682752,
+      "m_Localized": "ถุงมือทองคำ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325852533161984,
+      "m_Localized": "ซอสกล้าม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326014991138816,
+      "m_Localized": "ชุดปฐมพยาบาล",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326180775198720,
+      "m_Localized": "ชีสขึ้นรา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326487261380608,
+      "m_Localized": "ข้าวโอ๊ต",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326638285684736,
+      "m_Localized": "สคูเล็ก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326697127575552,
+      "m_Localized": "วงแหวนลื่น",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326959774892032,
+      "m_Localized": "แว่นตายุทธวิธี",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327177463463936,
+      "m_Localized": "ถุงเท้าเทอร์โบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327231469322240,
+      "m_Localized": "ถ่ายเลือดไม่เสถียร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24829136370532352,
+      "m_Localized": "{value1} โอกาสทำให้ศัตรูแข็งเป็นน้ำแข็งเมื่อคุณโจมตี",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24829135066103808,
+      "m_Localized": "คริสตัลเยือกแข็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953193266642944,
+      "m_Localized": "สายรัดเวลา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953195078582272,
+      "m_Localized": "{value1} {stat1} บอกเลยว่านี่ไม่ใช่นาฬิกาธรรมดาแน่นอน!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289249149124608,
+      "m_Localized": "{charge_shrine}: ชาร์จเร็วขึ้น {value1}% แถมรับรางวัลเพิ่ม {value2}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350910
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289248587087872,
+      "m_Localized": "ประแจ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350910,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

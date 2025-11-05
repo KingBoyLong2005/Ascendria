@@ -1,0 +1,123 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_HUD_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7527332346932056231
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607514405273702
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 145574567936,
+      "m_Localized": "LVL {level}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607514405273702
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 237371105280,
+      "m_Localized": "Chegou o Chefão!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 575486533632,
+      "m_Localized": "Enxame a caminho!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 588438544384,
+      "m_Localized": "Último enxame a caminho!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56157383925760,
+      "m_Localized": "Desafio completo!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262338014584832,
+      "m_Localized": "Encontre o Portal do Chefão",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262395514298368,
+      "m_Localized": "Derrota o Chefão",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262638976868352,
+      "m_Localized": "Acaba com o Chefão Final",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262437713190912,
+      "m_Localized": "Sobrevive...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262459607457792,
+      "m_Localized": "Entra no Portal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16595682113748992,
+      "m_Localized": "Enxame Final",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607514405273702,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

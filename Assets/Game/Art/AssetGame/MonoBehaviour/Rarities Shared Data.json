@@ -1,0 +1,78 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Rarities Shared Data",
+  "m_TableCollectionName": "Rarities",
+  "m_TableCollectionNameGuidString": "1248a7b336699c54a8ba22f3a5e02dcd",
+  "m_Entries": [
+    {
+      "m_Id": 5459648512,
+      "m_Key": "Common",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17048510464,
+      "m_Key": "Uncommon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 46073094144,
+      "m_Key": "Rare",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52603625472,
+      "m_Key": "Epic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 61441024000,
+      "m_Key": "Legendary",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 118366117888,
+      "m_Key": "New",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607508251181165
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181165,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

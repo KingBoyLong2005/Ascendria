@@ -1,0 +1,256 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Tomes_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 653627449656331937
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607686146818134
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 70643326976,
+      "m_Localized": "敏捷之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32662906183680,
+      "m_Localized": "護甲之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32703855173632,
+      "m_Localized": "吸引之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32747115225088,
+      "m_Localized": "嗜血之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32770720768000,
+      "m_Localized": "冷卻之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32796981305344,
+      "m_Localized": "詛咒之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32801532125184,
+      "m_Localized": "傷害之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32809702629376,
+      "m_Localized": "持續之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32812705751040,
+      "m_Localized": "閃避之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32924379095040,
+      "m_Localized": "黃金之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32926925037568,
+      "m_Localized": "HP之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32929278042112,
+      "m_Localized": "擊退之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32991861252096,
+      "m_Localized": "幸運之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32993463476224,
+      "m_Localized": "精確之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33039797952512,
+      "m_Localized": "投射物速度书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33041035272192,
+      "m_Localized": "數量之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33146106781696,
+      "m_Localized": "回復之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33174502219776,
+      "m_Localized": "護盾之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33193993150464,
+      "m_Localized": "銀幣之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33223558799360,
+      "m_Localized": "大小之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33244589039616,
+      "m_Localized": "荊棘之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33263979307008,
+      "m_Localized": "經驗之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022098245001216,
+      "m_Localized": "每項屬性提升{value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607686146818134
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5022061393846272,
+      "m_Localized": "平衡之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033042987687936,
+      "m_Localized": "混沌之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033045101617152,
+      "m_Localized": "隨機提升一項屬性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033652839489536,
+      "m_Localized": "賭博之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033653955174400,
+      "m_Localized": "要嘛梭哈，要嘛回家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036552647057408,
+      "m_Localized": "囤積之書",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036555058782208,
+      "m_Localized": "地圖上隨機生成一個寶箱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607686146818134,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

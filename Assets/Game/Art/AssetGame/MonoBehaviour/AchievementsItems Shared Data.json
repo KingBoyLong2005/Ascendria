@@ -1,0 +1,323 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "AchievementsItems Shared Data",
+  "m_TableCollectionName": "AchievementsItems",
+  "m_TableCollectionNameGuidString": "83105fbaad8f2e34e993f5f1aed4de52",
+  "m_Entries": [
+    {
+      "m_Id": 8521908224,
+      "m_Key": "TurboSocks",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Key": "CursedDoll",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Key": "TacticalGlasses",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Key": "Skuleg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Key": "Ghost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Key": "Key",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Key": "ForbiddenJuice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Key": "Cactus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Key": "BossBuster",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Key": "Battery",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Key": "LeechingCrystal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Key": "IdleJuice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Key": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Key": "BrassKnuckles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Key": "DemonicBlood",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Key": "DemonicBlade",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Key": "GoldenSneakers",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Key": "EchoShard",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Key": "TurboSkates",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Key": "Bob",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Key": "ToxicBarrel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Key": "ShatteredKnowledge",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Key": "SluttyCannon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Key": "GrandmasTonic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Key": "GasMask",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Key": "GamerGoggles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Key": "DemonicSoul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Key": "EagleClaw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Key": "SoulHarvester",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Key": "Anvil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Key": "Dragonfire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Key": "EnergyCore",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Key": "BloodyCleaver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Key": "HolyBook",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Key": "JoesDagger",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Key": "LightningOrb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Key": "SpeedBoi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Key": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Key": "SuckyMagnet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Key": "IceCrystal",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Key": "QuinsMask",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208339136151636
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151636,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

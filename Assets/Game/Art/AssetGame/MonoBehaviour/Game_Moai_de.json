@@ -1,0 +1,112 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Moai_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6897251382589154511
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8114642944,
+      "m_Localized": "Der Moai guckt weg und scheint still missbilligend.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 57334800384,
+      "m_Localized": "Der Moai flüstert ein einziges Wort: 'Uff'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 65270423552,
+      "m_Localized": "Der Moai hustet verlegen und vermeidet Augenkontakt.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79816269824,
+      "m_Localized": "Der Moai mustert dich... und findet dich mäßig okay.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107351875584,
+      "m_Localized": "Der Moai flüstert ein einziges Wort: 'Geht so'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 110858313728,
+      "m_Localized": "Der Moai zuckt mit den Schultern. Eine faire und ausgewogene Bewertung.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 157616414720,
+      "m_Localized": "Der Moai nickt anerkennend. Eine seltene Ehre.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 160179134464,
+      "m_Localized": "Der Moai flüstert ein einziges Wort: 'Nice'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 163081592832,
+      "m_Localized": "Der Moai fängt kurzzeitig an zu beatboxen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 224461037568,
+      "m_Localized": "Der Moai macht einen Rückwärtssalto. Niemand wird dir das jemals glauben.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 227740983296,
+      "m_Localized": "Der Moai flüstert ein einziges Wort: 'Krass'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231004151808,
+      "m_Localized": "Der Moai zeigt dir einen Daumen hoch. Du wusstest nicht mal, dass er Daumen hat.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

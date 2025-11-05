@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ChallengesUi_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7979068589700917366
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715388
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6814408704,
+      "m_Localized": "Výzva {tier}. úroveň",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 169918308352,
+      "m_Localized": "Výzva navržená: {name}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8487600627712,
+      "m_Localized": "Výsledky z výzev se neodesílají do online žebříčků.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15160163672064,
+      "m_Localized": "Úrovně: {numStages}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 20745779609206784,
+      "m_Localized": "Probij se až k finální invazi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20745721778143232,
+      "m_Localized": "Zlikviduj všechny bosse",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22771343908012032,
+      "m_Localized": "{reward_icon} {value} (Permanentní)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715388
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24002582677684224,
+      "m_Localized": "Dokonči víc výzev, aby ses odemkl!\\n{value} / {target_value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715388
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715388,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

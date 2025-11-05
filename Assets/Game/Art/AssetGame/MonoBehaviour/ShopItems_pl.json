@@ -1,0 +1,175 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ShopItems_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6549869673150466286
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517862019104862
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6483476480,
+      "m_Localized": "Boombox",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Localized": "Wybierz muzykę do grania ręcznie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Localized": "Włącz lub wyłącz kupione {weapons}, {tomes} i {items}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Localized": "Toggler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Localized": "Odśwież",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Localized": "Odśwież oferty ulepszeń poziomu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Localized": "Pomiń",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Localized": "Pomiń oferty ulepszeń poziomu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Localized": "Wygnać",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Localized": "Wygnać {weapons}, {tomes} i {items}. Nie pojawią się już w tej rundzie.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Localized": "{weapon} Sloty",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Localized": "Noś więcej {weapons}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Localized": "{tome} Sloty",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Localized": "Noś więcej {tomes}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Localized": "Zwiększ zyskane {silver}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104862
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517862019104862,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

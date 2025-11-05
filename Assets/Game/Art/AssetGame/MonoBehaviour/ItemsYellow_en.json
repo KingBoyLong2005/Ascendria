@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350998
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Anvil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Weapon Upgrades can now have +1 stats",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Bloody Cleaver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} now triggers {bloodmark} stacks. Also gain {value1} chance to apply {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Big Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} chance to BONK an enemy, dealing {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Healing above {stat1} allows you to {stat2} by {value1}. Also gives {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Dragonfire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} chance to summon dragonfire when hitting enemies. Fire damage can now apply burn.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Eagle Claw",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Deal {value1} more {stat1} to airborne enemies. {value2} chance to knock enemy into the air.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Energy Core",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Shoot energy orbs at enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "You can eat so much spaghetti with this bad boi. Also crits have a chance to become Megacrits.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Giant Fork",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Holy Book",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1},  {value2} {stat2}. Healing will now radiate damage to nearby enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Ice Cube",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} chance to inflict ice damage when hitting enemies. Ice can now freeze enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Joe's Dagger",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} chance to {execute} an enemy. Performing {execute} increases {stat1} by {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Lightning Orb",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} chance to summon lightning when hitting enemies. Lightning can now stun enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Overpowered Lamp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 chance to proc on hit effects",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Soul Harvester",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Killing an enemy summons {value1} homing souls",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Speed Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Upon taking damage below {value1} {stat1}, slow down time and deal {value2} damage.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Spicy Meatball",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Attacks have a {value1} chance to explode, dealing {value2} {stat1} to surrounding enemies",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Sucky Magnet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Periodically drag in all XP around you",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Power Gloves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "{chance} chance upon hitting an enemy to create a giant blast, damaging and knocking away enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350998
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Golden Ring",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "It doesn't seem to do anything...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350998,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

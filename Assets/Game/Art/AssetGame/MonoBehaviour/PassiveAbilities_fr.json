@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179438
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "Gagne {value1} {stat1} par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "Flexe pour bloquer les dégâts ! Recharge -{value1}s/niveau. +{valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "Dans le Mille",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "C'est Critique",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "Des ennemis aléatoires sont marqués. Gagne aussi {value1} {stat1} par niveau",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "Endurant",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "Flex",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "Flottement",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "Maintiens “Saut” pour flotter dans les airs. Gagne aussi {value1} de {stat1} aérien par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "État de Flux",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "Renforcé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "Bénédiction RNG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "Démon de la Vitesse",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "La vitesse augmente, mais se réduit de moitié si tu prends un coup. Plus t'es rapide, plus tu tapes fort !",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "Prise de Singe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "Grimpe aux murs ! En plus, tu gagnes {value1} {stat1} par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "Guerrier",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "Peste",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "Les ennemis empoisonnés explosent à leur mort, empoisonnant les voisins.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "Théorie XP Quantique",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} un ennemi en l'esquivant. Gagne aussi {value1} {stat1} par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "Ombre Pas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "Gamba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "Joue les dés et booste un stat au hasard quand tu montes de niveau !",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "Vampire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "Malédiction",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "Stonks",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "Gagne {value1} {stat1} par niveau. Augmente aussi {damage} légèrement selon le total de {gold} dans l'inventaire.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "Verrouillage",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "Fais plus de dégâts quand t'as plus beaucoup de vie. Gagne {value1} {stat1} par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "Zap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "Recharge une attaque électrique en bougeant. Gagne {value1} {stat1} par niveau.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "Gagne {value1} {stat1} par niveau. Augmente aussi {damage} pour chaque ennemi gelé.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179438
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179438,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

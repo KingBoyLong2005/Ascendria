@@ -1,0 +1,134 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Game_RoundOver Shared Data",
+  "m_TableCollectionName": "Game_RoundOver",
+  "m_TableCollectionNameGuidString": "1fd7fbaa81ebf414daec3ff0e33d982f",
+  "m_Entries": [
+    {
+      "m_Id": 6856351744,
+      "m_Key": "DEATH_TEXT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173345767923712,
+      "m_Key": "RECORD_NEW",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173450159955968,
+      "m_Key": "RECORD_KILLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173467704729600,
+      "m_Key": "RECORD_RANKING",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173567650799616,
+      "m_Key": "RECORD_PERCENTILE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176936297668608,
+      "m_Key": "VICTORY_COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177146872700928,
+      "m_Key": "VICTORY_SILVER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177697538678784,
+      "m_Key": "STATS_SUMMARY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177755860475904,
+      "m_Key": "STATS_DAMAGE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177964535488512,
+      "m_Key": "STATS_DAMAGE_SOURCE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180687569920000,
+      "m_Key": "SUMMARY_KILLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180895024390144,
+      "m_Key": "SUMMARY_TIME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181037488119808,
+      "m_Key": "SUMMARY_LEVEL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181081519923200,
+      "m_Key": "SUMMARY_GOLD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607539022430302
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607539022430302,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

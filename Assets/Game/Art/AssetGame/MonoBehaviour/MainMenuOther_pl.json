@@ -1,0 +1,166 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "MainMenuOther_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 145501107833668358
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118496009
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6118154240,
+      "m_Localized": "Zakupiono: {item}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496009
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Localized": "Super!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Localized": "Czy na pewno chcesz zresetować plik {file}? Powrócisz do domyślnych ustawień.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496009
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Localized": "Nie udało się załadować pliku konfiguracyjnego. Dziennik błędów: {error}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496009
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Localized": "Błąd",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Localized": "Zobacz plik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Localized": "Przeładuj plik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Localized": "Usuń plik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Localized": "Zignoruj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Localized": "Ostrzeżenie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Localized": "Twoje postępy NIE zostaną zapisane, jeśli zignorujesz to ostrzeżenie. Zalecam naprawienie problemu. Jesteś pewien?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Localized": "Ładowanie...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Localized": "Brak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Localized": "Ukończyłeś wszystko, ty draniu! Gratulacje. Teraz idź dotknąć trawy.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Localized": "Wczytaj zapis zapasowy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Localized": "Uwaga na światło migotanie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118496009,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

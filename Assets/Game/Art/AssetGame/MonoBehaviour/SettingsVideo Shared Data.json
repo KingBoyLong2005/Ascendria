@@ -1,0 +1,141 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "SettingsVideo Shared Data",
+  "m_TableCollectionName": "SettingsVideo",
+  "m_TableCollectionNameGuidString": "2c81966ae207d0e4d94f0966e20bd4ff",
+  "m_Entries": [
+    {
+      "m_Id": 154948837376,
+      "m_Key": "resolution",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 169469517824,
+      "m_Key": "target_monitor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 171809939456,
+      "m_Key": "fullscreen_mode",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173886119936,
+      "m_Key": "vsync",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176453033984,
+      "m_Key": "fps_limit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 179737174016,
+      "m_Key": "fov",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181771411456,
+      "m_Key": "grass_quality",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184011169792,
+      "m_Key": "shadow_quality",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 186993319936,
+      "m_Key": "shadow_resolution",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189203718144,
+      "m_Key": "anti_aliasing",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192336863232,
+      "m_Key": "soft_particles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 290923978752,
+      "m_Key": "bloom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293822242816,
+      "m_Key": "motion_blur",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295596433408,
+      "m_Key": "ambient_occlusion",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30335610630832128,
+      "m_Key": "camera_distance",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607403724406874
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607403724406874,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

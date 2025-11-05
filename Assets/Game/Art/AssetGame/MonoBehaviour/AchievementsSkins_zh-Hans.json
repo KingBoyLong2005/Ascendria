@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188634
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "用 {character} 击杀 {value} 个敌人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188634
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "在一局中让 {character} 达到 {value} 级",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188634
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "用 {character} 击杀一个 {tier} 3 的 {final_boss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188634
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "用 {character} 在 {value} 分钟内击败第一个 {stage_boss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188634
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "让 {character} 达到 {rank} {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188634
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188634,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Stats_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2333985896604320188
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 11411298951168,
+      "m_Localized": "Maks HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12024481030144,
+      "m_Localized": "Regeneracja HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12321492279296,
+      "m_Localized": "Regeneracja HP zwiększa ilość HP, które regenerujesz na minutę.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12454221029376,
+      "m_Localized": "Tarcza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12566083117056,
+      "m_Localized": "Tarcza pochłania obrażenia zamiast HP, zanim się złamie. Regeneruje się szybko, gdy nie otrzymujesz obrażeń przez jakiś czas.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12884846026752,
+      "m_Localized": "Ciernie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12982942408704,
+      "m_Localized": "Zadaj obrażenia wrogom, kiedy cię atakują.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13124810547200,
+      "m_Localized": "Pancerz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13160562794496,
+      "m_Localized": "Pancerz zmniejsza otrzymywane obrażenia.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13348484390912,
+      "m_Localized": "Unik",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13361235075072,
+      "m_Localized": "Unik to szansa na uniknięcie ataku, bez otrzymywania obrażeń.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13626319282176,
+      "m_Localized": "Rozmiar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13628353519616,
+      "m_Localized": "Rozmiar twoich ataków, pocisków, wybuchów i innych efektów.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13932146958336,
+      "m_Localized": "Czas trwania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13933384278016,
+      "m_Localized": "Czas trwania twoich ataków i pocisków.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14128209698816,
+      "m_Localized": "Prędkość Pocisków",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14169276129280,
+      "m_Localized": "Prędkość twoich pocisków.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14279779262464,
+      "m_Localized": "Obrażenia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14282090323968,
+      "m_Localized": "Zwiększa obrażenia twoich ataków",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14666708000768,
+      "m_Localized": "Czas Trwania Efektu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14668243116032,
+      "m_Localized": "Czas trwania efektów, jak trucizna czy lód.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14800854425600,
+      "m_Localized": "Szybkość Ataku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15228329500672,
+      "m_Localized": "Jak szybko wypuszczasz pociski i wykonujesz ataki.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15429710618624,
+      "m_Localized": "Liczba Pocisków",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15430247489536,
+      "m_Localized": "Zwiększa liczbę ataków / pocisków.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698171240448,
+      "m_Localized": "Kradzież Życia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698712305664,
+      "m_Localized": "Twoja szansa na leczenie o 1, gdy trafisz wroga. Ponad 100% gwarantuje 1 leczenie i daje szansę na leczenie 2.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967261007872,
+      "m_Localized": "Szansa na Krytyk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967873376256,
+      "m_Localized": "Szansa na zadanie obrażeń krytycznych. Więcej niż 100% Szansy na Krytyk pozwala na Overkrit, zadanie jeszcze większych obrażeń.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175109742592,
+      "m_Localized": "Obrażenia Krytyczne",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175835357184,
+      "m_Localized": "Zwiększa obrażenia twoich trafień krytycznych. Trafienia krytyczne zadają podwójne obrażenia domyślnie.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16480819978240,
+      "m_Localized": "Obrażenia dla Elit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16481419763712,
+      "m_Localized": "Zwiększa obrażenia, które zadajesz elitarnym wrogom.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16640631349248,
+      "m_Localized": "Odrzut",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16641403101184,
+      "m_Localized": "Dystans, na jaki odpychasz wrogów, gdy ich trafiasz.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16888908980224,
+      "m_Localized": "Szybkość Ruchu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16890188242944,
+      "m_Localized": "Jak szybko się poruszasz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17000058036224,
+      "m_Localized": "Wysokość Skoku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17001215664128,
+      "m_Localized": "Jak wysoko możesz skakać",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069079502848,
+      "m_Localized": "Redukcja Obrażeń od Upadku",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069855449088,
+      "m_Localized": "Redukcja Obrażeń od Upadku zmniejsza obrażenia, które otrzymujesz od upadku. Powyżej 100% leczysz się od upadków. Cisza. To funkcja, nie błąd.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17244841811968,
+      "m_Localized": "Zasięg Zbierania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17246204960768,
+      "m_Localized": "Zasięg Zbierania zwiększa dystans, z którego zbierasz XP.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17377222434816,
+      "m_Localized": "Szczęście",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17378044518400,
+      "m_Localized": "Szczęście zwiększa twoją szansę na lepsze oferty z awansu, świątyń i nie tylko.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17565831897088,
+      "m_Localized": "Zwiększenie Złota",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17566733672448,
+      "m_Localized": "Zwiększenie Złota daje ci więcej złota ze wszystkich źródeł.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17680923598848,
+      "m_Localized": "Zwiększenie XP daje ci więcej XP ze wszystkich źródeł.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17679753388032,
+      "m_Localized": "Zwiększenie XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17787811241984,
+      "m_Localized": "Trudność",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17958506831872,
+      "m_Localized": "Trudność zwiększa ilość, zdrowie, szybkość i siłę wrogów. Tylko gracze wybierają to wyzwanie.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18004530929664,
+      "m_Localized": "Wzrost Pojawiania Elit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18009035612160,
+      "m_Localized": "Wzrost Pojawiania Elit zwiększa szansę na pojawienie się elitarnych wrogów.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18132130045952,
+      "m_Localized": "Wzmacniacz Powerupów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18139709153280,
+      "m_Localized": "Wzmacniacz Powerupów zwiększa moc i czas trwania efektów powerupów.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18365530480640,
+      "m_Localized": "Szansa na Drop Powerupów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18368768483328,
+      "m_Localized": "Szansa na Drop Powerupów zwiększa szansę, że wrogowie upuszczą powerupy i skrzynki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18497495867392,
+      "m_Localized": "Odbicia Pocisków",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501094580224,
+      "m_Localized": "Sprawia, że niektóre pociski odbijają się",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18526608531456,
+      "m_Localized": "Dodatkowe Skoki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18530010112000,
+      "m_Localized": "Dodatkowe Skoki dają ci więcej skoków w powietrzu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23882051067904,
+      "m_Localized": "Zwiększenie srebra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23886740299776,
+      "m_Localized": "Zwiększenie srebra daje więcej srebra ze wszystkich źródeł.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381305404235776,
+      "m_Localized": "Mnożnik Skrzyń",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381343001976832,
+      "m_Localized": "Wiecej skrzyń na mapie!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698515575767040,
+      "m_Localized": "Przezdrowienie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698517517729792,
+      "m_Localized": "Pozwala ci leczyć się ponad maksymalne HP.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098208234176512,
+      "m_Localized": "Ilość wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098210771730432,
+      "m_Localized": "Rozmiar wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098214437552128,
+      "m_Localized": "Szybkość wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098216379514880,
+      "m_Localized": "Zdrowie wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098229126004736,
+      "m_Localized": "Obrażenia wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323851693686784,
+      "m_Localized": "Skalowanie wrogów",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323853509820416,
+      "m_Localized": "Cena skrzyni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

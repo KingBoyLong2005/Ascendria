@@ -1,0 +1,339 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsGray_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7711942901044892201
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350917
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9118574944256,
+      "m_Localized": "%{value1} şansla sandıkları ücretsiz açma",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18323628566380544,
+      "m_Localized": "{value1} Borgar çıkarma şansı",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324384077971456,
+      "m_Localized": "Elitlere ve Bosslara %{value1} daha fazla hasar",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324566240788480,
+      "m_Localized": "Zarar aldığında diken atar. Hasar {stat1} ile artar",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325049177145344,
+      "m_Localized": "Bir düşmanı lanetle, her saniye Maks HP'sinin %{value1} kadar hasar ver",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325558210461696,
+      "m_Localized": "Etkileşimli nesne kullanmak hayalet çağırır",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325640972468224,
+      "m_Localized": "Düşmanları öldürdüğünde %{value1} daha fazla altın kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326181765054464,
+      "m_Localized": "Vuruşta zehirleme şansı {value1}. Küflü peyniri severim <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326961658134528,
+      "m_Localized": "{value1} fazla hasar, %90 üzeri HP'li düşmanlara",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18327373572341760,
+      "m_Localized": "Bir düşmanı vurduğunda {value1} şansla bir {bloodmark} yükü uygular",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10274709504,
+      "m_Localized": "Batarya",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9112086355968,
+      "m_Localized": "Anahtar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18323336491827200,
+      "m_Localized": "Borgar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324381305536512,
+      "m_Localized": "Boss Bozguncusu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324562939871232,
+      "m_Localized": "Kaktüs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324853366063104,
+      "m_Localized": "Yonca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325022769807360,
+      "m_Localized": "Lanetli Oyuncak Bebek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325356309250048,
+      "m_Localized": "Yasak İçecek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325557027667968,
+      "m_Localized": "Hayalet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325640372682752,
+      "m_Localized": "Altın Eldiven",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325852533161984,
+      "m_Localized": "Spor Sosu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326014991138816,
+      "m_Localized": "İlk Yardım Çantası",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326180775198720,
+      "m_Localized": "Küflü Peynir",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326487261380608,
+      "m_Localized": "Yulaf",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326638285684736,
+      "m_Localized": "Skuleg",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326697127575552,
+      "m_Localized": "Kaygan Yüzük",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326959774892032,
+      "m_Localized": "Taktiksel Gözlük",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327177463463936,
+      "m_Localized": "Hızlı Çoraplar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327231469322240,
+      "m_Localized": "Kararsız Kan Nakli",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24829136370532352,
+      "m_Localized": "{value1} şansla düşmanları dondur!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24829135066103808,
+      "m_Localized": "Buz Kristali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953193266642944,
+      "m_Localized": "Zaman Bileziği",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953195078582272,
+      "m_Localized": "{value1} {stat1}. Kesinlikle sıradan bir saat değil.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289249149124608,
+      "m_Localized": "{charge_shrine}: {value1}% daha hızlı şarj et ve {value2} artan ödüller kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350917
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289248587087872,
+      "m_Localized": "Somun Anahtarı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350917,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

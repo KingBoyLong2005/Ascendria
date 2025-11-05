@@ -1,0 +1,246 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Tomes Shared Data",
+  "m_TableCollectionName": "Tomes",
+  "m_TableCollectionNameGuidString": "b3cc0f2193f2d174faddcd0cd8eddf9b",
+  "m_Entries": [
+    {
+      "m_Id": 70643326976,
+      "m_Key": "TOME_AGILITY_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32662906183680,
+      "m_Key": "TOME_ARMOR_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32703855173632,
+      "m_Key": "TOME_ATTRACTION_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32747115225088,
+      "m_Key": "TOME_BLOOD_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32770720768000,
+      "m_Key": "TOME_COOLDOWN_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32796981305344,
+      "m_Key": "TOME_CURSED_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32801532125184,
+      "m_Key": "TOME_DAMAGE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32809702629376,
+      "m_Key": "TOME_DURATION_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32812705751040,
+      "m_Key": "TOME_EVASION_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32924379095040,
+      "m_Key": "TOME_GOLDEN_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32926925037568,
+      "m_Key": "TOME_HEALTH_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32929278042112,
+      "m_Key": "TOME_KNOCKBACK_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32991861252096,
+      "m_Key": "TOME_LUCK_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32993463476224,
+      "m_Key": "TOME_PRECISION_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33039797952512,
+      "m_Key": "TOME_PROJECTILE_SPEED_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33041035272192,
+      "m_Key": "TOME_QUANTITY_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33146106781696,
+      "m_Key": "TOME_REGEN_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33174502219776,
+      "m_Key": "TOME_SHIELD_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33193993150464,
+      "m_Key": "TOME_SILVER_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33223558799360,
+      "m_Key": "TOME_SIZE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33244589039616,
+      "m_Key": "TOME_THORNS_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33263979307008,
+      "m_Key": "TOME_XP_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022061393846272,
+      "m_Key": "TOME_BALANCE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022098245001216,
+      "m_Key": "TOME_BALANCE_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033042987687936,
+      "m_Key": "TOME_CHAOS_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033045101617152,
+      "m_Key": "TOME_CHAOS_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033652839489536,
+      "m_Key": "TOME_GAMBLER_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033653955174400,
+      "m_Key": "TOME_GAMBLER_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036552647057408,
+      "m_Key": "TOME_HOARDER_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036555058782208,
+      "m_Key": "TOME_HOARDER_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 6827621555601145942
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 6827621555601145942,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsGame_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1058902155890957371
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6190220943360,
+      "m_Localized": "Kameraschütteln",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6628584431616,
+      "m_Localized": "Eingabeverzögerung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6658384961536,
+      "m_Localized": "Tippanzeige",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6693944270848,
+      "m_Localized": "Minikarten-Größe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6699975680000,
+      "m_Localized": "HP-Balken-Farbe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6713842049024,
+      "m_Localized": "Fadenkreuz-Höhe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6729126092800,
+      "m_Localized": "Fadenkreuz-Größe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6747782356992,
+      "m_Localized": "Fadenkreuz-Transparenz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6763557134336,
+      "m_Localized": "Debug FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6776785969152,
+      "m_Localized": "Debug Geschwindigkeit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6786458034176,
+      "m_Localized": "Debug RAM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6800307625984,
+      "m_Localized": "Debug Gegner-Skalierung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6830770855936,
+      "m_Localized": "Schnellzurücksetzen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6840845574144,
+      "m_Localized": "Punktestand auf Bestenliste hochladen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 244998933815296,
+      "m_Localized": "Sprache",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24114260429897728,
+      "m_Localized": "Feindzielmodus",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27825623606099968,
+      "m_Localized": "Bestenlisten ausblenden",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 29969246854447104,
+      "m_Localized": "Zufallsziel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30355329144455168,
+      "m_Localized": "Minimap-Drehung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

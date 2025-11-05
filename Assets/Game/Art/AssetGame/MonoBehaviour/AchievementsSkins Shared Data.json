@@ -1,0 +1,71 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "AchievementsSkins Shared Data",
+  "m_TableCollectionName": "AchievementsSkins",
+  "m_TableCollectionNameGuidString": "f8457358c0b3be24f9819433f8e78ec3",
+  "m_Entries": [
+    {
+      "m_Id": 9377546240,
+      "m_Key": "SKIN_KILLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Key": "SKIN_LEVEL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Key": "SKIN_FINAL_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Key": "SKIN_SPEEDRUN",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Key": "SKIN_GOLD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208459530240083
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208459530240083,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

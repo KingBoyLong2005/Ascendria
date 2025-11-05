@@ -1,0 +1,256 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Tomes_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 653627449656331937
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607686146818137
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 70643326976,
+      "m_Localized": "Beweglichkeitsband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32662906183680,
+      "m_Localized": "Rüstungsband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32703855173632,
+      "m_Localized": "Anziehungsband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32747115225088,
+      "m_Localized": "Blutbuch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32770720768000,
+      "m_Localized": "Abklingzeitbuch",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32796981305344,
+      "m_Localized": "Verfluchtes Band",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32801532125184,
+      "m_Localized": "Schadensband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32809702629376,
+      "m_Localized": "Dauerband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32812705751040,
+      "m_Localized": "Ausweichband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32924379095040,
+      "m_Localized": "Goldund",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32926925037568,
+      "m_Localized": "HP-Band",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32929278042112,
+      "m_Localized": "Rückstoßband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32991861252096,
+      "m_Localized": "Glücksband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32993463476224,
+      "m_Localized": "Präzisionsband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33039797952512,
+      "m_Localized": "Geschossgeschwindigkeitsband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33041035272192,
+      "m_Localized": "Mengenband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33146106781696,
+      "m_Localized": "Reg-Band",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33174502219776,
+      "m_Localized": "Schildband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33193993150464,
+      "m_Localized": "Silberband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33223558799360,
+      "m_Localized": "Größenband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33244589039616,
+      "m_Localized": "Dornenband",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33263979307008,
+      "m_Localized": "XP-Band",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022098245001216,
+      "m_Localized": "Erlange {value} in jedem Stat",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607686146818137
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5022061393846272,
+      "m_Localized": "Balance-Schriftrolle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033042987687936,
+      "m_Localized": "Chaos-Schriftrolle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033045101617152,
+      "m_Localized": "Verstärke einen zufälligen Stat",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033652839489536,
+      "m_Localized": "Glücksspiel-Schriftrolle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033653955174400,
+      "m_Localized": "Hau rein oder geh nach Hause",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036552647057408,
+      "m_Localized": "Horter-Schriftrolle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036555058782208,
+      "m_Localized": "Lass irgendwo auf der Karte eine offene Truhe erscheinen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607686146818137,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

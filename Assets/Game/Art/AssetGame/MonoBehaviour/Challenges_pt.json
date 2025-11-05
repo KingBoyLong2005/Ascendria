@@ -1,0 +1,270 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Challenges_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4408284025811466008
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208574837424220
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 71368941568,
+      "m_Localized": "AFK Gaming",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 146023358464,
+      "m_Localized": "Sem andar ou pular! Relaxa e… provavelmente vai morrer muito",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705386414866432,
+      "m_Localized": "que porra é essa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705385504702464,
+      "m_Localized": "putz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705383797620736,
+      "m_Localized": "ai não",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705323160567808,
+      "m_Localized": "Enxame",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705168688545792,
+      "m_Localized": "Smol Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704273271750656,
+      "m_Localized": "Paus e pedras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703257126109184,
+      "m_Localized": "Frágil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703260141813760,
+      "m_Localized": "Morre ao levar qualquer dano ou tocar num inimigo.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704279680647168,
+      "m_Localized": "Sem itens! Só conte com suas armas e livros mágicos!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704440309907456,
+      "m_Localized": "Pacifista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704443615019008,
+      "m_Localized": "Nada de machucar inimigos. Qualquer dano vai te levar pro além.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704556223692800,
+      "m_Localized": "Impossível",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704558501199872,
+      "m_Localized": "Sem armas permitidas. Isso aqui é praticamente impossível.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704669104996352,
+      "m_Localized": "Modo Chonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704851536248832,
+      "m_Localized": "Cego",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704905072345088,
+      "m_Localized": "A neblina tá tão grossa que não dá pra ver nada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704939255922688,
+      "m_Localized": "Controles Estranhos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705018280804352,
+      "m_Localized": "Teclado tá no buraco errado?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705171003801600,
+      "m_Localized": "Você é um Smol Boi com grandes sonhos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710595039985664,
+      "m_Localized": "Inimigos são beeem grandes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710667559501824,
+      "m_Localized": "Um monte de inimigos!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910446734344192,
+      "m_Localized": "Modo Turbo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910448294625280,
+      "m_Localized": "Pegue vários itens antes que os inimigos fiquem muito fortes!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21000850305581056,
+      "m_Localized": "Hiper",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21001806472675328,
+      "m_Localized": "Tem que ser veloz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021763679944704,
+      "m_Localized": "O Chão é Lava",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021765064065024,
+      "m_Localized": "Lava vai cobrir a maior parte do mapa de tempos em tempos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150474810654720,
+      "m_Localized": "Speedrunner",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150535674200064,
+      "m_Localized": "Speedrunner+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150476291244032,
+      "m_Localized": "Vocês só têm {value} minutos pra vencer!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208574837424220
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208574837424220,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Moai_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6897251382589154511
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8114642944,
+      "m_Localized": "Le Moai détourne le regard avec une désapprobation silencieuse.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 57334800384,
+      "m_Localized": "Le Moai murmure un seul mot : 'Aïe.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 65270423552,
+      "m_Localized": "Le Moai tousse maladroitement et évite le contact visuel.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79816269824,
+      "m_Localized": "Le Moai te juge... et te trouve moyennement acceptable.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107351875584,
+      "m_Localized": "Le Moai murmure un seul mot : 'Bof.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 110858313728,
+      "m_Localized": "Le Moai hausse les épaules. Un jugement juste et équilibré.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 157616414720,
+      "m_Localized": "Le Moai hoche la tête avec approbation. Un honneur rare.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 160179134464,
+      "m_Localized": "Le Moai murmure un seul mot : 'Chouette.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 163081592832,
+      "m_Localized": "Le Moai commence à faire du beatbox. Brièvement.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 224461037568,
+      "m_Localized": "Le Moai fait un saut périlleux. Personne ne te croira jamais.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 227740983296,
+      "m_Localized": "Le Moai murmure un seul mot : 'Stylé'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231004151808,
+      "m_Localized": "Le Moai te fait un pouce en l'air. Tu ne savais même pas qu'il avait des pouces.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

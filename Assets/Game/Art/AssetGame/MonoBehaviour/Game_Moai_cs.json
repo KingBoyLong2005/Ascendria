@@ -1,0 +1,112 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Moai_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6897251382589154511
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8114642944,
+      "m_Localized": "Moai se odvrátí s tichým nesouhlasem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 57334800384,
+      "m_Localized": "Moai zašeptá jedno slovo: 'Au.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 65270423552,
+      "m_Localized": "Moai rozpačitě zakašle a vyhýbá se očnímu kontaktu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79816269824,
+      "m_Localized": "Moai tě posoudí... a usoudí, že jsi celkem v pohodě.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107351875584,
+      "m_Localized": "Moai zašeptá jedno slovo: 'Hm.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 110858313728,
+      "m_Localized": "Moai pokrčí rameny. Spravedlivý a vyvážený soud.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 157616414720,
+      "m_Localized": "Moai spokojeně pokývá hlavou. Vzácná pocta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 160179134464,
+      "m_Localized": "Moai zašeptá jedno slovo: 'Fajn.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 163081592832,
+      "m_Localized": "Moai začne beatboxovat. Na chvíli.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 224461037568,
+      "m_Localized": "Moai udělá salto vzad. Nikdo ti to neuvěří.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 227740983296,
+      "m_Localized": "Moai zašeptá jedno slovo: 'Cool'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231004151808,
+      "m_Localized": "Moai ti ukáže palec nahoru. Ani jsi netušil, že má palce.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

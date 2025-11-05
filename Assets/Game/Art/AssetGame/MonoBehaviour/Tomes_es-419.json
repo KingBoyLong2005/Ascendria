@@ -1,0 +1,256 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Tomes_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 653627449656331937
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607686146818145
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 70643326976,
+      "m_Localized": "Tomo de Agilidad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32662906183680,
+      "m_Localized": "Tomo de Armadura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32703855173632,
+      "m_Localized": "Tomo de Atracción",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32747115225088,
+      "m_Localized": "Tomo Sangriento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32770720768000,
+      "m_Localized": "Tomo de Enfriamiento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32796981305344,
+      "m_Localized": "Tomo Maldito",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32801532125184,
+      "m_Localized": "Tomo de Daño",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32809702629376,
+      "m_Localized": "Tomo de Duración",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32812705751040,
+      "m_Localized": "Tomo de Evasión",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32924379095040,
+      "m_Localized": "Tomo Dorado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32926925037568,
+      "m_Localized": "Tomo de Vida",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32929278042112,
+      "m_Localized": "Tomo de Empuje",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32991861252096,
+      "m_Localized": "Tomo de Suerte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32993463476224,
+      "m_Localized": "Tomo de Precisión",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33039797952512,
+      "m_Localized": "Tomo de Velocidad de Proyectil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33041035272192,
+      "m_Localized": "Tomo de Cantidad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33146106781696,
+      "m_Localized": "Tomo de Regeneración",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33174502219776,
+      "m_Localized": "Tomo de Escudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33193993150464,
+      "m_Localized": "Tomo Plateado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33223558799360,
+      "m_Localized": "Tomo de Tamaño",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33244589039616,
+      "m_Localized": "Tomo de Espinas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33263979307008,
+      "m_Localized": "Tomo de Experiencia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022098245001216,
+      "m_Localized": "Suma {value} a todas tus stats",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607686146818145
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5022061393846272,
+      "m_Localized": "Tomo del Equilibrio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033042987687936,
+      "m_Localized": "Tomo del Caos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033045101617152,
+      "m_Localized": "Aumenta una estadística al azar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033652839489536,
+      "m_Localized": "Tomo de Apuestas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033653955174400,
+      "m_Localized": "Todo o nada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036552647057408,
+      "m_Localized": "Tomo del Acaparador",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036555058782208,
+      "m_Localized": "Aparece un cofre abierto al azar en el mapa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607686146818145,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350982
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "{value2} {stat2}마다 {stat1}를 {value1}씩 증가시킵니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "{value1} 유닛 이동할 때 밥(죽음)을 소환",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "킬마다 {stat1}를 {value1}씩 증가시킵니다 (최대 {value2}).",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "체력이 낮을수록 {stat1} 증가. 채팅창, 락인 간다",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "적에게 독을 감염시킬 때마다 {stat1}와 {stat2}를 얻습니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "치명타에 {value1} 확률로 폭발하여 주변 적에게 {value2} 피해를 줍니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "받는 모든 피해를 반사하고 잠시 무적이 됩니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "더 빨리 움직일수록 {stat1} 증가. 스택당 최대 {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "공중에 떠 있는 동안 {stat1}가 {value1} 더해집니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "XP 조각이 적을 가르며 피해를 준다. 지식은 아프다!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "적을 처치할 때 {value1} 확률로 미사일을 발사합니다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "{value2} {stat2}마다 {stat1} {value1} 획득. 추가로 {stat2} {value3}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "피해를 입을 때 독성 폐기물을 방출해 주변 적을 중독시킴",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "치명타를 입으면 시간을 멈춤. 한 번만 사용 가능",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "근육질 반지",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "밥(죽음)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "악마의 영혼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "게이머 고글",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "가스 마스크",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "할머니의 비밀 토닉",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "거울",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "롤러블레이드",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "스카프",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "깨진 지식",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "루즈 캐논",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "가시 방패",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "독 배럴",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "자 와루도",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "슬러프 장갑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "저주받은 손",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "적을 맞추면 피의 마법 발동! 주변 적 피해 + {value} 회복. 쿨타임 {time_seconds}초.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. 적 타격 시 {chance} 확률로 저주 마법 발동!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "퀸의 가면",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "가시 피해가 {value1} 확률로 폭발해 주변 적에게 피해를 줌",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350982
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350982,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

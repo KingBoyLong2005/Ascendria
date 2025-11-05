@@ -1,0 +1,274 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "ItemsPink Shared Data",
+  "m_TableCollectionName": "ItemsPink",
+  "m_TableCollectionNameGuidString": "59ac5eef9ad329147827ebbe0922b147",
+  "m_Entries": [
+    {
+      "m_Id": 181566308352,
+      "m_Key": "BeefyRing_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184527486976,
+      "m_Key": "BeefyRing_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Key": "BobDead_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Key": "BobDead_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Key": "DemonicSoul_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Key": "DemonicSoul_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Key": "GamerGoggles_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Key": "GamerGoggles_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Key": "GasMask_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Key": "GasMask_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Key": "Grandma_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Key": "Grandma_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Key": "Mirror_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Key": "Mirror_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Key": "Rollerblades_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Key": "Rollerblades_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Key": "Scarf_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Key": "Scarf_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Key": "ShatteredKnowledge_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Key": "ShatteredKnowledge_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Key": "SluttyCannon_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Key": "SluttyCannon_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Key": "SpikyShield_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Key": "SpikyShield_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Key": "ToxicBarrel_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Key": "ToxicBarrel_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Key": "ZaWarudo_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Key": "ZaWarudo_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Key": "SlurpGloves_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Key": "SlurpGloves_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Key": "CursedGrabbies_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Key": "CursedGrabbies_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Key": "QuinsMask_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Key": "QuinsMask_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208315039350959
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350959,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

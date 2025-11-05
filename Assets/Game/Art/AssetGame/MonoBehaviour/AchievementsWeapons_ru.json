@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_ru",
+  "m_LocaleId": {
+    "m_Code": "ru"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409165
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Не получай урон {value} минут",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Блокируй {value} урона с {armor_stat} как {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Убей {value} врагов",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Найди спрятанный банан",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Убей {value} врагов используя {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Прокачай {precision_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Убей {value} врагов как {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% шанс найти при разрушении {tumbleweed} в {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Прокачай {lightning_staff} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Заряди {charge_shrine} во время песчаной бури в {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Заморозь {value} врагов с помощью {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Убей {value} врагов с помощью {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Убей {value} врагов используя {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% шанс найти {tumbleweed} на {desert} уровне {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Прокачай {bloody_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Прокачай {knockback_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Убей {scorpionussy} {miniboss} в {desert} {value} раз",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Прокачай {luck_tome} до уровня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Убей {value} {wisp} как {fox} в {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Пройди {desert} {tier} 2 как {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Победи {stage_boss}, не поднимая предметы и без бафов/святилищ!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Прокачай {difficulty_tome} до уровня {value} за менее чем 10 минут",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409165
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409165,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

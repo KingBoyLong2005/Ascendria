@@ -1,0 +1,155 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "MainMenuOther Shared Data",
+  "m_TableCollectionName": "MainMenuOther",
+  "m_TableCollectionNameGuidString": "6f010fd8263d17c42b1ba844e807cc52",
+  "m_Entries": [
+    {
+      "m_Id": 6118154240,
+      "m_Key": "ITEM_PURCHASED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Key": "JUICE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Key": "ERROR",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Key": "CONFIG_ERROR_MSG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Key": "ERROR_VIEW_FILE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Key": "ERROR_RELOAD_FILE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Key": "ERROR_DELETE_FILE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Key": "ERROR_IGNORE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Key": "CONFIG_ERROR_RESET_WARNING",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Key": "CONFIG_ERROR_IGNORE_WARNING",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Key": "WARNING",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Key": "LOADING",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Key": "NONE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Key": "ALL_QUESTS_COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Key": "ERROR_BACKUP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Key": "WARNING_PHOTO_SENSITIVITY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806327639244800,
+      "m_Key": "PHOTO_SENSITIVITY_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607415118495992
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118495992,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

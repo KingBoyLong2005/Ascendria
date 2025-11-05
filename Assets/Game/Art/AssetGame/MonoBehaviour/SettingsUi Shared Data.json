@@ -1,0 +1,106 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "SettingsUi Shared Data",
+  "m_TableCollectionName": "SettingsUi",
+  "m_TableCollectionNameGuidString": "afbded52179e48f409964975ef052499",
+  "m_Entries": [
+    {
+      "m_Id": 4549484544,
+      "m_Key": "SETTING_GAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 89098264576,
+      "m_Key": "SETTING_VIDEO",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 101454684160,
+      "m_Key": "SETTING_CONTROLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120538767360,
+      "m_Key": "SETTING_AUDIO",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 133721464832,
+      "m_Key": "SETTING_EFFECTS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187881711443968,
+      "m_Key": "RESOLUTION_CONFIRMATION",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 195232963207168,
+      "m_Key": "INPUT_LISTENER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 195424751951872,
+      "m_Key": "INPUT_LISTENER_ESCAPE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 219294200471552,
+      "m_Key": "LANGUAGE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4177956665270272,
+      "m_Key": "RESET_CONTROLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607401917186179
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607401917186179,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

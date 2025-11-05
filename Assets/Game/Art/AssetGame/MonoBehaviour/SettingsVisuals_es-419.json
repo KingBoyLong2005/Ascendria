@@ -1,0 +1,63 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsVisuals_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6535644812848257097
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 29077774336,
+      "m_Localized": "Números de Daño",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44412149760,
+      "m_Localized": "Destello de Daño",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7606081781104640,
+      "m_Localized": "Efectos de Vida Baja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38961002069491712,
+      "m_Localized": "Opacidad Automática de Partículas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 38960998537887744,
+      "m_Localized": "Opacidad de Partículas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

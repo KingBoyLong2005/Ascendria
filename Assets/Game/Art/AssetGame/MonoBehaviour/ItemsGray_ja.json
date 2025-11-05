@@ -1,0 +1,339 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsGray_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7711942901044892201
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350911
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9118574944256,
+      "m_Localized": "宝箱をただで開ける確率は{value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18323628566380544,
+      "m_Localized": "敵を倒すと{value1}の確率でバーガー出現",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324384077971456,
+      "m_Localized": "エリートとボスに{value1}の追加ダメージ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324566240788480,
+      "m_Localized": "ダメージを受けるとトゲ発射。ダメージは{stat1}に比例",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325049177145344,
+      "m_Localized": "敵を呪い、毎秒最大HPの{value1}ダメージを与える",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325558210461696,
+      "m_Localized": "インタラクトするとゴースト召喚",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325640972468224,
+      "m_Localized": "敵を倒すと{value1}の追加ゴールド獲得",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326181765054464,
+      "m_Localized": "ヒット時{value1}の確率で敵を毒状態に。カビたチーズ、愛してるよ <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326961658134528,
+      "m_Localized": "HP90%以上の敵に{value1}の追加ダメージ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18327373572341760,
+      "m_Localized": "敵にヒット時{value1}の確率で{bloodmark}スタックを付与",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10274709504,
+      "m_Localized": "バッテリー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9112086355968,
+      "m_Localized": "鍵",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18323336491827200,
+      "m_Localized": "バーガー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324381305536512,
+      "m_Localized": "ボスバスター",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324562939871232,
+      "m_Localized": "サボテン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324853366063104,
+      "m_Localized": "クローバー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325022769807360,
+      "m_Localized": "呪いの人形",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325356309250048,
+      "m_Localized": "禁断のジュース",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325557027667968,
+      "m_Localized": "ゴースト",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325640372682752,
+      "m_Localized": "黄金のグローブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325852533161984,
+      "m_Localized": "ジムソース",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326014991138816,
+      "m_Localized": "メディキット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326180775198720,
+      "m_Localized": "カビたチーズ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326487261380608,
+      "m_Localized": "オーツ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326638285684736,
+      "m_Localized": "スカレグ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326697127575552,
+      "m_Localized": "滑りやすいリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326959774892032,
+      "m_Localized": "タクティカルグラス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327177463463936,
+      "m_Localized": "ターボソックス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327231469322240,
+      "m_Localized": "不安定な輸血",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24829136370532352,
+      "m_Localized": "{value1}の確率で敵を凍らせるチャンス！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24829135066103808,
+      "m_Localized": "アイスクリスタル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953193266642944,
+      "m_Localized": "タイムブレスレット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953195078582272,
+      "m_Localized": "{value1} {stat1}。これ、普通の腕時計じゃないぜ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289249149124608,
+      "m_Localized": "{charge_shrine}: {value1}%早くチャージ！{value2}ボーナス。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350911
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289248587087872,
+      "m_Localized": "レンチ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350911,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188637
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "Elimina a {value} enemigos como {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188637
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "Alcanza el Nivel {value} en una partida con {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188637
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "Derrota a un {final_boss} en el nivel {tier} 3 con {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188637
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "Derrota al primer {stage_boss} en menos de {value} minutos con {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188637
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "Lleva a {character} al rango {rank} {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188637
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188637,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

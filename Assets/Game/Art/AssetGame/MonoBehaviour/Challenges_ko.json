@@ -1,0 +1,270 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Challenges_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4408284025811466008
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208574837424218
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 71368941568,
+      "m_Localized": "AFK 게이밍",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 146023358464,
+      "m_Localized": "움직이거나 점프 금지! 편하게 앉아서... 아마 많이 죽을걸!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705386414866432,
+      "m_Localized": "이게 뭐야",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705385504702464,
+      "m_Localized": "오 쉿",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705383797620736,
+      "m_Localized": "오 노",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705323160567808,
+      "m_Localized": "무리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705168688545792,
+      "m_Localized": "꼬마 보이",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704273271750656,
+      "m_Localized": "막대기와 돌",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703257126109184,
+      "m_Localized": "깨짐주의",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703260141813760,
+      "m_Localized": "데미지나 적의 접촉 시 즉사.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704279680647168,
+      "m_Localized": "아이템 금지! 무기랑 주문서에 의존해야 해!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704440309907456,
+      "m_Localized": "평화주의자",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704443615019008,
+      "m_Localized": "적에게 상처 주지 마세요. 적에게 피해를 주면 수두코로!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704556223692800,
+      "m_Localized": "불가능",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704558501199872,
+      "m_Localized": "무기 사용 금지. 이건 그냥 절대 불가능임.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704669104996352,
+      "m_Localized": "초크 모드",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704851536248832,
+      "m_Localized": "장님",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704905072345088,
+      "m_Localized": "안개가 빡빡해서 아무것도 안 보인다!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704939255922688,
+      "m_Localized": "이상한 조작법",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705018280804352,
+      "m_Localized": "키보드 제대로 꽂힌 거 맞아?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705171003801600,
+      "m_Localized": "커다란 꿈을 가진 꼬마 보이",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710595039985664,
+      "m_Localized": "적들이 엄청 큼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710667559501824,
+      "m_Localized": "적들이 잔뜩!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910446734344192,
+      "m_Localized": "터보 모드",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910448294625280,
+      "m_Localized": "적이 강해지기 전에 아이템을 잔뜩 집어라!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21000850305581056,
+      "m_Localized": "하이퍼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21001806472675328,
+      "m_Localized": "빨리 가야 해",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021763679944704,
+      "m_Localized": "바닥이 용암",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021765064065024,
+      "m_Localized": "주기적으로 지도 대부분이 용암으로 덮힌다.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150474810654720,
+      "m_Localized": "스피드러너",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150535674200064,
+      "m_Localized": "스피드러너+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150476291244032,
+      "m_Localized": "{value}분 안에 우승하라!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208574837424218
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208574837424218,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151642
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Upgrade {agility_tome} to Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Die {value} times",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Defeat a {miniboss} in {value} seconds",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Obtain {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Survive the {final_swarm} for {value} seconds",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Purchase {value} chests",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Crit {value} times",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Kill {value} cactus enemies with {thorns_stat} damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Defeat a {stage_boss} in under {value} seconds",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Upgrade {cooldown_tome} to Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Upgrade {regen_tome} to lvl {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Kill {value} enemies while standing still",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Obtain {value} {leeching_crystal} in a run",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Kill {value} enemies with the {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Increase {max_hp} with {blood_magic} {value} times",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Heal for {value} HP using {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Break {value} pots",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Upgrade {xp_tome} to Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Upgrade both {cooldown_tome} and {agility_tome} to Level {value} in a run",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Survive the {final_swarm} for {value} minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Kill {value} enemies using {poison} damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Upgrade {attraction_tome} to Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Kill {value} enemies with {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Kill {value} enemies with {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Kll {value} enemies using {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Defeat a {stage_boss} with less than {value}% HP left",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Reach level {value} as {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Kill {value} enemies as {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Survive the {final_swarm} for {value} minutes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Complete {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Kill {value} enemies using fire damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Defeat a {final_boss} {value} times",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Reach Level {value} as {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Kill a first {stage_boss} without taking any damage that run",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Kill {value} enemies using lightning damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Kill {value} enemies using the {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Complete a stage with at least {value} {cursed_shrine} activated",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Get {maxhp_stat} to {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Complete every single {charge_shrine} on the map",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Get {value} kills with {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Defeat a {stage_boss} as {athena}, landing the killing blow with {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151642
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151642,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

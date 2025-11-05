@@ -1,0 +1,270 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Challenges_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4408284025811466008
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208574837424213
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 71368941568,
+      "m_Localized": "AFK Hraní",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 146023358464,
+      "m_Localized": "Nemůžeš se hýbat ani skákat! Usaď se, relaxuj a... asi často umřeš",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705386414866432,
+      "m_Localized": "co to k sakru",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705385504702464,
+      "m_Localized": "do prdele",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705383797620736,
+      "m_Localized": "ach ne",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705323160567808,
+      "m_Localized": "Roj",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705168688545792,
+      "m_Localized": "Malý Boi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704273271750656,
+      "m_Localized": "Kameny a klacky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703257126109184,
+      "m_Localized": "Křehký",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703260141813760,
+      "m_Localized": "Zemřeš po každém zásahu nebo dotyku s nepřítelem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704279680647168,
+      "m_Localized": "Žádné předměty nejsou povoleny, spoléháš se jen na své zbraně a knihy!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704440309907456,
+      "m_Localized": "Pacifista",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704443615019008,
+      "m_Localized": "Nepoužívej násilí. Každé zranění nepřítele vede k sudoku.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704556223692800,
+      "m_Localized": "Nemožné",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704558501199872,
+      "m_Localized": "Bez zbraní. Tohle je fakt kurevsky těžké, hodně štěstí kamaráde",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704669104996352,
+      "m_Localized": "Chonk Mód",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704851536248832,
+      "m_Localized": "Slepý",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704905072345088,
+      "m_Localized": "Mlžný opar je tak hustý, že nevidíš ani prd",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704939255922688,
+      "m_Localized": "Divné Ovládání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705018280804352,
+      "m_Localized": "Je moje klávesnice zapojená blbě?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705171003801600,
+      "m_Localized": "Jsou to malé sny velkého hrdiny",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710595039985664,
+      "m_Localized": "Nepřátelé jsou obrovští!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710667559501824,
+      "m_Localized": "Spousta nepřátel!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910446734344192,
+      "m_Localized": "Turbo Mód",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910448294625280,
+      "m_Localized": "Posbírej hromadu předmětů, než nepřátelé zesílí!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21000850305581056,
+      "m_Localized": "Hyper",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21001806472675328,
+      "m_Localized": "Rychle, rychle!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021763679944704,
+      "m_Localized": "Podlaha je Láva",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021765064065024,
+      "m_Localized": "Láva pravidelně pokrývá většinu mapy.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150474810654720,
+      "m_Localized": "Speedrunner",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150535674200064,
+      "m_Localized": "Speedrunner+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150476291244032,
+      "m_Localized": "Máš jen {value} minut na výhru.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208574837424213
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208574837424213,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

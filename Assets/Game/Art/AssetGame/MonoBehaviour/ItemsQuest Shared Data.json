@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "ItemsQuest Shared Data",
+  "m_TableCollectionName": "ItemsQuest",
+  "m_TableCollectionNameGuidString": "c990ac6fef2d1714eabf88495f2aa42d",
+  "m_Entries": [
+    {
+      "m_Id": 9788588032,
+      "m_Key": "CAGE_KEY_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40897740800,
+      "m_Key": "CAGE_KEY_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208430518239315
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208430518239315,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

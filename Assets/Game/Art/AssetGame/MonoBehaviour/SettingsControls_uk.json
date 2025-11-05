@@ -1,0 +1,182 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsControls_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -9002525880708672675
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 13558849536,
+      "m_Localized": "Чутливість",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16603914240,
+      "m_Localized": "Гладкість огляду",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20051632128,
+      "m_Localized": "Чутливість контролера",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23344160768,
+      "m_Localized": "Інвертована горизонтальна вісь",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25827188736,
+      "m_Localized": "Інвертована вертикальна вісь",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28230524928,
+      "m_Localized": "Утримувати присідання",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32680681472,
+      "m_Localized": "Утримувати приціл",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35163709440,
+      "m_Localized": "Вперед",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37273444352,
+      "m_Localized": "Назад",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40326897664,
+      "m_Localized": "Ліворуч",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 47062949888,
+      "m_Localized": "Праворуч",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49768275968,
+      "m_Localized": "Стрибок",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52737843200,
+      "m_Localized": "Взаємодіяти",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 54042271744,
+      "m_Localized": "Приціл",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 55250231296,
+      "m_Localized": "Ковзання",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 225987764224,
+      "m_Localized": "Контролер",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4358561919115264,
+      "m_Localized": "Вібрація джойстика",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17638684366077952,
+      "m_Localized": "Крути камеру стрілками",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17931843310583808,
+      "m_Localized": "Пауза при відключенні контролера",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27803156565065728,
+      "m_Localized": "Швидкий Перезапуск",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30636199503855616,
+      "m_Localized": "Вибір покращень цифрами",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39391745866334208,
+      "m_Localized": "Ігрова мапа",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

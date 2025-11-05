@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350863
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "所有武器增加{value1}{stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "對周圍敵人多造成{value1}傷害。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "靜止不動可恢復生命",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "受傷時提升{stat1}。還可獲得{value1}{stat1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "開寶箱後提升{stat1} {value1}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "暴擊有{value1}機會恢復生命",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "每次擊殺提升{stat1} {value1}（最多{value2}層）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "擊殺敵人時有{value1}機會產生額外經驗值碎片",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "受傷時向周圍敵人釋放電擊",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "跳得更高更遠",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "受傷時獲得額外金幣",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "移動時能賺錢",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "站著不動越久，傷害越高，上限{value1}傷害。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "凱文討厭你。每當攻擊敵人時，凱文有{value1}機會揍你。凱文不會殺死你，但他很想。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "閃避後，下一次攻擊造成{value1}傷害，並短暫提升{stat1}和{stat2}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "背包",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "啤酒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "黃銅指虎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "營火",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "懦夫披風",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "信用卡（綠色）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "信用卡（紅色）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "惡魔之刃",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "惡魔之血",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "回音碎片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "插電器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "羽毛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "金色護盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "金色運動鞋",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "懶人果汁",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "凱文",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "吸血水晶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "幽靈披風",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "雷電手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "發霉手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "打到敵人時，啪啪一聲劈下閃電！冷卻{time_seconds}秒。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "打到敵人時製造一團發霉毒雲。手套濕濕黏黏超噁心。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "充能{charge_shrine}會把它變回血區，還會額外生出{value}個{charge_shrine}！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350863
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "信標",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350863,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

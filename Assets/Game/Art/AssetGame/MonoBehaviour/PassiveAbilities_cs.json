@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179437
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "Získávej {value1} {stat1} na úroveň",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "Flexni a zastav poškození! Cooldown -{value1}s/úroveň. Získej {valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "Bullseye",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "Trefa do Černého",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "Náhodní nepřátelé jsou označeni. Získáš také {value1} {stat1} za úroveň",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "Tvrďák",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "Výstavba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "Vznášet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "Podrž „Skok“ pro vznášení ve vzduchu. Získáš {value1} k vzdušnému {stat1} za každou úroveň.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "Plynulý Stav",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "Pevnost",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "RNG Požehnání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "Rychlostní Démon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "Rychlost roste v čase, ale po zásahu se sníží na polovinu. Získej poškození podle rychlosti.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "Opice Grip",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "Lézt po zdech. Získávej taky {value1} {stat1} na každou úroveň.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "Válečník",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "Mor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "Jedovatí nepřátelé vybouchnou při smrti a otráví okolní nepřátele.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "Teorie kvantového XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} nepřítele po úhybu. Získej také {value1} {stat1} za každý level.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "Stínokrok",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "Gamba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "Hoď kostkou a vylepši si náhodný atribut při zisku levelu!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "Upír",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "Prokletí",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "Stonky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "Získej {value1} {stat1} na úroveň. Také mírně zvyš {damage} podle celkového počtu {gold} v inventáři.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "Zamknout",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "Dávej víc poškození, když máš méně HP. Získáš {value1} {stat1} na každé úrovni.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "Zap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "Nabij elektrický útok běháním po mapě. Získáš {value1} {stat1} za každou úroveň.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "Získáš {value1} {stat1} za úroveň. Navíc zvyš {damage} za každého zmraženého nepřítele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179437
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179437,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

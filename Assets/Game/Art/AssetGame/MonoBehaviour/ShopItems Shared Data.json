@@ -1,0 +1,141 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "ShopItems Shared Data",
+  "m_TableCollectionName": "ShopItems",
+  "m_TableCollectionNameGuidString": "13192ddf60bf8a54aa9f07d0706741a8",
+  "m_Entries": [
+    {
+      "m_Id": 6483476480,
+      "m_Key": "BOOMBOX_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Key": "BOOMBOX_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Key": "TOGGLER_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Key": "TOGGLER_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Key": "REFRESH_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Key": "REFRESH_DEC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Key": "SKIP_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Key": "SKIP_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Key": "BANISH_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Key": "BANISH_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Key": "WEAPON_SLOTS_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Key": "WEAPON_SLOTS_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Key": "TOME_SLOTS_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Key": "TOME_SLOTS_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Key": "SILVER_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 1118517841424023664
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517841424023664,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

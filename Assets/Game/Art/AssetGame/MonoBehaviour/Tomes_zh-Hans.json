@@ -1,0 +1,256 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Tomes_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 653627449656331937
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607686146818133
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 70643326976,
+      "m_Localized": "敏捷书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32662906183680,
+      "m_Localized": "护甲书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32703855173632,
+      "m_Localized": "吸引书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32747115225088,
+      "m_Localized": "血腥书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32770720768000,
+      "m_Localized": "冷却书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32796981305344,
+      "m_Localized": "诅咒书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32801532125184,
+      "m_Localized": "伤害书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32809702629376,
+      "m_Localized": "持续书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32812705751040,
+      "m_Localized": "闪避书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32924379095040,
+      "m_Localized": "黄金书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32926925037568,
+      "m_Localized": "HP书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32929278042112,
+      "m_Localized": "击退书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32991861252096,
+      "m_Localized": "幸运书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32993463476224,
+      "m_Localized": "精准书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33039797952512,
+      "m_Localized": "投射物速度书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33041035272192,
+      "m_Localized": "数量书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33146106781696,
+      "m_Localized": "回复书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33174502219776,
+      "m_Localized": "护盾书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33193993150464,
+      "m_Localized": "银币书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33223558799360,
+      "m_Localized": "大小书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33244589039616,
+      "m_Localized": "荆棘书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 33263979307008,
+      "m_Localized": "经验书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5022098245001216,
+      "m_Localized": "每项属性提升{value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607686146818133
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5022061393846272,
+      "m_Localized": "平衡书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033042987687936,
+      "m_Localized": "混沌书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033045101617152,
+      "m_Localized": "随机提升一项属性",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033652839489536,
+      "m_Localized": "赌博之书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5033653955174400,
+      "m_Localized": "要么梭哈，要么回家",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036552647057408,
+      "m_Localized": "囤积之书",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5036555058782208,
+      "m_Localized": "地图上随机生成一个宝箱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607686146818133,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

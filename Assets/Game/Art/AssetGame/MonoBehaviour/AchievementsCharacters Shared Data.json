@@ -1,0 +1,162 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "AchievementsCharacters Shared Data",
+  "m_TableCollectionName": "AchievementsCharacters",
+  "m_TableCollectionNameGuidString": "282ef2cf13fbea545b5b678ecf6f6636",
+  "m_Entries": [
+    {
+      "m_Id": 533179006976,
+      "m_Key": "Calcium",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758847406768128,
+      "m_Key": "Megachad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758851462660096,
+      "m_Key": "CL4NK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758855422083072,
+      "m_Key": "Robinette",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758878843076608,
+      "m_Key": "Ogre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758882047524864,
+      "m_Key": "Athena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758884346003456,
+      "m_Key": "Tony McZoom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758887076495360,
+      "m_Key": "Monke",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758890226417664,
+      "m_Key": "Birdo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758894005485568,
+      "m_Key": "Noelle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758896127803392,
+      "m_Key": "Vlad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758898321424384,
+      "m_Key": "Spaceman",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758901068693504,
+      "m_Key": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758902310207488,
+      "m_Key": "Amog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758903568498688,
+      "m_Key": "Sir Chadwell",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758904776458240,
+      "m_Key": "Dicehead",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758906001195008,
+      "m_Key": "Bandit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3758907108491264,
+      "m_Key": "Bush",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208179971227735
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208179971227735,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

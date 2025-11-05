@@ -1,0 +1,133 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsVideo_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7738729573018575300
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 154948837376,
+      "m_Localized": "Rozdzielczość",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 169469517824,
+      "m_Localized": "Docelowy Monitor",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 171809939456,
+      "m_Localized": "Tryb Pełnoekranowy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173886119936,
+      "m_Localized": "VSync",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176453033984,
+      "m_Localized": "Limit FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 179737174016,
+      "m_Localized": "Pole Widzenia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181771411456,
+      "m_Localized": "Jakość Trawy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184011169792,
+      "m_Localized": "Jakość Cieni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 186993319936,
+      "m_Localized": "Rozdzielczość Cieni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 189203718144,
+      "m_Localized": "Wygładzanie Krawędzi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 192336863232,
+      "m_Localized": "Miękkie Cząsteczki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 290923978752,
+      "m_Localized": "Rozbłysk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 293822242816,
+      "m_Localized": "Rozmycie Ruchu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 295596433408,
+      "m_Localized": "Zacienienie Otoczenia",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30335610630832128,
+      "m_Localized": "Odległość kamery",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

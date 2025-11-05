@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151663
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "把{agility_tome}升到{value}級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "死{value}次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "在{value}秒內幹掉一個{miniboss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "獲得{value}%{difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "在{final_swarm}撐{value}秒",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "買{value}個寶箱",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "暴擊{value}次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "用{thorns_stat}傷害幹掉{value}個仙人掌敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "在{value}秒內打敗一個{stage_boss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "把{cooldown_tome}升到{value}級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "把 {regen_tome} 升到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "站著不動幹掉 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "在一局內獲得 {value} 個 {leeching_crystal}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "用 {sword} 擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "用 {blood_magic} 提高 {max_hp} {value} 次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "用 {lifesteal_stat} 回復 {value} 點生命",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "打破 {value} 個罐子",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "把 {xp_tome} 升到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "在一局內把 {cooldown_tome} 和 {agility_tome} 都升到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "在 {final_swarm} 撐 {value} 分鐘",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "用 {poison} 傷害擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "把 {attraction_tome} 升到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "用 {slutty_rockets} 擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "用{sniper_rifle}幹掉{value}個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "用 {Amog} 擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "在血量低於 {value}% 時打敗一個 {stage_boss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "以 {Calcium} 身份達到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "以 {Birdo} 身份擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "在 {final_swarm} 撐 {value} 分鐘",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "完成 {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "用火焰傷害擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "擊敗 {final_boss} {value} 次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "以 {vlad} 身份達到 {value} 級",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "無傷擊敗第一個 {stage_boss}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "用 {dexecutioner} 擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "用閃電傷害擊殺 {value} 個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "完成關卡，並激活至少{value}個{cursed_shrine}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "讓 {maxhp_stat} 達到 {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "完成地圖上的所有 {charge_shrine}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "用{frostwalker}擊殺{value}個敵人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "擊敗一名{stage_boss}，操控{athena}，並用{aegis}給予致命一擊",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151663
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151663,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsGame_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1058902155890957371
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6190220943360,
+      "m_Localized": "Kamera Sallanması",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6628584431616,
+      "m_Localized": "Girdi Gecikmesi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6658384961536,
+      "m_Localized": "İpuçlarını Göster",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6693944270848,
+      "m_Localized": "Mini Harita Boyutu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6699975680000,
+      "m_Localized": "HP Çubuğu Rengi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6713842049024,
+      "m_Localized": "Nişangah Yüksekliği",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6729126092800,
+      "m_Localized": "Nişangah Boyutu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6747782356992,
+      "m_Localized": "Nişangah Alfa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6763557134336,
+      "m_Localized": "Debug FPS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6776785969152,
+      "m_Localized": "Debug Hız",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6786458034176,
+      "m_Localized": "Debug RAM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6800307625984,
+      "m_Localized": "Debug Düşman Güçlendirme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6830770855936,
+      "m_Localized": "Hızlı Sıfırlama",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6840845574144,
+      "m_Localized": "Skoru Liderlik Tablosuna Yükle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 244998933815296,
+      "m_Localized": "Dil",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24114260429897728,
+      "m_Localized": "Düşman Hedefleme Modu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27825623606099968,
+      "m_Localized": "Liderlik tablolarını gizle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 29969246854447104,
+      "m_Localized": "Rastgele hedef",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30355329144455168,
+      "m_Localized": "Mini harita dönüşü",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

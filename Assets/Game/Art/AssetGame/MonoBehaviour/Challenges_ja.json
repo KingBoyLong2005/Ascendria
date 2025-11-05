@@ -1,0 +1,270 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Challenges_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4408284025811466008
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208574837424217
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 71368941568,
+      "m_Localized": "放置ゲーミング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 146023358464,
+      "m_Localized": "動いたりジャンプしたり禁止！リラックスして…多分めっちゃ死ぬ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705386414866432,
+      "m_Localized": "なんだこれ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705385504702464,
+      "m_Localized": "もっとやばい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705383797620736,
+      "m_Localized": "やばい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705323160567808,
+      "m_Localized": "群れ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705168688545792,
+      "m_Localized": "ちびっこ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704273271750656,
+      "m_Localized": "木と石",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703257126109184,
+      "m_Localized": "もろい",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703260141813760,
+      "m_Localized": "ダメージを受けたり敵に触れると即死。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704279680647168,
+      "m_Localized": "アイテム禁止、武器と本だけに頼れ！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704440309907456,
+      "m_Localized": "平和主義者",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704443615019008,
+      "m_Localized": "敵を傷つけちゃダメ。ダメージを与えるとゲームオーバーだ。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704556223692800,
+      "m_Localized": "無理ゲー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704558501199872,
+      "m_Localized": "武器禁止。このチャレンジは本当に無理ゲー。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704669104996352,
+      "m_Localized": "デカモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704851536248832,
+      "m_Localized": "目隠し",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704905072345088,
+      "m_Localized": "霧が濃すぎて何も見えない",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704939255922688,
+      "m_Localized": "変な操作",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705018280804352,
+      "m_Localized": "キーボード逆差し！？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705171003801600,
+      "m_Localized": "夢見るちびっこ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710595039985664,
+      "m_Localized": "でかい敵が出現！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710667559501824,
+      "m_Localized": "敵がわんさか！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910446734344192,
+      "m_Localized": "ターボモード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910448294625280,
+      "m_Localized": "敵が強くなる前に大量アイテムゲットだ！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21000850305581056,
+      "m_Localized": "ハイパー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21001806472675328,
+      "m_Localized": "速さが命だ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021763679944704,
+      "m_Localized": "床が溶岩",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021765064065024,
+      "m_Localized": "地図のほとんどが周期的に溶岩で埋まるぞ。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150474810654720,
+      "m_Localized": "スピードランナー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150535674200064,
+      "m_Localized": "スピードランナー+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150476291244032,
+      "m_Localized": "{value}分以内に勝ち抜け！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208574837424217
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208574837424217,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

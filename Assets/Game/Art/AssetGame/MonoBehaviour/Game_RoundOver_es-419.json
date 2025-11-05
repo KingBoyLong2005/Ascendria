@@ -1,0 +1,156 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_RoundOver_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3880100333228994816
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607539022430316
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6856351744,
+      "m_Localized": "Te moriste{newline}¿capaz fue skill issue de él?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430316
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173345767923712,
+      "m_Localized": "NUEVO RÉCORD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173450159955968,
+      "m_Localized": "{kills} bajas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430316
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173467704729600,
+      "m_Localized": "#{rank} Mundial",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430316
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173567650799616,
+      "m_Localized": "Top {percentile}% de jugadores",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430316
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 177146872700928,
+      "m_Localized": "Plata Ganada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176936297668608,
+      "m_Localized": "Completado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177964535488512,
+      "m_Localized": "Fuente",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177697538678784,
+      "m_Localized": "Resumen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177755860475904,
+      "m_Localized": "Daño",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180895024390144,
+      "m_Localized": "Tiempo Vivo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180687569920000,
+      "m_Localized": "Bajas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181037488119808,
+      "m_Localized": "LVL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181081519923200,
+      "m_Localized": "Oro Ganado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607539022430316,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

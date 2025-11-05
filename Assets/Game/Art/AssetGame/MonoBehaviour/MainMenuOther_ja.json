@@ -1,0 +1,173 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "MainMenuOther_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 145501107833668358
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118496007
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6118154240,
+      "m_Localized": "{item} を購入しました！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 660182114304,
+      "m_Localized": "いいね！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289004283731968,
+      "m_Localized": "{file}ファイルをリセットしてもいい？初期設定に戻っちゃうよ。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286536128765952,
+      "m_Localized": "설정 파일을 불러오지 못했습니다. 오류 로그: {error}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118496007
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 286504067506176,
+      "m_Localized": "エラー発生！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286720820748288,
+      "m_Localized": "ファイルを表示",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286808846606336,
+      "m_Localized": "ファイルを再読み込み",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286827163131904,
+      "m_Localized": "ファイルを削除",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 286844913426432,
+      "m_Localized": "無視",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289103281889280,
+      "m_Localized": "警告！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 289038572167168,
+      "m_Localized": "この警告を無視したら進行状況は保存されないぜ。この問題は直したほうがいいと思うけど、いいかい？",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 401471655616512,
+      "m_Localized": "ロード中...",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3555621218263040,
+      "m_Localized": "なし",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22851683024502784,
+      "m_Localized": "全部クリアしたな！やるじゃん。おめでとう、さあ草でも触ってこい。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23930929364992000,
+      "m_Localized": "バックアップセーブをロード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806180456923136,
+      "m_Localized": "フォトセンシティビティ警告",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27806327639244800,
+      "m_Localized": "このゲームには、光過敏性てんかんを持つ人々に発作を引き起こす可能性のある点滅する光やパターンが含まれる場合があります。プレイヤーの判断でプレイしてください。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118496007,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

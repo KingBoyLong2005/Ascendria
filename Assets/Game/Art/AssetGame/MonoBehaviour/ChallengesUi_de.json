@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ChallengesUi_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7979068589700917366
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715391
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6814408704,
+      "m_Localized": "Herausforderungen Stufe {tier}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 169918308352,
+      "m_Localized": "Herausforderung vorgeschlagen von: {name}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8487600627712,
+      "m_Localized": "Herausforderungsläufe werden nicht in die Online-Ranglisten hochgeladen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15160163672064,
+      "m_Localized": "Level: {numStages}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 20745779609206784,
+      "m_Localized": "Überlebe die letzte Monsterwelle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20745721778143232,
+      "m_Localized": "Eliminiere alle Bosse",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22771343908012032,
+      "m_Localized": "{reward_icon} {value} (Permanent)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715391
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24002582677684224,
+      "m_Localized": "Schließe mehr Herausforderungen ab, um freizuschalten!\\n{value} / {target_value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715391
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715391,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

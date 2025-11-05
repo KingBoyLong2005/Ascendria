@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Maps_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6096067254600861082
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160207927763009757
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 89479946240,
+      "m_Localized": "Зелений Ліс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1017352265728,
+      "m_Localized": "Глибокий Ліс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1027032719360,
+      "m_Localized": "Проклятий Ліс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48052805632,
+      "m_Localized": "Ліс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1411541344256,
+      "m_Localized": "Зелене місце з деревами, пташками і крутою атмосферою. І все намагається тебе вбити.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148044894871552,
+      "m_Localized": "Лише добрі вібрації",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148086942769152,
+      "m_Localized": "Щось тут не так",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148098963644416,
+      "m_Localized": "ой",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12064487162118144,
+      "m_Localized": "{mapname} (Розлом)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160207927763009757
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12346566399524864,
+      "m_Localized": "Пилова Пустеля",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346612180353024,
+      "m_Localized": "Сутінкова Пустеля",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346663346667520,
+      "m_Localized": "Випалена Пустеля",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346721592967168,
+      "m_Localized": "Такий собі запах гарячого піску... Я ненавиджу гарячий пісок.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346478096842752,
+      "m_Localized": "Пустеля",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346536393474048,
+      "m_Localized": "Спекотне, сухе і пилюжне місце.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346969312755712,
+      "m_Localized": "ой лихо",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346967676977152,
+      "m_Localized": "Сухо і пилюжно... Нагадує про минулу ніч.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160207927763009757,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

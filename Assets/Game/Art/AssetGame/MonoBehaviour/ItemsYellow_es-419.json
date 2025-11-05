@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039351002
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "Las mejoras de armas pueden tener +1 en estadísticas",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1} ahora activa las acumulaciones de {bloodmark}. Además, tienes {value1} más de probabilidad de aplicar {bloodmark}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} de probabilidad de hacer BONK a un enemigo, causando {value2} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "Curar por encima de {stat1} te permite {stat2} en {value1}. También da {value2} {stat3}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "{value1} de probabilidad de invocar fuego de dragón al golpear enemigos. El daño de fuego ahora puede quemar.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "Haces {value1} {stat1} a enemigos en el aire. {value2} de probabilidad de lanzar al enemigo por los aires.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "Dispara orbes de energía a los enemigos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "Los críticos tienen una probabilidad de convertirse en Megacríticos. Puedes comer un montón de espaguetis con este tenedor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. Curar ahora irradiará daño a enemigos cercanos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "{value1} de probabilidad de infligir daño de hielo al golpear enemigos. El hielo ahora puede congelar a los enemigos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} de probabilidad de {execute} a un enemigo. Realizar {execute} incrementa {stat1} en {value2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "{value1} de probabilidad de invocar rayos al golpear enemigos. El rayo ahora puede aturdir a los enemigos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "+1 de probabilidad de activar efectos al golpear",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "Al matar a un enemigo invoca {value1} almas rastreadoras",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "Si recibes daño por debajo de {value1} {stat1}, el tiempo se hace más lento y metes {value2} de daño.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "Los ataques tienen {value1} de probabilidad de explotar, causando {value2} {stat1} a los enemigos cercanos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "Periódicamente atrae toda la XP a tu alrededor",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "Yunque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "Cleaver Sangriento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "Gran Bonk",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "Chonkplaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "Fuego de Dragón",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "Garra de Águila",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "Núcleo de Energía",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "Tenedor Gigante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "Libro Sagrado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "Cubo de Hielo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "Daga de Joe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "Orbe de Rayo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "Lámpara Overpowered",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "Cosechador de Almas",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "Chico Rápido",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "Albóndiga Picante",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "Sucky Imán",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "Guantes de Poder",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "{chance} de chance al golpear a un enemigo para crear una explosión gigante, dañando y mandando a volar a los enemigos.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039351002
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "Anillo Dorado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "¡No parece hacer nada...!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039351002,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

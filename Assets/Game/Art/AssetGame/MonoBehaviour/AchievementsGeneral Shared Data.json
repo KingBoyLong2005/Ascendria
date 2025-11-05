@@ -1,0 +1,92 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "AchievementsGeneral Shared Data",
+  "m_TableCollectionName": "AchievementsGeneral",
+  "m_TableCollectionNameGuidString": "d4fe887e34072a44db65df4cb0f4ec7d",
+  "m_Entries": [
+    {
+      "m_Id": 363196448768,
+      "m_Key": "AchievementHugWall_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Key": "AchievementHugWall_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Key": "AchievementBoombox_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Key": "AchievementToggler_DESC",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Key": "AcheivementQuests",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Key": "ChallengesCompletions_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Key": "AchievementWeapons1_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Key": "AchievementTomes1_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4160208179971227734
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208179971227734,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

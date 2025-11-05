@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151650
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Verbessere {agility_tome} auf Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Stirb {value} Mal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Besiege einen {miniboss} in {value} Sekunden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Erlange {value}% {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Überlebe den {final_swarm} für {value} Sekunden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Kaufe {value} Truhen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Erziele {value} kritische Treffer",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Besiege {value} Kaktusgegner mit {thorns_stat}-Schaden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Besiege einen {stage_boss} in unter {value} Sekunden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Upgrade {cooldown_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Verbessere {regen_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Töte {value} Gegner, ohne dich zu bewegen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Erlange {value} {leeching_crystal} in einem Durchlauf",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Töte {value} Gegner mit dem {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Erhöhe {max_hp} mit {blood_magic} {value}-mal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Heile {value} HP mit {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Brich {value} Töpfe",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Verbessere {xp_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Verbessere sowohl {cooldown_tome} als auch {agility_tome} auf Stufe {value} in einem Durchlauf",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Überlebe den {final_swarm} {value} Minuten lang",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Töte {value} Gegner mit {poison}-Schaden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Verbessere {attraction_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Töte {value} Gegner mit {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Erschieße {value} Feinde mit dem {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Töte {value} Gegner mit {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Besiege einen {stage_boss} mit weniger als {value}% HP übrig",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Erreiche Stufe {value} als {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Töte {value} Gegner als {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Überlebe den {final_swarm} {value} Minuten lang",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Vervollständige {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Töte {value} Gegner mit Feuerschaden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Bezwinge den {final_boss} {value} Mal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Erreiche Stufe {value} als {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Töte den ersten {stage_boss}, ohne in diesem Lauf Schaden zu nehmen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Töte {value} Gegner mit dem {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Töte {value} Gegner mit Blitzschaden",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Schließe ein Level ab mit mindestens {value} aktivierten {cursed_shrine}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Erreiche {maxhp_stat} auf {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Schließe jedes {charge_shrine} auf der Karte ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Hol dir {value} Kills mit {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Besiege {stage_boss} als {athena} und setze den finalen Schlag mit {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151650
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151650,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

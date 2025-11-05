@@ -1,0 +1,339 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsGray_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 7711942901044892201
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350904
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9118574944256,
+      "m_Localized": "상자 공짜로 열 확률 {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18323628566380544,
+      "m_Localized": "적 처치 시 버거 생성 확률 {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324384077971456,
+      "m_Localized": "엘리트와 보스에게 {value1} 추가 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18324566240788480,
+      "m_Localized": "맞으면 가시 발사. 가시 피해는 {stat1}에 따라 증가",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325049177145344,
+      "m_Localized": "적을 저주함. 초당 HP {value1} 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325558210461696,
+      "m_Localized": "상호작용 시 유령 소환",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18325640972468224,
+      "m_Localized": "적 처치 시 {value1} 더 많은 금화 획득",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326181765054464,
+      "m_Localized": "적 중독 확률 {value1}. 곰팡이 치즈 사랑해 <3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18326961658134528,
+      "m_Localized": "HP 90% 이상 적에게 {value1} 추가 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 18327373572341760,
+      "m_Localized": "적을 공격할 때 {value1} 확률로 {bloodmark}를 쌓는다",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10274709504,
+      "m_Localized": "배터리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9112086355968,
+      "m_Localized": "열쇠",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18323336491827200,
+      "m_Localized": "버거",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324381305536512,
+      "m_Localized": "보스버스터",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324562939871232,
+      "m_Localized": "선인장",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18324853366063104,
+      "m_Localized": "클로버",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325022769807360,
+      "m_Localized": "저주 인형",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325356309250048,
+      "m_Localized": "금단의 주스",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325557027667968,
+      "m_Localized": "유령",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325640372682752,
+      "m_Localized": "황금 글러브",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18325852533161984,
+      "m_Localized": "체육관 소스",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326014991138816,
+      "m_Localized": "구급상자",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326180775198720,
+      "m_Localized": "곰팡이 치즈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326487261380608,
+      "m_Localized": "귀리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326638285684736,
+      "m_Localized": "해골다리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326697127575552,
+      "m_Localized": "미끄러운 반지",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18326959774892032,
+      "m_Localized": "전술 안경",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327177463463936,
+      "m_Localized": "터보 양말",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18327231469322240,
+      "m_Localized": "불안정한 수혈",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 24829136370532352,
+      "m_Localized": "{value1} 확률로 적을 얼려버려!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24829135066103808,
+      "m_Localized": "얼음 결정",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953193266642944,
+      "m_Localized": "타임 팔찌",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25953195078582272,
+      "m_Localized": "{value1} {stat1}. 이건 그냥 시계가 아니야!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289249149124608,
+      "m_Localized": "{charge_shrine}: {value1}% 더 빠르게 충전, {value2} 보너스!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350904
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 26289248587087872,
+      "m_Localized": "렌치",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350904,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

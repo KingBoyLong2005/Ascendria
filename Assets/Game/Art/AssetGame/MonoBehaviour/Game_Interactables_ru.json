@@ -1,0 +1,235 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Interactables_ru",
+  "m_LocaleId": {
+    "m_Code": "ru"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2275801272863999494
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607532830326896
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 876520120320,
+      "m_Localized": "Запустить микроволновку",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 902474473472,
+      "m_Localized": "Забрать {item}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607532830326896
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 233172606976,
+      "m_Localized": "Разбей горшок",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328890818560,
+      "m_Localized": "Хватай блестящий банан",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 598844612608,
+      "m_Localized": "Вызывай босса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 640930258944,
+      "m_Localized": "Сразись с финальным боссом",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2057841647616,
+      "m_Localized": "Войти в портал",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2464471031808,
+      "m_Localized": "Покинуть",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2561594335232,
+      "m_Localized": "Поговорить с подозрительным",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2620230705152,
+      "m_Localized": "Спасибо, идиот",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2943762538496,
+      "m_Localized": "Святыня Баланса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3076302544896,
+      "m_Localized": "Вызови испытание!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3221341577216,
+      "m_Localized": "Святыня Сосу",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3366309306368,
+      "m_Localized": "Обратись к Моаи",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 102210636324864,
+      "m_Localized": "Микроволновка",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108906825883648,
+      "m_Localized": "Выбери предмет для клонирования.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108965088960512,
+      "m_Localized": "Это использует случайный предмет того же уровня.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10864125864443904,
+      "m_Localized": "Разбей перекати-поле",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305293611892736,
+      "m_Localized": "Святыня Сосу",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305348158816256,
+      "m_Localized": "Святилище Заряда",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16307420941910016,
+      "m_Localized": "Перекати-поле",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17746737476272128,
+      "m_Localized": "Открой клетку",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058737481809920,
+      "m_Localized": "Потряси загадочный куст",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058864309174272,
+      "m_Localized": "Коснись статуи",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18499026583420928,
+      "m_Localized": "Проклятие Босса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20729263719317504,
+      "m_Localized": "Врубить музыку",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25306747039252480,
+      "m_Localized": "Святыня Жадности",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607532830326896,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

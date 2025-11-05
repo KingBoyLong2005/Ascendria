@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350979
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Augmente {stat1} de {value1} par {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Pour chaque {value1} unités parcourues, invoque Bob (il est mort)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Augmente {stat1} de {value1} par ennemi abattu (max {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Augmente {stat1} quand tes PV sont bas. chat je lock-in",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Obtiens {stat1} et {stat2} pour chaque ennemi empoisonné",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Les critiques ont {value1} de chance d'exploser et de blesser les ennemis à proximité pour {value2} dégâts",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Renvoie tous les dégâts reçus à l'attaquant, et gagne une invulnérabilité temporaire.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Plus tu bouges vite, plus tu gagnes de {stat1}. Max {value1} par pile.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Inflige {value1} de {stat1} en plus en l'air",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "Les fragments d'XP tranchent les ennemis, causant des dégâts en passant. Le savoir, ça fait mal.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} de chance de lancer des missiles en tuant un ennemi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Obtiens {value1} {stat1} pour chaque {value2} {stat2}. Obtiens aussi {value3} {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Libère des déchets toxiques en subissant des dégâts, empoisonnant tous les ennemis proches",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "En cas de dégâts fatals, fige le temps. Se casse après un usage.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Bague Costaud",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Défunt)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Âme Démoniaque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Lunettes de Gamer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Masque à Gaz",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Tonique Secret de Mamy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Miroir",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Rollers",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Écharpe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Savoir Fracassé",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Canon Fou",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Bouclier Épineux",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Tonneau Toxique",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Gants Slurp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Griffes Maudites",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Lance une magie de sang en frappant un ennemi, infligeant des dégâts aux ennemis proches et te soignant de {value}. Recharge de {time_seconds}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} de lancer de la magie maudite en frappant un ennemi, endommageant les ennemis à proximité.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Le Masque de Quin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Les dégâts d'épines ont une chance de {value1} d'exploser et de toucher les ennemis proches",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350979
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350979,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

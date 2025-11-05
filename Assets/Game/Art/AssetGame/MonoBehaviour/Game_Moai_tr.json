@@ -1,0 +1,112 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Moai_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6897251382589154511
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8114642944,
+      "m_Localized": "Moai sessizce memnuniyetsiz bakıyor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 57334800384,
+      "m_Localized": "Moai tek kelime fısıldıyor: 'Eyvah.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 65270423552,
+      "m_Localized": "Moai garip bir şekilde öksürüyor ve göz teması kurmaktan kaçınıyor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 79816269824,
+      "m_Localized": "Moai seni yargılıyor... ve biraz kabul edilebilir buluyor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107351875584,
+      "m_Localized": "Moai tek kelime fısıldıyor: 'Eh.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 110858313728,
+      "m_Localized": "Moai omuz silkiniyor. Adil bir değerlendirme.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 157616414720,
+      "m_Localized": "Moai onaylayarak başını sallıyor. Nadir bir onur.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 160179134464,
+      "m_Localized": "Moai tek kelime fısıldıyor: 'Güzel.'",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 163081592832,
+      "m_Localized": "Moai kısa bir beatbox yapıyor.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 224461037568,
+      "m_Localized": "Moai geri takla atıyor. Kimse sana inanmayacak.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 227740983296,
+      "m_Localized": "Moai tek kelime fısıldıyor: 'Harika'.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 231004151808,
+      "m_Localized": "Moai sana bir başparmağı yukarı yapıyor. Baş parmakları olduğunu bile bilmiyordun.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

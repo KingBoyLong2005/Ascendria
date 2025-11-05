@@ -1,0 +1,64 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemUtility_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4226737343678262562
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350942
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6949044224,
+      "m_Localized": "เพิ่ม {stat1} ขึ้น {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350942
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44527099445248,
+      "m_Localized": "{stat1} เพิ่มขึ้น {value1} โดยแลกกับการลดลงของ {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350942
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350942,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

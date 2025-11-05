@@ -1,0 +1,546 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Stats_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2333985896604320188
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 11411298951168,
+      "m_Localized": "HP Máx",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12024481030144,
+      "m_Localized": "Regen de HP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12321492279296,
+      "m_Localized": "Regen de HP aumenta quanto você regenera por minuto.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12454221029376,
+      "m_Localized": "Escudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12566083117056,
+      "m_Localized": "O escudo absorve dano em vez de HP. Regenera rapidinho se não tomar dano por um tempo.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12884846026752,
+      "m_Localized": "Espinhos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12982942408704,
+      "m_Localized": "Dá dano nos inimigos quando eles te atacam.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13124810547200,
+      "m_Localized": "Armadura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13160562794496,
+      "m_Localized": "A Armadura reduz o dano que você leva.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13348484390912,
+      "m_Localized": "Evasão",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13361235075072,
+      "m_Localized": "Evasão é a chance de desviar de um ataque sem levar dano.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13626319282176,
+      "m_Localized": "Tamanho",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13628353519616,
+      "m_Localized": "O tamanho dos ataques, projéteis, explosões e mais.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13932146958336,
+      "m_Localized": "Duração",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13933384278016,
+      "m_Localized": "A duração dos seus ataques e projéteis.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14128209698816,
+      "m_Localized": "Velocidade dos Projéteis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14169276129280,
+      "m_Localized": "A velocidade dos seus projéteis.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14279779262464,
+      "m_Localized": "Dano",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14282090323968,
+      "m_Localized": "Aumenta o dano dos seus ataques.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14666708000768,
+      "m_Localized": "Duração dos Efeitos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14668243116032,
+      "m_Localized": "A duração dos efeitos como veneno ou gelo.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14800854425600,
+      "m_Localized": "Velocidade de Ataque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15228329500672,
+      "m_Localized": "A rapidez com que você lança projéteis e ataca.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15429710618624,
+      "m_Localized": "Qtd de Projéteis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15430247489536,
+      "m_Localized": "Aumenta o número de ataques/projéteis.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698171240448,
+      "m_Localized": "Roubo de Vida",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15698712305664,
+      "m_Localized": "Sua chance de curar 1 ao acertar um inimigo. Acima de 100%, garante 1 cura e pode curar até 2.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967261007872,
+      "m_Localized": "Chance Crítica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15967873376256,
+      "m_Localized": "Chance de dar dano crítico. Mais de 100% permite Supercrítico, causando ainda mais dano.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175109742592,
+      "m_Localized": "Dano Crítico",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16175835357184,
+      "m_Localized": "Aumenta o dano dos seus acertos críticos. Críticos dão o dobro de dano por padrão.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16480819978240,
+      "m_Localized": "Dano em Elites",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16481419763712,
+      "m_Localized": "Aumenta o dano que você causa em inimigos de elite.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16640631349248,
+      "m_Localized": "Recuo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16641403101184,
+      "m_Localized": "A distância que você empurra inimigos quando os acerta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16888908980224,
+      "m_Localized": "Velocidade de Movimento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16890188242944,
+      "m_Localized": "O quão rápido você se move.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17000058036224,
+      "m_Localized": "Altura do Pulo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17001215664128,
+      "m_Localized": "Quão alto você pode pular.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069079502848,
+      "m_Localized": "Redução de Dano de Queda",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17069855449088,
+      "m_Localized": "Reduz o dano de queda. Acima de 100%, você cura ao cair. É opção de gameplay, tá!?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17244841811968,
+      "m_Localized": "Alcance de Coleta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17246204960768,
+      "m_Localized": "Alcance de Coleta aumenta a distância para pegar XP.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17377222434816,
+      "m_Localized": "Sorte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17378044518400,
+      "m_Localized": "Sorte aumenta sua chance de ofertas de nível mais alto ao evoluir, em santuários e mais.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17565831897088,
+      "m_Localized": "Aumento de Ouro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17566733672448,
+      "m_Localized": "Aumento de Ouro lhe dá mais ouro de todas as fontes.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17680923598848,
+      "m_Localized": "Aumento de XP lhe dá mais XP de todas as fontes.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17679753388032,
+      "m_Localized": "Aumento de XP",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17787811241984,
+      "m_Localized": "Dificuldade",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17958506831872,
+      "m_Localized": "Dificuldade aumenta a quantidade, saúde, velocidade e força dos inimigos. Só os gamers encaram essa!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18004530929664,
+      "m_Localized": "Aumento de Elites",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18009035612160,
+      "m_Localized": "Aumento de Elites aumenta a chance de surgirem inimigos de elite.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18132130045952,
+      "m_Localized": "Multiplicador de Powerups",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18139709153280,
+      "m_Localized": "Multiplicador de Powerups aumenta o efeito e duração dos powerups.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18365530480640,
+      "m_Localized": "Chance de Powerup",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18368768483328,
+      "m_Localized": "Chance de Powerup aumenta a chance de inimigos droparem powerups e baús.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18497495867392,
+      "m_Localized": "Projéteis Ricocheteantes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501094580224,
+      "m_Localized": "Faz certos projéteis ricochetearem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18526608531456,
+      "m_Localized": "Pulos Extras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18530010112000,
+      "m_Localized": "Pulos Extras lhe dá mais pulos no ar.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23882051067904,
+      "m_Localized": "Aumento de prata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23886740299776,
+      "m_Localized": "O aumento de prata dá mais prata de todas as fontes.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381305404235776,
+      "m_Localized": "Mega Cofre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 381343001976832,
+      "m_Localized": "Mais cofres pelo mapa!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698515575767040,
+      "m_Localized": "Overcura",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17698517517729792,
+      "m_Localized": "Permite que você se cure além do seu HP máximo.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098208234176512,
+      "m_Localized": "Quantidade de inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098210771730432,
+      "m_Localized": "Tamanho dos inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098214437552128,
+      "m_Localized": "Velocidade dos inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098216379514880,
+      "m_Localized": "Vida dos inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21098229126004736,
+      "m_Localized": "Dano dos inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323851693686784,
+      "m_Localized": "Escalonamento de inimigos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21323853509820416,
+      "m_Localized": "Preço do baú",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

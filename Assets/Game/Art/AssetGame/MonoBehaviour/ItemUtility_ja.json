@@ -1,0 +1,64 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemUtility_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4226737343678262562
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350935
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6949044224,
+      "m_Localized": "{stat1}が{value1}増加",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350935
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44527099445248,
+      "m_Localized": "{value1}の{stat1}上昇。ただし{value2}の{stat2}減少",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350935
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350935,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

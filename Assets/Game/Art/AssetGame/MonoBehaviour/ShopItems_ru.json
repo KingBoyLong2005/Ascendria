@@ -1,0 +1,175 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ShopItems_ru",
+  "m_LocaleId": {
+    "m_Code": "ru"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6549869673150466286
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517862019104868
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6483476480,
+      "m_Localized": "Бумбокс",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 50334924800,
+      "m_Localized": "Вручную выбирай, какую музыку включить",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56492395986944,
+      "m_Localized": "Включай-выключай купленные {weapons}, {tomes} и {items}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 56489552248832,
+      "m_Localized": "Тогглер",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274128098689024,
+      "m_Localized": "Обновить",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274130455887872,
+      "m_Localized": "Обнови предложения на повышении уровня",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274153809772544,
+      "m_Localized": "Пропустить",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274155709792256,
+      "m_Localized": "Пропусти предложения на повышении уровня",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274180074504192,
+      "m_Localized": "Изгнать",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 274199628349440,
+      "m_Localized": "Выгони {weapons}, {tomes} и {items} — они больше не появятся в этом забеге",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274213838651392,
+      "m_Localized": "{weapon} Слоты",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274217001156608,
+      "m_Localized": "Носи больше {weapons}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274275746578432,
+      "m_Localized": "{tome} Слоты",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274276614799360,
+      "m_Localized": "Носи больше {tomes}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 274449315266560,
+      "m_Localized": "Увеличь заработанные {silver}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517862019104868
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517862019104868,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

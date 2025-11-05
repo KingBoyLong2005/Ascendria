@@ -1,0 +1,308 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Characters_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 130002324225702167
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2487837499392,
+      "m_Localized": "Athena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2565239185408,
+      "m_Localized": "Bandit",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2568280055808,
+      "m_Localized": "A sneaky lad with a sharp sword",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685133365248,
+      "m_Localized": "Bush",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2689608687616,
+      "m_Localized": "Just a normal bush, nothing to see here.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2804318707712,
+      "m_Localized": "Calcium",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2807925809152,
+      "m_Localized": "An undead shredder who pulls off the sickest tricks.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2891753168896,
+      "m_Localized": "Quick on his feet and unnaturally lucky.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2887793745920,
+      "m_Localized": "Fox",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2985613303808,
+      "m_Localized": "Tony McZoom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2988041805824,
+      "m_Localized": "Tony didn't choose the hoverboard - the hoverboard chose him.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3526166814720,
+      "m_Localized": "Sir Oofie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3527295082496,
+      "m_Localized": "He's slow, but his armor makes him pretty chunky.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3640088305664,
+      "m_Localized": "He wields the perfect, most powerful jawline.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3638968426496,
+      "m_Localized": "Megachad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3711223701504,
+      "m_Localized": "Monke",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3712721068032,
+      "m_Localized": "No one knows where he got the shades. No one asks.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4507256463360,
+      "m_Localized": "Noelle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4508766412800,
+      "m_Localized": "The Megabonk Discord bullied me into creating this character",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5173664260096,
+      "m_Localized": "Ogre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5174742196224,
+      "m_Localized": "Big and strong, with the critical thinking skills of a wet sock.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6517481512960,
+      "m_Localized": "Steals from the poor, gives to the rich.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2522230792192,
+      "m_Localized": "Captain America but ordered from Temu (with a 23% discount)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6516210638848,
+      "m_Localized": "Robinette",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14406220750848,
+      "m_Localized": "Birdo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14407441293312,
+      "m_Localized": "The glasses are for your safety, not his.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19688397185024,
+      "m_Localized": "I don't know how to pronounce his name.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19667685711872,
+      "m_Localized": "CL4NK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442138539163648,
+      "m_Localized": "Amog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442140577595392,
+      "m_Localized": "No one knows his real name. Everyone just started calling him Amog, and he never corrected them.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274306618294272,
+      "m_Localized": "Spaceman is currently banned from 7 planets and most NASA gift shops.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274304529530880,
+      "m_Localized": "Spaceman",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882290591465472,
+      "m_Localized": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882292743143424,
+      "m_Localized": "Very fast and elusive. Hasn't filed his taxes since 2014. He's cooked.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503794055479296,
+      "m_Localized": "Dicehead",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503795133415424,
+      "m_Localized": "His favorite number is 7. Who's gonna tell him the bad news?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162423796465664,
+      "m_Localized": "Vlad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162425415467008,
+      "m_Localized": "He looks pretty evil but he's actually a really nice dude. He always says hi at the grocery store. Chill guy.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037842271338496,
+      "m_Localized": "Sir Chadwell",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037844410433536,
+      "m_Localized": "Sir Oofie's wife's boyfriend. Bought him new armor and lets him stay up past 8:30. Nice guy!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

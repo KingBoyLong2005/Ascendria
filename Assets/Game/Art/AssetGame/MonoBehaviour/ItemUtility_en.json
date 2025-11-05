@@ -1,0 +1,64 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemUtility_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4226737343678262562
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208313276170352
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6949044224,
+      "m_Localized": "Increase {stat1} by {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208313276170352
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44527099445248,
+      "m_Localized": "{value1} {stat1} at the cost of {value2} {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208313276170352
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208313276170352,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Game_Interactables Shared Data",
+  "m_TableCollectionName": "Game_Interactables",
+  "m_TableCollectionNameGuidString": "39ec8d9f750a44f419ee4c7b7688a80e",
+  "m_Entries": [
+    {
+      "m_Id": 233172606976,
+      "m_Key": "BREAK_POT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328890818560,
+      "m_Key": "BANANARANG",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 598844612608,
+      "m_Key": "SPAWN_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 640930258944,
+      "m_Key": "FINAL_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 876520120320,
+      "m_Key": "MICROWAVE_USE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 902474473472,
+      "m_Key": "MICROWAVE_TAKE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2057841647616,
+      "m_Key": "ENTER_PORTAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2464471031808,
+      "m_Key": "FINAL_PORTAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2561594335232,
+      "m_Key": "SHADY_GUY_INTERACT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2620230705152,
+      "m_Key": "SHADY_GUY_LEAVE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2943762538496,
+      "m_Key": "SHRINE_BALANCE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3076302544896,
+      "m_Key": "SHRINE_CHALLENGE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3221341577216,
+      "m_Key": "SHRINE_MAGNET",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3366309306368,
+      "m_Key": "SHRINE_MOAI",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 102210636324864,
+      "m_Key": "MICROWAVE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108906825883648,
+      "m_Key": "MICROWAVE_INSTRUCTIONS_1",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108965088960512,
+      "m_Key": "MICROWAVE_INSTRUCTIONS_2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10864125864443904,
+      "m_Key": "BREAK_TUMBLEWEED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305293611892736,
+      "m_Key": "SUCC_SHRINE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305348158816256,
+      "m_Key": "CHARGE_SHRINE_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16307420941910016,
+      "m_Key": "TUMBLEWEED_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17746737476272128,
+      "m_Key": "OPEN_CAGE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058737481809920,
+      "m_Key": "QUEST_BUSH",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058864309174272,
+      "m_Key": "QUEST_STATUE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18499026583420928,
+      "m_Key": "SHRINE_CURSED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20729263719317504,
+      "m_Key": "BOOMBOX_INTERACT",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25306747039252480,
+      "m_Key": "SHRINE_GREED_NAME",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607532830326784
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607532830326784,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

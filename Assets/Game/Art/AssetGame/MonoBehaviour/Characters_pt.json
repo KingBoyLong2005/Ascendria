@@ -1,0 +1,308 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Characters_pt",
+  "m_LocaleId": {
+    "m_Code": "pt"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 130002324225702167
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2487837499392,
+      "m_Localized": "Atena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2565239185408,
+      "m_Localized": "Bandido",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2568280055808,
+      "m_Localized": "Um cara esperto com uma espada afiada",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685133365248,
+      "m_Localized": "Arbusto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2689608687616,
+      "m_Localized": "Apenas um arbusto normal, nada pra ver aqui.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2804318707712,
+      "m_Localized": "Cálcio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2807925809152,
+      "m_Localized": "Um esqueleto que faz as manobras mais insanas.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2891753168896,
+      "m_Localized": "Ágil e com uma sorte fora do comum.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2887793745920,
+      "m_Localized": "Raposa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2985613303808,
+      "m_Localized": "Tony McZoom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2988041805824,
+      "m_Localized": "Tony não escolheu o hoverboard - o hoverboard que escolheu ele.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3526166814720,
+      "m_Localized": "Sir Oofie",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3527295082496,
+      "m_Localized": "Ele é lento, mas sua armadura o deixa bem resistente.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3640088305664,
+      "m_Localized": "Ele ostenta o queixo mais perfeito e poderoso de todos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3638968426496,
+      "m_Localized": "Megachad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3711223701504,
+      "m_Localized": "Monke",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3712721068032,
+      "m_Localized": "Ninguém sabe de onde ele tirou os óculos. Ninguém pergunta.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4507256463360,
+      "m_Localized": "Noelle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4508766412800,
+      "m_Localized": "O Discord do Megabonk me obrigou a criar esse personagem.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5173664260096,
+      "m_Localized": "Ogro",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5174742196224,
+      "m_Localized": "Grande e forte, com a inteligência crítica de uma meia molhada.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6517481512960,
+      "m_Localized": "Rouba dos pobres, dá aos ricos.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2522230792192,
+      "m_Localized": "Capitão América versão Temu (com desconto)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6516210638848,
+      "m_Localized": "Robinette",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14406220750848,
+      "m_Localized": "Birdo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14407441293312,
+      "m_Localized": "Os óculos são para a sua segurança, não a dele.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19667685711872,
+      "m_Localized": "CL4NK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19688397185024,
+      "m_Localized": "Não faço ideia de como se pronuncia o nome dele.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442138539163648,
+      "m_Localized": "Amog",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5442140577595392,
+      "m_Localized": "Ninguém sabe o nome verdadeiro dele. Todo mundo começou a chamá-lo de Amog e ele nunca corrigiu.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274306618294272,
+      "m_Localized": "O Astronauta está banido de 7 planetas e de quase todas as lojas de presentes da NASA.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6274304529530880,
+      "m_Localized": "Astronauta",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882290591465472,
+      "m_Localized": "Ninja",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6882292743143424,
+      "m_Localized": "Muito rápido e escorregadio. Não declara imposto desde 2014. Tá fritando.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503794055479296,
+      "m_Localized": "CabeçaDado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9503795133415424,
+      "m_Localized": "O número favorito dele é 7. Quem vai contar pra ele a má notícia?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162423796465664,
+      "m_Localized": "Vlad",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10162425415467008,
+      "m_Localized": "Ele parece bem malvado, mas na verdade é um cara super gente boa. Sempre cumprimenta a galera no mercado. Gente fina.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037842271338496,
+      "m_Localized": "Sir Chadwell",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12037844410433536,
+      "m_Localized": "Namorado da esposa do Sir Oofie. Comprou uma armadura nova pra ele e deixa ele ficar acordado até depois das 8:30. Gente boa!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

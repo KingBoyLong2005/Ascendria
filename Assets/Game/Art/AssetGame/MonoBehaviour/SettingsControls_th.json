@@ -1,0 +1,182 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsControls_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -9002525880708672675
+  },
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_TableData": [
+    {
+      "m_Id": 13558849536,
+      "m_Localized": "ความไว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16603914240,
+      "m_Localized": "ปรับมุมกล้องเนียน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20051632128,
+      "m_Localized": "ความไวคอนโทรลเลอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 23344160768,
+      "m_Localized": "กลับซ้ายขวา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25827188736,
+      "m_Localized": "กลับขึ้นลง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 28230524928,
+      "m_Localized": "กดค้างนั่ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 32680681472,
+      "m_Localized": "กดค้างเล็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 35163709440,
+      "m_Localized": "เดินหน้า",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 37273444352,
+      "m_Localized": "ถอยหลัง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 40326897664,
+      "m_Localized": "ไปทางซ้าย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 47062949888,
+      "m_Localized": "ไปทางขวา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49768275968,
+      "m_Localized": "กระโดด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 52737843200,
+      "m_Localized": "โต้ตอบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 54042271744,
+      "m_Localized": "เล็ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 55250231296,
+      "m_Localized": "สไลด์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 225987764224,
+      "m_Localized": "คอนโทรลเลอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4358561919115264,
+      "m_Localized": "สั่นสะเทือนคอนโทรลเลอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17638684366077952,
+      "m_Localized": "หมุนกล้องด้วยปุ่มลูกศร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17931843310583808,
+      "m_Localized": "หยุดเกมเมื่อคอนโทรลเลอร์หลุด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 27803156565065728,
+      "m_Localized": "รีเซ็ตไว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 30636199503855616,
+      "m_Localized": "เลือกอัปเกรดด้วยปุ่มตัวเลข",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 39391745866334208,
+      "m_Localized": "แผนที่ในเกม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": []
+  }
+}

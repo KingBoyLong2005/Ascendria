@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350867
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} per tutte le armi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Fai {value1} danni in più ai nemici vicini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Rimanendo fermo ti curi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Aumenta {stat1} quando subisci danni. Ottieni anche {value1} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Aumenta {stat1} di {value1} quando apri un forziere",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "I critici hanno {value1} probabilità di curarti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Aumenta {stat1} di {value1} per uccisione (Max {value2} stack)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} di probabilità di generare un frammento di XP extra quando uccidi un nemico",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Quando subisci danni, lanci una scossa elettrica ai nemici vicini",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Salta più in alto e più lontano",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Ottieni oro extra quando subisci danni",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Guadagni soldi muovendoti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Più resti fermo, più danni fai. Max {value1} di danno",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin ti odia. {value1} di probabilità che Kevin ti dia un pugno quando colpisci un nemico. Kevin non può ucciderti, ma ci tiene davvero",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Dopo aver schivato, infliggi {value1} danni con il prossimo attacco e aumenta temporaneamente {stat1} e {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Zaino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Birra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Tirapugni",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Falò",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Mantello del Codardo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Carta di Credito (Verde)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Carta di Credito (Rossa)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Lama Demoniaca",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Sangue Demoniaco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Frammento d'Eco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Spina Elettrica",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Piume",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Scudo Dorato",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Sneakers Dorate",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Succhino",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Cristallo Sanguisuga",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Manto Spettrale",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Moffole Tuonanti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Guanti Muffiti",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Quando colpisci un nemico, schiaffeggiali così forte che generi un fulmine. Ricarica di {time_seconds} secondi.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Genera una nuvola velenosa ammuffita quando colpisci un nemico. I guanti sono coperti da una texture umida, muffita e viscida.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Se carichi un {charge_shrine}, si trasformerà in una zona curativa. Genera anche {value} {charge_shrine} extra per i prossimi livelli.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350867
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Segnale",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350867,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

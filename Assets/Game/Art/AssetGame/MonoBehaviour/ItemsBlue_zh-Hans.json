@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350862
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "所有武器增加{value1}{stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "对附近敌人造成{value1}额外伤害",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "站着不动就能回血",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "受到伤害时提升{stat1}，还会获得{value1}{stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "开箱子时提升{stat1}{value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "暴击有{value1}几率回复生命",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "每次击杀增加{stat1}{value1}（最多{value2}层）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "击杀敌人时有{value1}几率掉落额外经验碎片",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "受伤时向附近敌人释放电击",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "跳得更高更远",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "受伤时获得额外金币",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "到处移动就能赚钱",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "站着不动时间越长，伤害越高。最高{value1}伤害",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "凯文讨厌你。每次攻击敌人时，凯文有{value1}几率打你一拳。凯文不能杀死你，但他真的很想。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "闪避后，下一次攻击造成{value1}伤害，并短暂提升{stat1}和{stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "背包",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "啤酒",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "黄铜指虎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "营火",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "懦夫披风",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "信用卡（绿色）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "信用卡（红色）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "恶魔之刃",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "恶魔之血",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "回声碎片",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "插電器",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "羽毛",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "金色护盾",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "金色运动鞋",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "摸鱼果汁",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "凯文",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "吸血水晶",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "幻影披风",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "雷电手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "发霉手套",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "击中敌人时，啪啪一声劈下闪电！冷却{time_seconds}秒。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "击中敌人时制造一团发霉毒云。手套湿湿黏黏超恶心。",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "给{charge_shrine}充能会把它变成治疗区，还会为后续关卡生成{value}个{charge_shrine}。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350862
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "信标",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350862,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsUi_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -601287146742928815
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118495843
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4549484544,
+      "m_Localized": "Spiel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 89098264576,
+      "m_Localized": "Video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 101454684160,
+      "m_Localized": "Steuerung",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120538767360,
+      "m_Localized": "Audio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 133721464832,
+      "m_Localized": "Effekte",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187881711443968,
+      "m_Localized": "Willst du diese Auflösung behalten?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 195232963207168,
+      "m_Localized": "Drück 'ne Taste für {action}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118495843
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 195424751951872,
+      "m_Localized": "[ESC], um Keine zu setzen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 219294200471552,
+      "m_Localized": "Sprache",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4177956665270272,
+      "m_Localized": "Steuerung zurücksetzen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118495843,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

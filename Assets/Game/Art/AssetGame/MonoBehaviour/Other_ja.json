@@ -1,0 +1,193 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Other_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6431438436825214902
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715358
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 5841330176,
+      "m_Localized": "プレイ回数",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19275685888,
+      "m_Localized": "ランク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48220947062784,
+      "m_Localized": "チャレンジ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48273694629888,
+      "m_Localized": "ステージ階層",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49788157140992,
+      "m_Localized": "{tier}ティア",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715358
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 59144428822528,
+      "m_Localized": "クリア！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59155489202176,
+      "m_Localized": "未クリア！",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107249635401728,
+      "m_Localized": "シルバー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 152229783511040,
+      "m_Localized": "必要だぜ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2488414023426048,
+      "m_Localized": "ゴールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901787545534464,
+      "m_Localized": "イージー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901790380883968,
+      "m_Localized": "ノーマル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901793035878400,
+      "m_Localized": "ハード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901795149807616,
+      "m_Localized": "コゲ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501400353964032,
+      "m_Localized": "ステージボス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501402186874880,
+      "m_Localized": "ファイナルボス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501542654115840,
+      "m_Localized": "ミニボス",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501575499710464,
+      "m_Localized": "エリート",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20782181042487296,
+      "m_Localized": "いい試みだな、この野郎",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20783149427589120,
+      "m_Localized": "普通にチャレンジしろよ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21882863065628672,
+      "m_Localized": "ステージ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715358,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

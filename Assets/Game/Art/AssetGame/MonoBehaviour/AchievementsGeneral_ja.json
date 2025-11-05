@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsGeneral_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4166224902727595466
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517847771578484
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 363196448768,
+      "m_Localized": "壁ニンジャ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Localized": "壁ハグで落下ダメージを{value}回回避",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Localized": "{forest}で全てのブームボックスを見つけて起動せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Localized": "{value}個のアンロックを購入",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Localized": "{value} {quests} をクリアしろ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Localized": "チャレンジ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578484
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Localized": "武器スロット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Localized": "トームスロット",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517847771578484,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Other Shared Data",
+  "m_TableCollectionName": "Other",
+  "m_TableCollectionNameGuidString": "99fa6340bfff0d848a70f2fb89d383e9",
+  "m_Entries": [
+    {
+      "m_Id": 5841330176,
+      "m_Key": "RUNS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 19275685888,
+      "m_Key": "RANK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48220947062784,
+      "m_Key": "CHALLENGES",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48273694629888,
+      "m_Key": "TIER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 49788157140992,
+      "m_Key": "TIER_SMART",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59144428822528,
+      "m_Key": "COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 59155489202176,
+      "m_Key": "NOT_COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 107249635401728,
+      "m_Key": "SILVER",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 152229783511040,
+      "m_Key": "REQUIRES",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2488414023426048,
+      "m_Key": "GOLD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901787545534464,
+      "m_Key": "DIFFICULTY_EASY",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901790380883968,
+      "m_Key": "DIFFICULTY_NORMAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901793035878400,
+      "m_Key": "DIFFICULTY_HARD",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15901795149807616,
+      "m_Key": "DIFFICULTY_COOKED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501400353964032,
+      "m_Key": "STAGE_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501402186874880,
+      "m_Key": "FINAL_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501542654115840,
+      "m_Key": "MINIBOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18501575499710464,
+      "m_Key": "ELITE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20782181042487296,
+      "m_Key": "TROLL_INVERTED_CONTROLS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20783149427589120,
+      "m_Key": "TROLL_INVERTED_CONTROLS_2",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21882863065628672,
+      "m_Key": "STAGE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607393822179466
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179466,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

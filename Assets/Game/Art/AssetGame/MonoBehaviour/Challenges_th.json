@@ -1,0 +1,270 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Challenges_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4408284025811466008
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208574837424224
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 71368941568,
+      "m_Localized": "เกมมิ่งแบบ AFK",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 146023358464,
+      "m_Localized": "ห้ามขยับหรือกระโดด! นั่งชิลๆ... แล้วก็ตายรัวๆ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705386414866432,
+      "m_Localized": "นี่มันอะไรเนี่ย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705385504702464,
+      "m_Localized": "แย่ละสิ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705383797620736,
+      "m_Localized": "โอ้ไม่นะ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705323160567808,
+      "m_Localized": "กลุ่มฝูง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705168688545792,
+      "m_Localized": "มนุษย์เล็ก",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704273271750656,
+      "m_Localized": "ติดแค่หินกับไม้",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703257126109184,
+      "m_Localized": "เปราะบาง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20703260141813760,
+      "m_Localized": "โดนโจมตีหรือแตะโดนศัตรูก็เจ๊งละ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704279680647168,
+      "m_Localized": "ห้ามพกของ ใช้แค่ปืนกับตำราละกัน!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704440309907456,
+      "m_Localized": "สายสันติ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704443615019008,
+      "m_Localized": "ห้ามทำร้ายศัตรู ถ้าโดนตีศัตรูจะต้องไปเล่นซูโดกุ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704556223692800,
+      "m_Localized": "เป็นไปไม่ได้",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704558501199872,
+      "m_Localized": "ห้ามใช้อาวุธ บอกเลยว่านี่มันเป็นไปไม่ได้จริงๆ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704669104996352,
+      "m_Localized": "โหมดบิ๊กไซส์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704851536248832,
+      "m_Localized": "ตาบอด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704905072345088,
+      "m_Localized": "หมอกลงหนาจัดจนมองไม่เห็นอะไรเลย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20704939255922688,
+      "m_Localized": "คอนโทรลเพี้ยน",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705018280804352,
+      "m_Localized": "แป้นพิมพ์เสียบผิดรูหรือเปล่า?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20705171003801600,
+      "m_Localized": "ตัวเล็กแต่ฝันใหญ่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710595039985664,
+      "m_Localized": "ศัตรูตัวโคตรใหญ่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20710667559501824,
+      "m_Localized": "ศัตรูมาแบบเพียบ!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910446734344192,
+      "m_Localized": "โหมดเทอร์โบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20910448294625280,
+      "m_Localized": "เก็บไอเทมเพียบก่อนที่ศัตรูจะเทพเกินไป!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21000850305581056,
+      "m_Localized": "ไฮเปอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21001806472675328,
+      "m_Localized": "ต้องไปให้ไว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021763679944704,
+      "m_Localized": "พื้นคือแมกล่า",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 21021765064065024,
+      "m_Localized": "ลาวาจะท่วมแผนที่เป็นช่วงๆ ครับ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150474810654720,
+      "m_Localized": "สปีดรันเนอร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150535674200064,
+      "m_Localized": "สปีดรันเนอร์+",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22150476291244032,
+      "m_Localized": "มีเวลาแค่ {value} นาทีในการคว้าชัย!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208574837424224
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208574837424224,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}
