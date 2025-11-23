@@ -6,55 +6,63 @@ public class InventoryTooltip : MonoBehaviour
 {
     public static InventoryTooltip Instance;
 
-    public GameObject root;   // chính Panel Tooltip
-    public TMP_Text titleText;
-    public TMP_Text typeText;
-    public TMP_Text descText;
-    public TMP_Text statsText;
+    public GameObject root;   // panel
+    // public TMP_Text titleText;
+    // public TMP_Text typeText;
+    // public TMP_Text descText;
+    // public TMP_Text statsText;
+    // public Image iconImage;
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        if (root != null)
-        {
-            root.SetActive(false);
-        }
-        Hide();
+        if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
+        else { Destroy(gameObject); return; }
+
+        if (root != null) root.SetActive(false);
     }
 
-    public void Show(ItemData data, Vector3 _)
+    /// <summary>
+    /// Show tooltip for any InventoryItemBase (WeaponData or ItemData are subclasses)
+    /// screenPos is where the tooltip should be anchored (usually pointer position)
+    /// </summary>
+    public void Show(InventoryItemBase data, Vector3 screenPos)
     {
-        if (!data || root == null) return;
-        titleText.text = data.itemName;
-        typeText.text = data.itemType.ToString();
-        descText.text = data.description;
-        statsText.text = FormatStats(data);
+        if (data == null || root == null) return;
+
+        // titleText.text = data.displayName;
+        // descText.text = data.description ?? "";
+
+        // // icon
+        // if (iconImage != null) iconImage.sprite = data.icon;
+
+        // // typeText + statsText depend on actual type
+        // if (data is WeaponData w)
+        // {
+        //     typeText.text = $"Weapon • {w.weaponType}";
+        //     statsText.text = $"DMG: {w.baseDamage}\nRate: {w.attackRate:F2}/s\nRange: {w.range:F1}";
+        // }
+        // else if (data is ItemData it)
+        // {
+        //     typeText.text = $"Item • {it.itemType}";
+        //     string s = "";
+        //     if (it.buffValue != 0f) s += $"+{it.buffValue}\n";
+        //     if (it.debuffValue != 0f) s += $"-{it.debuffValue}\n";
+        //     statsText.text = s.Trim();
+        // }
+        // else
+        // {
+        //     typeText.text = "Item";
+        //     statsText.text = "";
+        // }
+
         root.SetActive(true);
-        // bám theo chuột
-        Vector3 pos = Input.mousePosition;
-        transform.position = pos;
+        // set tooltip near mouse by default; caller can pass desired pos
+        transform.position = screenPos;
     }
 
     public void Hide()
     {
         if (root != null) root.SetActive(false);
-    }
-
-    string FormatStats(ItemData d)
-    {
-        string b = d.buffValue != 0 ? $"+{d.buffValue}" : "";
-        string db = d.debuffValue != 0 ? $"-{d.debuffValue}" : "";
-        if (b == "" && db == "") return "";
-        if (b != "" && db != "") return $"{b} / {db}";
-        return b != "" ? b : db;
     }
 
     void Update()

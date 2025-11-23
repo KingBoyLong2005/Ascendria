@@ -1,14 +1,20 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
-public class ItemData : ScriptableObject
+[CreateAssetMenu(fileName = "New Item", menuName = "Game/Item")]
+public class ItemData : InventoryItemBase
 {
     public string itemName;
-    public Sprite icon;
-    public string description;
-    public float buffValue;  // Có thể là +HP, +Speed,...
-    public float debuffValue; // Nếu có
-    public ItemType itemType; // Enum: Buff, Debuff, Upgrade, Quest...
+    public ItemType itemType;
+
+    [Header("Optional Buff/Value")]
+    public float buffValue;
+    public float debuffValue;
+
+    private void OnValidate()
+    {
+        if (string.IsNullOrEmpty(displayName) && !string.IsNullOrEmpty(itemName))
+            displayName = itemName;
+    }
 }
 
 public enum ItemType

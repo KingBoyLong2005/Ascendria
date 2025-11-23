@@ -17,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Destructible
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Destructible
     uniqueID: 1463224495
+    locked: 0
+  - name: VFX
+    uniqueID: 786118921
     locked: 0
   m_RenderingLayers:
   - Default
