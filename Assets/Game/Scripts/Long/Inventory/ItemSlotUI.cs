@@ -1,26 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
-public class ItemSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ItemSlotUI : MonoBehaviour
 {
-    public Image icon;
-    public ItemData data;
+    public Image icon;              // gán Image hiển thị icon trong prefab
+    InventoryItemBase itemData;
 
-    public void Bind(ItemData d)
+    /// <summary>Gán data cho slot (call khi spawn)</summary>
+    public void Bind(InventoryItemBase data)
     {
-        data = d;
-        if (icon) icon.sprite = d.icon;
+        itemData = data;
+        if (icon != null)
+            icon.sprite = data != null ? data.icon : null;
+
+        // nếu muốn ẩn icon khi null:
+        if (icon != null)
+            icon.enabled = data != null && data.icon != null;
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (data != null)
-            InventoryTooltip.Instance.Show(data, transform.position);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        InventoryTooltip.Instance?.Hide();
-    }
 }
