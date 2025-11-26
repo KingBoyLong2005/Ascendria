@@ -273,8 +273,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 5551434970009851571}
-  nameText: {fileID: 8539985118551711240}
+  titleText: {fileID: 8539985118551711240}
   button: {fileID: 1496976203525192300}
+  placeholderIcon: {fileID: 21300000, guid: 87301fade08e76e4a8a69eda7a3f97c4, type: 3}
 --- !u!1 &8530147906445822947
 GameObject:
   m_ObjectHideFlags: 0

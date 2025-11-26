@@ -263,7 +263,7 @@ public class PlayerShooting : MonoBehaviour
             // Nếu prefab "facing up" thay vì facing forward, chỉnh offset. Thử thay offset nếu không đúng.
             Quaternion offset = Quaternion.Euler(90f, 0f, 0f);
             GameObject vfx = Instantiate(wdata.prefab, spawnPos, rot * offset);
-            Destroy(vfx, 0.5f);
+            Destroy(vfx, 0.9f);
         }
 
         // apply damage
