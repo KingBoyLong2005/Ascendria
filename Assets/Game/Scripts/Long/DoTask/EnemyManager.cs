@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyDie : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     public float lifeTime = 5f;
 
