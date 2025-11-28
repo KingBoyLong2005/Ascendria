@@ -271,11 +271,11 @@ public class PlayerShooting : MonoBehaviour
         {
             if (c == null) continue;
             if (c.gameObject == gameObject) continue;
-            var enemy = c.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                // enemy.TakeDamage(wdata.baseDamage);
-            }
+            // var enemy = c.GetComponent<Enemy>();
+            // if (enemy != null)
+            // {
+            //     // enemy.TakeDamage(wdata.baseDamage);
+            // }
         }
     }
 
@@ -327,11 +327,11 @@ public class PlayerShooting : MonoBehaviour
         foreach (var c in hits)
         {
             if (c == null) continue;
-            var enemy = c.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                // enemy.TakeDamage(wdata.baseDamage);
-            }
+            // var enemy = c.GetComponent<Enemy>();
+            // if (enemy != null)
+            // {
+            //     // enemy.TakeDamage(wdata.baseDamage);
+            // }
         }
     }
 

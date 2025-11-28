@@ -31,7 +31,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     private EnemyManager manager;
     private GameObject prefab;

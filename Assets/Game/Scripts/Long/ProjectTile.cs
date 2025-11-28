@@ -17,12 +17,12 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == owner) return;
-        var enemy = other.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            // enemy.TakeDamage(damage);
-            Destroy(gameObject);
-        }
+        // var enemy = other.GetComponent<Enemy>();
+        // if (enemy != null)
+        // {
+        //     // enemy.TakeDamage(damage);
+        //     Destroy(gameObject);
+        // }
     }
 }
 

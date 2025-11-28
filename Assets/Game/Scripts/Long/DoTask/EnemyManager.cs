@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,14 @@ public class EnemyManager : MonoBehaviour
     // Event quái chết (DropManager sẽ sub vào)
     public delegate void EnemyDiedHandler(GameObject enemyPrefab, Vector3 pos);
     public event EnemyDiedHandler OnEnemyDied;
+
+
+    public event EventHandler<OnEnemyDeathEventArgs> OnDead;
+
+    public class OnEnemyDeathEventArgs : EventArgs
+    {
+        public Vector3 DeathPosition;
+    }
 
     private void Start()
     {
@@ -53,9 +62,9 @@ public class EnemyManager : MonoBehaviour
     {
         if (enemyPrefabs.Count == 0)
             return;
-        GameObject prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
-        Vector2 dir = Random.insideUnitCircle.normalized;
-        float distance = Random.Range(minSpawnDistance, maxSpawnDistance);
+        GameObject prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
+        Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
+        float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
 
         // Random vị trí XZ quanh player
         Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
@@ -68,7 +77,7 @@ public class EnemyManager : MonoBehaviour
             // hit.point là vị trí mặt đất
             var enemyInstance = PoolManager.Instance.Spawn(prefab, hit.point, Quaternion.identity);
             // Gán callback để quái có thể báo “tao chết rồi”
-            enemyInstance.GetComponent<Enemy>().Setup(this, prefab, player);
+            enemyInstance.GetComponent<EnemyAI>().Setup(this, prefab, player);
             // return;
         }
     }
@@ -79,8 +88,9 @@ public class EnemyManager : MonoBehaviour
     public void EnemyDie(GameObject enemyPrefab, GameObject enemyInstance)
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
-        OnEnemyDied?.Invoke(enemyPrefab, enemyInstance.transform.position);
-
+        // OnEnemyDied?.Invoke(enemyPrefab, enemyInstance.transform.position);
+        OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemyInstance.transform.position});
+        Debug.Log($"Tín hiệu event enemy chêt: {enemyInstance.transform.position}");
         // Trả về pool
         // PoolManager.Instance.Despawn(enemyPrefab, enemyInstance);
         

@@ -31,8 +31,9 @@ public class PoolManager : MonoBehaviour
         // Tạo pool cho prefab này
         var pool = new ObjectPool<GameObject>(
             () => CreateObject(prefab),          // Factory
-            obj => OnTakeFromPool(obj),         // OnGet
-            obj => OnReturnedToPool(obj),       // OnRelease
+            // () => Instantiate(prefab),
+            obj => TakeFromPool(obj),         // OnGet
+            obj => ReturnedToPool(obj),       // OnRelease
             obj => Destroy(obj),                // Destroy pooled object
             false,
             defaultCapacity,
@@ -83,12 +84,12 @@ public class PoolManager : MonoBehaviour
         return obj;
     }
 
-    private void OnTakeFromPool(GameObject obj)
+    private void TakeFromPool(GameObject obj)
     {
         obj.SetActive(true);
     }
 
-    private void OnReturnedToPool(GameObject obj)
+    private void ReturnedToPool(GameObject obj)
     {
         obj.SetActive(false);
     }
