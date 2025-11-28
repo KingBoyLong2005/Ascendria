@@ -102,7 +102,7 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         var enemy = enemyObj.GetComponent<Enemy>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damageAmount);
+            // enemy.TakeDamage(damageAmount);
         }
     }
 

@@ -274,7 +274,7 @@ public class PlayerShooting : MonoBehaviour
             var enemy = c.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(wdata.baseDamage);
+                // enemy.TakeDamage(wdata.baseDamage);
             }
         }
     }
@@ -330,7 +330,7 @@ public class PlayerShooting : MonoBehaviour
             var enemy = c.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(wdata.baseDamage);
+                // enemy.TakeDamage(wdata.baseDamage);
             }
         }
     }

@@ -50,6 +50,6 @@ public class EnemySpawner : MonoBehaviour
             }
         }
 
-        Debug.Log("Không tìm được vị trí spawn hợp lệ!");
+        // Debug.Log("Không tìm được vị trí spawn hợp lệ!");
     }
 }
