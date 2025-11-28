@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  DebugTest: 0
+  DebugTest: 1
 --- !u!195 &-7107960007595843796
 NavMeshAgent:
   m_ObjectHideFlags: 0
