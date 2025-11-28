@@ -1,33 +1,4 @@
-// using UnityEngine;
 
-// public class Enemy : MonoBehaviour
-// {
-//     private EnemyManager manager;
-//     private GameObject prefab;
-
-//     private float lifeTime = 5f;
-//     private float timer;
-//     public void Setup(EnemyManager m, GameObject p)
-//     {
-//         manager = m;
-//         prefab = p;
-//         timer = 0; // reset thời gian khi spawn
-//     }
-//     private void Update()
-//     {
-//         timer += Time.deltaTime;
-
-//         if (timer >= lifeTime)
-//         {
-//             Die(); // tự chết sau 5 giây
-//         }
-//     }
-
-//     public void Die()
-//     {
-//         manager.EnemyDie(prefab, gameObject);
-//     }
-// }
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -43,8 +14,13 @@ public class EnemyAI : MonoBehaviour
     private float pathUpdateInterval = 0.3f;
     private float pathTimer;
 
+    public float maxHealth = 10f;
+    private float currentHealth;
+
+    [Header("Testing")]
     private float lifeTime = 5f;
     private float timer;
+    public bool DebugTest = true;
 
     public void Setup(EnemyManager m, GameObject p, Transform playerTarget)
     {
@@ -62,6 +38,11 @@ public class EnemyAI : MonoBehaviour
         timer = 0; // reset thời gian khi spawn
     }
 
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
     private void Update()
     {
         if (player != null || agent != null)
@@ -77,13 +58,23 @@ public class EnemyAI : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (timer >= lifeTime)
+        if (timer >= lifeTime && DebugTest)
         {
             Die(); // tự chết sau 5 giây
         }
     
     }
 
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        Debug.Log(gameObject.name + " took damage: " + damage + " | HP: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
     public void Die()
     {
         // Gửi tín hiệu về Manager

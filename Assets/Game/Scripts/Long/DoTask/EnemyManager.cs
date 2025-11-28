@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    public static EnemyManager Instance {get; private set;}
     public Transform player;
     public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
     public float minSpawnDistance = 10f;
@@ -29,6 +30,13 @@ public class EnemyManager : MonoBehaviour
 
     private void Start()
     {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
         // Tạo pool cho TỪNG prefab
         foreach (var prefab in enemyPrefabs)
         {
@@ -89,7 +97,7 @@ public class EnemyManager : MonoBehaviour
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
         // OnEnemyDied?.Invoke(enemyPrefab, enemyInstance.transform.position);
-        OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemyInstance.transform.position});
+        OnDead?.Invoke(enemyPrefab, new OnEnemyDeathEventArgs{DeathPosition = enemyInstance.transform.position});
         Debug.Log($"Tín hiệu event enemy chêt: {enemyInstance.transform.position}");
         // Trả về pool
         // PoolManager.Instance.Despawn(enemyPrefab, enemyInstance);
