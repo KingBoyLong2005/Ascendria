@@ -106,7 +106,8 @@ public class GameManager : MonoBehaviour
     // Sự kiện 2: Báo hiệu Map đã được tải xong và sẵn sàng để spawn Player
     public event Action<List<Transform>> OnMapLoaded;
     // Các sự kiện khác sẽ được thêm vào đây (ví dụ: OnEnemyKilled, OnGameOver, etc.)
-    // -------------------------------------------------------------------
+    // SỰ KIỆN MỚI: Báo hiệu Map và Player đã sẵn sàng
+    public event Action OnMapAndPlayerReady;
 
 
     // --- Dữ liệu Public để thiết lập trong Inspector ---
@@ -118,9 +119,14 @@ public class GameManager : MonoBehaviour
     public GameObject playerPrefab;
     public Transform playerSpawnPoint;
 
+    [Header("Boss Setup")] // THÊM DỮ LIỆU BOSS PREFAB
+    public GameObject bossPrefab;
+    public Transform bossSpawnPoint;
+
     // --- Tham chiếu đến các Manager con (là C# Class) ---
     private MapManager01 mapManager;
     private PlayerManager01 playerManager;
+    private BossManager bossManager; // THÊM BIẾN NÀY
 
     private void Start()
     {
@@ -141,6 +147,9 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Không thể tạo các điểm spawn mặc định. Game không thể khởi động!");
             return;
         }
+
+        // KHỞI TẠO BOSS MANAGER
+        bossManager = new BossManager(bossPrefab, bossSpawnPoint); // THÊM BOSS MANAGER
 
         // 3. KÍCH HOẠT SỰ KIỆN ĐẦU TIÊN
         TriggerGameStart();
@@ -170,6 +179,7 @@ public class GameManager : MonoBehaviour
         // Dọn dẹp Manager con
         if (mapManager != null) mapManager.Dispose();
         if (playerManager != null) playerManager.Dispose();
+        if (bossManager != null) bossManager.Dispose(); // THÊM DISPOSE
     }
     
     // -------------------------------------------------------------------
@@ -186,5 +196,10 @@ public class GameManager : MonoBehaviour
     {
         OnMapLoaded?.Invoke(spawnPoints);
         Debug.Log("<color=green>[GM Triggered]</color> Map Loaded Event (w/ Spawn Points).");
+    }
+    public void TriggerMapAndPlayerReady()
+    {
+        OnMapAndPlayerReady?.Invoke();
+        Debug.Log("<color=red>[GM Triggered]</color> Map & Player Ready Event.");
     }
 }

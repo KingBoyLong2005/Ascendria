@@ -61,7 +61,11 @@ public class PlayerManager01
         {
             GameObject.Instantiate(playerPrefab, selectedSpawnPoint.position, selectedSpawnPoint.rotation);
             Debug.Log("<color=blue>[PlayerManager]</color> Player đã được Spawn thành công!");
+
+            // KÍCH HOẠT SỰ KIỆN TIẾP THEO: Báo hiệu hệ thống đã sẵn sàng cho Boss/Game Loop
+            GameManager.Instance.TriggerMapAndPlayerReady(); // DÒNG NÀY ĐƯỢC THÊM VÀO
         }
+
     }
 }
 
