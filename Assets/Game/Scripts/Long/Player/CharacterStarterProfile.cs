@@ -1,63 +1,24 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-[DisallowMultipleComponent]
-public class CharacterStarterProfile : MonoBehaviour
-{   
+[CreateAssetMenu(fileName = "CharacterProfile", menuName = "Characters/Character Profile")]
+public class CharacterStaterProfile : ScriptableObject
+{
     [Header("Base Stats")]
     public float maxHP = 100f;
     public float moveSpeed = 5f;
     public float luck = 0f;
 
-    [Header("Expandable Custom Stats")]
-    public StatEntry[] extraStats;
+    [Header("Extra / Custom Stats (key/value)")]
+    public ExtraStat[] extraStats;
+
+    [Header("Starting weapons (can use CharacterWeaponProfile or list weapons directly)")]
+    public WeaponData startingWeapons;
 
     [System.Serializable]
-    public struct StatEntry
+    public struct ExtraStat
     {
         public string key;
         public float value;
-    }
-
-    [Tooltip("Assign the weapon-only profile for this character")]
-    public CharacterWeaponProfile profile;
-
-    [Tooltip("If true, tries to add starting weapons on Start()")]
-    public bool addOnStart = true;
-
-    void Start()
-    {
-        if (!addOnStart) return;
-
-        if (profile == null)
-        {
-            Debug.LogWarning($"CharacterStarterWeapons on {gameObject.name} has no profile assigned.");
-            return;
-        }
-
-        if (InventoryManager.Instance == null)
-        {
-            Debug.LogWarning("InventoryManager.Instance is null. Make sure InventoryManager exists in the scene before the player starts.");
-            return;
-        }
-
-        foreach (var w in profile.startingWeapons)
-        {
-            if (w == null) continue;
-            InventoryManager.Instance.AddWeapon(w, equipIfSpace: profile.autoEquipOnStart);
-        }
-    }
-
-    // helper to add profile dynamically at runtime (e.g., after spawn)
-    public void ApplyProfile(CharacterWeaponProfile p)
-    {
-        profile = p;
-        if (profile == null) return;
-        if (InventoryManager.Instance == null) return;
-
-        foreach (var w in profile.startingWeapons)
-        {
-            if (w == null) continue;
-            InventoryManager.Instance.AddWeapon(w, equipIfSpace: profile.autoEquipOnStart);
-        }
     }
 }

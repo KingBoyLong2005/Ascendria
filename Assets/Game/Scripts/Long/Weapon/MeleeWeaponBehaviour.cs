@@ -99,11 +99,11 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         if (oneHitPerEnemyPerAttack && alreadyDamagedThisAttack.Contains(id)) return;
         alreadyDamagedThisAttack.Add(id);
 
-        var enemy = enemyObj.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damageAmount);
-        }
+        // var enemy = enemyObj.GetComponent<Enemy>();
+        // if (enemy != null)
+        // {
+        //     // enemy.TakeDamage(damageAmount);
+        // }
     }
 
     // helper class that runs on each temporary hitbox instance
