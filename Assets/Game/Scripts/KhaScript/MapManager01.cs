@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
+
 
 public class MapManager01
 {
     private GameObject mapPrefab;
     private Transform mapSpawnPoint;
     private GameObject currentMapInstance;
+
+    public List<Vector3> zxc;
 
     // Constructor: được gọi bởi GameManager để khởi tạo và truyền dữ liệu cần thiết
     public MapManager01(GameObject prefab, Transform spawnPoint)
@@ -44,8 +48,9 @@ public class MapManager01
         // Khởi tạo Map mới
         if (mapPrefab != null && mapSpawnPoint != null)
         {
+            Quaternion x = Quaternion.Euler(-90f, 0f, 0f);
             // Phải dùng GameObject.Instantiate()
-            currentMapInstance = GameObject.Instantiate(mapPrefab, mapSpawnPoint.position, mapSpawnPoint.rotation);
+            currentMapInstance = GameObject.Instantiate(mapPrefab, mapSpawnPoint.position, x);
             // Lấy SpawnPointManager từ Map vừa tạo
             currentSpawnPointManager = currentMapInstance.GetComponent<SpawnPointManager>();
 

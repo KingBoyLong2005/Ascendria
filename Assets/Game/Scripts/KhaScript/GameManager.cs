@@ -113,11 +113,11 @@ public class GameManager : MonoBehaviour
     // --- Dữ liệu Public để thiết lập trong Inspector ---
     [Header("Map Setup")]
     public GameObject mapPrefab; 
-    public Transform mapSpawnPoint; 
+    private Transform mapSpawnPoint; 
 
     [Header("Player Setup")]
     public GameObject playerPrefab;
-    public Transform playerSpawnPoint;
+    private Transform playerSpawnPoint;
 
     [Header("Boss Setup")] // THÊM DỮ LIỆU BOSS PREFAB
     public GameObject bossPrefab;
@@ -140,6 +140,7 @@ public class GameManager : MonoBehaviour
         if (actualMapSpawnPoint != null && actualPlayerSpawnPoint != null)
         {
             mapManager = new MapManager01(mapPrefab, actualMapSpawnPoint);
+            //Lấy spawn point
             playerManager = new PlayerManager01(playerPrefab, actualPlayerSpawnPoint);
         }
         else

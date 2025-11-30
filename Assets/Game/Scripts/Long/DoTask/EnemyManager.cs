@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -28,7 +29,7 @@ public class EnemyManager : MonoBehaviour
         public Vector3 DeathPosition;
     }
 
-    private void Start()
+    private void Awake()
     {
         if (Instance != null)
         {
@@ -37,6 +38,11 @@ public class EnemyManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        
         // Tạo pool cho TỪNG prefab
         foreach (var prefab in enemyPrefabs)
         {
@@ -102,7 +108,11 @@ public class EnemyManager : MonoBehaviour
         // Trả về pool
         // PoolManager.Instance.Despawn(enemyPrefab, enemyInstance);
         
+
     }
+
+
+
 }
 
 // using UnityEngine;
