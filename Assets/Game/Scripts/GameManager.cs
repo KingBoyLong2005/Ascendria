@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    public PrefabDatabase prefabDatabase;
+
     private MapManager01 mapManager;
     private PlayerManager01 playerManager;
     private BossManager bossManager;
@@ -22,11 +24,16 @@ public class GameManager : MonoBehaviour
         }
 
         //Tạo MapManager
-        //mapManager = gameObject.AddComponent<MapManager01>();
+        mapManager = gameObject.AddComponent<MapManager01>();
+
+
+
         //Tạo PlayerManager 
         //mapManager.OnMapReady += () =>
         //{
         //    playerManager = new PlayerManager(mapManager.GetMapData());
+        //    playerManager.Initialize(mapManager.GetPlayerRandomPos);
+
         //};
         //Tạo EnemyManager (include boss)
         //Tạo ...

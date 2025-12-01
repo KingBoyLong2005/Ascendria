@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-public class MapManager01
+public class MapManager01 : MonoBehaviour 
 {
     private GameObject mapPrefab;
     private Transform mapSpawnPoint;
