@@ -17,7 +17,7 @@ public class MapManager01
         this.mapSpawnPoint = spawnPoint;
 
         // ĐĂNG KÝ: Lắng nghe sự kiện ngay khi đối tượng được tạo
-        GameManager.Instance.OnGameStart += LoadMap;
+        //GameManager.Instance.OnGameStart += LoadMap;
         Debug.Log("MapManager (Class): Đăng ký lắng nghe GameStart qua GM Instance.");
     }
 
@@ -27,7 +27,7 @@ public class MapManager01
         // HỦY ĐĂNG KÝ MỚI
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.OnGameStart -= LoadMap;
+            //GameManager.Instance.OnGameStart -= LoadMap;
         }
         Debug.Log("MapManager (Class): Hủy đăng ký.");
     }
@@ -75,17 +75,5 @@ public class MapManager01
     private void FinishLoading()
     {
         Debug.Log("<color=yellow>[MapManager]</color> Map đã tải xong.");
-
-        // TRUYỀN DỮ LIỆU SPAWN POINT khi kích hoạt sự kiện
-        if (currentSpawnPointManager != null)
-        {
-            // Kích hoạt sự kiện Map Loaded và truyền danh sách điểm spawn
-            GameManager.Instance.TriggerMapLoaded(currentSpawnPointManager.playerSpawnPoints);
-        }
-        else
-        {
-            // Nếu không có spawn point, vẫn báo hiệu tải xong nhưng PlayerManager sẽ phải xử lý lỗi
-            GameManager.Instance.TriggerMapLoaded(null);
-        }
     }
 }

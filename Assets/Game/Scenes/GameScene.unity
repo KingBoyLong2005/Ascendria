@@ -148,10 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104a91cf54377c2448bb033c983b0ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapPrefab: {fileID: 7229261356725966286, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-  playerPrefab: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
-  bossPrefab: {fileID: 2555201867371260565, guid: f652a911ae3f96e43898e6ee0e6dcd18, type: 3}
-  bossSpawnPoint: {fileID: 0}
 --- !u!4 &24317327
 Transform:
   m_ObjectHideFlags: 0

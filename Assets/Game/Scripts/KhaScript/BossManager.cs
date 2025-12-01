@@ -14,7 +14,7 @@ public class BossManager
         this.spawnPoint = spawnPoint;
 
         // ĐĂNG KÝ: Lắng nghe sự kiện sau khi Map và Player đã sẵn sàng
-        GameManager.Instance.OnMapAndPlayerReady += SpawnBoss;
+        //GameManager.Instance.OnMapAndPlayerReady += SpawnBoss;
         Debug.Log("BossManager (Class): Đăng ký lắng nghe MapAndPlayerReady.");
     }
 
@@ -22,7 +22,7 @@ public class BossManager
     {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.OnMapAndPlayerReady -= SpawnBoss;
+            //GameManager.Instance.OnMapAndPlayerReady -= SpawnBoss;
         }
         Debug.Log("BossManager (Class): Hủy đăng ký.");
     }
