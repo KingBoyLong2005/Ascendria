@@ -120,7 +120,7 @@ public class PlayerAttack : MonoBehaviour
         Vector3 spawnPos = ComputeSpawnPosition(playerPrefab, dirFlat);
 
         Quaternion rot = Quaternion.LookRotation(dirFlat, Vector3.up);
-        Quaternion offset = Quaternion.Euler(90f, 0f, 0f);
+        Quaternion offset = Quaternion.Euler(90f, 0f, -60f);
 
         GameObject go = Instantiate(attackEffectPrefab, spawnPos, rot * offset);
 

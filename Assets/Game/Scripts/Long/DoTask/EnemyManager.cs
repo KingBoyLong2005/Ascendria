@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
-    public Transform player;
+    private Transform player;
     public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
@@ -27,8 +27,7 @@ public class EnemyManager : MonoBehaviour
     {
         public Vector3 DeathPosition;
     }
-
-    private void Start()
+    private void Awake()
     {
         if (Instance != null)
         {
@@ -37,6 +36,15 @@ public class EnemyManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        NavMeshManager.Instance.BakeNavMesh();
+        var p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+        
         // Tạo pool cho TỪNG prefab
         foreach (var prefab in enemyPrefabs)
         {
@@ -68,6 +76,7 @@ public class EnemyManager : MonoBehaviour
     // ============================
     void SpawnRandomEnemy()
     {
+        // var player = GameObject.FindGameObjectWithTag("Player").transform;
         if (enemyPrefabs.Count == 0)
             return;
         GameObject prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
