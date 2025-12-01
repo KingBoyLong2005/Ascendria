@@ -16,7 +16,7 @@ public class PlayerManager01
         // GameManager.Instance.OnMapLoaded += SpawnPlayer;
         // Debug.Log("PlayerManager (Class): Đăng ký lắng nghe MapLoaded qua GM Instance.");
         // ĐĂNG KÝ MỚI: Phương thức SpawnPlayer giờ đây phải nhận List<Transform>
-        GameManager.Instance.OnMapLoaded += SpawnPlayer;
+        //GameManager.Instance.OnMapLoaded += SpawnPlayer;
         Debug.Log("PlayerManager (Class): Đăng ký lắng nghe MapLoaded qua GM Instance.");
     }
 
@@ -25,7 +25,7 @@ public class PlayerManager01
         // HỦY ĐĂNG KÝ MỚI
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.OnMapLoaded -= SpawnPlayer;
+            //GameManager.Instance.OnMapLoaded -= SpawnPlayer;
         }
         Debug.Log("PlayerManager (Class): Hủy đăng ký.");
     }
@@ -63,7 +63,7 @@ public class PlayerManager01
             Debug.Log("<color=blue>[PlayerManager]</color> Player đã được Spawn thành công!");
 
             // KÍCH HOẠT SỰ KIỆN TIẾP THEO: Báo hiệu hệ thống đã sẵn sàng cho Boss/Game Loop
-            GameManager.Instance.TriggerMapAndPlayerReady(); // DÒNG NÀY ĐƯỢC THÊM VÀO
+            //GameManager.Instance.TriggerMapAndPlayerReady(); // DÒNG NÀY ĐƯỢC THÊM VÀO
         }
 
     }

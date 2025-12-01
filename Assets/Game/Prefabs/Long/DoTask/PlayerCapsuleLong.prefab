@@ -493,6 +493,7 @@ MonoBehaviour:
   cursorLocked: 1
   cursorInputForLook: 1
 --- !u!1001 &4661818736317692850
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -544,6 +545,7 @@ PrefabInstance:
       propertyPath: m_ControllerManager.Controllers.Array.data[2].InputValue
       value: -0
       objectReference: {fileID: 0}
+
     - target: {fileID: 4534326066092922364, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.38
@@ -619,6 +621,7 @@ PrefabInstance:
     - target: {fileID: 5941526344965351769, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
       propertyPath: HorizontalAxis.Value
       value: 61.13056
+
       objectReference: {fileID: 0}
     - target: {fileID: 9066458148562483995, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
       propertyPath: m_Name
@@ -713,4 +716,5 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4534326066092922364, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
   m_PrefabInstance: {fileID: 4661818736317692850}
+
   m_PrefabAsset: {fileID: 0}
