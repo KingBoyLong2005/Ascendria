@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 
 public class MapManager01 : MonoBehaviour 
@@ -8,71 +9,49 @@ public class MapManager01 : MonoBehaviour
     private Transform mapSpawnPoint;
     private GameObject currentMapInstance;
     private SpawnPointManager currentSpawnPointManager;
+    private PrefabDatabase prefabDatabase;
+    private GameManager gameManager;
+    public event EventHandler OnMapReady;
 
-    public List<Vector3> zxc;
-
-    // Constructor: được gọi bởi GameManager để khởi tạo và truyền dữ liệu cần thiết
-    public MapManager01(GameObject prefab, Transform spawnPoint)
+    void Awake()
     {
-        this.mapPrefab = prefab;
-        this.mapSpawnPoint = spawnPoint;
-
-        // ĐĂNG KÝ: Lắng nghe sự kiện ngay khi đối tượng được tạo
-        //GameManager.Instance.OnGameStart += LoadMap;
-        Debug.Log("MapManager (Class): Đăng ký lắng nghe GameStart qua GM Instance.");
+        gameManager = GameManager.Instance;
+        prefabDatabase = gameManager.prefabDatabase;
+        mapPrefab = prefabDatabase.firstMapPrefab;
+        LoadMapAndGetPlayerSpawnPos();
+        OnMapReady?.Invoke(this, EventArgs.Empty);
     }
-
-    // Phương thức dọn dẹp (phải được gọi thủ công bởi GameManager)
-    public void Dispose()
+    private void LoadMapAndGetPlayerSpawnPos()
     {
-        // HỦY ĐĂNG KÝ MỚI
-        if (GameManager.Instance != null)
-        {
-            //GameManager.Instance.OnGameStart -= LoadMap;
-        }
-        Debug.Log("MapManager (Class): Hủy đăng ký.");
-    }
+        Debug.Log("<color=yellow>[MapManager]</color> Bắt đầu tải Map và lấy vị trí spawn...");
 
-    public void LoadMap()
-    {
-        Debug.Log("<color=yellow>[MapManager]</color> Bắt đầu tải Map...");
-
-        // Xử lý hủy map cũ
+        // 1. Logic tải Map (giữ nguyên)
         if (currentMapInstance != null)
         {
-            // Phải dùng GameObject.Destroy() vì đây không phải MonoBehaviour
             GameObject.Destroy(currentMapInstance);
         }
 
-        // Khởi tạo Map mới
-        if (mapPrefab != null && mapSpawnPoint != null)
+        if (mapPrefab != null)
         {
-            Quaternion x = Quaternion.Euler(-90f, 0f, 0f);
-            // Phải dùng GameObject.Instantiate()
-            currentMapInstance = GameObject.Instantiate(mapPrefab, mapSpawnPoint.position, x);
-            // Lấy SpawnPointManager từ Map vừa tạo
-            currentSpawnPointManager = currentMapInstance.GetComponent<SpawnPointManager>();
-
-            if (currentSpawnPointManager == null)
-            {
-                Debug.LogError("Map Prefab thiếu component SpawnPointManager!");
-                return;
-            }
-
-            Debug.Log("Map Prefab đã được tạo thành công.");
+            currentMapInstance = GameObject.Instantiate(mapPrefab, Vector3.zero, Quaternion.identity);
         }
         else
         {
             Debug.LogError("[MapManager] Thiếu Map Prefab hoặc Spawn Point.");
-            return;
         }
 
-        // Kích hoạt sự kiện hoàn thành
-        FinishLoading();
     }
-
-    private void FinishLoading()
+    public Vector3 GetPlayerRandomPos(List<Transform> availableSpawnPoints)
     {
-        Debug.Log("<color=yellow>[MapManager]</color> Map đã tải xong.");
+        if (availableSpawnPoints != null && availableSpawnPoints.Count > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, availableSpawnPoints.Count);
+            Transform selectedPoint = availableSpawnPoints[randomIndex];
+            Debug.Log($"Chọn Spawn Point #{randomIndex + 1} / {availableSpawnPoints.Count} ngẫu nhiên.");
+            return selectedPoint.position; // TRẢ VỀ VỊ TRÍ (Vector3)
+        }
+
+        Debug.LogWarning("[MapManager] Không tìm thấy điểm spawn ngẫu nhiên trên Map. Trả về vị trí mặc định.");
+        return mapSpawnPoint.position + new Vector3(0, 5, 0); // Vị trí an toàn trên Map
     }
 }
