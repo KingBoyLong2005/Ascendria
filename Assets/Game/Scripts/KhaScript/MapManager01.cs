@@ -7,6 +7,7 @@ public class MapManager01 : MonoBehaviour
     private GameObject mapPrefab;
     private Transform mapSpawnPoint;
     private GameObject currentMapInstance;
+    private SpawnPointManager currentSpawnPointManager;
 
     public List<Vector3> zxc;
 
@@ -31,8 +32,6 @@ public class MapManager01 : MonoBehaviour
         }
         Debug.Log("MapManager (Class): Hủy đăng ký.");
     }
-
-    private SpawnPointManager currentSpawnPointManager; // Thêm biến này
 
     public void LoadMap()
     {
