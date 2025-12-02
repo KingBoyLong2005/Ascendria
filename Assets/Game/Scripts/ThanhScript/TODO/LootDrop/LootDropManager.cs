@@ -5,24 +5,18 @@ public class LootDropManager : MonoBehaviour
 {
     public static LootDropManager Instance { get; private set; }
 
-    [System.Serializable]
+    /*[System.Serializable]
     public struct LootDrop
     {
         public GameObject prefab;   // The item prefab to spawn
         [Range(0f, 1f)] public float dropChance; // Probability of dropping
-    }
+    }*/
 
-    public List<LootDrop> lootTable;
+    public List<GameObject> lootTable;
 
     private void Start()
     {
         EnemyManager.Instance.OnDead += EnemyManager_OnDead;
-
-        foreach (var loot in lootTable)
-        {
-            PoolManager.Instance.CreatePool(loot.prefab, 20, 200);
-            Debug.Log("Loot drop table created");
-        }
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
@@ -31,18 +25,13 @@ public class LootDropManager : MonoBehaviour
 
         foreach (var entry in lootTable)
         {
-            if (Random.value < entry.dropChance)
+            var loot = entry.GetComponent<Loot>();
+            if (Random.value < loot.dropChance)
             {
                 // Spawn loot via PoolManager instead of Instantiate
-                PoolManager.Instance.Spawn(entry.prefab, deathPos, Quaternion.identity);
+                loot.SpawnLoot(deathPos);
                 Debug.Log($"Loot drop at: {deathPos}");
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
