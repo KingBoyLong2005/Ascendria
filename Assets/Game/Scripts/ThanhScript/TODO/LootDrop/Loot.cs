@@ -3,24 +3,30 @@ using UnityEngine;
 
 public class Loot : MonoBehaviour
 {
-    public GameObject lootPrefab;
-    
+    [Range(0f, 1f)] public float dropChance;
+
     public float attractSpeed = 10f;
-    private Transform player;
+
+    private Transform playerPos;
 
     public void Magnetize(Transform playerTransform)
     {
-        player = playerTransform;
+        playerPos = playerTransform;
+    }
+
+    public void SpawnLoot(Vector3 deathPos)
+    {
+        PoolManager.Spawn(this.gameObject, deathPos, Quaternion.identity);
     }
 
     void Update()
     {
-        if (player != null)
+        if (playerPos != null)
         {
             // Move toward player
             transform.position = Vector3.MoveTowards(
                 transform.position,
-                player.position,
+                playerPos.position,
                 attractSpeed * Time.deltaTime
             );
         }
@@ -30,7 +36,7 @@ public class Loot : MonoBehaviour
     {
         if (other.CompareTag("Player"))  // or your player tag
         {
-            // Collect it (or return to pool)
+            // Collect it 
             Collect();
         }
     }
@@ -39,8 +45,10 @@ public class Loot : MonoBehaviour
     {
         // e.g. add to player coins / exp
 
+        playerPos = null; //reset magnet effect when returned to pool
+
         // then return to pool / deactivate
-        PoolManager.Instance.Despawn(lootPrefab, this.gameObject);
+        PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
         Debug.Log("Loot Collected");
     }
 }
