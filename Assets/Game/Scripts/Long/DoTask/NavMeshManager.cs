@@ -22,7 +22,7 @@ public class NavMeshManager : MonoBehaviour
 
         Instance = this;
     }
-    void Start()
+    public void LoadNavMesh()
     {
         if (spawnPrefabSurface && navMeshPrefab != null)
         {
@@ -46,10 +46,10 @@ public class NavMeshManager : MonoBehaviour
             }
         }
 
-        // BakeNavMesh();
+        BakeNavMesh();
     }
 
-    public void BakeNavMesh()
+    private void BakeNavMesh()
     {
         if (surface != null)
         {

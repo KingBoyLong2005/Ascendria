@@ -1,3 +1,4 @@
+using UnityEditor.Build;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -21,6 +22,10 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Debug")]
     public bool DebugTest = true;
+    private Vector3 debugBoxCenter;
+    private Vector3 debugBoxSize;
+    private Quaternion debugBoxRot;
+    private bool debugDrawBox = false;
 
     void Start()
     {
@@ -120,26 +125,40 @@ public class PlayerAttack : MonoBehaviour
         Vector3 spawnPos = ComputeSpawnPosition(playerPrefab, dirFlat);
 
         Quaternion rot = Quaternion.LookRotation(dirFlat, Vector3.up);
-        Quaternion offset = Quaternion.Euler(90f, 0f, -60f);
+        Quaternion offset = Quaternion.Euler(90f, 0f, 0f);
 
         GameObject go = Instantiate(attackEffectPrefab, spawnPos, rot * offset);
 
-        // Vector3 center = transform.position + spawnPos * (weaponData.range * 0.5f);
-        Collider[] hits = Physics.OverlapSphere(spawnPos, weaponData.range, obstacleMask);
+        ParticleSystem ps = go.GetComponent<ParticleSystem>();
 
+        if (ps != null)
+        {           
+            // Tự động destroy sau khi particle chạy xong
+            float particleDuration = ps.main.duration + ps.main.startLifetime.constantMax;
+            Destroy(go, particleDuration);
+        }
+        else
+        {
+            // Fallback nếu không tìm thấy ParticleSystem
+            Destroy(go, 0.4f);
+        }
+
+        // Vector3 center = transform.position + spawnPos * (weaponData.range * 0.5f);
+        // Collider[] hits = Physics.OverlapSphere(spawnPos, weaponData.range, obstacleMask);
+
+        // --- HITBOX ---
+        Vector3 size = new Vector3(weaponData.range, 0.05f, weaponData.range);
+        Collider[] hits = Physics.OverlapBox(spawnPos, size * 0.5f, rot, obstacleMask);
         if(DebugTest)
         {
-            int segments = 20;
-            for (int i = 0; i < segments; i++)
-            {
-                float angle1 = i * Mathf.PI * 2f / segments;
-                float angle2 = (i + 1) * Mathf.PI * 2f / segments;
-                
-                Vector3 point1 = spawnPos + new Vector3(Mathf.Cos(angle1), 0, Mathf.Sin(angle1)) * weaponData.range;
-                Vector3 point2 = spawnPos + new Vector3(Mathf.Cos(angle2), 0, Mathf.Sin(angle2)) * weaponData.range;
-                Debug.DrawLine(point1, point2, Color.cyan, 0.1f); // 0.1s để vẽ tạm thời
-
-            }
+            debugBoxCenter = spawnPos;
+            debugBoxSize = size;
+            debugBoxRot = rot;
+            debugDrawBox = true;
+        }
+        else
+        {
+            debugDrawBox = false;
         }
         foreach (var c in hits)
         {
@@ -153,7 +172,7 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        Destroy(go, 0.4f);
+        // Destroy(go, 0.4f);
 
         var rb = go.GetComponent<Rigidbody>();
         if (rb != null)
@@ -161,5 +180,13 @@ public class PlayerAttack : MonoBehaviour
             rb.linearVelocity = camDir * 8f;
         }
 
+    }
+    private void OnDrawGizmos()
+    {
+        if (!debugDrawBox) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.matrix = Matrix4x4.TRS(debugBoxCenter, debugBoxRot, Vector3.one);
+        Gizmos.DrawWireCube(Vector3.zero, debugBoxSize);
     }
 }

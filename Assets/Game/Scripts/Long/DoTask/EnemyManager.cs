@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
-    private Transform player;
 
+    private Transform player;
     public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
     
     public float minSpawnDistance = 10f;
@@ -47,21 +47,12 @@ public class EnemyManager : MonoBehaviour
 
         Instance = this;
     }
-
     private void Start()
     {
-        NavMeshManager.Instance.BakeNavMesh();
+        NavMeshManager.Instance.LoadNavMesh();
         var p = GameObject.FindGameObjectWithTag("Player");
         if (p != null)
             player = p.transform;
-
-        
-        // Tạo pool cho TỪNG prefab
-        foreach (var prefab in enemyPrefabs)
-        {
-            // PoolManager.Instance.CreatePool(prefab, 20, 200);
-        }
-        
     }
 
     private void Update()
@@ -87,7 +78,6 @@ public class EnemyManager : MonoBehaviour
     // ============================
     void SpawnRandomEnemy()
     {
-        // var player = GameObject.FindGameObjectWithTag("Player").transform;
         if (enemyPrefabs.Count == 0)
             return;
         GameObject prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
