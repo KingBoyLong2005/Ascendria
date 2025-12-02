@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
+
     public Transform player;
     public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
+    
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
 
@@ -17,16 +18,23 @@ public class EnemyManager : MonoBehaviour
     public float spawnInterval = 2f;
     private float timer;
 
-    // Event quái chết (DropManager sẽ sub vào)
-    public delegate void EnemyDiedHandler(GameObject enemyPrefab, Vector3 pos);
-    public event EnemyDiedHandler OnEnemyDied;
-
-
     public event EventHandler<OnEnemyDeathEventArgs> OnDead;
-
     public class OnEnemyDeathEventArgs : EventArgs
     {
         public Vector3 DeathPosition;
+    }
+
+    public event EventHandler<OnHitEventArgs> OnEnemyHitPlayer;
+    public class OnHitEventArgs : EventArgs
+    {
+        public GameObject enemy;  // which enemy did hit
+        public float baseDamage;
+
+        public OnHitEventArgs(GameObject enemy, float damage)
+        {
+            this.enemy = enemy;
+            baseDamage = damage;
+        }
     }
 
     private void Awake()
@@ -38,17 +46,6 @@ public class EnemyManager : MonoBehaviour
         }
 
         Instance = this;
-    }
-
-    private void Start()
-    {
-        
-        // Tạo pool cho TỪNG prefab
-        foreach (var prefab in enemyPrefabs)
-        {
-            PoolManager.Instance.CreatePool(prefab, 20, 200);
-        }
-        
     }
 
     private void Update()
@@ -89,9 +86,9 @@ public class EnemyManager : MonoBehaviour
         if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
         {
             // hit.point là vị trí mặt đất
-            var enemyInstance = PoolManager.Instance.Spawn(prefab, hit.point, Quaternion.identity);
+            var enemyInstance = PoolManager.Spawn(prefab, hit.point, Quaternion.identity);
             // Gán callback để quái có thể báo “tao chết rồi”
-            enemyInstance.GetComponent<EnemyAI>().Setup(this, prefab, player);
+            enemyInstance.GetComponent<EnemyAI>().Setup(player);
             // return;
         }
     }
@@ -99,39 +96,15 @@ public class EnemyManager : MonoBehaviour
     // ============================
     //       ENEMY DIE
     // ============================
-    public void EnemyDie(GameObject enemyPrefab, GameObject enemyInstance)
+    public void EnemyDie(GameObject enemy)
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
-        // OnEnemyDied?.Invoke(enemyPrefab, enemyInstance.transform.position);
-        OnDead?.Invoke(enemyPrefab, new OnEnemyDeathEventArgs{DeathPosition = enemyInstance.transform.position});
-        Debug.Log($"Tín hiệu event enemy chêt: {enemyInstance.transform.position}");
-        // Trả về pool
-        // PoolManager.Instance.Despawn(enemyPrefab, enemyInstance);
-        
-
+        OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemy.transform.position});
+        Debug.Log($"Tín hiệu event enemy chêt: {enemy.transform.position}");
     }
 
-
-
+    public void EnemyHitPlayer(GameObject enemy, float damage)
+    {
+        OnEnemyHitPlayer?.Invoke(this,new OnHitEventArgs(enemy,damage));
+    }
 }
-
-// using UnityEngine;
-
-// public class EnemyManager : MonoBehaviour
-// {
-//     public float lifeTime = 5f;
-
-//     void Awake()
-//     {
-//         Debug.Log($"Spawn tại {transform.position}");
-//     }
-//     void Start()
-//     {
-//         Die();
-//     }
-//     private void Die()
-//     {
-//         Destroy(gameObject, lifeTime);
-//         Debug.Log($"Enemy chết! InstanceID = {gameObject.GetInstanceID()}");
-//     }
-// }

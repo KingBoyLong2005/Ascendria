@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde64a0fd57d3284fa59a1399bb80a16, type: 3}
+  m_Name: EnemyDebug_01
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7027193393448012647, guid: 11c7568a8b3a2cd4794b1ad78e565360, type: 3}
+  enemyName: Enemy Debug 01
+  maxHealth: 100
+  moveSpeed: 5
+  damage: 10

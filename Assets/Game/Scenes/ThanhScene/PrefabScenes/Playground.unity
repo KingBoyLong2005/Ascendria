@@ -172,7 +172,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  spawnInterval: 1
+  spawnInterval: 0.5
 --- !u!1 &503974341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1922015984888500900, guid: a1f13d62e59f58640a237ac170620367, type: 3}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52207c7b3bb27746bedf0bf83606a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectRadius: 3
+  collectRadius: 1
 --- !u!1 &526681160
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18817ac203039b54fbd99d662be3151f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _addToDontDestroyOnLoad: 0
 --- !u!4 &526681162
 Transform:
   m_ObjectHideFlags: 0
@@ -767,10 +768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lootTable:
-  - prefab: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
-    dropChance: 1
-  - prefab: {fileID: 5449974424428710506, guid: 8dc80809f52ad2c41973a719d09af93f, type: 3}
-    dropChance: 1
+  - {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
+  - {fileID: 5449974424428710506, guid: 8dc80809f52ad2c41973a719d09af93f, type: 3}
 --- !u!4 &1926657070
 Transform:
   m_ObjectHideFlags: 0
