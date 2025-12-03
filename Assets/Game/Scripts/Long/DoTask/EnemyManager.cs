@@ -56,14 +56,6 @@ public class EnemyManager : MonoBehaviour
             player = p.transform;
     }
 
-    private void Start()
-    {
-        //NavMeshManager.Instance.LoadNavMesh();
-        var p = GameObject.FindGameObjectWithTag("Player");
-        if (p != null)
-            player = p.transform;
-    }
-
     private void Update()
     {
         timer += Time.deltaTime;
