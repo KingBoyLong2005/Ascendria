@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   template: {fileID: 11400000, guid: afd5593d221ff8c4d8226423ecfbc192, type: 2}
-  DebugTest: 1
+  DebugTest: 0
 --- !u!195 &-7107960007595843796
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -103,7 +103,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.017912, z: 1}
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
   m_Center: {x: 0, y: 0.9957773, z: 0}
 --- !u!1 &8500540931571507779
 GameObject:

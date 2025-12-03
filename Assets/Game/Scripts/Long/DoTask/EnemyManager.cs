@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.AI.Navigation.Editor;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -24,13 +25,13 @@ public class EnemyManager : MonoBehaviour
         public Vector3 DeathPosition;
     }
 
-    public event EventHandler<OnHitEventArgs> OnEnemyHitPlayer;
-    public class OnHitEventArgs : EventArgs
+    public event EventHandler<OnEnemyHitPlayerEventArgs> OnEnemyHitPlayer;
+    public class OnEnemyHitPlayerEventArgs : EventArgs
     {
         public GameObject enemy;  // which enemy did hit
         public float baseDamage;
 
-        public OnHitEventArgs(GameObject enemy, float damage)
+        public OnEnemyHitPlayerEventArgs(GameObject enemy, float damage)
         {
             this.enemy = enemy;
             baseDamage = damage;
@@ -48,6 +49,14 @@ public class EnemyManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        //NavMeshManager.Instance.LoadNavMesh();
+        var p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
@@ -59,7 +68,7 @@ public class EnemyManager : MonoBehaviour
         }
         else if (ActiveByButton && Input.GetKeyDown(KeyCode.P))
         {
-            for(int i = 0; i<20; i++)
+            for(int i = 0; i<1; i++)
             {
                 SpawnRandomEnemy();
             }
@@ -105,6 +114,6 @@ public class EnemyManager : MonoBehaviour
 
     public void EnemyHitPlayer(GameObject enemy, float damage)
     {
-        OnEnemyHitPlayer?.Invoke(this,new OnHitEventArgs(enemy,damage));
+        OnEnemyHitPlayer?.Invoke(this,new OnEnemyHitPlayerEventArgs(enemy,damage));
     }
 }
