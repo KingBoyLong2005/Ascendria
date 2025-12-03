@@ -4,14 +4,10 @@ using UnityEngine;
 public class PlayerManager01 : MonoBehaviour
 {
     private GameObject playerPrefab;
-    private GameManager gameManager;
-    private PrefabDatabase prefabDatabase;
 
     public void Initialize(Vector3 playerSpawnPos)
     {
-        gameManager = GameManager.Instance;
-        prefabDatabase = gameManager.prefabDatabase;
-        playerPrefab = prefabDatabase.playerPrefab;
+        playerPrefab = PrefabDatabase.Instance.playerPrefab;
         if (playerSpawnPos != null)
         {
             SpawnPlayer(playerSpawnPos);

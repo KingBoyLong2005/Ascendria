@@ -4,13 +4,17 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
+    public enum GameState
+    {
+        Start,
+        Running,
+        Stop,
+        GameOver
+    }
     public static GameManager Instance { get; private set; }
-
-    public PrefabDatabase prefabDatabase;
 
     private MapManager01 mapManager;
     private PlayerManager01 playerManager;
-    private BossManager bossManager;
 
     private void Awake()
     {
@@ -22,24 +26,22 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
+    }
 
+    private void Start()
+    {
         //Tạo MapManager
         mapManager = gameObject.AddComponent<MapManager01>();
 
-
-
         //Tạo PlayerManager 
-        //mapManager.OnMapReady += () =>
-        //{
-        //    playerManager = new PlayerManager(mapManager.GetMapData());
-        //    playerManager.Initialize(mapManager.GetPlayerRandomPos);
-
-        //};
-        //Tạo EnemyManager (include boss)
-        //Tạo ...
+        mapManager.OnMapReady += (sender,e) =>
+        {
+            playerManager = gameObject.AddComponent<PlayerManager01>();
+            //playerManager.Initialize(mapManager.GetPlayerRandomPos()); // ở đây không có tham số để truyền vào - function này không nên truyền tham số
+        };
     }
 
-    
+
 
 
 
