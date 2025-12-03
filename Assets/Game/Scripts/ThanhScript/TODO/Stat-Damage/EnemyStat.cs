@@ -9,6 +9,9 @@ public class EnemyStats : MonoBehaviour
     private float moveSpeed;
     private float damage;
 
+    private float attackCD = 0.5f;
+    private float nextAttack = 0f;
+
     [Header("Testing")]
     private float lifeTime = 5f;
     private float timer;
@@ -23,14 +26,6 @@ public class EnemyStats : MonoBehaviour
         timer = 0f; 
     }
 
-    private void OnEnable()
-    {
-        currentHealth = template.maxHealth;
-        moveSpeed = template.moveSpeed;
-        damage = template.damage;
-        timer = 0f;
-    }
-
     private void Update()
     {
         timer += Time.deltaTime;
@@ -40,6 +35,23 @@ public class EnemyStats : MonoBehaviour
             Die(); // tự chết sau 5 giây
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Time.time >= nextAttack)
+        {
+            // When this enemy collides with something...
+            if (other.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Enemy Hit player");
+                HitPlayer();
+            }
+
+            // Reset cooldown timer
+            nextAttack = Time.time + attackCD;
+        }
+    }
+
 
     public void TakeDamage(float amount)
     {
