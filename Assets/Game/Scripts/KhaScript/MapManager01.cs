@@ -9,15 +9,15 @@ public class MapManager01 : MonoBehaviour
     private Transform mapSpawnPoint;
     private GameObject currentMapInstance;
     private SpawnPointManager currentSpawnPointManager;
-    private PrefabDatabase prefabDatabase;
-    private GameManager gameManager;
     public event EventHandler OnMapReady;
 
     void Awake()
     {
-        gameManager = GameManager.Instance;
-        prefabDatabase = gameManager.prefabDatabase;
-        mapPrefab = prefabDatabase.firstMapPrefab;
+        mapPrefab = PrefabDatabase.Instance.firstMapPrefab;
+    }
+
+    private void Start()
+    {
         LoadMapAndGetPlayerSpawnPos();
         OnMapReady?.Invoke(this, EventArgs.Empty);
     }
@@ -41,7 +41,7 @@ public class MapManager01 : MonoBehaviour
         }
 
     }
-    public Vector3 GetPlayerRandomPos(List<Transform> availableSpawnPoints)
+    public Vector3 GetPlayerRandomPos(List<Transform> availableSpawnPoints) // sửa lại không dùng tham số
     {
         if (availableSpawnPoints != null && availableSpawnPoints.Count > 0)
         {
