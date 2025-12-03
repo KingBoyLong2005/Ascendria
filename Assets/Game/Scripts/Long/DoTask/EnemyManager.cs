@@ -7,7 +7,7 @@ public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
 
-    public Transform player;
+    private Transform player;
     public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
     
     public float minSpawnDistance = 10f;
@@ -47,6 +47,13 @@ public class EnemyManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+    private void Start()
+    {
+        NavMeshManager.Instance.LoadNavMesh();
+        var p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
     }
 
     private void Start()
