@@ -2,10 +2,10 @@ using UnityEngine;
 
 public static class WeaponUpgrade
 {
-    public static void Upgrade(WeaponUpgradeData weaponData, Rarity rarity)
+    public static void Upgrade(Weapon weapon, Rarity rarity)
     {
-        weaponData.ApplyUpgrade(rarity);
-        Debug.Log($"{weaponData.weaponName} upgraded to Lv.{weaponData.level} ({rarity})");
+        weapon.LevelUp(rarity);
+        Debug.Log($"{weapon.weaponName} upgraded to Lv.{weapon.level} ({rarity})");
     }
 }
 public static class RarityHelper
