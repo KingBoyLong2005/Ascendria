@@ -32,7 +32,11 @@ public class GameManager : MonoBehaviour
     {
         //Tạo MapManager
         mapManager = gameObject.AddComponent<MapManager01>();
-
+        if(mapManager == null)
+        {
+            Debug.LogWarning("[GameManager] Không thể tạo MapManager.");
+            return;
+        }
         //Tạo PlayerManager 
         mapManager.OnMapReady += (sender,e) =>
         {

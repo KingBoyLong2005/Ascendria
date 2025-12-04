@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aac043334ac242419d2303b22b45d8c, type: 3}
   m_Name: PrefabDatabase
   m_EditorClassIdentifier: 
-  firstMapPrefab: {fileID: 919132149155446097, guid: 490e98ce4ffc7d64f9e59bfe7c1ef29e, type: 3}
+  firstMapPrefab: {fileID: 196491744867951257, guid: f603a918e3631c94aa54f1d5259fbf70, type: 3}
   secondMapPrefab: {fileID: 0}
   thirdMapPrefab: {fileID: 0}
   playerPrefab: {fileID: 0}
