@@ -8,16 +8,20 @@ public class EnemyManager : MonoBehaviour
     public static EnemyManager Instance {get; private set;}
 
     private Transform player;
-    public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
+    public List<GameObject> enemyPrefabs = new List<GameObject>();      // Danh sách prefab quái
     
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
 
-    public bool ActiveByButton = true;
+    public bool ActiveByButton = false;
     public LayerMask groundMask;
 
     public float spawnInterval = 2f;
-    private float timer;
+    private float timer = 0f;
+
+    public float difficultyMultiplier = 1f;
+    private float elapsedTime = 0f;
+    private float nextDiff = 60f;
 
     public event EventHandler<OnEnemyDeathEventArgs> OnDead;
     public class OnEnemyDeathEventArgs : EventArgs
@@ -45,15 +49,33 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
+
+        LoadPrefabsFromDatabase();
+        groundMask = LayerMask.GetMask("Ground");
     }
     private void Start()
     {
-        NavMeshManager.Instance.LoadNavMesh();
+        //NavMeshManager.Instance.LoadNavMesh();
         var p = GameObject.FindGameObjectWithTag("Player");
         if (p != null)
             player = p.transform;
+    }
+
+    private void LoadPrefabsFromDatabase()
+    {
+        // clear maybe
+        if(enemyPrefabs != null)
+            enemyPrefabs.Clear();
+
+        if (PrefabDatabase.Instance.enemyPrefab != null)
+        { 
+            enemyPrefabs.Add(PrefabDatabase.Instance.enemyPrefab);
+            Debug.Log("Enemy added from db to manager");
+        }
+        //if (prefabDatabase.enemyPrefab2 != null)
+        //    enemyPrefabList.Add(prefabDatabase.enemyPrefab2);
+        //// Repeat for all prefab fields — or use reflection/array if many
     }
 
     private void Update()
@@ -71,6 +93,13 @@ public class EnemyManager : MonoBehaviour
             {
                 SpawnRandomEnemy();
             }
+        }
+
+        elapsedTime += Time.deltaTime;
+        if (elapsedTime >= nextDiff)
+        { 
+            elapsedTime = 0f;
+            difficultyMultiplier += 0.5f;
         }
     }
 

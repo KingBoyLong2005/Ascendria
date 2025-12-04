@@ -22,10 +22,10 @@ public class EnemyStats : MonoBehaviour
     void Awake()
     {
         // initialize instance stats from template
-        baseMaxHealth = template.maxHealth;
+        baseMaxHealth = Mathf.Floor(template.maxHealth * EnemyManager.Instance.difficultyMultiplier);
+        attack = Mathf.Floor(template.attack * EnemyManager.Instance.difficultyMultiplier);
+        armor = Mathf.Floor(template.armor * EnemyManager.Instance.difficultyMultiplier);
         moveSpeed = template.moveSpeed;
-        attack = template.attack;
-        armor = template.armor;
 
         currentHealth = baseMaxHealth;
         timer = 0f; 

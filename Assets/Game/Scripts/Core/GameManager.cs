@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     private MapManager01 mapManager;
     private PlayerManager01 playerManager;
 
+    private PoolManager poolManager;
+    private EnemyManager enemyManager;
+    private DamageManager damageManager;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -30,15 +34,19 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //Tạo MapManager
-        mapManager = gameObject.AddComponent<MapManager01>();
+        ////Tạo MapManager
+        //mapManager = gameObject.AddComponent<MapManager01>();
 
-        //Tạo PlayerManager 
-        mapManager.OnMapReady += (sender,e) =>
-        {
-            playerManager = gameObject.AddComponent<PlayerManager01>();
-            //playerManager.Initialize(mapManager.GetPlayerRandomPos()); // ở đây không có tham số để truyền vào - function này không nên truyền tham số
-        };
+        ////Tạo PlayerManager 
+        //mapManager.OnMapReady += (sender,e) =>
+        //{
+        //    playerManager = gameObject.AddComponent<PlayerManager01>();
+        //    //playerManager.Initialize(mapManager.GetPlayerRandomPos()); // ở đây không có tham số để truyền vào - function này không nên truyền tham số
+        //};
+
+        poolManager = gameObject.AddComponent<PoolManager>();
+        enemyManager = gameObject.AddComponent<EnemyManager>();
+        damageManager = gameObject.AddComponent<DamageManager>();
     }
 
 

@@ -19,7 +19,7 @@ public class DamageManager : MonoBehaviour
     public void Start()
     {
         EnemyManager.Instance.OnEnemyHitPlayer += EnemyManager_OnEnemyHitPlayer;
-        WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
+        //WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
     }
 
     private void OnDisable()
