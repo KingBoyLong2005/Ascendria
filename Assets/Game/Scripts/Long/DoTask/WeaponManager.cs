@@ -27,16 +27,16 @@ public class WeaponManager : MonoBehaviour
     Camera attackCamera;
 
 
-    // Event Handle (Viết tạm)
-    public event EventHandler<OnEnemyHitArgs> OnHit;
-    public class OnEnemyHitArgs : EventArgs
+    // Event Handle 
+    public event EventHandler<OnWeaponHitEnemyEventArgs> OnWeaponHitEnemy;
+    public class OnWeaponHitEnemyEventArgs : EventArgs
     {
-        public GameObject enemy;  // which enemy did hit
-        public float baseDamage;
-        public OnEnemyHitArgs(GameObject enemy, float damage)
+        public GameObject enemy;  // which enemy got hit
+        public float weaponAttack;
+        public OnWeaponHitEnemyEventArgs(GameObject enemy, float wAtk)
         {
             this.enemy = enemy;
-            baseDamage = damage;
+            weaponAttack = wAtk;
         }
     }
     //Event Handle 
@@ -110,9 +110,9 @@ public class WeaponManager : MonoBehaviour
     }
 
     // Event handle
-    public void EnemyHitPlayer(GameObject enemy, float damage)
+    public void WeaponHitEnemy(GameObject enemy, float wAtk)
     {
-        OnHit?.Invoke(this,new OnEnemyHitArgs(enemy,damage));
+        OnWeaponHitEnemy?.Invoke(this,new OnWeaponHitEnemyEventArgs(enemy,wAtk));
     }
     // Event handle
     private void OnDrawGizmos()

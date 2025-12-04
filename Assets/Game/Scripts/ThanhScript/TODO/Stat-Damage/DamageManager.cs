@@ -19,46 +19,49 @@ public class DamageManager : MonoBehaviour
     public void Start()
     {
         EnemyManager.Instance.OnEnemyHitPlayer += EnemyManager_OnEnemyHitPlayer;
-        //WeaponManager.Instance.OnHitEnemy += WeaponManager_OnHitEnemy;
+        WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
     }
-
-    private void EnemyManager_OnEnemyHitPlayer(object sender, EnemyManager.OnEnemyHitPlayerEventArgs e)
-    {
-        // e.baseDamage — you can add modifiers here: armor, resistances, criticals...
-        float finalDamage = CalculateDamage(e.baseDamage, e.enemy);
-
-        // then apply damage to player
-        PlayerStatManager.Instance.ApplyDamage(finalDamage);
-    }
-
-    //private void WeaponManager_OnHitEnemy(object sender, WeaponManager.OnWeaponHitEnemyEventArgs e)
-    //{
-    //    // e.baseDamage — you can add modifiers here: armor, resistances, criticals...
-    //    float finalDamage = CalculateWeaponDamage(e.baseDamage, e.enemy);
-
-    //    // then apply damage to enemy
-    //    EnemyStats enemyHit = e.enemy.GetComponent<EnemyStats>();
-    //    enemyHit.TakeDamage(finalDamage);
-    //}
 
     private void OnDisable()
     {
         EnemyManager.Instance.OnEnemyHitPlayer -= EnemyManager_OnEnemyHitPlayer;
     }
 
-    private float CalculateDamage(float baseDamage, GameObject enemy)
+    private void EnemyManager_OnEnemyHitPlayer(object sender, EnemyManager.OnEnemyHitPlayerEventArgs e)
     {
-        // example: no modifiers yet — just return base
+        float finalDamage = CalculateEnemyDamage(e.enemyAttack);
+
+        // then apply damage to player
+        PlayerStatManager.Instance.TakeDamage(finalDamage);
+    }
+
+    private void WeaponManager_OnWeaponHitEnemy(object sender, WeaponManager.OnWeaponHitEnemyEventArgs e)
+    {
+        var enemyHit = e.enemy.GetComponent<EnemyStats>();
+
+        float finalDamage = CalculateWeaponDamage(e.weaponAttack, enemyHit.Armor);
+
+        // then apply damage to enemy
+        enemyHit.TakeDamage(finalDamage);
+    }
+
+    private float CalculateEnemyDamage(float enemyAttack)
+    {
         float charArmor = PlayerStatManager.Instance.Armor;
-        float finalDamage = baseDamage - charArmor;
+
+        float finalDamage = enemyAttack - charArmor;
         Debug.Log($"Final enemy damage: {finalDamage}");
+
         return finalDamage;
     }
 
-    private float CalculateWeaponDamage(float baseDamage, GameObject enemy)
+    private float CalculateWeaponDamage(float weaponAttack, float enemyArmor)
     {
-        //float final = playerAttack + weaponAttack 
-        return baseDamage;
+        float playerAttack = PlayerStatManager.Instance.Attack;
+
+        float finalDamage = playerAttack + weaponAttack - enemyArmor;
+
+        return finalDamage;
     }
 }
 
