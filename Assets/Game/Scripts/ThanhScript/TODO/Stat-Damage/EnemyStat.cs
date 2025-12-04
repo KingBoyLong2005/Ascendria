@@ -6,8 +6,10 @@ public class EnemyStats : MonoBehaviour
     public EnemyData template;  // assign in the editor (for each prefab or spawn logic)
 
     private float currentHealth;
+    private float baseMaxHealth;
     private float moveSpeed;
-    private float damage;
+    private float attack;
+    private float armor;
 
     private float attackCD = 0.5f;
     private float nextAttack = 0f;
@@ -20,9 +22,12 @@ public class EnemyStats : MonoBehaviour
     void Awake()
     {
         // initialize instance stats from template
-        currentHealth = template.maxHealth;
+        baseMaxHealth = template.maxHealth;
         moveSpeed = template.moveSpeed;
-        damage = template.damage;
+        attack = template.attack;
+        armor = template.armor;
+
+        currentHealth = baseMaxHealth;
         timer = 0f; 
     }
 
@@ -36,6 +41,7 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    //Attack cd for enemy
     private void OnTriggerStay(Collider other)
     {
         if (Time.time >= nextAttack)
@@ -60,19 +66,26 @@ public class EnemyStats : MonoBehaviour
             Die();
     }
 
-    public float GetDamage()
+    public float MaxHealth
     {
-        return damage;
+        get { return baseMaxHealth; }
     }
-
-    public float GetMoveSpeed()
+    public float Attack
     {
-        return moveSpeed;
+        get { return attack; }
     }
-
+    public float MoveSpeed
+    {
+        get { return moveSpeed; }
+    }
+    public float Armor
+    {
+        get { return armor; }
+    }
+    
     private void HitPlayer()
     {
-        EnemyManager.Instance.EnemyHitPlayer(this.gameObject, template.damage);
+        EnemyManager.Instance.EnemyHitPlayer(this.gameObject, Attack);
     }
 
     private void Die()

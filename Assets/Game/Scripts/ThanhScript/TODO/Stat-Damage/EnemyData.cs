@@ -8,5 +8,6 @@ public class EnemyData : ScriptableObject
     public string enemyName;
     public float maxHealth = 100f;
     public float moveSpeed = 5f;
-    public float damage = 10f;
+    public float attack = 10f;
+    public float armor = 10f;
 }

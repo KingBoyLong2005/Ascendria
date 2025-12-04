@@ -7,7 +7,7 @@ public class PlayerStatManager : MonoBehaviour
 
     [Header("Base Stats")]
     public float baseMaxHealth = 100f;
-    public float baseDamage = 10f;
+    public float baseAttack = 10f;
     public float baseMoveSpeed = 5f;
     public float baseArmor = 5f;
 
@@ -18,8 +18,8 @@ public class PlayerStatManager : MonoBehaviour
     private float healthModifierFlat = 0f;
     private float healthModifierMult = 1f;
 
-    private float damageModifierFlat = 0f;
-    private float damageModifierMult = 1f;
+    private float attackModifierFlat = 0f;
+    private float attackModifierMult = 1f;
 
     private float moveSpeedModifierFlat = 0f;
     private float moveSpeedModifierMult = 1f;
@@ -35,7 +35,7 @@ public class PlayerStatManager : MonoBehaviour
         currentHealth = baseMaxHealth;
     }
 
-    public void ApplyDamage(float damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         Debug.Log("Player took damage: " + damage + ", current health: " + currentHealth);
@@ -52,7 +52,7 @@ public class PlayerStatManager : MonoBehaviour
     }
 
     // HEALTH GETTER
-    public float Health
+    public float MaxHealth
     {
         get
         {
@@ -60,11 +60,11 @@ public class PlayerStatManager : MonoBehaviour
         }
     }
     // DAMAGE GETTER
-    public float Damage
+    public float Attack
     {
         get
         {
-            return (baseDamage + damageModifierFlat) * damageModifierMult;
+            return (baseAttack + attackModifierFlat) * attackModifierMult;
         }
     }
     // MOVE SPEED GETTER
@@ -90,10 +90,10 @@ public class PlayerStatManager : MonoBehaviour
         healthModifierFlat += addFlat;
         healthModifierMult *= mult;
     }
-    public void ModifyDamage(float addFlat = 0f, float mult = 1f)
+    public void ModifyAttack(float addFlat = 0f, float mult = 1f)
     {
-        damageModifierFlat += addFlat;
-        damageModifierMult *= mult;
+        attackModifierFlat += addFlat;
+        attackModifierMult *= mult;
     }
     public void ModifyMoveSpeed(float addFlat = 0f, float mult = 1f)
     {

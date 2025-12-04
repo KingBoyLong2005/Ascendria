@@ -29,12 +29,12 @@ public class EnemyManager : MonoBehaviour
     public class OnEnemyHitPlayerEventArgs : EventArgs
     {
         public GameObject enemy;  // which enemy did hit
-        public float baseDamage;
+        public float enemyAttack;
 
         public OnEnemyHitPlayerEventArgs(GameObject enemy, float damage)
         {
             this.enemy = enemy;
-            baseDamage = damage;
+            enemyAttack = damage;
         }
     }
 
@@ -108,11 +108,10 @@ public class EnemyManager : MonoBehaviour
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
         OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemy.transform.position});
-        Debug.Log($"Tín hiệu event enemy chêt: {enemy.transform.position}");
     }
 
-    public void EnemyHitPlayer(GameObject enemy, float damage)
+    public void EnemyHitPlayer(GameObject enemy, float enemyAttack)
     {
-        OnEnemyHitPlayer?.Invoke(this,new OnEnemyHitPlayerEventArgs(enemy,damage));
+        OnEnemyHitPlayer?.Invoke(this,new OnEnemyHitPlayerEventArgs(enemy,enemyAttack));
     }
 }
