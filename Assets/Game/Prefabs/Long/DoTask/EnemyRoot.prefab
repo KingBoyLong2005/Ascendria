@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   template: {fileID: 11400000, guid: afd5593d221ff8c4d8226423ecfbc192, type: 2}
-  DebugTest: 0
+  DebugTest: 1
 --- !u!195 &-7107960007595843796
 NavMeshAgent:
   m_ObjectHideFlags: 0

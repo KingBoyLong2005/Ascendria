@@ -7,6 +7,7 @@ public class PrefabDatabase : ScriptableObject
     public GameObject firstMapPrefab;
     public GameObject secondMapPrefab;
     public GameObject thirdMapPrefab;
+    public GameObject bossGatePrefab;
 
     [Header("Player Prefabs")]
     public GameObject playerPrefab;
@@ -18,6 +19,11 @@ public class PrefabDatabase : ScriptableObject
     [Header("Interactable Prefabs")]
     public GameObject chest;
     public GameObject eventObject;
+
+    [Header("Drop Prefabs")]
+    public GameObject health;
+    public GameObject exp;
+    public GameObject coin;
 
     private static PrefabDatabase _instance;
     public static PrefabDatabase Instance

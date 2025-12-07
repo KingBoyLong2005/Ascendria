@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static SpawnPointManager;
 
@@ -18,10 +19,14 @@ public class MapManager01 : MonoBehaviour
     private SpawnPointManager currentSpawnPointManager;
     public event EventHandler OnMapReady;
 
+    public NavMeshManager navMeshManager;
+
     void Awake()
     {
         mapPrefab = PrefabDatabase.Instance.firstMapPrefab;
         bossGatePrefab = PrefabDatabase.Instance.bossGatePrefab;
+
+        navMeshManager = gameObject.AddComponent<NavMeshManager>();
     }
 
     private void Start()
@@ -52,6 +57,8 @@ public class MapManager01 : MonoBehaviour
             {
                 mapSpawnPoint = defaultSpawnPoint;
             }
+
+            NavMeshManager.Instance.LoadNavMesh();
         }
         else
         {

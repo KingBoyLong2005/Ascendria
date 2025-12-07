@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Unity.AI.Navigation.Editor;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -56,7 +55,6 @@ public class EnemyManager : MonoBehaviour
     }
     private void Start()
     {
-        //NavMeshManager.Instance.LoadNavMesh();
         var p = GameObject.FindGameObjectWithTag("Player");
         if (p != null)
             player = p.transform;

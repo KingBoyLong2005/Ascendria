@@ -12,15 +12,18 @@ public class LootDropManager : MonoBehaviour
         [Range(0f, 1f)] public float dropChance; // Probability of dropping
     }*/
 
-    public List<GameObject> lootTable;
+    public List<GameObject> lootTable = new List<GameObject>();
 
     private void Start()
     {
+        lootTable.Add(PrefabDatabase.Instance.health);
+        lootTable.Add(PrefabDatabase.Instance.exp);
         EnemyManager.Instance.OnDead += EnemyManager_OnDead;
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
     {
+        Debug.Log("Rơi đồ");
         Vector3 deathPos = e.DeathPosition;
 
         foreach (var entry in lootTable)
