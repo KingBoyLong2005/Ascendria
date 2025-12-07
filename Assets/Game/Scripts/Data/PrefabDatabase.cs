@@ -15,6 +15,9 @@ public class PrefabDatabase : ScriptableObject
     public GameObject bossPrefab;
     public GameObject enemyPrefab;
 
+    [Header("Environment Prefabs")]
+    public GameObject bossGatePrefab;
+
     private static PrefabDatabase _instance;
     public static PrefabDatabase Instance
     {

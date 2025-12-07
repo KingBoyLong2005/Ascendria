@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         {
             playerManager = gameObject.AddComponent<PlayerManager01>();
             //playerManager.Initialize(mapManager.GetPlayerRandomPos()); // ở đây không có tham số để truyền vào - function này không nên truyền tham số
+            playerManager.Initialize();
         };
     }
 

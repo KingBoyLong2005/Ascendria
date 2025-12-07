@@ -4,20 +4,39 @@ using UnityEngine;
 public class PlayerManager01 : MonoBehaviour
 {
     private GameObject playerPrefab;
+    private MapManager01 mapManager;
 
-    public void Initialize(Vector3 playerSpawnPos)
+    public void Initialize()
     {
         playerPrefab = PrefabDatabase.Instance.playerPrefab;
-        if (playerSpawnPos != null)
+
+        mapManager = FindAnyObjectByType<MapManager01>();
+        if (mapManager != null)
         {
-            SpawnPlayer(playerSpawnPos);
+            // 3. Lấy vị trí spawn ngẫu nhiên từ MapManager01
+            // Hàm này đã được sửa để không còn tham số.
+            Vector3 playerSpawnPos = mapManager.GetPlayerRandomPos();
+
+            // 4. Spawn Player
+            if (playerSpawnPos != Vector3.zero)
+            {
+                SpawnPlayer(playerSpawnPos);
+            }
+            else
+            {
+                Debug.LogError("[PlayerManager] Không thể lấy được vị trí spawn Player hợp lệ.");
+            }
+        }
+        else
+        {
+            Debug.LogError("[PlayerManager] Không tìm thấy MapManager01. Không thể spawn Player.");
         }
     }
-    private GameObject SpawnPlayer(Vector3 spawnPosition)
+    private GameObject SpawnPlayer(Vector3 spawnPos)
     {
         if (playerPrefab != null)
         {
-            GameObject playerInstance = GameObject.Instantiate(playerPrefab, spawnPosition, Quaternion.identity);
+            GameObject playerInstance = GameObject.Instantiate(playerPrefab, spawnPos, Quaternion.identity);
             Debug.Log("<color=blue>[PlayerManager]</color> Player đã được Spawn thành công!");
             return playerInstance;
         }
