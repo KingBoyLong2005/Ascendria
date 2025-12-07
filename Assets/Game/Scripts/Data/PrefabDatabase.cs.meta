@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - firstMapPrefab: {fileID: 919132149155446097, guid: 94cf8eea73899b446b1c6d7ab793a36f, type: 3}
+  - firstMapPrefab: {instanceID: 0}
   - secondMapPrefab: {instanceID: 0}
   - thirdMapPrefab: {instanceID: 0}
   - playerPrefab: {instanceID: 0}

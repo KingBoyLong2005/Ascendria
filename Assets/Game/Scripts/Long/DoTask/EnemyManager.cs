@@ -1,22 +1,27 @@
 using System;
 using System.Collections.Generic;
+using Unity.AI.Navigation.Editor;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
 
-    public Transform player;
-    public List<GameObject> enemyPrefabs;      // Danh sách prefab quái
+    private Transform player;
+    public List<GameObject> enemyPrefabs = new List<GameObject>();      // Danh sách prefab quái
     
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
 
-    public bool ActiveByButton = true;
+    public bool ActiveByButton = false;
     public LayerMask groundMask;
 
     public float spawnInterval = 2f;
-    private float timer;
+    private float timer = 0f;
+
+    public float difficultyMultiplier = 1f;
+    private float elapsedTime = 0f;
+    private float nextDiff = 60f;
 
     public event EventHandler<OnEnemyDeathEventArgs> OnDead;
     public class OnEnemyDeathEventArgs : EventArgs
@@ -24,16 +29,16 @@ public class EnemyManager : MonoBehaviour
         public Vector3 DeathPosition;
     }
 
-    public event EventHandler<OnHitEventArgs> OnEnemyHitPlayer;
-    public class OnHitEventArgs : EventArgs
+    public event EventHandler<OnEnemyHitPlayerEventArgs> OnEnemyHitPlayer;
+    public class OnEnemyHitPlayerEventArgs : EventArgs
     {
         public GameObject enemy;  // which enemy did hit
-        public float baseDamage;
+        public float enemyAttack;
 
-        public OnHitEventArgs(GameObject enemy, float damage)
+        public OnEnemyHitPlayerEventArgs(GameObject enemy, float damage)
         {
             this.enemy = enemy;
-            baseDamage = damage;
+            enemyAttack = damage;
         }
     }
 
@@ -44,8 +49,33 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
+
+        LoadPrefabsFromDatabase();
+        groundMask = LayerMask.GetMask("Ground");
+    }
+    private void Start()
+    {
+        //NavMeshManager.Instance.LoadNavMesh();
+        var p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+    }
+
+    private void LoadPrefabsFromDatabase()
+    {
+        // clear maybe
+        if(enemyPrefabs != null)
+            enemyPrefabs.Clear();
+
+        if (PrefabDatabase.Instance.enemyPrefab != null)
+        { 
+            enemyPrefabs.Add(PrefabDatabase.Instance.enemyPrefab);
+            Debug.Log("Enemy added from db to manager");
+        }
+        //if (prefabDatabase.enemyPrefab2 != null)
+        //    enemyPrefabList.Add(prefabDatabase.enemyPrefab2);
+        //// Repeat for all prefab fields — or use reflection/array if many
     }
 
     private void Update()
@@ -59,10 +89,17 @@ public class EnemyManager : MonoBehaviour
         }
         else if (ActiveByButton && Input.GetKeyDown(KeyCode.P))
         {
-            for(int i = 0; i<20; i++)
+            for(int i = 0; i<1; i++)
             {
                 SpawnRandomEnemy();
             }
+        }
+
+        elapsedTime += Time.deltaTime;
+        if (elapsedTime >= nextDiff)
+        { 
+            elapsedTime = 0f;
+            difficultyMultiplier += 0.5f;
         }
     }
 
@@ -100,11 +137,10 @@ public class EnemyManager : MonoBehaviour
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
         OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemy.transform.position});
-        Debug.Log($"Tín hiệu event enemy chêt: {enemy.transform.position}");
     }
 
-    public void EnemyHitPlayer(GameObject enemy, float damage)
+    public void EnemyHitPlayer(GameObject enemy, float enemyAttack)
     {
-        OnEnemyHitPlayer?.Invoke(this,new OnHitEventArgs(enemy,damage));
+        OnEnemyHitPlayer?.Invoke(this,new OnEnemyHitPlayerEventArgs(enemy,enemyAttack));
     }
 }
