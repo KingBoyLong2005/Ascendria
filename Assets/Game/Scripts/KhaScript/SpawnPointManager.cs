@@ -3,29 +3,58 @@ using System.Collections.Generic;
 
 public class SpawnPointManager : MonoBehaviour
 {
-    // Dùng List để chứa tất cả các Transform của các điểm spawn con
-    public List<Transform> playerSpawnPoints = new List<Transform>();
+    public enum SpawnType
+    {
+        Player,     // Dành cho vị trí spawn ngẫu nhiên của người chơi
+        BossGate,   // Dành cho vị trí cố định của cổng Boss
+        FixedItem   // Dành cho vị trí cố định của Item
+                    // Thêm các loại khác (NPC, Shop, v.v.) nếu cần
+    }
+
+    // Lưu trữ tất cả các điểm spawn (cả Player, BossGate, FixedItem)
+    private Dictionary<SpawnType, List<Transform>> categorizedSpawnPoints = new Dictionary<SpawnType, List<Transform>>();
 
     private void Awake()
     {
-        // Tự động tìm tất cả các transform con (children) và thêm chúng vào danh sách
-        // Giả định rằng TẤT CẢ các đối tượng con trực tiếp là các điểm spawn
+        // Khởi tạo Dictionary
+        foreach (SpawnType type in System.Enum.GetValues(typeof(SpawnType)))
+        {
+            categorizedSpawnPoints[type] = new List<Transform>();
+        }
 
-        // Hoặc tìm kiếm theo tag/layer nếu bạn muốn kiểm soát chi tiết hơn
-
-        // Phương pháp đơn giản: Lấy tất cả các con trực tiếp
+        // Duyệt qua tất cả các con và phân loại chúng
         foreach (Transform child in transform)
         {
-            // Chỉ thêm nếu đó không phải là chính object SpawnPointManager (đối tượng gốc)
-            if (child != transform)
+            SpawnPointType sp = child.GetComponent<SpawnPointType>();
+            if (sp != null)
             {
-                playerSpawnPoints.Add(child);
+                categorizedSpawnPoints[sp.type].Add(child);
+            }
+            else
+            {
+                Debug.LogWarning($"SpawnPointManager: Con {child.name} không có component SpawnPoint.");
             }
         }
-
-        if (playerSpawnPoints.Count == 0)
-        {
-            Debug.LogWarning("SpawnPointManager: Không tìm thấy điểm spawn nào trong object này.");
-        }
+        // ... (Log warning nếu cần)
+        Debug.Log("SpawnPointManager: Đã phân loại điểm spawn.");
     }
+
+    /// <summary>
+    /// Trả về danh sách điểm spawn đã được lọc theo loại.
+    /// </summary>
+    public List<Transform> GetSpawnPointsByType(SpawnType type)
+    {
+        if (categorizedSpawnPoints.ContainsKey(type))
+        {
+            return categorizedSpawnPoints[type];
+        }
+        return new List<Transform>(); // Trả về danh sách rỗng nếu không có loại này
+    }
+
+    // Giữ hàm cũ để PlayerManager01 vẫn hoạt động
+    public List<Transform> GetAvailableSpawnPoints()
+    {
+        return GetSpawnPointsByType(SpawnType.Player);
+    }
+
 }
