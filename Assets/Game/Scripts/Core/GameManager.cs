@@ -14,7 +14,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     private MapManager01 mapManager;
+    public MapManager01 GetMapManager => mapManager;
+
     private PlayerManager01 playerManager;
+    private InteractableSpawner interactableSpawner;
 
     private PoolManager poolManager;
     private EnemyManager enemyManager;
@@ -34,19 +37,23 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        ////Tạo MapManager
-        //mapManager = gameObject.AddComponent<MapManager01>();
+        //Tạo MapManager
+        mapManager = gameObject.AddComponent<MapManager01>();
+        mapManager.OnMapReady += HandleMapReady;
 
-        ////Tạo PlayerManager 
-        //mapManager.OnMapReady += (sender,e) =>
-        //{
-        //    playerManager = gameObject.AddComponent<PlayerManager01>();
-        //    //playerManager.Initialize(mapManager.GetPlayerRandomPos()); // ở đây không có tham số để truyền vào - function này không nên truyền tham số
-        //};
 
         poolManager = gameObject.AddComponent<PoolManager>();
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
+    }
+
+    private void HandleMapReady(object sender, EventArgs e)
+    {
+        playerManager = gameObject.AddComponent<PlayerManager01>();
+        playerManager.Initialize();
+
+        interactableSpawner = new InteractableSpawner();
+        interactableSpawner.SpawnAll();
     }
 
 
