@@ -5,13 +5,14 @@ public class PlayerManager01 : MonoBehaviour
 {
     private GameObject playerPrefab;
 
-    public void Initialize(Vector3 playerSpawnPos)
+    public void Initialize()
     {
         playerPrefab = PrefabDatabase.Instance.playerPrefab;
-        if (playerSpawnPos != null)
-        {
-            SpawnPlayer(playerSpawnPos);
-        }
+        //playerSpawnPos = GameManager.Instance.GetMapManager.GetPlayerRandomPos();
+        //if (playerSpawnPos != null)
+        //{
+        //    SpawnPlayer(playerSpawnPos);
+        //}
     }
     private GameObject SpawnPlayer(Vector3 spawnPosition)
     {
