@@ -57,6 +57,7 @@ public class InteractableSpawner
             GameObject prefab = kv.Key;
             foreach (Vector3 pos in kv.Value)
             {
+                Debug.Log("Spawn object");
                 UnityEngine.Object.Instantiate(prefab, pos, Quaternion.identity);
             }
         }

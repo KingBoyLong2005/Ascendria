@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class GameManager : MonoBehaviour
     private EnemyManager enemyManager;
     private DamageManager damageManager;
 
+    private WeaponManager weaponManager;
+    private LootDropManager lootDropManager;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -42,9 +46,9 @@ public class GameManager : MonoBehaviour
         mapManager.OnMapReady += HandleMapReady;
 
 
-        poolManager = gameObject.AddComponent<PoolManager>();
-        enemyManager = gameObject.AddComponent<EnemyManager>();
-        damageManager = gameObject.AddComponent<DamageManager>();
+       
+
+        //weaponManager = gameObject.AddComponent<WeaponManager>();    
     }
 
     private void HandleMapReady(object sender, EventArgs e)
@@ -54,6 +58,12 @@ public class GameManager : MonoBehaviour
 
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
+
+        poolManager = gameObject.AddComponent<PoolManager>();
+        enemyManager = gameObject.AddComponent<EnemyManager>();
+        damageManager = gameObject.AddComponent<DamageManager>();
+
+        lootDropManager = gameObject.AddComponent<LootDropManager>();
     }
 
 

@@ -38,6 +38,7 @@ public class EnemyStats : MonoBehaviour
         if (timer >= lifeTime && DebugTest)
         {
             Die(); // tự chết sau 5 giây
+            timer = 0f;
         }
     }
 
@@ -90,6 +91,7 @@ public class EnemyStats : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("Chết");
         // Gửi tín hiệu về Manager
         EnemyManager.Instance.EnemyDie(this.gameObject);
 

@@ -273,6 +273,8 @@ GameObject:
   - component: {fileID: 8623032086461577046}
   - component: {fileID: 1360813292107902476}
   - component: {fileID: 3817501755868396775}
+  - component: {fileID: 8952411064186125732}
+  - component: {fileID: 582396682465065112}
   m_Layer: 3
   m_Name: PlayerCapsuleLong
   m_TagString: Player
@@ -338,7 +340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 4
-  SprintSpeed: 10
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   LandingAudioClip: {fileID: 0}
@@ -353,7 +354,7 @@ MonoBehaviour:
   GroundedRadius: 0.28
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
   CinemachineCameraTarget: {fileID: 2266019921531878755}
   TopClamp: 70
   BottomClamp: -30
@@ -505,23 +506,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172b17f7bd491524e933cba1e59ced73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData:
-    weaponName: Meelee
-    level: 1
-    damage: 10
-    attackDelay: 2
-    attackSpeed: 1
-    range: 3
-  playerPrefab: {fileID: 1980341772315052007}
-  attackEffectPrefab: {fileID: 853751417762646301, guid: e53c177e32f50844fab2f084456093da, type: 3}
+  playerTransform: {fileID: 4676158689981713300}
   attackCamera: {fileID: 4367582207047365535}
   spawnOffset: 0.12
   spawnHeightOffset: 0
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  autoAttack: 1
-  DebugTest: 1
+  wp: {fileID: 11400000, guid: 347f285d6dbee1e498bccfd8409573da, type: 2}
+--- !u!114 &8952411064186125732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730884717223232046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6399fc62e3fdb8c428a1d3dca9afefdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseMaxHealth: 100
+  baseAttack: 10
+  baseMoveSpeed: 5
+  baseArmor: 5
+--- !u!114 &582396682465065112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730884717223232046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52207c7b3bb27746bedf0bf83606a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectRadius: 5
 --- !u!1001 &2708337242647618740
 PrefabInstance:
   m_ObjectHideFlags: 0
