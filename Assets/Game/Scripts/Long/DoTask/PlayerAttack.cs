@@ -13,7 +13,6 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask obstacleMask;
     
     public Weapon wp;
-
     public event EventHandler OnPlayerAttackReady;
     void Start()
     {
@@ -22,29 +21,11 @@ public class PlayerAttack : MonoBehaviour
 
         if (attackCamera == null)
             attackCamera = Camera.main;
-        // Báo rằng PlayerAttack đã sẵn sàng
+        // WeaponManager.Instance.AddWeapon(wp);
+        // báo ready
         OnPlayerAttackReady?.Invoke(this, EventArgs.Empty);
         Debug.Log("PlayerAttack READY event fired");
-    }
-    public void AddWeapon()
-    {
-        if(WeaponManager.Instance != null)
-        {
-            Debug.Log("add kiếm");
-            WeaponManager.Instance.AddWeapon(wp);
-        }
-        else
-        {
-            Debug.LogWarning("WPM null");
-        }
-    }
-    void Update()
-    {
-        // if(Input.GetKeyDown(KeyCode.T))
-        // {
-        //     Debug.Log("Thêm vũ khí thành công");
-        //     WeaponManager.Instance.AddWeapon(wp);
-        // }
+
     }
     public Vector3 ComputeSpawnPosition(Vector3 dir)
     {

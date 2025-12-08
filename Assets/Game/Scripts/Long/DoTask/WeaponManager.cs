@@ -27,7 +27,6 @@ public class WeaponManager : MonoBehaviour
     Camera attackCamera;
 
     private bool activated = false;
-
     // Event Handle 
     public event EventHandler<OnWeaponHitEnemyEventArgs> OnWeaponHitEnemy;
     public class OnWeaponHitEnemyEventArgs : EventArgs
@@ -50,49 +49,46 @@ public class WeaponManager : MonoBehaviour
         }
 
         Instance = this;
-        activated = false;
-        // FIX QUAN TRỌNG
-        if (weapons == null)
-            weapons = new List<Weapon>();
+        // TÌM player và đăng ký EVENT TRONG AWAKE
         player = FindFirstObjectByType<PlayerAttack>();
         if (player != null)
         {
             player.OnPlayerAttackReady += HandlePlayerAttackReady;
-            Debug.Log("WeaponManager đã đăng ký event OnPlayerAttackReady");
+            Debug.Log("WeaponManager registered PlayerAttackReady in Awake()");
         }
         else
         {
-            Debug.LogWarning("WeaponManager KHÔNG TÌM THẤY PlayerAttack để đăng ký event");
+            Debug.LogWarning("WeaponManager: PlayerAttack chưa tồn tại trong scene khi Awake()");
         }
     }
-
     // void Start()
     // {
-    //     // ban đầu chưa chạy
-    //     activated = false;
     //     player = FindFirstObjectByType<PlayerAttack>();
-    //     if (player != null)
-    //     {
-    //         player.OnPlayerAttackReady += HandlePlayerAttackReady;
-    //         Debug.Log("WeaponManager đã đăng ký event OnPlayerAttackReady");
-    //     }
-    //     else
-    //     {
-    //         Debug.LogWarning("WeaponManager KHÔNG TÌM THẤY PlayerAttack để đăng ký event");
-    //     }
-    //     // tìm PlayerAttack tại runtime
-        
+    //     attackCamera = Camera.main;
+    //     // clone tất cả weapon để dùng runtime
+    //     weapons = weapons.Select(w => Instantiate(w)).ToList();
     // }
     private void HandlePlayerAttackReady(object sender, EventArgs e)
     {
+        Debug.Log("WeaponManager received PlayerAttackReady");
+
+        player = sender as PlayerAttack;
         attackCamera = Camera.main;
 
-        // clone weapon
-        weapons = weapons.Select(w => Instantiate(w)).ToList();
-        // add weapon của player
-            weapons.Add(FindFirstObjectByType<PlayerAttack>().wp);
+        weapons = new List<Weapon>();
+
+        if (player.wp != null)
+        {
+            Debug.Log("WeaponManager ADD WEAPON từ PlayerAttack");
+            weapons.Add(Instantiate(player.wp)); // clone runtime weapon
+        }
+        else
+        {
+            Debug.LogWarning("PlayerAttack.wp NULL");
+        }
+
         activated = true;
-        Debug.Log(">>> WeaponManager ACTIVATED by PlayerAttack");
+        Debug.Log(">>> WeaponManager ACTIVATED");
     }
 
     void Update()

@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
 
+        weaponManager = gameObject.AddComponent<WeaponManager>();    
         lootDropManager = gameObject.AddComponent<LootDropManager>();
     }
 
