@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class PlayerManager01 : MonoBehaviour
@@ -6,6 +6,7 @@ public class PlayerManager01 : MonoBehaviour
     private GameObject playerPrefab;
     private MapManager01 mapManager;
 
+    public event EventHandler OnPlayerReady;
     public void Initialize()
     {
         playerPrefab = PrefabDatabase.Instance.playerPrefab;
@@ -31,6 +32,7 @@ public class PlayerManager01 : MonoBehaviour
         {
             Debug.LogError("[PlayerManager] Không tìm thấy MapManager01. Không thể spawn Player.");
         }
+        OnPlayerReady?.Invoke(this, EventArgs.Empty);
     }
     private GameObject SpawnPlayer(Vector3 spawnPos)
     {

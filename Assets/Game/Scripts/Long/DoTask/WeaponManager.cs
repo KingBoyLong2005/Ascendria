@@ -23,9 +23,10 @@ public class WeaponManager : MonoBehaviour
     private Quaternion debugBoxRot;
     private bool debugDrawBox = false;
 
-    PlayerAttack player;
+    private PlayerAttack player;
     Camera attackCamera;
 
+    private bool activated = false;
 
     // Event Handle 
     public event EventHandler<OnWeaponHitEnemyEventArgs> OnWeaponHitEnemy;
@@ -49,17 +50,55 @@ public class WeaponManager : MonoBehaviour
         }
 
         Instance = this;
-    }
-    void Start()
-    {
+        activated = false;
+        // FIX QUAN TRỌNG
+        if (weapons == null)
+            weapons = new List<Weapon>();
         player = FindFirstObjectByType<PlayerAttack>();
+        if (player != null)
+        {
+            player.OnPlayerAttackReady += HandlePlayerAttackReady;
+            Debug.Log("WeaponManager đã đăng ký event OnPlayerAttackReady");
+        }
+        else
+        {
+            Debug.LogWarning("WeaponManager KHÔNG TÌM THẤY PlayerAttack để đăng ký event");
+        }
+    }
+
+    // void Start()
+    // {
+    //     // ban đầu chưa chạy
+    //     activated = false;
+    //     player = FindFirstObjectByType<PlayerAttack>();
+    //     if (player != null)
+    //     {
+    //         player.OnPlayerAttackReady += HandlePlayerAttackReady;
+    //         Debug.Log("WeaponManager đã đăng ký event OnPlayerAttackReady");
+    //     }
+    //     else
+    //     {
+    //         Debug.LogWarning("WeaponManager KHÔNG TÌM THẤY PlayerAttack để đăng ký event");
+    //     }
+    //     // tìm PlayerAttack tại runtime
+        
+    // }
+    private void HandlePlayerAttackReady(object sender, EventArgs e)
+    {
         attackCamera = Camera.main;
-        // clone tất cả weapon để dùng runtime
+
+        // clone weapon
         weapons = weapons.Select(w => Instantiate(w)).ToList();
+        // add weapon của player
+            weapons.Add(FindFirstObjectByType<PlayerAttack>().wp);
+        activated = true;
+        Debug.Log(">>> WeaponManager ACTIVATED by PlayerAttack");
     }
 
     void Update()
     {
+        if (!activated)
+            return;
         if (player == null || attackCamera == null)
             return;
 

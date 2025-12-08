@@ -401,13 +401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a75c7e0c114c94a95762cc4ce334d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: DefaultWeapon
-  damage: 10
-  range: 2
-  size: 1
-  cooldown: 1
-  level: 1
-  timer: 0
 --- !u!4 &337311862
 Transform:
   m_ObjectHideFlags: 0
@@ -446,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &874412044
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -590,33 +583,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   spawnInterval: 0.5
---- !u!1 &1041952214 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
-  m_PrefabInstance: {fileID: 1117167273}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1041952215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041952214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 189ace36d619b67468f14336bb212b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponName: Sword
-  damage: 10
-  range: 2
-  size: 1
-  cooldown: 1
-  level: 1
-  slashEffectPrefab: {fileID: 853751417762646301, guid: e53c177e32f50844fab2f084456093da, type: 3}
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 128
+  difficultyMultiplier: 1
 --- !u!1001 &1117167273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +612,14 @@ PrefabInstance:
       propertyPath: weaponManager
       value: 
       objectReference: {fileID: 1982747773}
+    - target: {fileID: 3817501755868396775, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
+      propertyPath: spawnHeightOffset
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817501755868396775, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
+      propertyPath: attackEffectPrefab
+      value: 
+      objectReference: {fileID: 853751417762646301, guid: e53c177e32f50844fab2f084456093da, type: 3}
     - target: {fileID: 3840422678763414432, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
       propertyPath: AvoidObstacles.CameraRadius
       value: 1
@@ -716,10 +691,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1041952215}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
 --- !u!1 &1420978259
 GameObject:
@@ -842,63 +814,6 @@ RectTransform:
   m_AnchoredPosition: {x: -461, y: 478}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1432313909
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7229261356725966286, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_Name
-      value: LobbyMap5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8005339971821784948, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 01bcc8f1a68835a46b3b670743a34c2c, type: 3}
 --- !u!1 &1718480794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,10 +1156,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons: []
   spawnOffset: 0.12
-  spawnHeightOffset: 0
+  spawnHeightOffset: 0.6
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
+  DebugTest: 1
 --- !u!4 &1982747774
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,4 +1252,3 @@ SceneRoots:
   - {fileID: 1943756810}
   - {fileID: 1982747774}
   - {fileID: 337311862}
-  - {fileID: 1432313909}
