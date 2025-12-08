@@ -47,18 +47,18 @@ public class GameManager : MonoBehaviour
 
 
        
-
-        //weaponManager = gameObject.AddComponent<WeaponManager>();    
+ 
     }
 
     private void HandleMapReady(object sender, EventArgs e)
-    {
+    {   
         playerManager = gameObject.AddComponent<PlayerManager01>();
         playerManager.Initialize();
 
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
 
+        weaponManager = gameObject.AddComponent<WeaponManager>();
         poolManager = gameObject.AddComponent<PoolManager>();
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();

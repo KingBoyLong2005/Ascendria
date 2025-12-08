@@ -509,7 +509,7 @@ MonoBehaviour:
   playerTransform: {fileID: 4676158689981713300}
   attackCamera: {fileID: 4367582207047365535}
   spawnOffset: 0.12
-  spawnHeightOffset: 0
+  spawnHeightOffset: 0.6
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
@@ -698,7 +698,7 @@ MonoBehaviour:
   TransparentLayers:
     serializedVersion: 2
     m_Bits: 0
-  MinimumDistanceFromTarget: 0.3
+  MinimumDistanceFromTarget: 0.01
   AvoidObstacles:
     Enabled: 1
     DistanceLimit: 0
