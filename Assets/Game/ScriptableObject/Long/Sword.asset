@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   weaponName: DefaultWeapon
-  damage: 10
+  Icon: {fileID: 21300000, guid: f027a30c1da707b488244ad97c182377, type: 3}
+  damage: 1000
   range: 6.5
   size: 7
   cooldown: 1

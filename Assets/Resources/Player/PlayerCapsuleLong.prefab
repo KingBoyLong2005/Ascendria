@@ -508,7 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 4676158689981713300}
   attackCamera: {fileID: 4367582207047365535}
-  spawnOffset: 0.12
+  spawnOffset: 0.2
   spawnHeightOffset: 0.6
   obstacleMask:
     serializedVersion: 2

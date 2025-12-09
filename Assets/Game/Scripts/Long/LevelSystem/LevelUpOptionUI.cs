@@ -3,11 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-/// <summary>
-/// LevelUpOptionUI (cập nhật)
-/// - Setup(UpgradeOption, Action<UpgradeOption>) sẽ hiển thị icon dựa trên UpgradeOption.targetWeapon nếu có.
-/// - Nếu buff và không có icon, sẽ cố gắng lấy placeholder (có thể set từ inspector).
-/// </summary>
 public class LevelUpOptionUI : MonoBehaviour
 {
     public Image icon;
@@ -37,13 +32,13 @@ public class LevelUpOptionUI : MonoBehaviour
         {
             case LevelUpUI.UpgradeOption.Kind.WeaponUpgrade:
                 if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.displayName}";
+                    titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Upgrade";
                 break;
             case LevelUpUI.UpgradeOption.Kind.WeaponDrop:
                 if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Drop: {up.targetWeapon.displayName}";
+                    titleText.text = $"{up.tier} Drop: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Drop";
                 break;
@@ -54,9 +49,9 @@ public class LevelUpOptionUI : MonoBehaviour
 
         // Set icon:
         Sprite s = null;
-        if (up.targetWeapon != null && up.targetWeapon.icon != null)
+        if (up.targetWeapon != null && up.targetWeapon.Icon != null)
         {
-            s = up.targetWeapon.icon;
+            s = up.targetWeapon.Icon;
         }
         else
         {
@@ -74,13 +69,13 @@ public class LevelUpOptionUI : MonoBehaviour
         button.onClick.AddListener(() => onUpgradeSelected?.Invoke(upgrade));
     }
 
-    // Optional: if you sometimes call Setup for WeaponData directly
-    public void Setup(WeaponData w, Action<WeaponData> callback)
+    // Optional: if you sometimes call Setup for Weapon directly
+    public void Setup(Weapon w, Action<Weapon> callback)
     {
-        titleText.text = w != null ? w.displayName : "Weapon";
+        titleText.text = w != null ? w.weaponName : "Weapon";
         if (icon != null)
         {
-            icon.sprite = (w != null) ? w.icon : placeholderIcon;
+            icon.sprite = (w != null) ? w.Icon : placeholderIcon;
             icon.enabled = (icon.sprite != null);
         }
 

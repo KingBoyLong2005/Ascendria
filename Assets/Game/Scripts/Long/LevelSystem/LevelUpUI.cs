@@ -4,17 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
-/// <summary>
-/// LevelUpUI (cập nhật):
-/// - UpgradeOption giờ có targetWeapon để hiển thị icon cho nâng cấp vũ khí cụ thể.
-/// - Khi tạo choices: ưu tiên tạo WeaponUpgrade cho vũ khí đang sở hữu,
-///   nếu không đủ thì đưa vũ khí chưa có (as drop) hoặc buff chưa có.
-/// - Mỗi option có icon: nếu WeaponUpgrade => targetWeapon.icon; nếu Buff => try placeholder.
-/// </summary>
 public class LevelUpUI : MonoBehaviour
 {
     [Header("References")]
-    public LevelSystem levelSystem;
+    public LevelManager levelManager;
     public InventoryManager inventoryManager;
     public GameObject panel;
     public LevelUpOptionUI optionPrefab;
@@ -22,7 +15,7 @@ public class LevelUpUI : MonoBehaviour
     public int optionCount = 3;
 
     [Header("Weapon pool (choose from this)")]
-    public WeaponData[] weaponPool;
+    public Weapon[] weaponPool;
 
     [Header("Upgrade settings")]
     public float commonPercent = 0.08f;
@@ -37,21 +30,21 @@ public class LevelUpUI : MonoBehaviour
 
     void Start()
     {
-        if (levelSystem == null)
-            levelSystem = FindFirstObjectByType<LevelSystem>();
+        if (levelManager == null)
+            levelManager = FindFirstObjectByType<LevelManager>();
 
         if (inventoryManager == null && InventoryManager.Instance != null)
             inventoryManager = InventoryManager.Instance;
 
-        if (levelSystem != null)
-            levelSystem.OnLevelUp += OnLevelUp;
+        if (levelManager != null)
+            levelManager.OnLevelUp += OnLevelUp;
 
         if (panel != null) panel.SetActive(false);
     }
 
     void OnDestroy()
     {
-        if (levelSystem != null) levelSystem.OnLevelUp -= OnLevelUp;
+        if (levelManager != null) levelManager.OnLevelUp -= OnLevelUp;
     }
 
     void OnLevelUp(int newLevel)
@@ -72,9 +65,9 @@ public class LevelUpUI : MonoBehaviour
         spawnedOptions.Clear();
 
         // Prepare pools
-        List<WeaponData> allWeapons = (weaponPool != null) ? weaponPool.Where(x => x != null).ToList() : new List<WeaponData>();
-        List<WeaponData> owned = (inventoryManager != null) ? inventoryManager.ownedWeapons.Where(x => x != null).ToList() : new List<WeaponData>();
-        List<WeaponData> unowned = allWeapons.Except(owned).ToList();
+        List<Weapon> allWeapons = (weaponPool != null) ? weaponPool.Where(x => x != null).ToList() : new List<Weapon>();
+        List<Weapon> owned = (inventoryManager != null) ? inventoryManager.ownedWeapons.Where(x => x != null).ToList() : new List<Weapon>();
+        List<Weapon> unowned = allWeapons.Except(owned).ToList();
 
         // Buff types (example)
         var allBuffTypes = Enum.GetValues(typeof(BuffType)).Cast<BuffType>().ToList();
@@ -183,28 +176,30 @@ public class LevelUpUI : MonoBehaviour
 
         if (option.kind == UpgradeOption.Kind.Buff)
         {
-            // create a runtime ItemData (buff) and add
-            ItemData buff = ScriptableObject.CreateInstance<ItemData>();
-            buff.itemName = $"{option.buffType}_{option.tier}";
-            buff.itemType = ItemType.Buff;
-            buff.buffValue = GetBuffValueForTier(option.tier);
-            buff.displayName = $"{option.tier} {option.buffType}";
+            // Tạo instance Buff (kế thừa từ Weapon)
+            Buff buff = ScriptableObject.CreateInstance<Buff>();
+            buff.weaponName = $"{option.tier} {option.buffType}";
+            buff.buffType = (BuffType)option.buffType;
             // Optionally set an icon: try to use a placeholder weapon icon if available
-            if (option.targetWeapon != null) buff.icon = option.targetWeapon.icon;
-            else if (weaponPool != null && weaponPool.Length > 0) buff.icon = weaponPool[rnd.Next(weaponPool.Length)].icon;
+            if (option.targetWeapon != null) buff.Icon = option.targetWeapon.Icon;
+            else if (weaponPool != null && weaponPool.Length > 0) buff.Icon = weaponPool[rnd.Next(weaponPool.Length)].Icon;
 
-            inventoryManager.AddItem(buff);
+            // Chuyển đổi tier sang Rarity và upgrade sử dụng WeaponUpgrade
+            Rarity rarity = (Rarity)Enum.Parse(typeof(Rarity), option.tier.ToString());
+            WeaponUpgrade.Upgrade(buff, rarity);
+
+            inventoryManager.AddWeapon(buff);
         }
         else if (option.kind == UpgradeOption.Kind.WeaponUpgrade)
         {
-            // apply upgrade to the player-owned weapon (clone)
+            // apply upgrade to the player-owned weapon using WeaponUpgrade
             var target = option.targetWeapon;
             if (target != null)
             {
-                WeaponData clone = ScriptableObject.Instantiate(target);
-                clone.displayName = $"{target.displayName} +{option.tier}";
-                ApplyUpgradeToWeapon(clone, option.tier);
-                inventoryManager.AddWeapon(clone, equipIfSpace: true);
+                // Chuyển đổi tier sang Rarity (giả sử enum tương đồng)
+                Rarity rarity = (Rarity)Enum.Parse(typeof(Rarity), option.tier.ToString());
+                WeaponUpgrade.Upgrade(target, rarity);
+                // Không cần clone vì LevelUp sẽ cập nhật trực tiếp trên weapon hiện có
             }
         }
         else if (option.kind == UpgradeOption.Kind.WeaponDrop)
@@ -213,68 +208,18 @@ public class LevelUpUI : MonoBehaviour
             var w = option.targetWeapon;
             if (w != null && !inventoryManager.ownedWeapons.Contains(w))
             {
-                inventoryManager.AddWeapon(w, equipIfSpace: true);
+                inventoryManager.AddWeapon(w);
             }
         }
 
         CloseOptions();
     }
 
-    void ApplyUpgradeToWeapon(WeaponData w, UpgradeTier tier)
-    {
-        int statCount = (tier == UpgradeTier.Common || tier == UpgradeTier.Uncommon) ? 1 : 2;
-        float pct = TierPercent(tier);
-
-        List<Action> statAppliers = new List<Action>
-        {
-            () => { w.baseDamage *= (1f + pct); },
-            () => { w.attackRate *= (1f + pct); },
-            () => { w.range *= (1f + pct); }
-        };
-
-        for (int i = 0; i < statCount && statAppliers.Count > 0; i++)
-        {
-            int idx = rnd.Next(0, statAppliers.Count);
-            statAppliers[idx]();
-            statAppliers.RemoveAt(idx);
-        }
-    }
-
-    float TierPercent(UpgradeTier tier)
-    {
-        switch (tier)
-        {
-            case UpgradeTier.Common: return commonPercent;
-            case UpgradeTier.Uncommon: return uncommonPercent;
-            case UpgradeTier.Rare: return rarePercent;
-            case UpgradeTier.Epic: return epicPercent;
-            case UpgradeTier.Legendary: return legendaryPercent;
-        }
-        return commonPercent;
-    }
-
-    float GetBuffValueForTier(UpgradeTier tier)
-    {
-        switch (tier)
-        {
-            case UpgradeTier.Common: return 5f;
-            case UpgradeTier.Uncommon: return 10f;
-            case UpgradeTier.Rare: return 20f;
-            case UpgradeTier.Epic: return 40f;
-            case UpgradeTier.Legendary: return 80f;
-        }
-        return 0f;
-    }
-
     UpgradeTier PickRandomTierForDisplay()
     {
-        // simple distribution: mostly common/uncommon, rare+ rarer
-        int r = rnd.Next(0, 100);
-        if (r < 50) return UpgradeTier.Common;
-        if (r < 75) return UpgradeTier.Uncommon;
-        if (r < 90) return UpgradeTier.Rare;
-        if (r < 98) return UpgradeTier.Epic;
-        return UpgradeTier.Legendary;
+        // Sử dụng RarityHelper để random tier (chuyển sang UpgradeTier)
+        Rarity randomRarity = RarityHelper.GetRandomRarity();
+        return (UpgradeTier)Enum.Parse(typeof(UpgradeTier), randomRarity.ToString());
     }
 
     public void CloseOptions()
@@ -296,8 +241,6 @@ public class LevelUpUI : MonoBehaviour
         public Kind kind;
         public UpgradeTier tier;
         public BuffType buffType;
-        public WeaponData targetWeapon; // if set, UI can show its icon
+        public Weapon targetWeapon; // if set, UI can show its icon
     }
-
-    public enum BuffType { Health, Luck, Damage, AttackSpeed }
 }
