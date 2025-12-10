@@ -34,8 +34,8 @@ public class InventoryUI : MonoBehaviour
     {
         if (InventoryManager.Instance != null)
         {
-            InventoryManager.Instance.OnChanged += RefreshAll;
-            InventoryManager.Instance.OnWeaponsChanged += RefreshAll;
+            InventoryManager.Instance.OnInventoryChanged +=(s,e) => RefreshAll();
+            InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => RefreshAll();
         }
         RefreshAll();
     }
@@ -44,8 +44,8 @@ public class InventoryUI : MonoBehaviour
     {
         if (InventoryManager.Instance != null)
         {
-            InventoryManager.Instance.OnChanged -= RefreshAll;
-            InventoryManager.Instance.OnWeaponsChanged -= RefreshAll;
+            InventoryManager.Instance.OnInventoryChanged -= (s,e) => RefreshAll();
+            InventoryManager.Instance.OnActiveWeaponsChanged -= (s,e) => RefreshAll();
         }
     }
 
@@ -112,17 +112,17 @@ public class InventoryUI : MonoBehaviour
         }
 
         // Items
-        if (itemsParent != null)
-        {
-            foreach (var it in InventoryManager.Instance.items)
-            {
-                if (it == null) continue;
-                GameObject go = Instantiate(slotPrefab, itemsParent);
-                var slot = go.GetComponent<InventorySlotUI>();
-                if (slot != null) slot.Bind(it);
-                spawnedSlots.Add(go);
-            }
-        }
+        // if (itemsParent != null)
+        // {
+        //     foreach (var it in InventoryManager.Instance.items)
+        //     {
+        //         if (it == null) continue;
+        //         GameObject go = Instantiate(slotPrefab, itemsParent);
+        //         var slot = go.GetComponent<InventorySlotUI>();
+        //         if (slot != null) slot.Bind(it);
+        //         spawnedSlots.Add(go);
+        //     }
+        // }
 
         // ensure equipped visuals up to date
         foreach (var go in spawnedSlots)

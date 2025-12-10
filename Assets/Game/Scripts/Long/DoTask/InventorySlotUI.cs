@@ -18,18 +18,18 @@ public class InventorySlotUI : MonoBehaviour
     public GameObject equippedOverlay; // small dot/outline to indicate equipped (optional)
     public GameObject highlightSelected; // optional for gamepad/selection feedback
 
-    InventoryItemBase itemData;
-    WeaponData weaponData;
+    // InventoryItemBase itemData;
+    Weapon weaponData;
 
-    public void Bind(InventoryItemBase data)
+    public void Bind(Weapon data)
     {
-        itemData = data;
-        weaponData = data as WeaponData;
+        // itemData = data;
+        weaponData = data as Weapon;
 
         if (icon != null)
         {
-            icon.sprite = data != null ? data.icon : null;
-            icon.enabled = data != null && data.icon != null;
+            icon.sprite = data != null ? data.Icon : null;
+            icon.enabled = data != null && data.Icon != null;
         }
 
         UpdateEquippedVisual();

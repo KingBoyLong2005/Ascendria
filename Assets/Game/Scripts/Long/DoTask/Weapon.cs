@@ -10,7 +10,7 @@ public struct WeaponContext
 public abstract class Weapon : ScriptableObject
 {
     public string weaponName = "DefaultWeapon";
-
+    public Sprite Icon;
     [Header("Stats")]
     public float damage = 10f;
     public float range = 2f;

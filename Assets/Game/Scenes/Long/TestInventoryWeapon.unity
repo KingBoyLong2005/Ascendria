@@ -442,7 +442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc00ec73841dd54898904dbabe1a8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
   ownedWeapons: []
   activeWeapons: []
   maxActiveWeapons: 6
@@ -1714,7 +1713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1632776357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,7 +1974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1781363795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,20 +2323,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52f51bb79e037647a7a87c60d373a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSystem: {fileID: 2076285520}
+  levelManager: {fileID: 0}
   inventoryManager: {fileID: 519951665}
   panel: {fileID: 1580212751}
   optionPrefab: {fileID: 9017777738390772209, guid: 691911d92dd6f7847bd7d47f56268bbd, type: 3}
   optionsParent: {fileID: 1580212755}
   optionCount: 3
   weaponPool:
-  - {fileID: 11400000, guid: 5e2d3cef05d2d7241ae1f0a823f77f67, type: 2}
-  - {fileID: 11400000, guid: 91561dd8939299b42bdbe5f2066b76e0, type: 2}
-  commonPercent: 0.08
-  uncommonPercent: 0.12
-  rarePercent: 0.18
-  epicPercent: 0.28
-  legendaryPercent: 0.45
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2076285519
 GameObject:
   m_ObjectHideFlags: 0

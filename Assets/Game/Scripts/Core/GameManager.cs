@@ -24,7 +24,9 @@ public class GameManager : MonoBehaviour
     private EnemyManager enemyManager;
     private DamageManager damageManager;
 
+    private InventoryManager inventoryManager;
     private WeaponManager weaponManager;
+    private LevelManager levelManager;
     private LootDropManager lootDropManager;
 
     private void Awake()
@@ -58,12 +60,15 @@ public class GameManager : MonoBehaviour
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
 
-        weaponManager = gameObject.AddComponent<WeaponManager>();
         poolManager = gameObject.AddComponent<PoolManager>();
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
 
+        inventoryManager = gameObject.AddComponent<InventoryManager>();
+        weaponManager = gameObject.AddComponent<WeaponManager>();    
+        levelManager = gameObject.AddComponent<LevelManager>();
         lootDropManager = gameObject.AddComponent<LootDropManager>();
+
     }
 
 

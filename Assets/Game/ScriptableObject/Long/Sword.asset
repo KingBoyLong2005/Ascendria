@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189ace36d619b67468f14336bb212b5d, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  weaponName: DefaultWeapon
-  damage: 10
-  range: 6.5
-  size: 7
+  weaponName: Sword
+  Icon: {fileID: 21300000, guid: f027a30c1da707b488244ad97c182377, type: 3}
+  damage: 100
+  range: 7
+  size: 6.5
   cooldown: 1
   level: 1
   slashEffectPrefab: {fileID: 853751417762646301, guid: e53c177e32f50844fab2f084456093da, type: 3}
