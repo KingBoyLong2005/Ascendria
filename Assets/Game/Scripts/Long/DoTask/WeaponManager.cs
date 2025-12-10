@@ -116,7 +116,7 @@ public class WeaponManager : MonoBehaviour
         weapons = new List<Weapon>();
 
         foreach (var w in InventoryManager.Instance.activeWeapons)
-            weapons.Add(Instantiate(w));
+            weapons.Add(w);
 
         activated = true;
         Debug.Log(">>> WeaponManager ACTIVATED SUCCESS");
@@ -192,11 +192,11 @@ public class WeaponManager : MonoBehaviour
             return;
         }
         wp = weapons.First();
-        if(Input.GetKeyDown(KeyCode.U) && DebugTest)
-        {
-            WeaponUpgrade.Upgrade(wp,RarityHelper.GetRandomRarity());
-            Debug.Log($"Damage: {wp.damage} \n Range: {wp.range} \n Size: {wp.size} \n Cooldown: {wp.cooldown} ");
-        }
+        // if(Input.GetKeyDown(KeyCode.U) && DebugTest)
+        // {
+        //     WeaponUpgrade.Upgrade(wp,RarityHelper.GetRandomRarity());
+        //     Debug.Log($"Damage: {wp.damage} \n Range: {wp.range} \n Size: {wp.size} \n Cooldown: {wp.cooldown} ");
+        // }
     }
     // --- GET FROM INVENTORY (placeholder) ---
     public Weapon GetFromInventory(Weapon wp)
@@ -206,7 +206,7 @@ public class WeaponManager : MonoBehaviour
     }
     public void AddWeapon(Weapon w)
     {
-        weapons.Add(w);
+        weapons.Add(Instantiate(w));
     }
 
     // Event handle

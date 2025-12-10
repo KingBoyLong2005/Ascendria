@@ -3,31 +3,67 @@ using System;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance { get; private set; }
+
+    [Header("Level Progression")]
     public int level = 1;
     public float currentXP = 0f;
     public float xpToNext = 100f;
-    [Tooltip("Multiply xpToNext on each level-up")]
     public float growthFactor = 1.5f;
 
-    // event gửi level mới và optional: how many choices to present (we'll keep it simple)
-    public event Action<int> OnLevelUp;
+    // Event:
+    // - OnCreated: bắn khi Instance đã được gán xong (UI dùng để đăng ký OnLevelUp)
+    // - OnLevelUp: gửi mỗi khi lên level
+    public static event EventHandler OnCreated;
+    public event EventHandler<int> OnLevelUp;
 
-    // Add xp; call from pickups or debug key
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
+        // Báo cho LevelUpUI biết rằng LevelManager đã sẵn sàng
+        OnCreated?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void Update()
+    {
+        // TEST nâng cấp bằng phím U 
+        // (Bạn có thể xoá nếu không cần)
+        if (Input.GetKeyDown(KeyCode.U))
+            AddXP(100);
+    }
+
+    /// <summary>
+    /// Thêm XP và xử lý logic lên cấp
+    /// </summary>
     public void AddXP(float amount)
     {
         if (amount <= 0) return;
+
         currentXP += amount;
-        // support multiple levels if a lot of xp
+
         while (currentXP >= xpToNext)
         {
             currentXP -= xpToNext;
             level++;
+
+            // tăng mức XP cần cho level tiếp theo
             xpToNext *= growthFactor;
-            OnLevelUp?.Invoke(level);
+
+            // báo UI rằng đã lên level mới
+            OnLevelUp?.Invoke(this, level);
         }
     }
 
-    // helper for UI
+    /// <summary>
+    /// Lấy tỉ lệ % XP để hiện UI
+    /// </summary>
     public float GetProgress01()
     {
         if (xpToNext <= 0) return 0f;

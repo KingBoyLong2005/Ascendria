@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private InventoryManager inventoryManager;
     private WeaponManager weaponManager;
+    private LevelManager levelManager;
     private LootDropManager lootDropManager;
 
     private void Awake()
@@ -65,7 +66,9 @@ public class GameManager : MonoBehaviour
 
         inventoryManager = gameObject.AddComponent<InventoryManager>();
         weaponManager = gameObject.AddComponent<WeaponManager>();    
+        levelManager = gameObject.AddComponent<LevelManager>();
         lootDropManager = gameObject.AddComponent<LootDropManager>();
+
     }
 
 

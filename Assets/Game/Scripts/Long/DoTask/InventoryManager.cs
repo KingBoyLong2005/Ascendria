@@ -47,12 +47,11 @@ public class InventoryManager : MonoBehaviour
                 var defaultWeapon = FindFirstObjectByType<PlayerAttack>().wp;
                 Debug.Log("Inventory: NO DEFAULT WEAPON → thêm vũ khí mặc định");
 
-                // GIẢ SỬ BẠN GÁN TRONG INSPECTOR một weapon default
-                // như wpDefault hoặc weapon nào bạn muốn
                 if (defaultWeapon != null)
                 {
-                    ownedWeapons.Add(defaultWeapon);
-                    activeWeapons.Add(defaultWeapon);
+                    Weapon runtimeDefault = Instantiate(defaultWeapon);
+                    ownedWeapons.Add(runtimeDefault);
+                    activeWeapons.Add(runtimeDefault);
                 }
             }
             else if (activeWeapons.Count == 0)
@@ -71,11 +70,13 @@ public class InventoryManager : MonoBehaviour
     {
         if (weapon == null) return;
 
-        if (!ownedWeapons.Contains(weapon))
-            ownedWeapons.Add(weapon);
+        // Tạo 1 bản runtime để dùng trong game
+        Weapon runtimeWeapon = Instantiate(weapon);
 
-        if (autoEquip && activeWeapons.Count < maxActiveWeapons && !activeWeapons.Contains(weapon))
-            activeWeapons.Add(weapon);
+        ownedWeapons.Add(runtimeWeapon);
+
+        if (autoEquip && activeWeapons.Count < maxActiveWeapons)
+            activeWeapons.Add(runtimeWeapon);
 
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
         OnActiveWeaponsChanged?.Invoke(this, EventArgs.Empty);

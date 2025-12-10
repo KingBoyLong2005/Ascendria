@@ -3,7 +3,9 @@ using UnityEngine;
 public static class WeaponUpgrade
 {
     public static void Upgrade(Weapon weapon, Rarity rarity)
-    {
+    {   
+        // if (!Application.isPlaying || weapon == null)
+        //     return;
         weapon.LevelUp(rarity);
         Debug.Log($"{weapon.weaponName} upgraded to Lv.{weapon.level} ({rarity})");
     }
