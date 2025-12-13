@@ -444,7 +444,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ownedWeapons: []
   activeWeapons: []
+  ownedBookBuffs: []
+  activeBookBuffs: []
   maxActiveWeapons: 6
+  maxActiveBookBuffs: 3
 --- !u!4 &519951666
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,9 +2332,6 @@ MonoBehaviour:
   optionPrefab: {fileID: 9017777738390772209, guid: 691911d92dd6f7847bd7d47f56268bbd, type: 3}
   optionsParent: {fileID: 1580212755}
   optionCount: 3
-  weaponPool:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &2076285519
 GameObject:
   m_ObjectHideFlags: 0

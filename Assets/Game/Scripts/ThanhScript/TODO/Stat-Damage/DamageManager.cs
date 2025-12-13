@@ -1,4 +1,4 @@
-// DamageManager.cs — listens for hits, calculates damage, applies to player
+// DamageManager.cs ï¿½ listens for hits, calculates damage, applies to player
 using UnityEngine;
 using System;
 
@@ -19,7 +19,7 @@ public class DamageManager : MonoBehaviour
     public void Start()
     {
         EnemyManager.Instance.OnEnemyHitPlayer += EnemyManager_OnEnemyHitPlayer;
-        //WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
+        WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
     }
 
     private void OnDisable()

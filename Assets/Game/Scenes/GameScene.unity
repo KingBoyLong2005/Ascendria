@@ -2007,8 +2007,6 @@ MonoBehaviour:
   optionPrefab: {fileID: 9017777738390772209, guid: 691911d92dd6f7847bd7d47f56268bbd, type: 3}
   optionsParent: {fileID: 1348012222}
   optionCount: 3
-  weaponPool:
-  - {fileID: 0}
 --- !u!1 &1550146703
 GameObject:
   m_ObjectHideFlags: 0

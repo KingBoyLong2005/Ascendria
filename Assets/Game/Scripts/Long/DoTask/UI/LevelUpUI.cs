@@ -13,8 +13,13 @@ public class LevelUpUI : MonoBehaviour
     public Transform optionsParent;
     public int optionCount = 3;
 
-    [Header("Weapon pool")]
-    public Weapon[] weaponPool;
+    // [Header("Weapon pool")]
+    // public Weapon[] weaponPool;
+    // [Header("Buff pool")]
+    // public BookBuff[] buffPool;
+    [Header("Database")]
+    private UpgradeDatabase upgradeDB;
+
 
     List<LevelUpOptionUI> spawnedOptions = new();
     bool isShowing = false;
@@ -52,6 +57,8 @@ public class LevelUpUI : MonoBehaviour
         // đăng ký sự kiện lên level
         cachedLevelUpHandler = (s, lvl) => OnLevelUp(lvl);
         levelManager.OnLevelUp += cachedLevelUpHandler;
+
+        upgradeDB = UpgradeDatabase.Instance;
 
         if (panel != null)
             panel.SetActive(false);
@@ -101,7 +108,8 @@ public class LevelUpUI : MonoBehaviour
         foreach (var o in spawnedOptions) Destroy(o.gameObject);
         spawnedOptions.Clear();
 
-        List<Weapon> allWeapons = weaponPool?.Where(x => x != null).ToList() ?? new();
+        // List<Weapon> allWeapons = weaponPool?.Where(x => x != null).ToList() ?? new();
+        List<Weapon> allWeapons = upgradeDB.allWeapons.ToList();
         List<Weapon> owned = inventoryManager?.ownedWeapons.Where(x => x != null).ToList() ?? new();
         List<Weapon> unowned = allWeapons.Except(owned).ToList();
 
@@ -129,14 +137,13 @@ public class LevelUpUI : MonoBehaviour
             });
         }
 
-        foreach (var b in allBuffTypes)
+        foreach (var buff in upgradeDB.allBuffs)
         {
             candidates.Add(new UpgradeOption
             {
                 kind = UpgradeOption.Kind.Buff,
                 tier = PickRandomTierForDisplay(),
-                buffType = b,
-                targetWeapon = null
+                targetBuff = buff
             });
         }
 
@@ -147,9 +154,12 @@ public class LevelUpUI : MonoBehaviour
         {
             if (chosen.Count >= optionCount) break;
 
-            bool duplicate = chosen.Any(ch =>
-                   (c.kind != UpgradeOption.Kind.Buff && ch.targetWeapon == c.targetWeapon)
-                || (c.kind == UpgradeOption.Kind.Buff && ch.buffType == c.buffType));
+                bool duplicate = chosen.Any(ch =>
+                    (c.kind == UpgradeOption.Kind.WeaponUpgrade && ch.targetWeapon == c.targetWeapon) ||
+                    (c.kind == UpgradeOption.Kind.WeaponDrop    && ch.targetWeapon == c.targetWeapon) ||
+                    (c.kind == UpgradeOption.Kind.Buff          && ch.targetBuff    == c.targetBuff)
+                );
+
 
             if (!duplicate)
                 chosen.Add(c);
@@ -219,19 +229,37 @@ public class LevelUpUI : MonoBehaviour
             // 3) BUFF (nếu bạn còn dùng)
             // ───────────────────────────────────────────────
             case UpgradeOption.Kind.Buff:
-                Buff buff = ScriptableObject.CreateInstance<Buff>();
-                buff.weaponName = $"{option.tier} {option.buffType}";
-                buff.buffType = option.buffType;
+            {
+                // Kiểm tra nhân vật đã từng có buff này chưa
+                BookBuff runtimeBuff = inventoryManager.ownedBookBuffs
+                    .FirstOrDefault(b => b.buffId == option.targetBuff.buffId);
 
-                if (weaponPool?.Length > 0)
-                    buff.Icon = weaponPool[rnd.Next(weaponPool.Length)].Icon;
+                if (runtimeBuff == null)
+                {
+                    // LẦN ĐẦU NHẬN BUFF → CLONE VÀ LEVELUP 1 LẦN
+                    runtimeBuff = Instantiate(option.targetBuff);
+                    runtimeBuff.level = 0; // đảm bảo reset template
 
-                WeaponUpgrade.Upgrade(buff, rarity);
+                    runtimeBuff.LevelUp(rarity);
 
-                // Buff cũng phải là instance runtime
-                inventoryManager.AddWeapon(buff);
-                WeaponManager.Instance.AddWeapon(buff);
-                break;
+                    inventoryManager.AddBuff(runtimeBuff);
+
+                    // APPLY VÀO PLAYER
+                    BookBuffManager.Instance.ApplyBuff(runtimeBuff);
+
+                    Debug.Log($"Nhận buff mới: {runtimeBuff.name}, level {runtimeBuff.level}");
+                }
+                else
+                {
+                    // ĐÃ CÓ → TĂNG LEVEL + APPLY LẠI
+                    runtimeBuff.LevelUp(rarity);
+
+                    BookBuffManager.Instance.ApplyBuff(runtimeBuff);
+
+                    Debug.Log($"Buff {runtimeBuff.name} tăng cấp lên {runtimeBuff.level}");
+                }
+            }
+            break;
         }
 
         CloseOptions();
@@ -259,9 +287,11 @@ public class LevelUpUI : MonoBehaviour
     public class UpgradeOption
     {
         public enum Kind { WeaponUpgrade, WeaponDrop, Buff }
+
         public Kind kind;
         public UpgradeTier tier;
-        public BuffType buffType;
         public Weapon targetWeapon;
+        public BookBuff targetBuff;
     }
+
 }
