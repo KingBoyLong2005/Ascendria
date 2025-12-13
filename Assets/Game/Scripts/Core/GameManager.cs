@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     private WeaponManager weaponManager;
     private LootDropManager lootDropManager;
 
+    private BossManager bossManager;
+    private GameEventManager gameEventManager;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -51,7 +54,11 @@ public class GameManager : MonoBehaviour
     }
 
     private void HandleMapReady(object sender, EventArgs e)
-    {   
+    {
+        bossManager = gameObject.AddComponent<BossManager>();
+        gameEventManager = gameObject.AddComponent<GameEventManager>();
+        gameEventManager.Initialize(bossManager);
+
         playerManager = gameObject.AddComponent<PlayerManager01>();
         playerManager.Initialize();
 
@@ -64,6 +71,10 @@ public class GameManager : MonoBehaviour
         damageManager = gameObject.AddComponent<DamageManager>();
 
         lootDropManager = gameObject.AddComponent<LootDropManager>();
+
+        //bossManager = gameObject.AddComponent<BossManager>();
+        //gameEventManager = gameObject.AddComponent<GameEventManager>();
+        //gameEventManager.Initialize(bossManager);
     }
 
 
