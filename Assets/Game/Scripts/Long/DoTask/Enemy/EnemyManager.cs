@@ -93,6 +93,11 @@ public class EnemyManager : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            ActiveByButton = !ActiveByButton;
+        }
+
         elapsedTime += Time.deltaTime;
         if (elapsedTime >= nextDiff)
         { 

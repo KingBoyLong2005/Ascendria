@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c52f51bb79e037647a7a87c60d373a6b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - levelManager: {instanceID: 0}
+  - inventoryManager: {instanceID: 0}
+  - panel: {instanceID: 0}
+  - optionPrefab: {instanceID: 0}
+  - optionsParent: {instanceID: 0}
+  - upgradeDB: {fileID: 11400000, guid: b916edb292b67cc4fa0b0add4640eddc, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

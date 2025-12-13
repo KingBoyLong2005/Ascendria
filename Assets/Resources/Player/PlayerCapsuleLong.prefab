@@ -268,13 +268,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4676158689981713300}
   - component: {fileID: 3935490986662458364}
-  - component: {fileID: 7792792565113786999}
   - component: {fileID: 1210979075996420475}
   - component: {fileID: 8623032086461577046}
   - component: {fileID: 1360813292107902476}
   - component: {fileID: 3817501755868396775}
   - component: {fileID: 8952411064186125732}
   - component: {fileID: 582396682465065112}
+  - component: {fileID: 7792792565113786999}
+  - component: {fileID: 3826166581934954284}
   m_Layer: 3
   m_Name: PlayerCapsuleLong
   m_TagString: Player
@@ -327,39 +328,6 @@ CharacterController:
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.93, z: 0}
---- !u!114 &7792792565113786999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8730884717223232046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 4
-  RotationSmoothTime: 0.12
-  SpeedChangeRate: 10
-  LandingAudioClip: {fileID: 0}
-  FootstepAudioClips: []
-  FootstepAudioVolume: 0.5
-  JumpHeight: 3
-  Gravity: -20
-  JumpTimeout: 0
-  FallTimeout: 0.15
-  Grounded: 1
-  GroundedOffset: -0.14
-  GroundedRadius: 0.28
-  GroundLayers:
-    serializedVersion: 2
-    m_Bits: 256
-  CinemachineCameraTarget: {fileID: 2266019921531878755}
-  TopClamp: 70
-  BottomClamp: -30
-  CameraAngleOverride: 0
-  LockCameraPosition: 0
 --- !u!114 &1210979075996420475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +511,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectRadius: 5
+--- !u!114 &7792792565113786999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730884717223232046}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 4
+  RotationSmoothTime: 0.12
+  SpeedChangeRate: 10
+  LandingAudioClip: {fileID: 0}
+  FootstepAudioClips: []
+  FootstepAudioVolume: 0.5
+  JumpHeight: 3
+  Gravity: -20
+  JumpTimeout: 0
+  FallTimeout: 0.15
+  Grounded: 1
+  GroundedOffset: -0.14
+  GroundedRadius: 0.28
+  GroundLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  CinemachineCameraTarget: {fileID: 2266019921531878755}
+  TopClamp: 70
+  BottomClamp: -30
+  CameraAngleOverride: 0
+  LockCameraPosition: 0
+--- !u!114 &3826166581934954284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730884717223232046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2faa9182fe1167d499b382e5d5db6390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 4
+  RotationSmoothTime: 0.1
+  SpeedChangeRate: 10
+  JumpHeight: 1.2
+  Gravity: -15
+  MaxJumpCount: 2
+  WallCheckDistance: 0.6
+  WallClimbSpeed: 3
+  WallStickForce: 0.2
+  CinemachineCameraTarget: {fileID: 2266019921531878755}
+  TopClamp: 70
+  BottomClamp: -30
 --- !u!1001 &2708337242647618740
 PrefabInstance:
   m_ObjectHideFlags: 0

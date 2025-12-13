@@ -43,19 +43,26 @@ public class LevelUpOptionUI : MonoBehaviour
                     titleText.text = $"{up.tier} Weapon Drop";
                 break;
             case LevelUpUI.UpgradeOption.Kind.Buff:
-                titleText.text = $"{up.tier} {up.buffType}";
+                titleText.text = $"{up.tier} {up.targetBuff.name}";
                 break;
         }
 
         // Set icon:
         Sprite s = null;
-        if (up.targetWeapon != null && up.targetWeapon.Icon != null)
+
+        // Weapon icon
+        if (up.targetWeapon != null)
         {
             s = up.targetWeapon.Icon;
         }
+        // Buff icon
+        else if (up.targetBuff != null)
+        {
+            s = up.targetBuff.Icon != null ? up.targetBuff.Icon : placeholderIcon;
+        }
+        // fallback
         else
         {
-            // For buff: try placeholder or null
             s = placeholderIcon;
         }
 
@@ -67,19 +74,5 @@ public class LevelUpOptionUI : MonoBehaviour
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => onUpgradeSelected?.Invoke(upgrade));
-    }
-
-    // Optional: if you sometimes call Setup for Weapon directly
-    public void Setup(Weapon w, Action<Weapon> callback)
-    {
-        titleText.text = w != null ? w.weaponName : "Weapon";
-        if (icon != null)
-        {
-            icon.sprite = (w != null) ? w.Icon : placeholderIcon;
-            icon.enabled = (icon.sprite != null);
-        }
-
-        button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(() => callback?.Invoke(w));
     }
 }

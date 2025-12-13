@@ -25,7 +25,9 @@ public class GameManager : MonoBehaviour
     private DamageManager damageManager;
 
     private InventoryManager inventoryManager;
+    private HitBoxManager hitBoxManager;
     private WeaponManager weaponManager;
+    private BookBuffManager bookBuffManager;
     private LevelManager levelManager;
     private LootDropManager lootDropManager;
 
@@ -65,7 +67,9 @@ public class GameManager : MonoBehaviour
         damageManager = gameObject.AddComponent<DamageManager>();
 
         inventoryManager = gameObject.AddComponent<InventoryManager>();
+        hitBoxManager = gameObject.AddComponent<HitBoxManager>();
         weaponManager = gameObject.AddComponent<WeaponManager>();    
+        bookBuffManager = gameObject.AddComponent<BookBuffManager>();
         levelManager = gameObject.AddComponent<LevelManager>();
         lootDropManager = gameObject.AddComponent<LootDropManager>();
 
