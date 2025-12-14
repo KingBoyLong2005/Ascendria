@@ -113,8 +113,6 @@ public class LevelUpUI : MonoBehaviour
         List<Weapon> owned = inventoryManager?.ownedWeapons.Where(x => x != null).ToList() ?? new();
         List<Weapon> unowned = allWeapons.Except(owned).ToList();
 
-        var allBuffTypes = Enum.GetValues(typeof(BuffType)).Cast<BuffType>().ToList();
-
         List<UpgradeOption> candidates = new();
 
         foreach (var w in owned)
