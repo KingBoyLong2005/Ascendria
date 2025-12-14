@@ -3,11 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-/// <summary>
-/// LevelUpOptionUI (cập nhật)
-/// - Setup(UpgradeOption, Action<UpgradeOption>) sẽ hiển thị icon dựa trên UpgradeOption.targetWeapon nếu có.
-/// - Nếu buff và không có icon, sẽ cố gắng lấy placeholder (có thể set từ inspector).
-/// </summary>
 public class LevelUpOptionUI : MonoBehaviour
 {
     public Image icon;
@@ -37,30 +32,37 @@ public class LevelUpOptionUI : MonoBehaviour
         {
             case LevelUpUI.UpgradeOption.Kind.WeaponUpgrade:
                 if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.displayName}";
+                    titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Upgrade";
                 break;
             case LevelUpUI.UpgradeOption.Kind.WeaponDrop:
                 if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Drop: {up.targetWeapon.displayName}";
+                    titleText.text = $"{up.tier} Drop: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Drop";
                 break;
             case LevelUpUI.UpgradeOption.Kind.Buff:
-                titleText.text = $"{up.tier} {up.buffType}";
+                titleText.text = $"{up.tier} {up.targetBuff.name}";
                 break;
         }
 
         // Set icon:
         Sprite s = null;
-        if (up.targetWeapon != null && up.targetWeapon.icon != null)
+
+        // Weapon icon
+        if (up.targetWeapon != null)
         {
-            s = up.targetWeapon.icon;
+            s = up.targetWeapon.Icon;
         }
+        // Buff icon
+        else if (up.targetBuff != null)
+        {
+            s = up.targetBuff.Icon != null ? up.targetBuff.Icon : placeholderIcon;
+        }
+        // fallback
         else
         {
-            // For buff: try placeholder or null
             s = placeholderIcon;
         }
 
@@ -72,19 +74,5 @@ public class LevelUpOptionUI : MonoBehaviour
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => onUpgradeSelected?.Invoke(upgrade));
-    }
-
-    // Optional: if you sometimes call Setup for WeaponData directly
-    public void Setup(WeaponData w, Action<WeaponData> callback)
-    {
-        titleText.text = w != null ? w.displayName : "Weapon";
-        if (icon != null)
-        {
-            icon.sprite = (w != null) ? w.icon : placeholderIcon;
-            icon.enabled = (icon.sprite != null);
-        }
-
-        button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(() => callback?.Invoke(w));
     }
 }

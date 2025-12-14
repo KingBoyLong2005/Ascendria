@@ -1,4 +1,4 @@
-// PlayerStatManager.cs � handles player stats & damage
+// PlayerStatManager.cs � handles player stats & damage
 using UnityEngine;
 
 public class PlayerStatManager : MonoBehaviour
@@ -89,6 +89,8 @@ public class PlayerStatManager : MonoBehaviour
     {
         healthModifierFlat += addFlat;
         healthModifierMult *= mult;
+        // Phải tăng cả currentHealth chứ
+        Debug.Log($"MaxHealth mới: {MaxHealth}, Current: {currentHealth}");
     }
     public void ModifyAttack(float addFlat = 0f, float mult = 1f)
     {

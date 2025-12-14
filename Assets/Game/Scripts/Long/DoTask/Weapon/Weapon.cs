@@ -7,10 +7,9 @@ public struct WeaponContext
     public Transform owner;
 }
 
-public abstract class Weapon : ScriptableObject
+public abstract class Weapon : UpgradableItem
 {
     public string weaponName = "DefaultWeapon";
-
     [Header("Stats")]
     public float damage = 10f;
     public float range = 2f;
@@ -18,7 +17,6 @@ public abstract class Weapon : ScriptableObject
     public float cooldown = 1f;
 
     [Header("Upgrade Level")]
-    public int level = 1;
 
     protected float timer = 0f;
 
@@ -33,7 +31,6 @@ public abstract class Weapon : ScriptableObject
     }
 
     public abstract void Attack(WeaponContext ctx);
-    public abstract void LevelUp(Rarity rarity);
 }
 
 // using UnityEngine;
