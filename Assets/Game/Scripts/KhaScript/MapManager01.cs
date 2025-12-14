@@ -96,6 +96,16 @@ public class MapManager01 : MonoBehaviour
                 spawnTransform // Đặt Boss Gate làm con của điểm spawn để giữ tổ chức trong Hierarchy
             );
             Debug.Log($"<color=green>[MapManager]</color> Boss Gate đã được tạo thành công tại {spawnTransform.position}.");
+
+            // GẮN VÀ KHỞI TẠO BossGateTrigger
+            BossGateTrigger gateTrigger = currentBossGateInstance.AddComponent<BossGateTrigger>();
+            if (gateTrigger != null)
+            {
+                // Truyền Transform của điểm spawn (spawnTransform) cho Trigger
+                gateTrigger.Initialize(spawnTransform);
+            }
+
+            Debug.Log($"<color=green>[MapManager]</color> Boss Gate đã được tạo thành công.");
         }
         else
         {
