@@ -1,15 +1,18 @@
+// InventorySlotUI.cs (updated to support both Weapon and BookBuff)
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 using System;
 
+public enum InventoryItemType { Weapon, BookBuff }
+
 /// <summary>
-/// Unified slot UI that can represent WeaponData or generic InventoryItemBase (ItemData).
+/// Unified slot UI that can represent Weapon or BookBuff.
 /// - Shows icon
-/// - Shows equipped overlay when the bound item is a WeaponData and it's in InventoryManager.Instance.activeWeapons
+/// - Shows equipped overlay if equipped
 /// - On pointer hover/show can call InventoryTooltip.Instance.Show(...)
-/// Attach this script to your slot prefab (replace old WeaponSlotUI / ItemSlotUI prefabs).
+/// Attach this script to your slot prefab.
 /// </summary>
 public class InventorySlotUI : MonoBehaviour
 // IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
@@ -18,13 +21,15 @@ public class InventorySlotUI : MonoBehaviour
     public GameObject equippedOverlay; // small dot/outline to indicate equipped (optional)
     public GameObject highlightSelected; // optional for gamepad/selection feedback
 
-    // InventoryItemBase itemData;
+    InventoryItemType itemType;
     Weapon weaponData;
+    BookBuff bookBuffData;
 
     public void Bind(Weapon data)
     {
-        // itemData = data;
-        weaponData = data as Weapon;
+        itemType = InventoryItemType.Weapon;
+        weaponData = data;
+        bookBuffData = null;
 
         if (icon != null)
         {
@@ -35,23 +40,51 @@ public class InventorySlotUI : MonoBehaviour
         UpdateEquippedVisual();
     }
 
+    public void Bind(BookBuff data)
+    {
+        itemType = InventoryItemType.BookBuff;
+        bookBuffData = data;
+        weaponData = null;
+
+        if (icon != null)
+        {
+            icon.sprite = data != null ? data.Icon : null; // Assuming BookBuff has Icon field; add if missing
+            icon.enabled = data != null && data.Icon != null;
+        }
+
+        UpdateEquippedVisual();
+    }
+
     public void UpdateEquippedVisual()
     {
         if (equippedOverlay == null) return;
-        if (weaponData == null || InventoryManager.Instance == null)
+        if (InventoryManager.Instance == null)
         {
             equippedOverlay.SetActive(false);
             return;
         }
-        bool eq = InventoryManager.Instance.activeWeapons.Contains(weaponData);
+
+        bool eq = false;
+        if (itemType == InventoryItemType.Weapon && weaponData != null)
+        {
+            eq = InventoryManager.Instance.activeWeapons.Contains(weaponData);
+        }
+        else if (itemType == InventoryItemType.BookBuff && bookBuffData != null)
+        {
+            eq = InventoryManager.Instance.activeBookBuffs.Contains(bookBuffData);
+        }
+
         equippedOverlay.SetActive(eq);
     }
 
     // public void OnPointerEnter(PointerEventData eventData)
     // {
-    //     if (InventoryTooltip.Instance != null && itemData != null)
+    //     if (InventoryTooltip.Instance != null)
     //     {
-    //         InventoryTooltip.Instance.Show(itemData, Input.mousePosition);
+    //         if (itemType == InventoryItemType.Weapon && weaponData != null)
+    //             InventoryTooltip.Instance.Show(weaponData, Input.mousePosition);
+    //         else if (itemType == InventoryItemType.BookBuff && bookBuffData != null)
+    //             InventoryTooltip.Instance.Show(bookBuffData, Input.mousePosition); // Assuming overload for BookBuff
     //     }
     // }
 
@@ -62,17 +95,25 @@ public class InventorySlotUI : MonoBehaviour
 
     // public void OnPointerClick(PointerEventData eventData)
     // {
-    //     // Left click: toggle equip if it's a weapon
-    //     if (weaponData != null && InventoryManager.Instance != null)
+    //     if (InventoryManager.Instance == null) return;
+
+    //     // Left click: toggle equip
+    //     if (itemType == InventoryItemType.Weapon && weaponData != null)
     //     {
     //         if (InventoryManager.Instance.activeWeapons.Contains(weaponData))
     //             InventoryManager.Instance.UnequipWeapon(weaponData);
     //         else
     //             InventoryManager.Instance.EquipWeapon(weaponData);
-    //         UpdateEquippedVisual();
+    //     }
+    //     else if (itemType == InventoryItemType.BookBuff && bookBuffData != null)
+    //     {
+    //         if (InventoryManager.Instance.activeBookBuffs.Contains(bookBuffData))
+    //             InventoryManager.Instance.UnequipBookBuff(bookBuffData);
+    //         else
+    //             InventoryManager.Instance.EquipBookBuff(bookBuffData);
     //     }
 
-    //     // Right click: optional: use consumable / inspect (implement as needed)
+    //     UpdateEquippedVisual();
     // }
 
     // // Optional: allow external code to highlight/select this slot

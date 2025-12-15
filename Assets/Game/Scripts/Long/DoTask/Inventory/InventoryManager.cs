@@ -1,3 +1,4 @@
+// InventoryManager.cs (added Equip/Unequip for BookBuff, consistent with weapons)
 using UnityEngine;
 using System;
 using System.Collections.Generic;
@@ -142,17 +143,36 @@ public class InventoryManager : MonoBehaviour
         OnActiveBookBuffsChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    // public void EquipB(Weapon weapon)
-    // {
-    //     if (weapon == null) return;
-    //     if (activeWeapons.Contains(weapon)) return;
-    //     if (activeWeapons.Count >= maxActiveWeapons) return;
+    public void EquipBookBuff(BookBuff bookBuff)
+    {
+        if (bookBuff == null) return;
+        if (activeBookBuffs.Contains(bookBuff)) return;
+        if (activeBookBuffs.Count >= maxActiveBookBuffs) return;
 
-    //     activeWeapons.Add(weapon);
-    //     OnActiveWeaponsChanged?.Invoke(this, EventArgs.Empty);
-    // }
+        activeBookBuffs.Add(bookBuff);
+        OnActiveBookBuffsChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void UnequipBookBuff(BookBuff bookBuff)
+    {
+        if (bookBuff == null) return;
+
+        if (activeBookBuffs.Remove(bookBuff))
+            OnActiveBookBuffsChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     public bool HasBookBuff(BookBuff bb)
     {
         return ownedBookBuffs.Any(b => b.buffId == bb.buffId);
+    }
+    // New: Sort methods (e.g., by name alphabetically; customize as needed)
+    private void SortOwnedWeapons()
+    {
+        ownedWeapons = ownedWeapons.OrderBy(w => w.weaponName).ToList(); // Sort by weaponName
+    }
+
+    private void SortOwnedBookBuffs()
+    {
+        ownedBookBuffs = ownedBookBuffs.OrderBy(b => b.name).ToList(); // Sort by name
     }
 }

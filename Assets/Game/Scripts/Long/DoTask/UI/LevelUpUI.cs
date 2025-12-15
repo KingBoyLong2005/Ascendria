@@ -1,32 +1,21 @@
+// LevelUpUI.cs (simplified to only handle UI display; logic moved to LevelManager)
 using UnityEngine;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 public class LevelUpUI : MonoBehaviour
 {
     [Header("References")]
-    public LevelManager levelManager;
-    public InventoryManager inventoryManager;
     public GameObject panel;
     public LevelUpOptionUI optionPrefab;
     public Transform optionsParent;
-    public int optionCount = 3;
-
-    // [Header("Weapon pool")]
-    // public Weapon[] weaponPool;
-    // [Header("Buff pool")]
-    // public BookBuff[] buffPool;
-    [Header("Database")]
-    private UpgradeDatabase upgradeDB;
-
+    public int optionCount = 3; // Not used here anymore, but kept for ref
 
     List<LevelUpOptionUI> spawnedOptions = new();
     bool isShowing = false;
 
-    System.Random rnd = new System.Random();
-
-    EventHandler<int> cachedLevelUpHandler;
+    EventHandler<LevelManager.LevelUpEventArgs> cachedLevelUpHandler;
+    EventHandler<LevelManager.UpgradeSelectedEventArgs> cachedUpgradeSelectedHandler;
 
     // đảm bảo OnEnable chạy cả trong AddComponent lẫn scene load
     private void OnEnable()
@@ -51,14 +40,13 @@ public class LevelUpUI : MonoBehaviour
 
     private void Initialize()
     {
-        levelManager = LevelManager.Instance;
-        inventoryManager = FindFirstObjectByType<InventoryManager>();
-
         // đăng ký sự kiện lên level
-        cachedLevelUpHandler = (s, lvl) => OnLevelUp(lvl);
-        levelManager.OnLevelUp += cachedLevelUpHandler;
+        cachedLevelUpHandler = OnLevelUp;
+        LevelManager.Instance.OnLevelUp += cachedLevelUpHandler;
 
-        upgradeDB = UpgradeDatabase.Instance;
+        // Also subscribe to upgrade selected to close UI
+        cachedUpgradeSelectedHandler = OnUpgradeSelected;
+        LevelManager.Instance.OnUpgradeSelected += cachedUpgradeSelectedHandler;
 
         if (panel != null)
             panel.SetActive(false);
@@ -67,35 +55,21 @@ public class LevelUpUI : MonoBehaviour
     private void OnDisable()
     {
         // gỡ event cho sạch
-        if (LevelManager.Instance != null && cachedLevelUpHandler != null)
+        if (LevelManager.Instance != null)
         {
-            LevelManager.Instance.OnLevelUp -= cachedLevelUpHandler;
+            if (cachedLevelUpHandler != null)
+                LevelManager.Instance.OnLevelUp -= cachedLevelUpHandler;
+            if (cachedUpgradeSelectedHandler != null)
+                LevelManager.Instance.OnUpgradeSelected -= cachedUpgradeSelectedHandler;
         }
     }
 
-    private void HandleReady(object sender, EventArgs e)
+    private void OnLevelUp(object sender, LevelManager.LevelUpEventArgs e)
     {
-        levelManager = LevelManager.Instance;
-        inventoryManager = FindFirstObjectByType<InventoryManager>();
-
-        // tạo 1 delegate duy nhất để unsubscribe được
-        cachedLevelUpHandler = (s, lvl) => OnLevelUp(lvl);
-
-        // đăng ký
-        levelManager.OnLevelUp += cachedLevelUpHandler;
-
-        if (panel != null) panel.SetActive(false);
+        ShowOptions(e.Options);
     }
 
-    private void OnLevelUp(int newLevel)
-    {
-        ShowOptions();
-    }
-
-    // --- PHẦN BÊN DƯỚI GIỮ NGUYÊN LOGIC CỦA BẠN ---
-    // (chỉ sửa giao tiếp event, không đụng đến gameplay của bạn)
-
-    public void ShowOptions()
+    public void ShowOptions(List<LevelManager.UpgradeOption> options)
     {
         var MouseActive = FindFirstObjectByType<TPCameraController>();
         MouseActive.isUIOpen = true;
@@ -108,6 +82,7 @@ public class LevelUpUI : MonoBehaviour
         foreach (var o in spawnedOptions) Destroy(o.gameObject);
         spawnedOptions.Clear();
 
+<<<<<<< Updated upstream
         // List<Weapon> allWeapons = weaponPool?.Where(x => x != null).ToList() ?? new();
         List<Weapon> allWeapons = upgradeDB.allWeapons.ToList();
         List<Weapon> owned = inventoryManager?.ownedWeapons.Where(x => x != null).ToList() ?? new();
@@ -164,108 +139,32 @@ public class LevelUpUI : MonoBehaviour
         }
 
         foreach (var opt in chosen)
+=======
+        foreach (var opt in options)
+>>>>>>> Stashed changes
         {
             var inst = Instantiate(optionPrefab, optionsParent);
-            inst.Setup(opt, OnUpgradeOptionSelected);
+            inst.Setup(opt);
+            inst.OnOptionSelected += OnOptionSelectedHandler; // Subscribe to each option's event
             spawnedOptions.Add(inst);
         }
     }
 
-    void OnUpgradeOptionSelected(UpgradeOption option)
+    private void OnOptionSelectedHandler(object sender, LevelUpOptionUI.LevelUpOptionSelectedEventArgs e)
     {
-        if (inventoryManager == null)
+        // Forward to LevelManager to apply
+        LevelManager.Instance.ApplyUpgrade(e.SelectedUpgrade);
+
+        // Unsubscribe from all options to avoid leaks
+        foreach (var opt in spawnedOptions)
         {
-            CloseOptions();
-            return;
+            opt.OnOptionSelected -= OnOptionSelectedHandler;
         }
-
-        Rarity rarity = (Rarity)Enum.Parse(typeof(Rarity), option.tier.ToString());
-
-        switch (option.kind)
-        {
-            // ───────────────────────────────────────────────
-            // 1) UPGRADE VŨ KHÍ ĐANG CÓ
-            // ───────────────────────────────────────────────
-            case UpgradeOption.Kind.WeaponUpgrade:
-                if (option.targetWeapon != null)
-                {
-                    // Tìm bản runtime trong inventory (không dùng template)
-                    Weapon runtimeWeapon = inventoryManager.ownedWeapons
-                        .FirstOrDefault(w => w.weaponName == option.targetWeapon.weaponName);
-
-                    if (runtimeWeapon != null)
-                    {
-                        // Nâng cấp đúng bản runtime đang dùng
-                        WeaponUpgrade.Upgrade(runtimeWeapon, rarity);
-                    }
-                    else
-                    {
-                        // Nếu chưa có → thêm mới bằng clone
-                        Weapon newRuntime = Instantiate(option.targetWeapon);
-                        inventoryManager.AddWeapon(newRuntime);
-                        WeaponManager.Instance.AddWeapon(newRuntime);
-                    }
-                }
-                break;
-
-
-            // ───────────────────────────────────────────────
-            // 2) NHẶT VŨ KHÍ MỚI (PHẢI CLONE SCRIPTABLEOBJECT)
-            // ───────────────────────────────────────────────
-            case UpgradeOption.Kind.WeaponDrop:
-                if (!inventoryManager.HasWeapon(option.targetWeapon))
-                {
-                    // Clone thành runtime weapon trước khi thêm
-                    Weapon newRuntime = Instantiate(option.targetWeapon);
-                    inventoryManager.AddWeapon(newRuntime);
-                    WeaponManager.Instance.AddWeapon(newRuntime);
-                }
-                break;
-
-
-            // ───────────────────────────────────────────────
-            // 3) BUFF (nếu bạn còn dùng)
-            // ───────────────────────────────────────────────
-            case UpgradeOption.Kind.Buff:
-            {
-                // Kiểm tra nhân vật đã từng có buff này chưa
-                BookBuff runtimeBuff = inventoryManager.ownedBookBuffs
-                    .FirstOrDefault(b => b.buffId == option.targetBuff.buffId);
-
-                if (runtimeBuff == null)
-                {
-                    // LẦN ĐẦU NHẬN BUFF → CLONE VÀ LEVELUP 1 LẦN
-                    runtimeBuff = Instantiate(option.targetBuff);
-                    runtimeBuff.level = 0; // đảm bảo reset template
-
-                    runtimeBuff.LevelUp(rarity);
-
-                    inventoryManager.AddBuff(runtimeBuff);
-
-                    // APPLY VÀO PLAYER
-                    BookBuffManager.Instance.ApplyBuff(runtimeBuff);
-
-                    Debug.Log($"Nhận buff mới: {runtimeBuff.name}, level {runtimeBuff.level}");
-                }
-                else
-                {
-                    // ĐÃ CÓ → TĂNG LEVEL + APPLY LẠI
-                    runtimeBuff.LevelUp(rarity);
-
-                    BookBuffManager.Instance.ApplyBuff(runtimeBuff);
-
-                    Debug.Log($"Buff {runtimeBuff.name} tăng cấp lên {runtimeBuff.level}");
-                }
-            }
-            break;
-        }
-
-        CloseOptions();
     }
-    UpgradeTier PickRandomTierForDisplay()
+
+    private void OnUpgradeSelected(object sender, LevelManager.UpgradeSelectedEventArgs e)
     {
-        Rarity random = RarityHelper.GetRandomRarity();
-        return (UpgradeTier)Enum.Parse(typeof(UpgradeTier), random.ToString());
+        CloseOptions();
     }
 
     public void CloseOptions()
@@ -278,18 +177,4 @@ public class LevelUpUI : MonoBehaviour
 
         if (panel != null) panel.SetActive(false);
     }
-
-    public enum UpgradeTier { Common, Uncommon, Rare, Epic, Legendary }
-
-    [Serializable]
-    public class UpgradeOption
-    {
-        public enum Kind { WeaponUpgrade, WeaponDrop, Buff }
-
-        public Kind kind;
-        public UpgradeTier tier;
-        public Weapon targetWeapon;
-        public BookBuff targetBuff;
-    }
-
 }

@@ -1,3 +1,4 @@
+// LevelUpOptionUI.cs (simplified; now uses EventHandler instead of Action)
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,8 +13,10 @@ public class LevelUpOptionUI : MonoBehaviour
     // optional placeholder icon to use for buff when no sprite exists
     public Sprite placeholderIcon;
 
-    LevelUpUI.UpgradeOption upgrade;
-    Action<LevelUpUI.UpgradeOption> onUpgradeSelected;
+    LevelManager.UpgradeOption upgrade;
+
+    // Event to notify selection (replaces Action)
+    public event EventHandler<LevelUpOptionSelectedEventArgs> OnOptionSelected;
 
     void Awake()
     {
@@ -22,27 +25,26 @@ public class LevelUpOptionUI : MonoBehaviour
     }
 
     // Setup for UpgradeOption (weapon upgrade/drop or buff)
-    public void Setup(LevelUpUI.UpgradeOption up, Action<LevelUpUI.UpgradeOption> callback)
+    public void Setup(LevelManager.UpgradeOption up)
     {
         upgrade = up;
-        onUpgradeSelected = callback;
 
         // Title text based on kind
         switch (up.kind)
         {
-            case LevelUpUI.UpgradeOption.Kind.WeaponUpgrade:
+            case LevelManager.UpgradeOption.Kind.WeaponUpgrade:
                 if (up.targetWeapon != null)
                     titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Upgrade";
                 break;
-            case LevelUpUI.UpgradeOption.Kind.WeaponDrop:
+            case LevelManager.UpgradeOption.Kind.WeaponDrop:
                 if (up.targetWeapon != null)
                     titleText.text = $"{up.tier} Drop: {up.targetWeapon.weaponName}";
                 else
                     titleText.text = $"{up.tier} Weapon Drop";
                 break;
-            case LevelUpUI.UpgradeOption.Kind.Buff:
+            case LevelManager.UpgradeOption.Kind.Buff:
                 titleText.text = $"{up.tier} {up.targetBuff.name}";
                 break;
         }
@@ -73,6 +75,11 @@ public class LevelUpOptionUI : MonoBehaviour
         }
 
         button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(() => onUpgradeSelected?.Invoke(upgrade));
+        button.onClick.AddListener(() => OnOptionSelected?.Invoke(this, new LevelUpOptionSelectedEventArgs { SelectedUpgrade = upgrade }));
+    }
+
+    public class LevelUpOptionSelectedEventArgs : EventArgs
+    {
+        public LevelManager.UpgradeOption SelectedUpgrade { get; set; }
     }
 }

@@ -1,11 +1,15 @@
+// InventoryUI.cs (ensure parents have layout to prevent overlap; assuming GridLayoutGroup is added in Editor)
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.UI; // For GridLayoutGroup
 
 /// <summary>
 /// Inventory UI controller (updated to use a single slot prefab for both weapons and items).
 /// - Set "slotPrefab" to a prefab that has InventorySlotUI.
 /// - Keep separate parents (weaponsParent / itemsParent) if you want grouping in UI.
+/// - Added buffsParent for BookBuffs.
+/// - Assume weaponsParent and buffsParent have GridLayoutGroup component for auto-arrangement.
 /// </summary>
 public class InventoryUI : MonoBehaviour
 {
@@ -17,7 +21,8 @@ public class InventoryUI : MonoBehaviour
 
     [Header("Slots UI")]
     public Transform weaponsParent;
-    public Transform itemsParent;
+    public Transform buffsParent; // New: Parent for buff slots
+    public Transform itemsParent; // Existing, but commented in original
     public GameObject slotPrefab; // unified prefab (InventorySlotUI)
 
     // internal lists to manage spawned UI elements
@@ -28,6 +33,27 @@ public class InventoryUI : MonoBehaviour
     void Awake()
     {
         if (inventoryPanel != null) inventoryPanel.SetActive(false);
+
+        // Ensure parents have GridLayoutGroup for auto-sorting/arrangement (add if missing)
+        EnsureLayout(weaponsParent);
+        EnsureLayout(buffsParent);
+        if (itemsParent != null) EnsureLayout(itemsParent);
+    }
+
+    private void EnsureLayout(Transform parent)
+    {
+        if (parent == null) return;
+        if (parent.GetComponent<GridLayoutGroup>() == null)
+        {
+            var grid = parent.gameObject.AddComponent<GridLayoutGroup>();
+            grid.childAlignment = TextAnchor.UpperLeft;
+            grid.spacing = new Vector2(10f, 10f); // Adjust spacing as needed
+            grid.cellSize = new Vector2(100f, 100f); // Adjust cell size based on slot prefab
+            // Add ContentSizeFitter if needed for dynamic sizing
+            var fitter = parent.gameObject.AddComponent<ContentSizeFitter>();
+            fitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+        }
     }
 
     void Start()
@@ -36,6 +62,7 @@ public class InventoryUI : MonoBehaviour
         {
             InventoryManager.Instance.OnInventoryChanged +=(s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => RefreshAll();
+            InventoryManager.Instance.OnActiveBookBuffsChanged += (s,e) => RefreshAll(); // Added for buffs
         }
         RefreshAll();
     }
@@ -46,6 +73,7 @@ public class InventoryUI : MonoBehaviour
         {
             InventoryManager.Instance.OnInventoryChanged -= (s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveWeaponsChanged -= (s,e) => RefreshAll();
+            InventoryManager.Instance.OnActiveBookBuffsChanged -= (s,e) => RefreshAll();
         }
     }
 
@@ -98,7 +126,7 @@ public class InventoryUI : MonoBehaviour
 
         if (InventoryManager.Instance == null || slotPrefab == null) return;
 
-        // Weapons (owned)
+        // Weapons (owned, already sorted in InventoryManager)
         if (weaponsParent != null)
         {
             foreach (var w in InventoryManager.Instance.ownedWeapons)
@@ -111,7 +139,20 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        // Items
+        // BookBuffs (owned, already sorted in InventoryManager)
+        if (buffsParent != null)
+        {
+            foreach (var bb in InventoryManager.Instance.ownedBookBuffs)
+            {
+                if (bb == null) continue;
+                GameObject go = Instantiate(slotPrefab, buffsParent);
+                var slot = go.GetComponent<InventorySlotUI>();
+                if (slot != null) slot.Bind(bb);
+                spawnedSlots.Add(go);
+            }
+        }
+
+        // Items (if you have generic items)
         // if (itemsParent != null)
         // {
         //     foreach (var it in InventoryManager.Instance.items)
@@ -119,7 +160,7 @@ public class InventoryUI : MonoBehaviour
         //         if (it == null) continue;
         //         GameObject go = Instantiate(slotPrefab, itemsParent);
         //         var slot = go.GetComponent<InventorySlotUI>();
-        //         if (slot != null) slot.Bind(it);
+        //         if (slot != null) slot.Bind(it); // Assuming Bind overload for Item
         //         spawnedSlots.Add(go);
         //     }
         // }
@@ -130,6 +171,11 @@ public class InventoryUI : MonoBehaviour
             var slot = go.GetComponent<InventorySlotUI>();
             if (slot != null) slot.UpdateEquippedVisual();
         }
+
+        // Force layout rebuild to ensure no overlap
+        LayoutRebuilder.ForceRebuildLayoutImmediate(weaponsParent as RectTransform);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(buffsParent as RectTransform);
+        if (itemsParent != null) LayoutRebuilder.ForceRebuildLayoutImmediate(itemsParent as RectTransform);
     }
 
     #endregion
