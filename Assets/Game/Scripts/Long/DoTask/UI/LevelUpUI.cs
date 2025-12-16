@@ -82,66 +82,7 @@ public class LevelUpUI : MonoBehaviour
         foreach (var o in spawnedOptions) Destroy(o.gameObject);
         spawnedOptions.Clear();
 
-<<<<<<< Updated upstream
-        // List<Weapon> allWeapons = weaponPool?.Where(x => x != null).ToList() ?? new();
-        List<Weapon> allWeapons = upgradeDB.allWeapons.ToList();
-        List<Weapon> owned = inventoryManager?.ownedWeapons.Where(x => x != null).ToList() ?? new();
-        List<Weapon> unowned = allWeapons.Except(owned).ToList();
-
-        List<UpgradeOption> candidates = new();
-
-        foreach (var w in owned)
-        {
-            candidates.Add(new UpgradeOption
-            {
-                kind = UpgradeOption.Kind.WeaponUpgrade,
-                tier = PickRandomTierForDisplay(),
-                targetWeapon = w
-            });
-        }
-
-        foreach (var w in unowned)
-        {
-            candidates.Add(new UpgradeOption
-            {
-                kind = UpgradeOption.Kind.WeaponDrop,
-                tier = UpgradeTier.Common,
-                targetWeapon = w
-            });
-        }
-
-        foreach (var buff in upgradeDB.allBuffs)
-        {
-            candidates.Add(new UpgradeOption
-            {
-                kind = UpgradeOption.Kind.Buff,
-                tier = PickRandomTierForDisplay(),
-                targetBuff = buff
-            });
-        }
-
-        candidates = candidates.OrderBy(x => rnd.Next()).ToList();
-
-        List<UpgradeOption> chosen = new();
-        foreach (var c in candidates)
-        {
-            if (chosen.Count >= optionCount) break;
-
-                bool duplicate = chosen.Any(ch =>
-                    (c.kind == UpgradeOption.Kind.WeaponUpgrade && ch.targetWeapon == c.targetWeapon) ||
-                    (c.kind == UpgradeOption.Kind.WeaponDrop    && ch.targetWeapon == c.targetWeapon) ||
-                    (c.kind == UpgradeOption.Kind.Buff          && ch.targetBuff    == c.targetBuff)
-                );
-
-
-            if (!duplicate)
-                chosen.Add(c);
-        }
-
-        foreach (var opt in chosen)
-=======
         foreach (var opt in options)
->>>>>>> Stashed changes
         {
             var inst = Instantiate(optionPrefab, optionsParent);
             inst.Setup(opt);

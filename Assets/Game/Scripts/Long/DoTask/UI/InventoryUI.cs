@@ -63,6 +63,7 @@ public class InventoryUI : MonoBehaviour
             InventoryManager.Instance.OnInventoryChanged +=(s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveBookBuffsChanged += (s,e) => RefreshAll(); // Added for buffs
+            InventoryManager.Instance.OnActiveItemsChanged += (s, e) => RefreshAll();
         }
         RefreshAll();
     }
@@ -74,6 +75,7 @@ public class InventoryUI : MonoBehaviour
             InventoryManager.Instance.OnInventoryChanged -= (s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveWeaponsChanged -= (s,e) => RefreshAll();
             InventoryManager.Instance.OnActiveBookBuffsChanged -= (s,e) => RefreshAll();
+            InventoryManager.Instance.OnActiveItemsChanged -= (s, e) => RefreshAll();
         }
     }
 
@@ -152,18 +154,17 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        // Items (if you have generic items)
-        // if (itemsParent != null)
-        // {
-        //     foreach (var it in InventoryManager.Instance.items)
-        //     {
-        //         if (it == null) continue;
-        //         GameObject go = Instantiate(slotPrefab, itemsParent);
-        //         var slot = go.GetComponent<InventorySlotUI>();
-        //         if (slot != null) slot.Bind(it); // Assuming Bind overload for Item
-        //         spawnedSlots.Add(go);
-        //     }
-        // }
+        if (itemsParent != null && ItemManager.Instance != null)
+        {
+            foreach (var kv in InventoryManager.Instance.ownedItems) // Access via property or make public/getter
+            {
+                if (kv.Key == null) continue;
+                GameObject go = Instantiate(slotPrefab, itemsParent);
+                var slot = go.GetComponent<InventorySlotUI>();
+                if (slot != null) slot.Bind(kv.Key, kv.Value);
+                spawnedSlots.Add(go);
+            }
+        }
 
         // ensure equipped visuals up to date
         foreach (var go in spawnedSlots)

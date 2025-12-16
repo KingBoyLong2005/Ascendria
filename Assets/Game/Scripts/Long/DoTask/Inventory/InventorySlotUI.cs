@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System;
 
-public enum InventoryItemType { Weapon, BookBuff }
+public enum InventoryItemType { Weapon, BookBuff, Item }
 
 /// <summary>
 /// Unified slot UI that can represent Weapon or BookBuff.
@@ -21,10 +21,35 @@ public class InventorySlotUI : MonoBehaviour
     public GameObject equippedOverlay; // small dot/outline to indicate equipped (optional)
     public GameObject highlightSelected; // optional for gamepad/selection feedback
 
+    public TMP_Text countText;
     InventoryItemType itemType;
     Weapon weaponData;
     BookBuff bookBuffData;
 
+        private Item itemData;
+
+    public void Bind(Item data, int count)
+    {
+        itemType = InventoryItemType.Item;
+        itemData = data;
+        weaponData = null;
+        bookBuffData = null;
+
+        if (icon != null)
+        {
+            icon.sprite = data != null ? data.Icon : null;
+            icon.enabled = data != null && data.Icon != null;
+        }
+
+        if (countText != null)
+        {
+            countText.text = (count > 1) ? count.ToString() : "";
+        }
+
+        // Items are "equipped" by default (auto-applied)
+        if (equippedOverlay != null) equippedOverlay.SetActive(true);
+        UpdateEquippedVisual();
+    }
     public void Bind(Weapon data)
     {
         itemType = InventoryItemType.Weapon;
@@ -72,6 +97,10 @@ public class InventorySlotUI : MonoBehaviour
         else if (itemType == InventoryItemType.BookBuff && bookBuffData != null)
         {
             eq = InventoryManager.Instance.activeBookBuffs.Contains(bookBuffData);
+        }
+        else if (itemType == InventoryItemType.Item && itemData != null)
+        {
+            eq = InventoryManager.Instance.activeItems.Contains(itemData);
         }
 
         equippedOverlay.SetActive(eq);
