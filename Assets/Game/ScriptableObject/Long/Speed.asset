@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f45ecbc677b0f4caafd0e47400e572, type: 3}
   m_Name: Speed
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 52eb80ae877bfec4fbabd431eb09f9a2, type: 3}
+  Icon: {fileID: 21300000, guid: 5c3bdc439e6ca1a44a084e02700f3150, type: 3}
   level: 1
   description: Increase Speed
   buffId: Speed

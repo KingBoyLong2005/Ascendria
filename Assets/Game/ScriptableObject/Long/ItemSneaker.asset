@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cca9251f15e2524a8dc9a6feeb85734, type: 3}
-  m_Name: Health
+  m_Script: {fileID: 11500000, guid: b89b073e2d9ad754288de38cfb7ed475, type: 3}
+  m_Name: ItemSneaker
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: a054f9dd9e50b754fbdad653417e857a, type: 3}
-  level: 1
-  description: Increase Health
-  buffId: Health
-  value: 1
-  statTarget: Health
-  amount: 10
+  Icon: {fileID: 21300000, guid: 52eb80ae877bfec4fbabd431eb09f9a2, type: 3}
+  isStackable: 1
+  isTimed: 0
+  duration: 30
