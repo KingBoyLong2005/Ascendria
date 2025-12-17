@@ -1,4 +1,5 @@
 // PlayerStatManager.cs � handles player stats & damage
+using System;
 using UnityEngine;
 
 public class PlayerStatManager : MonoBehaviour
@@ -10,6 +11,18 @@ public class PlayerStatManager : MonoBehaviour
     public float baseAttack = 10f;
     public float baseMoveSpeed = 5f;
     public float baseArmor = 5f;
+
+    public event EventHandler<OnPlayerHealthChangeEventArgs> OnPlayerHealthChange;
+    public class OnPlayerHealthChangeEventArgs : EventArgs
+    {
+        public float currentHealth;
+        public float maxHealth;
+        public OnPlayerHealthChangeEventArgs(float current, float max)
+        {
+            currentHealth = current;
+            maxHealth = max;
+        }
+    }
 
     // Current / effective stats
     private float currentHealth;
@@ -33,12 +46,15 @@ public class PlayerStatManager : MonoBehaviour
         else Destroy(gameObject);
 
         currentHealth = baseMaxHealth;
+        OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, baseMaxHealth));
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, MaxHealth));
         Debug.Log("Player took damage: " + damage + ", current health: " + currentHealth);
+
         if (currentHealth <= 0f)
         {
             Die();
