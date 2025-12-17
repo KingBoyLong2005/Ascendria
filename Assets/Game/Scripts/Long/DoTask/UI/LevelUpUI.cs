@@ -9,39 +9,39 @@ public class LevelUpUI : MonoBehaviour
 
     List<LevelUpOptionUI> spawned = new();
 
-    private void OnEnable()
-    {
-        if (LevelManager.Instance != null)
-            Register();
-        else
-            LevelManager.OnCreated += HandleCreated;
-    }
+    // private void OnEnable()
+    // {
+    //     if (LevelManager.Instance != null)
+    //         Register();
+    //     else
+    //         LevelManager.OnCreated += HandleCreated;
+    // }
 
-    void HandleCreated(object _, System.EventArgs __)
-    {
-        LevelManager.OnCreated -= HandleCreated;
-        Register();
-    }
+    // void HandleCreated(object _, System.EventArgs __)
+    // {
+    //     LevelManager.OnCreated -= HandleCreated;
+    //     Register();
+    // }
 
-    void Register()
-    {
-        LevelManager.Instance.OnLevelUp += OnLevelUp;
-        LevelManager.Instance.OnUpgradeApplied += OnUpgradeApplied;
-        panel.SetActive(false);
-    }
+    // public void Register()
+    // {
+    //     LevelManager.Instance.OnLevelUp += OnLevelUp;
+    //     LevelManager.Instance.OnUpgradeApplied += OnUpgradeApplied;
+    //     panel.SetActive(false);
+    // }
 
-    private void OnDisable()
-    {
-        if (LevelManager.Instance == null) return;
+    // private void OnDisable()
+    // {
+    //     if (LevelManager.Instance == null) return;
 
-        LevelManager.Instance.OnLevelUp -= OnLevelUp;
-        LevelManager.Instance.OnUpgradeApplied -= OnUpgradeApplied;
-    }
+    //     LevelManager.Instance.OnLevelUp -= OnLevelUp;
+    //     LevelManager.Instance.OnUpgradeApplied -= OnUpgradeApplied;
+    // }
 
-    void OnLevelUp(object _, LevelManager.LevelUpEventArgs e)
+    public void OnLevelUp(object _, LevelManager.LevelUpEventArgs e)
     {
         panel.SetActive(true);
-
+        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
         foreach (var o in spawned) Destroy(o.gameObject);
         spawned.Clear();
 
@@ -53,8 +53,9 @@ public class LevelUpUI : MonoBehaviour
         }
     }
 
-    void OnUpgradeApplied(object _, LevelManager.UpgradeSelectedEventArgs __)
+    public void OnUpgradeApplied(object _, LevelManager.UpgradeSelectedEventArgs __)
     {
         panel.SetActive(false);
+        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
     }
 }

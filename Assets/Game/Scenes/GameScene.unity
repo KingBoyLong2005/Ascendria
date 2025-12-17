@@ -2041,7 +2041,6 @@ MonoBehaviour:
   panel: {fileID: 1348012221}
   optionPrefab: {fileID: 9017777738390772209, guid: 691911d92dd6f7847bd7d47f56268bbd, type: 3}
   optionsParent: {fileID: 1348012222}
-  optionCount: 3
 --- !u!1 &1550146703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a7a1b9389336a489e9abfe84d5aa16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  root: {fileID: 0}
 --- !u!114 &275830485136836451 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1424245147718566078, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}

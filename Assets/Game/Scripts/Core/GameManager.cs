@@ -113,12 +113,14 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        FindFirstObjectByType<InventoryUI>().ToggleInventory();
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
+        FindFirstObjectByType<InventoryUI>().CloseInventory();
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }

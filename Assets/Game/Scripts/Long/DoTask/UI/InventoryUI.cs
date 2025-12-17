@@ -2,7 +2,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
-using UnityEngine.UI; // For GridLayoutGroup
+using UnityEngine.UI;
+using Mono.CSharp;
+using System; // For GridLayoutGroup
 
 /// <summary>
 /// Inventory UI controller (updated to use a single slot prefab for both weapons and items).
@@ -56,34 +58,34 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        if (InventoryManager.Instance != null)
-        {
-            InventoryManager.Instance.OnInventoryChanged +=(s,e) => RefreshAll();
-            InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => RefreshAll();
-            InventoryManager.Instance.OnActiveBookBuffsChanged += (s,e) => RefreshAll(); // Added for buffs
-            InventoryManager.Instance.OnActiveItemsChanged += (s, e) => RefreshAll();
-        }
-        RefreshAll();
-    }
+    // void Start()
+    // {
+    //     // if (InventoryManager.Instance != null)
+    //     // {
+    //     //     // InventoryManager.Instance.OnInventoryChanged +=(s,e) => RefreshAll();
+    //     //     // InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => RefreshAll();
+    //     //     // InventoryManager.Instance.OnActiveBookBuffsChanged += (s,e) => RefreshAll(); // Added for buffs
+    //     //     // InventoryManager.Instance.OnActiveItemsChanged += (s, e) => RefreshAll();
+    //     // }
+    //     RefreshAll();
+    // }
 
-    void OnDestroy()
-    {
-        if (InventoryManager.Instance != null)
-        {
-            InventoryManager.Instance.OnInventoryChanged -= (s,e) => RefreshAll();
-            InventoryManager.Instance.OnActiveWeaponsChanged -= (s,e) => RefreshAll();
-            InventoryManager.Instance.OnActiveBookBuffsChanged -= (s,e) => RefreshAll();
-            InventoryManager.Instance.OnActiveItemsChanged -= (s, e) => RefreshAll();
-        }
-    }
+    // void OnDestroy()
+    // {
+    //     if (InventoryManager.Instance != null)
+    //     {
+    //         // InventoryManager.Instance.OnInventoryChanged -= (s,e) => RefreshAll();
+    //         // InventoryManager.Instance.OnActiveWeaponsChanged -= (s,e) => RefreshAll();
+    //         // InventoryManager.Instance.OnActiveBookBuffsChanged -= (s,e) => RefreshAll();
+    //         // InventoryManager.Instance.OnActiveItemsChanged -= (s, e) => RefreshAll();
+    //     }
+    // }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(toggleKey)) ToggleInventory();
-        if (isOpen && Input.GetKeyDown(KeyCode.Escape)) CloseInventory();
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(toggleKey)) ToggleInventory();
+    //     if (isOpen && Input.GetKeyDown(KeyCode.Escape)) CloseInventory();
+    // }
 
     public void ToggleInventory()
     {
@@ -93,6 +95,7 @@ public class InventoryUI : MonoBehaviour
 
     public void OpenInventory()
     {
+        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
         if (inventoryPanel == null) return;
         isOpen = true;
         inventoryPanel.SetActive(true);
@@ -107,6 +110,7 @@ public class InventoryUI : MonoBehaviour
 
     public void CloseInventory()
     {
+        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
         if (inventoryPanel == null) return;
         isOpen = false;
         inventoryPanel.SetActive(false);
