@@ -73,6 +73,11 @@ public class WeaponManager : MonoBehaviour
         {
             inv.OnInventoryReady += HandleInventoryReady;
             Debug.Log("WeaponManager SUB InventoryReady");
+            // 🔥 STICKY READY CHECK
+            if (inv.IsReady)
+            {
+                HandleInventoryReady(inv, EventArgs.Empty);
+            }
         }
     }
     private void HandlePlayerAttackReady(object sender, EventArgs e)
