@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cca9251f15e2524a8dc9a6feeb85734, type: 3}
   m_Name: Health
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 0bef8169eec400d42ba98efdfeda36ac, type: 3}
+  Icon: {fileID: 21300000, guid: a054f9dd9e50b754fbdad653417e857a, type: 3}
   level: 1
   description: Increase Health
   buffId: Health
