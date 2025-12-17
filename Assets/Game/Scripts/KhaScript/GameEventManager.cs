@@ -4,6 +4,18 @@ using System.Collections.Generic;
 
 public class GameEventManager : MonoBehaviour
 {
+    public static GameEventManager Instance {get; private set;}
+    public event EventHandler<OnChestInteractEventArgs> OnChestInteracted;
+    public class OnChestInteractEventArgs
+    {
+        // private GameObject item;
+        // public OnChestInteractEventArgs(GameOject item)
+        // {
+        //     item = item;  
+        // }
+    }
+    
+
     // Giả định bạn có một BossManager để thực hiện việc spawn thực tế
     // Nếu bạn muốn xử lý spawn Boss ngay trong GameEventManager, bạn có thể bỏ qua bước này.
     private BossManager bossManager;
@@ -14,6 +26,14 @@ public class GameEventManager : MonoBehaviour
 
     // (Thêm Boss Prefab và các Manager khác tại đây)
 
+    private void Awake()
+    {
+        if (Instance != null){
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
     // HÀM KHỞI TẠO MỚI: Nhận BossManager từ GameManager
     public void Initialize(BossManager bossManagerInstance)
     {
@@ -31,13 +51,11 @@ public class GameEventManager : MonoBehaviour
     void OnEnable()
     {
         BossGateTrigger.OnBossGateInteracted += HandleBossGateInteraction;
-        ChestTrigger.OnChestInteracted += HandleChestInteraction;
     }
 
     void OnDisable()
     {
         BossGateTrigger.OnBossGateInteracted -= HandleBossGateInteraction;
-        ChestTrigger.OnChestInteracted -= HandleChestInteraction;
     }
 
     private void HandleBossGateInteraction(Transform spawnPoint)
@@ -69,7 +87,7 @@ public class GameEventManager : MonoBehaviour
         }
     }
 
-    private void HandleChestInteraction(ChestTrigger chest)
+    public void HandleChestInteraction(ChestTrigger chest)
     {
         Debug.Log($"<color=teal>[GameEventManager]</color> Player tương tác với Chest loại: {chest.type}.");
 
@@ -88,6 +106,11 @@ public class GameEventManager : MonoBehaviour
         }
         // Vô hiệu hóa đối tượng Chest sau khi mở
         Destroy(chest.gameObject);
+    }
+
+    public void OnChestOpened(GameObject item)
+    {
+        //OnChestInteracted?.Invoke(this, new OnChestInteractEventArgs(item));
     }
 
     // Hàm điều kiện spawn mặc định (chỉ là ví dụ)
