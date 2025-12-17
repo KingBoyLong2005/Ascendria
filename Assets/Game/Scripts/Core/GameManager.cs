@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     private BossManager bossManager;
     private GameEventManager gameEventManager;
 
+    private UIManager uiManager;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -79,6 +81,8 @@ public class GameManager : MonoBehaviour
         bookBuffManager = gameObject.AddComponent<BookBuffManager>();
         levelManager = gameObject.AddComponent<LevelManager>();
         lootDropManager = gameObject.AddComponent<LootDropManager>();
+
+        uiManager = gameObject.AddComponent<UIManager>();
 
         //bossManager = gameObject.AddComponent<BossManager>();
         //gameEventManager = gameObject.AddComponent<GameEventManager>();

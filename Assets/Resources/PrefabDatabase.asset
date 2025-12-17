@@ -24,3 +24,4 @@ MonoBehaviour:
   health: {fileID: 5449974424428710506, guid: 8dc80809f52ad2c41973a719d09af93f, type: 3}
   exp: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
   coin: {fileID: 0}
+  healthBarPrefab: {fileID: 3263348757366970558, guid: 2ce5cf5da58e5e0459a2e1100ff54d9e, type: 3}
