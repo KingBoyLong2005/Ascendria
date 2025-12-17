@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 582396682465065112}
   - component: {fileID: 7792792565113786999}
   - component: {fileID: 3826166581934954284}
+  - component: {fileID: 2130818955886979744}
   m_Layer: 3
   m_Name: PlayerCapsuleLong
   m_TagString: Player
@@ -559,15 +560,39 @@ MonoBehaviour:
   MoveSpeed: 4
   RotationSmoothTime: 0.1
   SpeedChangeRate: 10
+  ActveAirJump: 1
   JumpHeight: 1.2
+  MaxAirJump: 1
   Gravity: -15
-  MaxJumpCount: 2
+  TerminalVelocity: 53
+  ActiveClimb: 1
   WallCheckDistance: 0.6
-  WallClimbSpeed: 3
-  WallStickForce: 0.2
+  WallSlideSpeed: -2
+  ClimbSpeed: 2.5
+  WallJumpForce: {x: 6, y: 8, z: 6}
+  JumpTimeout: 0.5
+  FallTimeout: 0.15
   CinemachineCameraTarget: {fileID: 2266019921531878755}
   TopClamp: 70
   BottomClamp: -30
+  CameraAngleOverride: 0
+  LockCameraPosition: 0
+--- !u!114 &2130818955886979744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730884717223232046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1bb7f7b4699f44899f6d80db2ef732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  showRaycastGizmos: 1
 --- !u!1001 &2708337242647618740
 PrefabInstance:
   m_ObjectHideFlags: 0
