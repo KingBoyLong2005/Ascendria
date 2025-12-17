@@ -1,121 +1,60 @@
-// LevelUpUI.cs (simplified to only handle UI display; logic moved to LevelManager)
 using UnityEngine;
-using System;
 using System.Collections.Generic;
 
 public class LevelUpUI : MonoBehaviour
 {
-    [Header("References")]
     public GameObject panel;
     public LevelUpOptionUI optionPrefab;
     public Transform optionsParent;
-    public int optionCount = 3; // Not used here anymore, but kept for ref
 
-    List<LevelUpOptionUI> spawnedOptions = new();
-    bool isShowing = false;
+    List<LevelUpOptionUI> spawned = new();
 
-    EventHandler<LevelManager.LevelUpEventArgs> cachedLevelUpHandler;
-    EventHandler<LevelManager.UpgradeSelectedEventArgs> cachedUpgradeSelectedHandler;
-
-    // đảm bảo OnEnable chạy cả trong AddComponent lẫn scene load
     private void OnEnable()
     {
-        // Trường hợp 1: LevelManager đã tồn tại trước khi LevelUpUI bật
         if (LevelManager.Instance != null)
-        {
-            Initialize();
-        }
+            Register();
         else
-        {
-            // Trường hợp 2: LevelManager chưa được AddComponent → chờ OnCreated
             LevelManager.OnCreated += HandleCreated;
-        }
     }
 
-    private void HandleCreated(object sender, EventArgs e)
+    void HandleCreated(object _, System.EventArgs __)
     {
-        LevelManager.OnCreated -= HandleCreated; // tránh leak
-        Initialize();
+        LevelManager.OnCreated -= HandleCreated;
+        Register();
     }
 
-    private void Initialize()
+    void Register()
     {
-        // đăng ký sự kiện lên level
-        cachedLevelUpHandler = OnLevelUp;
-        LevelManager.Instance.OnLevelUp += cachedLevelUpHandler;
-
-        // Also subscribe to upgrade selected to close UI
-        cachedUpgradeSelectedHandler = OnUpgradeSelected;
-        LevelManager.Instance.OnUpgradeSelected += cachedUpgradeSelectedHandler;
-
-        if (panel != null)
-            panel.SetActive(false);
+        LevelManager.Instance.OnLevelUp += OnLevelUp;
+        LevelManager.Instance.OnUpgradeApplied += OnUpgradeApplied;
+        panel.SetActive(false);
     }
 
     private void OnDisable()
     {
-        // gỡ event cho sạch
-        if (LevelManager.Instance != null)
+        if (LevelManager.Instance == null) return;
+
+        LevelManager.Instance.OnLevelUp -= OnLevelUp;
+        LevelManager.Instance.OnUpgradeApplied -= OnUpgradeApplied;
+    }
+
+    void OnLevelUp(object _, LevelManager.LevelUpEventArgs e)
+    {
+        panel.SetActive(true);
+
+        foreach (var o in spawned) Destroy(o.gameObject);
+        spawned.Clear();
+
+        foreach (var opt in e.Options)
         {
-            if (cachedLevelUpHandler != null)
-                LevelManager.Instance.OnLevelUp -= cachedLevelUpHandler;
-            if (cachedUpgradeSelectedHandler != null)
-                LevelManager.Instance.OnUpgradeSelected -= cachedUpgradeSelectedHandler;
+            var ui = Instantiate(optionPrefab, optionsParent);
+            ui.Setup(opt, LevelManager.Instance.ApplyUpgrade);
+            spawned.Add(ui);
         }
     }
 
-    private void OnLevelUp(object sender, LevelManager.LevelUpEventArgs e)
+    void OnUpgradeApplied(object _, LevelManager.UpgradeSelectedEventArgs __)
     {
-        ShowOptions(e.Options);
-    }
-
-    public void ShowOptions(List<LevelManager.UpgradeOption> options)
-    {
-        var MouseActive = FindFirstObjectByType<TPCameraController>();
-        MouseActive.isUIOpen = true;
-
-        if (isShowing) return;
-        isShowing = true;
-
-        if (panel != null) panel.SetActive(true);
-
-        foreach (var o in spawnedOptions) Destroy(o.gameObject);
-        spawnedOptions.Clear();
-
-        foreach (var opt in options)
-        {
-            var inst = Instantiate(optionPrefab, optionsParent);
-            inst.Setup(opt);
-            inst.OnOptionSelected += OnOptionSelectedHandler; // Subscribe to each option's event
-            spawnedOptions.Add(inst);
-        }
-    }
-
-    private void OnOptionSelectedHandler(object sender, LevelUpOptionUI.LevelUpOptionSelectedEventArgs e)
-    {
-        // Forward to LevelManager to apply
-        LevelManager.Instance.ApplyUpgrade(e.SelectedUpgrade);
-
-        // Unsubscribe from all options to avoid leaks
-        foreach (var opt in spawnedOptions)
-        {
-            opt.OnOptionSelected -= OnOptionSelectedHandler;
-        }
-    }
-
-    private void OnUpgradeSelected(object sender, LevelManager.UpgradeSelectedEventArgs e)
-    {
-        CloseOptions();
-    }
-
-    public void CloseOptions()
-    {
-        var MouseActive = FindFirstObjectByType<TPCameraController>();
-        MouseActive.isUIOpen = false;
-
-        if (!isShowing) return;
-        isShowing = false;
-
-        if (panel != null) panel.SetActive(false);
+        panel.SetActive(false);
     }
 }

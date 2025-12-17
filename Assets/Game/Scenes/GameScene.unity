@@ -1084,7 +1084,7 @@ MonoBehaviour:
   pauseTimeWhenOpen: 0
   weaponsParent: {fileID: 616438567}
   buffsParent: {fileID: 616438567}
-  itemsParent: {fileID: 1581056721}
+  itemsParent: {fileID: 616438567}
   slotPrefab: {fileID: 2458617566939704593, guid: 3840462261aa1d64c82ba7bc6c37a53d, type: 3}
 --- !u!1 &896465348
 GameObject:
@@ -2500,7 +2500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a7a1b9389336a489e9abfe84d5aa16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  root: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,85 +1,38 @@
-// LevelUpOptionUI.cs (simplified; now uses EventHandler instead of Action)
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 public class LevelUpOptionUI : MonoBehaviour
 {
     public Image icon;
-    public TMP_Text titleText;
+    public TMP_Text title;
     public Button button;
+    public Image placeholder;
 
-    // optional placeholder icon to use for buff when no sprite exists
-    public Sprite placeholderIcon;
-
-    LevelManager.UpgradeOption upgrade;
-
-    // Event to notify selection (replaces Action)
-    public event EventHandler<LevelUpOptionSelectedEventArgs> OnOptionSelected;
-
-    void Awake()
+    public void Setup(
+        LevelManager.UpgradeOption option,
+        System.Action<LevelManager.UpgradeOption> onClick)
     {
-        if (button != null)
-            button.onClick.RemoveAllListeners();
-    }
-
-    // Setup for UpgradeOption (weapon upgrade/drop or buff)
-    public void Setup(LevelManager.UpgradeOption up)
-    {
-        upgrade = up;
-
-        // Title text based on kind
-        switch (up.kind)
+        title.text = option.kind switch
         {
-            case LevelManager.UpgradeOption.Kind.WeaponUpgrade:
-                if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Upgrade: {up.targetWeapon.weaponName}";
-                else
-                    titleText.text = $"{up.tier} Weapon Upgrade";
-                break;
-            case LevelManager.UpgradeOption.Kind.WeaponDrop:
-                if (up.targetWeapon != null)
-                    titleText.text = $"{up.tier} Drop: {up.targetWeapon.weaponName}";
-                else
-                    titleText.text = $"{up.tier} Weapon Drop";
-                break;
-            case LevelManager.UpgradeOption.Kind.Buff:
-                titleText.text = $"{up.tier} {up.targetBuff.name}";
-                break;
-        }
+            LevelManager.UpgradeOption.Kind.WeaponUpgrade =>
+                $"{option.tier} Upgrade {option.targetWeapon.weaponName}",
 
-        // Set icon:
-        Sprite s = null;
+            LevelManager.UpgradeOption.Kind.WeaponDrop =>
+                $"{option.tier} Weapon {option.targetWeapon.weaponName}",
 
-        // Weapon icon
-        if (up.targetWeapon != null)
-        {
-            s = up.targetWeapon.Icon;
-        }
-        // Buff icon
-        else if (up.targetBuff != null)
-        {
-            s = up.targetBuff.Icon != null ? up.targetBuff.Icon : placeholderIcon;
-        }
-        // fallback
-        else
-        {
-            s = placeholderIcon;
-        }
+            LevelManager.UpgradeOption.Kind.Buff =>
+                $"{option.tier} {option.targetBuff.name}",
 
-        if (icon != null)
-        {
-            icon.sprite = s;
-            icon.enabled = (s != null);
-        }
+            _ => "Upgrade"
+        };
+
+        icon.sprite =
+            option.targetWeapon?.Icon ??
+            option.targetBuff?.Icon ??
+            placeholder.sprite;
 
         button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(() => OnOptionSelected?.Invoke(this, new LevelUpOptionSelectedEventArgs { SelectedUpgrade = upgrade }));
-    }
-
-    public class LevelUpOptionSelectedEventArgs : EventArgs
-    {
-        public LevelManager.UpgradeOption SelectedUpgrade { get; set; }
+        button.onClick.AddListener(() => onClick(option));
     }
 }
