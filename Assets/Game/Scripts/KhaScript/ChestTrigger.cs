@@ -12,11 +12,15 @@ public class ChestTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Item item = ItemManager.Instance.GetRandomItem();
+            Debug.Log("<color=cyan>[ChestTrigger]</color> Player đã nhận được vật phẩm: " + item);
             // Lấy list item hiện có -> random 1 item -> trả về item đó ->  player nhận item -> item vào inventory 
             // cần tồn tại 1 list item public -> lấy list đó
             // random 1 item trong list 
             // đưa item vào trong OnChestOpened(item1);
-            //GameEventManager.Instance.OnChestOpened(item);// -> iventoryManager nhan
+            GameEventManager.Instance.OnChestOpened(item);// -> iventoryManager đăng ký lắng nghe
+
+            Debug.Log("<color=cyan>[ChestTrigger]</color> Player đã tương tác với Chest loại: " + type);
         }
         
     }

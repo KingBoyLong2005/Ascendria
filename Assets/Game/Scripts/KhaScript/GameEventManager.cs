@@ -8,11 +8,11 @@ public class GameEventManager : MonoBehaviour
     public event EventHandler<OnChestInteractEventArgs> OnChestInteracted;
     public class OnChestInteractEventArgs
     {
-        // private GameObject item;
-        // public OnChestInteractEventArgs(GameOject item)
-        // {
-        //     item = item;  
-        // }
+        public Item item { get; private set; }
+        public OnChestInteractEventArgs(Item item)
+        {
+            this.item = item;
+        }
     }
     
 
@@ -87,30 +87,31 @@ public class GameEventManager : MonoBehaviour
         }
     }
 
-    public void HandleChestInteraction(ChestTrigger chest)
-    {
-        Debug.Log($"<color=teal>[GameEventManager]</color> Player tương tác với Chest loại: {chest.type}.");
+    //public void HandleChestInteraction(ChestTrigger chest)
+    //{
+    //    Debug.Log($"<color=teal>[GameEventManager]</color> Player tương tác với Chest loại: {chest.type}.");
 
-        switch (chest.type)
-        {
-            case ChestTrigger.ChestType.Normal:
-                // Gọi ItemManager để tạo Item ngẫu nhiên
-                // ItemManager.DropRandomLoot(chest.transform.position); 
-                Debug.Log("<color=teal>[GameEventManager]</color> Thả vật phẩm ngẫu nhiên từ Chest Normal.");
-                break;
-            case ChestTrigger.ChestType.KeyRequired:
-                // Logic kiểm tra xem Player có Key không
-                // if (PlayerInventory.HasKey) { ItemManager.DropRareLoot(...); }
-                break;
-                // ...
-        }
-        // Vô hiệu hóa đối tượng Chest sau khi mở
-        Destroy(chest.gameObject);
-    }
+    //    switch (chest.type)
+    //    {
+    //        case ChestTrigger.ChestType.Normal:
+    //            // Gọi ItemManager để tạo Item ngẫu nhiên
+    //            // ItemManager.DropRandomLoot(chest.transform.position); 
+    //            //Debug.Log("<color=teal>[GameEventManager]</color> Thả vật phẩm ngẫu nhiên từ Chest Normal.");
+    //            break;
+    //        case ChestTrigger.ChestType.KeyRequired:
+    //            // Logic kiểm tra xem Player có Key không
+    //            // if (PlayerInventory.HasKey) { ItemManager.DropRareLoot(...); }
+    //            break;
+    //            // ...
+    //    }
+    //    // Vô hiệu hóa đối tượng Chest sau khi mở
+    //    Destroy(chest.gameObject);
+    //}
 
-    public void OnChestOpened(GameObject item)
+    public void OnChestOpened(Item item)
     {
-        //OnChestInteracted?.Invoke(this, new OnChestInteractEventArgs(item));
+        OnChestInteracted?.Invoke(this, new OnChestInteractEventArgs(item));
+        Debug.Log("<color=cyan>[GameEventManager]</color> Sự kiện OnChestOpened đã được kích hoạt.");
     }
 
     // Hàm điều kiện spawn mặc định (chỉ là ví dụ)
