@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class InteractableSpawner
 {
-    private readonly MapManager01 mapManager;
+    //private readonly MapManager01 mapManager;
     private GameObject chestPrefab;
     private GameObject eventObjectPrefab;
 
@@ -25,7 +25,7 @@ public class InteractableSpawner
 
     public InteractableSpawner()
     {
-        this.mapManager = GameManager.Instance.GetMapManager;
+        //this.mapManager = GameManager.Instance.GetMapManager;
         chestPrefab = PrefabDatabase.Instance.chest;
         eventObjectPrefab = PrefabDatabase.Instance.eventObject;
     }
@@ -55,10 +55,12 @@ public class InteractableSpawner
         foreach (var kv in result)
         {
             GameObject prefab = kv.Key;
+            float yOffset = GetPrefabYOffset(prefab);
+
             foreach (Vector3 pos in kv.Value)
             {
-                Debug.Log("Spawn object");
-                UnityEngine.Object.Instantiate(prefab, pos, Quaternion.identity);
+                Vector3 spawnPos = pos + Vector3.up * yOffset;
+                UnityEngine.Object.Instantiate(prefab, spawnPos, Quaternion.identity);
             }
         }
     }
@@ -108,5 +110,22 @@ public class InteractableSpawner
         float r2 = UnityEngine.Random.value;
 
         return (1 - r1) * a + r1 * (1 - r2) * b + r1 * r2 * c;
+    }
+
+    private float GetPrefabYOffset(GameObject prefab)
+    {
+        var renderer = prefab.GetComponentInChildren<Renderer>();
+        if (renderer != null)
+        {
+            return renderer.bounds.extents.y;
+        }
+
+        var collider = prefab.GetComponentInChildren<Collider>();
+        if (collider != null)
+        {
+            return collider.bounds.extents.y;
+        }
+
+        return 0.5f; // fallback
     }
 }

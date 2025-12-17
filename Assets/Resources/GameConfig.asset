@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9359ce2f0e395bd4cac53bbe1aaf310e, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
-  maxChestNums: 10
+  maxChestNums: 50
   maxInteractObjectNum: 10
   maxEnemy: 100
