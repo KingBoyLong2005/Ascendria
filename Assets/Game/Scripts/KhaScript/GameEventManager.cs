@@ -1,9 +1,23 @@
-﻿using UnityEngine;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using UnityEngine;
+
 
 public class GameEventManager : MonoBehaviour
 {
+    private GameEventHandler gameEventHandler;
+
+    private void Awake()
+    {
+        gameEventHandler = gameObject.AddComponent<GameEventHandler>();
+
+        //Thêm nhiều event handler như UI, Quest, Achievement
+    }
+
+
+
+
+
+
     // Giả định bạn có một BossManager để thực hiện việc spawn thực tế
     // Nếu bạn muốn xử lý spawn Boss ngay trong GameEventManager, bạn có thể bỏ qua bước này.
     private BossManager bossManager;

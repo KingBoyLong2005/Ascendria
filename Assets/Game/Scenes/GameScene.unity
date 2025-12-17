@@ -1083,7 +1083,8 @@ MonoBehaviour:
   unlockCursorWhenOpen: 1
   pauseTimeWhenOpen: 0
   weaponsParent: {fileID: 616438567}
-  itemsParent: {fileID: 1581056721}
+  buffsParent: {fileID: 616438567}
+  itemsParent: {fileID: 616438567}
   slotPrefab: {fileID: 2458617566939704593, guid: 3840462261aa1d64c82ba7bc6c37a53d, type: 3}
 --- !u!1 &896465348
 GameObject:
@@ -2037,8 +2038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52f51bb79e037647a7a87c60d373a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
-  inventoryManager: {fileID: 0}
   panel: {fileID: 1348012221}
   optionPrefab: {fileID: 9017777738390772209, guid: 691911d92dd6f7847bd7d47f56268bbd, type: 3}
   optionsParent: {fileID: 1348012222}
