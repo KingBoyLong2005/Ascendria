@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//Health Bar follows player
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;

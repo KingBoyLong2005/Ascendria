@@ -25,9 +25,6 @@ public class PrefabDatabase : ScriptableObject
     public GameObject exp;
     public GameObject coin;
 
-    [Header("UI Prefabs")]
-    public GameObject healthBarPrefab;
-
     private static PrefabDatabase _instance;
     public static PrefabDatabase Instance
     {

@@ -6,9 +6,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
 
-    private Canvas uiCanvas;
-    private GameObject healthBarPrefab;
-    private HealthBar healthBar;
+    private HealthBarUI healthBarUI;
 
     void Awake()
     {
@@ -19,19 +17,13 @@ public class UIManager : MonoBehaviour
         }
         Instance = this;
 
-        LoadPrefabsFromDatabase();
+        PlayerStatManager.Instance.OnPlayerHealthChange += PlayerStatManager_OnPlayerHealthChange;
+
+        healthBarUI = FindFirstObjectByType<HealthBarUI>();
     }
 
-    private void LoadPrefabsFromDatabase()
+    private void PlayerStatManager_OnPlayerHealthChange(object sender, PlayerStatManager.OnPlayerHealthChangeEventArgs e)
     {
-        if (PrefabDatabase.Instance.healthBarPrefab != null)
-        {
-            healthBarPrefab = PrefabDatabase.Instance.healthBarPrefab;
-            healthBar = healthBarPrefab.GetComponent<HealthBar>();
-            Debug.Log("Health Bar added from db to manager");
-        }
-        //if (prefabDatabase.enemyPrefab2 != null)
-        //    enemyPrefabList.Add(prefabDatabase.enemyPrefab2);
-        //// Repeat for all prefab fields — or use reflection/array if many
+        healthBarUI.SetHealth(e.currentHealth, e.maxHealth);
     }
 }
