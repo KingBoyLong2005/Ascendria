@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public static event EventHandler OnCreated;
     public event EventHandler<LevelUpEventArgs> OnLevelUp;
     public event EventHandler<UpgradeSelectedEventArgs> OnUpgradeApplied;
+    public event EventHandler<XPProgressEventArgs> OnXPChanged;
 
     [Header("Level Progression")]
     public int level = 1;
@@ -37,7 +38,7 @@ public class LevelManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U))
         {
-            AddXP(100);
+            AddXP(20);
         }
     }
 
@@ -45,6 +46,7 @@ public class LevelManager : MonoBehaviour
     public void AddXP(float amount)
     {
         currentXP += amount;
+        OnXPChanged?.Invoke(this, new XPProgressEventArgs(currentXP, xpToNext));
 
         while (currentXP >= xpToNext)
         {
@@ -54,6 +56,7 @@ public class LevelManager : MonoBehaviour
 
             List<UpgradeOption> options = GenerateUpgradeOptions();
             OnLevelUp?.Invoke(this, new LevelUpEventArgs(level, options));
+            OnXPChanged?.Invoke(this, new XPProgressEventArgs(currentXP, xpToNext));
         }
     }
 
@@ -242,6 +245,17 @@ public class LevelManager : MonoBehaviour
         {
             Level = level;
             Options = options;
+        }
+    }
+
+    public class XPProgressEventArgs : EventArgs
+    {
+        public float currXP;
+        public float xpToNext;
+        public XPProgressEventArgs(float currentXP, float xpToNextLvl)
+        {
+            currXP = currentXP;
+            xpToNext = xpToNextLvl;
         }
     }
 
