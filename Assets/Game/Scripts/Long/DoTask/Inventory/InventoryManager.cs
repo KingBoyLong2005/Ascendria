@@ -228,4 +228,20 @@ public class InventoryManager : MonoBehaviour
     {
         return ownedItems.ContainsKey(item) && ownedItems[item] > 0;
     }
+
+    private void OnEnable()
+    {
+        GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
+        Debug.Log("<color= magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
+    }
+    private void OnDisable()
+    {
+        GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
+        Debug.Log("<color= magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
+    }
+    private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
+    {
+        AddItem(e.item);
+        Debug.Log($"<color= magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
+    }
 }

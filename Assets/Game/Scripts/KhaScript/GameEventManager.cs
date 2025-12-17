@@ -1,22 +1,20 @@
-﻿using System;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System;
+using System.Collections.Generic;
 
 public class GameEventManager : MonoBehaviour
 {
-    private GameEventHandler gameEventHandler;
-
-    private void Awake()
+    public static GameEventManager Instance {get; private set;}
+    public event EventHandler<OnChestInteractEventArgs> OnChestInteracted;
+    public class OnChestInteractEventArgs
     {
-        gameEventHandler = gameObject.AddComponent<GameEventHandler>();
-
-        //Thêm nhiều event handler như UI, Quest, Achievement
+        public Item item { get; private set; }
+        public OnChestInteractEventArgs(Item item)
+        {
+            this.item = item;
+        }
     }
-
-
-
-
-
+    
 
     // Giả định bạn có một BossManager để thực hiện việc spawn thực tế
     // Nếu bạn muốn xử lý spawn Boss ngay trong GameEventManager, bạn có thể bỏ qua bước này.
@@ -28,6 +26,14 @@ public class GameEventManager : MonoBehaviour
 
     // (Thêm Boss Prefab và các Manager khác tại đây)
 
+    private void Awake()
+    {
+        if (Instance != null){
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
     // HÀM KHỞI TẠO MỚI: Nhận BossManager từ GameManager
     public void Initialize(BossManager bossManagerInstance)
     {
@@ -45,13 +51,11 @@ public class GameEventManager : MonoBehaviour
     void OnEnable()
     {
         BossGateTrigger.OnBossGateInteracted += HandleBossGateInteraction;
-        ChestTrigger.OnChestInteracted += HandleChestInteraction;
     }
 
     void OnDisable()
     {
         BossGateTrigger.OnBossGateInteracted -= HandleBossGateInteraction;
-        ChestTrigger.OnChestInteracted -= HandleChestInteraction;
     }
 
     private void HandleBossGateInteraction(Transform spawnPoint)
@@ -83,25 +87,31 @@ public class GameEventManager : MonoBehaviour
         }
     }
 
-    private void HandleChestInteraction(ChestTrigger chest)
-    {
-        Debug.Log($"<color=teal>[GameEventManager]</color> Player tương tác với Chest loại: {chest.type}.");
+    //public void HandleChestInteraction(ChestTrigger chest)
+    //{
+    //    Debug.Log($"<color=teal>[GameEventManager]</color> Player tương tác với Chest loại: {chest.type}.");
 
-        switch (chest.type)
-        {
-            case ChestTrigger.ChestType.Normal:
-                // Gọi ItemManager để tạo Item ngẫu nhiên
-                // ItemManager.DropRandomLoot(chest.transform.position); 
-                Debug.Log("<color=teal>[GameEventManager]</color> Thả vật phẩm ngẫu nhiên từ Chest Normal.");
-                break;
-            case ChestTrigger.ChestType.KeyRequired:
-                // Logic kiểm tra xem Player có Key không
-                // if (PlayerInventory.HasKey) { ItemManager.DropRareLoot(...); }
-                break;
-                // ...
-        }
-        // Vô hiệu hóa đối tượng Chest sau khi mở
-        Destroy(chest.gameObject);
+    //    switch (chest.type)
+    //    {
+    //        case ChestTrigger.ChestType.Normal:
+    //            // Gọi ItemManager để tạo Item ngẫu nhiên
+    //            // ItemManager.DropRandomLoot(chest.transform.position); 
+    //            //Debug.Log("<color=teal>[GameEventManager]</color> Thả vật phẩm ngẫu nhiên từ Chest Normal.");
+    //            break;
+    //        case ChestTrigger.ChestType.KeyRequired:
+    //            // Logic kiểm tra xem Player có Key không
+    //            // if (PlayerInventory.HasKey) { ItemManager.DropRareLoot(...); }
+    //            break;
+    //            // ...
+    //    }
+    //    // Vô hiệu hóa đối tượng Chest sau khi mở
+    //    Destroy(chest.gameObject);
+    //}
+
+    public void OnChestOpened(Item item)
+    {
+        OnChestInteracted?.Invoke(this, new OnChestInteractEventArgs(item));
+        Debug.Log("<color=cyan>[GameEventManager]</color> Sự kiện OnChestOpened đã được kích hoạt.");
     }
 
     // Hàm điều kiện spawn mặc định (chỉ là ví dụ)
