@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7833057038423489037}
   - component: {fileID: 5508390012697799571}
   - component: {fileID: 8210917622849110605}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: HealthDrop
-  m_TagString: Untagged
+  m_TagString: HP Drop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,5 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2431b49ea9ca243a72bc46241813b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropChance: 1
+  dropChance: 0.5
   attractSpeed: 10
+  amount: 3

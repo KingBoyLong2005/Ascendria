@@ -4,8 +4,8 @@ using UnityEngine;
 public class Loot : MonoBehaviour
 {
     [Range(0f, 1f)] public float dropChance;
-
     public float attractSpeed = 10f;
+    public float amount = 10f;
 
     private Transform playerPos;
 
@@ -37,18 +37,38 @@ public class Loot : MonoBehaviour
         if (other.CompareTag("Player"))  // or your player tag
         {
             // Collect it 
-            Collect();
+            if (gameObject.CompareTag("EXP Gem"))
+            {
+                CollectEXP();
+            }
+            if (gameObject.CompareTag("HP Drop"))
+            {
+                CollectHealth();
+            }
         }
     }
 
-    void Collect()
+    void CollectEXP()
     {
         // e.g. add to player coins / exp
+        LevelManager.Instance.AddXP(amount);
 
         playerPos = null; //reset magnet effect when returned to pool
 
         // then return to pool / deactivate
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
-        Debug.Log("Loot Collected");
+        //Debug.Log("Loot Collected");
+    }
+
+    void CollectHealth()
+    {
+        // e.g. add to player coins / exp
+        PlayerStatManager.Instance.RestoreHealth(amount);
+
+        playerPos = null; //reset magnet effect when returned to pool
+
+        // then return to pool / deactivate
+        PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        //Debug.Log("Loot Collected");
     }
 }

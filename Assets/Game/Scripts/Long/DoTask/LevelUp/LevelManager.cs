@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static LootDropManager;
 
 public class LevelManager : MonoBehaviour
 {
@@ -34,11 +35,12 @@ public class LevelManager : MonoBehaviour
 
         OnCreated?.Invoke(this, EventArgs.Empty);
     }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.U))
         {
-            AddXP(20);
+            //AddXP(20);
         }
     }
 
