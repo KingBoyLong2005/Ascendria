@@ -11,7 +11,7 @@ public class LootCollector : MonoBehaviour
         Collider[] hits = Physics.OverlapSphere(
             transform.position,
             collectRadius,
-            LayerMask.GetMask("Loot")  // assume loot objects are on “Loot” layer
+            LayerMask.GetMask("Magnetable Loot")  
         );
 
         foreach (var c in hits)

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3956531823750611354}
   m_Layer: 9
   m_Name: XPGem
-  m_TagString: Untagged
+  m_TagString: EXP Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropChance: 1
   attractSpeed: 10
+  amount: 10

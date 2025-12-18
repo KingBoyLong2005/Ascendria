@@ -61,6 +61,18 @@ public class PlayerStatManager : MonoBehaviour
         }
     }
 
+    public void RestoreHealth(float amount)
+    {
+        currentHealth += amount;
+        OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, MaxHealth));
+        Debug.Log("Player heal: " + amount + ", current health: " + currentHealth);
+
+        if (currentHealth >= MaxHealth)
+        {
+            currentHealth = MaxHealth;
+        }
+    }
+
     private void Die()
     {
         Debug.Log($"Player died with: {currentHealth} left");
