@@ -9,6 +9,8 @@ TagManager:
   - Bullet
   - Enemy
   - Character
+  - EXP Gem
+  - HP Drop
   layers:
   - Default
   - TransparentFX
@@ -19,9 +21,9 @@ TagManager:
   - Destructible
   - Enemy
   - Ground
-  - Loot
+  - Magnetable Loot
   - Interactable
-  - 
+  - Pickupable Loot
   - 
   - 
   - 
