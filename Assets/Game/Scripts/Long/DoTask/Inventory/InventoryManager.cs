@@ -20,6 +20,8 @@ public class InventoryManager : MonoBehaviour
     public Dictionary<Item, int> ownedItems = new Dictionary<Item, int>();
     public List<Item> activeItems = new List<Item>();
 
+    private float totalCoins = 0f;
+
     public int maxActiveWeapons = 6;
     public int maxActiveBookBuffs = 3;
     public int maxActiveItem = 2;
@@ -229,19 +231,42 @@ public class InventoryManager : MonoBehaviour
         return ownedItems.ContainsKey(item) && ownedItems[item] > 0;
     }
 
+    // --------- COINS OPERATIONS ---------
+    public void AddCoins()
+    {
+        totalCoins += PlayerStatManager.Instance.Coin;
+    }
+    public void SpendCoins(float amount)
+    {
+        if (amount <= 0 || amount > totalCoins) return;
+        totalCoins -= amount;
+    }
+    public float GetTotalCoins()
+    {
+        return totalCoins;
+    }
+
     private void OnEnable()
     {
         GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
         Debug.Log("<color= magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
+
+        EnemyManager.Instance.OnDead += EnemyManager_OnDead;
     }
     private void OnDisable()
     {
         GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
         Debug.Log("<color= magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
+
+        EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
     }
     private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
     {
         AddItem(e.item);
         Debug.Log($"<color= magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
+    }
+    private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
+    {
+        AddCoins();
     }
 }
