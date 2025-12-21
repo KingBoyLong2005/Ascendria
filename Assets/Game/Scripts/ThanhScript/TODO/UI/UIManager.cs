@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
 
+    private LevelUpUI levelUpUI;
+    private InventoryUI inventoryUI;
     private HealthBarUI healthBarUI;
     private XPBarUI xpBarUI;
     private TMP_Text killCount;
@@ -21,6 +23,11 @@ public class UIManager : MonoBehaviour
         }
         Instance = this;
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+            inventoryUI.Toggle();
+    }
     private void Start()
     {
         // Initialize UI elements
@@ -32,18 +39,35 @@ public class UIManager : MonoBehaviour
 
         go = GameObject.FindWithTag("Coin Counter");
         coinCount = go.GetComponentInChildren<TMP_Text>();
+
+        levelUpUI = FindFirstObjectByType<LevelUpUI>();
+        inventoryUI = FindFirstObjectByType<InventoryUI>();
     }
     private void OnEnable()
     {
         PlayerStatManager.Instance.OnPlayerHealthChange += PlayerStatManager_OnPlayerHealthChange;
         LevelManager.Instance.OnXPChanged += LevelManager_OnXPChanged;
         EnemyManager.Instance.OnDead += EnemyManager_OnDead;
+
+        LevelManager.Instance.OnLevelUp += HandleLevelUp;
+        LevelManager.Instance.OnUpgradeApplied += HandleUpgradeApplied;
+
+        InventoryManager.Instance.OnInventoryChanged += HandleInventoryChanged;
+        InventoryManager.Instance.OnActiveWeaponsChanged += HandleInventoryChanged;
+        InventoryManager.Instance.OnActiveBookBuffsChanged += HandleInventoryChanged;
     }
     private void OnDisable()
     {
         PlayerStatManager.Instance.OnPlayerHealthChange -= PlayerStatManager_OnPlayerHealthChange;
         LevelManager.Instance.OnXPChanged -= LevelManager_OnXPChanged;
         EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
+
+        LevelManager.Instance.OnLevelUp -= HandleLevelUp;
+        LevelManager.Instance.OnUpgradeApplied -= HandleUpgradeApplied;
+
+        InventoryManager.Instance.OnInventoryChanged -= HandleInventoryChanged;
+        InventoryManager.Instance.OnActiveWeaponsChanged -= HandleInventoryChanged;
+        InventoryManager.Instance.OnActiveBookBuffsChanged -= HandleInventoryChanged;
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
@@ -60,5 +84,20 @@ public class UIManager : MonoBehaviour
     private void PlayerStatManager_OnPlayerHealthChange(object sender, PlayerStatManager.OnPlayerHealthChangeEventArgs e)
     {
         healthBarUI.SetHealth(e.currentHealth, e.maxHealth);
+    }
+
+    void HandleLevelUp(object sender, LevelManager.LevelUpEventArgs e)
+    {
+        levelUpUI.Show(e);
+    }
+
+    void HandleUpgradeApplied(object sender, LevelManager.UpgradeSelectedEventArgs e)
+    {
+        levelUpUI.Hide();
+    }
+
+    void HandleInventoryChanged(object sender, System.EventArgs e)
+    {
+        inventoryUI.RefreshAll();
     }
 }

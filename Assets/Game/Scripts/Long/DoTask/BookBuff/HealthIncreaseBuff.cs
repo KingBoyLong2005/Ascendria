@@ -4,7 +4,6 @@ using UnityEngine;
 public class HealthIncreaseBuff : BookBuff
 {
     public float amount = 10f;
-    private float currentHealth = 0;
     public override void Apply(PlayerStatManager stats)
     {
         // stats.maxHP += amount;

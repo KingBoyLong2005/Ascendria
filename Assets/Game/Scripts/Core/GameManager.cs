@@ -27,12 +27,6 @@ public class GameManager : MonoBehaviour
     private EnemyManager enemyManager;
     private DamageManager damageManager;
 
-    private InventoryManager inventoryManager;
-    private HitBoxManager hitBoxManager;
-    private WeaponManager weaponManager;
-    private ItemManager itemManager;
-    private BookBuffManager bookBuffManager;
-    private LevelManager levelManager;
     private LootDropManager lootDropManager;
 
     private BossManager bossManager;
@@ -90,12 +84,6 @@ public class GameManager : MonoBehaviour
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
 
-        inventoryManager = gameObject.AddComponent<InventoryManager>();
-        hitBoxManager = gameObject.AddComponent<HitBoxManager>();
-        weaponManager = gameObject.AddComponent<WeaponManager>();  
-        itemManager = gameObject.AddComponent<ItemManager>();  
-        bookBuffManager = gameObject.AddComponent<BookBuffManager>();
-        levelManager = gameObject.AddComponent<LevelManager>();
         lootDropManager = gameObject.AddComponent<LootDropManager>();
         
         uiManager = gameObject.AddComponent<UIManager>();
@@ -113,14 +101,12 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        FindFirstObjectByType<InventoryUI>().ToggleInventory();
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
-        FindFirstObjectByType<InventoryUI>().CloseInventory();
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }

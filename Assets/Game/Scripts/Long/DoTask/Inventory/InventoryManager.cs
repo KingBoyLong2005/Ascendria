@@ -88,7 +88,7 @@ public class InventoryManager : MonoBehaviour
         {
             var item = ItemManager.Instance.GetRandomItem();
             AddItem(item);   
-            Debug.Log($"<color= green> Thêm {item}");
+            Debug.Log($"<color=green> Thêm {item}");
         }
     }
 

@@ -2944,7 +2944,6 @@ GameObject:
   - component: {fileID: 2034369566}
   - component: {fileID: 2034369565}
   - component: {fileID: 2034369564}
-  - component: {fileID: 2034369568}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3041,18 +3040,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2034369568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034369563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a7a1b9389336a489e9abfe84d5aa16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &275830485136836451 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1424245147718566078, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}
@@ -3157,6 +3144,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 1082364242359335853, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}
       propertyPath: m_text
       value: 
@@ -3164,6 +3152,11 @@ PrefabInstance:
     - target: {fileID: 1082364242359335853, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}
       propertyPath: m_fontSize
       value: 36
+=======
+    - target: {fileID: 1424245147718566078, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}
+      propertyPath: m_Value
+      value: 100
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 3478007836174058413, guid: f798ca2e737106542ba20d8e7bc0f727, type: 3}
       propertyPath: text
