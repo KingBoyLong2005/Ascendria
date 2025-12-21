@@ -34,6 +34,11 @@ public class BossGateTrigger : MonoBehaviour
             // Chỉ kích hoạt sự kiện nếu có vị trí spawn hợp lệ
             if (bossSpawnPosition != null)
             {
+                // 1. Phát tiếng mở cổng
+                //AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.gateOpenSfx);
+
+                // 2. Đổi sang nhạc Boss
+                //AudioManager.Instance.PlayMusic(PrefabDatabase.Instance.bossTheme);
                 Debug.Log("<color=red>[BossGateTrigger]</color> Player đã tương tác với Boss Gate.");
                 // Kích hoạt sự kiện và truyền vị trí Spawn của Boss Gate đi
                 OnBossGateInteracted?.Invoke(bossSpawnPosition);

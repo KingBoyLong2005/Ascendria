@@ -66,6 +66,8 @@ public class MapManager01 : MonoBehaviour
         }
         // 4. Tạo Boss Gate sau khi Map và SpawnPointManager đã sẵn sàng
         SpawnBossGate();
+        // 5. Phát nhạc nền của Map
+        AudioManager.Instance.PlayMusic(PrefabDatabase.Instance.mapTheme);
     }
 
     // Hàm Spawn Boss Gate 
