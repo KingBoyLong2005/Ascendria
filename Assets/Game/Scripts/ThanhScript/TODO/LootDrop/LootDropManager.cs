@@ -14,7 +14,14 @@ public class LootDropManager : MonoBehaviour
     {
         lootTable.Add(PrefabDatabase.Instance.health);
         lootTable.Add(PrefabDatabase.Instance.exp);
+    }
+    private void OnEnable()
+    {
         EnemyManager.Instance.OnDead += EnemyManager_OnDead;
+    }
+    private void OnDisable()
+    {
+        EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)

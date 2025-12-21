@@ -11,6 +11,7 @@ public class PlayerStatManager : MonoBehaviour
     public float baseAttack = 10f;
     public float baseMoveSpeed = 5f;
     public float baseArmor = 5f;
+    private float baseCoin = 5f;
 
     public event EventHandler<OnPlayerHealthChangeEventArgs> OnPlayerHealthChange;
     public class OnPlayerHealthChangeEventArgs : EventArgs
@@ -39,6 +40,9 @@ public class PlayerStatManager : MonoBehaviour
 
     private float armorModifierFlat = 0f;
     private float armorModifierMult = 1f;
+
+    private float coinModifierFlat = 0f;
+    private float coinModifierMult = 1f;
 
     private void Awake()
     {
@@ -114,6 +118,14 @@ public class PlayerStatManager : MonoBehaviour
             return (baseArmor + armorModifierFlat) * armorModifierMult;
         }
     }
+    // COIN GETTER
+    public float Coin
+    {
+        get
+        {
+            return (baseCoin + coinModifierFlat) * coinModifierMult;
+        }
+    }
 
     // STAT MODIFYING METHODS
     public void ModifyHealth(float addFlat = 0f, float mult = 1f)
@@ -137,6 +149,11 @@ public class PlayerStatManager : MonoBehaviour
     {
         armorModifierFlat += addFlat;
         armorModifierMult *= mult;
+    }
+    public void ModifyCoin(float addFlat = 0f, float mult = 1f)
+    {
+        coinModifierFlat += addFlat;
+        coinModifierMult *= mult;
     }
 }
 

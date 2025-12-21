@@ -11,6 +11,8 @@ TagManager:
   - Character
   - EXP Gem
   - HP Drop
+  - Kill Counter
+  - Coin Counter
   layers:
   - Default
   - TransparentFX

@@ -22,6 +22,8 @@ public class EnemyManager : MonoBehaviour
     private float elapsedTime = 0f;
     private float nextDiff = 60f;
 
+    private float killCount = 0f;
+
     public event EventHandler<OnEnemyDeathEventArgs> OnDead;
     public class OnEnemyDeathEventArgs : EventArgs
     {
@@ -106,6 +108,11 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    public float GetKillCount()
+    {
+        return killCount;
+    }
+
     // ============================
     //       SPAWN ENEMY
     // ============================
@@ -139,6 +146,7 @@ public class EnemyManager : MonoBehaviour
     public void EnemyDie(GameObject enemy)
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
+        ++killCount;
         OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemy.transform.position});
     }
 

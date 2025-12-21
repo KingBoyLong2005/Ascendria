@@ -1,14 +1,16 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
-    private InventoryUI invUI;
-    private LevelUpUI levelUI;
+
     private HealthBarUI healthBarUI;
     private XPBarUI xpBarUI;
+    private TMP_Text killCount;
+    private TMP_Text coinCount;
 
     void Awake()
     {
@@ -18,16 +20,36 @@ public class UIManager : MonoBehaviour
             return;
         }
         Instance = this;
-
+    }
+    private void Start()
+    {
+        // Initialize UI elements
         healthBarUI = FindFirstObjectByType<HealthBarUI>();
-        invUI = FindFirstObjectByType<InventoryUI>();
-        levelUI = FindFirstObjectByType<LevelUpUI>();
-        RegisterEvent();
+        xpBarUI = FindFirstObjectByType<XPBarUI>();
+
+        GameObject go = GameObject.FindWithTag("Kill Counter");
+        killCount = go.GetComponentInChildren<TMP_Text>();
+
+        go = GameObject.FindWithTag("Coin Counter");
+        coinCount = go.GetComponentInChildren<TMP_Text>();
+    }
+    private void OnEnable()
+    {
         PlayerStatManager.Instance.OnPlayerHealthChange += PlayerStatManager_OnPlayerHealthChange;
         LevelManager.Instance.OnXPChanged += LevelManager_OnXPChanged;
+        EnemyManager.Instance.OnDead += EnemyManager_OnDead;
+    }
+    private void OnDisable()
+    {
+        PlayerStatManager.Instance.OnPlayerHealthChange -= PlayerStatManager_OnPlayerHealthChange;
+        LevelManager.Instance.OnXPChanged -= LevelManager_OnXPChanged;
+        EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
+    }
 
-        healthBarUI = FindFirstObjectByType<HealthBarUI>();
-        xpBarUI = FindAnyObjectByType<XPBarUI>();
+    private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
+    {
+        killCount.text = $"{EnemyManager.Instance.GetKillCount()}";
+        coinCount.text = $"{InventoryManager.Instance.GetTotalCoins()}";
     }
 
     private void LevelManager_OnXPChanged(object sender, LevelManager.XPProgressEventArgs e)
@@ -38,20 +60,5 @@ public class UIManager : MonoBehaviour
     private void PlayerStatManager_OnPlayerHealthChange(object sender, PlayerStatManager.OnPlayerHealthChangeEventArgs e)
     {
         healthBarUI.SetHealth(e.currentHealth, e.maxHealth);
-    }
-    private void RegisterEvent()
-    {
-        PlayerStatManager.Instance.OnPlayerHealthChange += PlayerStatManager_OnPlayerHealthChange;
-        InventoryManager.Instance.OnInventoryChanged += (s,e) => invUI.RefreshAll();
-        InventoryManager.Instance.OnActiveWeaponsChanged += (s,e) => invUI.RefreshAll();
-        InventoryManager.Instance.OnActiveBookBuffsChanged += (s,e) => invUI.RefreshAll(); // Added for buffs
-        InventoryManager.Instance.OnActiveItemsChanged += (s, e) => invUI.RefreshAll();
-
-        LevelManager.Instance.OnLevelUp +=(s,e) => levelUI.OnLevelUp(s,e);
-        LevelManager.Instance.OnUpgradeApplied += (s,e) => levelUI.OnUpgradeApplied(s,e);
-    }
-    private void OnLevel(object _, LevelManager.LevelUpEventArgs e)
-    {
-        
     }
 }

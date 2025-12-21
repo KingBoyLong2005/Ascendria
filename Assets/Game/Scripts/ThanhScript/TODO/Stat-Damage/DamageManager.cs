@@ -25,6 +25,7 @@ public class DamageManager : MonoBehaviour
     private void OnDisable()
     {
         EnemyManager.Instance.OnEnemyHitPlayer -= EnemyManager_OnEnemyHitPlayer;
+        WeaponManager.Instance.OnWeaponHitEnemy -= WeaponManager_OnWeaponHitEnemy;
     }
 
     private void EnemyManager_OnEnemyHitPlayer(object sender, EnemyManager.OnEnemyHitPlayerEventArgs e)
