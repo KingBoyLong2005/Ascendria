@@ -19,12 +19,7 @@ public class Sword : Weapon
             sizeBox,
             rot,
             enemyMask,
-            col =>
-            {
-                var enemy = col.GetComponentInParent<EnemyStats>();
-                if (enemy != null)
-                    WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, damage);
-            }
+            OnHitEnemy
         );
 
         // ==== EFFECT ====
@@ -34,6 +29,12 @@ public class Sword : Weapon
             GameObject fx = Instantiate(slashEffectPrefab, center, fxRot);
             Destroy(fx, 0.4f);
         }
+    }
+    private void OnHitEnemy(Collider col)
+    {
+        var enemy = col.GetComponentInParent<EnemyStats>();
+        if (enemy != null)
+            WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, damage);
     }
     public override void LevelUp(Rarity rarity)
     {

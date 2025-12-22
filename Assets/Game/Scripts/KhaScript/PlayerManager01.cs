@@ -6,6 +6,12 @@ public class PlayerManager01 : MonoBehaviour
     private GameObject playerPrefab;
     private MapManager01 mapManager;
 
+    private InventoryManager inventoryManager;
+    private HitBoxManager hitBoxManager;
+    private WeaponManager weaponManager;
+    private ItemManager itemManager;
+    private BookBuffManager bookBuffManager;
+    private LevelManager levelManager;
     public event EventHandler OnPlayerReady;
     public void Initialize()
     {
@@ -22,6 +28,12 @@ public class PlayerManager01 : MonoBehaviour
             if (playerSpawnPos != Vector3.zero)
             {
                 SpawnPlayer(playerSpawnPos);
+                inventoryManager = gameObject.AddComponent<InventoryManager>();
+                hitBoxManager = gameObject.AddComponent<HitBoxManager>();
+                weaponManager = gameObject.AddComponent<WeaponManager>();  
+                itemManager = gameObject.AddComponent<ItemManager>();  
+                bookBuffManager = gameObject.AddComponent<BookBuffManager>();
+                levelManager = gameObject.AddComponent<LevelManager>();
             }
             else
             {

@@ -5,10 +5,10 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("References")]
     public Transform playerTransform;    // transform của player
-    public Camera attackCamera;          // camera để lấy hướng tấn công
+    // public Camera attackCamera;          // camera để lấy hướng tấn công
 
     [Header("Spawn positioning")]
-    public float spawnOffset = 0.12f;
+    public float spawnOffset = 1.5f;
     public float spawnHeightOffset = 0.6f;
     public LayerMask obstacleMask;
     
@@ -19,8 +19,6 @@ public class PlayerAttack : MonoBehaviour
         if (playerTransform == null)
             playerTransform = transform;
 
-        if (attackCamera == null)
-            attackCamera = Camera.main;
         // WeaponManager.Instance.AddWeapon(wp);
         // báo ready
         OnPlayerAttackReady?.Invoke(this, EventArgs.Empty);
@@ -31,12 +29,7 @@ public class PlayerAttack : MonoBehaviour
     {
         Transform fp = playerTransform;
 
-        Vector3 dirFlat = new Vector3(dir.x, 0f, dir.z);
-
-        if (dirFlat.sqrMagnitude < 0.0001f)
-            dirFlat = fp.forward;
-
-        dirFlat.Normalize();
+        Vector3 dirFlat = new Vector3(dir.x, 0f, dir.z).normalized;
 
         CapsuleCollider cap = fp.GetComponent<CapsuleCollider>();
 
@@ -52,40 +45,37 @@ public class PlayerAttack : MonoBehaviour
             heightWorld = cap.height * lossy.y;
             centerWorld = fp.TransformPoint(cap.center);
         }
-        else
-        {
-            var rend = fp.GetComponentInChildren<Renderer>();
-            if (rend != null)
-            {
-                radiusWorld = Mathf.Max(rend.bounds.extents.x, rend.bounds.extents.z);
-                heightWorld = rend.bounds.size.y;
-                centerWorld = rend.bounds.center;
-            }
-        }
 
         float moveDist = radiusWorld + spawnOffset;
         Vector3 spawn = centerWorld + dirFlat * moveDist;
 
-        float chestY = fp.position.y + Mathf.Clamp(heightWorld * 0.25f, 0.2f, 1.2f) + spawnHeightOffset;
+        float chestY = fp.position.y
+            + Mathf.Clamp(heightWorld * 0.25f, 0.2f, 1.2f)
+            + spawnHeightOffset;
+
         spawn.y = chestY;
 
-        RaycastHit hit;
-        Vector3 rayOrigin = fp.position + Vector3.up * 0.2f;
-
-        if (Physics.Raycast(rayOrigin, dirFlat, out hit, moveDist + 0.1f, obstacleMask))
+        // tránh spawn xuyên tường
+        if (Physics.Raycast(fp.position + Vector3.up * 0.2f,
+            dirFlat, out RaycastHit hit, moveDist, obstacleMask))
         {
-            spawn = hit.point + dirFlat * 0.12f;
+            spawn = hit.point - dirFlat * 0.1f;
             spawn.y = chestY;
         }
 
         return spawn;
     }
 
-    public Vector3 GetForwardDirection()
+    // 🔥 HƯỚNG TẤN CÔNG = HƯỚNG NHÂN VẬT
+    public Vector3 GetAttackDirection()
     {
-        // hướng tấn công do camera quyết định
-        Vector3 camDir = attackCamera.transform.forward;
-        return new Vector3(camDir.x, 0f, camDir.z).normalized;
+        Vector3 dir = playerTransform.forward;
+        dir.y = 0f;
+
+        if (dir.sqrMagnitude < 0.001f)
+            dir = Vector3.forward;
+
+        return dir.normalized;
     }
 }
 

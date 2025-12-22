@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -12,81 +11,66 @@ namespace StarterAssets
 #endif
     public class PlayerMove : MonoBehaviour
     {
+        // ===================== STATE =====================
         private enum MovementState
         {
             Grounded,
             Air,
-            Wall
+            Climb
         }
 
-        [Header("Player")]
-        public float MoveSpeed = 2.0f;
-        [Range(0f, 0.3f)] public float RotationSmoothTime = 0.12f;
-        public float SpeedChangeRate = 10.0f;
+        // ===================== CONFIG =====================
+        [Header("Move")]
+        public float MoveSpeed = 4f;
+        public float SpeedChangeRate = 10f;
+        public float RotationSmoothTime = 0.12f;
 
         [Header("Jump")]
-        public bool ActveAirJump = true;
         public float JumpHeight = 1.2f;
+        public bool EnableAirJump = true;
         public int MaxAirJump = 1;
 
         [Header("Gravity")]
-        public float Gravity = -15.0f;
-        public float TerminalVelocity = 53.0f;
+        public float Gravity = -15f;
+        public float TerminalVelocity = 53f;
 
-        [Header("Wall")]
-        public bool ActiveClimb = true;
-        public float WallCheckDistance = 0.6f;
-        public float WallSlideSpeed = -2f;
+        [Header("Climb")]
+        public bool ClimbActive = true;
         public float ClimbSpeed = 2.5f;
-        public Vector3 WallJumpForce = new Vector3(6f, 8f, 6f);
+        public float WallCheckDistance = 0.6f;
 
-        [Header("Timeout")]
-        public float JumpTimeout = 0.5f;
-        public float FallTimeout = 0.15f;
-
-        [Header("Cinemachine")]
+        [Header("Camera")]
         public GameObject CinemachineCameraTarget;
-        public float TopClamp = 70.0f;
-        public float BottomClamp = -30.0f;
-        public float CameraAngleOverride = 0.0f;
-        public bool LockCameraPosition = false;
+        public float GroundTopClamp = 70f;
+        public float GroundBottomClamp = -70f;
+        public float ClimbTopClamp = 30f;
+        public float ClimbBottomClamp = -30f;
 
-        private MovementState _state;
+        // ===================== INTERNAL =====================
+        private MovementState _state = MovementState.Air;
 
         private float _speed;
-        private float _animationBlend;
         private float _targetRotation;
         private float _rotationVelocity;
         private float _verticalVelocity;
 
-        private float _jumpTimeoutDelta;
-        private float _fallTimeoutDelta;
-
         private int _airJumpLeft;
-
         private Vector3 _wallNormal;
 
-        private float _cinemachineTargetYaw;
-        private float _cinemachineTargetPitch;
+        private float _cinemachineYaw;
+        private float _cinemachinePitch;
 
         private CharacterController _controller;
         private StarterAssetsInputs _input;
-        private Animator _animator;
         private GameObject _mainCamera;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
 
-        private bool _hasAnimator;
         private const float _threshold = 0.01f;
 
-        private int _animIDSpeed;
-        private int _animIDGrounded;
-        private int _animIDJump;
-        private int _animIDFreeFall;
-        private int _animIDMotionSpeed;
-
+        // ===================== UNITY =====================
         private void Awake()
         {
             _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -96,25 +80,20 @@ namespace StarterAssets
         {
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
-            _hasAnimator = TryGetComponent(out _animator);
 
 #if ENABLE_INPUT_SYSTEM
             _playerInput = GetComponent<PlayerInput>();
 #endif
 
-            AssignAnimationIDs();
-
-            _cinemachineTargetYaw = CinemachineCameraTarget.transform.eulerAngles.y;
-            _jumpTimeoutDelta = JumpTimeout;
-            _fallTimeoutDelta = FallTimeout;
+            _airJumpLeft = MaxAirJump;
+            _cinemachineYaw = CinemachineCameraTarget.transform.eulerAngles.y;
         }
 
         private void Update()
         {
             CheckGrounded();
-            HandleWallCheck();
+            CheckClimb();
             HandleJump();
-            HandleWallMovement();
             ApplyGravity();
             Move();
         }
@@ -124,8 +103,7 @@ namespace StarterAssets
             CameraRotation();
         }
 
-        // ===================== CORE =====================
-
+        // ===================== STATE CHECK =====================
         private void CheckGrounded()
         {
             bool grounded = (_controller.collisionFlags & CollisionFlags.Below) != 0;
@@ -134,133 +112,60 @@ namespace StarterAssets
             {
                 _state = MovementState.Grounded;
                 _airJumpLeft = MaxAirJump;
-                _fallTimeoutDelta = FallTimeout;
 
                 if (_verticalVelocity < 0f)
                     _verticalVelocity = -2f;
             }
-            else if (_state != MovementState.Wall)
+            else if (_state != MovementState.Climb)
             {
                 _state = MovementState.Air;
             }
-
-            if (_hasAnimator)
-                _animator.SetBool(_animIDGrounded, grounded);
         }
 
-        private void HandleWallCheck()
+        private void CheckClimb()
         {
             if (_state == MovementState.Grounded)
                 return;
 
             RaycastHit hit;
-            Vector3 origin = transform.position + Vector3.up * 0.5f;
+            Vector3 origin = transform.position + Vector3.up * 1.0f;
 
             if (Physics.Raycast(origin, transform.forward, out hit, WallCheckDistance))
             {
-                if (Vector3.Angle(hit.normal, Vector3.up) > 80f)
+                float angle = Vector3.Angle(hit.normal, Vector3.up);
+                if (angle > 80f && angle < 100f)
                 {
-                    // VÀO WALL STATE
-                    if (_state != MovementState.Wall)
-                    {
-                        _verticalVelocity = 0f; // 🔥 KHÓA RƠI NGAY LẬP TỨC
-                    }
-
-                    _state = MovementState.Wall;
-                    _wallNormal = hit.normal;
+                    if (_state != MovementState.Climb)
+                        EnterClimb(hit);
                     return;
                 }
             }
 
-            if (_state == MovementState.Wall)
-                _state = MovementState.Air;
+            if (_state == MovementState.Climb)
+                ExitClimb();
         }
 
-        private void HandleWallMovement()
+        private void EnterClimb(RaycastHit hit)
         {
-            if (_state != MovementState.Wall)
-                return;
-
-            if (ActiveClimb)
-            {
-                float climbInput = _input.move.y;
-                _verticalVelocity = climbInput * ClimbSpeed;
-            }
-            else
-            {
-                if (_verticalVelocity < 0f)
-                    _verticalVelocity = WallSlideSpeed;
-            }
+            _state = MovementState.Climb;
+            _wallNormal = hit.normal;
+            _verticalVelocity = 0f;
         }
 
-        private void HandleJump()
+        private void ExitClimb()
         {
-            if (_state == MovementState.Grounded)
-            {
-                if (_jumpTimeoutDelta > 0)
-                    _jumpTimeoutDelta -= Time.deltaTime;
-
-                if (_input.jump && _jumpTimeoutDelta <= 0f)
-                    DoJump();
-            }
-            else
-            {
-                if (_input.jump)
-                {
-                    if (_state == MovementState.Wall)
-                    {
-                        DoWallJump();
-                    }
-                    else if (ActveAirJump && _airJumpLeft > 0)
-                    {
-                        DoJump();
-                        _airJumpLeft--;
-                    }
-                }
-
-                if (_fallTimeoutDelta > 0)
-                    _fallTimeoutDelta -= Time.deltaTime;
-                else if (_hasAnimator)
-                    _animator.SetBool(_animIDFreeFall, true);
-            }
-
-            _input.jump = false;
-        }
-
-        private void DoJump()
-        {
-            _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-            _jumpTimeoutDelta = JumpTimeout;
-
-            if (_hasAnimator)
-                _animator.SetBool(_animIDJump, true);
-        }
-
-        private void DoWallJump()
-        {
-            Vector3 jumpDir = _wallNormal + Vector3.up;
-
-            _verticalVelocity = WallJumpForce.y;
-
-            Vector3 horizontal =
-                new Vector3(jumpDir.x * WallJumpForce.x, 0, jumpDir.z * WallJumpForce.z);
-
-            _controller.Move(horizontal * Time.deltaTime);
-
             _state = MovementState.Air;
         }
 
-        private void ApplyGravity()
-        {
-            if (_state == MovementState.Wall && ActiveClimb)
-                return;
-
-            if (_verticalVelocity < TerminalVelocity)
-                _verticalVelocity += Gravity * Time.deltaTime;
-        }
-
+        // ===================== MOVE =====================
         private void Move()
         {
+            if (_state == MovementState.Climb && ClimbActive)
+            {
+                MoveClimb();
+                return;
+            }
+
             float targetSpeed = _input.move == Vector2.zero ? 0f : MoveSpeed;
             float currentSpeed = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
 
@@ -286,48 +191,94 @@ namespace StarterAssets
             Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity;
 
             _controller.Move(velocity * Time.deltaTime);
+        }
 
-            if (_hasAnimator)
+        private void MoveClimb()
+        {
+            Vector3 climbUp = Vector3.ProjectOnPlane(Vector3.up, _wallNormal).normalized;
+            Vector3 climbRight = Vector3.Cross(_wallNormal, climbUp);
+
+            Vector3 move =
+                climbUp * _input.move.y +
+                climbRight * _input.move.x;
+
+            _controller.Move(move * ClimbSpeed * Time.deltaTime);
+
+            Quaternion targetRot = Quaternion.LookRotation(-_wallNormal);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * 10f);
+        }
+
+        // ===================== JUMP =====================
+        private void HandleJump()
+        {
+            if (!_input.jump) return;
+
+            if (_state == MovementState.Grounded)
             {
-                _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
-                _animator.SetFloat(_animIDSpeed, _animationBlend);
-                _animator.SetFloat(_animIDMotionSpeed, 1f);
+                DoJump();
             }
+            else if (_state == MovementState.Climb)
+            {
+                DoClimbJump();
+            }
+            else if (_state == MovementState.Air && EnableAirJump && _airJumpLeft > 0)
+            {
+                DoJump();
+                _airJumpLeft--;
+            }
+
+            _input.jump = false;
+        }
+
+        private void DoJump()
+        {
+            _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+        }
+
+        private void DoClimbJump()
+        {
+            Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
+            _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+            _controller.Move(jumpDir * 2f);
+            ExitClimb();
+        }
+
+        // ===================== GRAVITY =====================
+        private void ApplyGravity()
+        {
+            if (_state == MovementState.Climb)
+                return;
+
+            if (_verticalVelocity < TerminalVelocity)
+                _verticalVelocity += Gravity * Time.deltaTime;
         }
 
         // ===================== CAMERA =====================
-
         private void CameraRotation()
         {
-            if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
+            if (_input.look.sqrMagnitude >= _threshold)
             {
-                float delta = IsCurrentDeviceMouse ? 1f : Time.deltaTime;
-                _cinemachineTargetYaw += _input.look.x * delta;
-                _cinemachineTargetPitch += _input.look.y * delta;
+                float delta = IsMouse ? 1f : Time.deltaTime;
+                _cinemachineYaw += _input.look.x * delta;
+                _cinemachinePitch += _input.look.y * delta;
             }
 
-            _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
-            _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
+            float top = _state == MovementState.Climb ? ClimbTopClamp : GroundTopClamp;
+            float bottom = _state == MovementState.Climb ? ClimbBottomClamp : GroundBottomClamp;
+
+            _cinemachinePitch = ClampAngle(_cinemachinePitch, bottom, top);
 
             CinemachineCameraTarget.transform.rotation =
-                Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, _cinemachineTargetYaw, 0);
+                Quaternion.Euler(_cinemachinePitch, _cinemachineYaw, 0);
         }
 
-        private bool IsCurrentDeviceMouse =>
+        private bool IsMouse =>
 #if ENABLE_INPUT_SYSTEM
             _playerInput.currentControlScheme == "KeyboardMouse";
 #else
             false;
 #endif
-
-        private void AssignAnimationIDs()
-        {
-            _animIDSpeed = Animator.StringToHash("Speed");
-            _animIDGrounded = Animator.StringToHash("Grounded");
-            _animIDJump = Animator.StringToHash("Jump");
-            _animIDFreeFall = Animator.StringToHash("FreeFall");
-            _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
-        }
 
         private static float ClampAngle(float angle, float min, float max)
         {

@@ -11,13 +11,7 @@ public class WeaponManager : MonoBehaviour
     public List<Weapon> weapons ;
 
     private Weapon wp;
-    [Header("Spawn positioning")]
-    public float spawnOffset = 0.12f;
-    public float spawnHeightOffset = 0.0f;
-    public LayerMask obstacleMask;
-
     private PlayerAttack player;
-    Camera attackCamera;
 
     private bool activated = false;
     bool playerReady = false;
@@ -44,17 +38,7 @@ public class WeaponManager : MonoBehaviour
         }
 
         Instance = this;
-        // // TÌM player và đăng ký EVENT TRONG AWAKE
-        // player = FindFirstObjectByType<PlayerAttack>();
-        // if (player != null)
-        // {
-        //     player.OnPlayerAttackReady += HandlePlayerAttackReady;
-        //     Debug.Log("WeaponManager registered PlayerAttackReady in Awake()");
-        // }
-        // else
-        // {
-        //     Debug.LogWarning("WeaponManager: PlayerAttack chưa tồn tại trong scene khi Awake()");
-        // }
+
     }
 
     void Start()
@@ -109,7 +93,6 @@ public class WeaponManager : MonoBehaviour
 
         // tất cả đủ điều kiện → bắt đầu activate
         player = FindFirstObjectByType<PlayerAttack>();
-        attackCamera = Camera.main;
 
         weapons = new List<Weapon>();
 
@@ -119,50 +102,18 @@ public class WeaponManager : MonoBehaviour
         activated = true;
         Debug.Log(">>> WeaponManager ACTIVATED SUCCESS");
     }
-    // void Start()
-    // {
-    //     player = FindFirstObjectByType<PlayerAttack>();
-    //     attackCamera = Camera.main;
-    //     // clone tất cả weapon để dùng runtime
-    //     weapons = weapons.Select(w => Instantiate(w)).ToList();
-    // }
-    // private void HandlePlayerAttackReady(object sender, EventArgs e)
-    // {
-    //     Debug.Log("WeaponManager received PlayerAttackReady");
-
-    //     player = sender as PlayerAttack;
-    //     attackCamera = Camera.main;
-
-    //     weapons = new List<Weapon>();
-
-    //     if (player.wp != null)
-    //     {
-    //         Debug.Log("WeaponManager ADD WEAPON từ PlayerAttack");
-    //         weapons.Add(Instantiate(player.wp)); // clone runtime weapon
-    //     }
-    //     else
-    //     {
-    //         Debug.LogWarning("PlayerAttack.wp NULL");
-    //     }
-
-    //     activated = true;
-    //     Debug.Log(">>> WeaponManager ACTIVATED");
-    // }
-
     void Update()
     {
-        if (!activated)
-            return;
-        if (player == null || attackCamera == null)
-            return;
+        if (!activated || player == null)
+        return;
 
-        Vector3 forward = player.GetForwardDirection();
-        Vector3 spawnPosition = player.ComputeSpawnPosition(forward);
+        Vector3 attackDir = player.GetAttackDirection();
+        Vector3 spawnPos = player.ComputeSpawnPosition(attackDir);
         
         WeaponContext ctx = new WeaponContext
         {
-            spawnPos = spawnPosition,
-            forward = forward,
+            spawnPos = spawnPos,
+            forward = attackDir,
             owner = player.transform
         };
 
@@ -171,17 +122,12 @@ public class WeaponManager : MonoBehaviour
         {
             w.Tick(dt, ctx);
         }
-        if (weapons == null || weapons.Count == 0)
-        {
-            Debug.LogWarning("WeaponManager: NO WEAPONS FOUND!");
-            return;
-        }
-        wp = weapons.First();
-        // if(Input.GetKeyDown(KeyCode.U) && DebugTest)
+        // if (weapons == null || weapons.Count == 0)
         // {
-        //     WeaponUpgrade.Upgrade(wp,RarityHelper.GetRandomRarity());
-        //     Debug.Log($"Damage: {wp.damage} \n Range: {wp.range} \n Size: {wp.size} \n Cooldown: {wp.cooldown} ");
+        //     Debug.LogWarning("WeaponManager: NO WEAPONS FOUND!");
+        //     return;
         // }
+        wp = weapons.First();
     }
     // --- GET FROM INVENTORY (placeholder) ---
     public Weapon GetFromInventory(Weapon wp)
