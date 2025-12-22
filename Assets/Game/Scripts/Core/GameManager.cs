@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     private BossManager bossManager;
     private GameEventManager gameEventManager;
+    private AudioManager audioManager;
 
     private UIManager uiManager;
 
@@ -49,6 +50,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // 1 object riêng để chứa AudioManager và được khởi tạo trước cả mapManager
+        var audioManagerObject = new GameObject("AudioManager");
+        var audioManager = audioManagerObject.AddComponent<AudioManager>();
+        //audioManager = gameObject.AddComponent<AudioManager>();
         //Tạo MapManager
         mapManager = gameObject.AddComponent<MapManager01>();
         mapManager.OnMapReady += HandleMapReady;
@@ -60,6 +65,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleMapReady(object sender, EventArgs e)
     {
+        //audioManager = gameObject.AddComponent<AudioManager>();
         //Boss
         bossManager = gameObject.AddComponent<BossManager>();
 

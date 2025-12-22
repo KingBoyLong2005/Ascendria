@@ -770,6 +770,10 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 6492681884389518919}
+    - target: {fileID: 1774671735915518684, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
+      propertyPath: isUIOpen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3588537297918181097, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
       propertyPath: m_ControllerManager.Controllers.Array.data[1].InputValue
       value: -0

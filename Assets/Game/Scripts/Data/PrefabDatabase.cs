@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName ="PrefabDatabase", menuName = "Game/PrefabDatabase")]
 public class PrefabDatabase : ScriptableObject
@@ -24,6 +24,15 @@ public class PrefabDatabase : ScriptableObject
     public GameObject health;
     public GameObject exp;
     public GameObject coin;
+
+    [Header("Audio BGM")]
+    public AudioClip mapTheme;
+    public AudioClip bossTheme;
+
+    [Header("Audio SFX")]
+    public AudioClip gateOpenSfx;
+    public AudioClip playerSpawnSfx;
+    public AudioClip bossSpawnSfx;
 
     private static PrefabDatabase _instance;
     public static PrefabDatabase Instance
