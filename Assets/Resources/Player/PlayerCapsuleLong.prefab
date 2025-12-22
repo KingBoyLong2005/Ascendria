@@ -276,7 +276,6 @@ GameObject:
   - component: {fileID: 582396682465065112}
   - component: {fileID: 7792792565113786999}
   - component: {fileID: 3826166581934954284}
-  - component: {fileID: 2130818955886979744}
   m_Layer: 3
   m_Name: PlayerCapsuleLong
   m_TagString: Player
@@ -500,7 +499,6 @@ MonoBehaviour:
   baseAttack: 10
   baseMoveSpeed: 5
   baseArmor: 5
-  healthBar: {fileID: 5274632420632998133}
 --- !u!114 &582396682465065112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,11 +735,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3510652747616913077, guid: 7f5c4169cd2ebde4499aa27e8eb1e3b5, type: 3}
   m_PrefabInstance: {fileID: 309086128796961009}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5274632420632998133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5582592236918880260, guid: 7f5c4169cd2ebde4499aa27e8eb1e3b5, type: 3}
-  m_PrefabInstance: {fileID: 309086128796961009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2708337242647618740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -782,6 +775,10 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 6492681884389518919}
+    - target: {fileID: 1774671735915518684, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
+      propertyPath: isUIOpen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3588537297918181097, guid: 2f2e5af513971da4f93f4794ea31da17, type: 3}
       propertyPath: m_ControllerManager.Controllers.Array.data[1].InputValue
       value: -0
