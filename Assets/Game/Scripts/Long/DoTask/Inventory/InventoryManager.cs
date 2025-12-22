@@ -92,7 +92,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    // --------- WEAPON OPERATIONS ---------
+    #region WEAPON OPERATIONS 
     public void AddWeapon(Weapon runtimeWeapon, bool autoEquip = true)
     {
         if (runtimeWeapon == null) return;
@@ -119,8 +119,8 @@ public class InventoryManager : MonoBehaviour
 
     // tiện ích
     public bool HasWeapon(Weapon w) => ownedWeapons.Contains(w);
-
-    // --------- Buff OPERATIONS ---------
+    #endregion
+    #region Buff OPERATIONS 
     public void AddBuff(BookBuff runtimeBookBuff, bool autoEquip = true)
     {
         if(runtimeBookBuff == null) return;
@@ -154,8 +154,9 @@ public class InventoryManager : MonoBehaviour
     {
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
-
-    // --------- ITEM OPERATIONS ---------
+    #endregion
+    
+    #region ITEM OPERATIONS 
     public void AddItem(Item runtimeItem, int count = 1, bool autoEquip = true)
     {
         if (runtimeItem == null || count <= 0) return;
@@ -231,7 +232,9 @@ public class InventoryManager : MonoBehaviour
         return ownedItems.ContainsKey(item) && ownedItems[item] > 0;
     }
 
-    // --------- COINS OPERATIONS ---------
+    #endregion
+
+    #region COINS OPERATIONS
     public void AddCoins()
     {
         totalCoins += PlayerStatManager.Instance.Coin;
@@ -248,17 +251,39 @@ public class InventoryManager : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
-        Debug.Log("<color= magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
-
-        EnemyManager.Instance.OnDead += EnemyManager_OnDead;
+        // GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
+        if (GameEventManager.Instance != null)
+        {
+            GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
+            Debug.Log("<color=magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
+        }
+        else
+        {
+            Debug.Log("<color=red> Không đăng ký được OnChestInteracted");
+        }
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.OnDead += EnemyManager_OnDead;
+            Debug.Log("<color= magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnDead");
+        }
+        else
+        {
+            Debug.Log("<color=red> Không đăng ký được OnDead");
+        }
     }
     private void OnDisable()
-    {
-        GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
-        Debug.Log("<color= magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
+    {   
+        if (GameEventManager.Instance != null)
+        {
+            GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
+            Debug.Log("<color=magenta> [InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
+        }
 
-        EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
+            Debug.Log("<color= magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnDead");
+        }
     }
     private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
     {
@@ -269,4 +294,5 @@ public class InventoryManager : MonoBehaviour
     {
         AddCoins();
     }
+    #endregion
 }

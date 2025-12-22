@@ -70,7 +70,11 @@ public class GameManager : MonoBehaviour
 
         //gameEventManager = gameObject.AddComponent<GameEventManager>();
         //gameEventManager.Initialize(bossManager);
-
+        
+        //Quản lý pool
+        poolManager = gameObject.AddComponent<PoolManager>();
+        enemyManager = gameObject.AddComponent<EnemyManager>();
+        damageManager = gameObject.AddComponent<DamageManager>();
         //Player
         playerManager = gameObject.AddComponent<PlayerManager01>();
         playerManager.Initialize();
@@ -79,10 +83,10 @@ public class GameManager : MonoBehaviour
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
 
-        //Quản lý pool
-        poolManager = gameObject.AddComponent<PoolManager>();
-        enemyManager = gameObject.AddComponent<EnemyManager>();
-        damageManager = gameObject.AddComponent<DamageManager>();
+        // //Quản lý pool
+        // poolManager = gameObject.AddComponent<PoolManager>();
+        // enemyManager = gameObject.AddComponent<EnemyManager>();
+        // damageManager = gameObject.AddComponent<DamageManager>();
 
         lootDropManager = gameObject.AddComponent<LootDropManager>();
         
@@ -101,12 +105,14 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
+        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }

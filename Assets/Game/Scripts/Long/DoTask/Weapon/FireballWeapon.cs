@@ -1,41 +1,35 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Weapons/Sword")]
-public class Sword : Weapon
+[CreateAssetMenu(menuName = "Weapons/Fireball")]
+public class FireballWeapon : Weapon
 {
-    public GameObject slashEffectPrefab;
+    [Header("Effects")]
+    public GameObject fireballPrefab;
+    // public GameObject explosionEffectPrefab;
+
+    [Header("Mask")]
     public LayerMask enemyMask;
-    
+
+    /// <summary>
+    /// Dùng cho bắn cầu lửa, AoE explosion khi trúng enemy
+    /// </summary>
     public override void Attack(WeaponContext ctx)
     {
-        Vector3 center = ctx.spawnPos;
+        Vector3 spawnPos = ctx.spawnPos;
         Quaternion rot = Quaternion.LookRotation(ctx.forward, Vector3.up);
-        Vector3 sizeBox = new Vector3(size, 0.25f, range);
 
-        // ==== HITBOX ====
-        HitBoxManager.Instance.RequestBox(
-            center,
-            sizeBox,
-            rot,
-            enemyMask,
-            OnHitEnemy
-        );
-
-        // ==== EFFECT ====
-        if (slashEffectPrefab != null)
+        GameObject fireballGO = Instantiate(fireballPrefab, spawnPos, rot);
+        FireballProjectile proj = fireballGO.GetComponent<FireballProjectile>();
+        if (proj != null)
         {
-            Quaternion fxRot = rot * Quaternion.Euler(90f, 0f, -60f);
-            GameObject fx = Instantiate(slashEffectPrefab, center, fxRot);
-            Destroy(fx, 0.4f);
+            // damage: sát thương AoE
+            // range: explosion radius
+            // size * 25f: projectile speed
+            // proj.Initialize(damage, range, size * 25f, enemyMask, explosionEffectPrefab);
+            proj.Initialize(damage, range, size * 25f, enemyMask);
         }
     }
-    private void OnHitEnemy(Collider col)
-    {
-        var enemy = col.GetComponentInParent<EnemyStats>();
-        if (enemy != null)
-            WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, damage);
-    }
+
     public override void LevelUp(Rarity rarity)
     {
         switch (rarity)
@@ -76,7 +70,6 @@ public class Sword : Weapon
                 break;
         }
 
-    level++;
+        level++;
     }
 }
-
