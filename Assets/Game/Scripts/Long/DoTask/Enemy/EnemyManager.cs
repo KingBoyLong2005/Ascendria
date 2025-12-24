@@ -8,6 +8,7 @@ public class EnemyManager : MonoBehaviour
 
     private Transform player;
     public List<GameObject> enemyPrefabs = new List<GameObject>();      // Danh sách prefab quái
+    private GameObject enemyDemonPrefab;
     
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
@@ -15,13 +16,20 @@ public class EnemyManager : MonoBehaviour
     public bool ActiveByButton = false;
     public LayerMask groundMask;
 
+    //Spawn Timer
     public float spawnInterval = 2f;
     private float timer = 0f;
 
+    //Difficulty Scale Timer
     public float difficultyMultiplier = 1f;
     private float elapsedTime = 0f;
-    private float nextDiff = 60f;
+    private float nextDiff = 10f;
 
+    //Game Countdown Timer
+    public float countdown = 20f; // in seconds
+    private bool countdownFinished  = false;
+
+    //Kill Count
     private float killCount = 0f;
 
     public event EventHandler<OnEnemyDeathEventArgs> OnDead;
@@ -73,15 +81,19 @@ public class EnemyManager : MonoBehaviour
             enemyPrefabs.Add(PrefabDatabase.Instance.enemyPrefab);
             Debug.Log("Enemy added from db to manager");
         }
-        //if (prefabDatabase.enemyPrefab2 != null)
-        //    enemyPrefabList.Add(prefabDatabase.enemyPrefab2);
-        //// Repeat for all prefab fields — or use reflection/array if many
+        if (PrefabDatabase.Instance.enemyDemonPrefab != null)
+        {
+            enemyDemonPrefab = PrefabDatabase.Instance.enemyDemonPrefab;
+            Debug.Log("Demon added from db to manager");
+        }
+
+        // Repeat for all prefab fields — or use reflection/array if many
     }
 
     private void Update()
     {
+        //Spawn Timer
         timer += Time.deltaTime;
-
         if (timer >= spawnInterval && !ActiveByButton)
         {
             timer = 0f;
@@ -100,11 +112,27 @@ public class EnemyManager : MonoBehaviour
             ActiveByButton = !ActiveByButton;
         }
 
+        //Difficult Scale Timer
         elapsedTime += Time.deltaTime;
         if (elapsedTime >= nextDiff)
         { 
             elapsedTime = 0f;
-            difficultyMultiplier += 0.5f;
+            if (!countdownFinished)
+                difficultyMultiplier += 0.5f;
+            else
+                difficultyMultiplier += 1f;
+        }
+
+        //Game Countdown Timer
+        if (!countdownFinished)
+        {
+            countdown -= Time.deltaTime;
+            if (countdown <= 0f)
+            {
+                countdown = 0f;
+                countdownFinished = true;
+                //OnCountdownFinished();
+            }
         }
     }
 
@@ -120,7 +148,17 @@ public class EnemyManager : MonoBehaviour
     {
         if (enemyPrefabs.Count == 0)
             return;
-        GameObject prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
+        
+        GameObject prefab = new GameObject();
+        if (!countdownFinished)
+        {
+            prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
+        }
+        else
+        {
+            prefab = enemyDemonPrefab;
+        }
+
         Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
         float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
 

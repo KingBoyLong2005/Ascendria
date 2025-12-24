@@ -19,7 +19,7 @@ public class EnemyStats : MonoBehaviour
     private float timer;
     public bool DebugTest = true;
 
-    void Awake()
+    void OnEnable()
     {
         // initialize instance stats from template
         baseMaxHealth = Mathf.Floor(template.maxHealth * EnemyManager.Instance.difficultyMultiplier);
