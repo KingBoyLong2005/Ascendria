@@ -13,6 +13,7 @@ TagManager:
   - HP Drop
   - Kill Counter
   - Coin Counter
+  - Countdown Timer
   layers:
   - Default
   - TransparentFX

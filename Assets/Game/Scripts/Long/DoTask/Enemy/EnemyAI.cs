@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     private NavMeshAgent agent;
+    private EnemyStats stats;
     private Transform player;
 
     // Thời gian update path để giảm CPU load
@@ -17,7 +18,12 @@ public class EnemyAI : MonoBehaviour
 
         if (agent == null)
             agent = GetComponent<NavMeshAgent>();
+        if (stats == null)
+            stats = GetComponent<EnemyStats>();
+
         agent.enabled = true;
+        agent.speed = stats.MoveSpeed;
+
         // Focus vào player
         agent.SetDestination(player.position);
 
@@ -36,10 +42,5 @@ public class EnemyAI : MonoBehaviour
                 pathTimer = 0f;
             }
         }
-    }
-
-    public void TakeDamage(float amount)
-    {
-        Debug.Log("Enemy Take Damage: " + amount);
     }
 }

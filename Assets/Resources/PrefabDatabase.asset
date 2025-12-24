@@ -19,6 +19,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
   bossPrefab: {fileID: 7027193393448012647, guid: 11c7568a8b3a2cd4794b1ad78e565360, type: 3}
   enemyPrefab: {fileID: 7027193393448012647, guid: 11c7568a8b3a2cd4794b1ad78e565360, type: 3}
+  enemyDemonPrefab: {fileID: 5416048564006381984, guid: 5db4d9fcfce4be745897b7d413d73f02, type: 3}
   chest: {fileID: 6478668858015884597, guid: f3f3166069f7d89479bf29acb3ea433c, type: 3}
   eventObject: {fileID: 6478668858015884597, guid: 43e0535ae6442ae42be6f05dd0ab00d9, type: 3}
   health: {fileID: 5040817921139094699, guid: 3ce7abd64711b2c48b6314c774e317cb, type: 3}
