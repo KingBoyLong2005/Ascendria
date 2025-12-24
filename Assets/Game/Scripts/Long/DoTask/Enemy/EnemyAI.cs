@@ -8,10 +8,15 @@ public class EnemyAI: MonoBehaviour
 
     private Transform player;
     private Vector3 currentUp = Vector3.up;
+    private EnemyStats stats;
 
     public void Setup(Transform target)
     {
         player = target;
+
+        if (stats == null)
+            stats = GetComponent<EnemyStats>();
+        moveSpeed = stats.MoveSpeed;
     }
 
     void Update()
