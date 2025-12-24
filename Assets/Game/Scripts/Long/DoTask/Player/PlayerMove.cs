@@ -56,6 +56,7 @@ namespace StarterAssets
 
         private int _airJumpLeft;
         private Vector3 _wallNormal;
+        private Vector3 _externalVelocity;
 
         private float _cinemachineYaw;
         private float _cinemachinePitch;
@@ -188,9 +189,10 @@ namespace StarterAssets
             }
 
             Vector3 moveDir = Quaternion.Euler(0, _targetRotation, 0) * Vector3.forward;
-            Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity;
+            Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity + _externalVelocity;
 
             _controller.Move(velocity * Time.deltaTime);
+            _externalVelocity = Vector3.Lerp(_externalVelocity, Vector3.zero, Time.deltaTime * 6f);
         }
 
         private void MoveClimb()
@@ -237,10 +239,17 @@ namespace StarterAssets
 
         private void DoClimbJump()
         {
-            Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
+            // Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
+            // _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+            // _controller.Move(jumpDir * 2f);
+            // nhảy ra khỏi tường, không teleport
+            Vector3 jumpOut = _wallNormal * 3f;
+
             _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
-            _controller.Move(jumpDir * 2f);
+            // lưu lực đẩy ngang (xử lý ở Move)
+            _externalVelocity = jumpOut;
             ExitClimb();
         }
 

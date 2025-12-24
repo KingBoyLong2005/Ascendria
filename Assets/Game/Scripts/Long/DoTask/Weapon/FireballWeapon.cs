@@ -10,13 +10,48 @@ public class FireballWeapon : Weapon
     [Header("Mask")]
     public LayerMask enemyMask;
 
+    [Header("Targeting")]
+    public float targetingRadius = 20f;  // Bán kính tìm kiếm enemy gần nhất
+
     /// <summary>
     /// Dùng cho bắn cầu lửa, AoE explosion khi trúng enemy
     /// </summary>
     public override void Attack(WeaponContext ctx)
     {
-        Vector3 spawnPos = ctx.spawnPos;
-        Quaternion rot = Quaternion.LookRotation(ctx.forward, Vector3.up);
+        // Tìm enemy gần nhất trong bán kính targetingRadius
+        Collider[] potentialEnemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
+        Transform nearestEnemy = null;
+        float minDistance = float.MaxValue;
+
+        foreach (var col in potentialEnemies)
+        {
+            float dist = Vector3.Distance(ctx.owner.position, col.transform.position);
+            if (dist < minDistance)
+            {
+                minDistance = dist;
+                nearestEnemy = col.transform;
+            }
+        }
+
+        Vector3 direction;
+        if (nearestEnemy != null)
+        {
+            // Hướng từ player đến enemy (flat để tránh lên/xuống)
+            Vector3 toEnemy = nearestEnemy.position - ctx.owner.position;
+            direction = new Vector3(toEnemy.x, 0f, toEnemy.z).normalized;
+        }
+        else
+        {
+            // Nếu không có enemy, dùng hướng mặc định
+            direction = ctx.forward;
+        }
+
+        // Tính spawnPos dựa trên hướng mới (sử dụng ComputeSpawnPosition từ PlayerAttack)
+        PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
+        Vector3 spawnPos = playerAttack != null ? playerAttack.ComputeSpawnPosition(direction) : ctx.spawnPos;
+
+        // Spawn fireball với rotation theo hướng
+        Quaternion rot = Quaternion.LookRotation(direction, Vector3.up);
 
         GameObject fireballGO = Instantiate(fireballPrefab, spawnPos, rot);
         FireballProjectile proj = fireballGO.GetComponent<FireballProjectile>();

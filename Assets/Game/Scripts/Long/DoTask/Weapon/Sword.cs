@@ -27,6 +27,11 @@ public class Sword : Weapon
         {
             Quaternion fxRot = rot * Quaternion.Euler(90f, 0f, -60f);
             GameObject fx = Instantiate(slashEffectPrefab, center, fxRot);
+            fx.transform.localScale = new Vector3(
+                size,          // width
+                size,          // thickness
+                range          // length
+            );
             Destroy(fx, 0.4f);
         }
     }

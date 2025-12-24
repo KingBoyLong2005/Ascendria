@@ -112,6 +112,7 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         FindFirstObjectByType<TPCameraController>().isUIOpen = true;
+        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
@@ -119,6 +120,7 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         FindFirstObjectByType<TPCameraController>().isUIOpen = false;
+        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }
