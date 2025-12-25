@@ -18,8 +18,9 @@ public class FireballWeapon : Weapon
     /// </summary>
     public override void Attack(WeaponContext ctx)
     {
-        // Tìm enemy gần nhất trong bán kính targetingRadius
-        Collider[] potentialEnemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
+        Collider[] potentialEnemies =
+            Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
+
         Transform nearestEnemy = null;
         float minDistance = float.MaxValue;
 
@@ -33,34 +34,37 @@ public class FireballWeapon : Weapon
             }
         }
 
+        // 1️⃣ TÍNH SPAWN POS TRƯỚC
+        PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
+        Vector3 spawnPos = playerAttack != null
+            ? playerAttack.ComputeSpawnPosition(ctx.forward)
+            : ctx.spawnPos;
+
+        // 2️⃣ TÍNH DIRECTION 3D
         Vector3 direction;
+
         if (nearestEnemy != null)
         {
-            // Hướng từ player đến enemy (flat để tránh lên/xuống)
-            Vector3 toEnemy = nearestEnemy.position - ctx.owner.position;
-            direction = new Vector3(toEnemy.x, 0f, toEnemy.z).normalized;
+            Collider enemyCol = nearestEnemy.GetComponent<Collider>();
+            Vector3 targetPos = enemyCol != null
+                ? enemyCol.bounds.center
+                : nearestEnemy.position;
+
+            direction = (targetPos - spawnPos).normalized;
         }
         else
         {
-            // Nếu không có enemy, dùng hướng mặc định
-            direction = ctx.forward;
+            direction = ctx.forward.normalized;
         }
 
-        // Tính spawnPos dựa trên hướng mới (sử dụng ComputeSpawnPosition từ PlayerAttack)
-        PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
-        Vector3 spawnPos = playerAttack != null ? playerAttack.ComputeSpawnPosition(direction) : ctx.spawnPos;
-
-        // Spawn fireball với rotation theo hướng
-        Quaternion rot = Quaternion.LookRotation(direction, Vector3.up);
+        // 3️⃣ ROTATION ĐÚNG CHUẨN 3D
+        Quaternion rot = Quaternion.LookRotation(direction);
 
         GameObject fireballGO = Instantiate(fireballPrefab, spawnPos, rot);
+
         FireballProjectile proj = fireballGO.GetComponent<FireballProjectile>();
         if (proj != null)
         {
-            // damage: sát thương AoE
-            // range: explosion radius
-            // size * 25f: projectile speed
-            // proj.Initialize(damage, range, size * 25f, enemyMask, explosionEffectPrefab);
             proj.Initialize(damage, range, size * 25f, enemyMask);
         }
     }

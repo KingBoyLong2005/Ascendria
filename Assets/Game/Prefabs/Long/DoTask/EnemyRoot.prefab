@@ -52,7 +52,6 @@ MonoBehaviour:
   moveSpeed: 4
   rotateSpeed: 10
   surfaceCheckDist: 0.7
-  debugLog: 0
 --- !u!114 &8064937657327380227
 MonoBehaviour:
   m_ObjectHideFlags: 0
