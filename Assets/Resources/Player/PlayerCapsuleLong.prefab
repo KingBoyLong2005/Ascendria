@@ -481,7 +481,7 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  wp: {fileID: 11400000, guid: d88b47c713323aa4fbaabc4b79727b0e, type: 2}
+  wp: {fileID: 11400000, guid: 08014bf8259eefa458b7b46a23379135, type: 2}
 --- !u!114 &8952411064186125732
 MonoBehaviour:
   m_ObjectHideFlags: 0
