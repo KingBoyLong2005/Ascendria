@@ -14,11 +14,6 @@ public class EnemyStats : MonoBehaviour
     private float attackCD = 0.5f;
     private float nextAttack = 0f;
 
-    [Header("Testing")]
-    private float lifeTime = 5f;
-    private float timer;
-    public bool DebugTest = true;
-
     void OnEnable()
     {
         // initialize instance stats from template
@@ -28,18 +23,6 @@ public class EnemyStats : MonoBehaviour
         moveSpeed = template.moveSpeed;
 
         currentHealth = baseMaxHealth;
-        timer = 0f; 
-    }
-
-    private void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (timer >= lifeTime && DebugTest)
-        {
-            Die(); // tự chết sau 5 giây
-            timer = 0f;
-        }
     }
 
     //Attack cd for enemy
@@ -50,7 +33,7 @@ public class EnemyStats : MonoBehaviour
             // When this enemy collides with something...
             if (other.gameObject.CompareTag("Player"))
             {
-                Debug.Log("Enemy Hit player");
+                //Debug.Log("Enemy Hit player");
                 HitPlayer();
             }
 
@@ -91,7 +74,7 @@ public class EnemyStats : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Chết");
+        //Debug.Log("Chết");
         // Gửi tín hiệu về Manager
         EnemyManager.Instance.EnemyDie(this.gameObject);
 

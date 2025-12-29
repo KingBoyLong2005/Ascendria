@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde64a0fd57d3284fa59a1399bb80a16, type: 3}
-  m_Name: EnemyDemonDebug_01
+  m_Name: BossDebug_01
   m_EditorClassIdentifier: 
-  enemyName: 
-  maxHealth: 200
-  moveSpeed: 8
+  enemyName: Boss Debug 01
+  maxHealth: 1000
+  moveSpeed: 3
   attack: 10
   armor: 10
