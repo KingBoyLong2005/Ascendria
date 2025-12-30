@@ -1,9 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
-    private GameObject bossPrefab;
+    private static BossManager Instance;
+    
+    //private GameObject bossPrefab;
+    private List<GameObject> bossPrefabs = new List<GameObject>();
+
+    private Transform player;
 
     // Biến để lưu trữ đối tượng Boss đang hoạt động (nếu có)
     private GameObject currentBossInstance;
@@ -12,59 +18,52 @@ public class BossManager : MonoBehaviour
     public event EventHandler OnBossSpawned;
     // public event EventHandler OnBossDefeated; 
 
-    /// <summary>
-    /// Hàm khởi tạo, tải Prefab của Boss.
-    /// (Sẽ được gọi bởi GameManager sau khi tạo Manager này).
-    /// </summary>
-    public void Initialize()
+    public void Awake()
     {
-        // 1. Tải Boss Prefab
-        // Giả định PrefabDatabase có đường dẫn đến Boss Prefab chính
-        bossPrefab = PrefabDatabase.Instance.bossPrefab;
-
-        if (bossPrefab == null)
+        if (Instance != null)
         {
-            Debug.LogError("[BossManager] Thiếu Boss Prefab trong PrefabDatabase.");
+            Destroy(gameObject);
+            return;
         }
+        Instance = this;
 
-        // Không gọi event OnBossSpawned ở đây vì Boss chưa được spawn.
+        LoadPrefabsFromDatabase();
     }
 
-    /// <summary>
-    /// Sinh ra Boss tại vị trí được chỉ định (từ Boss Gate).
-    /// </summary>
-    /// <param name="spawnPoint">Transform của vị trí Boss Gate.</param>
-    public void SpawnBoss(Transform spawnPoint)
+    private void Start()
     {
-        if (bossPrefab == null)
+        var p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+    }
+
+    private void LoadPrefabsFromDatabase()
+    {
+        // clear maybe
+        if (bossPrefabs != null)
+            bossPrefabs.Clear();
+
+        if (PrefabDatabase.Instance.bossPrefab != null)
         {
-            // Thử Initialize lại nếu chưa được gọi hoặc thất bại
-            Debug.LogWarning("<color=yellow>[BossManager] Thử khởi tạo lại Boss Prefab trong SpawnBoss.");
-            Initialize();
-            
-            if (bossPrefab == null) return;
+            bossPrefabs.Add(PrefabDatabase.Instance.bossPrefab);
+            Debug.Log("Enemy added from db to manager");
         }
 
+        // Repeat for all prefab fields — or use reflection/array if many
+    }
+
+    public void SpawnBoss(Transform spawnPoint)
+    {
         // 2. Kiểm tra vị trí spawn
         if (spawnPoint != null)
         {
-            // 3. Xóa Boss cũ nếu có (tránh spawn đè)
-            if (currentBossInstance != null)
-            {
-                Destroy(currentBossInstance);
-            }
-
-            // 4. Sinh ra Boss
             Debug.Log("<color=red>[BossManager]</color> Đã gọi hàm SpawnBoss.");
             currentBossInstance = SpawnBossInstance(spawnPoint.position, spawnPoint.rotation);
             
-
             // 5. Kích hoạt Event
             if (currentBossInstance != null)
             {
-                Debug.unityLogger.logHandler.LogFormat(LogType.Log, null, "<color=red>[BossManager]</color> Sự kiện OnBossSpawned đã được kích hoạt.");
                 OnBossSpawned?.Invoke(this, EventArgs.Empty);
-                
             }
         }
         else
@@ -75,9 +74,16 @@ public class BossManager : MonoBehaviour
 
     private GameObject SpawnBossInstance(Vector3 spawnPos, Quaternion spawnRot)
     {
-        if (bossPrefab != null)
+        if (bossPrefabs.Count == 0)
+            return null;
+
+        GameObject prefab = bossPrefabs[UnityEngine.Random.Range(0, bossPrefabs.Count)];
+        
+        if (prefab != null)
         {
-            GameObject bossInstance = GameObject.Instantiate(bossPrefab, spawnPos, spawnRot);
+            GameObject bossInstance = PoolManager.Spawn(prefab, spawnPos, spawnRot);
+            bossInstance.GetComponent<EnemyAI>().Setup(player);
+
             Debug.Log("<color=red>[BossManager]</color> Boss đã được Spawn thành công!");
             return bossInstance;
         }

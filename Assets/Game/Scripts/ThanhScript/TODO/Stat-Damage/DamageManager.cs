@@ -51,7 +51,7 @@ public class DamageManager : MonoBehaviour
         float charArmor = PlayerStatManager.Instance.Armor;
 
         float finalDamage = enemyAttack - charArmor;
-        Debug.Log($"Final enemy damage: {finalDamage}");
+        //Debug.Log($"Final enemy damage: {finalDamage}");
 
         return finalDamage;
     }
@@ -63,6 +63,16 @@ public class DamageManager : MonoBehaviour
         float finalDamage = playerAttack + weaponAttack - enemyArmor;
 
         return finalDamage;
+    }
+
+    public void CalculateBossSkillDamage(float multi, float baseAtk)
+    {
+        float charArmor = PlayerStatManager.Instance.Armor;
+
+        float finalDamage = baseAtk*multi - charArmor;
+
+        // then apply damage to player
+        PlayerStatManager.Instance.TakeDamage(finalDamage);
     }
 }
 

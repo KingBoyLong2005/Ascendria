@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         //audioManager = gameObject.AddComponent<AudioManager>();
         //Boss
-        bossManager = gameObject.AddComponent<BossManager>();
+        //bossManager = gameObject.AddComponent<BossManager>();
 
         //GameEventManager (tạo Object riêng để chứa EventManager)
         //Trong GameEventManager khởi tạo các EventHandler
@@ -76,14 +76,15 @@ public class GameManager : MonoBehaviour
 
         //gameEventManager = gameObject.AddComponent<GameEventManager>();
         //gameEventManager.Initialize(bossManager);
-        
+
+        //Player
+        playerManager = gameObject.AddComponent<PlayerManager01>();
+        playerManager.Initialize();
+
         //Quản lý pool
         poolManager = gameObject.AddComponent<PoolManager>();
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
-        //Player
-        playerManager = gameObject.AddComponent<PlayerManager01>();
-        playerManager.Initialize();
 
         //Interactable Object (có khi chuyển vào map vì nó thuộc về map)
         interactableSpawner = new InteractableSpawner();
