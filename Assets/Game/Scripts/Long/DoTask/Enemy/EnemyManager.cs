@@ -1,15 +1,18 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance {get; private set;}
 
+    private BossManager bossManager;
+
     private Transform player;
     public List<GameObject> enemyPrefabs = new List<GameObject>();      // Danh sách prefab quái
     private GameObject enemyDemonPrefab;
-    private GameObject enemyBossPrefab;
+    //private List<GameObject> enemyBossPrefabs = new List<GameObject>();
     
     public float minSpawnDistance = 10f;
     public float maxSpawnDistance = 20f;
@@ -18,7 +21,7 @@ public class EnemyManager : MonoBehaviour
     public LayerMask groundMask;
 
     //Spawn Timer
-    public float spawnInterval = 60f;
+    public float spawnInterval = 3f;
     private float timer = 0f;
 
     //Difficulty Scale Timer
@@ -61,6 +64,8 @@ public class EnemyManager : MonoBehaviour
         }
         Instance = this;
 
+        bossManager = gameObject.AddComponent<BossManager>();
+
         LoadPrefabsFromDatabase();
         groundMask = LayerMask.GetMask("Ground");
     }
@@ -76,6 +81,8 @@ public class EnemyManager : MonoBehaviour
         // clear maybe
         if(enemyPrefabs != null)
             enemyPrefabs.Clear();
+        //if (enemyBossPrefabs != null)
+        //    enemyBossPrefabs.Clear();
 
         if (PrefabDatabase.Instance.enemyPrefab != null)
         { 
@@ -87,11 +94,11 @@ public class EnemyManager : MonoBehaviour
             enemyDemonPrefab = PrefabDatabase.Instance.enemyDemonPrefab;
             Debug.Log("Demon added from db to manager");
         }
-        if (PrefabDatabase.Instance.bossPrefab != null)
-        {
-            enemyBossPrefab = PrefabDatabase.Instance.bossPrefab;
-            Debug.Log("Boss added from db to manager");
-        }
+        //if (PrefabDatabase.Instance.bossPrefab != null)
+        //{
+        //    enemyBossPrefabs.Add(PrefabDatabase.Instance.bossPrefab);
+        //    Debug.Log("Boss added from db to manager");
+        //}
 
         // Repeat for all prefab fields — or use reflection/array if many
     }
@@ -108,7 +115,8 @@ public class EnemyManager : MonoBehaviour
 
         if (ActiveByButton && Input.GetKeyDown(KeyCode.P))
         {
-            SpawnRandomBoss();
+            Transform offsetTransform = GetOffsetTransform(player, new Vector3(5, 5, 5));
+            bossManager.SpawnBoss(offsetTransform);
         }
 
         if (Input.GetKeyDown(KeyCode.L))
@@ -140,6 +148,16 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    public Transform GetOffsetTransform(Transform player, Vector3 offset)
+    {
+        // Create a temporary object at the offset
+        GameObject temp = new GameObject("OffsetTransform");
+        temp.transform.position = player.position + offset;
+        temp.transform.rotation = player.rotation; // optional, copy rotation
+
+        return temp.transform;
+    }
+
     public float GetKillCount()
     {
         return killCount;
@@ -148,7 +166,7 @@ public class EnemyManager : MonoBehaviour
     // ============================
     //       SPAWN ENEMY
     // ============================
-    void SpawnRandomEnemy()
+    private void SpawnRandomEnemy()
     {
         if (enemyPrefabs.Count == 0)
             return;
@@ -181,29 +199,32 @@ public class EnemyManager : MonoBehaviour
             // return;
         }
     }
-    
-    private void SpawnRandomBoss()
-    {
-        GameObject prefab = enemyBossPrefab;
 
-        Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
-        float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
+    //private void SpawnRandomBoss()
+    //{
+    //    if (enemyBossPrefabs.Count == 0)
+    //        return;
 
-        // Random vị trí XZ quanh player
-        Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
+    //    GameObject prefab = enemyBossPrefabs[UnityEngine.Random.Range(0, enemyBossPrefabs.Count)];
+        
+    //    Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
+    //    float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
 
-        // Raycast từ trên cao xuống
-        Vector3 rayStart = spawnXZ + Vector3.up * 100f;
+    //    // Random vị trí XZ quanh player
+    //    Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
 
-        if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
-        {
-            // hit.point là vị trí mặt đất
-            var enemyInstance = PoolManager.Spawn(prefab, hit.point, Quaternion.identity);
-            // Gán callback để quái có thể báo “tao chết rồi”
-            enemyInstance.GetComponent<EnemyAI>().Setup(player);
-            // return;
-        }
-    }
+    //    // Raycast từ trên cao xuống
+    //    Vector3 rayStart = spawnXZ + Vector3.up * 100f;
+
+    //    if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
+    //    {
+    //        // hit.point là vị trí mặt đất
+    //        var enemyInstance = PoolManager.Spawn(prefab, hit.point, Quaternion.identity);
+    //        // Gán callback để quái có thể báo “tao chết rồi”
+    //        enemyInstance.GetComponent<EnemyAI>().Setup(player);
+    //        // return;
+    //    }
+    //}
 
     // ============================
     //       ENEMY DIE

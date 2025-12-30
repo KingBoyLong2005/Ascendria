@@ -34,7 +34,7 @@ public class SkillHit : MonoBehaviour
         {
             //Debug.Log("Skill Hit Player");
             var a = boss.GetComponent<BossStats>();
-            a.HandleSkillDamage();
+            a.uniqueSkill.RaiseSkillDamage();
 
             controller = other.GetComponent<CharacterController>();
             if (controller != null)

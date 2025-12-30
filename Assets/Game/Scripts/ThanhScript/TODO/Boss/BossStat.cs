@@ -4,7 +4,7 @@ public class BossStats : EnemyStats
 {
     public BossSkill uniqueSkill;
     
-    private float skillAtkMultiplier;
+    private float skillAtkMulti;
     private float nextSkillTime = 0f;
     private Transform player;
 
@@ -14,7 +14,10 @@ public class BossStats : EnemyStats
         if (p != null)
             player = p.transform;
 
-        skillAtkMultiplier = uniqueSkill.skillAtkMultiplier;
+        if (uniqueSkill != null) 
+        { 
+            uniqueSkill.OnSkillHitPlayer += HandleSkillDamage; 
+        }
     }
 
     private void Update()
@@ -28,9 +31,9 @@ public class BossStats : EnemyStats
         }
     }
 
-    public void HandleSkillDamage()
+    public void HandleSkillDamage(float multi)
     {
-        Debug.Log($"Handle Skill Damage: multi: {skillAtkMultiplier}, Atk: {Attack}");
-        DamageManager.Instance.CalculateBossSkillDamage(skillAtkMultiplier, Attack);
+        //Debug.Log($"Handle Skill Damage: multi: {multi}, Atk: {Attack}");
+        DamageManager.Instance.CalculateBossSkillDamage(multi, Attack);
     }
 }

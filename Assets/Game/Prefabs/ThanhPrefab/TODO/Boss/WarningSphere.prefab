@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2027993908163144852}
   - component: {fileID: 1433007679281364229}
   - component: {fileID: 7560012830527951576}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WarningSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

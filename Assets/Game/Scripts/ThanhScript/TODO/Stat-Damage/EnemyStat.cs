@@ -46,6 +46,7 @@ public class EnemyStats : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+        Debug.Log($"Current enemy hp: {currentHealth}");
         if (currentHealth <= 0f)
             Die();
     }
@@ -72,7 +73,7 @@ public class EnemyStats : MonoBehaviour
         EnemyManager.Instance.EnemyHitPlayer(this.gameObject, Attack);
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         //Debug.Log("Chết");
         // Gửi tín hiệu về Manager
