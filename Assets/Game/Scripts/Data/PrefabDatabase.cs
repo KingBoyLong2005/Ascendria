@@ -15,6 +15,7 @@ public class PrefabDatabase : ScriptableObject
     [Header("Enemy / Boss Prefabs")]
     public GameObject bossPrefab;
     public GameObject enemyPrefab;
+    public GameObject enemyDemonPrefab;
 
     [Header("Interactable Prefabs")]
     public GameObject chest;

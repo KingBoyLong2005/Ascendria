@@ -57,7 +57,7 @@ public class PlayerStatManager : MonoBehaviour
     {
         currentHealth -= damage;
         OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, MaxHealth));
-        Debug.Log("Player took damage: " + damage + ", current health: " + currentHealth);
+        //Debug.Log("Player took damage: " + damage + ", current health: " + currentHealth);
 
         if (currentHealth <= 0f)
         {
@@ -69,8 +69,8 @@ public class PlayerStatManager : MonoBehaviour
     {
         currentHealth += amount;
         
-        Debug.Log("Player heal: " + amount + ", current health: " + currentHealth);
-        Debug.Log("Max health: " + MaxHealth);
+        //Debug.Log("Player heal: " + amount + ", current health: " + currentHealth);
+        //Debug.Log("Max health: " + MaxHealth);
 
         if (currentHealth >= MaxHealth)
         {

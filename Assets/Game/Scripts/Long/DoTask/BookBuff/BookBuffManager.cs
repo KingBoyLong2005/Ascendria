@@ -51,10 +51,10 @@ public class BookBuffManager : MonoBehaviour
     // Apply một buff mới (dùng khi level-up hoặc nhặt item)
     public void ApplyBuff(BookBuff buff)
     {
-        if (buff == null || stats == null) return;
+        if (buff == null) return;
 
         activeBuffs.Add(buff);
-        buff.Apply(stats);
+        buff.Apply();
     }
 
     // public void RemoveBuff(BookBuff buff)
@@ -79,7 +79,7 @@ public class BookBuffManager : MonoBehaviour
         foreach (var buff in inv.activeBookBuffs)
         {
             activeBuffs.Add(buff);
-            buff.Apply(stats);
+            buff.Apply();
         }
     }
 }

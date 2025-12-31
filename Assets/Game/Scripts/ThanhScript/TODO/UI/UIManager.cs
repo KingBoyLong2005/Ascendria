@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     private XPBarUI xpBarUI;
     private TMP_Text killCount;
     private TMP_Text coinCount;
+    private TMP_Text countdownTimer;
 
     void Awake()
     {
@@ -22,11 +23,6 @@ public class UIManager : MonoBehaviour
             return;
         }
         Instance = this;
-    }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-            inventoryUI.Toggle();
     }
     private void Start()
     {
@@ -39,6 +35,9 @@ public class UIManager : MonoBehaviour
 
         go = GameObject.FindWithTag("Coin Counter");
         coinCount = go.GetComponentInChildren<TMP_Text>();
+
+        go = GameObject.FindWithTag("Countdown Timer");
+        countdownTimer = go.GetComponentInChildren<TMP_Text>();
 
         levelUpUI = FindFirstObjectByType<LevelUpUI>();
         inventoryUI = FindFirstObjectByType<InventoryUI>();
@@ -55,6 +54,12 @@ public class UIManager : MonoBehaviour
         InventoryManager.Instance.OnInventoryChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveWeaponsChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveBookBuffsChanged += HandleInventoryChanged;
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+            inventoryUI.Toggle();
+        UpdateTimerDisplay(EnemyManager.Instance.countdown);
     }
     private void OnDisable()
     {
@@ -99,5 +104,18 @@ public class UIManager : MonoBehaviour
     void HandleInventoryChanged(object sender, System.EventArgs e)
     {
         inventoryUI.RefreshAll();
+    }
+
+    void UpdateTimerDisplay(float time)
+    {
+        // clamp so it doesn't go negative
+        time = Mathf.Max(time, 0);
+
+        // get whole minutes and seconds
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+
+        // format mm:ss (two digits each)
+        countdownTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

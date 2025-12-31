@@ -30,7 +30,6 @@ public class InventoryUI : MonoBehaviour
 
     public void Open()
     {
-        GameManager.Instance.PauseGame();
         FindFirstObjectByType<TPCameraController>().isUIOpen = true;
         if (isOpen) return;
         isOpen = true;
@@ -41,7 +40,6 @@ public class InventoryUI : MonoBehaviour
 
     public void Close()
     {
-        GameManager.Instance.ResumeGame();
         FindFirstObjectByType<TPCameraController>().isUIOpen = false;
         if (!isOpen) return;
         isOpen = false;

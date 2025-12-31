@@ -56,6 +56,7 @@ namespace StarterAssets
 
         private int _airJumpLeft;
         private Vector3 _wallNormal;
+        private Vector3 _externalVelocity;
 
         private float _cinemachineYaw;
         private float _cinemachinePitch;
@@ -69,6 +70,8 @@ namespace StarterAssets
 #endif
 
         private const float _threshold = 0.01f;
+
+        private Animator _animator;
 
         // ===================== UNITY =====================
         private void Awake()
@@ -85,6 +88,7 @@ namespace StarterAssets
             _playerInput = GetComponent<PlayerInput>();
 #endif
 
+            _animator = GetComponentInChildren<Animator>();
             _airJumpLeft = MaxAirJump;
             _cinemachineYaw = CinemachineCameraTarget.transform.eulerAngles.y;
         }
@@ -96,7 +100,31 @@ namespace StarterAssets
             HandleJump();
             ApplyGravity();
             Move();
+
+            // UpdateAnimator(); // <- luôn để cuối
         }
+        // private void UpdateAnimator()
+        // {
+        //     if (_animator == null) return;
+
+            // // tốc độ di chuyển (0 = idle, >0 = run)
+            // float horizontalSpeed = new Vector3(
+            //     _controller.velocity.x,
+            //     0,
+            //     _controller.velocity.z
+            // ).magnitude;
+
+            // _animator.SetFloat("Speed", horizontalSpeed);
+
+            // grounded / jump
+            // _animator.SetBool("IsGrounded", _state == MovementState.Grounded);
+
+            // vertical velocity để phân biệt jump lên / rơi
+            // _animator.SetFloat("VerticalVelocity", _verticalVelocity);
+
+            // climb
+            // _animator.SetBool("IsClimbing", _state == MovementState.Climb);
+        // }
 
         private void LateUpdate()
         {
@@ -112,7 +140,7 @@ namespace StarterAssets
             {
                 _state = MovementState.Grounded;
                 _airJumpLeft = MaxAirJump;
-
+                _animator.SetBool("IsGrounded", true);
                 if (_verticalVelocity < 0f)
                     _verticalVelocity = -2f;
             }
@@ -185,12 +213,26 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 transform.rotation = Quaternion.Euler(0, rotation, 0);
+                _animator.SetBool("SpeedBool", true);
+            }
+            else
+            {
+                _animator.SetBool("SpeedBool", false);
             }
 
             Vector3 moveDir = Quaternion.Euler(0, _targetRotation, 0) * Vector3.forward;
-            Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity;
+            Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity + _externalVelocity;
 
             _controller.Move(velocity * Time.deltaTime);
+            _externalVelocity = Vector3.Lerp(_externalVelocity, Vector3.zero, Time.deltaTime * 6f);
+            
+            // tốc độ di chuyển (0 = idle, >0 = run)
+            // float horizontalSpeed = new Vector3(
+            //     _controller.velocity.x,
+            //     0,
+            //     _controller.velocity.z
+            // ).magnitude;
+            // _animator.SetFloat("Speed", horizontalSpeed);
         }
 
         private void MoveClimb()
@@ -219,6 +261,7 @@ namespace StarterAssets
             }
             else if (_state == MovementState.Climb)
             {
+                // _animator.SetBool("IsGrounded", false);
                 DoClimbJump();
             }
             else if (_state == MovementState.Air && EnableAirJump && _airJumpLeft > 0)
@@ -228,19 +271,29 @@ namespace StarterAssets
             }
 
             _input.jump = false;
+
         }
 
         private void DoJump()
         {
             _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+            _animator.SetBool("IsGrounded", false);
         }
 
         private void DoClimbJump()
         {
-            Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
+            // Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
+            // _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+            // _controller.Move(jumpDir * 2f);
+            // nhảy ra khỏi tường, không teleport
+            Vector3 jumpOut = _wallNormal * 3f;
+
             _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
-            _controller.Move(jumpDir * 2f);
+            // lưu lực đẩy ngang (xử lý ở Move)
+            _externalVelocity = jumpOut;
+            _animator.SetBool("IsGrounded", false);
             ExitClimb();
         }
 

@@ -11,19 +11,21 @@ public abstract class Weapon : UpgradableItem
 {
     public string weaponName = "DefaultWeapon";
     [Header("Stats")]
-    public float damage = 10f;
-    public float range = 2f;
-    public float size = 1f;
-    public float cooldown = 1f;
+    public float baseDamage = 10f;
+    public float baseRange = 2f;
+    public float baseSize = 1f;
+    public float baseCooldown = 1f;
 
     [Header("Upgrade Level")]
 
     protected float timer = 0f;
 
+    protected float cooldownMultiplier = 1f;
+    public float Cooldown => baseCooldown * cooldownMultiplier;
     public void Tick(float dt, WeaponContext ctx)
     {
         timer += dt;
-        if (timer >= cooldown)
+        if (timer >= Cooldown)
         {
             timer = 0f;
             Attack(ctx);
@@ -31,6 +33,11 @@ public abstract class Weapon : UpgradableItem
     }
 
     public abstract void Attack(WeaponContext ctx);
+    public void ApplyCooldownReduction(float percent)
+    {
+        cooldownMultiplier *= (1f - percent);
+        cooldownMultiplier = Mathf.Clamp(cooldownMultiplier, 0.1f, 1f);
+    }
 }
 
 // using UnityEngine;

@@ -4,11 +4,11 @@ using UnityEngine;
 public class HealthIncreaseBuff : BookBuff
 {
     public float amount = 10f;
-    public override void Apply(PlayerStatManager stats)
+    public override void Apply()
     {
         // stats.maxHP += amount;
         // stats.currentHP = Mathf.Min(stats.currentHP + amount, stats.maxHP);
-        stats.ModifyHealth(amount);
+        PlayerStatManager.Instance.ModifyHealth(amount);
     }
 
     public override void LevelUp(Rarity rarity)

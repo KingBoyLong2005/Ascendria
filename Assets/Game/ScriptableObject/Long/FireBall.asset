@@ -19,7 +19,8 @@ MonoBehaviour:
   range: 2
   size: 1
   cooldown: 1
-  fireballPrefab: {fileID: 8648208668891062419, guid: 99566a94a0a8df24b83fd2805b5b583e, type: 3}
+  fireballPrefab: {fileID: 2567034384435699178, guid: 63b4024175bf60b47982b15090b3d8f4, type: 3}
   enemyMask:
     serializedVersion: 2
     m_Bits: 128
+  targetingRadius: 20

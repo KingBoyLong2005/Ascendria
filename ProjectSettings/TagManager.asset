@@ -13,6 +13,7 @@ TagManager:
   - HP Drop
   - Kill Counter
   - Coin Counter
+  - Countdown Timer
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Magnetable Loot
   - Interactable
   - Pickupable Loot
-  - 
+  - Boss Skill
   - 
   - 
   - 
