@@ -71,6 +71,8 @@ namespace StarterAssets
 
         private const float _threshold = 0.01f;
 
+        private Animator _animator;
+
         // ===================== UNITY =====================
         private void Awake()
         {
@@ -86,6 +88,7 @@ namespace StarterAssets
             _playerInput = GetComponent<PlayerInput>();
 #endif
 
+            _animator = GetComponentInChildren<Animator>();
             _airJumpLeft = MaxAirJump;
             _cinemachineYaw = CinemachineCameraTarget.transform.eulerAngles.y;
         }
@@ -97,7 +100,31 @@ namespace StarterAssets
             HandleJump();
             ApplyGravity();
             Move();
+
+            // UpdateAnimator(); // <- luôn để cuối
         }
+        // private void UpdateAnimator()
+        // {
+        //     if (_animator == null) return;
+
+            // // tốc độ di chuyển (0 = idle, >0 = run)
+            // float horizontalSpeed = new Vector3(
+            //     _controller.velocity.x,
+            //     0,
+            //     _controller.velocity.z
+            // ).magnitude;
+
+            // _animator.SetFloat("Speed", horizontalSpeed);
+
+            // grounded / jump
+            // _animator.SetBool("IsGrounded", _state == MovementState.Grounded);
+
+            // vertical velocity để phân biệt jump lên / rơi
+            // _animator.SetFloat("VerticalVelocity", _verticalVelocity);
+
+            // climb
+            // _animator.SetBool("IsClimbing", _state == MovementState.Climb);
+        // }
 
         private void LateUpdate()
         {
@@ -113,7 +140,7 @@ namespace StarterAssets
             {
                 _state = MovementState.Grounded;
                 _airJumpLeft = MaxAirJump;
-
+                _animator.SetBool("IsGrounded", true);
                 if (_verticalVelocity < 0f)
                     _verticalVelocity = -2f;
             }
@@ -186,6 +213,11 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 transform.rotation = Quaternion.Euler(0, rotation, 0);
+                _animator.SetBool("SpeedBool", true);
+            }
+            else
+            {
+                _animator.SetBool("SpeedBool", false);
             }
 
             Vector3 moveDir = Quaternion.Euler(0, _targetRotation, 0) * Vector3.forward;
@@ -193,6 +225,14 @@ namespace StarterAssets
 
             _controller.Move(velocity * Time.deltaTime);
             _externalVelocity = Vector3.Lerp(_externalVelocity, Vector3.zero, Time.deltaTime * 6f);
+            
+            // tốc độ di chuyển (0 = idle, >0 = run)
+            // float horizontalSpeed = new Vector3(
+            //     _controller.velocity.x,
+            //     0,
+            //     _controller.velocity.z
+            // ).magnitude;
+            // _animator.SetFloat("Speed", horizontalSpeed);
         }
 
         private void MoveClimb()
@@ -221,6 +261,7 @@ namespace StarterAssets
             }
             else if (_state == MovementState.Climb)
             {
+                // _animator.SetBool("IsGrounded", false);
                 DoClimbJump();
             }
             else if (_state == MovementState.Air && EnableAirJump && _airJumpLeft > 0)
@@ -230,11 +271,13 @@ namespace StarterAssets
             }
 
             _input.jump = false;
+
         }
 
         private void DoJump()
         {
             _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+            _animator.SetBool("IsGrounded", false);
         }
 
         private void DoClimbJump()
@@ -250,6 +293,7 @@ namespace StarterAssets
 
             // lưu lực đẩy ngang (xử lý ở Move)
             _externalVelocity = jumpOut;
+            _animator.SetBool("IsGrounded", false);
             ExitClimb();
         }
 

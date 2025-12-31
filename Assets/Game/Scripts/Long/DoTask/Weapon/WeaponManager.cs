@@ -144,6 +144,7 @@ public class WeaponManager : MonoBehaviour
     public void WeaponHitEnemy(GameObject enemy, float wAtk)
     {
         OnWeaponHitEnemy?.Invoke(this,new OnWeaponHitEnemyEventArgs(enemy,wAtk));
+        Debug.Log($"Enemy nhận sát thương: {wAtk}");
     }
     // Event handle
 }

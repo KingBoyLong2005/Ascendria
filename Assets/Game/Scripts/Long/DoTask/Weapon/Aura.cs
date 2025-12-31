@@ -12,12 +12,12 @@ public class AuraWeapon : Weapon
 
     public override void Attack(WeaponContext ctx)
     {
-        size = auraEffectPrefab.transform.localScale.x * 0.5f;
+        baseSize = auraEffectPrefab.transform.localScale.x * 0.5f;
         Vector3 center = ctx.owner.position;
         // ===== HITBOX (AOE) =====
         HitBoxManager.Instance.RequestSphere(
             center,
-            size,
+            baseSize,
             enemyMask,
             OnHitEnemy,
             auraDuration
@@ -47,7 +47,7 @@ public class AuraWeapon : Weapon
         {
             WeaponManager.Instance.WeaponHitEnemy(
                 enemy.gameObject,
-                damage
+                baseDamage
             );
         }
     }
@@ -57,33 +57,33 @@ public class AuraWeapon : Weapon
         switch (rarity)
         {
             case Rarity.Common:
-                damage *= 1.4f;
-                size *= 1.14f;
-                cooldown *= 0.92f;
+                baseDamage *= 1.4f;
+                baseSize *= 1.14f;
+                baseCooldown *= 0.92f;
                 break;
 
             case Rarity.Uncommon:
-                damage *= 1.7f;
-                size *= 1.17f;
-                cooldown *= 0.88f;
+                baseDamage *= 1.7f;
+                baseSize *= 1.17f;
+                baseCooldown *= 0.88f;
                 break;
 
             case Rarity.Rare:
-                damage *= 2.0f;
-                size *= 1.20f;
-                cooldown *= 0.83f;
+                baseDamage *= 2.0f;
+                baseSize *= 1.20f;
+                baseCooldown *= 0.83f;
                 break;
 
             case Rarity.Epic:
-                damage *= 2.2f;
-                size *= 1.22f;
-                cooldown *= 0.78f;
+                baseDamage *= 2.2f;
+                baseSize *= 1.22f;
+                baseCooldown *= 0.78f;
                 break;
 
             case Rarity.Legendary:
-                damage *= 2.8f;
-                size *= 1.28f;
-                cooldown *= 0.70f;
+                baseDamage *= 2.8f;
+                baseSize *= 1.28f;
+                baseCooldown *= 0.70f;
                 break;
         }
 
