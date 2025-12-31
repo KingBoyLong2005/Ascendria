@@ -1,4 +1,4 @@
-// LootCollector.cs — attach to player (or child of player)
+// LootCollector.cs ï¿½ attach to player (or child of player)
 using UnityEngine;
 
 public class LootCollector : MonoBehaviour

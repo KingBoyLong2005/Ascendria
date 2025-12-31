@@ -48,12 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f178e737234b44a9df8c8a179b60c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathUpdateInterval: 0.3
-  stopDistance: 1.5
-  climbSpeed: 2.2
-  wallCheckDistance: 2
-  minHeightDiffToClimb: 1.2
-  rayOriginHeight: 3
 --- !u!114 &8064937657327380227
 MonoBehaviour:
   m_ObjectHideFlags: 0
