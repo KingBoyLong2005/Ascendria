@@ -29,5 +29,5 @@ public abstract class BookBuff : UpgradableItem
         return $"Increase {statTarget} by {value}";
     }
     // buff áp thẳng vào PlayerStats
-    public abstract void Apply(PlayerStatManager stats);
+    public abstract void Apply();
 }

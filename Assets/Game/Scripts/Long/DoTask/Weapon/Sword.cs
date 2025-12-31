@@ -11,7 +11,7 @@ public class Sword : Weapon
     {
         Vector3 center = ctx.spawnPos;
         Quaternion rot = Quaternion.LookRotation(ctx.forward, Vector3.up);
-        Vector3 sizeBox = new Vector3(size, 0.25f, range);
+        Vector3 sizeBox = new Vector3(baseSize, 0.25f, baseRange);
 
         // ==== HITBOX ====
         HitBoxManager.Instance.RequestBox(
@@ -28,9 +28,9 @@ public class Sword : Weapon
             Quaternion fxRot = rot * Quaternion.Euler(90f, 0f, -60f);
             GameObject fx = Instantiate(slashEffectPrefab, center, fxRot);
             fx.transform.localScale = new Vector3(
-                size,          // width
-                size,          // thickness
-                range          // length
+                baseSize,          // width
+                baseSize,          // thickness
+                baseRange          // length
             );
             Destroy(fx, 0.4f);
         }
@@ -39,45 +39,45 @@ public class Sword : Weapon
     {
         var enemy = col.GetComponentInParent<EnemyStats>();
         if (enemy != null)
-            WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, damage);
+            WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, baseDamage);
     }
     public override void LevelUp(Rarity rarity)
     {
         switch (rarity)
         {
             case Rarity.Common:
-                damage += 2f;
-                range += 0.2f;
-                cooldown *= 0.98f;  // Giảm cooldown nhẹ
-                size += 1f;
+                baseDamage += 2f;
+                baseRange += 0.2f;
+                baseCooldown *= 0.98f;  // Giảm baseCooldown nhẹ
+                baseSize += 1f;
                 break;
 
             case Rarity.Uncommon:
-                damage += 4f;
-                range += 0.3f;
-                cooldown *= 0.96f;
-                size += 1f;
+                baseDamage += 4f;
+                baseRange += 0.3f;
+                baseCooldown *= 0.96f;
+                baseSize += 1f;
                 break;
 
             case Rarity.Rare:
-                damage += 7f;
-                range += 0.5f;
-                cooldown *= 0.93f;
-                size += 1.5f;
+                baseDamage += 7f;
+                baseRange += 0.5f;
+                baseCooldown *= 0.93f;
+                baseSize += 1.5f;
                 break;
 
             case Rarity.Epic:
-                damage += 12f;
-                range += 0.8f;
-                cooldown *= 0.90f;
-                size += 2f;
+                baseDamage += 12f;
+                baseRange += 0.8f;
+                baseCooldown *= 0.90f;
+                baseSize += 2f;
                 break;
 
             case Rarity.Legendary:
-                damage += 20f;
-                range += 1.2f;
-                cooldown *= 0.85f; 
-                size += 3f;
+                baseDamage += 20f;
+                baseRange += 1.2f;
+                baseCooldown *= 0.85f; 
+                baseSize += 3f;
                 break;
         }
 
