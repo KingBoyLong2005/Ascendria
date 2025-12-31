@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63e9c8de90d0944c9280fc45be52537, type: 3}
+  m_Name: SpikeSkillDebug
+  m_EditorClassIdentifier: 
+  skillName: Summon Spike
+  cooldown: 2
+  skillAtkMultiplier: 2.5
+  warningPrefab: {fileID: 4559483896235034718, guid: b3b80b3a4d021bd41ac43c888fdf49c3, type: 3}
+  spikePrefab: {fileID: 9098092680177922900, guid: bbf465db3db3d554a83d3ff9f9f0150e, type: 3}
+  warningDuration: 1
+  spikeOffset: 3
+  knockbackStrength: 3
