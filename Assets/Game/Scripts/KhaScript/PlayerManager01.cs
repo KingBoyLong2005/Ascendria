@@ -28,6 +28,7 @@ public class PlayerManager01 : MonoBehaviour
             if (playerSpawnPos != Vector3.zero)
             {
                 SpawnPlayer(playerSpawnPos);
+                FindFirstObjectByType<ProfileCharacterLoader>().ApplyProfile();
                 inventoryManager = gameObject.AddComponent<InventoryManager>();
                 hitBoxManager = gameObject.AddComponent<HitBoxManager>();
                 weaponManager = gameObject.AddComponent<WeaponManager>();  
