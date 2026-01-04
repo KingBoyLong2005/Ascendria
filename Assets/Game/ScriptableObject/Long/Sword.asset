@@ -15,11 +15,11 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: f027a30c1da707b488244ad97c182377, type: 3}
   level: 1
   weaponName: Sword
-  damage: 100
-  range: 3
-  size: 4
-  cooldown: 1
-  slashEffectPrefab: {fileID: 853751417762646301, guid: e53c177e32f50844fab2f084456093da, type: 3}
+  baseDamage: 10
+  baseRange: 2
+  baseSize: 1
+  baseCooldown: 1
+  slashEffectPrefab: {fileID: 3688534366464759314, guid: d9fb50ad3822fe644b10da5a63ce54cc, type: 3}
   enemyMask:
     serializedVersion: 2
     m_Bits: 128

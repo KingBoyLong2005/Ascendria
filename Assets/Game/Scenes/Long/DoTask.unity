@@ -584,6 +584,7 @@ MonoBehaviour:
     m_Bits: 256
   spawnInterval: 0.5
   difficultyMultiplier: 1
+  countdown: 20
 --- !u!1001 &1117167273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -670,15 +671,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421950015223515079, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.38
+      value: -5.993854
       objectReference: {fileID: 0}
     - target: {fileID: 7421950015223515079, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7930584
+      value: -1.5350142
       objectReference: {fileID: 0}
     - target: {fileID: 7421950015223515079, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.317169
+      value: -11.576628
       objectReference: {fileID: 0}
     - target: {fileID: 7792792565113786999, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
       propertyPath: GroundLayers.m_Bits
@@ -1155,12 +1156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: []
-  spawnOffset: 0.12
-  spawnHeightOffset: 0.6
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 128
-  DebugTest: 1
 --- !u!4 &1982747774
 Transform:
   m_ObjectHideFlags: 0
@@ -1237,6 +1232,63 @@ MonoBehaviour:
   lootTable:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!1001 &4356426253851038174
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038727029701407467, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215302606982542864, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
+      propertyPath: m_Name
+      value: Knight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1252,3 +1304,4 @@ SceneRoots:
   - {fileID: 1943756810}
   - {fileID: 1982747774}
   - {fileID: 337311862}
+  - {fileID: 4356426253851038174}
