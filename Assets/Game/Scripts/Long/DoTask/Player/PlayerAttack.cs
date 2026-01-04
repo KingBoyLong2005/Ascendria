@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     public float spawnHeightOffset = 0.6f;
     public LayerMask obstacleMask;
     
-    public Weapon wp;
+    // public Weapon wp;
     public event EventHandler OnPlayerAttackReady;
     void Start()
     {
