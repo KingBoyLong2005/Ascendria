@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 8952411064186125732}
   - component: {fileID: 582396682465065112}
   - component: {fileID: 3826166581934954284}
-  - component: {fileID: 7511549841832341202}
   - component: {fileID: 754615074540291162}
   m_Layer: 3
   m_Name: PlayerCapsuleLong
@@ -610,28 +609,6 @@ MonoBehaviour:
   GroundBottomClamp: -70
   ClimbTopClamp: 30
   ClimbBottomClamp: -30
---- !u!95 &7511549841832341202
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8730884717223232046}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &754615074540291162
 MonoBehaviour:
   m_ObjectHideFlags: 0
