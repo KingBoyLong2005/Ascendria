@@ -5,7 +5,7 @@ using UnityEngine.PlayerLoop;
 public class ProfileCharacterLoader : MonoBehaviour
 {
     [Header("Data")]
-    [SerializeField] private ProfileCharacterData profile;
+    [SerializeField] public ProfileCharacterData profile;
 
     [Header("Roots")]
     [SerializeField] private Transform visualRoot;
@@ -34,7 +34,7 @@ public class ProfileCharacterLoader : MonoBehaviour
 
         ApplyStats();
         LoadModel();
-        LoadWeapon();
+        // LoadWeapon();
     }
 
     private void ApplyStats()
@@ -60,14 +60,14 @@ public class ProfileCharacterLoader : MonoBehaviour
             Animator.runtimeAnimatorController = profile.animatorController;
     }
 
-    private void LoadWeapon()
-    {
-        if (profile.startingWeapon == null)
-            return;
-        FindFirstObjectByType<PlayerAttack>().wp = profile.startingWeapon;
-        // foreach (Transform child in weaponRoot)
-        //     Destroy(child.gameObject);
+    // private void LoadWeapon()
+    // {
+    //     if (profile.startingWeapon == null)
+    //         return;
+    //     FindFirstObjectByType<PlayerAttack>().wp = profile.startingWeapon;
+    //     // foreach (Transform child in weaponRoot)
+    //     //     Destroy(child.gameObject);
 
-        // Instantiate(profile.startingWeapon.prefab, weaponRoot);
-    }
+    //     // Instantiate(profile.startingWeapon.prefab, weaponRoot);
+    // }
 }

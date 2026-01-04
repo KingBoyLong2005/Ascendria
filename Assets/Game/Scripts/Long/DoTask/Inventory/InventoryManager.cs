@@ -59,7 +59,7 @@ public class InventoryManager : MonoBehaviour
             // 🔥 ĐẶT WEAPON MẶC ĐỊNH TẠI ĐÂY
             if (ownedWeapons.Count == 0)
             {
-                var defaultWeapon = FindFirstObjectByType<PlayerAttack>().wp;
+                var defaultWeapon = FindFirstObjectByType<ProfileCharacterLoader>().profile.startingWeapon;
                 Debug.Log("<color=red>Inventory: NO DEFAULT WEAPON → thêm vũ khí mặc định");
 
                 if (defaultWeapon != null)
