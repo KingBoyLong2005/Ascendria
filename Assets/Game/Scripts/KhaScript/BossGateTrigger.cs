@@ -17,7 +17,7 @@ public class BossGateTrigger : MonoBehaviour
         Collider collider = GetComponent<Collider>();
         if (collider != null)
         {
-            collider.isTrigger = true;
+            collider.isTrigger = false;
         }
         else
         {

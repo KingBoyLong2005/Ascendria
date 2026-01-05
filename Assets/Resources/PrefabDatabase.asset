@@ -15,7 +15,7 @@ MonoBehaviour:
   firstMapPrefab: {fileID: 4862273847237343773, guid: 7925168e9e8d70647b5f43ac4604de39, type: 3}
   secondMapPrefab: {fileID: 0}
   thirdMapPrefab: {fileID: 0}
-  bossGatePrefab: {fileID: 7912491181294470197, guid: 88d57cc761fc59d44b7faa20d1da891d, type: 3}
+  bossGatePrefab: {fileID: -5320046447110469426, guid: 58e0740147e406e4f91fdeaf93aed5b5, type: 3}
   playerPrefab: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
   bossPrefab: {fileID: 601743529567691592, guid: d7c0447c7e6dcd442be9d7e1f9fa59fc, type: 3}
   enemyPrefab: {fileID: 7027193393448012647, guid: 11c7568a8b3a2cd4794b1ad78e565360, type: 3}

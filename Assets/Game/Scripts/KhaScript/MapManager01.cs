@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static SpawnPointManager;
 
@@ -98,6 +99,10 @@ public class MapManager01 : MonoBehaviour
                 spawnTransform // Đặt Boss Gate làm con của điểm spawn để giữ tổ chức trong Hierarchy
             );
             Debug.Log($"<color=green>[MapManager]</color> Boss Gate đã được tạo thành công tại {spawnTransform.position}.");
+
+            MeshCollider meshCol = currentBossGateInstance.AddComponent<MeshCollider>();
+            meshCol.convex = true; // required if interacting with rigidbodies
+            meshCol.isTrigger = true;
 
             // GẮN VÀ KHỞI TẠO BossGateTrigger
             BossGateTrigger gateTrigger = currentBossGateInstance.AddComponent<BossGateTrigger>();

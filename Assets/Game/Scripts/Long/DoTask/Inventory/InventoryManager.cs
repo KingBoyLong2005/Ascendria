@@ -155,7 +155,7 @@ public class InventoryManager : MonoBehaviour
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
     #endregion
-    
+
     #region ITEM OPERATIONS 
     public void AddItem(Item runtimeItem, int count = 1, bool autoEquip = true)
     {
@@ -261,15 +261,6 @@ public class InventoryManager : MonoBehaviour
         {
             Debug.Log("<color=red> Không đăng ký được OnChestInteracted");
         }
-        if (EnemyManager.Instance != null)
-        {
-            EnemyManager.Instance.OnDead += EnemyManager_OnDead;
-            Debug.Log("<color= magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnDead");
-        }
-        else
-        {
-            Debug.Log("<color=red> Không đăng ký được OnDead");
-        }
     }
     private void OnDisable()
     {   
@@ -278,21 +269,11 @@ public class InventoryManager : MonoBehaviour
             GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
             Debug.Log("<color=magenta> [InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
         }
-
-        if (EnemyManager.Instance != null)
-        {
-            EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
-            Debug.Log("<color= magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnDead");
-        }
     }
     private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
     {
         AddItem(e.item);
         Debug.Log($"<color= magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
-    }
-    private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
-    {
-        AddCoins();
     }
     #endregion
 }

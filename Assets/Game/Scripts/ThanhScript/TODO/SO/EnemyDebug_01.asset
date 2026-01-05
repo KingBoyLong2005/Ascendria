@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemyDebug_01
   m_EditorClassIdentifier: 
   enemyName: Enemy Debug 01
-  maxHealth: 100
+  maxHealth: 10
   moveSpeed: 3.5
   attack: 10
   armor: 10

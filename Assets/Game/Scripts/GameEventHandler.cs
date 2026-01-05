@@ -26,6 +26,11 @@ public class GameEventHandler : MonoBehaviour
                 //ChestLogic function
                 Debug.Log($"Trigger Event: {e.Target.name}");
                 break;
+
+            case InteractionType.BossGate:
+                //ChestLogic function
+                Debug.Log($"Trigger Boss Gate Event: {e.Target.name}");
+                break;
         }
     }    
 }

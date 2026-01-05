@@ -233,6 +233,7 @@ public class EnemyManager : MonoBehaviour
     {
         // Trước khi despawn → gửi tín hiệu cho DropManager
         ++killCount;
+        InventoryManager.Instance.AddCoins();
         OnDead?.Invoke(this, new OnEnemyDeathEventArgs{DeathPosition = enemy.transform.position});
     }
 
