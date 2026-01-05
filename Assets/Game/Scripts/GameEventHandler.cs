@@ -28,7 +28,7 @@ public class GameEventHandler : MonoBehaviour
                 break;
 
             case InteractionType.BossGate:
-                //ChestLogic function
+                BossManager.Instance.SpawnBoss(e.Target.transform);
                 Debug.Log($"Trigger Boss Gate Event: {e.Target.name}");
                 break;
         }

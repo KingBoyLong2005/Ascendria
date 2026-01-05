@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
 
     private LootDropManager lootDropManager;
 
-    private BossManager bossManager;
     private GameEventManager gameEventManager;
     private AudioManager audioManager;
+    private GameEventHandler gameEventHandler;
 
     private UIManager uiManager;
 
@@ -66,16 +66,10 @@ public class GameManager : MonoBehaviour
     private void HandleMapReady(object sender, EventArgs e)
     {
         //audioManager = gameObject.AddComponent<AudioManager>();
-        //Boss
-        //bossManager = gameObject.AddComponent<BossManager>();
 
         //GameEventManager (tạo Object riêng để chứa EventManager)
-        //Trong GameEventManager khởi tạo các EventHandler
         var eventManagerObject = new GameObject("GameEventManager");
         var gameEventManager = eventManagerObject.AddComponent<GameEventManager>();
-
-        //gameEventManager = gameObject.AddComponent<GameEventManager>();
-        //gameEventManager.Initialize(bossManager);
 
         //Player
         playerManager = gameObject.AddComponent<PlayerManager01>();
@@ -86,22 +80,16 @@ public class GameManager : MonoBehaviour
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
 
+        //Game Event 
+        gameEventHandler = gameObject.AddComponent<GameEventHandler>();
+
         //Interactable Object (có khi chuyển vào map vì nó thuộc về map)
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
 
-        // //Quản lý pool
-        // poolManager = gameObject.AddComponent<PoolManager>();
-        // enemyManager = gameObject.AddComponent<EnemyManager>();
-        // damageManager = gameObject.AddComponent<DamageManager>();
-
         lootDropManager = gameObject.AddComponent<LootDropManager>();
         
         uiManager = gameObject.AddComponent<UIManager>();
-
-        //bossManager = gameObject.AddComponent<BossManager>();
-        //gameEventManager = gameObject.AddComponent<GameEventManager>();
-        //gameEventManager.Initialize(bossManager);
     }
 
     private void SetState(GameState newState)

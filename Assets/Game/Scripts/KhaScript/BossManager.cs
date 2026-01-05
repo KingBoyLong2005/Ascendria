@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
-    private static BossManager Instance;
+    public static BossManager Instance;
     
     //private GameObject bossPrefab;
     private List<GameObject> bossPrefabs = new List<GameObject>();
@@ -48,7 +48,6 @@ public class BossManager : MonoBehaviour
             bossPrefabs.Add(PrefabDatabase.Instance.bossPrefab);
             Debug.Log("Enemy added from db to manager");
         }
-
         // Repeat for all prefab fields — or use reflection/array if many
     }
 
