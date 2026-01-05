@@ -100,9 +100,12 @@ public class MapManager01 : MonoBehaviour
             );
             Debug.Log($"<color=green>[MapManager]</color> Boss Gate đã được tạo thành công tại {spawnTransform.position}.");
 
-            MeshCollider meshCol = currentBossGateInstance.AddComponent<MeshCollider>();
-            meshCol.convex = true; // required if interacting with rigidbodies
-            meshCol.isTrigger = true;
+            MeshCollider mc = currentBossGateInstance.AddComponent<MeshCollider>(); 
+            mc.sharedMesh = currentBossGateInstance.GetComponent<MeshFilter>().sharedMesh; 
+            mc.convex = false;
+
+            Interactable gateType = currentBossGateInstance.AddComponent<Interactable>();
+            gateType.interactType = InteractionType.BossGate;
 
             // GẮN VÀ KHỞI TẠO BossGateTrigger
             BossGateTrigger gateTrigger = currentBossGateInstance.AddComponent<BossGateTrigger>();
