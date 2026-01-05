@@ -12,7 +12,7 @@ public class TPCameraController : MonoBehaviour
     [SerializeField] private float maxDistance = 15f;
     [SerializeField] private MonoBehaviour inputAxisController;
 
-    private PlayerControls controls;
+    //private PlayerControls controls;
 
     private CinemachineCamera cam;
     private CinemachineOrbitalFollow orbital;
@@ -26,9 +26,9 @@ public class TPCameraController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        controls = new PlayerControls();
-        controls.Enable();
-        controls.CameraControls.MouseZoom.performed += HandleMousScroll;
+        //controls = new PlayerControls();
+        //controls.Enable();
+        //controls.CameraControls.MouseZoom.performed += HandleMousScroll;
 
         Cursor.lockState = CursorLockMode.Locked;
         
