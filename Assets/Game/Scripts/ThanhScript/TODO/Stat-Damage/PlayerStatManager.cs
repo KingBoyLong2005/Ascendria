@@ -43,16 +43,23 @@ public class PlayerStatManager : MonoBehaviour
 
     private float coinModifierFlat = 0f;
     private float coinModifierMult = 1f;
+    private ProfileCharacterLoader loaderProfile;
 
     private void Awake()
     {
+        loaderProfile = FindFirstObjectByType<ProfileCharacterLoader>();
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-
+        ApplyStats();
         currentHealth = baseMaxHealth;
         OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, baseMaxHealth));
     }
-
+    private void ApplyStats()
+    {
+        baseMaxHealth = loaderProfile.MaxHP ;
+        Instance.baseMoveSpeed = loaderProfile.MoveSpeed;
+        // PlayerStatManager.Instance.base = profile.attackSpeed;
+    }
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;

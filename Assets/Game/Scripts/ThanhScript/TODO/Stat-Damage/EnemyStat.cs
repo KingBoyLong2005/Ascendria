@@ -26,7 +26,7 @@ public class EnemyStats : MonoBehaviour
     }
 
     //Attack cd for enemy
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionStay(Collision other)
     {
         if (Time.time >= nextAttack)
         {
