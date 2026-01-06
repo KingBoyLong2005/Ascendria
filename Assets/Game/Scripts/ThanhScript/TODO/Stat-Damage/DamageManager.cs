@@ -51,6 +51,7 @@ public class DamageManager : MonoBehaviour
         float charArmor = PlayerStatManager.Instance.Armor;
 
         float finalDamage = enemyAttack - charArmor;
+        if (finalDamage <= 0) finalDamage = 1f;
         //Debug.Log($"Final enemy damage: {finalDamage}");
 
         return finalDamage;
@@ -61,6 +62,7 @@ public class DamageManager : MonoBehaviour
         float playerAttack = PlayerStatManager.Instance.Attack;
 
         float finalDamage = playerAttack + weaponAttack - enemyArmor;
+        if(finalDamage <= 0) finalDamage = 1f;
 
         return finalDamage;
     }
@@ -70,6 +72,7 @@ public class DamageManager : MonoBehaviour
         float charArmor = PlayerStatManager.Instance.Armor;
 
         float finalDamage = baseAtk*multi - charArmor;
+        if (finalDamage <= 0) finalDamage = 1f;
 
         // then apply damage to player
         PlayerStatManager.Instance.TakeDamage(finalDamage);
