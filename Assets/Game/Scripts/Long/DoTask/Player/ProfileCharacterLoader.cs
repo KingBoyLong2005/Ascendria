@@ -17,16 +17,18 @@ public class ProfileCharacterLoader : MonoBehaviour
     public GameObject Model { get; private set; }
     
 
-    // [Header("Stats (runtime)")]
-    // public int MaxHP { get; private set; }
-    // public float MoveSpeed { get; private set; }
+    [Header("Stats (runtime)")]
+    public int MaxHP { get; private set; }
+    public float MoveSpeed { get; private set; }
     // public float AttackSpeed { get; private set; }
 
-    // private void Awake()
-    // {
-    //     if (profile != null)
-    //         ApplyProfile();
-    // }
+    private void Awake()
+    {
+        // if (profile != null)
+        //     ApplyProfile();
+        MaxHP = profile.maxHP;
+        MoveSpeed = profile.moveSpeed;
+    }
 
     public void ApplyProfile()
     {

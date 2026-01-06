@@ -1,3 +1,4 @@
+
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -39,6 +40,10 @@ namespace StarterAssets
         public float ClimbSpeed = 2.5f;
         public float WallCheckDistance = 0.6f;
 
+        [Header("Climb Ledge")]
+        public float LedgeCheckForward = 0.6f;
+        public float LedgeCheckDown = 1.2f;
+        // public float LedgeUpOffset = 1.5f;
         [Header("Camera")]
         public GameObject CinemachineCameraTarget;
         public float GroundTopClamp = 70f;
@@ -193,11 +198,11 @@ namespace StarterAssets
                 MoveClimb();
                 return;
             }
-
+            MoveSpeed = PlayerStatManager.Instance.MoveSpeed;
             float targetSpeed = _input.move == Vector2.zero ? 0f : MoveSpeed;
             float currentSpeed = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
 
-            _speed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * SpeedChangeRate);
+            _speed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime* SpeedChangeRate);
 
             Vector3 inputDir = new Vector3(_input.move.x, 0, _input.move.y).normalized;
 
@@ -237,6 +242,8 @@ namespace StarterAssets
 
         private void MoveClimb()
         {
+            if (TryAutoExitClimb())
+                return;
             Vector3 climbUp = Vector3.ProjectOnPlane(Vector3.up, _wallNormal).normalized;
             Vector3 climbRight = Vector3.Cross(_wallNormal, climbUp);
 
@@ -287,16 +294,59 @@ namespace StarterAssets
 
             // _controller.Move(jumpDir * 2f);
             // nhảy ra khỏi tường, không teleport
+            // ===== AUTO THOÁT CLIMB KHI LÊN ĐỈNH =====
             Vector3 jumpOut = _wallNormal * 3f;
 
             _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-
+            // _controller.Move(jumpOut * 2f);
             // lưu lực đẩy ngang (xử lý ở Move)
             _externalVelocity = jumpOut;
             _animator.SetBool("IsGrounded", false);
             ExitClimb();
         }
 
+        private bool TryAutoExitClimb()
+        {
+            
+            // 1. Check KHÔNG còn tường trước mặt
+            Vector3 topPosition = transform.position + Vector3.up * _controller.height;
+            // Vector3 chestPos = transform.position + Vector3.up * LedgeUpOffset;
+            Vector3 chestPos = topPosition + Vector3.up * 0.1f;
+
+            // Debug.DrawRay(chestPos, transform.forward * LedgeCheckForward, Color.red, 0.1f);
+            
+            if (Physics.Raycast(chestPos, transform.forward, LedgeCheckForward))
+            {
+                // Debug.Log("Vẫn còn tường trước mặt");
+                return false; // vẫn còn tường → tiếp tục trèo
+            }
+
+            Debug.Log("Không còn tường! Checking mặt đất...");
+
+            // 2. Check có mặt đất phía trước + trên
+            Vector3 downCheckPos = chestPos + transform.forward * 0.5f;
+
+            // Debug.DrawRay(downCheckPos, Vector3.down * LedgeCheckDown, Color.green, 0.1f);
+
+            if (Physics.Raycast(downCheckPos, Vector3.down, out RaycastHit groundHit, LedgeCheckDown))
+            {
+                // Debug.Log($"Tìm thấy mặt đất tại: {groundHit.point}");
+                
+                // 3. Kéo player lên mép
+                Vector3 targetPos = groundHit.point + Vector3.up * 0.05f;
+
+                _controller.enabled = false;
+                transform.position = targetPos;
+                _controller.enabled = true;
+
+                ExitClimb();
+                _verticalVelocity = -2f;
+                return true;
+            }
+
+            // Debug.Log("Không tìm thấy mặt đất để trèo lên");
+            return false;
+        }
         // ===================== GRAVITY =====================
         private void ApplyGravity()
         {
