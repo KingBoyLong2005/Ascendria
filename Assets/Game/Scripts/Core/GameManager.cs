@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
 
     private GameEventManager gameEventManager;
     private AudioManager audioManager;
-    private GameEventHandler gameEventHandler;
 
     private UIManager uiManager;
 
@@ -79,9 +78,6 @@ public class GameManager : MonoBehaviour
         poolManager = gameObject.AddComponent<PoolManager>();
         enemyManager = gameObject.AddComponent<EnemyManager>();
         damageManager = gameObject.AddComponent<DamageManager>();
-
-        //Game Event 
-        gameEventHandler = gameObject.AddComponent<GameEventHandler>();
 
         //Interactable Object (có khi chuyển vào map vì nó thuộc về map)
         interactableSpawner = new InteractableSpawner();

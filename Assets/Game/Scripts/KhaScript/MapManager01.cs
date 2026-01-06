@@ -108,6 +108,8 @@ public class MapManager01 : MonoBehaviour
             mc2.convex = true; 
             mc2.isTrigger = true;
 
+            currentBossGateInstance.layer = LayerMask.NameToLayer("Interactable");
+
             Interactable gateType = currentBossGateInstance.AddComponent<Interactable>();
             gateType.interactType = InteractionType.BossGate;
 

@@ -98,7 +98,7 @@ public class EnemyManager : MonoBehaviour
     {
         //Spawn Timer
         timer += Time.deltaTime;
-        if (timer >= spawnInterval)
+        if (timer >= spawnInterval && !ActiveByButton)
         {
             timer = 0f;
             SpawnRandomEnemy();
