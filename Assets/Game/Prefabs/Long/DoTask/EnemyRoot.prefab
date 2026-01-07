@@ -51,9 +51,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rotationSpeed: 5
-  surfaceCheckDistance: 1
-  gravity: 9.81
-  stickToSurface: 0.5
+  groundCheckDistance: 1
+  wallCheckDistance: 0.8
+  surfaceStickForce: 10
+  groundAngleThreshold: 45
+  wallAngleThreshold: 60
+  climbSpeed: 3
 --- !u!114 &8064937657327380227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   template: {fileID: 11400000, guid: afd5593d221ff8c4d8226423ecfbc192, type: 2}
+  enemyName: 
 --- !u!33 &7004284145182681726
 MeshFilter:
   m_ObjectHideFlags: 0

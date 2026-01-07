@@ -5,6 +5,7 @@ public class EnemyStats : MonoBehaviour
 {
     public EnemyData template;  // assign in the editor (for each prefab or spawn logic)
 
+    public string enemyName;
     private float currentHealth;
     private float baseMaxHealth;
     private float moveSpeed;
@@ -21,6 +22,7 @@ public class EnemyStats : MonoBehaviour
         attack = Mathf.Floor(template.attack * EnemyManager.Instance.difficultyMultiplier);
         armor = Mathf.Floor(template.armor * EnemyManager.Instance.difficultyMultiplier);
         moveSpeed = template.moveSpeed;
+        enemyName = template.enemyName;
 
         currentHealth = baseMaxHealth;
     }
@@ -67,7 +69,11 @@ public class EnemyStats : MonoBehaviour
     {
         get { return armor; }
     }
-    
+    public float CurrentHealth
+    {
+        get { return currentHealth; }
+    }
+
     private void HitPlayer()
     {
         EnemyManager.Instance.EnemyHitPlayer(this.gameObject, Attack);

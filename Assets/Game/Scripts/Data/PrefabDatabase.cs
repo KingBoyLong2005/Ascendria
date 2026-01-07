@@ -35,6 +35,9 @@ public class PrefabDatabase : ScriptableObject
     public AudioClip playerSpawnSfx;
     public AudioClip bossSpawnSfx;
 
+    [Header("UI Prefabs")]
+    public GameObject bossHPBar;
+
     private static PrefabDatabase _instance;
     public static PrefabDatabase Instance
     {
