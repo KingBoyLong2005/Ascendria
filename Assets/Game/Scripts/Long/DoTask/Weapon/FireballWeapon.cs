@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Weapons/Fireball")]
 public class FireballWeapon : Weapon
 {
+    public float speedTitle;
     [Header("Effects")]
     public GameObject fireballPrefab;
     // public GameObject explosionEffectPrefab;
@@ -65,7 +66,8 @@ public class FireballWeapon : Weapon
         FireballProjectile proj = fireballGO.GetComponent<FireballProjectile>();
         if (proj != null)
         {
-            proj.Initialize(baseDamage, baseRange, baseSize * 25f, enemyMask);
+            // proj.Initialize(baseDamage, baseRange, baseSize * 25f, enemyMask);
+            proj.Initialize(baseDamage, baseRange, speedTitle, enemyMask);
         }
     }
 

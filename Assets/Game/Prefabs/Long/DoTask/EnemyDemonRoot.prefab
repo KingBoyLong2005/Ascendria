@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3696134164897478686}
   - component: {fileID: 7611847946447794357}
   - component: {fileID: 8621156915328327736}
-  - component: {fileID: -2373776944506866793}
+  - component: {fileID: 7795784858121506299}
   m_Layer: 7
   m_Name: EnemyDemonRoot
   m_TagString: Enemy
@@ -50,13 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
-  rotationSpeed: 5
-  groundCheckDistance: 1
-  wallCheckDistance: 0.8
-  surfaceStickForce: 10
-  groundAngleThreshold: 45
-  wallAngleThreshold: 60
-  climbSpeed: 3
+  rotateSpeed: 10
+  gravity: -25
+  forwardCheckDist: 0.8
+  groundCheckDist: 1.2
+  climbAngleLimit: 75
 --- !u!114 &634447460300552131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,30 +145,28 @@ CapsuleCollider:
   m_Height: 2.47
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &-2373776944506866793
-Rigidbody:
+--- !u!143 &7795784858121506299
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5416048564006381984}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.5
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2.37
+  m_Radius: 0.85
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
