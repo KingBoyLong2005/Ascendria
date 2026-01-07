@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   template: {fileID: 11400000, guid: 043acd0516c380a40a9cd81f81216e3b, type: 2}
+  enemyName: 
 --- !u!33 &3696134164897478686
 MeshFilter:
   m_ObjectHideFlags: 0

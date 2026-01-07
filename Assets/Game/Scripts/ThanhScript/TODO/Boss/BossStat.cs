@@ -36,4 +36,11 @@ public class BossStats : EnemyStats
         //Debug.Log($"Handle Skill Damage: multi: {multi}, Atk: {Attack}");
         DamageManager.Instance.CalculateBossSkillDamage(multi, Attack);
     }
+
+    protected override void Die()
+    {
+        base.Die(); 
+
+        BossManager.Instance.BossDie(this);
+    }
 }
