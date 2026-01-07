@@ -15,10 +15,11 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 2e1cf05b9d656ed45a2048b2324347cc, type: 3}
   level: 1
   weaponName: FireBall
-  damage: 100
-  range: 2
-  size: 1
-  cooldown: 1
+  baseDamage: 10
+  baseRange: 2
+  baseSize: 1
+  baseCooldown: 1
+  speedTitle: 4
   fireballPrefab: {fileID: 2567034384435699178, guid: 63b4024175bf60b47982b15090b3d8f4, type: 3}
   enemyMask:
     serializedVersion: 2

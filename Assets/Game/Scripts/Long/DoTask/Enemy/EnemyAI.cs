@@ -1,307 +1,124 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CharacterController))]
 public class EnemyAI : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 5f;
+    public float moveSpeed = 4f;
+    public float rotateSpeed = 10f;
+    public float gravity = -25f;
 
-    [Header("Surface Detection")]
-    public float groundCheckDistance = 1f;
-    public float wallCheckDistance = 0.8f;
-    public float surfaceStickForce = 10f;
-    
-    [Header("Surface Angles")]
-    [Tooltip("Góc nhỏ hơn = Ground, lớn hơn = Wall")]
-    public float groundAngleThreshold = 45f;
-    [Tooltip("Góc lớn hơn để coi là tường thẳng đứng")]
-    public float wallAngleThreshold = 60f;
-
-    [Header("Climb")]
-    public float climbSpeed = 3f;
-
-    private enum SurfaceState
-    {
-        Ground,
-        Wall,
-        Air
-    }
+    [Header("Surface Check")]
+    public float forwardCheckDist = 0.8f;
+    public float groundCheckDist = 1.2f;
+    public float climbAngleLimit = 75f;
 
     private Transform player;
-    private Rigidbody rb;
+    private CharacterController controller;
     private EnemyStats stats;
 
-    private SurfaceState currentState = SurfaceState.Air;
-    private Vector3 currentSurfaceNormal = Vector3.up;
-    private Vector3 lastValidSurface = Vector3.up;
-    private bool isStuckToSurface = false;
+    private Vector3 velocity;
+    private Vector3 surfaceNormal = Vector3.up;
+    private bool isClimbing;
 
+    void Awake()
+    {
+        controller = GetComponent<CharacterController>();
+    }
+
+    // ======= SETUP KHI SPAWN =======
     public void Setup(Transform target)
     {
         player = target;
+
         if (stats == null)
             stats = GetComponent<EnemyStats>();
+
         if (stats != null)
             moveSpeed = stats.MoveSpeed;
     }
 
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
-    }
-
-    void FixedUpdate()
+    void Update()
     {
         if (player == null) return;
 
-        DetectSurface();
-        MoveTowardsPlayer();
-        AlignToSurface();
+        HandleSurface();
+        Move();
+        ApplyGravity();
     }
 
-    private void DetectSurface()
+    // ======= XỬ LÝ ĐỊA HÌNH / TƯỜNG =======
+    void HandleSurface()
     {
-        Vector3 bodyCenter = transform.position + Vector3.up * 0.5f;
-        bool foundSurface = false;
+        RaycastHit hit;
 
-        // 1. Check ground trước (raycast xuống dưới)
-        if (Physics.Raycast(bodyCenter, Vector3.down, out RaycastHit groundHit, groundCheckDistance))
+        // Check phía trước
+        if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, forwardCheckDist))
         {
-            float angle = Vector3.Angle(groundHit.normal, Vector3.up);
-            
-            if (angle < groundAngleThreshold)
+            float angle = Vector3.Angle(hit.normal, Vector3.up);
+
+            if (angle > 5f && angle <= climbAngleLimit)
             {
-                currentState = SurfaceState.Ground;
-                currentSurfaceNormal = groundHit.normal;
-                lastValidSurface = currentSurfaceNormal;
-                isStuckToSurface = true;
+                isClimbing = true;
+                surfaceNormal = hit.normal;
                 return;
             }
         }
 
-        // 2. Check tường (8 hướng để phủ kín)
-        Vector3[] directions = {
-            transform.forward,
-            -transform.forward,
-            transform.right,
-            -transform.right,
-            (transform.forward + transform.right).normalized,
-            (transform.forward - transform.right).normalized,
-            (-transform.forward + transform.right).normalized,
-            (-transform.forward - transform.right).normalized
-        };
-
-        foreach (Vector3 dir in directions)
+        // Check bên dưới
+        if (Physics.Raycast(transform.position + Vector3.up * 0.2f, Vector3.down, out hit, groundCheckDist))
         {
-            if (Physics.Raycast(bodyCenter, dir, out RaycastHit wallHit, wallCheckDistance))
-            {
-                float angle = Vector3.Angle(wallHit.normal, Vector3.up);
-                
-                if (angle > wallAngleThreshold)
-                {
-                    currentState = SurfaceState.Wall;
-                    currentSurfaceNormal = wallHit.normal;
-                    lastValidSurface = currentSurfaceNormal;
-                    isStuckToSurface = true;
-                    foundSurface = true;
-                    break;
-                }
-            }
-        }
-
-        if (foundSurface) return;
-
-        // 3. Check hướng player (aggressive wall detection)
-        Vector3 dirToPlayer = (player.position - transform.position).normalized;
-        
-        if (Physics.Raycast(bodyCenter, dirToPlayer, out RaycastHit forwardHit, wallCheckDistance * 2f))
-        {
-            float angle = Vector3.Angle(forwardHit.normal, Vector3.up);
-            
-            if (angle > wallAngleThreshold)
-            {
-                currentState = SurfaceState.Wall;
-                currentSurfaceNormal = forwardHit.normal;
-                lastValidSurface = currentSurfaceNormal;
-                isStuckToSurface = true;
-                return;
-            }
-        }
-
-        // 4. Spherecast để phát hiện surface gần
-        if (Physics.SphereCast(bodyCenter, 0.3f, Vector3.down, out RaycastHit sphereHit, groundCheckDistance))
-        {
-            float angle = Vector3.Angle(sphereHit.normal, Vector3.up);
-            
-            if (angle < groundAngleThreshold)
-            {
-                currentState = SurfaceState.Ground;
-                currentSurfaceNormal = sphereHit.normal;
-            }
-            else if (angle > wallAngleThreshold)
-            {
-                currentState = SurfaceState.Wall;
-                currentSurfaceNormal = sphereHit.normal;
-            }
-            
-            lastValidSurface = currentSurfaceNormal;
-            isStuckToSurface = true;
+            isClimbing = false;
+            surfaceNormal = hit.normal;
             return;
         }
 
-        // 5. Không tìm thấy surface
-        currentState = SurfaceState.Air;
-        currentSurfaceNormal = lastValidSurface;
-        isStuckToSurface = false;
+        // Không chạm gì → rơi
+        isClimbing = false;
+        surfaceNormal = Vector3.up;
     }
 
-    private void MoveTowardsPlayer()
+    // ======= DI CHUYỂN =======
+    void Move()
     {
         Vector3 dirToPlayer = (player.position - transform.position).normalized;
-        Vector3 moveDir;
-        float speed;
 
-        switch (currentState)
+        // Chiếu hướng di chuyển lên surface
+        Vector3 moveDir = Vector3.ProjectOnPlane(dirToPlayer, surfaceNormal).normalized;
+
+        controller.Move(moveDir * moveSpeed * Time.deltaTime);
+
+        // Xoay mặt
+        if (moveDir.sqrMagnitude > 0.01f)
         {
-            case SurfaceState.Ground:
-                // Di chuyển bình thường trên mặt đất
-                moveDir = Vector3.ProjectOnPlane(dirToPlayer, currentSurfaceNormal).normalized;
-                speed = moveSpeed;
-                
-                rb.linearVelocity = moveDir * speed;
-                
-                // Nhẹ nhàng đẩy xuống ground
-                if (isStuckToSurface)
-                {
-                    rb.AddForce(-currentSurfaceNormal * surfaceStickForce * 0.3f, ForceMode.Acceleration);
-                }
-                break;
-
-            case SurfaceState.Wall:
-                // Leo tường
-                Vector3 climbUp = Vector3.ProjectOnPlane(Vector3.up, currentSurfaceNormal).normalized;
-                Vector3 climbRight = Vector3.Cross(currentSurfaceNormal, climbUp).normalized;
-
-                // Kiểm tra nếu vector không hợp lệ
-                if (climbUp == Vector3.zero || climbRight == Vector3.zero)
-                {
-                    // Fallback: di chuyển song song với tường
-                    moveDir = Vector3.ProjectOnPlane(dirToPlayer, currentSurfaceNormal).normalized;
-                }
-                else
-                {
-                    // Phân tích hướng player theo trục tường
-                    float upAmount = Vector3.Dot(dirToPlayer, climbUp);
-                    float rightAmount = Vector3.Dot(dirToPlayer, climbRight);
-
-                    moveDir = (climbUp * upAmount + climbRight * rightAmount).normalized;
-                }
-
-                speed = climbSpeed;
-                rb.linearVelocity = moveDir * speed;
-                
-                // Lực bám vào tường (mạnh hơn)
-                rb.AddForce(-currentSurfaceNormal * surfaceStickForce, ForceMode.Acceleration);
-                break;
-
-            case SurfaceState.Air:
-                // Rơi và di chuyển về phía player
-                moveDir = Vector3.ProjectOnPlane(dirToPlayer, Vector3.up).normalized;
-                Vector3 horizontalVel = moveDir * moveSpeed * 0.5f;
-                
-                rb.linearVelocity = new Vector3(
-                    horizontalVel.x,
-                    rb.linearVelocity.y - 9.81f * Time.fixedDeltaTime,
-                    horizontalVel.z
-                );
-                break;
+            Quaternion targetRot = Quaternion.LookRotation(moveDir, surfaceNormal);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
         }
     }
 
-    private void AlignToSurface()
+    // ======= GRAVITY =======
+    void ApplyGravity()
     {
-        Vector3 forward;
-        Vector3 up;
-
-        switch (currentState)
+        if (isClimbing) 
         {
-            case SurfaceState.Ground:
-                // Đứng vuông góc với ground, nhìn về player
-                forward = Vector3.ProjectOnPlane(player.position - transform.position, currentSurfaceNormal).normalized;
-                up = currentSurfaceNormal;
-                
-                if (forward != Vector3.zero)
-                {
-                    Quaternion targetRot = Quaternion.LookRotation(forward, up);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime);
-                }
-                break;
-
-            case SurfaceState.Wall:
-                // Bám vào tường, đầu hướng lên
-                Vector3 climbUp = Vector3.ProjectOnPlane(Vector3.up, currentSurfaceNormal).normalized;
-                
-                if (climbUp != Vector3.zero && currentSurfaceNormal != Vector3.zero)
-                {
-                    Quaternion targetRot = Quaternion.LookRotation(-currentSurfaceNormal, climbUp);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime);
-                }
-                break;
-
-            case SurfaceState.Air:
-                // Giữ hướng về player, đứng thẳng
-                forward = Vector3.ProjectOnPlane(player.position - transform.position, Vector3.up).normalized;
-                
-                if (forward != Vector3.zero)
-                {
-                    Quaternion targetRot = Quaternion.LookRotation(forward, Vector3.up);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime);
-                }
-                break;
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (!Application.isPlaying) return;
-
-        Vector3 bodyCenter = transform.position + Vector3.up * 0.5f;
-
-        // Ground check
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(bodyCenter, bodyCenter + Vector3.down * groundCheckDistance);
-
-        // Wall check rays
-        Gizmos.color = Color.red;
-        Vector3[] dirs = { 
-            transform.forward, -transform.forward, 
-            transform.right, -transform.right 
-        };
-        
-        foreach (Vector3 dir in dirs)
-        {
-            Gizmos.DrawLine(bodyCenter, bodyCenter + dir * wallCheckDistance);
+            velocity.y = 0f;
+            return;
         }
 
-        // Current state indicator
-        Gizmos.color = currentState == SurfaceState.Ground ? Color.green :
-                       currentState == SurfaceState.Wall ? Color.blue :
-                       Color.gray;
-        Gizmos.DrawWireSphere(transform.position, 0.3f);
+        if (controller.isGrounded)
+        {
+            if (velocity.y < 0)
+                velocity.y = -2f;
+        }
+        else
+        {
+            velocity.y += gravity * Time.deltaTime;
+        }
 
-        // Surface normal
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawLine(transform.position, transform.position + currentSurfaceNormal * 1.5f);
-
-        // State label
-        #if UNITY_EDITOR
-        UnityEditor.Handles.Label(transform.position + Vector3.up * 1.5f, $"State: {currentState}");
-        #endif
+        controller.Move(velocity * Time.deltaTime);
     }
 }
+
 // using UnityEngine;
 
 // [RequireComponent(typeof(Rigidbody))]
