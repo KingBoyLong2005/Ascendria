@@ -45,6 +45,10 @@ public class Loot : MonoBehaviour
             {
                 CollectHealth();
             }
+            if (gameObject.CompareTag("Loot Chest"))
+            {
+                CollectLootChest();
+            }
         }
     }
 
@@ -64,6 +68,19 @@ public class Loot : MonoBehaviour
     {
         // e.g. add to player coins / exp
         PlayerStatManager.Instance.RestoreHealth(amount);
+
+        playerPos = null; //reset magnet effect when returned to pool
+
+        // then return to pool / deactivate
+        PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        //Debug.Log("Loot Collected");
+    }
+
+    void CollectLootChest()
+    {
+        //Or ChestEventHandler
+        //var item = ItemManager.Instance.GetRandomItem();
+        //GameplayEvents.RaiseLootChestCollected(item);
 
         playerPos = null; //reset magnet effect when returned to pool
 

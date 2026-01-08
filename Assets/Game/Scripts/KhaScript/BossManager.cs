@@ -31,11 +31,13 @@ public class BossManager : MonoBehaviour
     public event EventHandler<OnBossDieEventArgs> OnBossDie;
     public class OnBossDieEventArgs : EventArgs
     {
-        public BossStats bossStat;  // which enemy did hit
+        public BossStats bossStat;
+        public Vector3 deathPos;
 
-        public OnBossDieEventArgs(BossStats bs)
+        public OnBossDieEventArgs(BossStats bs, Vector3 pos)
         {
             bossStat = bs;
+            deathPos = pos;
         }
     }
 
@@ -129,8 +131,8 @@ public class BossManager : MonoBehaviour
         }
     }
 
-    public void BossDie(BossStats boss)
+    public void BossDie(BossStats boss, Vector3 deathPos)
     {
-        OnBossDie?.Invoke(this, new OnBossDieEventArgs(boss));
+        OnBossDie?.Invoke(this, new OnBossDieEventArgs(boss, deathPos));
     }
 }
