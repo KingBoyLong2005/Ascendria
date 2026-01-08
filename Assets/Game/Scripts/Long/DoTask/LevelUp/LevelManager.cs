@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public float currentXP = 0f;
     public float xpToNext = 100f;
     public float growthFactor = 1.5f;
+    
     UpgradeDatabase upgradeDB;
     System.Random rnd = new System.Random();
 
@@ -40,7 +41,7 @@ public class LevelManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U))
         {
-            //AddXP(20);
+            AddXP(100);
         }
     }
 
@@ -48,19 +49,25 @@ public class LevelManager : MonoBehaviour
     public void AddXP(float amount)
     {
         currentXP += amount;
+
         OnXPChanged?.Invoke(this, new XPProgressEventArgs(currentXP, xpToNext));
 
         while (currentXP >= xpToNext)
         {
+
             currentXP -= xpToNext;
             level++;
+
+            float oldXPToNext = xpToNext;
             xpToNext *= growthFactor;
 
             List<UpgradeOption> options = GenerateUpgradeOptions();
+
             OnLevelUp?.Invoke(this, new LevelUpEventArgs(level, options));
             OnXPChanged?.Invoke(this, new XPProgressEventArgs(currentXP, xpToNext));
         }
-    }
+}
+
 
     public float GetProgress01()
     {
@@ -73,8 +80,7 @@ public class LevelManager : MonoBehaviour
         InventoryManager inv = InventoryManager.Instance;
         if (inv == null) return;
 
-        Rarity rarity =
-            (Rarity)Enum.Parse(typeof(Rarity), option.tier.ToString());
+        Rarity rarity = (Rarity)Enum.Parse(typeof(Rarity), option.tier.ToString());
 
         switch (option.kind)
         {
@@ -91,9 +97,7 @@ public class LevelManager : MonoBehaviour
                 break;
         }
 
-        OnUpgradeApplied?.Invoke(
-            this,
-            new UpgradeSelectedEventArgs(option));
+        OnUpgradeApplied?.Invoke(this, new UpgradeSelectedEventArgs(option));
     }
 
     // ================= INTERNAL =================
@@ -102,6 +106,7 @@ public class LevelManager : MonoBehaviour
         InventoryManager inv = InventoryManager.Instance;
         List<UpgradeOption> pool = new List<UpgradeOption>();
 
+        // 1. Weapon Upgrades (cho weapons đã có)
         foreach (var w in inv.ownedWeapons)
         {
             pool.Add(new UpgradeOption(
@@ -111,6 +116,7 @@ public class LevelManager : MonoBehaviour
                 null));
         }
 
+        // 2. Weapon Drops (cho weapons CHƯA có)
         foreach (var w in upgradeDB.allWeapons)
         {
             if (!inv.HasWeapon(w))
@@ -123,6 +129,7 @@ public class LevelManager : MonoBehaviour
             }
         }
 
+        // 3. Buffs (cả đã có và chưa có)
         foreach (var b in upgradeDB.allBuffs)
         {
             pool.Add(new UpgradeOption(
@@ -132,10 +139,10 @@ public class LevelManager : MonoBehaviour
                 b));
         }
 
-        // shuffle
+        // Shuffle
         pool = pool.OrderBy(x => rnd.Next()).ToList();
 
-        // manual distinct
+        // Distinct và lấy count options
         List<UpgradeOption> result = new List<UpgradeOption>();
         foreach (var o in pool)
         {
@@ -153,48 +160,73 @@ public class LevelManager : MonoBehaviour
         return result;
     }
 
-    void ApplyWeaponUpgrade(
-        InventoryManager inv,
-        UpgradeOption o,
-        Rarity r)
+    /// <summary>
+    /// Nâng cấp weapon ĐÃ CÓ trong inventory
+    /// </summary>
+    void ApplyWeaponUpgrade(InventoryManager inv, UpgradeOption o, Rarity r)
     {
-        Weapon runtime = inv.ownedWeapons
-            .FirstOrDefault(w => w.weaponName == o.targetWeapon.weaponName);
+        // Tìm weapon runtime instance từ weaponName
+        Weapon runtime = inv.GetWeaponByName(o.targetWeapon.weaponName);
 
         if (runtime != null)
+        {
+            // Đã có → Chỉ upgrade level, KHÔNG thêm vào inventory
             WeaponUpgrade.Upgrade(runtime, r);
+            Debug.Log($"<color=cyan>[LevelManager]</color> Upgrade weapon đã có: {runtime.weaponName} → Level {runtime.level}");
+        }
         else
+        {
+            // Không tìm thấy → Có thể weapon bị remove, thêm lại
+            Debug.LogWarning($"<color=orange>[LevelManager]</color> Weapon '{o.targetWeapon.weaponName}' không tìm thấy trong inventory, thêm lại");
             ApplyWeaponDrop(inv, o);
+        }
     }
 
-    void ApplyWeaponDrop(
-        InventoryManager inv,
-        UpgradeOption o)
+    /// <summary>
+    /// Thêm weapon MỚI vào inventory (chỉ khi CHƯA có)
+    /// </summary>
+    void ApplyWeaponDrop(InventoryManager inv, UpgradeOption o)
     {
-        if (inv.HasWeapon(o.targetWeapon)) return;
+        // Kiểm tra lần cuối để tránh duplicate
+        if (inv.HasWeapon(o.targetWeapon))
+        {
+            Debug.LogWarning($"<color=red>[LevelManager]</color> Weapon '{o.targetWeapon.weaponName}' đã có trong inventory → Bỏ qua thêm");
+            return;
+        }
 
         Weapon runtime = Instantiate(o.targetWeapon);
         inv.AddWeapon(runtime);
         WeaponManager.Instance.AddWeapon(runtime);
+        
+        Debug.Log($"<color=green>[LevelManager]</color> Thêm weapon MỚI: {runtime.weaponName}");
     }
 
-    void ApplyBuff(
-        InventoryManager inv,
-        UpgradeOption o,
-        Rarity r)
+    /// <summary>
+    /// Apply hoặc nâng cấp buff
+    /// </summary>
+    void ApplyBuff(InventoryManager inv, UpgradeOption o, Rarity r)
     {
-        BookBuff runtime = inv.ownedBookBuffs
-            .FirstOrDefault(b => b.buffId == o.targetBuff.buffId);
+        // Tìm buff runtime instance từ buffId
+        BookBuff runtime = inv.GetBuffById(o.targetBuff.buffId);
 
         if (runtime == null)
         {
+            // Chưa có → Tạo mới và thêm vào inventory
             runtime = Instantiate(o.targetBuff);
             runtime.level = 0;
             inv.AddBuff(runtime);
+            Debug.Log($"<color=green>[LevelManager]</color> Thêm buff MỚI: {runtime.buffId}");
+        }
+        else
+        {
+            Debug.Log($"<color=cyan>[LevelManager]</color> Nâng cấp buff đã có: {runtime.buffId}");
         }
 
+        // Nâng cấp level
         runtime.LevelUp(r);
         BookBuffManager.Instance.ApplyBuff(runtime);
+        
+        Debug.Log($"<color=cyan>[LevelManager]</color> Buff {runtime.buffId} → Level {runtime.level}");
     }
 
     UpgradeTier PickTier()
@@ -215,9 +247,9 @@ public class LevelManager : MonoBehaviour
     {
         public enum Kind
         {
-            WeaponUpgrade,
-            WeaponDrop,
-            Buff
+            WeaponUpgrade,  // Nâng cấp weapon ĐÃ CÓ
+            WeaponDrop,     // Thêm weapon MỚI
+            Buff            // Buff (cả mới và nâng cấp)
         }
 
         public Kind kind;
@@ -225,11 +257,7 @@ public class LevelManager : MonoBehaviour
         public Weapon targetWeapon;
         public BookBuff targetBuff;
 
-        public UpgradeOption(
-            Kind kind,
-            UpgradeTier tier,
-            Weapon weapon,
-            BookBuff buff)
+        public UpgradeOption(Kind kind, UpgradeTier tier, Weapon weapon, BookBuff buff)
         {
             this.kind = kind;
             this.tier = tier;
@@ -254,6 +282,7 @@ public class LevelManager : MonoBehaviour
     {
         public float currXP;
         public float xpToNext;
+        
         public XPProgressEventArgs(float currentXP, float xpToNextLvl)
         {
             currXP = currentXP;
