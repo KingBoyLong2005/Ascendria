@@ -16,13 +16,12 @@ public class GameManager : MonoBehaviour
     }
     public GameState currentState { get; private set; }
     public event Action<GameState> OnGameStateChanged;
-
     private MapManager01 mapManager;
     public MapManager01 GetMapManager => mapManager;
-
     private PlayerManager01 playerManager;
     private InteractableSpawner interactableSpawner;
 
+    private InventoryUI invenUI;
     private PoolManager poolManager;
     private EnemyManager enemyManager;
     private DamageManager damageManager;
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             currentState = GameState.Running;
         }
+        invenUI = FindFirstObjectByType<InventoryUI>();
     }
 
     private void Start()
@@ -96,16 +96,12 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
-        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
-        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }
@@ -120,6 +116,7 @@ public class GameManager : MonoBehaviour
                 PauseGame();
             else if (currentState == GameState.Paused)
                 ResumeGame();
+            invenUI.Toggle();
         }
     }
 

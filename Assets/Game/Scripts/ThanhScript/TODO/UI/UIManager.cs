@@ -70,8 +70,8 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-            inventoryUI.Toggle();
+        // if (Input.GetKeyDown(KeyCode.I))
+        //     inventoryUI.Toggle();
         UpdateTimerDisplay(EnemyManager.Instance.countdown);
     }
     private void OnDisable()
