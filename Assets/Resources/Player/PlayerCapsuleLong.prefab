@@ -352,7 +352,7 @@ Transform:
   m_GameObject: {fileID: 8261091369931232212}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -431,7 +431,7 @@ CharacterController:
   m_StepOffset: 0.25
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.93, z: 0}
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!114 &1210979075996420475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,7 +638,6 @@ MonoBehaviour:
   WallCheckDistance: 0.6
   LedgeCheckForward: 0.6
   LedgeCheckDown: 1.2
-  LedgeUpOffset: 1
   CinemachineCameraTarget: {fileID: 5049697630004215951}
   GroundTopClamp: 70
   GroundBottomClamp: -70

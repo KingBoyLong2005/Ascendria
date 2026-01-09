@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7a7d10ce484e3a44a0698f9b4541dd1, type: 3}
-  m_Name: KnightProfile
+  m_Name: ProfileFoxWizard
   m_EditorClassIdentifier: 
-  displayName: Knight
-  maxHP: 9999
-  moveSpeed: 10
+  displayName: FoxWizard
+  maxHP: 23
+  moveSpeed: 15
   attackSpeed: 20
-  modelPrefab: {fileID: 6140559301421528008, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
-  animatorController: {fileID: 9100000, guid: 471ca6584f99ac541bfb2a012c736871, type: 2}
-  startingWeapon: {fileID: 11400000, guid: 347f285d6dbee1e498bccfd8409573da, type: 2}
+  modelPrefab: {fileID: 925883790954956909, guid: ec0f11c6a3a8388469d933fe3dde6cff, type: 3}
+  animatorController: {fileID: 9100000, guid: a14e415f27cd5d944891758334117644, type: 2}
+  startingWeapon: {fileID: 11400000, guid: 08014bf8259eefa458b7b46a23379135, type: 2}

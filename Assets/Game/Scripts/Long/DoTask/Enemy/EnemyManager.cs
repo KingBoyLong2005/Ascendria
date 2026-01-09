@@ -163,7 +163,7 @@ public class EnemyManager : MonoBehaviour
         if (enemyPrefabs.Count == 0)
             return;
         
-        GameObject prefab = new GameObject();
+        GameObject prefab = null;
         if (!countdownFinished)
         {
             prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
