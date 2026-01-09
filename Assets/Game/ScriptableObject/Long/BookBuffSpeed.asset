@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8f45ecbc677b0f4caafd0e47400e572, type: 3}
-  m_Name: Speed
+  m_Name: BookBuffSpeed
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 5c3bdc439e6ca1a44a084e02700f3150, type: 3}
   level: 1

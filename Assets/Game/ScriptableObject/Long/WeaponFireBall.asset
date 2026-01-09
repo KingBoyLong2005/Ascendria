@@ -9,17 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 189ace36d619b67468f14336bb212b5d, type: 3}
-  m_Name: Sword
+  m_Script: {fileID: 11500000, guid: 3f6a5fecb81999c409cf9bec8ab6b07f, type: 3}
+  m_Name: WeaponFireBall
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: f027a30c1da707b488244ad97c182377, type: 3}
+  Icon: {fileID: 21300000, guid: 2e1cf05b9d656ed45a2048b2324347cc, type: 3}
   level: 1
-  weaponName: Sword
+  weaponName: FireBall
   baseDamage: 10
   baseRange: 2
   baseSize: 1
   baseCooldown: 1
-  slashEffectPrefab: {fileID: 3688534366464759314, guid: d9fb50ad3822fe644b10da5a63ce54cc, type: 3}
+  speedTitle: 4
+  fireballPrefab: {fileID: 2567034384435699178, guid: 63b4024175bf60b47982b15090b3d8f4, type: 3}
   enemyMask:
     serializedVersion: 2
     m_Bits: 128
+  targetingRadius: 20
