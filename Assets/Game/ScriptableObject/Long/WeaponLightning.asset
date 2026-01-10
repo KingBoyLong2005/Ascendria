@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85674c0e4a303e44bb59dddd48e1b8af, type: 3}
   m_Name: WeaponLightning
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: e364ee4b154455d4db46210e5d428ce8, type: 3}
   level: 1
   weaponName: Lightning Strike
   baseDamage: 10
