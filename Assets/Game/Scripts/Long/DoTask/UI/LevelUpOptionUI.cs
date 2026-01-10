@@ -8,6 +8,7 @@ public class LevelUpOptionUI : MonoBehaviour
     public TMP_Text title;
     public Button button;
     public Image placeholder;
+    public Image ColorRare;
 
     public void Setup(
         LevelManager.UpgradeOption option,
@@ -31,8 +32,25 @@ public class LevelUpOptionUI : MonoBehaviour
             option.targetWeapon?.Icon ??
             option.targetBuff?.Icon ??
             placeholder.sprite;
-
+        
+        // Đổi màu theo độ hiếm
+        if (ColorRare != null)
+        {
+            ColorRare.color = GetRarityColor(option.tier);
+        }
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => onClick(option));
+    }
+    private Color GetRarityColor(LevelManager.UpgradeTier tier)
+    {
+        return tier switch
+        {
+            LevelManager.UpgradeTier.Common => new Color(0f, 1f, 0f),        // Xanh lá (Green)
+            LevelManager.UpgradeTier.Uncommon => new Color(0f, 1f, 1f),      // Xanh cyan (Cyan)
+            LevelManager.UpgradeTier.Rare => new Color(0.58f, 0f, 0.83f),    // Tím (Purple)
+            LevelManager.UpgradeTier.Epic => new Color(0.8f, 0f, 0f),        // Đỏ đậm (Dark Red)
+            LevelManager.UpgradeTier.Legendary => new Color(1f, 0.84f, 0f),  // Gold
+            _ => Color.white
+        };
     }
 }

@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public event EventHandler<XPProgressEventArgs> OnXPChanged;
 
     [Header("Level Progression")]
+    public float Luck ; // Dùng đê tăng luck quay ra độ hiếm, 0->1
     public int level = 1;
     public float currentXP = 0f;
     public float xpToNext = 100f;
@@ -41,7 +42,7 @@ public class LevelManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U))
         {
-            AddXP(100);
+            AddXP(50);
         }
     }
 
@@ -233,7 +234,8 @@ public class LevelManager : MonoBehaviour
     {
         return (UpgradeTier)Enum.Parse(
             typeof(UpgradeTier),
-            RarityHelper.GetRandomRarity().ToString());
+            RarityHelper.GetRandomRarity().ToString()); // sẽ chuyền luck vào GetRandomRarity()
+            
     }
 
     // ================= DATA =================

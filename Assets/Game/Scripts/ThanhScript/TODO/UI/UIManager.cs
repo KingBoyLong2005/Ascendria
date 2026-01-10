@@ -93,11 +93,13 @@ public class UIManager : MonoBehaviour
 
     void HandleLevelUp(object sender, LevelManager.LevelUpEventArgs e)
     {
+        xpBarUI.StartRainbowEffect();
         levelUpUI.Show(e);
     }
 
     void HandleUpgradeApplied(object sender, LevelManager.UpgradeSelectedEventArgs e)
     {
+        xpBarUI.StopRainbowEffect();
         levelUpUI.Hide();
     }
 
