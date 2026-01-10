@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   template: {fileID: 11400000, guid: f906fb00fa159c14b93521e872bcda3d, type: 2}
+  enemyName: 
   uniqueSkill: {fileID: 11400000, guid: b452c5baf85ea1b45add270cabda1384, type: 2}
 --- !u!143 &6927949560340967667
 CharacterController:

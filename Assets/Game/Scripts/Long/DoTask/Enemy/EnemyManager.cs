@@ -26,7 +26,7 @@ public class EnemyManager : MonoBehaviour
     //Difficulty Scale Timer
     public float difficultyMultiplier = 1f;
     private float elapsedTime = 0f;
-    private float nextDiff = 10f;
+    private float nextDiff = 60f;
 
     //Game Countdown Timer
     public float countdown = 20f; // in seconds

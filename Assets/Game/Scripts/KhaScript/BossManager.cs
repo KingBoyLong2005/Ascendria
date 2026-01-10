@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static EnemyManager;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class BossManager : MonoBehaviour
 {
@@ -12,11 +14,30 @@ public class BossManager : MonoBehaviour
     private Transform player;
 
     // Biến để lưu trữ đối tượng Boss đang hoạt động (nếu có)
-    private GameObject currentBossInstance;
+    public GameObject currentGateBossInstance;
 
     // Event có thể dùng để báo hiệu Boss đã Spawn xong, hoặc Boss đã chết
-    public event EventHandler OnBossSpawned;
-    // public event EventHandler OnBossDefeated; 
+    public event EventHandler<OnBossSpawnedEventArgs> OnBossSpawned;
+    public class OnBossSpawnedEventArgs : EventArgs
+    {
+        public BossStats bossStat;  
+
+        public OnBossSpawnedEventArgs(BossStats bs)
+        {
+            bossStat = bs;
+        }
+    }
+
+    public event EventHandler<OnBossDieEventArgs> OnBossDie;
+    public class OnBossDieEventArgs : EventArgs
+    {
+        public BossStats bossStat;  // which enemy did hit
+
+        public OnBossDieEventArgs(BossStats bs)
+        {
+            bossStat = bs;
+        }
+    }
 
     public void Awake()
     {
@@ -35,7 +56,7 @@ public class BossManager : MonoBehaviour
     private void GameplayEvents_OnBossGateInteracted(Interactable obj)
     {
         Transform pos = obj.transform;
-        SpawnBoss(pos);
+        SpawnGateBoss(pos);
     }
 
     private void Start()
@@ -59,18 +80,25 @@ public class BossManager : MonoBehaviour
         // Repeat for all prefab fields — or use reflection/array if many
     }
 
-    public void SpawnBoss(Transform spawnPoint)
+    public void SpawnGateBoss(Transform spawnPoint)
     {
         // 2. Kiểm tra vị trí spawn
         if (spawnPoint != null)
         {
-            Debug.Log("<color=red>[BossManager]</color> Đã gọi hàm SpawnBoss.");
-            currentBossInstance = SpawnBossInstance(spawnPoint.position, spawnPoint.rotation);
+            //if(currentGateBossInstance != null)
+            //{
+            //    Debug.Log("Gate Boss still Alive");
+            //    return;
+            //}
+                
+            currentGateBossInstance = SpawnBossInstance(spawnPoint.position, spawnPoint.rotation);
+
+            var bossStat = currentGateBossInstance.GetComponent<BossStats>();
             
             // 5. Kích hoạt Event
-            if (currentBossInstance != null)
+            if (currentGateBossInstance != null)
             {
-                OnBossSpawned?.Invoke(this, EventArgs.Empty);
+                OnBossSpawned?.Invoke(this, new OnBossSpawnedEventArgs(bossStat));
             }
         }
         else
@@ -99,5 +127,10 @@ public class BossManager : MonoBehaviour
             Debug.LogError("[BossManager] Thiếu Boss Prefab.");
             return null;
         }
+    }
+
+    public void BossDie(BossStats boss)
+    {
+        OnBossDie?.Invoke(this, new OnBossDieEventArgs(boss));
     }
 }
