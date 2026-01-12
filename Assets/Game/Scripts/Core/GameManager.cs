@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         //audioManager = gameObject.AddComponent<AudioManager>();
 
-        //GameEventManager (tạo Object riêng để chứa EventManager)
+        //GameEventManager
         var eventManagerObject = new GameObject("GameEventManager");
         var gameEventManager = eventManagerObject.AddComponent<GameEventManager>();
 

@@ -17,5 +17,6 @@ public class ChestEventHandler : MonoBehaviour
     {
         //LLogic
         Debug.Log($"Mở Chest: {chest.name}");
+
     }
 }
