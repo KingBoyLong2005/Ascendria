@@ -38,22 +38,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (hit.collider.TryGetComponent<Interactable>(out var interactable))
             {
-                //GameEventSystem.Trigger(this, new InteractionEventArgs(interactable, interactable.interactType));
-                var t = interactable.interactType;
-                switch (t)
-                {
-                    case InteractionType.BossGate:
-                        GameplayEvents.RaiseBossGateInteracted(interactable);
-                        break;
-                    case InteractionType.Chest:
-                        GameplayEvents.RaiseChestInteracted(interactable);
-                        break;
-                    case InteractionType.Event:
-                        GameplayEvents.RaiseEventInteracted(interactable);
-                        break;
-                    default:
-                        break;
-                }
+                GameEventSystem.Trigger(this, new InteractionEventArgs(interactable, interactable.interactType));
                 //Log
                 Debug.Log($"Đã tương tác với {interactable.interactType}");
             }

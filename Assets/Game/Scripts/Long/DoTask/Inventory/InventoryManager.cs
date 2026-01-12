@@ -304,7 +304,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (GameEventManager.Instance != null)
         {
-            GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
+            //GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
             Debug.Log("<color=magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
         }
     }
@@ -313,15 +313,15 @@ public class InventoryManager : MonoBehaviour
     {   
         if (GameEventManager.Instance != null)
         {
-            GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
+            //GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
             Debug.Log("<color=magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
         }
     }
     
-    private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
-    {
-        AddItem(e.item);
-        Debug.Log($"<color=magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
-    }
+    //private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
+    //{
+    //    AddItem(e.item);
+    //    Debug.Log($"<color=magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
+    //}
     #endregion
 }
