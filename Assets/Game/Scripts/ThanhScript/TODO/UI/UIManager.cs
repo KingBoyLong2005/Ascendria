@@ -75,8 +75,8 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-            inventoryUI.Toggle();
+        // if (Input.GetKeyDown(KeyCode.I))
+        //     inventoryUI.Toggle();
         UpdateTimerDisplay(EnemyManager.Instance.countdown);
     }
     private void OnDisable()
@@ -128,11 +128,13 @@ public class UIManager : MonoBehaviour
 
     void HandleLevelUp(object sender, LevelManager.LevelUpEventArgs e)
     {
+        xpBarUI.StartRainbowEffect();
         levelUpUI.Show(e);
     }
 
     void HandleUpgradeApplied(object sender, LevelManager.UpgradeSelectedEventArgs e)
     {
+        xpBarUI.StopRainbowEffect();
         levelUpUI.Hide();
     }
 

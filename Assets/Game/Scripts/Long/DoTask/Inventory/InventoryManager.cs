@@ -1,4 +1,4 @@
-// InventoryManager.cs (updated with Item management: owned as Dictionary for stacking, active as List for equipped types)
+// InventoryManager.cs - Fixed to prevent weapon/buff duplicates
 using UnityEngine;
 using System;
 using System.Collections.Generic;
@@ -8,10 +8,8 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
-    // Danh sách toàn bộ vũ khí player sở hữu
+    // Danh sách toàn bộ vũ khí player sở hữu (mỗi weapon chỉ có 1 lần)
     public List<Weapon> ownedWeapons = new List<Weapon>();
-
-    // Danh sách vũ khí đang trang bị (equipped)
     public List<Weapon> activeWeapons = new List<Weapon>();
 
     public List<BookBuff> ownedBookBuffs = new List<BookBuff>();
@@ -26,19 +24,16 @@ public class InventoryManager : MonoBehaviour
     public int maxActiveBookBuffs = 3;
     public int maxActiveItem = 2;
 
-    // ---- EVENTS (EventHandler chuẩn) ----
+    // ---- EVENTS ----
     public event EventHandler OnInventoryChanged;
     public event EventHandler OnActiveWeaponsChanged;
     public event EventHandler OnActiveBookBuffsChanged;
     public event EventHandler OnActiveItemsChanged;
-
-    // Event để WeaponManager biết inventory đã sẵn sàng
     public event EventHandler OnInventoryReady;
 
     private bool readyInvoked = false;
     public bool IsReady { get; private set; } = false;
 
-    // public Weapon defaultWeapon;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -46,7 +41,6 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
     }
 
@@ -56,16 +50,15 @@ public class InventoryManager : MonoBehaviour
         {
             readyInvoked = true;
 
-            // 🔥 ĐẶT WEAPON MẶC ĐỊNH TẠI ĐÂY
+            // Thêm weapon mặc định
             if (ownedWeapons.Count == 0)
             {
                 var defaultWeapon = FindFirstObjectByType<ProfileCharacterLoader>().profile.startingWeapon;
-                Debug.Log("<color=red>Inventory: NO DEFAULT WEAPON → thêm vũ khí mặc định");
+                Debug.Log("<color=red>Inventory: NO DEFAULT WEAPON → thêm vũ khí mặc định</color>");
 
                 if (defaultWeapon != null)
                 {
                     Weapon runtimeDefault = Instantiate(defaultWeapon);
-                    // AddWeapon(runtimeDefault);
                     ownedWeapons.Add(runtimeDefault);
                     activeWeapons.Add(runtimeDefault);
                 }
@@ -75,9 +68,8 @@ public class InventoryManager : MonoBehaviour
                 activeWeapons.Add(ownedWeapons[0]);
             }
 
-            // 🔥 ĐÁNH DẤU READY TRƯỚC
             IsReady = true;
-            Debug.Log("InventoryManager READY");
+            Debug.Log("<color=green>InventoryManager READY</color>");
             OnInventoryReady?.Invoke(this, EventArgs.Empty);
         }
     }
@@ -88,22 +80,41 @@ public class InventoryManager : MonoBehaviour
         {
             var item = ItemManager.Instance.GetRandomItem();
             AddItem(item);   
-            Debug.Log($"<color=green> Thêm {item}");
+            Debug.Log($"<color=green>Thêm {item}</color>");
         }
     }
 
     #region WEAPON OPERATIONS 
+    
+    /// <summary>
+    /// Thêm weapon vào inventory. 
+    /// Nếu đã có weapon cùng weaponName thì KHÔNG thêm duplicate.
+    /// </summary>
     public void AddWeapon(Weapon runtimeWeapon, bool autoEquip = true)
     {
         if (runtimeWeapon == null) return;
 
+        // Kiểm tra đã có weapon với weaponName này chưa
+        Weapon existingWeapon = ownedWeapons.FirstOrDefault(w => w.weaponName == runtimeWeapon.weaponName);
+        
+        if (existingWeapon != null)
+        {
+            // Đã có → KHÔNG thêm duplicate, chỉ log
+            Debug.Log($"<color=yellow>[InventoryManager] Weapon '{runtimeWeapon.weaponName}' đã tồn tại trong inventory → Không thêm duplicate</color>");
+            return;
+        }
+
+        // Chưa có → Thêm mới
         ownedWeapons.Add(runtimeWeapon);
+        Debug.Log($"<color=green>[InventoryManager] Thêm weapon mới: {runtimeWeapon.weaponName}</color>");
 
         if (autoEquip && activeWeapons.Count < maxActiveWeapons)
+        {
             activeWeapons.Add(runtimeWeapon);
+            OnActiveWeaponsChanged?.Invoke(this, EventArgs.Empty);
+        }
 
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
-        OnActiveWeaponsChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveWeapon(Weapon weapon)
@@ -117,23 +128,55 @@ public class InventoryManager : MonoBehaviour
         OnActiveWeaponsChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    // tiện ích
-    public bool HasWeapon(Weapon w) => ownedWeapons.Contains(w);
+    /// <summary>
+    /// Kiểm tra đã có weapon với weaponName này chưa
+    /// </summary>
+    public bool HasWeapon(Weapon w)
+    {
+        if (w == null) return false;
+        return ownedWeapons.Any(owned => owned.weaponName == w.weaponName);
+    }
+    
+    /// <summary>
+    /// Lấy weapon runtime instance từ weaponName
+    /// </summary>
+    public Weapon GetWeaponByName(string weaponName)
+    {
+        return ownedWeapons.FirstOrDefault(w => w.weaponName == weaponName);
+    }
+    
     #endregion
-    #region Buff OPERATIONS 
+    
+    #region BUFF OPERATIONS 
+    
+    /// <summary>
+    /// Thêm buff vào inventory.
+    /// Nếu đã có buff cùng buffId thì KHÔNG thêm duplicate.
+    /// </summary>
     public void AddBuff(BookBuff runtimeBookBuff, bool autoEquip = true)
     {
         if(runtimeBookBuff == null) return;
         
-        if (HasBookBuff(runtimeBookBuff)) return;
+        // Kiểm tra đã có buff với buffId này chưa
+        if (HasBookBuff(runtimeBookBuff))
+        {
+            Debug.Log($"<color=yellow>[InventoryManager] Buff '{runtimeBookBuff.buffId}' đã tồn tại trong inventory → Không thêm duplicate</color>");
+            return;
+        }
+
+        // Chưa có → Thêm mới
         ownedBookBuffs.Add(runtimeBookBuff);
+        Debug.Log($"<color=green>[InventoryManager] Thêm buff mới: {runtimeBookBuff.buffId}</color>");
 
         if(autoEquip && activeBookBuffs.Count < maxActiveBookBuffs)
+        {
             activeBookBuffs.Add(runtimeBookBuff);
+            OnActiveBookBuffsChanged?.Invoke(this, EventArgs.Empty);
+        }
 
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
-        OnActiveBookBuffsChanged?.Invoke(this, EventArgs.Empty);
     }
+    
     public void RemoveBookBuff(BookBuff bookBuff)
     {
         if (bookBuff == null) return;
@@ -147,13 +190,23 @@ public class InventoryManager : MonoBehaviour
 
     public bool HasBookBuff(BookBuff bb)
     {
+        if (bb == null) return false;
         return ownedBookBuffs.Any(b => b.buffId == bb.buffId);
+    }
+    
+    /// <summary>
+    /// Lấy buff runtime instance từ buffId
+    /// </summary>
+    public BookBuff GetBuffById(string buffId)
+    {
+        return ownedBookBuffs.FirstOrDefault(b => b.buffId == buffId);
     }
 
     public void RaiseInventoryChanged()
     {
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
+    
     #endregion
 
     #region ITEM OPERATIONS 
@@ -164,7 +217,7 @@ public class InventoryManager : MonoBehaviour
         bool wasOwned = ownedItems.ContainsKey(runtimeItem);
         int previousCount = wasOwned ? ownedItems[runtimeItem] : 0;
 
-        if (!runtimeItem.isStackable && wasOwned) return; // Cannot add if not stackable and already owned
+        if (!runtimeItem.isStackable && wasOwned) return;
 
         ownedItems[runtimeItem] = previousCount + count;
 
@@ -173,12 +226,12 @@ public class InventoryManager : MonoBehaviour
         if (autoEquip && !isActive && activeItems.Count < maxActiveItem)
         {
             activeItems.Add(runtimeItem);
-            ItemManager.Instance.ApplyItemEffect(runtimeItem, ownedItems[runtimeItem]); // Apply full stack
+            ItemManager.Instance.ApplyItemEffect(runtimeItem, ownedItems[runtimeItem]);
             OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
         }
         else if (isActive)
         {
-            ItemManager.Instance.ApplyItemEffect(runtimeItem, count); // Apply added count
+            ItemManager.Instance.ApplyItemEffect(runtimeItem, count);
         }
 
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
@@ -187,8 +240,6 @@ public class InventoryManager : MonoBehaviour
     public void RemoveItem(Item item, int count = 1)
     {
         if (item == null || count <= 0 || !ownedItems.ContainsKey(item)) return;
-
-        int previousCount = ownedItems[item];
 
         if (activeItems.Contains(item))
         {
@@ -215,7 +266,7 @@ public class InventoryManager : MonoBehaviour
         activeItems.Add(item);
         ItemManager.Instance.ApplyItemEffect(item, ownedItems[item]);
         OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
-        OnInventoryChanged?.Invoke(this, EventArgs.Empty); // To refresh UI visuals
+        OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void UnequipItem(Item item)
@@ -224,7 +275,7 @@ public class InventoryManager : MonoBehaviour
 
         ItemManager.Instance.RemoveAllForItem(item);
         OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
-        OnInventoryChanged?.Invoke(this, EventArgs.Empty); // To refresh UI visuals
+        OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public bool HasItem(Item item)
@@ -251,29 +302,26 @@ public class InventoryManager : MonoBehaviour
 
     private void OnEnable()
     {
-        // GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
         if (GameEventManager.Instance != null)
         {
-            GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
+            //GameEventManager.Instance.OnChestInteracted += HandleChestInteracted;
             Debug.Log("<color=magenta>[InventoryManager]</color> Đăng ký lắng nghe sự kiện OnChestInteracted");
         }
-        else
-        {
-            Debug.Log("<color=red> Không đăng ký được OnChestInteracted");
-        }
     }
+    
     private void OnDisable()
     {   
         if (GameEventManager.Instance != null)
         {
-            GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
-            Debug.Log("<color=magenta> [InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
+            //GameEventManager.Instance.OnChestInteracted -= HandleChestInteracted;
+            Debug.Log("<color=magenta>[InventoryManager]</color> Hủy đăng ký lắng nghe sự kiện OnChestInteracted");
         }
     }
-    private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
-    {
-        AddItem(e.item);
-        Debug.Log($"<color= magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
-    }
+    
+    //private void HandleChestInteracted(object sender, GameEventManager.OnChestInteractEventArgs e)
+    //{
+    //    AddItem(e.item);
+    //    Debug.Log($"<color=magenta>[InventoryManager]</color> Nhận vật phẩm từ Chest: {e.item}");
+    //}
     #endregion
 }

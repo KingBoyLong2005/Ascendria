@@ -9,17 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a33a329afcfea5418bf788317f559f8, type: 3}
-  m_Name: Aura
+  m_Script: {fileID: 11500000, guid: 189ace36d619b67468f14336bb212b5d, type: 3}
+  m_Name: WeaponSword
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: d70422add9cfdbc4e8b3a6a112833790, type: 3}
+  Icon: {fileID: 21300000, guid: f027a30c1da707b488244ad97c182377, type: 3}
   level: 1
-  weaponName: Aura
-  damage: 100
-  range: 2
-  size: 1
-  cooldown: 1
+  weaponName: Sword
+  baseDamage: 10
+  baseRange: 7
+  baseSize: 6
+  baseCooldown: 1
+  slashEffectPrefab: {fileID: 3688534366464759314, guid: d9fb50ad3822fe644b10da5a63ce54cc, type: 3}
   enemyMask:
     serializedVersion: 2
     m_Bits: 128
-  auraEffectPrefab: {fileID: 7256025972453288248, guid: 1aa0bc8f52cc67248941c9922dfc847c, type: 3}
