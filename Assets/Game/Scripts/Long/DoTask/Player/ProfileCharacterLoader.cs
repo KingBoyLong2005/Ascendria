@@ -28,23 +28,26 @@ public class ProfileCharacterLoader : MonoBehaviour
         //     ApplyProfile();
         MaxHP = profile.maxHP;
         MoveSpeed = profile.moveSpeed;
+
+        // Dùng để test (nhớ bỏ)
+        ApplyProfile();
     }
 
     public void ApplyProfile()
     {
         // profile = data;
 
-        ApplyStats();
+        // ApplyStats();
         LoadModel();
         // LoadWeapon();
     }
 
-    private void ApplyStats()
-    {
-        PlayerStatManager.Instance.baseMaxHealth = profile.maxHP;
-        PlayerStatManager.Instance.baseMoveSpeed = profile.moveSpeed;
-        // PlayerStatManager.Instance.base = profile.attackSpeed;
-    }
+    // private void ApplyStats()
+    // {
+    //     PlayerStatManager.Instance.baseMaxHealth = profile.maxHP;
+    //     PlayerStatManager.Instance.baseMoveSpeed = profile.moveSpeed;
+    //     // PlayerStatManager.Instance.base = profile.attackSpeed;
+    // }
 
     private void LoadModel()
     {

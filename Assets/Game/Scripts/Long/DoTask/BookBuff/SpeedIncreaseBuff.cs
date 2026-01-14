@@ -29,6 +29,6 @@ public class SpeedIncreaseBuff : BookBuff
 
     public override string GetUpgradeDescription(Rarity rarity)
     {
-        return $"+{amount} Max HP";
+        return $"+{amount} Max Speed";
     }
 }

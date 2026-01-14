@@ -1,4 +1,3 @@
-
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -12,73 +11,53 @@ namespace StarterAssets
 #endif
     public class PlayerMove : MonoBehaviour
     {
-        // ===================== STATE =====================
-        private enum MovementState
+        private enum State
         {
-            Grounded,
-            Air,
+            Normal,
             Climb
         }
 
-        // ===================== CONFIG =====================
         [Header("Move")]
-        public float MoveSpeed = 4f;
-        public float SpeedChangeRate = 10f;
-        public float RotationSmoothTime = 0.12f;
+        public float moveSpeed = 4f;
+        public float rotationSmoothTime = 0.12f;
 
         [Header("Jump")]
-        public float JumpHeight = 1.2f;
-        public bool EnableAirJump = true;
-        public int MaxAirJump = 1;
-
-        [Header("Gravity")]
-        public float Gravity = -15f;
-        public float TerminalVelocity = 53f;
+        public float jumpHeight = 1.2f;
+        public float gravity = -15f;
+        public bool airJumpActive = true;
+        public int maxAirJump = 1;
 
         [Header("Climb")]
-        public bool ClimbActive = true;
-        public float ClimbSpeed = 2.5f;
-        public float WallCheckDistance = 0.6f;
+        public bool climbActive = true;
+        public float climbSpeed = 3f;
+        public float wallCheckDistance = 0.6f;
+        public float heightThreshold = 1.1f;
+        public LayerMask climbableLayer;
 
-        [Header("Climb Ledge")]
-        public float LedgeCheckForward = 0.6f;
-        public float LedgeCheckDown = 1.2f;
-        // public float LedgeUpOffset = 1.5f;
         [Header("Camera")]
         public GameObject CinemachineCameraTarget;
-        public float GroundTopClamp = 70f;
-        public float GroundBottomClamp = -70f;
-        public float ClimbTopClamp = 30f;
-        public float ClimbBottomClamp = -30f;
+        public float topClamp = 70f;
+        public float bottomClamp = -70f;
 
-        // ===================== INTERNAL =====================
-        private MovementState _state = MovementState.Air;
-
-        private float _speed;
-        private float _targetRotation;
-        private float _rotationVelocity;
-        private float _verticalVelocity;
-
-        private int _airJumpLeft;
-        private Vector3 _wallNormal;
-        private Vector3 _externalVelocity;
-
-        private float _cinemachineYaw;
-        private float _cinemachinePitch;
+        // ================= INTERNAL =================
+        private State _state = State.Normal;
 
         private CharacterController _controller;
         private StarterAssetsInputs _input;
+        private Animator _animator;
         private GameObject _mainCamera;
+
+        private float _verticalVelocity;
+        private float _rotationVelocity;
+        private int _airJumpLeft;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
 
-        private const float _threshold = 0.01f;
+        private float _cinemachineYaw;
+        private float _cinemachinePitch;
 
-        private Animator _animator;
-
-        // ===================== UNITY =====================
         private void Awake()
         {
             _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -88,306 +67,199 @@ namespace StarterAssets
         {
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+            _animator = GetComponentInChildren<Animator>();
 
 #if ENABLE_INPUT_SYSTEM
             _playerInput = GetComponent<PlayerInput>();
 #endif
 
-            _animator = GetComponentInChildren<Animator>();
-            _airJumpLeft = MaxAirJump;
+            _airJumpLeft = maxAirJump;
             _cinemachineYaw = CinemachineCameraTarget.transform.eulerAngles.y;
         }
 
         private void Update()
         {
-            CheckGrounded();
             CheckClimb();
             HandleJump();
             ApplyGravity();
             Move();
-
-            // UpdateAnimator(); // <- luôn để cuối
         }
-        // private void UpdateAnimator()
-        // {
-        //     if (_animator == null) return;
-
-            // // tốc độ di chuyển (0 = idle, >0 = run)
-            // float horizontalSpeed = new Vector3(
-            //     _controller.velocity.x,
-            //     0,
-            //     _controller.velocity.z
-            // ).magnitude;
-
-            // _animator.SetFloat("Speed", horizontalSpeed);
-
-            // grounded / jump
-            // _animator.SetBool("IsGrounded", _state == MovementState.Grounded);
-
-            // vertical velocity để phân biệt jump lên / rơi
-            // _animator.SetFloat("VerticalVelocity", _verticalVelocity);
-
-            // climb
-            // _animator.SetBool("IsClimbing", _state == MovementState.Climb);
-        // }
 
         private void LateUpdate()
         {
             CameraRotation();
         }
 
-        // ===================== STATE CHECK =====================
-        private void CheckGrounded()
+        // ================= MOVE =================
+        void Move()
         {
-            bool grounded = (_controller.collisionFlags & CollisionFlags.Below) != 0;
-
-            if (grounded)
-            {
-                _state = MovementState.Grounded;
-                _airJumpLeft = MaxAirJump;
-                _animator.SetBool("IsGrounded", true);
-                if (_verticalVelocity < 0f)
-                    _verticalVelocity = -2f;
-            }
-            else if (_state != MovementState.Climb)
-            {
-                _state = MovementState.Air;
-            }
-        }
-
-        private void CheckClimb()
-        {
-            if (_state == MovementState.Grounded)
-                return;
-
-            RaycastHit hit;
-            Vector3 origin = transform.position + Vector3.up * 1.0f;
-
-            if (Physics.Raycast(origin, transform.forward, out hit, WallCheckDistance))
-            {
-                float angle = Vector3.Angle(hit.normal, Vector3.up);
-                if (angle > 80f && angle < 100f)
-                {
-                    if (_state != MovementState.Climb)
-                        EnterClimb(hit);
-                    return;
-                }
-            }
-
-            if (_state == MovementState.Climb)
-                ExitClimb();
-        }
-
-        private void EnterClimb(RaycastHit hit)
-        {
-            _state = MovementState.Climb;
-            _wallNormal = hit.normal;
-            _verticalVelocity = 0f;
-        }
-
-        private void ExitClimb()
-        {
-            _state = MovementState.Air;
-        }
-
-        // ===================== MOVE =====================
-        private void Move()
-        {
-            if (_state == MovementState.Climb && ClimbActive)
+            if (_state == State.Climb)
             {
                 MoveClimb();
                 return;
             }
-            MoveSpeed = PlayerStatManager.Instance.MoveSpeed;
-            float targetSpeed = _input.move == Vector2.zero ? 0f : MoveSpeed;
-            float currentSpeed = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
-
-            _speed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime* SpeedChangeRate);
 
             Vector3 inputDir = new Vector3(_input.move.x, 0, _input.move.y).normalized;
 
-            if (_input.move != Vector2.zero)
+            if (inputDir != Vector3.zero)
             {
-                _targetRotation = Mathf.Atan2(inputDir.x, inputDir.z) * Mathf.Rad2Deg +
-                                  _mainCamera.transform.eulerAngles.y;
+                float targetRotation =
+                    Mathf.Atan2(inputDir.x, inputDir.z) * Mathf.Rad2Deg +
+                    _mainCamera.transform.eulerAngles.y;
 
                 float rotation = Mathf.SmoothDampAngle(
                     transform.eulerAngles.y,
-                    _targetRotation,
+                    targetRotation,
                     ref _rotationVelocity,
-                    RotationSmoothTime);
+                    rotationSmoothTime);
 
                 transform.rotation = Quaternion.Euler(0, rotation, 0);
-                _animator.SetBool("SpeedBool", true);
+            }
+
+            Vector3 moveDir = Quaternion.Euler(0, transform.eulerAngles.y, 0) * Vector3.forward;
+            Vector3 velocity =
+                moveDir * moveSpeed * inputDir.magnitude +
+                Vector3.up * _verticalVelocity;
+
+            _controller.Move(velocity * Time.deltaTime);
+
+            if (_animator != null)
+                _animator.SetBool("SpeedBool", inputDir != Vector3.zero);
+
+            if (_controller.isGrounded)
+            {
+                _airJumpLeft = maxAirJump;
+                if (_verticalVelocity < 0)
+                    _verticalVelocity = -2f;
+
+                if (_animator != null)
+                    _animator.SetBool("IsGrounded", true);
             }
             else
             {
-                _animator.SetBool("SpeedBool", false);
+                if (_animator != null)
+                    _animator.SetBool("IsGrounded", false);
             }
-
-            Vector3 moveDir = Quaternion.Euler(0, _targetRotation, 0) * Vector3.forward;
-            Vector3 velocity = moveDir.normalized * _speed + Vector3.up * _verticalVelocity + _externalVelocity;
-
-            _controller.Move(velocity * Time.deltaTime);
-            _externalVelocity = Vector3.Lerp(_externalVelocity, Vector3.zero, Time.deltaTime * 6f);
-            
-            // tốc độ di chuyển (0 = idle, >0 = run)
-            // float horizontalSpeed = new Vector3(
-            //     _controller.velocity.x,
-            //     0,
-            //     _controller.velocity.z
-            // ).magnitude;
-            // _animator.SetFloat("Speed", horizontalSpeed);
         }
 
-        private void MoveClimb()
+        void MoveClimb()
         {
-            if (TryAutoExitClimb())
-                return;
-            Vector3 climbUp = Vector3.ProjectOnPlane(Vector3.up, _wallNormal).normalized;
-            Vector3 climbRight = Vector3.Cross(_wallNormal, climbUp);
+            _controller.Move(Vector3.up * climbSpeed * Time.deltaTime);
 
-            Vector3 move =
-                climbUp * _input.move.y +
-                climbRight * _input.move.x;
-
-            _controller.Move(move * ClimbSpeed * Time.deltaTime);
-
-            Quaternion targetRot = Quaternion.LookRotation(-_wallNormal);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * 10f);
+            if (CheckWall(out RaycastHit hit))
+            {
+                Quaternion rot = Quaternion.LookRotation(-hit.normal);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * 10f);
+            }
+            else
+            {
+                ExitClimb();
+            }
         }
 
-        // ===================== JUMP =====================
-        private void HandleJump()
+        // ================= JUMP =================
+        void HandleJump()
         {
             if (!_input.jump) return;
 
-            if (_state == MovementState.Grounded)
+            if (_controller.isGrounded)
             {
-                DoJump();
+                Jump();
             }
-            else if (_state == MovementState.Climb)
+            else if (_state == State.Climb)
             {
-                // _animator.SetBool("IsGrounded", false);
-                DoClimbJump();
+                ExitClimb();
+                Jump();
             }
-            else if (_state == MovementState.Air && EnableAirJump && _airJumpLeft > 0)
+            else if (airJumpActive && _airJumpLeft > 0)
             {
-                DoJump();
+                Jump();
                 _airJumpLeft--;
             }
 
             _input.jump = false;
-
         }
 
-        private void DoJump()
+        void Jump()
         {
-            _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-            _animator.SetBool("IsGrounded", false);
+            _verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        private void DoClimbJump()
+        // ================= CLIMB (LIKE ENEMY) =================
+        void CheckClimb()
         {
-            // Vector3 jumpDir = (_wallNormal + Vector3.up).normalized;
-            // _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-
-            // _controller.Move(jumpDir * 2f);
-            // nhảy ra khỏi tường, không teleport
-            // ===== AUTO THOÁT CLIMB KHI LÊN ĐỈNH =====
-            Vector3 jumpOut = _wallNormal * 3f;
-
-            _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-            // _controller.Move(jumpOut * 2f);
-            // lưu lực đẩy ngang (xử lý ở Move)
-            _externalVelocity = jumpOut;
-            _animator.SetBool("IsGrounded", false);
-            ExitClimb();
-        }
-
-        private bool TryAutoExitClimb()
-        {
-            
-            // 1. Check KHÔNG còn tường trước mặt
-            Vector3 topPosition = transform.position + Vector3.up * _controller.height;
-            // Vector3 chestPos = transform.position + Vector3.up * LedgeUpOffset;
-            Vector3 chestPos = topPosition + Vector3.up * 0.1f;
-
-            // Debug.DrawRay(chestPos, transform.forward * LedgeCheckForward, Color.red, 0.1f);
-            
-            if (Physics.Raycast(chestPos, transform.forward, LedgeCheckForward))
-            {
-                // Debug.Log("Vẫn còn tường trước mặt");
-                return false; // vẫn còn tường → tiếp tục trèo
-            }
-
-            Debug.Log("Không còn tường! Checking mặt đất...");
-
-            // 2. Check có mặt đất phía trước + trên
-            Vector3 downCheckPos = chestPos + transform.forward * 0.5f;
-
-            // Debug.DrawRay(downCheckPos, Vector3.down * LedgeCheckDown, Color.green, 0.1f);
-
-            if (Physics.Raycast(downCheckPos, Vector3.down, out RaycastHit groundHit, LedgeCheckDown))
-            {
-                // Debug.Log($"Tìm thấy mặt đất tại: {groundHit.point}");
-                
-                // 3. Kéo player lên mép
-                Vector3 targetPos = groundHit.point + Vector3.up * 0.05f;
-
-                _controller.enabled = false;
-                transform.position = targetPos;
-                _controller.enabled = true;
-
-                ExitClimb();
-                _verticalVelocity = -2f;
-                return true;
-            }
-
-            // Debug.Log("Không tìm thấy mặt đất để trèo lên");
-            return false;
-        }
-        // ===================== GRAVITY =====================
-        private void ApplyGravity()
-        {
-            if (_state == MovementState.Climb)
+            if (!climbActive || _controller.isGrounded)
                 return;
 
-            if (_verticalVelocity < TerminalVelocity)
-                _verticalVelocity += Gravity * Time.deltaTime;
+            if (_state == State.Normal && PlayerIsAbove() && CheckWall())
+            {
+                _verticalVelocity = 0f;
+                _state = State.Climb;
+            }
         }
 
-        // ===================== CAMERA =====================
-        private void CameraRotation()
+        void ExitClimb()
         {
-            if (_input.look.sqrMagnitude >= _threshold)
+            _state = State.Normal;
+        }
+
+        bool PlayerIsAbove()
+        {
+            return transform.position.y + heightThreshold <
+                   transform.position.y + _controller.height;
+        }
+
+        bool CheckWall()
+        {
+            return Physics.Raycast(
+                transform.position,
+                transform.forward,
+                wallCheckDistance,
+                climbableLayer
+            );
+        }
+
+        bool CheckWall(out RaycastHit hit)
+        {
+            return Physics.Raycast(
+                transform.position,
+                transform.forward,
+                out hit,
+                wallCheckDistance,
+                climbableLayer
+            );
+        }
+
+        // ================= GRAVITY =================
+        void ApplyGravity()
+        {
+            if (_state == State.Climb)
+                return;
+
+            _verticalVelocity += gravity * Time.deltaTime;
+        }
+
+        // ================= CAMERA =================
+        void CameraRotation()
+        {
+            if (_input.look.sqrMagnitude > 0.01f)
             {
                 float delta = IsMouse ? 1f : Time.deltaTime;
                 _cinemachineYaw += _input.look.x * delta;
                 _cinemachinePitch += _input.look.y * delta;
             }
 
-            float top = _state == MovementState.Climb ? ClimbTopClamp : GroundTopClamp;
-            float bottom = _state == MovementState.Climb ? ClimbBottomClamp : GroundBottomClamp;
-
-            _cinemachinePitch = ClampAngle(_cinemachinePitch, bottom, top);
+            _cinemachinePitch = Mathf.Clamp(_cinemachinePitch, bottomClamp, topClamp);
 
             CinemachineCameraTarget.transform.rotation =
                 Quaternion.Euler(_cinemachinePitch, _cinemachineYaw, 0);
         }
 
-        private bool IsMouse =>
+        bool IsMouse =>
 #if ENABLE_INPUT_SYSTEM
             _playerInput.currentControlScheme == "KeyboardMouse";
 #else
             false;
 #endif
-
-        private static float ClampAngle(float angle, float min, float max)
-        {
-            if (angle < -360f) angle += 360f;
-            if (angle > 360f) angle -= 360f;
-            return Mathf.Clamp(angle, min, max);
-        }
     }
 }

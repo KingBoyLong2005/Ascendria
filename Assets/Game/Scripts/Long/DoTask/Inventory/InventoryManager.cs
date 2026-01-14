@@ -259,29 +259,29 @@ public class InventoryManager : MonoBehaviour
         OnInventoryChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    public void EquipItem(Item item)
-    {
-        if (item == null || activeItems.Contains(item) || activeItems.Count >= maxActiveItem || !ownedItems.ContainsKey(item)) return;
+    // public void EquipItem(Item item)
+    // {
+    //     if (item == null || activeItems.Contains(item) || activeItems.Count >= maxActiveItem || !ownedItems.ContainsKey(item)) return;
 
-        activeItems.Add(item);
-        ItemManager.Instance.ApplyItemEffect(item, ownedItems[item]);
-        OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
-        OnInventoryChanged?.Invoke(this, EventArgs.Empty);
-    }
+    //     activeItems.Add(item);
+    //     ItemManager.Instance.ApplyItemEffect(item, ownedItems[item]);
+    //     OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
+    //     OnInventoryChanged?.Invoke(this, EventArgs.Empty);
+    // }
 
-    public void UnequipItem(Item item)
-    {
-        if (item == null || !activeItems.Remove(item)) return;
+    // public void UnequipItem(Item item)
+    // {
+    //     if (item == null || !activeItems.Remove(item)) return;
 
-        ItemManager.Instance.RemoveAllForItem(item);
-        OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
-        OnInventoryChanged?.Invoke(this, EventArgs.Empty);
-    }
+    //     ItemManager.Instance.RemoveAllForItem(item);
+    //     OnActiveItemsChanged?.Invoke(this, EventArgs.Empty);
+    //     OnInventoryChanged?.Invoke(this, EventArgs.Empty);
+    // }
 
-    public bool HasItem(Item item)
-    {
-        return ownedItems.ContainsKey(item) && ownedItems[item] > 0;
-    }
+    // public bool HasItem(Item item)
+    // {
+    //     return ownedItems.ContainsKey(item) && ownedItems[item] > 0;
+    // }
 
     #endregion
 
