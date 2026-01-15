@@ -17,9 +17,9 @@ public static class RarityHelper
     {
         0.40f, // Common
         0.30f, // Uncommon
-        0.18f, // Rare
-        0.09f, // Epic
-        0.03f  // Legendary
+        0.15f, // Rare
+        0.10f, // Epic
+        0.05f  // Legendary
     };
 
     /// <summary>
