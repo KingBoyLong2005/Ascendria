@@ -15,11 +15,11 @@ public class LevelManager : MonoBehaviour
     public event EventHandler<XPProgressEventArgs> OnXPChanged;
 
     [Header("Level Progression")]
-    public float Luck ; // Dùng đê tăng luck quay ra độ hiếm, 0->1
+    public float Luck ; // Dùng đê tăng luck quay ra độ hiếm, 0->1 (truyền luck vào getrandom dòng 237)
     public int level = 1;
     public float currentXP = 0f;
     public float xpToNext = 100f;
-    public float growthFactor = 1.5f;
+    public float growthFactor = 1.2f;
     
     UpgradeDatabase upgradeDB;
     System.Random rnd = new System.Random();

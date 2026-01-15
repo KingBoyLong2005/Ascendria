@@ -1,25 +1,25 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Buffs/Health Increase")]
-public class HealthIncreaseBuff : BookBuff
+[CreateAssetMenu(menuName = "Buffs/Luck Increase")]
+public class LuckBuff : BookBuff
 {
     public float amount = 10f;
     public override void Apply()
     {
         // stats.maxHP += amount;
         // stats.currentHP = Mathf.Min(stats.currentHP + amount, stats.maxHP);
-        PlayerStatManager.Instance.ModifyHealth(amount);
+        // PlayerStatManager.Instance.ModifyMoveSpeed(currentSpeed);
     }
 
     public override void LevelUp(Rarity rarity)
     {
         switch (rarity)
         {
-            case Rarity.Common:     amount += 5f; break;
+            case Rarity.Common:     amount += 7f; break;
             case Rarity.Uncommon:   amount += 8f; break;
             case Rarity.Rare:       amount += 10f; break;
-            case Rarity.Epic:       amount += 20f; break;
-            case Rarity.Legendary:  amount += 25f; break;
+            case Rarity.Epic:       amount += 11f; break;
+            case Rarity.Legendary:  amount += 14f; break;
         }
 
         level++;
@@ -27,6 +27,6 @@ public class HealthIncreaseBuff : BookBuff
 
     public override string GetUpgradeDescription(Rarity rarity)
     {
-        return $"+{amount} Max HP";
+        return $"+{amount} Max Luck";
     }
 }

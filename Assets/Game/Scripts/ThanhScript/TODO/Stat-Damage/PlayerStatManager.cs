@@ -56,9 +56,10 @@ public class PlayerStatManager : MonoBehaviour
     }
     private void ApplyStats()
     {
-        baseMaxHealth = loaderProfile.MaxHP ;
-        Instance.baseMoveSpeed = loaderProfile.MoveSpeed;
-        // PlayerStatManager.Instance.base = profile.attackSpeed;
+        baseMaxHealth = loaderProfile.MaxHP;
+        baseAttack = loaderProfile.attack;
+        baseMoveSpeed = loaderProfile.moveSpeed;
+        baseArmor = loaderProfile.armor;
     }
     public void TakeDamage(float damage)
     {
