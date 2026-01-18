@@ -83,7 +83,7 @@ public class ItemManager : MonoBehaviour
     {
         if (stats == null || item == null || addedMultiplier <= 0) return;
 
-        item.Apply(stats, addedMultiplier);
+        item.Apply(addedMultiplier);
 
         if (item.isTimed)
         {
@@ -97,7 +97,7 @@ public class ItemManager : MonoBehaviour
     {
         if (stats == null || item == null || multiplier <= 0) return;
 
-        item.Remove(stats, multiplier);
+        item.Remove(multiplier);
     }
 
     // Remove all effects for a specific item (e.g., for unequip)
@@ -129,7 +129,7 @@ public class ItemManager : MonoBehaviour
 
         if (totalMultiplier > 0)
         {
-            item.Remove(stats, totalMultiplier);
+            item.Remove(totalMultiplier);
         }
     }
 
@@ -145,7 +145,7 @@ public class ItemManager : MonoBehaviour
         {
             if (!item.isTimed && inv.ownedItems.TryGetValue(item, out var count))
             {
-                item.Apply(stats, count);
+                item.Apply(count);
             }
         }
     }

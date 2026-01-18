@@ -1,10 +1,12 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Weapons/Lightning")]
-public class LightningWeapon : Weapon
+public class LightningWeapon : Weapon, IMultiProjectile
 {
     [Header("Lightning Stats")]
-    public int projectileCount = 1;  // Số lượng lightning mỗi lần attack
+    private int projectileCount = 1;
+    
+    public int ProjectileCount => projectileCount;
     
     [Header("Lightning")]
     public GameObject lightningPrefab;
@@ -113,5 +115,9 @@ public class LightningWeapon : Weapon
                     break;
             }
         }
+    }
+    public void AddProjectile(int amount)
+    {
+        projectileCount += amount;
     }
 }

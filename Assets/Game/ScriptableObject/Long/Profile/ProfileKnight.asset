@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: ProfileKnight
   m_EditorClassIdentifier: 
   displayName: Knight
-  maxHP: 9999
-  moveSpeed: 10
-  attackSpeed: 20
+  maxHP: 40
+  CharacterAttack: 5
+  Armor: 1
+  MoveSpeed: 5
+  Luck: 1
+  Wealth: 1
+  Wise: 1
   modelPrefab: {fileID: 6140559301421528008, guid: 861c19a6d47d3da4589cb93b363d74a0, type: 3}
   animatorController: {fileID: 9100000, guid: 471ca6584f99ac541bfb2a012c736871, type: 2}
   startingWeapon: {fileID: 11400000, guid: 347f285d6dbee1e498bccfd8409573da, type: 2}

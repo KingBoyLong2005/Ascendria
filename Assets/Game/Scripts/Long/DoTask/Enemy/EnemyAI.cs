@@ -35,7 +35,7 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         controller = GetComponent<CharacterController>();
-        target = FindFirstObjectByType<PlayerMove>().transform;
+        target = PlayerMoveManager.Instance.transform;
     }
 
     void Update()
