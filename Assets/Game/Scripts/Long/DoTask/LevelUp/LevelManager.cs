@@ -234,7 +234,7 @@ public class LevelManager : MonoBehaviour
     {
         return (UpgradeTier)Enum.Parse(
             typeof(UpgradeTier),
-            RarityHelper.GetRandomRarity().ToString()); // sẽ chuyền luck vào GetRandomRarity()
+            RarityHelper.GetRandomRarity(Luck/100).ToString()); // sẽ chuyền luck vào GetRandomRarity()
             
     }
 

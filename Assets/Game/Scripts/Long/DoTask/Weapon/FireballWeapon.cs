@@ -1,12 +1,14 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Weapons/Fireball")]
-public class FireballWeapon : Weapon
+public class FireballWeapon : Weapon, IMultiProjectile
 {
     [Header("Fireball Stats")]
     public float projectileSpeed = 10f;      // Tốc độ base
-    public int projectileCount = 1;          // Số lượng projectile mỗi lần attack
+    private int projectileCount = 1;
     
+    public int ProjectileCount => projectileCount;
+    // public int MaxProjectileCount => 10; // Giới hạn      // Số lượng projectile mỗi lần attack
     [Header("Effects")]
     public GameObject fireballPrefab;
     
@@ -128,5 +130,9 @@ public class FireballWeapon : Weapon
                 case 3: baseSize *= sizeMultiplier; break;
             }
         }
+    }
+    public void AddProjectile(int amount)
+    {
+        projectileCount += amount;
     }
 }

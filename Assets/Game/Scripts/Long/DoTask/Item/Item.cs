@@ -20,8 +20,8 @@ public abstract class Item : ScriptableObject
     public float duration = 30f;    // Duration in seconds (if isTimed)
 
     // Apply effect to stats (multiplier = stack count added)
-    public abstract void Apply(PlayerStatManager stats, int multiplier = 1);
+    public abstract void Apply(int multiplier = 1);
 
     // Remove effect from stats (multiplier = stack count removed)
-    public abstract void Remove(PlayerStatManager stats, int multiplier = 1);
+    public abstract void Remove(int multiplier = 1);
 }

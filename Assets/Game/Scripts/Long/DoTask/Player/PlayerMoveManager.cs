@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -9,8 +10,9 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM
     [RequireComponent(typeof(PlayerInput))]
 #endif
-    public class PlayerMove : MonoBehaviour
+    public class PlayerMoveManager : MonoBehaviour
     {
+        public static PlayerMoveManager Instance { get; private set; }
         private enum State
         {
             Normal,
@@ -24,11 +26,11 @@ namespace StarterAssets
         [Header("Jump")]
         public float jumpHeight = 1.2f;
         public float gravity = -15f;
-        public bool airJumpActive = true;
+        public bool airJumpActive = false;
         public int maxAirJump = 1;
 
         [Header("Climb")]
-        public bool climbActive = true;
+        public bool climbActive = false;
         public float climbSpeed = 3f;
         public float wallCheckDistance = 0.6f;
         public float heightThreshold = 1.1f;

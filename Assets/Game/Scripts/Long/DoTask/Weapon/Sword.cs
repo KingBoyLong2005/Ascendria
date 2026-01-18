@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Weapons/Sword")]
-public class Sword : Weapon
+public class Sword : Weapon, IMultiProjectile
 {
     [Header("Sword Stats")]
-    public int projectileCount = 1;      // Số lượng slash mỗi lần attack
+    private int projectileCount = 1;
+    
+    public int ProjectileCount => projectileCount;
     public float knockbackForce = 0f;    // Lực đẩy lùi enemy
     
     [Header("Effects")]
@@ -13,7 +15,6 @@ public class Sword : Weapon
     
     [Header("Mask")]
     public LayerMask enemyMask;
-    
     public override void Attack(WeaponContext ctx)
     {
         // Tấn công projectileCount lần
@@ -41,7 +42,8 @@ public class Sword : Weapon
                 sizeBox,
                 rot,
                 enemyMask,
-                OnHitEnemy
+                // OnHitEnemy,
+                (col) => OnHitEnemy(col, ctx)
             );
 
             // ==== EFFECT ====
@@ -68,7 +70,7 @@ public class Sword : Weapon
         }
     }
 
-    private void OnHitEnemy(Collider col)
+    private void OnHitEnemy(Collider col, WeaponContext playerctx)
     {
         var enemy = col.GetComponentInParent<EnemyStats>();
         if (enemy != null)
@@ -78,18 +80,18 @@ public class Sword : Weapon
             // Apply knockback nếu có
             if (knockbackForce > 0f)
             {
-                ApplyKnockback(enemy);
+                ApplyKnockback(enemy, playerctx);
             }
         }
     }
 
-    private void ApplyKnockback(EnemyStats enemy)
+    private void ApplyKnockback(EnemyStats enemy, WeaponContext playerctx)
     {
         Rigidbody enemyRb = enemy.GetComponent<Rigidbody>();
         if (enemyRb != null)
         {
             // Tính hướng knockback (đẩy ra xa player)
-            Vector3 knockbackDir = (enemy.transform.position - FindFirstObjectByType<PlayerAttack>().transform.position).normalized;
+            Vector3 knockbackDir = (enemy.transform.position - playerctx.owner.transform.position).normalized;
             knockbackDir.y = 0f; // Giữ knockback ở mặt phẳng ngang
             
             // Apply force
@@ -152,5 +154,9 @@ public class Sword : Weapon
                     break;
             }
         }
+    }
+    public void AddProjectile(int amount)
+    {
+        projectileCount += amount;
     }
 }

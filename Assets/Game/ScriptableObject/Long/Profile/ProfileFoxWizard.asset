@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: ProfileFoxWizard
   m_EditorClassIdentifier: 
   displayName: FoxWizard
-  maxHP: 23
-  moveSpeed: 15
-  attackSpeed: 20
+  maxHP: 20
+  CharacterAttack: 5
+  Armor: 1
+  MoveSpeed: 4
+  Luck: 1
+  Wealth: 1
+  Wise: 1
   modelPrefab: {fileID: 925883790954956909, guid: ec0f11c6a3a8388469d933fe3dde6cff, type: 3}
   animatorController: {fileID: 9100000, guid: a14e415f27cd5d944891758334117644, type: 2}
-  startingWeapon: {fileID: 11400000, guid: 08014bf8259eefa458b7b46a23379135, type: 2}
+  startingWeapon: {fileID: 11400000, guid: 347f285d6dbee1e498bccfd8409573da, type: 2}
