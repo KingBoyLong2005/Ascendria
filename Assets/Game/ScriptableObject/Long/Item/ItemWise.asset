@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemWise
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: c9088355db9e4ed4fa8ba0c1696c20f3, type: 3}
+  rarity: 1
   isStackable: 1
   isTimed: 0
   duration: 30

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5252415806852810720}
   - component: {fileID: 1338613991078360043}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: BossGatePoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4499271621914700514}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: DefaultSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7276804904916880141}
   - component: {fileID: 741798165969636903}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: PlayerPoint1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7563348545817325864}
   - component: {fileID: 4721972622921248078}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: PlayerPoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5081448293916744077}
   - component: {fileID: 8968875587921183108}
-  m_Layer: 8
+  m_Layer: 13
   m_Name: BossGatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa6c8d95f5f657a4c8eedf35e5c202e3, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

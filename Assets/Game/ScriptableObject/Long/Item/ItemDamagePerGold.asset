@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba794e9b46a33c84cae4b6d0d1f42a0f, type: 3}
   m_Name: ItemDamagePerGold
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 7c1a48ee064342642b95ed54dc4b3d26, type: 3}
+  rarity: 4
   isStackable: 1
   isTimed: 0
   duration: 30

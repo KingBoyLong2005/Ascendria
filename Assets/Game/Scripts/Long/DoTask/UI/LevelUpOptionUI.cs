@@ -41,15 +41,15 @@ public class LevelUpOptionUI : MonoBehaviour
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => onClick(option));
     }
-    private Color GetRarityColor(LevelManager.UpgradeTier tier)
+    private Color GetRarityColor(LevelManager.RarityTier tier)
     {
         return tier switch
         {
-            LevelManager.UpgradeTier.Common => new Color(0f, 1f, 0f),        // Xanh lá (Green)
-            LevelManager.UpgradeTier.Uncommon => new Color(0f, 1f, 1f),      // Xanh cyan (Cyan)
-            LevelManager.UpgradeTier.Rare => new Color(0.58f, 0f, 0.83f),    // Tím (Purple)
-            LevelManager.UpgradeTier.Epic => new Color(0.8f, 0f, 0f),        // Đỏ đậm (Dark Red)
-            LevelManager.UpgradeTier.Legendary => new Color(1f, 0.84f, 0f),  // Gold
+            LevelManager.RarityTier.Common => new Color(0f, 1f, 0f),        // Xanh lá (Green)
+            LevelManager.RarityTier.Uncommon => new Color(0f, 1f, 1f),      // Xanh cyan (Cyan)
+            LevelManager.RarityTier.Rare => new Color(0.58f, 0f, 0.83f),    // Tím (Purple)
+            LevelManager.RarityTier.Epic => new Color(0.8f, 0f, 0f),        // Đỏ đậm (Dark Red)
+            LevelManager.RarityTier.Legendary => new Color(1f, 0.84f, 0f),  // Gold
             _ => Color.white
         };
     }

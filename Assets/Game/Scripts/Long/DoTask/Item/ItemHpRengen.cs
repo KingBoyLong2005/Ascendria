@@ -5,13 +5,15 @@ public class ItemHPRegen : Item
 {
     [Header("Stats")]
     [Tooltip("Hồi máu mỗi giây")]
-    public float hpRegenPerSecond = 5f;
+    public float hpRegenPerSecond = 1f;
 
     public override void Apply(int multiplier = 1)
     {
         if(!PlayerStatManager.Instance.activeHpRegen)
         {
             PlayerStatManager.Instance.activeHpRegen = true;
+            Debug.Log("Kích hoạt hồi máu mỗi giây");
+            return;
         }
         float totalRegen = hpRegenPerSecond * multiplier;
         PlayerStatManager.Instance.ValueHpRegenPerSecond += totalRegen;

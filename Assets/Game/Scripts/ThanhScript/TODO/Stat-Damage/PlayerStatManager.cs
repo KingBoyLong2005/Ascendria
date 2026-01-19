@@ -48,7 +48,7 @@ public class PlayerStatManager : MonoBehaviour
     private ProfileCharacterLoader loaderProfile;
 
     float timer;
-    public float ValueHpRegenPerSecond;
+    public float ValueHpRegenPerSecond = 1;
     private void Awake()
     {
         loaderProfile = FindFirstObjectByType<ProfileCharacterLoader>();
@@ -74,7 +74,7 @@ public class PlayerStatManager : MonoBehaviour
         baseMoveSpeed = loaderProfile.moveSpeed;
         baseArmor = loaderProfile.armor;
 
-        PlayerMoveManager.Instance.airJumpActive = false;
+        // PlayerMoveManager.Instance.airJumpActive = false;
     }
     public void TakeDamage(float damage)
     {
@@ -155,7 +155,8 @@ public class PlayerStatManager : MonoBehaviour
     {
         healthModifierFlat += addFlat;
         healthModifierMult *= mult;
-        // Phải tăng cả currentHealth chứ
+        // hồi máu khi tăng máu
+        RestoreHealth(addFlat);
         Debug.Log($"MaxHealth mới: {MaxHealth}, Current: {currentHealth}");
     }
     public void ModifyAttack(float addFlat = 0f, float mult = 1f)

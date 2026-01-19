@@ -12,7 +12,7 @@ namespace StarterAssets
 #endif
     public class PlayerMoveManager : MonoBehaviour
     {
-        public static PlayerMoveManager Instance { get; private set; }
+        public static PlayerMoveManager Instance { get; set; }
         private enum State
         {
             Normal,
@@ -62,7 +62,15 @@ namespace StarterAssets
 
         private void Awake()
         {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
             _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+            airJumpActive = false;
         }
 
         private void Start()

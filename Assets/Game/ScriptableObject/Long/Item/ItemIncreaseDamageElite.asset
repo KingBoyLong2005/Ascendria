@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ef48c01cb52964c8c25f2cc82d5f05, type: 3}
   m_Name: ItemIncreaseDamageElite
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3df65438fbedcd04093650d1ab73d3e7, type: 3}
+  rarity: 3
   isStackable: 1
   isTimed: 0
   duration: 30
