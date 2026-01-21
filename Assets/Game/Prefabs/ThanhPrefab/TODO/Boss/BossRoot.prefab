@@ -49,12 +49,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f178e737234b44a9df8c8a179b60c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
-  rotateSpeed: 10
+  target: {fileID: 0}
+  chaseSpeed: 4
+  climbSpeed: 3
   gravity: -25
-  forwardCheckDist: 0.8
-  groundCheckDist: 1.2
-  climbAngleLimit: 75
+  rotateSpeed: 10
+  wallCheckDistance: 1.2
+  heightThreshold: 1.2
+  climbableLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &5919155666584285716
 MonoBehaviour:
   m_ObjectHideFlags: 0

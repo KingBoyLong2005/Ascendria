@@ -5,8 +5,6 @@ public class BookBuffManager : MonoBehaviour
 {
     public static BookBuffManager Instance { get; private set; }
 
-    private PlayerStatManager stats;
-
     // Danh sách buff đang active
     private List<BookBuff> activeBuffs = new();
 
@@ -42,8 +40,6 @@ public class BookBuffManager : MonoBehaviour
 
     private void HandleInventoryReady(object sender, System.EventArgs e)
     {
-        stats = PlayerStatManager.Instance;
-
         // Apply lại toàn bộ buff đang active trong inventory
         ReapplyAll();
     }

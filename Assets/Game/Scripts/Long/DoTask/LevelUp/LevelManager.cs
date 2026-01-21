@@ -15,11 +15,11 @@ public class LevelManager : MonoBehaviour
     public event EventHandler<XPProgressEventArgs> OnXPChanged;
 
     [Header("Level Progression")]
-    public float Luck ; // Dùng đê tăng luck quay ra độ hiếm, 0->1
+    public float Luck ; // Dùng đê tăng luck quay ra độ hiếm, 0->1 (truyền luck vào getrandom dòng 237)
     public int level = 1;
     public float currentXP = 0f;
     public float xpToNext = 100f;
-    public float growthFactor = 1.5f;
+    public float growthFactor = 1.2f;
     
     UpgradeDatabase upgradeDB;
     System.Random rnd = new System.Random();
@@ -124,7 +124,7 @@ public class LevelManager : MonoBehaviour
             {
                 pool.Add(new UpgradeOption(
                     UpgradeOption.Kind.WeaponDrop,
-                    UpgradeTier.Common,
+                    RarityTier.Common,
                     w,
                     null));
             }
@@ -230,16 +230,16 @@ public class LevelManager : MonoBehaviour
         Debug.Log($"<color=cyan>[LevelManager]</color> Buff {runtime.buffId} → Level {runtime.level}");
     }
 
-    UpgradeTier PickTier()
+    public RarityTier PickTier()
     {
-        return (UpgradeTier)Enum.Parse(
-            typeof(UpgradeTier),
-            RarityHelper.GetRandomRarity().ToString()); // sẽ chuyền luck vào GetRandomRarity()
+        return (RarityTier)Enum.Parse(
+            typeof(RarityTier),
+            RarityHelper.GetRandomRarity(Luck/100).ToString()); // sẽ chuyền luck vào GetRandomRarity()
             
     }
 
     // ================= DATA =================
-    public enum UpgradeTier
+    public enum RarityTier
     {
         Common, Uncommon, Rare, Epic, Legendary
     }
@@ -255,11 +255,11 @@ public class LevelManager : MonoBehaviour
         }
 
         public Kind kind;
-        public UpgradeTier tier;
+        public RarityTier tier;
         public Weapon targetWeapon;
         public BookBuff targetBuff;
 
-        public UpgradeOption(Kind kind, UpgradeTier tier, Weapon weapon, BookBuff buff)
+        public UpgradeOption(Kind kind, RarityTier tier, Weapon weapon, BookBuff buff)
         {
             this.kind = kind;
             this.tier = tier;

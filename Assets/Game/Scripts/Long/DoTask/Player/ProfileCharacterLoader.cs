@@ -18,32 +18,35 @@ public class ProfileCharacterLoader : MonoBehaviour
     
 
     [Header("Stats (runtime)")]
-    public int MaxHP { get; private set; }
-    public float MoveSpeed { get; private set; }
+    public float MaxHP { get; private set; }
+    public float attack { get; private set; }
+    public float armor { get; private set; }
+    public float moveSpeed { get; private set; }
+    public float luck { get; private set; }
+    public float wealth { get; private set; }
+    public float wise { get; private set; }
     // public float AttackSpeed { get; private set; }
 
     private void Awake()
     {
-        // if (profile != null)
-        //     ApplyProfile();
         MaxHP = profile.maxHP;
-        MoveSpeed = profile.moveSpeed;
+        attack = profile.CharacterAttack;
+        armor = profile.Armor;
+        moveSpeed = profile.MoveSpeed;
+        luck = profile.Luck;
+        wealth = profile.Wealth;
+        wise = profile.Wise;
+
+        // Dùng để test (nhớ bỏ)
+        // ApplyProfile();
     }
 
     public void ApplyProfile()
     {
         // profile = data;
-
-        ApplyStats();
+        // ApplyStats();
         LoadModel();
         // LoadWeapon();
-    }
-
-    private void ApplyStats()
-    {
-        PlayerStatManager.Instance.baseMaxHealth = profile.maxHP;
-        PlayerStatManager.Instance.baseMoveSpeed = profile.moveSpeed;
-        // PlayerStatManager.Instance.base = profile.attackSpeed;
     }
 
     private void LoadModel()
@@ -62,14 +65,4 @@ public class ProfileCharacterLoader : MonoBehaviour
             Animator.runtimeAnimatorController = profile.animatorController;
     }
 
-    // private void LoadWeapon()
-    // {
-    //     if (profile.startingWeapon == null)
-    //         return;
-    //     FindFirstObjectByType<PlayerAttack>().wp = profile.startingWeapon;
-    //     // foreach (Transform child in weaponRoot)
-    //     //     Destroy(child.gameObject);
-
-    //     // Instantiate(profile.startingWeapon.prefab, weaponRoot);
-    // }
 }

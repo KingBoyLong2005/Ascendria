@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7652101749873747422}
   - component: {fileID: 5383301586847198146}
+  - component: {fileID: 964029304789319730}
   m_Layer: 0
   m_Name: Aura
   m_TagString: Untagged
@@ -87,3 +88,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &964029304789319730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256025972453288248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e7cc6f1279c5840bcc0771410f4ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -9,7 +9,7 @@ public class FireballProjectile : MonoBehaviour
     [SerializeField] private GameObject explosionEffectPrefab;
 
     private Rigidbody rb;
-    private float lifeTimer = 3f;  // Tự hủy sau 3s nếu không trúng
+    private float lifeTimer = 5f;  // Tự hủy sau 5s nếu không trúng
     private bool hasExploded = false;
 
     private void Awake()
@@ -47,6 +47,7 @@ public class FireballProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Kiểm tra xem có phải enemy không
         if (((1 << other.gameObject.layer) & enemyMask) != 0)
         {
             Explode();
@@ -69,7 +70,10 @@ public class FireballProjectile : MonoBehaviour
         // ==== EFFECT ====
         if (explosionEffectPrefab != null)
         {
-            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            // Scale effect theo explosionRadius
+            GameObject effect = Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            float effectScale = explosionRadius / 2f; // Giả sử base radius = 2
+            effect.transform.localScale = Vector3.one * effectScale;
         }
 
         Destroy(gameObject);
@@ -79,7 +83,15 @@ public class FireballProjectile : MonoBehaviour
     {
         var enemy = col.GetComponentInParent<EnemyStats>();
         if (enemy != null)
+        {
             WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, damage);
-        Debug.Log($"<color=orange> FireBall hit enemy: {damage}");
+        }
+    }
+
+    // Visualize explosion radius trong Scene view
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }

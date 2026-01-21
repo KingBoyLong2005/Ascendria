@@ -625,24 +625,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faa9182fe1167d499b382e5d5db6390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 4
-  SpeedChangeRate: 10
-  RotationSmoothTime: 0.12
-  JumpHeight: 1.2
-  EnableAirJump: 1
-  MaxAirJump: 1
-  Gravity: -15
-  TerminalVelocity: 53
-  ClimbActive: 1
-  ClimbSpeed: 2.5
-  WallCheckDistance: 0.6
-  LedgeCheckForward: 0.6
-  LedgeCheckDown: 1.2
+  moveSpeed: 4
+  rotationSmoothTime: 0.12
+  jumpHeight: 1.2
+  gravity: -15
+  airJumpActive: 1
+  maxAirJump: 1
+  climbActive: 1
+  climbSpeed: 3
+  wallCheckDistance: 0.6
+  heightThreshold: 1.1
+  climbableLayer:
+    serializedVersion: 2
+    m_Bits: 256
   CinemachineCameraTarget: {fileID: 5049697630004215951}
-  GroundTopClamp: 70
-  GroundBottomClamp: -70
-  ClimbTopClamp: 30
-  ClimbBottomClamp: -30
+  topClamp: 70
+  bottomClamp: -70
 --- !u!114 &754615074540291162
 MonoBehaviour:
   m_ObjectHideFlags: 0

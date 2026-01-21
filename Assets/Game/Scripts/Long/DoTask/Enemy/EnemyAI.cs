@@ -1,193 +1,154 @@
+using StarterAssets;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class EnemyAI : MonoBehaviour
 {
+    public Transform target;
+
     [Header("Movement")]
-    public float moveSpeed = 4f;
+    public float chaseSpeed = 4f;
+    public float climbSpeed = 3f;
+    public float gravity = -20f;
     public float rotateSpeed = 10f;
-    public float gravity = -25f;
 
-    [Header("Surface Check")]
-    public float forwardCheckDist = 0.8f;
-    public float groundCheckDist = 1.2f;
-    public float climbAngleLimit = 75f;
+    [Header("Detection")]
+    public float wallCheckDistance = 1.2f;
+    public float heightThreshold = 1.2f;
+    public LayerMask climbableLayer;
 
-    private Transform player;
     private CharacterController controller;
-    private EnemyStats stats;
+    private float verticalVelocity;
 
-    private Vector3 velocity;
-    private Vector3 surfaceNormal = Vector3.up;
-    private bool isClimbing;
+    private enum State
+    {
+        Chase,
+        Climb
+    }
 
+    private State currentState = State.Chase;
+
+    public void Setup(Transform player)
+    {
+        target = player;
+    }
     void Awake()
     {
         controller = GetComponent<CharacterController>();
-    }
-
-    // ======= SETUP KHI SPAWN =======
-    public void Setup(Transform target)
-    {
-        player = target;
-
-        if (stats == null)
-            stats = GetComponent<EnemyStats>();
-
-        if (stats != null)
-            moveSpeed = stats.MoveSpeed;
+        // target = PlayerMoveManager.Instance.transform;
     }
 
     void Update()
     {
-        if (player == null) return;
+        if (target == null) return;
 
-        HandleSurface();
-        Move();
-        ApplyGravity();
-    }
-
-    // ======= XỬ LÝ ĐỊA HÌNH / TƯỜNG =======
-    void HandleSurface()
-    {
-        RaycastHit hit;
-
-        // Check phía trước
-        if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, forwardCheckDist))
+        switch (currentState)
         {
-            float angle = Vector3.Angle(hit.normal, Vector3.up);
+            case State.Chase:
+                Chase();
+                break;
 
-            if (angle > 5f && angle <= climbAngleLimit)
-            {
-                isClimbing = true;
-                surfaceNormal = hit.normal;
-                return;
-            }
-        }
-
-        // Check bên dưới
-        if (Physics.Raycast(transform.position + Vector3.up * 0.2f, Vector3.down, out hit, groundCheckDist))
-        {
-            isClimbing = false;
-            surfaceNormal = hit.normal;
-            return;
-        }
-
-        // Không chạm gì → rơi
-        isClimbing = false;
-        surfaceNormal = Vector3.up;
-    }
-
-    // ======= DI CHUYỂN =======
-    void Move()
-    {
-        Vector3 dirToPlayer = (player.position - transform.position).normalized;
-
-        // Chiếu hướng di chuyển lên surface
-        Vector3 moveDir = Vector3.ProjectOnPlane(dirToPlayer, surfaceNormal).normalized;
-
-        controller.Move(moveDir * moveSpeed * Time.deltaTime);
-
-        // Xoay mặt
-        if (moveDir.sqrMagnitude > 0.01f)
-        {
-            Quaternion targetRot = Quaternion.LookRotation(moveDir, surfaceNormal);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
+            case State.Climb:
+                Climb();
+                break;
         }
     }
 
-    // ======= GRAVITY =======
-    void ApplyGravity()
+    // ================= CHASE =================
+    void Chase()
     {
-        if (isClimbing) 
+        Vector3 dir = target.position - transform.position;
+        dir.y = 0f;
+        dir.Normalize();
+
+        // Rotate toward player
+        if (dir != Vector3.zero)
         {
-            velocity.y = 0f;
-            return;
+            Quaternion lookRot = Quaternion.LookRotation(dir);
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                lookRot,
+                rotateSpeed * Time.deltaTime
+            );
         }
 
+        // Horizontal movement
+        controller.Move(dir * chaseSpeed * Time.deltaTime);
+
+        // Gravity
         if (controller.isGrounded)
+            verticalVelocity = -2f;
+        else
+            verticalVelocity += gravity * Time.deltaTime;
+
+        controller.Move(Vector3.up * verticalVelocity * Time.deltaTime);
+
+        // Switch to climb
+        if (PlayerIsAbove() && CheckWall())
         {
-            if (velocity.y < 0)
-                velocity.y = -2f;
+            verticalVelocity = 0f;
+            currentState = State.Climb;
+        }
+    }
+
+    // ================= CLIMB =================
+    void Climb()
+    {
+        // Move straight up
+        controller.Move(Vector3.up * climbSpeed * Time.deltaTime);
+
+        // Still face the wall
+        if (CheckWall(out RaycastHit hit))
+        {
+            Quaternion wallRot = Quaternion.LookRotation(-hit.normal);
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                wallRot,
+                rotateSpeed * Time.deltaTime
+            );
         }
         else
         {
-            velocity.y += gravity * Time.deltaTime;
+            // Reached top → back to chase
+            currentState = State.Chase;
         }
-
-        controller.Move(velocity * Time.deltaTime);
     }
+
+    // ================= HELPERS =================
+    bool PlayerIsAbove()
+    {
+        return target.position.y > transform.position.y + heightThreshold;
+    }
+
+    bool CheckWall()
+    {
+        return Physics.Raycast(
+            transform.position,
+            transform.forward,
+            wallCheckDistance,
+            climbableLayer
+        );
+    }
+
+    bool CheckWall(out RaycastHit hit)
+    {
+        return Physics.Raycast(
+            transform.position,
+            transform.forward,
+            out hit,
+            wallCheckDistance,
+            climbableLayer
+        );
+    }
+
+#if UNITY_EDITOR
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(
+            transform.position,
+            transform.forward * wallCheckDistance
+        );
+    }
+#endif
 }
-
-// using UnityEngine;
-
-// [RequireComponent(typeof(Rigidbody))]
-// public class EnemyAI : MonoBehaviour
-// {
-//     [Header("Movement")]
-//     public float moveSpeed = 5f;
-//     public float rotationSpeed = 5f;
-//     public float surfaceCheckDistance = 1f;
-
-//     [Header("Climb / Gravity")]
-//     public float gravity = 9.81f;
-//     public float stickToSurface = 0.5f;
-
-//     private Transform player;
-//     private Rigidbody rb;
-
-//     private EnemyStats stats;
-
-//     public void Setup(Transform target)
-//     {
-//         player = target;
-//         if (stats == null)
-//             stats = GetComponent<EnemyStats>();
-//         moveSpeed = stats.MoveSpeed;
-//     }
-
-//     void Awake()
-//     {
-//         rb = GetComponent<Rigidbody>();
-//     }
-
-//     void FixedUpdate()
-//     {
-//         if (player == null) return;
-
-//         // 1. Surface detection
-//         RaycastHit hit;
-//         Vector3 origin = transform.position + Vector3.up * 0.1f;
-//         bool onSurface = Physics.Raycast(origin, -transform.up, out hit, surfaceCheckDistance + 0.1f);
-//         Vector3 surfaceNormal = onSurface ? hit.normal : Vector3.up;
-//         Vector3 surfacePoint = onSurface ? hit.point : transform.position;
-
-//         // 2. Move direction projected on surface
-//         Vector3 dirToPlayer = player.position - transform.position;
-//         Vector3 moveDir = Vector3.ProjectOnPlane(dirToPlayer, surfaceNormal).normalized;
-
-//         // 3. Apply velocity
-//         Vector3 desiredVelocity = moveDir * moveSpeed;
-//         rb.linearVelocity = Vector3.Lerp(rb.linearVelocity, desiredVelocity, 0.2f);
-
-//         // 4. Stick to surface
-//         if (onSurface)
-//         {
-//             Vector3 targetPos = surfacePoint + surfaceNormal * 0.5f;
-//             rb.MovePosition(Vector3.Lerp(rb.position, targetPos, Time.fixedDeltaTime * 10f));
-//         }
-//         else
-//         {
-//             // rơi khi không có bề mặt
-//             rb.linearVelocity += Vector3.down * gravity * Time.fixedDeltaTime;
-//         }
-
-//         // 5. Rotation chỉ theo moveDir
-//         if (moveDir != Vector3.zero)
-//         {
-//             Quaternion targetRot = Quaternion.LookRotation(moveDir, surfaceNormal);
-//             transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime);
-//         }
-//     }
-
-// }

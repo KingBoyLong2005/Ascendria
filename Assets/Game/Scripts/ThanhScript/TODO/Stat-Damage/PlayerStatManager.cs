@@ -1,5 +1,6 @@
 // PlayerStatManager.cs � handles player stats & damage
 using System;
+using StarterAssets;
 using UnityEngine;
 
 public class PlayerStatManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerStatManager : MonoBehaviour
     public float baseArmor = 5f;
     private float baseCoin = 5f;
 
+    public bool activeHpRegen = false;
     public event EventHandler<OnPlayerHealthChangeEventArgs> OnPlayerHealthChange;
     public class OnPlayerHealthChangeEventArgs : EventArgs
     {
@@ -45,6 +47,8 @@ public class PlayerStatManager : MonoBehaviour
     private float coinModifierMult = 1f;
     private ProfileCharacterLoader loaderProfile;
 
+    float timer;
+    public float ValueHpRegenPerSecond = 1;
     private void Awake()
     {
         loaderProfile = FindFirstObjectByType<ProfileCharacterLoader>();
@@ -54,11 +58,23 @@ public class PlayerStatManager : MonoBehaviour
         currentHealth = baseMaxHealth;
         OnPlayerHealthChange?.Invoke(this, new OnPlayerHealthChangeEventArgs(currentHealth, baseMaxHealth));
     }
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= 1f && activeHpRegen)
+        {
+            timer = 0f;
+            RestoreHealth(ValueHpRegenPerSecond); // ✅ 1 lần/giây
+        }
+    }
     private void ApplyStats()
     {
-        baseMaxHealth = loaderProfile.MaxHP ;
-        Instance.baseMoveSpeed = loaderProfile.MoveSpeed;
-        // PlayerStatManager.Instance.base = profile.attackSpeed;
+        baseMaxHealth = loaderProfile.MaxHP;
+        baseAttack = loaderProfile.attack;
+        baseMoveSpeed = loaderProfile.moveSpeed;
+        baseArmor = loaderProfile.armor;
+
+        // PlayerMoveManager.Instance.airJumpActive = false;
     }
     public void TakeDamage(float damage)
     {
@@ -139,7 +155,8 @@ public class PlayerStatManager : MonoBehaviour
     {
         healthModifierFlat += addFlat;
         healthModifierMult *= mult;
-        // Phải tăng cả currentHealth chứ
+        // hồi máu khi tăng máu
+        RestoreHealth(addFlat);
         Debug.Log($"MaxHealth mới: {MaxHealth}, Current: {currentHealth}");
     }
     public void ModifyAttack(float addFlat = 0f, float mult = 1f)
