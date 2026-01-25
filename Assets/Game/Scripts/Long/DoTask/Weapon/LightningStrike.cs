@@ -5,19 +5,27 @@ public class LightningStrike : MonoBehaviour
     private float damage;
     private float aoeRadius;
     private LayerMask enemyMask;
+    private float effectDuration = 1f;
+    private float timer = 0f;
+    private bool hasStruck = false;
 
     public void Initialize(float dmg, float radius, LayerMask mask)
     {
         damage = dmg;
         aoeRadius = radius;
         enemyMask = mask;
+        hasStruck = false;
+        timer = 0f;
 
         Strike();
     }
 
     private void Strike()
     {
-        // Raycast thẳng xuống từ trên cao để tìm vị trí chạm đất
+        if (hasStruck) return;
+        hasStruck = true;
+
+        // Raycast straight down from above to find ground impact point
         Ray ray = new Ray(transform.position, Vector3.down);
         Vector3 impactPoint = transform.position;
 
@@ -27,20 +35,26 @@ public class LightningStrike : MonoBehaviour
         }
         else
         {
-            // Nếu không hit gì, dùng vị trí thấp hơn
+            // If nothing hit, use lower position
             impactPoint = transform.position + Vector3.down * 10f;
         }
 
-        // Gây damage AOE tại điểm chạm
+        // Deal AOE damage at impact point
         HitBoxManager.Instance.RequestSphere(
             impactPoint,
             aoeRadius,
             enemyMask,
             OnHitEnemy
         );
+    }
 
-        // Tự hủy sau khi effect chạy xong
-        Destroy(gameObject, 1f);
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= effectDuration)
+        {
+            ReturnToPool();
+        }
     }
 
     private void OnHitEnemy(Collider col)
@@ -53,7 +67,12 @@ public class LightningStrike : MonoBehaviour
         }
     }
 
-    // Visualize AOE radius trong Scene view
+    private void ReturnToPool()
+    {
+        PoolManager.Despawn(gameObject, PoolManager.PoolType.GameObject);
+    }
+
+    // Visualize AOE radius in Scene view
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

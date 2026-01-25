@@ -9,7 +9,8 @@ public class FireballProjectile : MonoBehaviour
     [SerializeField] private GameObject explosionEffectPrefab;
 
     private Rigidbody rb;
-    private float lifeTimer = 5f;  // Tự hủy sau 5s nếu không trúng
+    private float lifeTimer = 5f;
+    private float lifetimeCounter = 0f;
     private bool hasExploded = false;
 
     private void Awake()
@@ -17,7 +18,7 @@ public class FireballProjectile : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         if (rb == null)
         {
-            Debug.LogError("FireballProjectile cần Rigidbody!");
+            Debug.LogError("FireballProjectile needs Rigidbody!");
         }
     }
 
@@ -28,6 +29,8 @@ public class FireballProjectile : MonoBehaviour
         speed = spd;
         enemyMask = mask;
         explosionEffectPrefab = effectPrefab;
+        hasExploded = false;
+        lifetimeCounter = 0f;
 
         if (rb != null)
         {
@@ -38,8 +41,8 @@ public class FireballProjectile : MonoBehaviour
 
     private void Update()
     {
-        lifeTimer -= Time.deltaTime;
-        if (lifeTimer <= 0f && !hasExploded)
+        lifetimeCounter += Time.deltaTime;
+        if (lifetimeCounter >= lifeTimer && !hasExploded)
         {
             Explode();
         }
@@ -47,7 +50,7 @@ public class FireballProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Kiểm tra xem có phải enemy không
+        // Check if it's an enemy
         if (((1 << other.gameObject.layer) & enemyMask) != 0)
         {
             Explode();
@@ -70,13 +73,14 @@ public class FireballProjectile : MonoBehaviour
         // ==== EFFECT ====
         if (explosionEffectPrefab != null)
         {
-            // Scale effect theo explosionRadius
+            // Scale effect based on explosionRadius
             GameObject effect = Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
-            float effectScale = explosionRadius / 2f; // Giả sử base radius = 2
+            float effectScale = explosionRadius / 2f;
             effect.transform.localScale = Vector3.one * effectScale;
         }
 
-        Destroy(gameObject);
+        // Return to pool instead of Destroy
+        ReturnToPool();
     }
 
     private void OnHitEnemy(Collider col)
@@ -88,7 +92,19 @@ public class FireballProjectile : MonoBehaviour
         }
     }
 
-    // Visualize explosion radius trong Scene view
+    private void ReturnToPool()
+    {
+        // Reset velocity before returning to pool
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+        
+        PoolManager.Despawn(gameObject, PoolManager.PoolType.GameObject);
+    }
+
+    // Visualize explosion radius in Scene view
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

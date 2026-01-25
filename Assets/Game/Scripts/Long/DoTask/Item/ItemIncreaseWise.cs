@@ -10,7 +10,7 @@ public class ItemWise : Item
     public override void Apply( int multiplier = 1)
     {
         float totalPercent = xpPercentIncrease * multiplier;
-        // stats.ModifyWise(1f + totalPercent / 100f);
+        PlayerStatManager.Instance.ModifyWise(1f + totalPercent / 100f);
         
         Debug.Log($"<color=green>[Item]</color> Applied +{totalPercent}% Wise (XP) (x{multiplier})");
     }

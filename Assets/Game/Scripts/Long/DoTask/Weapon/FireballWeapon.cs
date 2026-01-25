@@ -1,14 +1,12 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Weapons/Fireball")]
-public class FireballWeapon : Weapon, IMultiProjectile
+public class FireballWeapon : Weapon
 {
     [Header("Fireball Stats")]
-    public float projectileSpeed = 10f;      // Tốc độ base
-    private int projectileCount = 1;
-    
-    public int ProjectileCount => projectileCount;
-    // public int MaxProjectileCount => 10; // Giới hạn      // Số lượng projectile mỗi lần attack
+    public float projectileSpeed = 10f;
+
     [Header("Effects")]
     public GameObject fireballPrefab;
     
@@ -18,121 +16,132 @@ public class FireballWeapon : Weapon, IMultiProjectile
     [Header("Targeting")]
     public float targetingRadius = 20f;
 
-    /// <summary>
-    /// Bắn fireball về phía enemy ngẫu nhiên trong tầm
-    /// </summary>
+    public int projectileCount = 1;
+
+    // ==================== UPGRADE CONFIG ====================
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float damage, projectiles, speed, sizeMultiplier;
+
+        public UpgradeConfig(int c, float dmg, float proj, float spd, float size)
+        {
+            count = c; damage = dmg; projectiles = proj; 
+            speed = spd; sizeMultiplier = size;
+        }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,     new(1, 2.5f, 1f, 0.1f, 1.16f) },
+        { Rarity.Uncommon,   new(1, 3f, 1f, 0.12f, 1.19f) },
+        { Rarity.Rare,       new(2, 3.5f, 1f, 0.14f, 1.22f) },
+        { Rarity.Epic,       new(2, 4f, 2f, 0.16f, 1.26f) },
+        { Rarity.Legendary,  new(2, 5f, 2f, 0.2f, 1.32f) }
+    };
+
+    // ==================== ATTACK ====================
     public override void Attack(WeaponContext ctx)
     {
-        // Tìm tất cả enemy trong tầm
-        Collider[] potentialEnemies = 
-            Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
-
-        if (potentialEnemies.Length == 0)
-        {
-            // Không có enemy -> bắn về phía trước
-            ShootFireball(ctx, ctx.forward.normalized);
-            return;
-        }
-
-        // Bắn nhiều fireball dựa theo projectileCount
+        Collider[] enemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
+        
         for (int i = 0; i < projectileCount; i++)
         {
-            // Chọn enemy ngẫu nhiên
-            Transform randomEnemy = potentialEnemies[Random.Range(0, potentialEnemies.Length)].transform;
+            Vector3 direction = enemies.Length > 0
+                ? GetDirectionToEnemy(enemies, ctx)
+                : ctx.forward.normalized;
             
-            // Tính spawn position
-            PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
-            Vector3 spawnPos = playerAttack != null
-                ? playerAttack.ComputeSpawnPosition(ctx.forward)
-                : ctx.spawnPos;
-
-            // Tính direction về phía enemy
-            Collider enemyCol = randomEnemy.GetComponent<Collider>();
-            Vector3 targetPos = enemyCol != null 
-                ? enemyCol.bounds.center 
-                : randomEnemy.position;
-
-            Vector3 direction = (targetPos - spawnPos).normalized;
-
             ShootFireball(ctx, direction);
         }
     }
 
+    private Vector3 GetDirectionToEnemy(Collider[] enemies, WeaponContext ctx)
+    {
+        Transform enemy = enemies[Random.Range(0, enemies.Length)].transform;
+        Vector3 spawnPos = GetSpawnPos(ctx);
+        Vector3 targetPos = GetEnemyCenter(enemy);
+        return (targetPos - spawnPos).normalized;
+    }
+
+    private Vector3 GetSpawnPos(WeaponContext ctx)
+    {
+        var pa = ctx.owner.GetComponent<PlayerAttack>();
+        return pa != null ? pa.ComputeSpawnPosition(ctx.forward) : ctx.spawnPos;
+    }
+
+    private Vector3 GetEnemyCenter(Transform enemy)
+    {
+        var col = enemy.GetComponent<Collider>();
+        return col != null ? col.bounds.center : enemy.position;
+    }
+
     private void ShootFireball(WeaponContext ctx, Vector3 direction)
     {
-        // Tính spawn position
-        PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
-        Vector3 spawnPos = playerAttack != null
-            ? playerAttack.ComputeSpawnPosition(ctx.forward)
-            : ctx.spawnPos;
-
-        // Tạo rotation
-        Quaternion rot = Quaternion.LookRotation(direction);
-
-        // Spawn fireball
-        GameObject fireballGO = Instantiate(fireballPrefab, spawnPos, rot);
+        Vector3 spawnPos = GetSpawnPos(ctx);
+        Quaternion rotation = Quaternion.LookRotation(direction);
         
-        // Scale fireball dựa theo baseSize
-        fireballGO.transform.localScale = Vector3.one * baseSize;
-
-        // Initialize projectile
-        FireballProjectile proj = fireballGO.GetComponent<FireballProjectile>();
-        if (proj != null)
+        GameObject go = PoolManager.Spawn(fireballPrefab, spawnPos, rotation);
+        
+        if (go != null)
         {
-            proj.Initialize(baseDamage, baseRange, projectileSpeed, enemyMask);
+            go.transform.localScale = Vector3.one * baseSize;
+            go.GetComponent<FireballProjectile>()?.Initialize(baseDamage, baseRange, projectileSpeed, enemyMask);
         }
     }
 
+    // ==================== UPGRADE ====================
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
-        {
-            case Rarity.Common:
-                UpgradeRandomStats(1, 2.5f, 1f, 0.1f, 1.16f);
-                break;
-
-            case Rarity.Uncommon:
-                UpgradeRandomStats(1, 3f, 1f, 0.12f, 1.19f);
-                break;
-
-            case Rarity.Rare:
-                UpgradeRandomStats(2, 3.5f, 1f, 0.14f, 1.22f);
-                break;
-
-            case Rarity.Epic:
-                UpgradeRandomStats(2, 4f, 2f, 0.16f, 1.26f);
-                break;
-
-            case Rarity.Legendary:
-                UpgradeRandomStats(2, 5f, 2f, 0.2f, 1.32f);
-                break;
-        }
-
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+        ApplyUpgrade(cfg, level);
         level++;
     }
 
-    private void UpgradeRandomStats(int count, float dmg, float projCount, float projSpeed, float sizeMultiplier)
+    private void ApplyUpgrade(UpgradeConfig cfg, int seed)
     {
-        // Tạo danh sách các stat có thể upgrade
-        var availableStats = new System.Collections.Generic.List<int> { 0, 1, 2, 3 };
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
         
-        for (int i = 0; i < count && availableStats.Count > 0; i++)
+        foreach (int stat in stats)
         {
-            int randomIndex = Random.Range(0, availableStats.Count);
-            int stat = availableStats[randomIndex];
-            availableStats.RemoveAt(randomIndex);
-
             switch (stat)
             {
-                case 0: baseDamage += dmg; break;
-                case 1: projectileCount += Mathf.RoundToInt(projCount); break;
-                case 2: projectileSpeed += projSpeed; break;
-                case 3: baseSize *= sizeMultiplier; break;
+                case 0: baseDamage += cfg.damage; break;
+                case 1: projectileCount += Mathf.RoundToInt(cfg.projectiles); break;
+                case 2: projectileSpeed += cfg.speed; break;
+                case 3: baseSize *= cfg.sizeMultiplier; break;
             }
         }
     }
-    public void AddProjectile(int amount)
+
+    // ==================== PREVIEW ====================
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
     {
-        projectileCount += amount;
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown upgrade" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
+        var preview = new List<string>();
+        
+        foreach (int stat in stats)
+        {
+            preview.Add(stat switch
+            {
+                0 => $"+{cfg.damage} Damage",
+                1 => $"+{Mathf.RoundToInt(cfg.projectiles)} Projectile",
+                2 => $"+{cfg.speed} Speed",
+                3 => $"{UpgradeHelper.FormatPercent(cfg.sizeMultiplier)} Size",
+                _ => "Unknown"
+            });
+        }
+        
+        return preview;
+    }
+
+    public override string GetUpgradeDescription(Rarity rarity)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return "Unknown";
+
+        return $"Random {cfg.count} of: Damage, Projectile, Speed, Size";
     }
 }

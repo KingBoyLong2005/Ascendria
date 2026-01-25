@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Collections.Generic; 
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,13 +7,15 @@ using UnityEngine.UI;
 /// - Hàng 1 (trên cùng): Weapons - Mỗi weapon chỉ hiện 1 lần
 /// - Hàng 2 (giữa): Buffs - Mỗi buff chỉ hiện 1 lần  
 /// - Hàng 3 (dưới): Items - Hiển thị số lượng stackable
+/// 
+/// + UI Scene: Hiển thị weapons và buffs trong gameplay (dưới healthbar)
 /// </summary>
 public class InventoryUI : MonoBehaviour
 {
     [Header("Panel")]
     public GameObject inventoryPanel;
 
-    [Header("Sections - 3 Rows")]
+    [Header("Sections - 3 Rows (Inventory Panel)")]
     [Tooltip("Hàng 1 - Weapons (trên cùng)")]
     public Transform weaponsParent;
     
@@ -22,6 +24,13 @@ public class InventoryUI : MonoBehaviour
     
     [Tooltip("Hàng 3 - Items (dưới)")]
     public Transform itemsParent;
+    
+    [Header("UI Scene - Gameplay Display")]
+    [Tooltip("Hiển thị weapons trong gameplay ")]
+    public Transform weaponsParentUIScene;
+    
+    [Tooltip("Hiển thị buffs trong gameplay ")]
+    public Transform buffsParentUIScene;
     
     [Header("Slot Prefab")]
     public GameObject slotPrefab;
@@ -36,7 +45,19 @@ public class InventoryUI : MonoBehaviour
     [Tooltip("Số slot tối đa trên 1 hàng ngang")]
     public int maxSlotsPerRow = 6;
 
+    [Header("UI Scene Layout Settings")]
+    [Tooltip("Kích thước slot cho UI Scene (nhỏ hơn)")]
+    public Vector2 cellSizeUIScene = new Vector2(60, 60);
+    
+    [Tooltip("Khoảng cách giữa các slot UI Scene")]
+    public Vector2 spacingUIScene = new Vector2(5, 5);
+    
+    [Tooltip("Số slot tối đa trên 1 hàng cho UI Scene")]
+    public int maxSlotsPerRowUIScene = 8;
+
     readonly List<GameObject> spawnedSlots = new();
+    readonly List<GameObject> spawnedSlotsUIScene = new();
+    
     public bool isOpen;
 
     void Start()
@@ -51,10 +72,17 @@ public class InventoryUI : MonoBehaviour
             Debug.LogError("<color=red>[InventoryUI]</color> inventoryPanel is NULL in Awake!");
         }
 
-        // Setup layout cho từng hàng
-        SetupRowLayout(weaponsParent, "Weapons Row");
-        SetupRowLayout(buffsParent, "Buffs Row");
-        SetupRowLayout(itemsParent, "Items Row");
+        // Setup layout cho Inventory Panel (3 hàng)
+        SetupRowLayout(weaponsParent, "Weapons Row", cellSize, spacing, maxSlotsPerRow);
+        SetupRowLayout(buffsParent, "Buffs Row", cellSize, spacing, maxSlotsPerRow);
+        SetupRowLayout(itemsParent, "Items Row", cellSize, spacing, maxSlotsPerRow);
+        
+        // Setup layout cho UI Scene (2 hàng - weapons và buffs)
+        SetupRowLayout(weaponsParentUIScene, "Weapons Row UI Scene", cellSizeUIScene, spacingUIScene, maxSlotsPerRowUIScene);
+        SetupRowLayout(buffsParentUIScene, "Buffs Row UI Scene", cellSizeUIScene, spacingUIScene, maxSlotsPerRowUIScene);
+        
+        // Cập nhật UI Scene lần đầu
+        RefreshUIScene();
     }
 
     #region Public API
@@ -63,8 +91,6 @@ public class InventoryUI : MonoBehaviour
     {
         FindFirstObjectByType<TPCameraController>().isUIOpen = true;
         GameManager.Instance.PauseGame();
-        // if (cameraController != null)
-        //     cameraController.isUIOpen = true;
             
         if (isOpen) return;
         isOpen = true;
@@ -79,8 +105,6 @@ public class InventoryUI : MonoBehaviour
     {
         FindFirstObjectByType<TPCameraController>().isUIOpen = false;
         GameManager.Instance.ResumeGame();
-        // if (cameraController != null)
-        //     cameraController.isUIOpen = false;
             
         if (!isOpen) return;
         isOpen = false;
@@ -96,10 +120,12 @@ public class InventoryUI : MonoBehaviour
         else Open();
     }
 
+    /// <summary>
+    /// Refresh toàn bộ Inventory Panel (3 hàng)
+    /// </summary>
     public void RefreshAll()
     {
-
-        // Xóa tất cả slots hiện tại
+        // Xóa tất cả slots hiện tại trong Inventory Panel
         foreach (var go in spawnedSlots)
             Destroy(go);
         spawnedSlots.Clear();
@@ -115,15 +141,44 @@ public class InventoryUI : MonoBehaviour
         SpawnBuffsRow();
         SpawnItemsRow();
         
+        // Cập nhật UI Scene cùng lúc
+        RefreshUIScene();
+        
         Debug.Log($"<color=green>[InventoryUI]</color> Refreshed inventory UI - " +
                   $"Weapons: {InventoryManager.Instance.ownedWeapons.Count}, " +
                   $"Buffs: {InventoryManager.Instance.ownedBookBuffs.Count}, " +
                   $"Items: {InventoryManager.Instance.ownedItems.Count}");
     }
 
+    /// <summary>
+    /// Refresh chỉ UI Scene (weapons và buffs hiển thị trong gameplay)
+    /// Gọi method này khi có thay đổi weapon/buff trong gameplay
+    /// </summary>
+    public void RefreshUIScene()
+    {
+        // Xóa tất cả slots hiện tại trong UI Scene
+        foreach (var go in spawnedSlotsUIScene)
+            Destroy(go);
+        spawnedSlotsUIScene.Clear();
+
+        if (InventoryManager.Instance == null || slotPrefab == null)
+        {
+            Debug.LogWarning("<color=orange>[InventoryUI]</color> InventoryManager or slotPrefab is null!");
+            return;
+        }
+
+        // Spawn UI Scene
+        SpawnWeaponsUIScene();
+        SpawnBuffsUIScene();
+        
+        Debug.Log($"<color=green>[InventoryUI]</color> Refreshed UI Scene - " +
+                  $"Weapons: {InventoryManager.Instance.ownedWeapons.Count}, " +
+                  $"Buffs: {InventoryManager.Instance.ownedBookBuffs.Count}");
+    }
+
     #endregion
 
-    #region Spawn Methods
+    #region Spawn Methods - Inventory Panel
 
     /// <summary>
     /// HÀNG 1 - Weapons (mỗi weapon chỉ hiện 1 lần)
@@ -238,6 +293,84 @@ public class InventoryUI : MonoBehaviour
 
     #endregion
 
+    #region Spawn Methods - UI Scene (Gameplay)
+
+    /// <summary>
+    /// Spawn Weapons UI Scene (hiển thị trong gameplay)
+    /// </summary>
+    void SpawnWeaponsUIScene()
+    {
+        if (weaponsParentUIScene == null)
+        {
+            Debug.LogWarning("<color=orange>[InventoryUI]</color> weaponsParentUIScene is null!");
+            return;
+        }
+
+        int count = 0;
+        foreach (var w in InventoryManager.Instance.ownedWeapons)
+        {
+            if (w == null) continue;
+            
+            var go = Instantiate(slotPrefab, weaponsParentUIScene);
+            var slot = go.GetComponent<InventorySlotUI>();
+            
+            if (slot != null)
+            {
+                slot.Bind(w);
+                count++;
+            }
+            else
+            {
+                Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
+                Destroy(go);
+                continue;
+            }
+                
+            spawnedSlotsUIScene.Add(go);
+        }
+        
+        Debug.Log($"<color=cyan>[InventoryUI]</color> UI Scene - Spawned {count} weapons");
+    }
+
+    /// <summary>
+    /// Spawn Buffs UI Scene (hiển thị trong gameplay)
+    /// </summary>
+    void SpawnBuffsUIScene()
+    {
+        if (buffsParentUIScene == null)
+        {
+            Debug.LogWarning("<color=orange>[InventoryUI]</color> buffsParentUIScene is null!");
+            return;
+        }
+
+        int count = 0;
+        foreach (var bb in InventoryManager.Instance.ownedBookBuffs)
+        {
+            if (bb == null) continue;
+            
+            var go = Instantiate(slotPrefab, buffsParentUIScene);
+            var slot = go.GetComponent<InventorySlotUI>();
+            
+            if (slot != null)
+            {
+                slot.Bind(bb);
+                count++;
+            }
+            else
+            {
+                Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
+                Destroy(go);
+                continue;
+            }
+                
+            spawnedSlotsUIScene.Add(go);
+        }
+        
+        Debug.Log($"<color=cyan>[InventoryUI]</color> UI Scene - Spawned {count} buffs");
+    }
+
+    #endregion
+
     #region Layout Setup
 
     /// <summary>
@@ -246,16 +379,9 @@ public class InventoryUI : MonoBehaviour
     /// - Tự động xuống hàng khi đầy maxSlotsPerRow
     /// - Kích thước tự động điều chỉnh theo nội dung
     /// </summary>
-    void SetupRowLayout(Transform parent, string rowName)
+    void SetupRowLayout(Transform parent, string rowName, Vector2 size, Vector2 gap, int maxSlots)
     {
         if (parent == null) return;
-
-        // // Xóa các layout cũ nếu có
-        // var oldGrid = parent.GetComponent<GridLayoutGroup>();
-        // if (oldGrid != null)
-        // {
-        //     DestroyImmediate(oldGrid);
-        // }
 
         var oldHorizontal = parent.GetComponent<HorizontalLayoutGroup>();
         if (oldHorizontal != null)
@@ -263,36 +389,30 @@ public class InventoryUI : MonoBehaviour
             DestroyImmediate(oldHorizontal);
         }
 
-        // var oldVertical = parent.GetComponent<VerticalLayoutGroup>();
-        // if (oldVertical != null)
-        // {
-        //     DestroyImmediate(oldVertical);
-        // }
-
         // Thêm GridLayoutGroup (tốt nhất cho layout hàng ngang + wrap)
         var grid = parent.gameObject.AddComponent<GridLayoutGroup>();
-        grid.cellSize = cellSize;
-        grid.spacing = spacing;
+        grid.cellSize = size;
+        grid.spacing = gap;
         grid.childAlignment = TextAnchor.UpperLeft;
         
-        // Constraint: Fixed column count = maxSlotsPerRow
+        // Constraint: Fixed column count = maxSlots
         // Khi đầy sẽ tự động xuống hàng
         grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        grid.constraintCount = maxSlotsPerRow;
+        grid.constraintCount = maxSlots;
 
         // Thêm ContentSizeFitter để tự động điều chỉnh kích thước
-        var fitter = parent.GetComponent<ContentSizeFitter>();
-        if (fitter == null)
-        {
-            fitter = parent.gameObject.AddComponent<ContentSizeFitter>();
-        }
+        // var fitter = parent.GetComponent<ContentSizeFitter>();
+        // if (fitter == null)
+        // {
+        //     fitter = parent.gameObject.AddComponent<ContentSizeFitter>();
+        // }
         
-        // Preferred size cho cả chiều ngang và dọc
-        fitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
-        fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+        // // Preferred size cho cả chiều ngang và dọc
+        // fitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+        // fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
 
         Debug.Log($"<color=green>[InventoryUI]</color> Setup layout for '{rowName}' " +
-                  $"(max {maxSlotsPerRow} slots per row)");
+                  $"(max {maxSlots} slots per row)");
     }
 
     #endregion

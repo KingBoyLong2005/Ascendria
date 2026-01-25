@@ -10,7 +10,7 @@ public class ItemWealth : Item
     public override void Apply( int multiplier = 1)
     {
         float totalPercent = wealthPercentIncrease * multiplier;
-        // stats.ModifyWealth(1f + totalPercent / 100f);
+        PlayerStatManager.Instance.ModifyWealth(1f + totalPercent / 100f);
         
         Debug.Log($"<color=green>[Item]</color> Applied +{totalPercent}% Wealth (x{multiplier})");
     }
@@ -18,7 +18,7 @@ public class ItemWealth : Item
     public override void Remove( int multiplier = 1)
     {
         float totalPercent = wealthPercentIncrease * multiplier;
-        // stats.goldMultiplier /= (1f + totalPercent / 100f);
+        // PlayerStatManager.Instance.ModifyWealth(1f + totalPercent / 100f);
         
         Debug.Log($"<color=red>[Item]</color> Removed +{totalPercent}% Wealth (x{multiplier})");
     }

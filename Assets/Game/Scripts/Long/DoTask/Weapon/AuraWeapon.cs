@@ -1,91 +1,93 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Weapons/Aura")]
 public class AuraWeapon : Weapon
 {
-    [Header("Aura Stats")]
-    public float auraDuration = 10f;     // Thời gian aura tồn tại
-    
-    [Header("Effects")]
-    public GameObject auraPrefab;        // Effect visual cho aura
-    
-    [Header("Mask")]
+    public float auraDuration = 10f;
+    public GameObject auraPrefab;
     public LayerMask enemyMask;
+
+
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float dmgMultiplier, sizeMultiplier;
+        public UpgradeConfig(int c, float dmg, float size)
+        {
+            count = c; dmgMultiplier = dmg; sizeMultiplier = size;
+        }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,     new(1, 1.014f, 2.14f) },
+        { Rarity.Uncommon,   new(1, 1.017f, 1.17f) },
+        { Rarity.Rare,       new(2, 1.02f, 1.20f) },
+        { Rarity.Epic,       new(2, 1.022f, 1.22f) },
+        { Rarity.Legendary,  new(2, 1.028f, 1.28f) }
+    };
 
     public override void Attack(WeaponContext ctx)
     {
-        // Spawn aura tại vị trí player
-        Vector3 spawnPos = ctx.owner.position;
+        GameObject go = PoolManager.Spawn(auraPrefab, ctx.owner.position, auraPrefab.transform.rotation);
         
-        GameObject auraGO = Instantiate(auraPrefab, spawnPos, auraPrefab.transform.rotation);
-        
-        // Set parent để aura follow player
-        auraGO.transform.SetParent(ctx.owner);
-        auraGO.transform.localPosition = Vector3.zero;
-        
-        // Scale aura theo baseSize
-        auraGO.transform.localScale = Vector3.one * baseSize;
-        
-        // Initialize aura component
-        AuraEffect aura = auraGO.GetComponent<AuraEffect>();
-        if (aura != null)
+        if (go != null)
         {
-            aura.Initialize(baseDamage, baseRange, auraDuration, enemyMask, ctx.owner);
-        }
-        else
-        {
-            Debug.LogWarning("AuraPrefab cần có component AuraEffect!");
+            go.transform.SetParent(ctx.owner);
+            go.transform.localPosition = Vector3.zero;
+            go.transform.localScale = Vector3.one * baseSize;
+            go.GetComponent<AuraEffect>()?.Initialize(baseDamage, baseRange, auraDuration, enemyMask, ctx.owner);
         }
     }
 
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
-        {
-            case Rarity.Common:
-                UpgradeRandomStats(1, 1.014f, 2.14f);  // 1.4% damage, 214% size
-                break;
-
-            case Rarity.Uncommon:
-                UpgradeRandomStats(1, 1.017f, 1.17f);  // 1.7% damage, 17% size
-                break;
-
-            case Rarity.Rare:
-                UpgradeRandomStats(2, 1.02f, 1.20f);   // 2% damage, 20% size
-                break;
-
-            case Rarity.Epic:
-                UpgradeRandomStats(2, 1.022f, 1.22f);  // 2.2% damage, 22% size
-                break;
-
-            case Rarity.Legendary:
-                UpgradeRandomStats(2, 1.028f, 1.28f);  // 2.8% damage, 28% size
-                break;
-        }
-
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+        ApplyUpgrade(cfg, level);
         level++;
     }
 
-    private void UpgradeRandomStats(int count, float dmgMultiplier, float sizeMultiplier)
+    private void ApplyUpgrade(UpgradeConfig cfg, int seed)
     {
-        var availableStats = new System.Collections.Generic.List<int> { 0, 1 };
-        
-        for (int i = 0; i < count && availableStats.Count > 0; i++)
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 2, seed);
+        foreach (int stat in stats)
         {
-            int randomIndex = Random.Range(0, availableStats.Count);
-            int stat = availableStats[randomIndex];
-            availableStats.RemoveAt(randomIndex);
-
             switch (stat)
             {
-                case 0: 
-                    baseDamage *= dmgMultiplier;  // Damage tăng theo %
-                    break;
+                case 0: baseDamage *= cfg.dmgMultiplier; break;
                 case 1: 
-                    baseSize *= sizeMultiplier;   // Size tăng theo %
-                    baseRange *= sizeMultiplier;  // AOE radius cũng tăng
+                    baseSize *= cfg.sizeMultiplier;
+                    baseRange *= cfg.sizeMultiplier;
                     break;
             }
         }
+    }
+
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 2, seed);
+        var preview = new List<string>();
+        
+        foreach (int stat in stats)
+        {
+            preview.Add(stat switch
+            {
+                0 => $"{UpgradeHelper.FormatPercent(cfg.dmgMultiplier)} Damage",
+                1 => $"{UpgradeHelper.FormatPercent(cfg.sizeMultiplier)} AOE",
+                _ => "Unknown"
+            });
+        }
+        
+        return preview;
+    }
+
+    public override string GetUpgradeDescription(Rarity rarity)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg)) return "Unknown";
+        return $"Random {cfg.count} of: Damage %, AOE Size";
     }
 }
