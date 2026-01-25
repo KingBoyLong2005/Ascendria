@@ -9,11 +9,11 @@ public class AuraEffect : MonoBehaviour
     private LayerMask enemyMask;
     private Transform owner;
 
-    private float tickRate = 0.5f;      // Damage mỗi 0.5 giây
+    private float tickRate = 0.5f;      // Damage every 0.5 seconds
     private float tickTimer = 0f;
     private float durationTimer = 0f;
 
-    // Track enemies đã bị hit để tránh spam damage
+    // Track enemies that have been hit to avoid spam damage
     private HashSet<Collider> enemiesInRange = new HashSet<Collider>();
 
     public void Initialize(float dmg, float radius, float dur, LayerMask mask, Transform ownerTransform)
@@ -26,6 +26,11 @@ public class AuraEffect : MonoBehaviour
 
         durationTimer = duration;
         tickTimer = 0f;
+        
+        if (enemiesInRange == null)
+            enemiesInRange = new HashSet<Collider>();
+        else
+            enemiesInRange.Clear();
     }
 
     private void Update()
@@ -34,7 +39,7 @@ public class AuraEffect : MonoBehaviour
         durationTimer -= Time.deltaTime;
         if (durationTimer <= 0f)
         {
-            Destroy(gameObject);
+            ReturnToPool();
             return;
         }
 
@@ -46,7 +51,7 @@ public class AuraEffect : MonoBehaviour
             DamageEnemiesInRange();
         }
 
-        // Follow player nếu không phải child
+        // Follow player if not a child
         if (owner != null && transform.parent == null)
         {
             transform.position = owner.position;
@@ -55,7 +60,7 @@ public class AuraEffect : MonoBehaviour
 
     private void DamageEnemiesInRange()
     {
-        // Tìm tất cả enemy trong AOE
+        // Find all enemies in AOE
         Collider[] enemies = Physics.OverlapSphere(transform.position, auraRadius, enemyMask);
 
         foreach (Collider enemyCol in enemies)
@@ -73,7 +78,21 @@ public class AuraEffect : MonoBehaviour
         }
     }
 
-    // Visualize aura radius trong Scene view
+    private void ReturnToPool()
+    {
+        // Detach from parent before returning to pool
+        if (transform.parent != null)
+        {
+            transform.SetParent(null);
+        }
+        
+        // Clear enemy tracking
+        enemiesInRange.Clear();
+        
+        PoolManager.Despawn(gameObject, PoolManager.PoolType.GameObject);
+    }
+
+    // Visualize aura radius in Scene view
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1f, 0f, 1f, 0.3f); // Magenta transparent
@@ -82,6 +101,7 @@ public class AuraEffect : MonoBehaviour
 
     private void OnDestroy()
     {
-        enemiesInRange.Clear();
+        if (enemiesInRange != null)
+            enemiesInRange.Clear();
     }
 }

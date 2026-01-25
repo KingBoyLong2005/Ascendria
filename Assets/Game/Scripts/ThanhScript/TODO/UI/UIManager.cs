@@ -132,6 +132,7 @@ public class UIManager : MonoBehaviour
     void HandleInventoryChanged(object sender, System.EventArgs e)
     {
         inventoryUI.RefreshAll();
+        inventoryUI.RefreshUIScene();
     }
 
     void UpdateTimerDisplay(float time)

@@ -1,123 +1,129 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Weapons/Lightning")]
-public class LightningWeapon : Weapon, IMultiProjectile
+public class LightningWeapon : Weapon
 {
-    [Header("Lightning Stats")]
-    private int projectileCount = 1;
-    
-    public int ProjectileCount => projectileCount;
-    
-    [Header("Lightning")]
     public GameObject lightningPrefab;
     public LayerMask enemyMask;
-
-    [Header("Targeting")]
     public float targetingRadius = 15f;
+
+    public int projectileCount = 1;
+
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float damage, projectiles, sizeMultiplier;
+        public UpgradeConfig(int c, float dmg, float proj, float size)
+        {
+            count = c; damage = dmg; projectiles = proj; sizeMultiplier = size;
+        }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,     new(1, 2f, 1f, 1.20f) },
+        { Rarity.Uncommon,   new(1, 2.4f, 1f, 1.24f) },
+        { Rarity.Rare,       new(2, 2.8f, 1f, 1.28f) },
+        { Rarity.Epic,       new(2, 3.2f, 2f, 1.32f) },
+        { Rarity.Legendary,  new(2, 4f, 2f, 1.40f) }
+    };
 
     public override void Attack(WeaponContext ctx)
     {
-        Collider[] enemies = Physics.OverlapSphere(
-            ctx.owner.position,
-            targetingRadius,
-            enemyMask
-        );
-
+        Collider[] enemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
         if (enemies.Length == 0) return;
 
-        // Bắn projectileCount lightning mỗi lần attack
         int strikeCount = Mathf.Min(projectileCount, enemies.Length);
-
-        // Shuffle enemies để random target
-        System.Collections.Generic.List<Collider> enemyList = 
-            new System.Collections.Generic.List<Collider>(enemies);
+        var enemyList = new List<Collider>(enemies);
         
         for (int i = 0; i < strikeCount; i++)
         {
             if (enemyList.Count == 0) break;
+            int idx = Random.Range(0, enemyList.Count);
+            SpawnLightning(enemyList[idx].transform);
+            enemyList.RemoveAt(idx);
+        }
+    }
 
-            // Chọn enemy ngẫu nhiên
-            int randomIndex = Random.Range(0, enemyList.Count);
-            Collider enemyCol = enemyList[randomIndex];
-            enemyList.RemoveAt(randomIndex);
-
-            Transform enemy = enemyCol.transform;
-
-            // Spawn lightning trên đầu enemy
-            Vector3 strikePos = enemy.position + Vector3.up * 10f;
-            GameObject lightningGO = Instantiate(
-                lightningPrefab, 
-                strikePos, 
-                lightningPrefab.transform.rotation
-            );
-
-            // Scale lightning theo baseSize
-            lightningGO.transform.localScale = Vector3.one * baseSize;
-
-            LightningStrike strike = lightningGO.GetComponent<LightningStrike>();
-            if (strike != null)
-            {
-                // Truyền cả baseRange làm AOE radius
-                strike.Initialize(baseDamage, baseRange, enemyMask);
-            }
+    private void SpawnLightning(Transform enemy)
+    {
+        Vector3 pos = enemy.position + Vector3.up * 10f;
+        
+        GameObject go = PoolManager.Spawn(lightningPrefab, pos, lightningPrefab.transform.rotation);
+        
+        if (go != null)
+        {
+            go.transform.localScale = Vector3.one * baseSize;
+            go.GetComponent<LightningStrike>()?.Initialize(baseDamage, baseRange, enemyMask);
         }
     }
 
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
-        {
-            case Rarity.Common:
-                UpgradeRandomStats(1, 2f, 1f, 1.20f);
-                break;
-
-            case Rarity.Uncommon:
-                UpgradeRandomStats(1, 2.4f, 1f, 1.24f);
-                break;
-
-            case Rarity.Rare:
-                UpgradeRandomStats(2, 2.8f, 1f, 1.28f);
-                break;
-
-            case Rarity.Epic:
-                UpgradeRandomStats(2, 3.2f, 2f, 1.32f);
-                break;
-
-            case Rarity.Legendary:
-                UpgradeRandomStats(2, 4f, 2f, 1.40f);
-                break;
-        }
-
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+        ApplyUpgrade(cfg, level);
         level++;
     }
 
-    private void UpgradeRandomStats(int count, float dmg, float projCount, float sizeMultiplier)
+    private void ApplyUpgrade(UpgradeConfig cfg, int seed)
     {
-        var availableStats = new System.Collections.Generic.List<int> { 0, 1, 2 };
-        
-        for (int i = 0; i < count && availableStats.Count > 0; i++)
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 3, seed);
+        foreach (int stat in stats)
         {
-            int randomIndex = Random.Range(0, availableStats.Count);
-            int stat = availableStats[randomIndex];
-            availableStats.RemoveAt(randomIndex);
-
             switch (stat)
             {
-                case 0: 
-                    baseDamage += dmg; 
-                    break;
-                case 1: 
-                    projectileCount += Mathf.RoundToInt(projCount); 
-                    break;
+                case 0: baseDamage += cfg.damage; break;
+                case 1: projectileCount += Mathf.RoundToInt(cfg.projectiles); break;
                 case 2: 
-                    baseSize *= sizeMultiplier;
-                    baseRange *= sizeMultiplier; // AOE size
+                    baseSize *= cfg.sizeMultiplier;
+                    baseRange *= cfg.sizeMultiplier;
                     break;
             }
         }
     }
-    public void AddProjectile(int amount)
+
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 3, seed);
+        var preview = new List<string>();
+        
+        foreach (int stat in stats)
+        {
+            preview.Add(stat switch
+            {
+                0 => $"+{cfg.damage} Damage",
+                1 => $"+{Mathf.RoundToInt(cfg.projectiles)} Strike",
+                2 => $"{UpgradeHelper.FormatPercent(cfg.sizeMultiplier)} AOE",
+                _ => "Unknown"
+            });
+        }
+        
+        return preview;
+    }
+
+    public override string GetUpgradeDescription(Rarity rarity)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg)) return "Unknown";
+        return $"Random {cfg.count} of: Damage, Strikes, AOE Size";
+    }
+
+    // ==================== PROJECTILE MANAGEMENT ====================
+    public override bool TryAddProjectile(int amount)
     {
         projectileCount += amount;
+        Debug.Log($"<color=cyan>⚡ {weaponName}: {projectileCount - amount} → {projectileCount} strikes</color>");
+        return true;
+    }
+
+    public override bool TryRemoveProjectile(int amount)
+    {
+        int oldCount = projectileCount;
+        projectileCount = Mathf.Max(1, projectileCount - amount);
+        Debug.Log($"<color=orange>⚡ {weaponName}: {oldCount} → {projectileCount} strikes</color>");
+        return true;
     }
 }

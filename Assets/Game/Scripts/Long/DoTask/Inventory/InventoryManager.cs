@@ -34,7 +34,6 @@ public class InventoryManager : MonoBehaviour
 
     private bool readyInvoked = false;
     public bool IsReady { get; private set; } = false;
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -69,6 +68,7 @@ public class InventoryManager : MonoBehaviour
             }
 
             IsReady = true;
+            FindFirstObjectByType<InventoryUI>().RefreshUIScene();
             Debug.Log("<color=green>InventoryManager READY</color>");
             OnInventoryReady?.Invoke(this, EventArgs.Empty);
         }
