@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 8546318493962735103, guid: 354e8c46838cc634baa5b0311fc75444, type: 3}
+  - gameObject: {fileID: 919132149155446097, guid: 017ca3058073897439a587494022fa19, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 5
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.7, y: 1.5}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: TreeL
+  - gameObject: {fileID: 919132149155446097, guid: 37bb792cbaf1a4e42a228bce2734c81f, type: 3}
+    settings:
+      m_Strength: 10
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -25,6 +41,38 @@ MonoBehaviour:
       m_XRotationBool: 0
       m_YRotationBool: 0
       m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_small
+  - gameObject: {fileID: 919132149155446097, guid: 2cbdcae7fb39b634480a38b2b36f59bb, type: 3}
+    settings:
+      m_Strength: 5
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1.5, y: 2.5}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_medium
+  - gameObject: {fileID: 8546318493962735103, guid: 354e8c46838cc634baa5b0311fc75444, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 8, y: 10}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
