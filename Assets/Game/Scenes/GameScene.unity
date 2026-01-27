@@ -3707,10 +3707,6 @@ PrefabInstance:
       propertyPath: m_PolyMesh.m_Mesh
       value: 
       objectReference: {fileID: 760226174}
-    - target: {fileID: 6748922542923796661, guid: 133fe98ff1adf4041b9b8e98548eb7b1, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1607880358}
     - target: {fileID: 6762503122751749967, guid: 133fe98ff1adf4041b9b8e98548eb7b1, type: 3}
       propertyPath: m_Name
       value: IslandMap2
@@ -3766,7 +3762,7 @@ PrefabInstance:
     - target: {fileID: 8520790632550966784, guid: 133fe98ff1adf4041b9b8e98548eb7b1, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1607880358}
+      objectReference: {fileID: 4300000, guid: c8a698bf5726f6244b304e261f49c64f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
