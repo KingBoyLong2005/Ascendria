@@ -1,218 +1,201 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Weapons/Dice")]
-public class DiceWeapon : Weapon, IMultiProjectile
+public class DiceWeapon : Weapon
 {
     [Header("Dice Stats")]
-    private int projectileCount = 1;
     private float projectileSpeed = 10f;
-    private float critChance = 0.05f; // 5% base crit chance
-    private float critDamage = 2f; // 200% crit damage
-    private float permanentCritBonus = 0f; // Crit bonus from rolling 6s
-    
-    public int ProjectileCount => projectileCount;
-    public float TotalCritChance => critChance + permanentCritBonus;
+    private float aoeSize = 1f; // AOE size for critical 20
 
     [Header("Dice Prefab")]
     public GameObject dicePrefab;
     public LayerMask enemyMask;
 
     [Header("Spread")]
-    public float spreadAngle = 15f; // Góc spread khi bắn nhiều projectile
+    public float spreadAngle = 15f;
 
     [Header("Targeting")]
     public float targetingRadius = 20f;
 
+    public int projectileCount = 1;
+
+    // ==================== UPGRADE CONFIG ====================
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float damage, projectiles, size, cooldownMult;
+
+        public UpgradeConfig(int c, float dmg, float proj, float sz, float cd_mult)
+        {
+            count = c; damage = dmg; projectiles = proj; 
+            size = sz; cooldownMult = cd_mult;
+        }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,     new(1, 2.5f, 1f, 0.16f, 0.95f) },
+        { Rarity.Uncommon,   new(1, 3f, 1.2f, 0.19f, 0.93f) },
+        { Rarity.Rare,       new(2, 3.5f, 1.4f, 0.22f, 0.90f) },
+        { Rarity.Epic,       new(2, 4f, 1.6f, 0.26f, 0.88f) },
+        { Rarity.Legendary,  new(3, 5f, 2f, 0.32f, 0.85f) }
+    };
+
+    // ==================== ATTACK ====================
     public override void Attack(WeaponContext ctx)
     {
-        // Tìm enemy trong tầm
-        Collider[] potentialEnemies =
-            Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
-
-        bool hasEnemy = potentialEnemies.Length > 0;
+        Collider[] enemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
+        bool hasEnemy = enemies.Length > 0;
 
         for (int i = 0; i < projectileCount; i++)
         {
-            Vector3 direction;
-
-            if (hasEnemy)
-            {
-                // Chọn enemy ngẫu nhiên
-                Transform enemy = potentialEnemies[Random.Range(0, potentialEnemies.Length)].transform;
-
-                // Spawn position (giống Fireball)
-                PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
-                Vector3 spawnPos = playerAttack != null
-                    ? playerAttack.ComputeSpawnPosition(ctx.forward)
-                    : ctx.spawnPos;
-
-                // Lấy center collider cho chuẩn
-                Collider enemyCol = enemy.GetComponent<Collider>();
-                Vector3 targetPos = enemyCol != null
-                    ? enemyCol.bounds.center
-                    : enemy.position;
-
-                direction = (targetPos - spawnPos).normalized;
-
-                // Spread quanh hướng enemy
-                if (projectileCount > 1)
-                {
-                    float angleOffset =
-                        spreadAngle * ((float)i / (projectileCount - 1) - 0.5f);
-
-                    direction = Quaternion.Euler(0f, angleOffset, 0f) * direction;
-                }
-            }
-            else
-            {
-                // Không có enemy → bắn thẳng
-                direction = ctx.forward;
-
-                if (projectileCount > 1)
-                {
-                    float angleOffset =
-                        spreadAngle * ((float)i / (projectileCount - 1) - 0.5f);
-
-                    direction = Quaternion.Euler(0f, angleOffset, 0f) * direction;
-                }
-            }
-
+            Vector3 direction = hasEnemy 
+                ? GetDirectionWithSpread(enemies, ctx, i)
+                : GetForwardWithSpread(ctx.forward, i);
+            
             ShootDice(ctx, direction);
         }
     }
+
+    private Vector3 GetDirectionWithSpread(Collider[] enemies, WeaponContext ctx, int index)
+    {
+        Transform enemy = enemies[Random.Range(0, enemies.Length)].transform;
+        Vector3 spawnPos = GetSpawnPos(ctx);
+        Vector3 targetPos = GetEnemyCenter(enemy);
+        Vector3 direction = (targetPos - spawnPos).normalized;
+        
+        return ApplySpread(direction, index);
+    }
+
+    private Vector3 GetForwardWithSpread(Vector3 forward, int index)
+    {
+        return ApplySpread(forward, index);
+    }
+
+    private Vector3 ApplySpread(Vector3 direction, int index)
+    {
+        if (projectileCount <= 1) return direction;
+        
+        float offset = spreadAngle * ((float)index / (projectileCount - 1) - 0.5f);
+        return Quaternion.Euler(0f, offset, 0f) * direction;
+    }
+
+    private Vector3 GetSpawnPos(WeaponContext ctx)
+    {
+        var pa = ctx.owner.GetComponent<PlayerAttack>();
+        return pa != null ? pa.ComputeSpawnPosition(ctx.forward) : ctx.spawnPos;
+    }
+
+    private Vector3 GetEnemyCenter(Transform enemy)
+    {
+        var col = enemy.GetComponent<Collider>();
+        return col != null ? col.bounds.center : enemy.position;
+    }
+
     private void ShootDice(WeaponContext ctx, Vector3 direction)
     {
-        PlayerAttack playerAttack = ctx.owner.GetComponent<PlayerAttack>();
-        Vector3 spawnPos = playerAttack != null
-            ? playerAttack.ComputeSpawnPosition(ctx.forward)
-            : ctx.spawnPos;
-
-        GameObject diceGO = Instantiate(
-            dicePrefab,
-            spawnPos,
-            Quaternion.LookRotation(direction)
-        );
-
-        diceGO.transform.localScale = Vector3.one * baseSize;
-
-        DiceProjectile dice = diceGO.GetComponent<DiceProjectile>();
-        if (dice != null)
+        Vector3 spawnPos = GetSpawnPos(ctx);
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        
+        GameObject go = PoolManager.Spawn(dicePrefab, spawnPos, rotation);
+        
+        if (go != null)
         {
-            dice.Initialize(baseDamage, projectileSpeed, direction, enemyMask, this);
+            go.transform.localScale = Vector3.one * baseSize;
+            
+            float luckValue = PlayerStatManager.Instance.Luck;;
+            
+            go.GetComponent<DiceProjectile>()?.Initialize(
+                baseDamage, 
+                projectileSpeed, 
+                direction, 
+                enemyMask, 
+                aoeSize,
+                luckValue
+            );
         }
     }
 
-    /// <summary>
-    /// Called when a dice rolls a 6
-    /// </summary>
-    public void OnRolledSix()
-    {
-        permanentCritBonus += 0.02f; // +2% crit chance per lucky roll
-        permanentCritBonus = Mathf.Min(permanentCritBonus, 0.5f); // Cap at 50% bonus
-    }
+    // private float GetPlayerLuck(WeaponContext ctx)
+    // {
+    //     // var playerStats = ctx.owner.GetComponent<PlayerStatManager>();
+    //     // if (playerStats != null)
+    //     // {
+    //         return PlayerStatManager.Instance.Luck;
+    //     // }
+    //     // return 0f; // Default luck if PlayerStats not found
+    // }
 
+    // ==================== UPGRADE ====================
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
-        {
-            case Rarity.Common:
-                UpgradeRandomStats(1, 1f, 0.05f, 0.1f, 1f, 1f, 0.95f);
-                break;
-
-            case Rarity.Uncommon:
-                UpgradeRandomStats(1, 1.5f, 0.07f, 0.15f, 1.2f, 1f, 0.93f);
-                break;
-
-            case Rarity.Rare:
-                UpgradeRandomStats(2, 2f, 0.10f, 0.2f, 1.5f, 1f, 0.90f);
-                break;
-
-            case Rarity.Epic:
-                UpgradeRandomStats(2, 3f, 0.12f, 0.25f, 2f, 2f, 0.88f);
-                break;
-
-            case Rarity.Legendary:
-                UpgradeRandomStats(3, 4f, 0.15f, 0.3f, 2.5f, 2f, 0.85f);
-                break;
-        }
-
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+        ApplyUpgrade(cfg, level);
         level++;
     }
 
-    private void UpgradeRandomStats(
-        int count, 
-        float dmgBonus, 
-        float critChanceBonus, 
-        float critDmgBonus,
-        float speedBonus,
-        float projCountBonus,
-        float cooldownMult)
+    private void ApplyUpgrade(UpgradeConfig cfg, int seed)
     {
-        // 0: Damage, 1: Crit Chance, 2: Crit Damage, 3: Speed, 4: Projectile Count, 5: Size, 6: Cooldown
-        var availableStats = new System.Collections.Generic.List<int> { 0, 1, 2, 3, 4, 5, 6 };
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
         
-        for (int i = 0; i < count && availableStats.Count > 0; i++)
+        foreach (int stat in stats)
         {
-            int randomIndex = Random.Range(0, availableStats.Count);
-            int stat = availableStats[randomIndex];
-            availableStats.RemoveAt(randomIndex);
-
             switch (stat)
             {
-                case 0: // Damage
-                    baseDamage += dmgBonus;
-                    Debug.Log($"<color=yellow>🎲 Dice: +{dmgBonus} Damage (now {baseDamage})</color>");
-                    break;
-                    
-                case 1: // Crit Chance
-                    critChance += critChanceBonus;
-                    critChance = Mathf.Min(critChance, 1f); // Cap at 100%
-                    Debug.Log($"<color=yellow>🎲 Dice: +{critChanceBonus * 100}% Crit Chance (now {TotalCritChance * 100}%)</color>");
-                    break;
-                    
-                case 2: // Crit Damage
-                    critDamage += critDmgBonus;
-                    Debug.Log($"<color=yellow>🎲 Dice: +{critDmgBonus * 100}% Crit Damage (now {critDamage * 100}%)</color>");
-                    break;
-                    
-                case 3: // Projectile Speed
-                    projectileSpeed += speedBonus;
-                    Debug.Log($"<color=yellow>🎲 Dice: +{speedBonus} Speed (now {projectileSpeed})</color>");
-                    break;
-                    
-                case 4: // Projectile Count
-                    projectileCount += Mathf.RoundToInt(projCountBonus);
-                    Debug.Log($"<color=yellow>🎲 Dice: +{projCountBonus} Projectiles (now {projectileCount})</color>");
-                    break;
-                    
-                case 5: // Size
-                    baseSize *= 1.15f;
-                    Debug.Log($"<color=yellow>🎲 Dice: +15% Size (now {baseSize})</color>");
-                    break;
-                    
-                case 6: // Cooldown
-                    baseCooldown *= cooldownMult;
-                    Debug.Log($"<color=yellow>🎲 Dice: Cooldown reduced to {baseCooldown}s</color>");
-                    break;
+                case 0: baseDamage += cfg.damage; break;
+                case 1: projectileCount += Mathf.RoundToInt(cfg.projectiles); break;
+                case 2: aoeSize += cfg.size; break;
+                case 3: baseCooldown *= cfg.cooldownMult; break;
             }
         }
     }
 
-    public void AddProjectile(int amount)
+    // ==================== PREVIEW ====================
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
     {
-        projectileCount += amount;
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
+        var preview = new List<string>();
+        
+        foreach (int stat in stats)
+        {
+            preview.Add(stat switch
+            {
+                0 => $"+{cfg.damage} Damage",
+                1 => $"+{Mathf.RoundToInt(cfg.projectiles)} Projectile",
+                2 => $"+{cfg.size * 100:F0}% AOE Size",
+                3 => $"{UpgradeHelper.FormatPercent(cfg.cooldownMult)} Cooldown",
+                _ => "Unknown"
+            });
+        }
+        
+        return preview;
     }
 
-    // Get stats for UI display
-    public string GetStatsInfo()
+    public override string GetUpgradeDescription(Rarity rarity)
     {
-        return $"Damage: {baseDamage:F1} (x1-6 from dice roll)\n" +
-               $"Crit Chance: {TotalCritChance * 100:F1}% ({permanentCritBonus * 100:F0}% from lucky rolls)\n" +
-               $"Crit Damage: {critDamage * 100:F0}%\n" +
-               $"Projectiles: {projectileCount}\n" +
-               $"Speed: {projectileSpeed:F1}\n" +
-               $"Size: {baseSize:F2}x\n" +
-               $"Cooldown: {Cooldown:F2}s";
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return "Unknown";
+
+        return $"Random {cfg.count} of: Damage, Projectile Count, AOE Size, Attack Speed";
+    }
+
+    // ==================== PROJECTILE MANAGEMENT ====================
+    public override bool TryAddProjectile(int amount)
+    {
+        projectileCount += amount;
+        Debug.Log($"<color=cyan>🎲 {weaponName}: {projectileCount - amount} → {projectileCount} projectiles</color>");
+        return true;
+    }
+
+    public override bool TryRemoveProjectile(int amount)
+    {
+        int oldCount = projectileCount;
+        projectileCount = Mathf.Max(1, projectileCount - amount);
+        Debug.Log($"<color=orange>🎲 {weaponName}: {oldCount} → {projectileCount} projectiles</color>");
+        return true;
     }
 }

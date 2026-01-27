@@ -21,6 +21,7 @@ public class LevelUpUI : MonoBehaviour
         foreach (var opt in e.Options)
         {
             var ui = Instantiate(optionPrefab, optionsParent);
+            
             ui.Setup(opt, LevelManager.Instance.ApplyUpgrade);
             spawned.Add(ui);
         }

@@ -14,6 +14,9 @@ public class PlayerStatManager : MonoBehaviour
     public float baseArmor = 5f;
     private float baseCoin = 5f;
 
+    public float baseLuck = 0f;
+    public float baseWealth = 0f;
+    public float baseWise = 0f;
     public bool activeHpRegen = false;
     public event EventHandler<OnPlayerHealthChangeEventArgs> OnPlayerHealthChange;
     public class OnPlayerHealthChangeEventArgs : EventArgs
@@ -43,6 +46,14 @@ public class PlayerStatManager : MonoBehaviour
     private float armorModifierFlat = 0f;
     private float armorModifierMult = 1f;
 
+    private float luckModifierFlat = 0f;
+    private float luckModifierMult = 1f;
+
+    private float wealthModifierFlat = 0f;
+    private float wealthModifierMult = 1f;
+
+    private float wiseModifierFlat = 0f;
+    private float wiseModifierMult = 1f;
     private float coinModifierFlat = 0f;
     private float coinModifierMult = 1f;
     private ProfileCharacterLoader loaderProfile;
@@ -74,6 +85,9 @@ public class PlayerStatManager : MonoBehaviour
         baseMoveSpeed = loaderProfile.moveSpeed;
         baseArmor = loaderProfile.armor;
 
+        baseLuck = loaderProfile.luck;
+        baseWealth = loaderProfile.wealth;
+        baseWise = loaderProfile.wise;
         // PlayerMoveManager.Instance.airJumpActive = false;
     }
     public void TakeDamage(float damage)
@@ -141,6 +155,32 @@ public class PlayerStatManager : MonoBehaviour
             return (baseArmor + armorModifierFlat) * armorModifierMult;
         }
     }
+    // LUCK
+    public float Luck
+    {
+        get
+        {
+            return (baseLuck + luckModifierFlat) * luckModifierMult;
+        }
+    }
+
+    // WEALTH
+    public float Wealth
+    {
+        get
+        {
+            return (baseWealth + wealthModifierFlat) * wealthModifierMult;
+        }
+    }
+
+    // WISE
+    public float Wise
+    {
+        get
+        {
+            return (baseWise + wiseModifierFlat) * wiseModifierMult;
+        }
+    }
     // COIN GETTER
     public float Coin
     {
@@ -150,6 +190,7 @@ public class PlayerStatManager : MonoBehaviour
         }
     }
 
+    
     // STAT MODIFYING METHODS
     public void ModifyHealth(float addFlat = 0f, float mult = 1f)
     {
@@ -179,5 +220,23 @@ public class PlayerStatManager : MonoBehaviour
         coinModifierFlat += addFlat;
         coinModifierMult *= mult;
     }
+    public void ModifyLuck(float addFlat = 0f, float mult = 1f)
+    {
+        luckModifierFlat += addFlat;
+        luckModifierMult *= mult;
+    }
+
+    public void ModifyWealth(float addFlat = 0f, float mult = 1f)
+    {
+        wealthModifierFlat += addFlat;
+        wealthModifierMult *= mult;
+    }
+
+    public void ModifyWise(float addFlat = 0f, float mult = 1f)
+    {
+        wiseModifierFlat += addFlat;
+        wiseModifierMult *= mult;
+    }
+
 }
 

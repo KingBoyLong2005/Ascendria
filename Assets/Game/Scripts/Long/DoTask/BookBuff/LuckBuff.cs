@@ -9,7 +9,7 @@ public class LuckBuff : BookBuff
         // stats.maxHP += amount;
         // stats.currentHP = Mathf.Min(stats.currentHP + amount, stats.maxHP);
         // PlayerStatManager.Instance.ModifyMoveSpeed(currentSpeed);
-        LevelManager.Instance.Luck += amount;
+        PlayerStatManager.Instance.ModifyLuck(amount);
     }
 
     public override void LevelUp(Rarity rarity)

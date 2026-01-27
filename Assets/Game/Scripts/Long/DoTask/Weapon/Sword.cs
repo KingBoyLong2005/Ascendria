@@ -1,162 +1,147 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Weapons/Sword")]
-public class Sword : Weapon, IMultiProjectile
+public class Sword : Weapon
 {
-    [Header("Sword Stats")]
-    private int projectileCount = 1;
+    public float knockbackForce = 0f;
     
-    public int ProjectileCount => projectileCount;
-    public float knockbackForce = 0f;    // Lực đẩy lùi enemy
-    
-    [Header("Effects")]
     public GameObject slashEffectPrefab;
-    
-    [Header("Mask")]
     public LayerMask enemyMask;
+
+    public int projectileCount = 1;
+
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float damage, projectiles, knockback, sizeMultiplier;
+        public UpgradeConfig(int c, float dmg, float proj, float kb, float size)
+        {
+            count = c; damage = dmg; projectiles = proj; 
+            knockback = kb; sizeMultiplier = size;
+        }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,     new(1, 2f, 1f, 0.5f, 1.20f) },
+        { Rarity.Uncommon,   new(1, 2.4f, 1f, 0.6f, 1.24f) },
+        { Rarity.Rare,       new(2, 2.8f, 1f, 0.7f, 1.28f) },
+        { Rarity.Epic,       new(2, 3.2f, 2f, 0.8f, 1.32f) },
+        { Rarity.Legendary,  new(2, 4f, 2f, 1f, 1.40f) }
+    };
+
     public override void Attack(WeaponContext ctx)
     {
-        // Tấn công projectileCount lần
         for (int i = 0; i < projectileCount; i++)
         {
-            // Random angle cho mỗi slash nếu có nhiều slash
-            float angleOffset = 0f;
-            if (projectileCount > 1)
-            {
-                // Spread các slash trong khoảng ±30 độ
-                float spreadAngle = 60f;
-                angleOffset = Random.Range(-spreadAngle / 2f, spreadAngle / 2f);
-            }
-
-            // Tính rotation với offset
-            Quaternion rot = Quaternion.LookRotation(ctx.forward, Vector3.up) * 
-                            Quaternion.Euler(0f, angleOffset, 0f);
+            float angleOffset = projectileCount > 1 
+                ? Random.Range(-30f, 30f) 
+                : 0f;
             
-            Vector3 center = ctx.spawnPos;
+            Quaternion rot = Quaternion.LookRotation(ctx.forward) * Quaternion.Euler(0f, angleOffset, 0f);
             Vector3 sizeBox = new Vector3(baseSize, 0.25f, baseRange);
 
-            // ==== HITBOX ====
-            HitBoxManager.Instance.RequestBox(
-                center,
-                sizeBox,
-                rot,
-                enemyMask,
-                // OnHitEnemy,
-                (col) => OnHitEnemy(col, ctx)
-            );
+            HitBoxManager.Instance.RequestBox(ctx.spawnPos, sizeBox, rot, enemyMask, 
+                (col) => OnHitEnemy(col, ctx));
 
-            // ==== EFFECT ====
             if (slashEffectPrefab != null)
             {
-                Quaternion fxRot = rot * Quaternion.Euler(90f, 0f, -60f);
-                GameObject fx = Instantiate(slashEffectPrefab, center, fxRot);
-                
-                // Scale effect theo baseSize và baseRange
-                fx.transform.localScale = new Vector3(
-                    baseSize,          // width
-                    baseSize,          // thickness
-                    baseRange          // length
-                );
-                
+                GameObject fx = Instantiate(slashEffectPrefab, ctx.spawnPos, 
+                    rot * Quaternion.Euler(90f, 0f, -60f));
+                fx.transform.localScale = new Vector3(baseSize, baseSize, baseRange);
                 Destroy(fx, 0.4f);
-            }
-
-            // Delay nhỏ giữa các slash nếu có nhiều slash
-            if (projectileCount > 1 && i < projectileCount - 1)
-            {
-                // Có thể thêm delay ở đây nếu cần
             }
         }
     }
 
-    private void OnHitEnemy(Collider col, WeaponContext playerctx)
+    private void OnHitEnemy(Collider col, WeaponContext ctx)
     {
         var enemy = col.GetComponentInParent<EnemyStats>();
         if (enemy != null)
         {
             WeaponManager.Instance.WeaponHitEnemy(enemy.gameObject, baseDamage);
             
-            // Apply knockback nếu có
             if (knockbackForce > 0f)
             {
-                ApplyKnockback(enemy, playerctx);
+                var rb = enemy.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    Vector3 dir = (enemy.transform.position - ctx.owner.position).normalized;
+                    dir.y = 0f;
+                    rb.AddForce(dir * knockbackForce, ForceMode.Impulse);
+                }
             }
-        }
-    }
-
-    private void ApplyKnockback(EnemyStats enemy, WeaponContext playerctx)
-    {
-        Rigidbody enemyRb = enemy.GetComponent<Rigidbody>();
-        if (enemyRb != null)
-        {
-            // Tính hướng knockback (đẩy ra xa player)
-            Vector3 knockbackDir = (enemy.transform.position - playerctx.owner.transform.position).normalized;
-            knockbackDir.y = 0f; // Giữ knockback ở mặt phẳng ngang
-            
-            // Apply force
-            enemyRb.AddForce(knockbackDir * knockbackForce, ForceMode.Impulse);
         }
     }
 
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
-        {
-            case Rarity.Common:
-                UpgradeRandomStats(1, 2f, 1f, 0.5f, 1.20f);
-                break;
-
-            case Rarity.Uncommon:
-                UpgradeRandomStats(1, 2.4f, 1f, 0.6f, 1.24f);
-                break;
-
-            case Rarity.Rare:
-                UpgradeRandomStats(2, 2.8f, 1f, 0.7f, 1.28f);
-                break;
-
-            case Rarity.Epic:
-                UpgradeRandomStats(2, 3.2f, 2f, 0.8f, 1.32f);
-                break;
-
-            case Rarity.Legendary:
-                UpgradeRandomStats(2, 4f, 2f, 1f, 1.40f);
-                break;
-        }
-
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+        ApplyUpgrade(cfg, level);
         level++;
     }
 
-    private void UpgradeRandomStats(int count, float dmg, float projCount, float knockback, float sizeMultiplier)
+    private void ApplyUpgrade(UpgradeConfig cfg, int seed)
     {
-        var availableStats = new System.Collections.Generic.List<int> { 0, 1, 2, 3 };
-        
-        for (int i = 0; i < count && availableStats.Count > 0; i++)
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
+        foreach (int stat in stats)
         {
-            int randomIndex = Random.Range(0, availableStats.Count);
-            int stat = availableStats[randomIndex];
-            availableStats.RemoveAt(randomIndex);
-
             switch (stat)
             {
-                case 0: 
-                    baseDamage += dmg; 
-                    break;
-                case 1: 
-                    projectileCount += Mathf.RoundToInt(projCount); 
-                    break;
-                case 2: 
-                    knockbackForce += knockback; 
-                    break;
+                case 0: baseDamage += cfg.damage; break;
+                case 1: projectileCount += Mathf.RoundToInt(cfg.projectiles); break;
+                case 2: knockbackForce += cfg.knockback; break;
                 case 3: 
-                    baseSize *= sizeMultiplier;
-                    baseRange *= sizeMultiplier;
+                    baseSize *= cfg.sizeMultiplier;
+                    baseRange *= cfg.sizeMultiplier;
                     break;
             }
         }
     }
-    public void AddProjectile(int amount)
+
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 4, seed);
+        var preview = new List<string>();
+        
+        foreach (int stat in stats)
+        {
+            preview.Add(stat switch
+            {
+                0 => $"+{cfg.damage} Damage",
+                1 => $"+{Mathf.RoundToInt(cfg.projectiles)} Slash",
+                2 => $"+{cfg.knockback} Knockback",
+                3 => $"{UpgradeHelper.FormatPercent(cfg.sizeMultiplier)} Size",
+                _ => "Unknown"
+            });
+        }
+        
+        return preview;
+    }
+
+    public override string GetUpgradeDescription(Rarity rarity)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg)) return "Unknown";
+        return $"Random {cfg.count} of: Damage, Slashes, Knockback, Size";
+    }
+
+    // ==================== PROJECTILE MANAGEMENT ====================
+    public override bool TryAddProjectile(int amount)
     {
         projectileCount += amount;
+        Debug.Log($"<color=cyan>⚔️ {weaponName}: {projectileCount - amount} → {projectileCount} slashes</color>");
+        return true;
+    }
+
+    public override bool TryRemoveProjectile(int amount)
+    {
+        int oldCount = projectileCount;
+        projectileCount = Mathf.Max(1, projectileCount - amount);
+        Debug.Log($"<color=orange>⚔️ {weaponName}: {oldCount} → {projectileCount} slashes</color>");
+        return true;
     }
 }

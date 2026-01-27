@@ -6,28 +6,48 @@ public class ItemProjectileCount : Item
     [Header("Stats")]
     [Tooltip("Số projectile thêm")]
     public int extraProjectileCount = 1;
-    public override void Apply( int multiplier = 1)
+
+    public override void Apply(int multiplier = 1)
     {
         int totalProjectiles = extraProjectileCount * multiplier;
-        // stats.bonusProjectileCount += totalProjectiles;
-        // Add projectile cho TẤT CẢ weapon có IMultiProjectile
-        foreach (var weapon in WeaponManager.Instance.weapons) // Giả sử có list này
+        int affectedCount = 0;
+
+        // Thêm projectile cho TẤT CẢ weapon có hỗ trợ projectile
+        foreach (var weapon in WeaponManager.Instance.weapons)
         {
-            if (weapon is IMultiProjectile multi)
+            if (weapon.TryAddProjectile(totalProjectiles))
             {
-                multi.AddProjectile(totalProjectiles);
-                Debug.Log($"Added {totalProjectiles} projectiles to {weapon.name}");
+                affectedCount++;
             }
         }
-        Debug.Log($"<color=green>[Item]</color> Applied +{totalProjectiles} Projectile Count (x{multiplier})");
+
+        if (affectedCount > 0)
+        {
+            Debug.Log($"<color=green>✨ [Item] Applied +{totalProjectiles} Projectile Count to {affectedCount} weapon(s) (x{multiplier})</color>");
+        }
+        else
+        {
+            Debug.Log($"<color=yellow>⚠️ [Item] No weapons support projectiles</color>");
+        }
     }
 
-    public override void Remove( int multiplier = 1)
+    public override void Remove(int multiplier = 1)
     {
         int totalProjectiles = extraProjectileCount * multiplier;
-        // stats.bonusProjectileCount -= totalProjectiles;
-        // stats.bonusProjectileCount = Mathf.Max(0, stats.bonusProjectileCount);
-        
-        Debug.Log($"<color=red>[Item]</color> Removed +{totalProjectiles} Projectile Count (x{multiplier})");
+        int affectedCount = 0;
+
+        // Trừ projectile
+        foreach (var weapon in WeaponManager.Instance.weapons)
+        {
+            if (weapon.TryRemoveProjectile(totalProjectiles))
+            {
+                affectedCount++;
+            }
+        }
+
+        if (affectedCount > 0)
+        {
+            Debug.Log($"<color=red>🔻 [Item] Removed -{totalProjectiles} Projectile Count from {affectedCount} weapon(s) (x{multiplier})</color>");
+        }
     }
 }
