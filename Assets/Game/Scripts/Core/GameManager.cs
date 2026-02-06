@@ -16,20 +16,18 @@ public class GameManager : MonoBehaviour
     }
     public GameState currentState { get; private set; }
     public event Action<GameState> OnGameStateChanged;
-
     private MapManager01 mapManager;
     public MapManager01 GetMapManager => mapManager;
-
     private PlayerManager01 playerManager;
     private InteractableSpawner interactableSpawner;
 
+    private InventoryUI invenUI;
     private PoolManager poolManager;
     private EnemyManager enemyManager;
     private DamageManager damageManager;
 
     private LootDropManager lootDropManager;
 
-    private BossManager bossManager;
     private GameEventManager gameEventManager;
     private AudioManager audioManager;
 
@@ -46,6 +44,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             currentState = GameState.Running;
         }
+        invenUI = FindFirstObjectByType<InventoryUI>();
     }
 
     private void Start()
@@ -66,16 +65,10 @@ public class GameManager : MonoBehaviour
     private void HandleMapReady(object sender, EventArgs e)
     {
         //audioManager = gameObject.AddComponent<AudioManager>();
-        //Boss
-        //bossManager = gameObject.AddComponent<BossManager>();
 
-        //GameEventManager (tạo Object riêng để chứa EventManager)
-        //Trong GameEventManager khởi tạo các EventHandler
+        //GameEventManager
         var eventManagerObject = new GameObject("GameEventManager");
         var gameEventManager = eventManagerObject.AddComponent<GameEventManager>();
-
-        //gameEventManager = gameObject.AddComponent<GameEventManager>();
-        //gameEventManager.Initialize(bossManager);
 
         //Player
         playerManager = gameObject.AddComponent<PlayerManager01>();
@@ -90,18 +83,9 @@ public class GameManager : MonoBehaviour
         interactableSpawner = new InteractableSpawner();
         interactableSpawner.SpawnAll();
 
-        // //Quản lý pool
-        // poolManager = gameObject.AddComponent<PoolManager>();
-        // enemyManager = gameObject.AddComponent<EnemyManager>();
-        // damageManager = gameObject.AddComponent<DamageManager>();
-
         lootDropManager = gameObject.AddComponent<LootDropManager>();
         
         uiManager = gameObject.AddComponent<UIManager>();
-
-        //bossManager = gameObject.AddComponent<BossManager>();
-        //gameEventManager = gameObject.AddComponent<GameEventManager>();
-        //gameEventManager.Initialize(bossManager);
     }
 
     private void SetState(GameState newState)
@@ -112,16 +96,12 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
-        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 0f;
         SetState(GameState.Paused);
     }
 
     public void ResumeGame()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
-        FindFirstObjectByType<InventoryUI>().Toggle();
         Time.timeScale = 1f;
         SetState(GameState.Running);
     }
@@ -136,6 +116,7 @@ public class GameManager : MonoBehaviour
                 PauseGame();
             else if (currentState == GameState.Paused)
                 ResumeGame();
+            invenUI.Toggle();
         }
     }
 

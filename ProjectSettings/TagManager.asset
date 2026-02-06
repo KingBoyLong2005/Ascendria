@@ -14,6 +14,7 @@ TagManager:
   - Kill Counter
   - Coin Counter
   - Countdown Timer
+  - Boss HP Container
   layers:
   - Default
   - TransparentFX
@@ -23,12 +24,12 @@ TagManager:
   - UI
   - Destructible
   - Enemy
-  - Ground
+  - Climb
   - Magnetable Loot
   - Interactable
   - Pickupable Loot
   - Boss Skill
-  - 
+  - Ground
   - 
   - 
   - 

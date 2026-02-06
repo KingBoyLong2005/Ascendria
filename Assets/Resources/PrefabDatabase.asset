@@ -30,3 +30,4 @@ MonoBehaviour:
   gateOpenSfx: {fileID: 0}
   playerSpawnSfx: {fileID: 0}
   bossSpawnSfx: {fileID: 0}
+  bossHPBar: {fileID: 1300022261346222137, guid: f02d32bfba421a84a8521f268b8a47f7, type: 3}

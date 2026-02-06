@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7168794613528810309}
   - component: {fileID: 2365867221801192465}
   - component: {fileID: 8348806537697309848}
+  - component: {fileID: -4138989042489836106}
   m_Layer: 8
   m_Name: LobbyMap
   m_TagString: Untagged
@@ -164,6 +165,26 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
+--- !u!114 &-4138989042489836106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196491744867951257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46fb00c7e6ad9485282a146ad398a2a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  distance: 3
+  height: 3
+  damping: 5
+  smoothRotation: 1
+  followBehind: 1
+  rotationDamping: 10
+  staticOffset: 0
 --- !u!1 &2907207124764456320
 GameObject:
   m_ObjectHideFlags: 0

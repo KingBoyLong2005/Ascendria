@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BossDebug_01
   m_EditorClassIdentifier: 
   enemyName: Boss Debug 01
-  maxHealth: 1000
+  maxHealth: 30
   moveSpeed: 3
   attack: 10
   armor: 10

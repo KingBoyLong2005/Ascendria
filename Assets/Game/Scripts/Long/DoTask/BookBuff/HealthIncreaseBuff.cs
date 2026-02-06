@@ -16,10 +16,10 @@ public class HealthIncreaseBuff : BookBuff
         switch (rarity)
         {
             case Rarity.Common:     amount += 5f; break;
-            case Rarity.Uncommon:   amount += 10f; break;
-            case Rarity.Rare:       amount += 20f; break;
-            case Rarity.Epic:       amount += 35f; break;
-            case Rarity.Legendary:  amount += 50f; break;
+            case Rarity.Uncommon:   amount += 8f; break;
+            case Rarity.Rare:       amount += 10f; break;
+            case Rarity.Epic:       amount += 20f; break;
+            case Rarity.Legendary:  amount += 25f; break;
         }
 
         level++;

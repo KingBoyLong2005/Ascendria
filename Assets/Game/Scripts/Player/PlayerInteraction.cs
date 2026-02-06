@@ -1,4 +1,5 @@
 using System;
+using System.Linq.Expressions;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -38,7 +39,6 @@ public class PlayerInteraction : MonoBehaviour
             if (hit.collider.TryGetComponent<Interactable>(out var interactable))
             {
                 GameEventSystem.Trigger(this, new InteractionEventArgs(interactable, interactable.interactType));
-
                 //Log
                 Debug.Log($"Đã tương tác với {interactable.interactType}");
             }

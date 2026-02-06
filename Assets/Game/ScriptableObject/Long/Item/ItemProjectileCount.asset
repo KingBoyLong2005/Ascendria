@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7736984733bc8294fb8c5f44a0acaa47, type: 3}
+  m_Name: ItemProjectileCount
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 370d01d8f7d321041bfa396a9ba8b0c9, type: 3}
+  rarity: 3
+  isStackable: 1
+  isTimed: 0
+  duration: 30
+  extraProjectileCount: 1

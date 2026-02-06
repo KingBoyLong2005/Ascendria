@@ -4,13 +4,11 @@ using UnityEngine;
 public class SpeedIncreaseBuff : BookBuff
 {
     public float amount = 10f;
-    private float currentSpeed = 0;
     public override void Apply()
     {
         // stats.maxHP += amount;
         // stats.currentHP = Mathf.Min(stats.currentHP + amount, stats.maxHP);
-        currentSpeed += amount;
-        PlayerStatManager.Instance.ModifyMoveSpeed(currentSpeed);
+        PlayerStatManager.Instance.ModifyMoveSpeed(amount);
     }
 
     public override void LevelUp(Rarity rarity)
@@ -29,6 +27,6 @@ public class SpeedIncreaseBuff : BookBuff
 
     public override string GetUpgradeDescription(Rarity rarity)
     {
-        return $"+{amount} Max HP";
+        return $"+{amount} Max Speed";
     }
 }

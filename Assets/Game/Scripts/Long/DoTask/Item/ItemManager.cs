@@ -1,9 +1,3 @@
-// ItemManager.cs
-// This manager handles the effects of items (apply/remove buffs, timers).
-// Assumes items are auto-applied when equipped in InventoryManager.
-// Integrates with InventoryManager for owned/active updates.
-// Item is a ScriptableObject with fields: name, Icon (Sprite), isStackable (bool), isTimed (bool), duration (float),
-// and methods: Apply(PlayerStatManager stats, int multiplier), Remove(PlayerStatManager stats, int multiplier).
 
 using UnityEngine;
 using System;
@@ -83,7 +77,7 @@ public class ItemManager : MonoBehaviour
     {
         if (stats == null || item == null || addedMultiplier <= 0) return;
 
-        item.Apply(stats, addedMultiplier);
+        item.Apply(addedMultiplier);
 
         if (item.isTimed)
         {
@@ -97,7 +91,7 @@ public class ItemManager : MonoBehaviour
     {
         if (stats == null || item == null || multiplier <= 0) return;
 
-        item.Remove(stats, multiplier);
+        item.Remove(multiplier);
     }
 
     // Remove all effects for a specific item (e.g., for unequip)
@@ -129,7 +123,7 @@ public class ItemManager : MonoBehaviour
 
         if (totalMultiplier > 0)
         {
-            item.Remove(stats, totalMultiplier);
+            item.Remove(totalMultiplier);
         }
     }
 
@@ -145,7 +139,7 @@ public class ItemManager : MonoBehaviour
         {
             if (!item.isTimed && inv.ownedItems.TryGetValue(item, out var count))
             {
-                item.Apply(stats, count);
+                item.Apply(count);
             }
         }
     }
@@ -154,8 +148,29 @@ public class ItemManager : MonoBehaviour
     public Item GetRandomItem()
     {
         var db = ItemDatabase.Instance;
-        if (db == null || db.item == null || db.item.Length == 0) return null;
-        return db.item[UnityEngine.Random.Range(0, db.item.Length)];
+        if (db == null || db.item == null || db.item.Length == 0)
+            return null;
+
+        // 1. Roll rarity từ LevelManager (CÓ LUCK)
+        var rolledTier = LevelManager.Instance.PickTier();
+
+        // 2. Lọc item theo rarity
+        List<Item> candidates = new List<Item>();
+        foreach (var item in db.item)
+        {
+            if (item.rarity == rolledTier)
+                candidates.Add(item);
+        }
+
+        // 3. Fallback nếu tier đó không có item
+        if (candidates.Count == 0)
+        {
+            Debug.LogWarning($"[Loot] Không có item rarity {rolledTier}, fallback random");
+            return db.item[UnityEngine.Random.Range(0, db.item.Length)];
+        }
+
+        // 4. Random 1 item trong tier
+        return candidates[UnityEngine.Random.Range(0, candidates.Count)];
     }
 }
 

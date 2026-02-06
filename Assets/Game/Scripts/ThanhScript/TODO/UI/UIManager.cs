@@ -15,6 +15,11 @@ public class UIManager : MonoBehaviour
     private TMP_Text coinCount;
     private TMP_Text countdownTimer;
 
+    //Boss HP Bars Container
+    private GameObject bossHPBarPrefab; 
+    private Transform container;
+    private Dictionary<EnemyStats, BossHPBarUI> activeBars = new Dictionary<EnemyStats, BossHPBarUI>();
+
     void Awake()
     {
         if (Instance != null)
@@ -39,6 +44,11 @@ public class UIManager : MonoBehaviour
         go = GameObject.FindWithTag("Countdown Timer");
         countdownTimer = go.GetComponentInChildren<TMP_Text>();
 
+        go = GameObject.FindWithTag("Boss HP Container");
+        container = go.GetComponent<Transform>();
+
+        bossHPBarPrefab = PrefabDatabase.Instance.bossHPBar;
+
         levelUpUI = FindFirstObjectByType<LevelUpUI>();
         inventoryUI = FindFirstObjectByType<InventoryUI>();
     }
@@ -54,11 +64,14 @@ public class UIManager : MonoBehaviour
         InventoryManager.Instance.OnInventoryChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveWeaponsChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveBookBuffsChanged += HandleInventoryChanged;
+
+        BossManager.Instance.OnBossSpawned += BossManager_OnBossSpawned;
+        BossManager.Instance.OnBossDie += BossManager_OnBossDie;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-            inventoryUI.Toggle();
+        // if (Input.GetKeyDown(KeyCode.I))
+        //     inventoryUI.Toggle();
         UpdateTimerDisplay(EnemyManager.Instance.countdown);
     }
     private void OnDisable()
@@ -73,6 +86,9 @@ public class UIManager : MonoBehaviour
         InventoryManager.Instance.OnInventoryChanged -= HandleInventoryChanged;
         InventoryManager.Instance.OnActiveWeaponsChanged -= HandleInventoryChanged;
         InventoryManager.Instance.OnActiveBookBuffsChanged -= HandleInventoryChanged;
+
+        BossManager.Instance.OnBossSpawned -= BossManager_OnBossSpawned;
+        BossManager.Instance.OnBossDie -= BossManager_OnBossDie;
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
@@ -91,19 +107,32 @@ public class UIManager : MonoBehaviour
         healthBarUI.SetHealth(e.currentHealth, e.maxHealth);
     }
 
+    private void BossManager_OnBossSpawned(object sender, BossManager.OnBossSpawnedEventArgs e)
+    {
+        AddBossHPBar(e.bossStat);
+    }
+
+    private void BossManager_OnBossDie(object sender, BossManager.OnBossDieEventArgs e)
+    {
+        RemoveBossHPBar(e.bossStat);
+    }
+
     void HandleLevelUp(object sender, LevelManager.LevelUpEventArgs e)
     {
+        xpBarUI.StartRainbowEffect();
         levelUpUI.Show(e);
     }
 
     void HandleUpgradeApplied(object sender, LevelManager.UpgradeSelectedEventArgs e)
     {
+        xpBarUI.StopRainbowEffect();
         levelUpUI.Hide();
     }
 
     void HandleInventoryChanged(object sender, System.EventArgs e)
     {
         inventoryUI.RefreshAll();
+        inventoryUI.RefreshUIScene();
     }
 
     void UpdateTimerDisplay(float time)
@@ -117,5 +146,39 @@ public class UIManager : MonoBehaviour
 
         // format mm:ss (two digits each)
         countdownTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void AddBossHPBar(BossStats boss) 
+    {
+        GameObject barObj = Instantiate(bossHPBarPrefab, container); 
+        BossHPBarUI barUI = barObj.GetComponent<BossHPBarUI>(); 
+        barUI.Init(boss); 
+        
+        activeBars[boss] = barUI; // store by reference
+        ResizeBars();
+    }
+
+    public void RemoveBossHPBar(BossStats boss) 
+    {
+        if (activeBars.TryGetValue(boss, out BossHPBarUI barUI)) 
+        { 
+            Destroy(barUI.gameObject); 
+            activeBars.Remove(boss); 
+            ResizeBars(); 
+        }
+    }
+
+    private void ResizeBars() 
+    {
+        int count = activeBars.Count; if (count == 0) return; 
+        float widthPercent = 1f / count; int i = 0; 
+        foreach (var bar in activeBars.Values) 
+        { 
+            RectTransform rt = bar.GetComponent<RectTransform>(); 
+            rt.anchorMin = new Vector2(i * widthPercent, 0); 
+            rt.anchorMax = new Vector2((i + 1) * widthPercent, 1); 
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero; 
+            i++; 
+        }
     }
 }
