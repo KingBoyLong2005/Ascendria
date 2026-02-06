@@ -10,6 +10,7 @@
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.netcode.gameobjects": "2.4.4",
     "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.polybrush": "1.1.8",
     "com.unity.postprocessing": "3.5.0",
     "com.unity.render-pipelines.universal": "17.0.4",
     "com.unity.services.multiplayer": "1.1.5",
