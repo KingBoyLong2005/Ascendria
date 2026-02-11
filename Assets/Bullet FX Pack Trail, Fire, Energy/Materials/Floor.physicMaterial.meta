@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c6a6ad2197b4da145a9aa50f43cbde71
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315271
+  packageName: 'Bullet FX Pack: Trail, Fire & Energy'
+  packageVersion: 1.0.0
+  assetPath: Assets/Bullet FX Pack Trail, Fire, Energy/Materials/Floor.physicMaterial
+  uploadId: 753432

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a7719756372b40748ac20d78cd04d36e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315271
+  packageName: 'Bullet FX Pack: Trail, Fire & Energy'
+  packageVersion: 1.0.0
+  assetPath: Assets/Bullet FX Pack Trail, Fire, Energy/Shaders/BulletShader.shader
+  uploadId: 753432
