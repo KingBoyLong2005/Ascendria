@@ -26,9 +26,23 @@ public class EnemyStats : MonoBehaviour
 
         currentHealth = baseMaxHealth;
     }
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     if (collision.gameObject.CompareTag("Player"))
+    //     {
+    //         Debug.Log($"🎯 {enemyName} ENTERED collision with Player");
 
+    //         // Cho phép đánh ngay lần đầu tiên
+    //         if (Time.time >= nextAttack)
+    //         {
+    //             HitPlayer();
+    //             nextAttack = Time.time + attackCD;
+    //         }
+    //     }
+    // }
     //Attack cd for enemy
-    private void OnCollisionStay(Collision other)
+
+    private void OnTriggerStay(Collider other)
     {
         if (Time.time >= nextAttack)
         {
@@ -76,6 +90,10 @@ public class EnemyStats : MonoBehaviour
 
     private void HitPlayer()
     {
+        Debug.Log($"🎯 [HIT EVENT] {enemyName} hit player - Sending event to EnemyManager");
+        Debug.Log($"   ├─ Enemy GameObject: {this.gameObject.name}");
+        Debug.Log($"   ├─ Attack Value: {Attack}");
+        Debug.Log($"   └─ Event Time: {Time.time}");
         EnemyManager.Instance.EnemyHitPlayer(this.gameObject, Attack);
     }
 
