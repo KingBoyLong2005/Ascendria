@@ -14,12 +14,12 @@ public class DamageManager : MonoBehaviour
         }
 
         Instance = this;
-    }
-
-    public void Start()
-    {
+    // }
+    // public void Start()
+    // {
         EnemyManager.Instance.OnEnemyHitPlayer += EnemyManager_OnEnemyHitPlayer;
         WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
+        Debug.Log("✅ DamageManager subscribed to events");
     }
 
     private void OnDisable()
@@ -30,10 +30,19 @@ public class DamageManager : MonoBehaviour
 
     private void EnemyManager_OnEnemyHitPlayer(object sender, EnemyManager.OnEnemyHitPlayerEventArgs e)
     {
+        Debug.Log($"🎯 [DAMAGE EVENT] Enemy hit player detected!");
+        Debug.Log($"   └─ Enemy Attack Value: {e.enemyAttack}");
+        Debug.Log($"   └─ Player Armor: {PlayerStatManager.Instance.Armor}");
+        
         float finalDamage = CalculateEnemyDamage(e.enemyAttack);
+        
+        Debug.Log($"   └─ Final Damage Calculated: {finalDamage}");
+        Debug.Log($"   └─ Player Health BEFORE: {PlayerStatManager.Instance.MaxHealth}"); // Note: Should track current health
 
         // then apply damage to player
         PlayerStatManager.Instance.TakeDamage(finalDamage);
+        
+        Debug.Log($"   └─ Damage Applied to Player ✓");
     }
 
     private void WeaponManager_OnWeaponHitEnemy(object sender, WeaponManager.OnWeaponHitEnemyEventArgs e)
@@ -52,7 +61,7 @@ public class DamageManager : MonoBehaviour
 
         float finalDamage = enemyAttack - charArmor;
         if (finalDamage <= 0) finalDamage = 1f;
-        //Debug.Log($"Final enemy damage: {finalDamage}");
+        Debug.Log($"Final enemy damage: {finalDamage}");
 
         return finalDamage;
     }
