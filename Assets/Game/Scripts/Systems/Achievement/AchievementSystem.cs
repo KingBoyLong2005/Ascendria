@@ -1,4 +1,4 @@
-
+using UnityEngine;
 using System.Collections.Generic;
 
 public class AchievementSystem
@@ -26,9 +26,41 @@ public class AchievementSystem
     //Gọi khởi tạo AchievementSystem tại scene đầu tiên (có lẽ cần trước MenuScene)
     //sau này cần thêm loading scene để load các dữ liệu đã lưu local như game NinjaSurvival nữa
 
-    public void Initialize(AchievementDatabase db)
+    public void Initialize()
     {
-        database = db;
+        database = Resources.Load<AchievementDatabase>("Achievement/AchievementDB");
+
+        //Test log
+        if (database == null)
+        {
+            Debug.LogError("❌ AchievementDB NOT FOUND in Resources folder!");
+            return;
+        }
+
+        Debug.Log("✅ AchievementDB loaded successfully!");
+
+        if (database.achievements == null || database.achievements.Length == 0)
+        {
+            Debug.LogWarning("⚠ AchievementDB loaded but achievements array is empty!");
+        }
+        else
+        {
+            Debug.Log($"📦 Total Achievements: {database.achievements.Length}");
+
+            foreach (var achievement in database.achievements)
+            {
+                if (achievement == null)
+                {
+                    Debug.LogWarning("⚠ Found NULL achievement in database!");
+                    continue;
+                }
+
+                Debug.Log(
+                    $"ID: {achievement.id} | Name: {achievement.displayName} | Target: {achievement.target}"
+                );
+            }
+        }
+        //end test log
 
         progressList = saveFile.Load();
 
