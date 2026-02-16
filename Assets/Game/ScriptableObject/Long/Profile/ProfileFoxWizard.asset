@@ -22,4 +22,4 @@ MonoBehaviour:
   Wise: 1
   modelPrefab: {fileID: 925883790954956909, guid: ec0f11c6a3a8388469d933fe3dde6cff, type: 3}
   animatorController: {fileID: 9100000, guid: a14e415f27cd5d944891758334117644, type: 2}
-  startingWeapon: {fileID: 11400000, guid: 9e72055a24e6ccd4aa0066ebf4b84435, type: 2}
+  startingWeapon: {fileID: 11400000, guid: d88b47c713323aa4fbaabc4b79727b0e, type: 2}
