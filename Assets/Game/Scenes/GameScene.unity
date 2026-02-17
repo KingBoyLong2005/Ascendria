@@ -3906,7 +3906,7 @@ MonoBehaviour:
   buffsParent: {fileID: 810843261}
   itemsParent: {fileID: 955817772}
   weaponsParentUIScene: {fileID: 768150322}
-  buffsParentUIScene: {fileID: 0}
+  buffsParentUIScene: {fileID: 341192003}
   slotPrefab: {fileID: 2458617566939704593, guid: 3840462261aa1d64c82ba7bc6c37a53d, type: 3}
   cellSize: {x: 100, y: 100}
   spacing: {x: 10, y: 10}
