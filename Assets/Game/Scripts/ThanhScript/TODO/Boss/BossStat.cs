@@ -41,6 +41,6 @@ public class BossStats : EnemyStats
     {
         base.Die(); 
 
-        BossManager.Instance.BossDie(this);
+        BossManager.Instance.BossDie(this, this.gameObject.transform.position);
     }
 }
