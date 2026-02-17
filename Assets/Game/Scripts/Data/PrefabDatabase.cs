@@ -25,6 +25,7 @@ public class PrefabDatabase : ScriptableObject
     public GameObject health;
     public GameObject exp;
     public GameObject coin;
+    public GameObject lootChest;
 
     [Header("Audio BGM")]
     public AudioClip mapTheme;

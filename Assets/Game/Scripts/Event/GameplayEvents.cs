@@ -22,8 +22,8 @@ public static class GameplayEvents
         OnEventInteracted?.Invoke(eventObject);
     }
 
-    public static void RaiseLootChestCollected(Item randomItem)
+    public static void RaiseLootChestCollected(Item item)
     {
-        OnLootChestCollected?.Invoke(randomItem);
+        OnLootChestCollected?.Invoke(item);
     }
 }

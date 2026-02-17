@@ -15,17 +15,17 @@ public class LootDropManager : MonoBehaviour
     {
         lootTable.Add(PrefabDatabase.Instance.health);
         lootTable.Add(PrefabDatabase.Instance.exp);
-        //lootChest = PrefabDatabase.Instance.lootChest;
+        lootChest = PrefabDatabase.Instance.lootChest;
     }
     private void OnEnable()
     {
         EnemyManager.Instance.OnDead += EnemyManager_OnDead;
-        //BossManager.Instance.OnBossDie += BossManager_OnBossDead;
+        BossManager.Instance.OnBossDie += BossManager_OnBossDead;
     }
     private void OnDisable()
     {
         EnemyManager.Instance.OnDead -= EnemyManager_OnDead;
-        //BossManager.Instance.OnBossDie -= BossManager_OnBossDead;
+        BossManager.Instance.OnBossDie -= BossManager_OnBossDead;
     }
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)

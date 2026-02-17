@@ -13,6 +13,7 @@ public class PlayerStatManager : MonoBehaviour
     public float baseMoveSpeed = 5f;
     public float baseArmor = 5f;
     private float baseCoin = 5f;
+    private float baseDiscard = 2f;
 
     public float baseLuck = 0f;
     public float baseWealth = 0f;
@@ -54,8 +55,13 @@ public class PlayerStatManager : MonoBehaviour
 
     private float wiseModifierFlat = 0f;
     private float wiseModifierMult = 1f;
+
     private float coinModifierFlat = 0f;
     private float coinModifierMult = 1f;
+
+    private float discardModifierFlat = 0f;
+    private float discardModifierMult = 1f;
+
     private ProfileCharacterLoader loaderProfile;
 
     float timer;
@@ -189,8 +195,15 @@ public class PlayerStatManager : MonoBehaviour
             return (baseCoin + coinModifierFlat) * coinModifierMult;
         }
     }
+    // ITEMS DISCARD ATTEMPT
+    public float Discard
+    {
+        get
+        {
+            return (baseDiscard + discardModifierFlat) * discardModifierMult;
+        }
+    }
 
-    
     // STAT MODIFYING METHODS
     public void ModifyHealth(float addFlat = 0f, float mult = 1f)
     {
@@ -238,5 +251,10 @@ public class PlayerStatManager : MonoBehaviour
         wiseModifierMult *= mult;
     }
 
+    public void ModifyDiscard(float addFlat = 0f, float mult = 1f)
+    {
+        discardModifierFlat += addFlat;
+        discardModifierMult *= mult;
+    }
 }
 
