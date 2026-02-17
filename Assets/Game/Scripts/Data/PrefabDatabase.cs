@@ -54,4 +54,33 @@ public class PrefabDatabase : ScriptableObject
             return _instance;
         }
     }
+
+    [Header("=== READY SCENE SELECTIONS ===")]
+    [Tooltip("Character được chọn từ Ready Scene")]
+    public ProfileCharacterData selectedCharacter;
+
+    [Tooltip("Map được chọn từ Ready Scene (0=first, 1=second, 2=third)")]
+    public int selectedMapIndex = 0;
+
+    // Helper methods
+    public GameObject GetSelectedMapPrefab()
+    {
+        switch (selectedMapIndex)
+        {
+            case 0: return firstMapPrefab;
+            case 1: return secondMapPrefab;
+            case 2: return thirdMapPrefab;
+            default: return firstMapPrefab;
+        }
+    }
+
+    public void SetSelectedMap(int index)
+    {
+        selectedMapIndex = Mathf.Clamp(index, 0, 2);
+    }
+
+    public void SetSelectedCharacter(ProfileCharacterData character)
+    {
+        selectedCharacter = character;
+    }
 }
