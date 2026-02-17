@@ -25,6 +25,7 @@ MonoBehaviour:
   health: {fileID: 5040817921139094699, guid: 3ce7abd64711b2c48b6314c774e317cb, type: 3}
   exp: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
   coin: {fileID: 0}
+  lootChest: {fileID: 8477327709802427949, guid: 184f1abc05b5506448395c6e5bedfc93, type: 3}
   mapTheme: {fileID: 8300000, guid: 407b984e819b43042a222a0db7a6f7f8, type: 3}
   bossTheme: {fileID: 0}
   gateOpenSfx: {fileID: 0}

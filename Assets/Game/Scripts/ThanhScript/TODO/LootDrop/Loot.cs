@@ -16,7 +16,11 @@ public class Loot : MonoBehaviour
 
     public void SpawnLoot(Vector3 deathPos)
     {
-        PoolManager.Spawn(this.gameObject, deathPos, Quaternion.identity);
+        RaycastHit hit; 
+        if (Physics.Raycast(deathPos, Vector3.down, out hit, Mathf.Infinity)) 
+        {
+            PoolManager.Spawn(this.gameObject, hit.point, Quaternion.identity);
+        }
     }
 
     void Update()
@@ -45,6 +49,10 @@ public class Loot : MonoBehaviour
             {
                 CollectHealth();
             }
+            if (gameObject.CompareTag("Loot Chest"))
+            {
+                CollectLootChest();
+            }
         }
     }
 
@@ -70,5 +78,18 @@ public class Loot : MonoBehaviour
         // then return to pool / deactivate
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
         //Debug.Log("Loot Collected");
+    }
+
+    void CollectLootChest()
+    {
+        //Or ChestEventHandler
+        var item = ItemManager.Instance.GetRandomItem();
+        GameplayEvents.RaiseLootChestCollected(item);
+
+        playerPos = null; //reset magnet effect when returned to pool
+
+        // then return to pool / deactivate
+        PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        Debug.Log("Loot Chest Picked Up");
     }
 }

@@ -1428,6 +1428,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.0018310547, y: 0.0012207031}
+  m_AnchoredPosition: {x: -0.0018310547, y: 0.0012207031}
   m_SizeDelta: {x: -709.64, y: -342}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941796470
@@ -1612,3 +1613,4 @@ SceneRoots:
   - {fileID: 2133943045}
   - {fileID: 1671015926}
   - {fileID: 1806907390}
+  - {fileID: 1161562374}

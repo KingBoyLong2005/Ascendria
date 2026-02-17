@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2431b49ea9ca243a72bc46241813b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropChance: 1
+  dropChance: 0.2
   attractSpeed: 10
   amount: 10
 --- !u!114 &4075695040413680635

@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
     private InventoryUI inventoryUI;
     private HealthBarUI healthBarUI;
     private XPBarUI xpBarUI;
+    private OpenChestUI openChestUI;
+
     private TMP_Text killCount;
     private TMP_Text coinCount;
     private TMP_Text countdownTimer;
@@ -51,6 +53,7 @@ public class UIManager : MonoBehaviour
 
         levelUpUI = FindFirstObjectByType<LevelUpUI>();
         inventoryUI = FindFirstObjectByType<InventoryUI>();
+        openChestUI = FindFirstObjectByType<OpenChestUI>();
     }
     private void OnEnable()
     {
@@ -67,6 +70,8 @@ public class UIManager : MonoBehaviour
 
         BossManager.Instance.OnBossSpawned += BossManager_OnBossSpawned;
         BossManager.Instance.OnBossDie += BossManager_OnBossDie;
+
+        GameplayEvents.OnLootChestCollected += GameplayEvents_OnLootChestCollected;
     }
     void Update()
     {
@@ -89,7 +94,11 @@ public class UIManager : MonoBehaviour
 
         BossManager.Instance.OnBossSpawned -= BossManager_OnBossSpawned;
         BossManager.Instance.OnBossDie -= BossManager_OnBossDie;
+
+        GameplayEvents.OnLootChestCollected -= GameplayEvents_OnLootChestCollected;
     }
+
+    #region EVENT SIGNAL FUNCTIONS
 
     private void EnemyManager_OnDead(object sender, EnemyManager.OnEnemyDeathEventArgs e)
     {
@@ -134,6 +143,15 @@ public class UIManager : MonoBehaviour
         inventoryUI.RefreshAll();
         inventoryUI.RefreshUIScene();
     }
+
+    private void GameplayEvents_OnLootChestCollected(Item obj)
+    {
+        openChestUI.Show(obj);
+    }
+
+    #endregion
+
+    #region SUPPORT FUNCTIONS
 
     void UpdateTimerDisplay(float time)
     {
@@ -181,4 +199,6 @@ public class UIManager : MonoBehaviour
             i++; 
         }
     }
+
+    #endregion
 }
