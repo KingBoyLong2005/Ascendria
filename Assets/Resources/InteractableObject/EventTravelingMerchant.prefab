@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 613389954441241529}
   - component: {fileID: 4292263257535638316}
   m_Layer: 10
-  m_Name: Event
+  m_Name: EventTravelingMerchant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
