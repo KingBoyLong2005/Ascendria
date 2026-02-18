@@ -22,6 +22,7 @@ public static class GameplayEvents
         OnEventInteracted?.Invoke(eventObject);
     }
 
+    //Thêm item vào inventory ??
     public static void RaiseLootChestCollected(Item item)
     {
         OnLootChestCollected?.Invoke(item);
