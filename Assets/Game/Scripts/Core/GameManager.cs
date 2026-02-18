@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
         var audioManagerObject = new GameObject("AudioManager");
         var audioManager = audioManagerObject.AddComponent<AudioManager>();
         //audioManager = gameObject.AddComponent<AudioManager>();
+        // LoadGameSelections();
         //Tạo MapManager
         mapManager = gameObject.AddComponent<MapManager01>();
         mapManager.OnMapReady += HandleMapReady;
@@ -62,6 +63,29 @@ public class GameManager : MonoBehaviour
  
     }
 
+    private void LoadGameSelections()
+    {
+        if (PrefabDatabase.Instance == null)
+        {
+            Debug.LogError("PrefabDatabase not found! Cannot load selections.");
+            return;
+        }
+
+        // Log selections for debugging
+        if (PrefabDatabase.Instance.selectedCharacter != null)
+        {
+            Debug.Log($"[GameManager] Selected Character: {PrefabDatabase.Instance.selectedCharacter.displayName}");
+        }
+        else
+        {
+            Debug.LogWarning("[GameManager] No character selected from Ready Scene!");
+        }
+
+        Debug.Log($"[GameManager] Selected Map Index: {PrefabDatabase.Instance.selectedMapIndex}");
+
+        // Note: MapManager và PlayerManager sẽ tự động sử dụng PrefabDatabase
+        // để load đúng map và apply character profile
+    }
     private void HandleMapReady(object sender, EventArgs e)
     {
         //audioManager = gameObject.AddComponent<AudioManager>();

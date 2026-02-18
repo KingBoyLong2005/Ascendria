@@ -14,11 +14,11 @@ public class BulletWeapon : Weapon
     
     [Header("Masks")]
     public LayerMask enemyMask;
-    public LayerMask bounceableMask; // Terrain, walls, etc.
+    public LayerMask bounceableMask;
     
     [Header("Targeting")]
     public float targetingRadius = 20f;
-    public float spreadAngle = 15f; // Góc lan tỏa khi bắn nhiều viên
+    public float spreadAngle = 15f;
 
     // ==================== UPGRADE CONFIG ====================
     private struct UpgradeConfig
@@ -50,27 +50,63 @@ public class BulletWeapon : Weapon
     {
         Collider[] enemies = Physics.OverlapSphere(ctx.owner.position, targetingRadius, enemyMask);
         
+        // Nếu có enemy → tìm enemy gần nhất
+        Transform targetEnemy = null;
+        if (enemies.Length > 0)
+        {
+            targetEnemy = GetNearestEnemy(enemies, ctx.owner.position);
+        }
+
+        // Bắn từng viên đạn
         for (int i = 0; i < projectileCount; i++)
         {
-            Vector3 direction = enemies.Length > 0
-                ? GetDirectionToEnemy(enemies, ctx, i)
-                : GetSpreadDirection(ctx.forward, i);
+            Vector3 direction;
+
+            if (targetEnemy != null)
+            {
+                // Có enemy → bắn về phía enemy với spread nhỏ
+                direction = GetDirectionToEnemy(targetEnemy, ctx, i);
+            }
+            else
+            {
+                // Không có enemy → bắn về phía gần nhất theo hướng player đang nhìn
+                direction = GetSpreadDirection(ctx.forward, i);
+            }
             
             ShootBullet(ctx, direction);
         }
     }
 
-    private Vector3 GetDirectionToEnemy(Collider[] enemies, WeaponContext ctx, int bulletIndex)
+    private Transform GetNearestEnemy(Collider[] enemies, Vector3 fromPosition)
     {
-        Transform enemy = enemies[Random.Range(0, enemies.Length)].transform;
+        Transform nearest = null;
+        float minDistance = float.MaxValue;
+
+        foreach (Collider col in enemies)
+        {
+            float dist = Vector3.Distance(fromPosition, col.transform.position);
+            if (dist < minDistance)
+            {
+                minDistance = dist;
+                nearest = col.transform;
+            }
+        }
+
+        return nearest;
+    }
+
+    private Vector3 GetDirectionToEnemy(Transform enemy, WeaponContext ctx, int bulletIndex)
+    {
         Vector3 spawnPos = GetSpawnPos(ctx);
         Vector3 targetPos = GetEnemyCenter(enemy);
         Vector3 baseDirection = (targetPos - spawnPos).normalized;
         
-        // Add spread if multiple projectiles
+        // Nếu bắn nhiều viên → thêm spread nhỏ xung quanh enemy
         if (projectileCount > 1)
         {
-            float angle = spreadAngle * ((float)bulletIndex / (projectileCount - 1) - 0.5f);
+            // Tính góc spread từ -spreadAngle/2 đến +spreadAngle/2
+            float normalizedIndex = (float)bulletIndex / Mathf.Max(1, projectileCount - 1); // 0 to 1
+            float angle = spreadAngle * (normalizedIndex - 0.5f);
             return Quaternion.Euler(0, angle, 0) * baseDirection;
         }
         
@@ -81,7 +117,9 @@ public class BulletWeapon : Weapon
     {
         if (projectileCount == 1) return baseDirection;
         
-        float angle = spreadAngle * ((float)bulletIndex / (projectileCount - 1) - 0.5f);
+        // Spread đều xung quanh hướng base
+        float normalizedIndex = (float)bulletIndex / Mathf.Max(1, projectileCount - 1);
+        float angle = spreadAngle * (normalizedIndex - 0.5f);
         return Quaternion.Euler(0, angle, 0) * baseDirection;
     }
 
@@ -106,7 +144,7 @@ public class BulletWeapon : Weapon
         
         if (go != null)
         {
-            go.transform.localScale = Vector3.one * baseSize;
+            // go.transform.localScale = Vector3.one * baseSize;
             var bullet = go.GetComponent<BulletProjectile>();
             bullet?.Initialize(
                 baseDamage, 

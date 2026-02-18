@@ -17,12 +17,13 @@
 
 
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement; // Quan trọng để quản lý Scene
 
 public class MainMenuManager : MonoBehaviour
 {
     // Tên Scene chứa game chính của bạn (ví dụ: "GameScene")
-    public string gameSceneName = "MapNodeScene"; 
+    // public string gameSceneName = "MapNodeScene"; 
 
     /// <summary>
     /// Hàm được gọi khi nhấn nút Play.
@@ -30,10 +31,17 @@ public class MainMenuManager : MonoBehaviour
     public void PlayGame()
     {
         // Tải Scene chứa game chính
-        SceneManager.LoadScene(gameSceneName); 
+        SceneManager.LoadScene("ReadyScene"); 
         Debug.Log("Starting Game...");
     }
-
+    public void Shop()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
+    public void Achive()
+    {
+        SceneManager.LoadScene("AchiveScene");
+    }
     /// <summary>
     /// Hàm được gọi khi nhấn nút Quit.
     /// </summary>

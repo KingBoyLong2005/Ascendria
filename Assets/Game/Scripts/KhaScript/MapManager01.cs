@@ -24,7 +24,8 @@ public class MapManager01 : MonoBehaviour
 
     void Awake()
     {
-        mapPrefab = PrefabDatabase.Instance.firstMapPrefab;
+        // Lấy map prefab theo selection từ ReadyScene, fallback về firstMapPrefab nếu chưa chọn
+        mapPrefab = PrefabDatabase.Instance.GetSelectedMapPrefab();
         bossGatePrefab = PrefabDatabase.Instance.bossGatePrefab;
 
         navMeshManager = gameObject.AddComponent<NavMeshManager>();
@@ -32,14 +33,14 @@ public class MapManager01 : MonoBehaviour
 
     private void Start()
     {
+        // Load map trước (spawn map + tìm SpawnPointManager), sau đó mới fire OnMapReady
         LoadMapAndInitializeManagers();
-        OnMapReady?.Invoke(this, EventArgs.Empty);
     }
     private void LoadMapAndInitializeManagers()
     {
         Debug.Log("<color=yellow>[MapManager]</color> Bắt đầu tải Map và khởi tạo các Manager...");
 
-        // 1. Logic tải Map (giữ nguyên)
+        // 1. Logic tải Map
         if (currentMapInstance != null)
         {
             GameObject.Destroy(currentMapInstance);
@@ -51,6 +52,15 @@ public class MapManager01 : MonoBehaviour
 
             // 2. Tìm kiếm SpawnPointManager ngay sau khi Map được tạo
             currentSpawnPointManager = currentMapInstance.GetComponentInChildren<SpawnPointManager>();
+
+            if (currentSpawnPointManager == null)
+            {
+                Debug.LogError("[MapManager] Không tìm thấy SpawnPointManager trong Map Prefab!");
+            }
+            else
+            {
+                Debug.Log("<color=green>[MapManager]</color> SpawnPointManager đã được khởi tạo.");
+            }
 
             // 3. Tìm Map Spawn Point mặc định (Vị trí dự phòng nếu cần)
             Transform defaultSpawnPoint = currentMapInstance.transform.Find("DefaultSpawnPoint");
@@ -64,11 +74,17 @@ public class MapManager01 : MonoBehaviour
         else
         {
             Debug.LogError("[MapManager] Thiếu Map Prefab.");
+            return; // Không tiếp tục nếu không có map
         }
+
         // 4. Tạo Boss Gate sau khi Map và SpawnPointManager đã sẵn sàng
         SpawnBossGate();
         // 5. Phát nhạc nền của Map
         AudioManager.Instance.PlayMusic(PrefabDatabase.Instance.mapTheme);
+
+        // 6. Fire OnMapReady SAU KHI map đã được spawn và SpawnPointManager đã tìm thấy
+        Debug.Log("<color=green>[MapManager]</color> Map đã sẵn sàng. Firing OnMapReady...");
+        OnMapReady?.Invoke(this, EventArgs.Empty);
     }
 
     // Hàm Spawn Boss Gate 
