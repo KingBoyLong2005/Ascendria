@@ -15,7 +15,7 @@ MonoBehaviour:
   Icon: {fileID: 0}
   level: 1
   weaponName: Bullet
-  baseDamage: 10
+  baseDamage: 20
   baseRange: 2
   baseSize: 1
   baseCooldown: 1
