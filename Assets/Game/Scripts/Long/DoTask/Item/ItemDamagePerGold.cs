@@ -4,74 +4,98 @@ using UnityEngine;
 public class ItemDamagePerGold : Item
 {
     [Header("Stats")]
-    [Tooltip("Tăng % damage mỗi 10 Gold")]
+    [Tooltip("Tăng % damage mỗi 10 Gold nhận được (không tính gold trước khi có item)")]
     public float damagePercentPer10Gold = 1f; // 1% per 10 gold
-    
-    private float lastGoldAmount = 0f;
+
+    // Gold tại thời điểm item được equip → làm mốc, không tính retroactive
+    private float goldAtEquip = 0f;
+
+    // Tổng gold đã được tính vào damage bonus (theo tier)
+    private float goldCountedSoFar = 0f;
+
+    // Tổng bonus đã cộng vào để có thể remove sau
+    private float totalAppliedBonus = 0f;
 
     public override void Apply(int multiplier = 1)
     {
-        // Update damage bonus dựa trên gold hiện tại
-        // UpdateDamageBonus(stats, multiplier);
-        
-        Debug.Log($"<color=green>[Item]</color> Applied Damage Per Gold item (x{multiplier})");
+        // Lấy gold hiện tại làm mốc — gold trước đó không được tính
+        goldAtEquip = InventoryManager.Instance != null
+            ? InventoryManager.Instance.GetTotalCoins()
+            : 0f;
+
+        goldCountedSoFar = 0f;
+        totalAppliedBonus = 0f;
+
+        // Subscribe vào OnDead để check gold sau mỗi kill (gold thường tăng khi kill)
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.OnDead += OnEnemyKilled;
+        }
+
+        Debug.Log($"<color=green>[ItemDamagePerGold]</color> Applied x{multiplier} - " +
+                  $"Gold mốc: {goldAtEquip}");
     }
 
     public override void Remove(int multiplier = 1)
     {
-        // Recalculate damage bonus without this item
-        // float currentBonus = CalculateDamageBonus(stats, multiplier);
-        // stats.damagePerGoldBonus -= currentBonus;
-        // stats.damageMultiplier = 1f + ((stats.damagePerKillBonus + stats.damagePerGoldBonus) / 100f);
-        
-        Debug.Log($"<color=red>[Item]</color> Removed Damage Per Gold item (x{multiplier})");
-    }
-
-    private void Update()
-    {
-        // Continuously update damage bonus khi gold thay đổi
-        var stats = PlayerStatManager.Instance;
-        if (stats == null) return;
-
-        // Check nếu gold đã thay đổi
-        float currentGold = stats.Coin;
-        if (Mathf.Abs(currentGold - lastGoldAmount) >= 10f)
+        if (EnemyManager.Instance != null)
         {
-            lastGoldAmount = currentGold;
-            
-            // Lấy số lượng item trong inventory
-            int itemCount = 0;
-            if (InventoryManager.Instance != null &&
-                InventoryManager.Instance.ownedItems.TryGetValue(this, out itemCount))
-            {
-                if (itemCount > 0)
-                {
-                    // UpdateDamageBonus(stats, itemCount);
-                }
-            }
+            EnemyManager.Instance.OnDead -= OnEnemyKilled;
         }
+
+        // Trừ lại toàn bộ bonus đã cộng
+        if (totalAppliedBonus > 0f && PlayerStatManager.Instance != null)
+        {
+            PlayerStatManager.Instance.ModifyDamage(addFlat: -totalAppliedBonus);
+            Debug.Log($"<color=red>[ItemDamagePerGold]</color> Removed bonus: -{totalAppliedBonus:F2}%");
+        }
+
+        goldAtEquip = 0f;
+        goldCountedSoFar = 0f;
+        totalAppliedBonus = 0f;
+
+        Debug.Log($"<color=red>[ItemDamagePerGold]</color> Removed x{multiplier}");
     }
 
-    // private void UpdateDamageBonus(int multiplier)
-    // {
-    //     float newBonus = CalculateDamageBonus(stats, multiplier);
-        
-        // Remove old bonus và thêm new bonus
-        // float oldBonus = stats.damagePerGoldBonus;
-        // stats.damagePerGoldBonus = newBonus;
-        // stats.damageMultiplier = 1f + ((stats.damagePerKillBonus + stats.damagePerGoldBonus) / 100f);
-        
-        // if (Mathf.Abs(newBonus - oldBonus) > 0.01f)
-        // {
-        //     Debug.Log($"<color=yellow>[Item]</color> Gold bonus: +{stats.damagePerGoldBonus:F1}% damage " +
-        //              $"({stats.Coin} gold)");
-        // }
-    // }
+    private void OnEnemyKilled(object sender, EnemyManager.OnEnemyDeathEventArgs e)
+    {
+        CheckGoldBonus();
+    }
 
-    // private float CalculateDamageBonus(int multiplier)
-    // {
-    //     float goldAmount = stats.Coin;
-    //     float goldTiers = Mathf.Floor(goldAmount / 10f);
-    //     return goldTiers * damagePercentPer10Gold * multiplier;
-    // }
+    /// <summary>
+    /// Gọi thủ công nếu gold tăng từ nguồn khác (chest, shop...).
+    /// Có thể gọi từ nơi khác khi player nhận gold.
+    /// </summary>
+    public void CheckGoldBonus()
+    {
+        var stats = PlayerStatManager.Instance;
+        var inv = InventoryManager.Instance;
+        if (stats == null || inv == null) return;
+
+        int itemCount = inv.GetItemCount(this);
+        if (itemCount <= 0) return;
+
+        // Gold mới nhận được kể từ khi equip item
+        float currentTotal = inv.GetTotalCoins();
+        float goldSinceEquip = Mathf.Max(0f, currentTotal - goldAtEquip);
+
+        // Tính tier mới (mỗi 10 gold = 1 tier)
+        float newTierCount = Mathf.Floor(goldSinceEquip / 10f);
+        float oldTierCount = Mathf.Floor(goldCountedSoFar / 10f);
+
+        float newTiers = newTierCount - oldTierCount;
+        if (newTiers <= 0f) return;
+
+        // Cập nhật gold đã đếm
+        goldCountedSoFar = goldSinceEquip;
+
+        // Cộng bonus damage
+        float bonus = newTiers * damagePercentPer10Gold * itemCount;
+        stats.ModifyDamage(addFlat: bonus);
+        totalAppliedBonus += bonus;
+
+        Debug.Log($"<color=yellow>[ItemDamagePerGold]</color> +{bonus:F2}% damage " +
+                  $"({newTiers} tier mới, total gold since equip: {goldSinceEquip:F0}, " +
+                  $"total bonus: {totalAppliedBonus:F2}%)");
+    }
 }
