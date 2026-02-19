@@ -15,6 +15,7 @@ public class PlayerStatManager : MonoBehaviour
     private float baseCoin = 5f;
     private float baseDiscard = 2f;
 
+    public float baseDamage = 0f;
     public float baseLuck = 0f;
     public float baseWealth = 0f;
     public float baseWise = 0f;
@@ -46,6 +47,9 @@ public class PlayerStatManager : MonoBehaviour
 
     private float armorModifierFlat = 0f;
     private float armorModifierMult = 1f;
+
+    private float damageModifierFlat = 0f;
+    private float damageModifierMult = 1f;
 
     private float luckModifierFlat = 0f;
     private float luckModifierMult = 1f;
@@ -161,6 +165,14 @@ public class PlayerStatManager : MonoBehaviour
             return (baseArmor + armorModifierFlat) * armorModifierMult;
         }
     }
+    // Damage
+    public float Damage
+    {
+        get
+        {
+            return(baseDamage + damageModifierFlat) * damageModifierMult;
+        }
+    }
     // LUCK
     public float Luck
     {
@@ -232,6 +244,11 @@ public class PlayerStatManager : MonoBehaviour
     {
         coinModifierFlat += addFlat;
         coinModifierMult *= mult;
+    }
+    public void ModifyDamage(float addFlat = 0f, float mult = 1f)
+    {
+        damageModifierFlat += addFlat;
+        damageModifierMult += mult;
     }
     public void ModifyLuck(float addFlat = 0f, float mult = 1f)
     {

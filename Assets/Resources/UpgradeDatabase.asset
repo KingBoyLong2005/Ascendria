@@ -17,6 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d88b47c713323aa4fbaabc4b79727b0e, type: 2}
   - {fileID: 11400000, guid: 08014bf8259eefa458b7b46a23379135, type: 2}
   - {fileID: 11400000, guid: 28bb6e62170cea74cb2bd172c92337ee, type: 2}
+  - {fileID: 11400000, guid: 34aa538fa6b6c24469f3dd3aaebf30a0, type: 2}
+  - {fileID: 11400000, guid: 9e72055a24e6ccd4aa0066ebf4b84435, type: 2}
   allBuffs:
   - {fileID: 11400000, guid: f9a6bba77b6fdef4cbaff9828f1f98e3, type: 2}
   - {fileID: 11400000, guid: c966624db35d7e142adbfa172547a88a, type: 2}
