@@ -141,7 +141,8 @@ public class BulletWeapon : Weapon
         Quaternion rotation = Quaternion.LookRotation(direction);
         
         GameObject go = PoolManager.Spawn(bulletPrefab, spawnPos, rotation);
-        
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.bulletSfx);
+
         if (go != null)
         {
             // go.transform.localScale = Vector3.one * baseSize;

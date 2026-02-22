@@ -26,9 +26,25 @@ MonoBehaviour:
   exp: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
   coin: {fileID: 0}
   lootChest: {fileID: 8477327709802427949, guid: 184f1abc05b5506448395c6e5bedfc93, type: 3}
-  mapTheme: {fileID: 8300000, guid: 407b984e819b43042a222a0db7a6f7f8, type: 3}
-  bossTheme: {fileID: 0}
-  gateOpenSfx: {fileID: 0}
+  mapTheme: {fileID: 8300000, guid: 7cbd6b20de85815499a1137dbc598454, type: 3}
+  bossTheme: {fileID: 8300000, guid: a6056a1376e5b3543b60dbfcb6f0234a, type: 3}
+  menuTheme: {fileID: 8300000, guid: d72154ab1bbfcda4b8c6b5797f2420f2, type: 3}
+  gateOpenSfx: {fileID: 8300000, guid: 87fb92344153fec4a9ff52b665be8f8c, type: 3}
   playerSpawnSfx: {fileID: 0}
-  bossSpawnSfx: {fileID: 0}
+  bossSpawnSfx: {fileID: 8300000, guid: d33cac9a79e8e2840b73b0df9a93f577, type: 3}
+  fireBallSfx: {fileID: 8300000, guid: 7e3bf0f6ee22ab3479a5c0b444932585, type: 3}
+  swordSfx: {fileID: 8300000, guid: fff3624973609864480a7f25d72ef730, type: 3}
+  bulletSfx: {fileID: 0}
+  lightningSfx: {fileID: 8300000, guid: 91e6bd0bfd2841047be30c3a36f968d2, type: 3}
+  auraSfx: {fileID: 8300000, guid: c5a43edfaa9268b42ad990e3790a3dfd, type: 3}
+  diceSfx: {fileID: 8300000, guid: 01b3ba2b3774c8c4e890e1539361abeb, type: 3}
+  aoeDamageSfx: {fileID: 8300000, guid: e76d4023da7a9c94db410cffc6dc702e, type: 3}
+  bloodSfx: {fileID: 8300000, guid: 286ad12fb14905a49957697c16947008, type: 3}
+  clickSfx: {fileID: 8300000, guid: 8ea675f85d69b674caa08f8703ba05dc, type: 3}
+  chestOpenSfx: {fileID: 8300000, guid: d2164d27da15792498ac10862f805494, type: 3}
+  levelUpSfx: {fileID: 8300000, guid: db9ea90cfe64337499a2c02fd3b4c03e, type: 3}
+  expCollectSfx: {fileID: 0}
+  coinCollectSfx: {fileID: 8300000, guid: b97cfc95a6878f040a97d56809dea674, type: 3}
   bossHPBar: {fileID: 1300022261346222137, guid: f02d32bfba421a84a8521f268b8a47f7, type: 3}
+  selectedCharacter: {fileID: 0}
+  selectedMapIndex: 0
