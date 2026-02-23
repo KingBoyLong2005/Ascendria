@@ -47,6 +47,10 @@ public class WeaponManager : MonoBehaviour
         {
             pa.OnPlayerAttackReady += HandlePlayerAttackReady;
             Debug.Log("WeaponManager SUB PlayerAttackReady");
+            if (pa.IsReady)  // cần thêm property IsReady vào PlayerAttack
+            {
+                HandlePlayerAttackReady(pa, EventArgs.Empty);
+            }
         }
 
         // đăng ký Inventory
@@ -78,7 +82,16 @@ public class WeaponManager : MonoBehaviour
     private void TryActivate()
     {
         if (activated) return;
+        // {
+        //     Debug.Log("activated lỗi");
+        //     return;
+        // }
         if (!playerReady || !inventoryReady) return;
+        // {
+        //     Debug.Log("(!playerReady || !inventoryReady) lỗi");
+        //     return;
+        // }
+        
 
         Debug.Log(">>> WeaponManager TRY ACTIVATE...");
 

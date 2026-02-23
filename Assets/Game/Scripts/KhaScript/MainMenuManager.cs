@@ -24,7 +24,7 @@ public class MainMenuManager : MonoBehaviour
 {
     // Tên Scene chứa game chính của bạn (ví dụ: "GameScene")
     // public string gameSceneName = "MapNodeScene"; 
-
+    public GameObject pannelSetting;
     /// <summary>
     /// Hàm được gọi khi nhấn nút Play.
     /// </summary>
@@ -45,6 +45,11 @@ public class MainMenuManager : MonoBehaviour
         AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.clickSfx);
         SceneManager.LoadScene("AchiveScene");
     }
+    public void Setting()
+    {
+        pannelSetting.SetActive(true);
+    }
+
     /// <summary>
     /// Hàm được gọi khi nhấn nút Quit.
     /// </summary>

@@ -12,6 +12,14 @@ public class PlayerAttack : MonoBehaviour
     public float spawnHeightOffset = 0.6f;
     public LayerMask obstacleMask;
     
+    public bool IsReady { get; private set; } = false;
+
+    // Chỗ nào bạn fire event OnPlayerAttackReady thì set IsReady = true trước
+    private void FireReadyEvent()
+    {
+        IsReady = true;
+        OnPlayerAttackReady?.Invoke(this, EventArgs.Empty);
+    }
     // public Weapon wp;
     public event EventHandler OnPlayerAttackReady;
     void Start()
@@ -21,7 +29,8 @@ public class PlayerAttack : MonoBehaviour
 
         // WeaponManager.Instance.AddWeapon(wp);
         // báo ready
-        OnPlayerAttackReady?.Invoke(this, EventArgs.Empty);
+        // OnPlayerAttackReady?.Invoke(this, EventArgs.Empty);
+        FireReadyEvent();
         Debug.Log("PlayerAttack READY event fired");
 
     }
