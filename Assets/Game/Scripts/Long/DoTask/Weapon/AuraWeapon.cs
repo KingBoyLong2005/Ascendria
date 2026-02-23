@@ -31,7 +31,7 @@ public class AuraWeapon : Weapon
     public override void Attack(WeaponContext ctx)
     {
         GameObject go = PoolManager.Spawn(auraPrefab, ctx.owner.position, auraPrefab.transform.rotation);
-        
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.auraSfx);
         if (go != null)
         {
             go.transform.SetParent(ctx.owner);

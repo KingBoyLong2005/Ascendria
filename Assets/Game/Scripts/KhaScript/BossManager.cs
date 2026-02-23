@@ -120,6 +120,8 @@ public class BossManager : MonoBehaviour
         {
             GameObject bossInstance = PoolManager.Spawn(prefab, spawnPos, spawnRot);
             bossInstance.GetComponent<EnemyAI>().Setup(player);
+            AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.bossSpawnSfx);
+            AudioManager.Instance.PlayMusic(PrefabDatabase.Instance.bossTheme);
 
             Debug.Log("<color=red>[BossManager]</color> Boss đã được Spawn thành công!");
             return bossInstance;
