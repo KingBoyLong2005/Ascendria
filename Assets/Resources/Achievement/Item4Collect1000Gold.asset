@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
   m_Name: Item4Collect1000Gold
   m_EditorClassIdentifier: 
-  id: Item4
+  id: Item4Collect1000Gold
   displayName: Collect 1000 gold
   description: Collect 1000 gold to unlock this item
   target: 1000

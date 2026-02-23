@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
   m_Name: Item5ReachLevel20
   m_EditorClassIdentifier: 
-  id: Item5
+  id: Item5ReachLevel20
   displayName: Reach level 20
   description: Reach level 20 to unlock this item
   target: 20

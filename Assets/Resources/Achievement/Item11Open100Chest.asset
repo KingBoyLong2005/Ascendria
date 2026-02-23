@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
   m_Name: Item11Open100Chest
   m_EditorClassIdentifier: 
-  id: Item11
+  id: Item11Open100Chest
   displayName: Open 100 chests
   description: Open 100 chests to unlock this item
   target: 100
