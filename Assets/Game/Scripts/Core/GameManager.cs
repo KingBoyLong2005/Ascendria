@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         Start,
         Running,
         Paused,
+        LevelUp,
         GameOver
     }
     public GameState currentState { get; private set; }
