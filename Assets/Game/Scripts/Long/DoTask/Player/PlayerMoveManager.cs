@@ -125,7 +125,7 @@ namespace StarterAssets
 
                 transform.rotation = Quaternion.Euler(0, rotation, 0);
             }
-
+            moveSpeed = PlayerStatManager.Instance.MoveSpeed;
             Vector3 moveDir = Quaternion.Euler(0, transform.eulerAngles.y, 0) * Vector3.forward;
             Vector3 velocity =
                 moveDir * moveSpeed * inputDir.magnitude +

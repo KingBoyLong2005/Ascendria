@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollideAgainst:
     serializedVersion: 2
-    m_Bits: 8577
+    m_Bits: 8448
   IgnoreTag: 
   TransparentLayers:
     serializedVersion: 2
