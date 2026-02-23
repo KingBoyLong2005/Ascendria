@@ -638,6 +638,7 @@ MonoBehaviour:
   baseAttack: 10
   baseMoveSpeed: 5
   baseArmor: 5
+  baseDamage: 0
   baseLuck: 0
   baseWealth: 0
   baseWise: 0
@@ -1055,7 +1056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollideAgainst:
     serializedVersion: 2
-    m_Bits: 257
+    m_Bits: 8577
   IgnoreTag: 
   TransparentLayers:
     serializedVersion: 2
