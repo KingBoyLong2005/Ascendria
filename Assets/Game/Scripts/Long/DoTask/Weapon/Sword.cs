@@ -44,7 +44,7 @@ public class Sword : Weapon
 
             HitBoxManager.Instance.RequestBox(ctx.spawnPos, sizeBox, rot, enemyMask, 
                 (col) => OnHitEnemy(col, ctx));
-
+            AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.swordSfx);
             if (slashEffectPrefab != null)
             {
                 GameObject fx = Instantiate(slashEffectPrefab, ctx.spawnPos, 

@@ -51,6 +51,7 @@ public class PrefabDatabase : ScriptableObject
     public AudioClip levelUpSfx;
     public AudioClip expCollectSfx;
     public AudioClip coinCollectSfx;
+    public AudioClip healthCollectSfx;
 
     [Header("UI Prefabs")]
     public GameObject bossHPBar;

@@ -67,6 +67,7 @@ public class PlayerManager01 : MonoBehaviour
         if (playerPrefab != null)
         {
             GameObject playerInstance = GameObject.Instantiate(playerPrefab, spawnPos, Quaternion.identity);
+            AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.playerSpawnSfx);
             Debug.Log("<color=blue>[PlayerManager]</color> Player đã được Spawn thành công!");
             // Gọi AudioManager phát tiếng spawn lấy từ Database
             //AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.playerSpawnSfx);
