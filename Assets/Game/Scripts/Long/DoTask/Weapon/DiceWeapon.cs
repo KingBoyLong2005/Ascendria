@@ -99,7 +99,8 @@ public class DiceWeapon : Weapon
         Quaternion rotation = Quaternion.LookRotation(direction);
         
         GameObject go = PoolManager.Spawn(dicePrefab, spawnPos, rotation);
-        
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.diceSfx);
+
         if (go != null)
         {
             go.transform.localScale = Vector3.one * baseSize;

@@ -65,6 +65,7 @@ public class Loot : MonoBehaviour
 
         // then return to pool / deactivate
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.expCollectSfx);
         //Debug.Log("Loot Collected");
     }
 
@@ -77,6 +78,7 @@ public class Loot : MonoBehaviour
 
         // then return to pool / deactivate
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.healthCollectSfx);
         //Debug.Log("Loot Collected");
     }
 
@@ -90,6 +92,7 @@ public class Loot : MonoBehaviour
 
         // then return to pool / deactivate
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.chestOpenSfx);
         Debug.Log("Loot Chest Picked Up");
     }
 }

@@ -51,7 +51,8 @@ public class LightningWeapon : Weapon
         Vector3 pos = enemy.position + Vector3.up * 10f;
         
         GameObject go = PoolManager.Spawn(lightningPrefab, pos, lightningPrefab.transform.rotation);
-        
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.lightningSfx);
+
         if (go != null)
         {
             go.transform.localScale = Vector3.one * baseSize;

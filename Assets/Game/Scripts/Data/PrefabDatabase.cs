@@ -30,11 +30,28 @@ public class PrefabDatabase : ScriptableObject
     [Header("Audio BGM")]
     public AudioClip mapTheme;
     public AudioClip bossTheme;
+    public AudioClip menuTheme;
 
     [Header("Audio SFX")]
     public AudioClip gateOpenSfx;
     public AudioClip playerSpawnSfx;
     public AudioClip bossSpawnSfx;
+    [Tooltip("SFX của vũ khí")]
+    public AudioClip fireBallSfx;
+    public AudioClip swordSfx;
+    public AudioClip bulletSfx;
+    public AudioClip lightningSfx;
+    public AudioClip auraSfx;
+    public AudioClip diceSfx;
+    public AudioClip aoeDamageSfx;
+    [Tooltip("SFX khi nhân vật bị đánh trúng")]
+    public AudioClip bloodSfx;
+    public AudioClip clickSfx;
+    public AudioClip chestOpenSfx;
+    public AudioClip levelUpSfx;
+    public AudioClip expCollectSfx;
+    public AudioClip coinCollectSfx;
+    public AudioClip healthCollectSfx;
 
     [Header("UI Prefabs")]
     public GameObject bossHPBar;

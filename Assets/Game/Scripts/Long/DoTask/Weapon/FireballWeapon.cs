@@ -81,7 +81,8 @@ public class FireballWeapon : Weapon
         Quaternion rotation = Quaternion.LookRotation(direction);
         
         GameObject go = PoolManager.Spawn(fireballPrefab, spawnPos, rotation);
-        
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.fireBallSfx);
+
         if (go != null)
         {
             go.transform.localScale = Vector3.one * baseSize;
