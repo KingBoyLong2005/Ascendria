@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
   m_Name: Item10Kill1000Monsters
   m_EditorClassIdentifier: 
-  id: Item10
+  id: Item10Kill1000Monsters
   displayName: Kill 1000 monsters
   description: Kill 1000 monsters to unlock this item
   target: 1000

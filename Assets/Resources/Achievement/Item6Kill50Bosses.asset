@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
   m_Name: Item6Kill50Bosses
   m_EditorClassIdentifier: 
-  id: Item6
+  id: Item6Kill50Bosses
   displayName: Kill 50 bosses
   description: Kill 50 bosses to unlock this item
   target: 50
