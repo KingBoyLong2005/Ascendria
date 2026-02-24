@@ -130,6 +130,7 @@ public class PlayerStatManager : MonoBehaviour
     private void Die()
     {
         Debug.Log($"Player died with: {currentHealth} left");
+        FindFirstObjectByType<GameOver>().GameOverActive();
         // handle death: game over, respawn, etc.
     }
 

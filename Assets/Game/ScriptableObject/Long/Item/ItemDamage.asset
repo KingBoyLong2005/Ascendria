@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc04556047131c941a8926e72faa356e, type: 3}
   m_Name: ItemDamage
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: dafea790912a27a4eb59ffeb91330f7d, type: 3}
+  Icon: {fileID: 21300000, guid: bd71c074f1932ee4ebb7321d59a01b2b, type: 3}
+  Name: Rusty Knife
+  rarity: 0
   isStackable: 1
   isTimed: 0
   duration: 30
+  damagePercentIncrease: 10

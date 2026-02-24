@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 // [CreateAssetMenu(fileName = "NewItem", menuName = "Inventory/Item", order = 3)]
@@ -6,6 +7,7 @@ public abstract class Item : ScriptableObject
 {
     [Header("Display")]
     public Sprite Icon; // Icon for inventory slot
+    public String Name;
     public LevelManager.RarityTier rarity;
 
     [Header("Behavior")]

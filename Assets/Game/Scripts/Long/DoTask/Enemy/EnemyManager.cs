@@ -29,7 +29,8 @@ public class EnemyManager : MonoBehaviour
     private float nextDiff = 60f;
 
     //Game Countdown Timer
-    public float countdown = 20f; // in seconds
+    public float countdown = 600f; // in seconds
+    // 600 is normal
     private bool countdownFinished  = false;
 
     //Kill Count
