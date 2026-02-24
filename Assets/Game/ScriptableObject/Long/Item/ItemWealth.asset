@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemWealth
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 505ca89769101104b994f74d0f9616b4, type: 3}
+  Name: Debit Card
   rarity: 1
   isStackable: 1
   isTimed: 0

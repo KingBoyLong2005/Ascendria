@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemDamagePerKill
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: c983b497bc78005408987b5b93386f5a, type: 3}
+  Name: Hammer Time
   rarity: 2
   isStackable: 1
   isTimed: 0
