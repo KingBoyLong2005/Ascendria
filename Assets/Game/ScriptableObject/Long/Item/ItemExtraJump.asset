@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemExtraJump
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: ac39bd5d064e89b4e9f8ff8e47776f47, type: 3}
+  Name: Fleeting Feather
   rarity: 4
   isStackable: 1
   isTimed: 0

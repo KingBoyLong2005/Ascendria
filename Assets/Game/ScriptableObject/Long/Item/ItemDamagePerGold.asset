@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemDamagePerGold
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 7c1a48ee064342642b95ed54dc4b3d26, type: 3}
+  Name: Hand of Midas
   rarity: 4
   isStackable: 1
   isTimed: 0

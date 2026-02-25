@@ -1,5 +1,6 @@
 using System.Collections.Generic; 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -57,6 +58,8 @@ public class InventoryUI : MonoBehaviour
 
     readonly List<GameObject> spawnedSlots = new();
     readonly List<GameObject> spawnedSlotsUIScene = new();
+    public Button ResumeButton;
+    public Button QuitButton;
     
     public bool isOpen;
 
@@ -83,6 +86,8 @@ public class InventoryUI : MonoBehaviour
         
         // Cập nhật UI Scene lần đầu
         RefreshUIScene();
+        ResumeButton.onClick.AddListener( () => Close());
+        QuitButton.onClick.AddListener(()=> SceneManager.LoadScene("MenuScene"));
     }
 
     #region Public API
@@ -97,7 +102,8 @@ public class InventoryUI : MonoBehaviour
 
         inventoryPanel.SetActive(true);
         RefreshAll();
-        
+        ResumeButton.gameObject.SetActive(true);
+        QuitButton.gameObject.SetActive(true);
         Debug.Log("<color=cyan>[InventoryUI]</color> Inventory opened");
     }
 
@@ -110,6 +116,8 @@ public class InventoryUI : MonoBehaviour
         isOpen = false;
 
         inventoryPanel.SetActive(false);
+        ResumeButton.gameObject.SetActive(false);
+        QuitButton.gameObject.SetActive(false);
         
         Debug.Log("<color=cyan>[InventoryUI]</color> Inventory closed");
     }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ItemHPRegen
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 815d59703f247e34bae7adea342ba3ae, type: 3}
+  Name: Recovery Injection
   rarity: 2
   isStackable: 1
   isTimed: 0
