@@ -7,7 +7,11 @@ public class InteractableSpawner
 {
     //private readonly MapManager01 mapManager;
     private GameObject chestPrefab;
-    private GameObject eventObjectPrefab;
+    private GameObject eventObjectMiniBoss;
+    private GameObject eventObjectCaptureObject;
+    private GameObject eventObjectGreedAltar;
+    private GameObject eventObjectSacrificialAltar;
+    private GameObject eventObjectTravelingMerchant;
 
     private float minDistance = 5.0f; //between object
 
@@ -27,7 +31,11 @@ public class InteractableSpawner
     {
         //this.mapManager = GameManager.Instance.GetMapManager;
         chestPrefab = PrefabDatabase.Instance.chest;
-        eventObjectPrefab = PrefabDatabase.Instance.eventObject;
+        eventObjectMiniBoss = PrefabDatabase.Instance.eventMiniBoss;
+        eventObjectCaptureObject = PrefabDatabase.Instance.eventCaptureObject;
+        eventObjectGreedAltar = PrefabDatabase.Instance.eventGreedAltar;
+        eventObjectSacrificialAltar = PrefabDatabase.Instance.eventSacrificialAltar;
+        eventObjectTravelingMerchant = PrefabDatabase.Instance.eventTravelingMerchant;
     }
         
     public void SpawnAll()
@@ -35,7 +43,11 @@ public class InteractableSpawner
         List<SpawnRequest> requests = new List<SpawnRequest>()
         {
             new SpawnRequest(chestPrefab, GameConfig.Instance.maxChestNums),
-            new SpawnRequest(eventObjectPrefab, GameConfig.Instance.maxInteractObjectNum)
+            new SpawnRequest(eventObjectMiniBoss, GameConfig.Instance.maxInteractObjectNum),
+            new SpawnRequest(eventObjectCaptureObject, GameConfig.Instance.maxInteractObjectNum),
+            new SpawnRequest(eventObjectGreedAltar, GameConfig.Instance.maxInteractObjectNum),
+            new SpawnRequest(eventObjectSacrificialAltar, GameConfig.Instance.maxInteractObjectNum),
+            new SpawnRequest(eventObjectTravelingMerchant, GameConfig.Instance.maxInteractObjectNum)
         };
 
         List<Vector3> finalPositions = new List<Vector3>();
