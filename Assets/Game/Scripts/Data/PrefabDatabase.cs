@@ -19,7 +19,12 @@ public class PrefabDatabase : ScriptableObject
 
     [Header("Interactable Prefabs")]
     public GameObject chest;
-    public GameObject eventObject;
+    public GameObject eventCaptureObject;
+    public GameObject eventGreedAltar;
+    public GameObject eventMiniBoss;
+    public GameObject eventSacrificialAltar;
+    public GameObject eventTravelingMerchant;
+    public GameObject eventCatchOrb;
 
     [Header("Drop Prefabs")]
     public GameObject health;

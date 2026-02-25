@@ -4,8 +4,8 @@ using UnityEngine;
 public class GameConfig : ScriptableObject
 {
     [Header("Game Config")]
-    public int maxChestNums = 50;
-    public int maxInteractObjectNum = 20;
+    public int maxChestNums = 70;
+    public int maxInteractObjectNum = 7;
     public int maxEnemy = 100;
     
 
