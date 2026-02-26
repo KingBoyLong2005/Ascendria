@@ -22,4 +22,5 @@ public class ShopItemDefinition : ScriptableObject
         int index = Mathf.Clamp(level - 1, 0, levels.Length - 1);
         return levels[index];
     }
+    
 }
