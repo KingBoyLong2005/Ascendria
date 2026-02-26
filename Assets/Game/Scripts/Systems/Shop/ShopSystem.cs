@@ -155,4 +155,5 @@ public class ShopSystem
         else
             return false;
     }
+    public ShopItemDefinition GetDefinition(string id) => shopDB?.GetItem(id);
 }
