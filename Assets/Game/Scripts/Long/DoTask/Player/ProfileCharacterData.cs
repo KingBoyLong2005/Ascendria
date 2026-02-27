@@ -3,11 +3,13 @@
 // Có thêm RuntimeData (class lồng bên trong) làm "cầu nối" cho Save System / Shop sau này.
 
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(menuName = "Character/Profile Character Data")]
 public class ProfileCharacterData : ScriptableObject
 {
     [Header("Identity")]
+    public Sprite iconChar;
     public string displayName;
 
     [Header("Base Stats")]
