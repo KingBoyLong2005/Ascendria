@@ -187,4 +187,33 @@ public class AchievementSystem
 
         Debug.Log("========================================");
     }
+    /// <summary>
+    /// Claim phần thưởng achievement. Trả về true nếu claim thành công.
+    /// </summary>
+    public bool ClaimAchievement(string id)
+    {
+        var progress = progressList.Find(p => p.id == id);
+
+        if (progress == null)       return false;
+        if (!progress.isCompleted)  return false;   // chưa hoàn thành
+        if (progress.isClaimed)     return false;   // đã nhận rồi
+
+        progress.isClaimed = true;
+        saveFile.Save(progressList);
+        return true;
+    }
+    public AchievementProgress GetProgress(string id)
+    {
+        return progressList?.Find(p => p.id == id);
+    }
+
+    public List<AchievementProgress> GetAllProgress()
+    {
+        return progressList;
+    }
+
+    public AchievementDefinition GetDefinitionPublic(string id)
+    {
+        return GetDefinition(id);
+    }
 }
