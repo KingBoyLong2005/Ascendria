@@ -27,7 +27,7 @@ public class UnlockItemDefinition : ShopItemDefinition, IUnlockable
     public ProfileCharacterData sourceCharacter;
 
     // ── IUnlockable ────────────────────────────────────────────────
-
+    
     public string Id         => id;
     public int    UnlockCost => unlockCost;
 
@@ -36,7 +36,7 @@ public class UnlockItemDefinition : ShopItemDefinition, IUnlockable
         get
         {
             if (sourceWeapon    != null) return sourceWeapon.weaponName;
-            if (sourceCharacter != null) return sourceCharacter.name;
+            if (sourceCharacter != null) return sourceCharacter.displayName;
             return id;
         }
     }

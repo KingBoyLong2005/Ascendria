@@ -133,7 +133,7 @@ public class ShopUI : MonoBehaviour
 
         if (unlocked)
         {
-            statusText.text = "✓ Đã sở hữu";
+            statusText.text = "Đã sở hữu";
             costText.gameObject.SetActive(false);
             buyButton.gameObject.SetActive(false);
         }

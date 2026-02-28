@@ -15,7 +15,8 @@ MonoBehaviour:
   id: Dice
   displayName: dice
   description: 
+  image: {fileID: 0}
   levels: []
-  unlockCost: 10
+  unlockCost: 0
   sourceWeapon: {fileID: 11400000, guid: 9e72055a24e6ccd4aa0066ebf4b84435, type: 2}
   sourceCharacter: {fileID: 0}
