@@ -15,6 +15,7 @@ MonoBehaviour:
   id: ArmorStat
   displayName: Buff Arrmor
   description: Increase Armor
+  image: {fileID: 762834771, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   levels:
   - level: 0
     upgradeCost: 0

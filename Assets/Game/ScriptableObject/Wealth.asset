@@ -15,6 +15,7 @@ MonoBehaviour:
   id: WealthStat
   displayName: Buff Wealth
   description: Increase Wealth
+  image: {fileID: 1017550869, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   levels:
   - level: 0
     upgradeCost: 0

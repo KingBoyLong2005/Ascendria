@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a7d10ce484e3a44a0698f9b4541dd1, type: 3}
   m_Name: ProfileFoxWizard
   m_EditorClassIdentifier: 
+  iconChar: {fileID: 21300000, guid: 583ff7a0b3a431641a25e82b4c5a539b, type: 3}
   displayName: Fox Wizard
   maxHP: 20
   CharacterAttack: 5

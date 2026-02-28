@@ -11,9 +11,9 @@ public class LevelUpUI : MonoBehaviour
 
     public void Show(LevelManager.LevelUpEventArgs e)
     {
-        GameManager.Instance.PauseGame();
+        GameManager.Instance.LevelUpPause();
         panel.SetActive(true);
-        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
+        FindFirstObjectByType<TPCameraController>().TurnOnMouse();
 
         foreach (var o in spawned) Destroy(o.gameObject);
         spawned.Clear();
@@ -29,9 +29,9 @@ public class LevelUpUI : MonoBehaviour
 
     public void Hide()
     {
-        GameManager.Instance.ResumeGame();
+        GameManager.Instance.ExitLevelUp();
         panel.SetActive(false);
-        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
+        FindFirstObjectByType<TPCameraController>().TurnOffMouse();
     }
 }
 

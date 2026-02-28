@@ -128,22 +128,45 @@ public class ReadySceneManager : MonoBehaviour
 
         ProfileCharacterData profile = availableCharacters[index];
 
-        // TODO (Save System): BuildRuntimeData() sẽ cộng thêm upgrade stats ở đây
-        ProfileCharacterData.RuntimeData data = profile.GetRuntimeData();
+        bool isUnlocked = GameSaveSystem.Instance.IsCharacterUnlocked(profile.displayName);
 
         if (txtCharacterName != null) txtCharacterName.text = profile.displayName;
-        if (txtMaxHP         != null) txtMaxHP.text         = data.maxHP.ToString("F0");
-        if (txtAttack        != null) txtAttack.text        = data.attack.ToString("F1");
-        if (txtArmor         != null) txtArmor.text         = data.armor.ToString("F1");
-        if (txtMoveSpeed     != null) txtMoveSpeed.text     = data.moveSpeed.ToString("F1");
-        if (txtLuck          != null) txtLuck.text          = data.luck.ToString("F1");
-        if (txtWealth        != null) txtWealth.text        = data.wealth.ToString("F1");
-        if (txtWise          != null) txtWise.text          = data.wise.ToString("F1");
 
-        SpawnPreviewModel(profile);
+        if (isUnlocked)
+        {
+            // TODO (Save System): BuildRuntimeData() sẽ cộng thêm upgrade stats ở đây
+            ProfileCharacterData.RuntimeData data = profile.GetRuntimeData();
+
+            if (txtMaxHP     != null) txtMaxHP.text     = data.maxHP.ToString("F0");
+            if (txtAttack    != null) txtAttack.text    = data.attack.ToString("F1");
+            if (txtArmor     != null) txtArmor.text     = data.armor.ToString("F1");
+            if (txtMoveSpeed != null) txtMoveSpeed.text = data.moveSpeed.ToString("F1");
+            if (txtLuck      != null) txtLuck.text      = data.luck.ToString("F1");
+            if (txtWealth    != null) txtWealth.text    = data.wealth.ToString("F1");
+            if (txtWise      != null) txtWise.text      = data.wise.ToString("F1");
+
+            if (btnNext != null) btnNext.interactable = true;
+        }
+        else
+        {
+            // Chưa unlock: ẩn stats, hiện thông báo khoá
+            string locked = "???";
+            if (txtMaxHP     != null) txtMaxHP.text     = locked;
+            if (txtAttack    != null) txtAttack.text    = locked;
+            if (txtArmor     != null) txtArmor.text     = locked;
+            if (txtMoveSpeed != null) txtMoveSpeed.text = locked;
+            if (txtLuck      != null) txtLuck.text      = locked;
+            if (txtWealth    != null) txtWealth.text    = locked;
+            if (txtWise      != null) txtWise.text      = locked;
+
+            // Khoá nút Next để không vào game với nhân vật chưa mở
+            if (btnNext != null) btnNext.interactable = false;
+        }
+
+        SpawnPreviewModel(profile, isUnlocked);
     }
 
-    private void SpawnPreviewModel(ProfileCharacterData character)
+    private void SpawnPreviewModel(ProfileCharacterData character, bool isUnlocked = true)
     {
         if (currentCharacterModel != null)
             Destroy(currentCharacterModel);
@@ -164,7 +187,6 @@ public class ReadySceneManager : MonoBehaviour
             characterPreviewRoot.position,
             characterPreviewRoot.rotation
         );
-
         currentCharacterModel.transform.localScale = Vector3.one * 100;
         currentCharacterModel.transform.rotation   = Quaternion.Euler(0f, -180f, 0f);
 
@@ -173,6 +195,21 @@ public class ReadySceneManager : MonoBehaviour
         {
             animator.runtimeAnimatorController = character.animatorController;
             animator.SetBool("IsGrounded", true);
+        }
+
+        // Dim toàn bộ renderer nếu chưa unlock
+        isUnlocked = GameSaveSystem.Instance.IsCharacterUnlocked(character.displayName);
+        if (!isUnlocked)
+        {
+            foreach (var renderer in currentCharacterModel.GetComponentsInChildren<Renderer>())
+            {
+                foreach (var mat in renderer.materials)
+                {
+                    // Đổi màu sang tối (giữ texture, chỉ nhân color)
+                    if (mat.HasProperty("_Color"))
+                        mat.color = new Color(0.2f, 0.2f, 0.2f, 1f);
+                }
+            }
         }
     }
 

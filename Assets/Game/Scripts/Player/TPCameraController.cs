@@ -72,4 +72,16 @@ public class TPCameraController : MonoBehaviour
         currentZoom = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomLerpSpeed);
         orbital.Radius = currentZoom;
     }
+    public void TurnOnMouse()
+    {
+        if(isUIOpen) return;
+        
+        isUIOpen = true;
+    }
+    public void TurnOffMouse()
+    {
+        if(!isUIOpen) return;
+
+        isUIOpen = false;
+    }
 }

@@ -132,21 +132,50 @@ public class GameManager : MonoBehaviour
         SetState(GameState.Running);
     }
 
+    public void LevelUpPause()
+    {
+        Time.timeScale = 0f;
+        SetState(GameState.LevelUp);
+    }
+    public void ExitLevelUp()
+    {
+        if (invenUI != null && invenUI.isOpen)
+        {
+            SetState(GameState.Paused);
+        }
+        else
+            ResumeGame();
+    }
     private void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("gọi paused game");
+            Debug.Log($"State: {currentState}");
+
             if (currentState == GameState.Running)
+            {
+                // Mở inventory, pause game — KHÔNG đụng LevelUp
+                invenUI.OpenOnly();
                 PauseGame();
-            else if (currentState == GameState.LevelUp)
-                SetState(GameState.LevelUpWithPaused);
+            }
             else if (currentState == GameState.Paused)
+            {
+                // Đóng inventory, resume game
+                invenUI.CloseOnly();
                 ResumeGame();
+            }
+            else if (currentState == GameState.LevelUp)
+            {
+                // Đang LevelUp: Esc chỉ ẩn panel inventory, chuột vẫn bật, game vẫn pause
+                invenUI.OpenOnly();
+                SetState(GameState.LevelUpWithPaused);
+            }
             else if (currentState == GameState.LevelUpWithPaused)
+            {
+                // Đóng inventory, quay về LevelUp — chuột vẫn bật để chọn upgrade
+                invenUI.CloseOnly();
                 SetState(GameState.LevelUp);
-            invenUI.Toggle();
+            }
         }
     }
 

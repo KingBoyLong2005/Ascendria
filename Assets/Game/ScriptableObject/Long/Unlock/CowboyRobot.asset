@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: CowboyRobot
   m_EditorClassIdentifier: 
   id: Cowboy Robot
-  displayName: cowboy
+  displayName: CowBoy Robot
   description: 
+  image: {fileID: 0}
   levels: []
-  unlockCost: 20
+  unlockCost: 0
   sourceWeapon: {fileID: 0}
   sourceCharacter: {fileID: 11400000, guid: d44d3c884d092db4b8fb35b8fe0826d6, type: 2}
