@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ShopData/ShopItemDefinition")]
@@ -8,6 +6,7 @@ public class ShopItemDefinition : ScriptableObject
     public string id;
     public string displayName;
     public string description;
+    public Sprite image;
 
     [Header("Level Data")]
     public ShopItemLevelData[] levels;

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
         Running,
         Paused,
         LevelUp,
+        LevelUpWithPaused,
         GameOver
     }
     public GameState currentState { get; private set; }
@@ -139,8 +140,12 @@ public class GameManager : MonoBehaviour
             Debug.Log("gọi paused game");
             if (currentState == GameState.Running)
                 PauseGame();
+            else if (currentState == GameState.LevelUp)
+                SetState(GameState.LevelUpWithPaused);
             else if (currentState == GameState.Paused)
                 ResumeGame();
+            else if (currentState == GameState.LevelUpWithPaused)
+                SetState(GameState.LevelUp);
             invenUI.Toggle();
         }
     }
