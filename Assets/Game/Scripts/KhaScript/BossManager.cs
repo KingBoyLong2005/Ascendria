@@ -41,6 +41,7 @@ public class BossManager : MonoBehaviour
         }
     }
 
+    public int bossKillCount = 0;
     public void Awake()
     {
         if (Instance != null)
@@ -136,5 +137,6 @@ public class BossManager : MonoBehaviour
     public void BossDie(BossStats boss, Vector3 deathPos)
     {
         OnBossDie?.Invoke(this, new OnBossDieEventArgs(boss, deathPos));
+        bossKillCount++;
     }
 }

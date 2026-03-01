@@ -69,8 +69,9 @@ public class DamageManager : MonoBehaviour
     private float CalculateWeaponDamage(float weaponAttack, float enemyArmor)
     {
         float playerAttack = PlayerStatManager.Instance.Attack;
+        float bonusDmg = PlayerStatManager.Instance.Damage;
 
-        float finalDamage = playerAttack + weaponAttack - enemyArmor;
+        float finalDamage = playerAttack + weaponAttack + bonusDmg - enemyArmor;
         if(finalDamage <= 0) finalDamage = 1f;
 
         return finalDamage;
