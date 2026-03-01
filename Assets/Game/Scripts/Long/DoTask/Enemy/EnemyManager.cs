@@ -13,8 +13,8 @@ public class EnemyManager : MonoBehaviour
     public List<GameObject> enemyPrefabs = new List<GameObject>();      // Danh sách prefab quái
     private GameObject enemyDemonPrefab;
     
-    public float minSpawnDistance = 10f;
-    public float maxSpawnDistance = 20f;
+    public float minSpawnDistance = 20f;
+    public float maxSpawnDistance = 30f;
 
     public bool ActiveByButton = false;
     public LayerMask groundMask;

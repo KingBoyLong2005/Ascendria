@@ -27,38 +27,6 @@ public class AchievementSystem
     {
         database = Resources.Load<AchievementDatabase>("Achievement/AchievementDB");
 
-        //Test log
-        //if (database == null)
-        //{
-        //    Debug.LogError("❌ AchievementDB NOT FOUND in Resources folder!");
-        //    return;
-        //}
-
-        //Debug.Log("✅ AchievementDB loaded successfully!");
-
-        //if (database.achievements == null || database.achievements.Length == 0)
-        //{
-        //    Debug.LogWarning("⚠ AchievementDB loaded but achievements array is empty!");
-        //}
-        //else
-        //{
-        //    Debug.Log($"📦 Total Achievements: {database.achievements.Length}");
-
-        //    foreach (var achievement in database.achievements)
-        //    {
-        //        if (achievement == null)
-        //        {
-        //            Debug.LogWarning("⚠ Found NULL achievement in database!");
-        //            continue;
-        //        }
-
-        //        Debug.Log(
-        //            $"ID: {achievement.id} | Name: {achievement.displayName} | Target: {achievement.target}"
-        //        );
-        //    }
-        //}
-        //end test log
-
         progressList = saveFile.Load();
 
         if (progressList == null)
@@ -186,5 +154,34 @@ public class AchievementSystem
         }
 
         Debug.Log("========================================");
+    }
+    /// <summary>
+    /// Claim phần thưởng achievement. Trả về true nếu claim thành công.
+    /// </summary>
+    public bool ClaimAchievement(string id)
+    {
+        var progress = progressList.Find(p => p.id == id);
+
+        if (progress == null)       return false;
+        if (!progress.isCompleted)  return false;   // chưa hoàn thành
+        if (progress.isClaimed)     return false;   // đã nhận rồi
+
+        progress.isClaimed = true;
+        saveFile.Save(progressList);
+        return true;
+    }
+    public AchievementProgress GetProgress(string id)
+    {
+        return progressList?.Find(p => p.id == id);
+    }
+
+    public List<AchievementProgress> GetAllProgress()
+    {
+        return progressList;
+    }
+
+    public AchievementDefinition GetDefinitionPublic(string id)
+    {
+        return GetDefinition(id);
     }
 }

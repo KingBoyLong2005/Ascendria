@@ -92,11 +92,32 @@ public class InventoryUI : MonoBehaviour
 
     #region Public API
 
+    /// <summary>
+    /// Mở inventory kèm pause game + bật chuột (dùng khi state Running → Paused).
+    /// </summary>
     public void Open()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = true;
+        FindFirstObjectByType<TPCameraController>().TurnOnMouse();
         GameManager.Instance.PauseGame();
-            
+        OpenOnly();
+    }
+
+    /// <summary>
+    /// Đóng inventory kèm resume game + tắt chuột (dùng khi state Paused → Running).
+    /// </summary>
+    public void Close()
+    {
+        FindFirstObjectByType<TPCameraController>().TurnOffMouse();
+        GameManager.Instance.ResumeGame();
+        CloseOnly();
+    }
+
+    /// <summary>
+    /// Chỉ hiện panel inventory — KHÔNG đụng GameState hay chuột.
+    /// Dùng khi đang LevelUp mà Esc mở inventory.
+    /// </summary>
+    public void OpenOnly()
+    {
         if (isOpen) return;
         isOpen = true;
 
@@ -104,22 +125,22 @@ public class InventoryUI : MonoBehaviour
         RefreshAll();
         ResumeButton.gameObject.SetActive(true);
         QuitButton.gameObject.SetActive(true);
-        Debug.Log("<color=cyan>[InventoryUI]</color> Inventory opened");
+        Debug.Log("<color=cyan>[InventoryUI]</color> Inventory opened (only)");
     }
 
-    public void Close()
+    /// <summary>
+    /// Chỉ ẩn panel inventory — KHÔNG đụng GameState hay chuột.
+    /// Dùng khi đang LevelUp mà Esc đóng inventory.
+    /// </summary>
+    public void CloseOnly()
     {
-        FindFirstObjectByType<TPCameraController>().isUIOpen = false;
-        GameManager.Instance.ResumeGame();
-            
         if (!isOpen) return;
         isOpen = false;
 
         inventoryPanel.SetActive(false);
         ResumeButton.gameObject.SetActive(false);
         QuitButton.gameObject.SetActive(false);
-        
-        Debug.Log("<color=cyan>[InventoryUI]</color> Inventory closed");
+        Debug.Log("<color=cyan>[InventoryUI]</color> Inventory closed (only)");
     }
 
     public void Toggle()

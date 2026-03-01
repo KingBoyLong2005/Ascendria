@@ -7,4 +7,5 @@ public class AchievementProgress
     public int current;
     public int target;
     public bool isCompleted;
+    public bool   isClaimed;
 }    

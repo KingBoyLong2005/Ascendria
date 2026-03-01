@@ -3,11 +3,13 @@
 // Có thêm RuntimeData (class lồng bên trong) làm "cầu nối" cho Save System / Shop sau này.
 
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(menuName = "Character/Profile Character Data")]
 public class ProfileCharacterData : ScriptableObject
 {
     [Header("Identity")]
+    public Sprite iconChar;
     public string displayName;
 
     [Header("Base Stats")]
@@ -69,13 +71,13 @@ public class ProfileCharacterData : ScriptableObject
         // TODO (Save System): cộng thêm upgrade stats ở đây
         _runtimeData = new RuntimeData
         {
-            maxHP     = maxHP,
-            attack    = CharacterAttack,
-            armor     = Armor,
-            moveSpeed = MoveSpeed,
-            luck      = Luck,
-            wealth    = Wealth,
-            wise      = Wise,
+            maxHP     = maxHP + ShopSystem.Instance.GetCurrentValue("HealthStat"),
+            attack    = CharacterAttack + ShopSystem.Instance.GetCurrentValue("AttackStat"),
+            armor     = Armor + ShopSystem.Instance.GetCurrentValue("ArmorStat"),
+            moveSpeed = MoveSpeed + ShopSystem.Instance.GetCurrentValue("MoveSpeedStat"),
+            luck      = Luck + ShopSystem.Instance.GetCurrentValue("LuckStat"),
+            wealth    = Wealth + ShopSystem.Instance.GetCurrentValue("WealthStat"),
+            wise      = Wise + ShopSystem.Instance.GetCurrentValue("WiseStat"),
         };
         return _runtimeData;
     }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a7d10ce484e3a44a0698f9b4541dd1, type: 3}
   m_Name: ProfileCowboyRobot
   m_EditorClassIdentifier: 
+  iconChar: {fileID: 21300000, guid: af77e715a068b1f4099ffc409aff7106, type: 3}
   displayName: Cowboy Robot
   maxHP: 20
   CharacterAttack: 4

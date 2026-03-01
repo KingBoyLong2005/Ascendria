@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: ShopDB
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: 13c5ee790d593ef43a0f8b7cf3083b5a, type: 2}
+  - {fileID: 11400000, guid: a6a258c4e907f5f49a06ca376a991088, type: 2}
+  - {fileID: 11400000, guid: 9c108fb076667f149b9688a556323ddf, type: 2}
+  - {fileID: 11400000, guid: 53ea653749928f441a9cd21f07a4a287, type: 2}
+  - {fileID: 11400000, guid: 3e9cdf2f9922f134b8002b7c676d2082, type: 2}
+  - {fileID: 11400000, guid: cc7249779b6e4be4ab024e45168b0997, type: 2}
+  - {fileID: 11400000, guid: 3f02a55312fd7984e91e7657b086e6c3, type: 2}
+  - {fileID: 11400000, guid: ef88764a842337f4d9a091ab129cfbbe, type: 2}

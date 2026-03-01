@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.InputSystem.InputControlScheme;
 
 public class AchievementLoadTest : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //Initialize
