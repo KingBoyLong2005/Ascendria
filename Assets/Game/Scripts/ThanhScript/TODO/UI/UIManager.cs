@@ -144,7 +144,7 @@ public class UIManager : MonoBehaviour
         inventoryUI.RefreshUIScene();
     }
 
-    private void GameplayEvents_OnLootChestCollected(Item obj)
+    public void GameplayEvents_OnLootChestCollected(Item obj)
     {
         openChestUI.Show(obj);
     }
