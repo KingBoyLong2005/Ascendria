@@ -1,64 +1,99 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Audio; // Cần thiết nếu bạn dùng Audio Mixer sau này
 
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance { get; private set; }
+    private static AudioManager _instance;
 
-    private AudioSource sfxSource; // Dùng để phát tiếng động
-    private AudioSource bgmSource; // Dùng để phát nhạc nền (Loop)
+    // Cơ chế Lazy Initialization: Tự tìm hoặc tự tạo khi có người gọi AudioManager.Instance
+    public static AudioManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                // Tìm trong toàn bộ các Scene xem có cái nào chưa
+                _instance = FindFirstObjectByType<AudioManager>();
 
-    // ĐỊNH NGHĨA CÁC SỰ KIỆN (Tín hiệu phát đi)
+                if (_instance == null)
+                {
+                    // Nếu chưa có, tạo mới hoàn toàn một GameObject để chứa nó
+                    GameObject go = new GameObject("AudioManager (Persistent)");
+                    _instance = go.AddComponent<AudioManager>();
+                    Debug.Log("<color=cyan>[AudioManager]</color> Tự động khởi tạo cho Menu Scene.");
+                }
+            }
+            return _instance;
+        }
+    }
+
+    private AudioSource sfxSource;
+    private AudioSource bgmSource;
+
     public event EventHandler<AudioEventArgs> OnSoundStarted;
     public event EventHandler<AudioEventArgs> OnMusicChanged;
 
     private void Awake()
     {
-        if (Instance != null && Instance != this) { Destroy(gameObject); }
-        else
+        // Kiểm tra Singleton để tránh tình trạng nhân bản khi load lại Scene
+        if (_instance != null && _instance != this)
         {
-            Instance = this;
-            SetupAudioSources();
+            Destroy(gameObject);
+            return;
         }
+
+        _instance = this;
+
+        // CHÌA KHÓA: Giữ Object này không bị hủy khi chuyển Scene
+        DontDestroyOnLoad(gameObject);
+
+        SetupAudioSources();
     }
 
     private void SetupAudioSources()
     {
-        // Source 1: Phát SFX
+        // Cấu hình sfxSource từ Component có sẵn (RequireComponent)
         sfxSource = GetComponent<AudioSource>();
         sfxSource.loop = false;
+        sfxSource.playOnAwake = false;
 
-        // Source 2: Phát BGM (Tạo thêm một AudioSource nữa bằng code)
-        bgmSource = gameObject.AddComponent<AudioSource>();
+        // Cấu hình bgmSource bằng cách thêm mới một Component khác
+        // Nếu đã có từ trước (do load lại scene), hãy tìm nó thay vì add thêm
+        AudioSource[] sources = GetComponents<AudioSource>();
+        if (sources.Length > 1)
+        {
+            bgmSource = sources[1];
+        }
+        else
+        {
+            bgmSource = gameObject.AddComponent<AudioSource>();
+        }
+
         bgmSource.loop = true;
         bgmSource.playOnAwake = false;
     }
 
-    // --- PHÁT HIỆU ỨNG ÂM THANH (SFX) ---
     public void PlaySFX(AudioClip clip)
     {
         if (clip == null) return;
-
-        sfxSource.PlayOneShot(clip); // Lệnh phát nhạc thực tế
-
-        // Phát tín hiệu EventHandler
+        sfxSource.PlayOneShot(clip);
         OnSoundStarted?.Invoke(this, new AudioEventArgs(clip.name, clip.length));
     }
 
-    // --- PHÁT NHẠC NỀN (BGM) ---
     public void PlayMusic(AudioClip clip)
     {
-        if (clip == null || bgmSource.clip == clip) return;
+        if (clip == null) return;
+
+        // Tránh việc phát lại từ đầu nếu bài nhạc đang phát chính là bài này
+        if (bgmSource.clip == clip && bgmSource.isPlaying) return;
 
         bgmSource.clip = clip;
-        bgmSource.Play(); // Lệnh phát nhạc thực tế
-
-        // Phát tín hiệu EventHandler
+        bgmSource.Play();
         OnMusicChanged?.Invoke(this, new AudioEventArgs(clip.name, clip.length));
     }
 
-    // LỚP DỮ LIỆU SỰ KIỆN
     public class AudioEventArgs : EventArgs
     {
         public string Name { get; }
