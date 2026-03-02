@@ -37,6 +37,7 @@ public class AchievementSlotUI : MonoBehaviour
 
     public void Init(AchievementDefinition def, System.Action<string> onClaimCallback)
     {
+        dimOverlay.sprite = def.Icon;
         itemId  = def.id;
         onClaim = onClaimCallback;
 
@@ -64,7 +65,7 @@ public class AchievementSlotUI : MonoBehaviour
         if (progress.isClaimed)
         {
             // Đã nhận: dim nhẹ, ẩn bar + nút, hiện label "Đã nhận"
-            SetDim(0.35f);
+            SetDim(1f);
             SetProgressBarVisible(true);
             progressText.text = "Claimed"; 
             claimButton.gameObject.SetActive(false);
@@ -72,7 +73,7 @@ public class AchievementSlotUI : MonoBehaviour
         }
         else if (progress.isCompleted)
         {
-            SetDim(0f);
+            SetDim(1f);
             SetProgressBarVisible(false);                  // hiện bar đầy
             progressText.text = "Complete";               // hiện chữ Complete
             UpdateBar(1f);                                // bar fill 100%

@@ -1,4 +1,4 @@
-// Loot.cs — attach to loot prefab
+// Loot.cs ï¿½ attach to loot prefab
 using UnityEngine;
 
 public class Loot : MonoBehaviour
@@ -53,6 +53,10 @@ public class Loot : MonoBehaviour
             {
                 CollectLootChest();
             }
+            if(gameObject.CompareTag("Silver"))
+            {
+                CollectSilver();
+            }
         }
     }
 
@@ -80,6 +84,18 @@ public class Loot : MonoBehaviour
         PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
         AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.healthCollectSfx);
         //Debug.Log("Loot Collected");
+    }
+
+    void CollectSilver()
+    {
+        // e.g. add to player Silver
+        
+        InventoryManager.Instance.AddSilver(amount);
+        playerPos = null; //reset magnet effect when returned to pool
+
+        // then return to pool / deactivate
+        PoolManager.Despawn(this.gameObject, PoolManager.PoolType.GameObject);
+        AudioManager.Instance.PlaySFX(PrefabDatabase.Instance.coinCollectSfx);
     }
 
     void CollectLootChest()

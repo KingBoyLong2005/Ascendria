@@ -161,36 +161,49 @@ public class EnemyManager : MonoBehaviour
     // ============================
     private void SpawnRandomEnemy()
     {
-        if (enemyPrefabs.Count == 0)
-            return;
-        
-        GameObject prefab = null;
-        if (!countdownFinished)
+        if (enemyPrefabs.Count == 0) return;
+
+        GameObject prefab = !countdownFinished 
+            ? enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)] 
+            : enemyDemonPrefab;
+
+        Vector3 spawnPoint;
+        int maxAttempts = 10;
+
+        for (int attempt = 0; attempt < maxAttempts; attempt++)
         {
-            prefab = enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)];
-        }
-        else
-        {
-            prefab = enemyDemonPrefab;
-        }
+            // Dùng Random.onUnitCircle thay vì insideUnitCircle để tránh vector ~0
+            float angle = UnityEngine.Random.Range(0f, 360f) * Mathf.Deg2Rad;
+            Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+            float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
 
-        Vector2 dir = UnityEngine.Random.insideUnitCircle.normalized;
-        float distance = UnityEngine.Random.Range(minSpawnDistance, maxSpawnDistance);
+            Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
+            Vector3 rayStart = spawnXZ + Vector3.up * 100f;
 
-        // Random vị trí XZ quanh player
-        Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
+            if (!Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
+                continue;
 
-        // Raycast từ trên cao xuống
-        Vector3 rayStart = spawnXZ + Vector3.up * 100f;
+            spawnPoint = hit.point;
 
-        if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
-        {
-            // hit.point là vị trí mặt đất
-            var enemyInstance = PoolManager.Spawn(prefab, hit.point, Quaternion.identity);
-            // Gán callback để quái có thể báo “tao chết rồi”
+            // ✅ Kiểm tra khoảng cách thực tế sau khi snap xuống ground
+            float actualDist = Vector3.Distance(
+                new Vector3(spawnPoint.x, 0, spawnPoint.z),
+                new Vector3(player.position.x, 0, player.position.z)
+            );
+            if (actualDist < minSpawnDistance)
+                continue;
+
+            // ✅ Kiểm tra không có vật cản giữa spawn point và player (tùy chọn)
+            // Vector3 dirToPlayer = (player.position - spawnPoint).normalized;
+            // if (Physics.Raycast(spawnPoint + Vector3.up, dirToPlayer, actualDist, groundMask))
+            //     continue;
+
+            var enemyInstance = PoolManager.Spawn(prefab, spawnPoint, Quaternion.identity);
             enemyInstance.GetComponent<EnemyAI>().Setup(player);
-            // return;
+            return;
         }
+
+        Debug.LogWarning("EnemyManager: Không tìm được điểm spawn hợp lệ sau " + maxAttempts + " lần thử.");
     }
 
     // ============================

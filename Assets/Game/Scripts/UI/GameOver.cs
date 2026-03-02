@@ -34,7 +34,7 @@ public class GameOver : MonoBehaviour
     }
     private void GameOverOverride()
     {
-        int coinGet = (int)InventoryManager.Instance.GetTotalCoins();
+        int silverGet = (int)InventoryManager.Instance.GetTotalSilver();
         int killGet = (int)EnemyManager.Instance.GetKillCount();
         int levelGet = LevelManager.Instance.level;
         int bosskilCount = BossManager.Instance.bossKillCount;
@@ -49,7 +49,7 @@ public class GameOver : MonoBehaviour
         //Start Endgame call
         var changes = new Dictionary<string, int>
         {
-            { "Item4Collect1000Gold", coinGet },
+            { "Item4Collect1000Gold", silverGet },
             { "Item5ReachLevel20", levelGet },
             { "Item6Kill50Bosses", bosskilCount },
             { "Item7ReachSomeMoveSpeed", moveSpeed },
@@ -65,7 +65,7 @@ public class GameOver : MonoBehaviour
         //Call log progress
         AchievementSystem.Instance.LogSavedProgress();
 
-        GameSaveSystem.Instance.AddCoin(coinGet);
+        GameSaveSystem.Instance.AddCoin(silverGet);
         // GameplayEvents.ResetChestOpenCount();
         // BossManager.Instance.ResetBossKillCount();
     }

@@ -18,8 +18,8 @@ public class HealthIncreaseBuff : BookBuff
         { Rarity.Common,    new(1, 5f)  },
         { Rarity.Uncommon,  new(1, 8f)  },
         { Rarity.Rare,      new(1, 10f) },
-        { Rarity.Epic,      new(1, 20f) },
-        { Rarity.Legendary, new(1, 25f) },
+        { Rarity.Epic,      new(1, 13f) }, // ← đổi 20 → 13
+        { Rarity.Legendary, new(1, 15f) }, // ← đổi 25 → 15
     };
 
     public override void Apply()

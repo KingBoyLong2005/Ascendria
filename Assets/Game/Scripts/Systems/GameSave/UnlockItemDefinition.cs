@@ -24,6 +24,7 @@ public class UnlockItemDefinition : ShopItemDefinition, IUnlockable
 
     [Header("Source — chỉ điền 1 trong 2")]
     public Weapon sourceWeapon;
+    public BookBuff sourceBookBuff;
     public ProfileCharacterData sourceCharacter;
 
     // ── IUnlockable ────────────────────────────────────────────────
@@ -37,6 +38,7 @@ public class UnlockItemDefinition : ShopItemDefinition, IUnlockable
         {
             if (sourceWeapon    != null) return sourceWeapon.weaponName;
             if (sourceCharacter != null) return sourceCharacter.displayName;
+            if (sourceBookBuff  != null) return sourceBookBuff.statTarget;
             return id;
         }
     }
@@ -47,6 +49,7 @@ public class UnlockItemDefinition : ShopItemDefinition, IUnlockable
         {
             if (sourceWeapon    != null) return sourceWeapon.Icon;
             if (sourceCharacter != null) return sourceCharacter.iconChar;
+            if (sourceBookBuff  != null) return sourceBookBuff.Icon;
             return null;
         }
     }

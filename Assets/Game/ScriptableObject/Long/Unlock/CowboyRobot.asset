@@ -17,6 +17,6 @@ MonoBehaviour:
   description: 
   image: {fileID: 0}
   levels: []
-  unlockCost: 0
+  unlockCost: 150
   sourceWeapon: {fileID: 0}
   sourceCharacter: {fileID: 11400000, guid: d44d3c884d092db4b8fb35b8fe0826d6, type: 2}
