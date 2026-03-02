@@ -8,6 +8,16 @@ public class InteractDetector : MonoBehaviour
 
     public Interactable Current => current;
 
+    private InteractionUI interactionUI;
+
+    private void Awake()
+    {
+        interactionUI = InteractionUI.Instance;
+
+        if (interactionUI == null)
+            interactionUI = FindFirstObjectByType<InteractionUI>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (current != null)
@@ -20,8 +30,7 @@ public class InteractDetector : MonoBehaviour
         {
             current = interactable;
 
-            // bật nút E
-            // Thêm viền cho object ?
+            interactionUI?.Show();
 
             Debug.Log($"Vào vùng tương tác: {interactable.name}");
         }
@@ -39,8 +48,7 @@ public class InteractDetector : MonoBehaviour
 
             current = null;
 
-            // Tắt nút E
-            // Tắt viền
+            interactionUI?.Hide();
 
             Debug.Log("Ra khỏi vùng tương tác");
         }

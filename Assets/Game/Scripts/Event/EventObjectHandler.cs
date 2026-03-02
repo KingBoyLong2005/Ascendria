@@ -19,10 +19,13 @@ public class EventObjectHandler : MonoBehaviour
         {
             case "EventMiniBoss":
                 Debug.Log("Mở EventMiniBoss");
+
                 break;
 
             case "EventCatchOrb":
                 Debug.Log("Mở EventCatchOrb");
+
+                // bỏ
                 break;
 
             case "EventCaptureObject":
@@ -35,6 +38,8 @@ public class EventObjectHandler : MonoBehaviour
 
             case "EventTravelingMerchant":
                 Debug.Log("Mở EventTravelingMerchant");
+
+                //bỏ
                 break;
 
             case "EventGreedAltar":
