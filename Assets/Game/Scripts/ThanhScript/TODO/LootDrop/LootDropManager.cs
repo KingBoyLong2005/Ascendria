@@ -15,6 +15,7 @@ public class LootDropManager : MonoBehaviour
     {
         lootTable.Add(PrefabDatabase.Instance.health);
         lootTable.Add(PrefabDatabase.Instance.exp);
+        lootTable.Add(PrefabDatabase.Instance.coin);
         lootChest = PrefabDatabase.Instance.lootChest;
     }
     private void OnEnable()

@@ -258,7 +258,7 @@ public class ReadySceneManager : MonoBehaviour
     {
         var maps = new List<MapData>();
         var db = PrefabDatabase.Instance;
-        if (db.firstMapPrefab  != null) maps.Add(new MapData { mapName = "First Map",  mapPrefab = db.firstMapPrefab,  icon = db.firstMapIcon  });
+        if (db.firstMapPrefab  != null) maps.Add(new MapData { mapName = "Island",  mapPrefab = db.firstMapPrefab,  icon = db.firstMapIcon  });
         if (db.secondMapPrefab != null) maps.Add(new MapData { mapName = "Second Map", mapPrefab = db.secondMapPrefab, icon = db.secondMapIcon });
         if (db.thirdMapPrefab  != null) maps.Add(new MapData { mapName = "Third Map",  mapPrefab = db.thirdMapPrefab,  icon = db.thirdMapIcon  });
         return maps;

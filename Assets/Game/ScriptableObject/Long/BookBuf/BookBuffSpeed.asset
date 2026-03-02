@@ -15,7 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 5c3bdc439e6ca1a44a084e02700f3150, type: 3}
   level: 1
   description: Increase Speed
-  buffId: Speed
-  value: 1
-  statTarget: Speed
+  buffId: Book Speed
+  statTarget: Book Speed
   amount: 10

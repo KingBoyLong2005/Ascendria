@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aad40d8e4e6cea47a19986c589881b3, type: 3}
-  m_Name: Lightnightstrike
+  m_Name: BuffLuck
   m_EditorClassIdentifier: 
-  id: Lightning Strike
-  displayName: lightning
+  id: Buff Luck
+  displayName: Book Luck
   description: 
   image: {fileID: 0}
   levels: []
-  unlockCost: 20
-  sourceWeapon: {fileID: 11400000, guid: 28bb6e62170cea74cb2bd172c92337ee, type: 2}
+  unlockCost: 50
+  sourceWeapon: {fileID: 0}
+  sourceBookBuff: {fileID: 11400000, guid: 8c1658f4971fa8840891078c9170c5e8, type: 2}
   sourceCharacter: {fileID: 0}

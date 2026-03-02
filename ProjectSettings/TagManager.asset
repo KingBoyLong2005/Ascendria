@@ -16,6 +16,7 @@ TagManager:
   - Countdown Timer
   - Boss HP Container
   - Loot Chest
+  - Silver
   layers:
   - Default
   - TransparentFX

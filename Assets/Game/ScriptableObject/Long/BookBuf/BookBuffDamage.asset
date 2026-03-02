@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc9bf2a860a15d84c83b9eb370181ecd, type: 3}
-  m_Name: Item8Reach100Hp
+  m_Script: {fileID: 11500000, guid: b996b165b124da943b75b773a9f515f3, type: 3}
+  m_Name: BookBuffDamage
   m_EditorClassIdentifier: 
-  id: Item8Reach100Hp
-  Icon: {fileID: 290175183, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
-  displayName: Reach 100 HP
-  description: Reach 100 HP to unlock this item
-  target: 100
+  Icon: {fileID: 21300000, guid: dafea790912a27a4eb59ffeb91330f7d, type: 3}
+  level: 1
+  description: "Increase Damage\t"
+  buffId: Book Damage
+  statTarget: Book Damage
+  amount: 10

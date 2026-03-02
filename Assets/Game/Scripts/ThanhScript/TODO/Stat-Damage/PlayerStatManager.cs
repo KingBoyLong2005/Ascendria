@@ -19,6 +19,7 @@ public class PlayerStatManager : MonoBehaviour
     public float baseLuck = 0f;
     public float baseWealth = 0f;
     public float baseWise = 0f;
+    public float baseSilver = 0;
     public bool activeHpRegen = false;
     public event EventHandler<OnPlayerHealthChangeEventArgs> OnPlayerHealthChange;
     public class OnPlayerHealthChangeEventArgs : EventArgs
@@ -65,6 +66,9 @@ public class PlayerStatManager : MonoBehaviour
 
     private float discardModifierFlat = 0f;
     private float discardModifierMult = 1f;
+
+    private float SilverModifierFlat = 0;
+    private float SilverModifierMult = 1;
 
     private ProfileCharacterLoader loaderProfile;
 
@@ -217,6 +221,13 @@ public class PlayerStatManager : MonoBehaviour
         }
     }
 
+    public float Silver
+    {
+        get
+        {
+            return (baseSilver + SilverModifierFlat) * SilverModifierMult;
+        }
+    }
     // STAT MODIFYING METHODS
     public void ModifyHealth(float addFlat = 0f, float mult = 1f)
     {
@@ -249,7 +260,7 @@ public class PlayerStatManager : MonoBehaviour
     public void ModifyDamage(float addFlat = 0f, float mult = 1f)
     {
         damageModifierFlat += addFlat;
-        damageModifierMult += mult;
+        damageModifierMult *= mult;
     }
     public void ModifyLuck(float addFlat = 0f, float mult = 1f)
     {
@@ -273,6 +284,11 @@ public class PlayerStatManager : MonoBehaviour
     {
         discardModifierFlat += addFlat;
         discardModifierMult *= mult;
+    }
+    public void modifySilver(float addFlat = 0, float mult = 1)
+    {
+        SilverModifierFlat += addFlat;
+        SilverModifierMult *= mult;
     }
 }
 

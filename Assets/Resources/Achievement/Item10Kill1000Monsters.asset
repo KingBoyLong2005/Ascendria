@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Item10Kill1000Monsters
   m_EditorClassIdentifier: 
   id: Item10Kill1000Monsters
+  Icon: {fileID: 401582371, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   displayName: Kill 1000 monsters
   description: Kill 1000 monsters to unlock this item
   target: 1000

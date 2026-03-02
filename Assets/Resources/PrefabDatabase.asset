@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aac043334ac242419d2303b22b45d8c, type: 3}
   m_Name: PrefabDatabase
   m_EditorClassIdentifier: 
+  firstMapIcon: {fileID: 21300000, guid: 7ddf13f437dbf4646b4438cda22fd930, type: 3}
+  secondMapIcon: {fileID: 0}
+  thirdMapIcon: {fileID: 0}
   firstMapPrefab: {fileID: 6762503122751749967, guid: 133fe98ff1adf4041b9b8e98548eb7b1, type: 3}
   secondMapPrefab: {fileID: 0}
   thirdMapPrefab: {fileID: 0}
@@ -29,7 +32,7 @@ MonoBehaviour:
   eventCatchOrb: {fileID: 6478668858015884597, guid: 3a1bfcb64495d6f40bde53232b5c7bb3, type: 3}
   health: {fileID: 5040817921139094699, guid: 3ce7abd64711b2c48b6314c774e317cb, type: 3}
   exp: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
-  coin: {fileID: 0}
+  coin: {fileID: 5275001666003650064, guid: 27ebb049b89e0cd44861d5651270464b, type: 3}
   lootChest: {fileID: 8477327709802427949, guid: 184f1abc05b5506448395c6e5bedfc93, type: 3}
   mapTheme: {fileID: 8300000, guid: 7cbd6b20de85815499a1137dbc598454, type: 3}
   bossTheme: {fileID: 8300000, guid: a6056a1376e5b3543b60dbfcb6f0234a, type: 3}

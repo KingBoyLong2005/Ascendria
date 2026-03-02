@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Item6Kill50Bosses
   m_EditorClassIdentifier: 
   id: Item6Kill50Bosses
+  Icon: {fileID: 99364227, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   displayName: Kill 50 bosses
   description: Kill 50 bosses to unlock this item
   target: 50
