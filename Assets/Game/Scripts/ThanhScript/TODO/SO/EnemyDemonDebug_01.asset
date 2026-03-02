@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Demon Debug 01
   maxHealth: 20
   moveSpeed: 2
-  attack: 10
-  armor: 10
+  attack: 2
+  armor: 5

@@ -17,6 +17,7 @@ TagManager:
   - Boss HP Container
   - Loot Chest
   - Silver
+  - Silver Counter
   layers:
   - Default
   - TransparentFX
