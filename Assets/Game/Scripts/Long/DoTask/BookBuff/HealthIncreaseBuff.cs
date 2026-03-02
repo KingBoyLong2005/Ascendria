@@ -1,25 +1,40 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(menuName = "Buffs/Health Increase")]
 public class HealthIncreaseBuff : BookBuff
 {
     public float amount = 10f;
+
+    private struct UpgradeConfig
+    {
+        public int count;
+        public float hp;
+        public UpgradeConfig(int c, float h) { count = c; hp = h; }
+    }
+
+    private static readonly Dictionary<Rarity, UpgradeConfig> configs = new()
+    {
+        { Rarity.Common,    new(1, 5f)  },
+        { Rarity.Uncommon,  new(1, 8f)  },
+        { Rarity.Rare,      new(1, 10f) },
+        { Rarity.Epic,      new(1, 20f) },
+        { Rarity.Legendary, new(1, 25f) },
+    };
+
     public override void Apply()
     {
-        // stats.maxHP += amount;
-        // stats.currentHP = Mathf.Min(stats.currentHP + amount, stats.maxHP);
         PlayerStatManager.Instance.ModifyHealth(amount);
     }
 
     public override void LevelUp(Rarity rarity)
     {
-        switch (rarity)
+        if (!configs.TryGetValue(rarity, out var cfg)) return;
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 1, level);
+        foreach (int stat in stats)
         {
-            case Rarity.Common:     amount += 5f; break;
-            case Rarity.Uncommon:   amount += 8f; break;
-            case Rarity.Rare:       amount += 10f; break;
-            case Rarity.Epic:       amount += 20f; break;
-            case Rarity.Legendary:  amount += 25f; break;
+            if (stat == 0) amount += cfg.hp;
         }
 
         level++;
@@ -27,6 +42,20 @@ public class HealthIncreaseBuff : BookBuff
 
     public override string GetUpgradeDescription(Rarity rarity)
     {
-        return $"+{amount} Max HP";
+        if (!configs.TryGetValue(rarity, out var cfg)) return "Unknown";
+        return $"+{cfg.hp} Max HP";
+    }
+
+    public override List<string> GetUpgradePreview(Rarity rarity, int seed)
+    {
+        if (!configs.TryGetValue(rarity, out var cfg))
+            return new List<string> { "Unknown" };
+
+        var stats = UpgradeHelper.GetRandomStats(cfg.count, 1, seed);
+        var preview = new List<string>();
+        foreach (int stat in stats)
+            preview.Add($"+{cfg.hp} Max HP");
+
+        return preview;
     }
 }

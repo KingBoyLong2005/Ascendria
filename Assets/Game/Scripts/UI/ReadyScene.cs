@@ -257,9 +257,10 @@ public class ReadySceneManager : MonoBehaviour
     private List<MapData> GetAvailableMaps()
     {
         var maps = new List<MapData>();
-        if (PrefabDatabase.Instance.firstMapPrefab  != null) maps.Add(new MapData { mapName = "First Map",  mapPrefab = PrefabDatabase.Instance.firstMapPrefab  });
-        if (PrefabDatabase.Instance.secondMapPrefab != null) maps.Add(new MapData { mapName = "Second Map", mapPrefab = PrefabDatabase.Instance.secondMapPrefab });
-        if (PrefabDatabase.Instance.thirdMapPrefab  != null) maps.Add(new MapData { mapName = "Third Map",  mapPrefab = PrefabDatabase.Instance.thirdMapPrefab  });
+        var db = PrefabDatabase.Instance;
+        if (db.firstMapPrefab  != null) maps.Add(new MapData { mapName = "First Map",  mapPrefab = db.firstMapPrefab,  icon = db.firstMapIcon  });
+        if (db.secondMapPrefab != null) maps.Add(new MapData { mapName = "Second Map", mapPrefab = db.secondMapPrefab, icon = db.secondMapIcon });
+        if (db.thirdMapPrefab  != null) maps.Add(new MapData { mapName = "Third Map",  mapPrefab = db.thirdMapPrefab,  icon = db.thirdMapIcon  });
         return maps;
     }
 
@@ -290,7 +291,7 @@ public class ReadySceneManager : MonoBehaviour
     {
         if (btn == null) return;
         ColorBlock c = btn.colors;
-        c.normalColor = Color.green;
+        c.normalColor = Color.gray;
         btn.colors = c;
     }
 
