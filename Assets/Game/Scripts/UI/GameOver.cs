@@ -24,21 +24,24 @@ public class GameOver : MonoBehaviour
     {
         Debug.Log("Play Again");
         SceneManager.LoadScene("ReadyScene");
+        GameOverOverride();
     }
     public void BackToMenu()
     {
         Debug.Log("Back To Menu");
         SceneManager.LoadScene("MenuScene");
+        GameOverOverride();
     }
     private void GameOverOverride()
     {
-        float coinGet = InventoryManager.Instance.GetTotalCoins();
-        float killGet = EnemyManager.Instance.GetKillCount();
-        float levelGet = LevelManager.Instance.level;
+        int coinGet = (int)InventoryManager.Instance.GetTotalCoins();
+        int killGet = (int)EnemyManager.Instance.GetKillCount();
+        int levelGet = LevelManager.Instance.level;
         int bosskilCount = BossManager.Instance.bossKillCount;
         int levelHighestWeapon = GetHighestWeaponLevel();
-        float moveSpeed = PlayerStatManager.Instance.MoveSpeed;
-        float level = LevelManager.Instance.level;
+        int moveSpeed = (int)PlayerStatManager.Instance.MoveSpeed;
+        int healthGet = (int)PlayerStatManager.Instance.MaxHealth;
+        int chestOpenCount = GameplayEvents.chestOpenCount;
 
         AchievementSystem.Instance.Initialize();
 
@@ -46,14 +49,14 @@ public class GameOver : MonoBehaviour
         //Start Endgame call
         var changes = new Dictionary<string, int>
         {
-            // { "Item4Collect1000Gold", coinGet },
-            // { "Item5ReachLevel20", 1 },
-            // { "Item6Kill50Bosses", 1 },
-            // { "Item7ReachSomeMoveSpeed", 1 },
-            // { "Item8Reach100Hp", 1 },
-            // { "Item9ReachLevel15Weapon", 1 },
-            // { "Item10Kill1000Monsters", 1 },
-            // { "Item11Open100Chest", 1 }
+            { "Item4Collect1000Gold", coinGet },
+            { "Item5ReachLevel20", levelGet },
+            { "Item6Kill50Bosses", bosskilCount },
+            { "Item7ReachSomeMoveSpeed", moveSpeed },
+            { "Item8Reach100Hp", healthGet },
+            { "Item9ReachLevel15Weapon", levelHighestWeapon },
+            { "Item10Kill1000Monsters", killGet },
+            { "Item11Open100Chest", chestOpenCount }
         };
 
         AchievementSystem.Instance.ApplyProgressChanges(changes);
@@ -61,6 +64,10 @@ public class GameOver : MonoBehaviour
 
         //Call log progress
         AchievementSystem.Instance.LogSavedProgress();
+
+        GameSaveSystem.Instance.AddCoin(coinGet);
+        // GameplayEvents.ResetChestOpenCount();
+        // BossManager.Instance.ResetBossKillCount();
     }
     public int GetHighestWeaponLevel()
     {

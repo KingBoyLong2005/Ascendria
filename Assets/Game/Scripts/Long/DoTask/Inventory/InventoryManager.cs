@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
     [Header("Weapons")]
     public List<Weapon> ownedWeapons = new List<Weapon>();
     public List<Weapon> activeWeapons = new List<Weapon>();
-    public int maxActiveWeapons = 6;
+    public int maxActiveWeapons = 3;
 
     [Header("Book Buffs")]
     public List<BookBuff> ownedBookBuffs = new List<BookBuff>();
