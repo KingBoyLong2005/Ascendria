@@ -11,4 +11,9 @@ public class Interactable : MonoBehaviour
 {
     [SerializeField]
     public InteractionType interactType;
+
+    public void Interacted()
+    {
+        Destroy(gameObject);
+    }
 }

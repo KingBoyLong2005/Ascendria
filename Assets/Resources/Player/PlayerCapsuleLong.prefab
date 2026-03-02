@@ -700,7 +700,7 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 1024
-  showRaycastGizmos: 1
+  interactDetector: {fileID: 6729597964613093595}
 --- !u!1001 &309086128796961009
 PrefabInstance:
   m_ObjectHideFlags: 0
