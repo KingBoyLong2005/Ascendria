@@ -121,6 +121,7 @@ public class InventoryUI : MonoBehaviour
         if (isOpen) return;
         isOpen = true;
 
+        FindFirstObjectByType<TPCameraController>().TurnOnMouse();
         inventoryPanel.SetActive(true);
         RefreshAll();
         ResumeButton.gameObject.SetActive(true);
@@ -136,7 +137,8 @@ public class InventoryUI : MonoBehaviour
     {
         if (!isOpen) return;
         isOpen = false;
-
+        
+        FindFirstObjectByType<TPCameraController>().TurnOffMouse();
         inventoryPanel.SetActive(false);
         ResumeButton.gameObject.SetActive(false);
         QuitButton.gameObject.SetActive(false);

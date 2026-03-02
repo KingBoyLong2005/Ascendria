@@ -4,6 +4,9 @@
 public class PrefabDatabase : ScriptableObject
 {
     [Header("Map Prefabs")]
+    public Sprite firstMapIcon;
+    public Sprite secondMapIcon;
+    public Sprite thirdMapIcon;
     public GameObject firstMapPrefab;
     public GameObject secondMapPrefab;
     public GameObject thirdMapPrefab;
