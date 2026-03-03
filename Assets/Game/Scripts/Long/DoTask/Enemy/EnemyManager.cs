@@ -159,6 +159,47 @@ public class EnemyManager : MonoBehaviour
     // ============================
     //       SPAWN ENEMY
     // ============================
+
+    public void SpawnMiniBoss()
+    {
+        GameObject prefab = enemyDemonPrefab;
+
+        Vector3 spawnPoint;
+        int maxAttempts = 10;
+
+        for (int attempt = 0; attempt < maxAttempts; attempt++)
+        {
+            // Dùng Random.onUnitCircle thay vì insideUnitCircle để tránh vector ~0
+            float angle = UnityEngine.Random.Range(0f, 360f) * Mathf.Deg2Rad;
+            Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+            float distance = UnityEngine.Random.Range(10, 20);
+
+            Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
+            Vector3 rayStart = spawnXZ + Vector3.up * 100f;
+
+            if (!Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
+                continue;
+
+            spawnPoint = hit.point;
+
+            // ✅ Kiểm tra khoảng cách thực tế sau khi snap xuống ground
+            float actualDist = Vector3.Distance(
+                new Vector3(spawnPoint.x, 0, spawnPoint.z),
+                new Vector3(player.position.x, 0, player.position.z)
+            );
+            if (actualDist < minSpawnDistance)
+                continue;
+
+            // ✅ Kiểm tra không có vật cản giữa spawn point và player (tùy chọn)
+            // Vector3 dirToPlayer = (player.position - spawnPoint).normalized;
+            // if (Physics.Raycast(spawnPoint + Vector3.up, dirToPlayer, actualDist, groundMask))
+            //     continue;
+
+            var enemyInstance = PoolManager.Spawn(prefab, spawnPoint, Quaternion.identity);
+            enemyInstance.GetComponent<EnemyAI>().Setup(player);
+            return;
+        }
+    }
     private void SpawnRandomEnemy()
     {
         if (enemyPrefabs.Count == 0) return;
@@ -220,5 +261,14 @@ public class EnemyManager : MonoBehaviour
     public void EnemyHitPlayer(GameObject enemy, float enemyAttack)
     {
         OnEnemyHitPlayer?.Invoke(this,new OnEnemyHitPlayerEventArgs(enemy,enemyAttack));
+    }
+
+    // ============================
+    //    Difficul multiplier
+    // ============================
+
+    public void IncreaseDifficultyMultiplier()
+    {
+        difficultyMultiplier += 2.0f;
     }
 }

@@ -21,15 +21,12 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (interactionUI != null && !interactionUI.IsShowing)
                 return;
-            Debug.Log("Bấm E");
             TryInteract();
         }
     }
 
     private void TryInteract()
     {
-        Debug.Log("Thử interact");
-
         if (interactDetector == null)
         {
             return;
@@ -46,8 +43,5 @@ public class PlayerInteraction : MonoBehaviour
 
         GameEventSystem.Trigger(this,
             new InteractionEventArgs(interactable, interactable.interactType));
-
-
-        Debug.Log($"Đã tương tác với {interactable.interactType}");
     }
 }

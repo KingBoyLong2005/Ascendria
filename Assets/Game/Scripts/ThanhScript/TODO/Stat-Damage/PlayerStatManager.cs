@@ -146,6 +146,14 @@ public class PlayerStatManager : MonoBehaviour
             return (baseMaxHealth + healthModifierFlat) * healthModifierMult;
         }
     }
+    // CURRENTHEALTH GETTER
+    public float CurrentHealth
+    {
+        get
+        {
+            return currentHealth;
+        }
+    }
     // DAMAGE GETTER
     public float Attack
     {

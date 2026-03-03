@@ -237,7 +237,7 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
+                //Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
                 Destroy(go);
                 continue;
             }
@@ -245,7 +245,7 @@ public class InventoryUI : MonoBehaviour
             spawnedSlots.Add(go);
         }
         
-        Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 1 - Spawned {count} weapons");
+        //Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 1 - Spawned {count} weapons");
     }
 
     /// <summary>
@@ -255,7 +255,7 @@ public class InventoryUI : MonoBehaviour
     {
         if (buffsParent == null)
         {
-            Debug.LogWarning("<color=orange>[InventoryUI]</color> buffsParent is null!");
+            //Debug.LogWarning("<color=orange>[InventoryUI]</color> buffsParent is null!");
             return;
         }
 
@@ -274,7 +274,7 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
+                //Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
                 Destroy(go);
                 continue;
             }
@@ -282,7 +282,7 @@ public class InventoryUI : MonoBehaviour
             spawnedSlots.Add(go);
         }
         
-        Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 2 - Spawned {count} buffs");
+        //Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 2 - Spawned {count} buffs");
     }
 
     /// <summary>
@@ -292,7 +292,7 @@ public class InventoryUI : MonoBehaviour
     {
         if (itemsParent == null)
         {
-            Debug.LogWarning("<color=orange>[InventoryUI]</color> itemsParent is null!");
+            //Debug.LogWarning("<color=orange>[InventoryUI]</color> itemsParent is null!");
             return;
         }
 
@@ -311,7 +311,7 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
+                //Debug.LogError("<color=red>[InventoryUI]</color> Slot prefab missing InventorySlotUI component!");
                 Destroy(go);
                 continue;
             }
@@ -319,7 +319,7 @@ public class InventoryUI : MonoBehaviour
             spawnedSlots.Add(go);
         }
         
-        Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 3 - Spawned {count} item types");
+        //Debug.Log($"<color=cyan>[InventoryUI]</color> Hàng 3 - Spawned {count} item types");
     }
 
     #endregion

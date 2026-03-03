@@ -62,7 +62,7 @@ public class EnemyStats : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        Debug.Log($"Current enemy hp: {currentHealth}");
+        //Debug.Log($"Current enemy hp: {currentHealth}");
         if (currentHealth <= 0f)
             Die();
     }
