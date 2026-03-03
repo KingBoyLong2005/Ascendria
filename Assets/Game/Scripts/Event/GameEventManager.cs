@@ -16,6 +16,7 @@ public class GameEventManager : MonoBehaviour
 
         // Khởi tạo các Handler ở đây
         gameObject.AddComponent<ChestEventHandler>();
+        gameObject.AddComponent<EventObjectHandler>();
     }
 
     private void OnEnable()
@@ -39,9 +40,8 @@ public class GameEventManager : MonoBehaviour
                 break;
 
             case InteractionType.Event:
-                //ChestLogic call
+                //EventLogic call
                 GameplayEvents.RaiseEventInteracted(e.Target);
-                Debug.Log($"Trigger Event: {e.Target.name}");
                 break;
 
             case InteractionType.BossGate:

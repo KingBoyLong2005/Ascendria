@@ -19,7 +19,5 @@ public class ChestEventHandler : MonoBehaviour
         UIManager.Instance.GameplayEvents_OnLootChestCollected(obj);
 
         chest.Interacted();
-
-        Debug.Log($"Mở Chest: {chest.name}");
     }
 }

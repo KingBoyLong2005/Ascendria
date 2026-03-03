@@ -297,6 +297,11 @@ public class InventoryManager : MonoBehaviour
         totalCoins += PlayerStatManager.Instance.Coin;
     }
 
+    public void AddEventCoin(int value)
+    {
+        totalCoins += value;
+    }
+
     public void SpendCoins(float amount)
     {
         if (amount <= 0 || amount > totalCoins) return;
