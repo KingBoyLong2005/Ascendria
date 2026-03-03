@@ -15,6 +15,7 @@ public class EventObjectHandler : MonoBehaviour
 
     private void OpenEvent(Interactable eventObject)
     {
+        Debug.Log("Hello");
         switch (eventObject.name)
         {
             case "EventMiniBoss":
