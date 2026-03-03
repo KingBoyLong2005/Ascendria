@@ -114,6 +114,7 @@ public class EventCaptureZone : MonoBehaviour
         InteractionUI.Instance.ShowMessage("Capture complete!");
         interactable.Interacted();
         InteractionUI.Instance.Hide();
+        StatRewardPopup.Instance.ShowRewardPopup();
     }
 
     private void CheckPlayerAlreadyInside()
