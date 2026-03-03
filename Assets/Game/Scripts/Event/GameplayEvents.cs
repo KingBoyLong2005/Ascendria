@@ -29,4 +29,8 @@ public static class GameplayEvents
         OnLootChestCollected?.Invoke(item);
         chestOpenCount++;
     }
+    public static void RessetChestOpenCount()
+    {
+        chestOpenCount = 0;
+    }
 }

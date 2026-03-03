@@ -43,6 +43,7 @@ public class GameOver : MonoBehaviour
         int healthGet = (int)PlayerStatManager.Instance.MaxHealth;
         int chestOpenCount = GameplayEvents.chestOpenCount;
 
+        GameplayEvents.RessetChestOpenCount();
         AchievementSystem.Instance.Initialize();
 
 
