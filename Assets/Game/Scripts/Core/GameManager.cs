@@ -52,8 +52,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // 1 object riêng để chứa AudioManager và được khởi tạo trước cả mapManager
-        var audioManagerObject = new GameObject("AudioManager");
-        var audioManager = audioManagerObject.AddComponent<AudioManager>();
+        //var audioManagerObject = new GameObject("AudioManager");
+        //var audioManager = audioManagerObject.AddComponent<AudioManager>();
         //audioManager = gameObject.AddComponent<AudioManager>();
         // LoadGameSelections();
         //Tạo MapManager
