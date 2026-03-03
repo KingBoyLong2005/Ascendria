@@ -290,17 +290,34 @@ public class ReadySceneManager : MonoBehaviour
     private void HighlightButton(Button btn)
     {
         if (btn == null) return;
+
+        // Reset màu về white (không bị tối)
         ColorBlock c = btn.colors;
-        c.normalColor = Color.gray;
+        c.normalColor = Color.white;
         btn.colors = c;
+
+        // Thêm hoặc bật Outline trắng
+        Outline outline = btn.GetComponent<Outline>();
+        if (outline == null)
+            outline = btn.gameObject.AddComponent<Outline>();
+
+        outline.effectColor = Color.white;
+        outline.effectDistance = new Vector2(3f, -3f); // độ dày viền
+        outline.enabled = true;
     }
 
     private void ResetButtonColor(Button btn)
     {
         if (btn == null) return;
+
         ColorBlock c = btn.colors;
         c.normalColor = Color.white;
         btn.colors = c;
+
+        // Tắt outline
+        Outline outline = btn.GetComponent<Outline>();
+        if (outline != null)
+            outline.enabled = false;
     }
 
     // ═════════════════════════════════════════════

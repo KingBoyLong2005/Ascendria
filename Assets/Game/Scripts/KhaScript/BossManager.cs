@@ -51,16 +51,16 @@ public class BossManager : MonoBehaviour
         }
         Instance = this;
 
-        GameplayEvents.OnBossGateInteracted += GameplayEvents_OnBossGateInteracted;
+        // GameplayEvents.OnBossGateInteracted += GameplayEvents_OnBossGateInteracted;
 
         LoadPrefabsFromDatabase();
     }
 
-    private void GameplayEvents_OnBossGateInteracted(Interactable obj)
-    {
-        Transform pos = obj.transform;
-        SpawnGateBoss(pos);
-    }
+    // private void GameplayEvents_OnBossGateInteracted(Interactable obj)
+    // {
+    //     Transform pos = obj.transform;
+    //     SpawnGateBoss(pos);
+    // }
 
     private void Start()
     {

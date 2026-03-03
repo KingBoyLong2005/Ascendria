@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde64a0fd57d3284fa59a1399bb80a16, type: 3}
   m_Name: BossDebug_01
   m_EditorClassIdentifier: 
-  enemyName: Boss Debug 01
-  maxHealth: 30
+  enemyName: Tree Jaian
+  maxHealth: 100
   moveSpeed: 2.5
   attack: 10
   armor: 10

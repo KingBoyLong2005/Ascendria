@@ -7,6 +7,7 @@ using static SpawnPointManager;
 
 public class MapManager01 : MonoBehaviour 
 {
+    public static MapManager01 Instance { get; private set; }
     private GameObject mapPrefab;
     private GameObject bossGatePrefab;
     
@@ -22,6 +23,7 @@ public class MapManager01 : MonoBehaviour
 
     void Awake()
     {
+        Instance = this;
         // Lấy map prefab theo selection từ ReadyScene, fallback về firstMapPrefab nếu chưa chọn
         mapPrefab = PrefabDatabase.Instance.GetSelectedMapPrefab();
         bossGatePrefab = PrefabDatabase.Instance.bossGatePrefab;
@@ -114,18 +116,18 @@ public class MapManager01 : MonoBehaviour
             );
             Debug.Log($"<color=green>[MapManager]</color> Boss Gate đã được tạo thành công tại {spawnTransform.position}.");
 
-            MeshCollider mc1 = currentBossGateInstance.AddComponent<MeshCollider>(); 
-            mc1.sharedMesh = currentBossGateInstance.GetComponent<MeshFilter>().sharedMesh; 
-            mc1.convex = false;
+            // MeshCollider mc1 = currentBossGateInstance.AddComponent<MeshCollider>(); 
+            // mc1.sharedMesh = currentBossGateInstance.GetComponent<MeshFilter>().sharedMesh; 
+            // mc1.convex = false;
 
-            MeshCollider mc2 = currentBossGateInstance.AddComponent<MeshCollider>();
-            mc2.convex = true; 
-            mc2.isTrigger = true;
+            // MeshCollider mc2 = currentBossGateInstance.AddComponent<MeshCollider>();
+            // mc2.convex = true; 
+            // mc2.isTrigger = true;
 
             currentBossGateInstance.layer = LayerMask.NameToLayer("Interactable");
 
-            Interactable gateType = currentBossGateInstance.AddComponent<Interactable>();
-            gateType.interactType = InteractionType.BossGate;
+            // Interactable gateType = currentBossGateInstance.AddComponent<Interactable>();
+            // gateType.interactType = InteractionType.BossGate;
 
             // GẮN VÀ KHỞI TẠO BossGateTrigger
             //BossGateTrigger gateTrigger = currentBossGateInstance.AddComponent<BossGateTrigger>();
@@ -208,5 +210,9 @@ public class MapManager01 : MonoBehaviour
 
         Debug.LogError("[MapManager] SpawnPointManager chưa được khởi tạo.");
         return new List<Transform>();
+    }
+    public Transform GetBossGatePosition()
+    {
+        return currentBossGateInstance.transform;
     }
 }

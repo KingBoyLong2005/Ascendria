@@ -39,7 +39,7 @@ public class GameSaveSystem
     {
         return new GameSaveData
         {
-            currentCoin = 0,
+            currentCoin = 100000,
             highScores = new List<int>(),
             weapons = new List<UnlockEntry>
             {

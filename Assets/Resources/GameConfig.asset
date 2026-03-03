@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   maxChestNums: 70
-  maxInteractObjectNum: 7
-  maxEnemy: 100
+  maxInteractObjectNum: 10
+  maxEnemy: 200

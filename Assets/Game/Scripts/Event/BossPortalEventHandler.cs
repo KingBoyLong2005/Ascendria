@@ -16,6 +16,7 @@ public class BossGateEventHandler : MonoBehaviour
     private void OpenGate(Interactable gate)
     {
         //LLogic
-        Debug.Log($"Mở Chest: {gate.name}");
+        BossManager.Instance.SpawnGateBoss(MapManager01.Instance.GetBossGatePosition());
+        Debug.Log($"Triệu hồi boss: {gate.name}");
     }
 }

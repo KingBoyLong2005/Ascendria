@@ -46,8 +46,8 @@ public class InteractableSpawner
             new SpawnRequest(eventObjectMiniBoss, GameConfig.Instance.maxInteractObjectNum),
             new SpawnRequest(eventObjectCaptureObject, GameConfig.Instance.maxInteractObjectNum),
             new SpawnRequest(eventObjectGreedAltar, GameConfig.Instance.maxInteractObjectNum),
-            new SpawnRequest(eventObjectSacrificialAltar, GameConfig.Instance.maxInteractObjectNum),
-            new SpawnRequest(eventObjectTravelingMerchant, GameConfig.Instance.maxInteractObjectNum)
+            new SpawnRequest(eventObjectSacrificialAltar, GameConfig.Instance.maxInteractObjectNum)
+            // new SpawnRequest(eventObjectTravelingMerchant, GameConfig.Instance.maxInteractObjectNum)
         };
 
         List<Vector3> finalPositions = new List<Vector3>();

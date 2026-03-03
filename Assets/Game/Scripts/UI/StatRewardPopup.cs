@@ -62,10 +62,15 @@ public class StatRewardPopup : MonoBehaviour
             string name = GetStatDisplayName(stat);
             float currentValue = GetCurrentStatValue(stat);
 
-            statNameTexts[i].text = name;
-            statBoostTexts[i].text = $"+{boostAmount} → {currentValue + boostAmount:F1}";
+            Color statColor = statColors.TryGetValue(stat, out Color c) ? c : Color.white;
 
-            int index = i; // Capture index
+            statNameTexts[i].text  = name;
+            statNameTexts[i].color = statColor;  // ← màu tên stat
+
+            statBoostTexts[i].text  = $"+{boostAmount} → {currentValue + boostAmount:F1}";
+            statBoostTexts[i].color = statColor;  // ← màu boost text cùng màu
+
+            int index = i;
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionChosen(index));
         }
@@ -97,14 +102,14 @@ public class StatRewardPopup : MonoBehaviour
     {
         switch (type)
         {
-            case StatType.MaxHealth: return "Máu tối đa";
-            case StatType.Attack:    return "Tấn công";
-            case StatType.MoveSpeed: return "Tốc độ di chuyển";
-            case StatType.Armor:     return "Giáp";
-            case StatType.Damage:    return "Sát thương";
-            case StatType.Luck:      return "May mắn";
-            case StatType.Wealth:    return "Giàu có";
-            case StatType.Wise:      return "Trí tuệ";
+            case StatType.MaxHealth: return "Max Health";
+            case StatType.Attack:    return "Attack";
+            case StatType.MoveSpeed: return "Move Speed";
+            case StatType.Armor:     return "Armor";
+            case StatType.Damage:    return "Damage";
+            case StatType.Luck:      return "Luck";
+            case StatType.Wealth:    return "Wealth";
+            case StatType.Wise:      return "Wisdom";
             case StatType.Coin:      return "Coin";
             case StatType.Discard:   return "Discard";
             case StatType.Silver:    return "Silver";
@@ -131,7 +136,21 @@ public class StatRewardPopup : MonoBehaviour
             default: return 0f;
         }
     }
-
+    // Thêm vào đầu class, sau các field
+    private static readonly Dictionary<StatType, Color> statColors = new Dictionary<StatType, Color>
+    {
+        { StatType.MaxHealth,  new Color(1f,    0.2f,  0.2f)  },  // Đỏ
+        { StatType.Attack,     new Color(1f,    0.5f,  0f)    },  // Cam
+        { StatType.MoveSpeed,  new Color(0.2f,  0.6f,  1f)    },  // Xanh dương
+        { StatType.Armor,      new Color(0.8f,  0.8f,  0.2f)  },  // Vàng
+        { StatType.Damage,     new Color(0.9f,  0.1f,  0.5f)  },  // Hồng đậm
+        { StatType.Luck,       new Color(0.2f,  0.9f,  0.3f)  },  // Xanh lá
+        { StatType.Wealth,     new Color(1f,    0.85f, 0f)     },  // Vàng gold
+        { StatType.Wise,       new Color(0.6f,  0.3f,  1f)    },  // Tím
+        { StatType.Coin,       new Color(1f,    0.9f,  0.2f)  },  // Vàng nhạt
+        { StatType.Discard,    new Color(0.5f,  0.5f,  0.5f)  },  // Xám
+        { StatType.Silver,     new Color(0.8f,  0.9f,  1f)    },  // Bạc
+    };
     private void OnOptionChosen(int index)
     {
         StatType chosen = selectedStats[index];

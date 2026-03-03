@@ -17,6 +17,7 @@ public class GameEventManager : MonoBehaviour
         // Khởi tạo các Handler ở đây
         gameObject.AddComponent<ChestEventHandler>();
         gameObject.AddComponent<EventObjectHandler>();
+        gameObject.AddComponent<BossGateEventHandler>();
     }
 
     private void OnEnable()
