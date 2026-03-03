@@ -162,42 +162,50 @@ public class EnemyManager : MonoBehaviour
 
     public void SpawnMiniBoss()
     {
-        GameObject prefab = enemyDemonPrefab;
+        if (enemyDemonPrefab == null) { Debug.LogError("enemyDemonPrefab null!"); return; }
+        if (player == null) { Debug.LogError("player null!"); return; }
 
-        Vector3 spawnPoint;
-        int maxAttempts = 10;
+        int spawned = 0;
 
-        for (int attempt = 0; attempt < maxAttempts; attempt++)
+        while (spawned < 5)
         {
-            // Dùng Random.onUnitCircle thay vì insideUnitCircle để tránh vector ~0
-            float angle = UnityEngine.Random.Range(0f, 360f) * Mathf.Deg2Rad;
-            Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
-            float distance = UnityEngine.Random.Range(10, 20);
+            int maxAttempts = 20;
+            bool success = false;
 
-            Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
-            Vector3 rayStart = spawnXZ + Vector3.up * 100f;
+            for (int attempt = 0; attempt < maxAttempts; attempt++)
+            {
+                float angle = UnityEngine.Random.Range(0f, 360f) * Mathf.Deg2Rad;
+                Vector2 dir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                float distance = UnityEngine.Random.Range(15f, 30f);
 
-            if (!Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundMask))
-                continue;
+                Vector3 spawnXZ = player.position + new Vector3(dir.x, 0f, dir.y) * distance;
+                Vector3 rayStart = spawnXZ + Vector3.up * 500f;
 
-            spawnPoint = hit.point;
+                if (!Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 1000f, groundMask))
+                    continue;
 
-            // ✅ Kiểm tra khoảng cách thực tế sau khi snap xuống ground
-            float actualDist = Vector3.Distance(
-                new Vector3(spawnPoint.x, 0, spawnPoint.z),
-                new Vector3(player.position.x, 0, player.position.z)
-            );
-            if (actualDist < minSpawnDistance)
-                continue;
+                float actualDist = Vector3.Distance(
+                    new Vector3(hit.point.x, 0, hit.point.z),
+                    new Vector3(player.position.x, 0, player.position.z)
+                );
+                if (actualDist < minSpawnDistance)
+                    continue;
 
-            // ✅ Kiểm tra không có vật cản giữa spawn point và player (tùy chọn)
-            // Vector3 dirToPlayer = (player.position - spawnPoint).normalized;
-            // if (Physics.Raycast(spawnPoint + Vector3.up, dirToPlayer, actualDist, groundMask))
-            //     continue;
+                var enemyInstance = PoolManager.Spawn(enemyDemonPrefab, hit.point, Quaternion.identity);
+                if (enemyInstance == null) continue;
 
-            var enemyInstance = PoolManager.Spawn(prefab, spawnPoint, Quaternion.identity);
-            enemyInstance.GetComponent<EnemyAI>().Setup(player);
-            return;
+                enemyInstance.SetActive(true);
+                enemyInstance.GetComponent<EnemyAI>()?.Setup(player);
+                spawned++;
+                success = true;
+                break;
+            }
+
+            if (!success)
+            {
+                Debug.LogWarning($"SpawnMiniBoss: Chỉ spawn được {spawned}/{5} con.");
+                break;
+            }
         }
     }
     private void SpawnRandomEnemy()

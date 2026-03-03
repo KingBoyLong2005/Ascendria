@@ -160,11 +160,11 @@ public class PoolManager : MonoBehaviour
 
     private static GameObject CreateObject(GameObject prefab, Vector3 pos, Quaternion rot, PoolType pt = PoolType.GameObject)
     {
-        prefab.SetActive(false);
+        // prefab.SetActive(false);
         
         var obj = Instantiate(prefab, pos, rot);
-
-        prefab.SetActive(true);
+        prefab.SetActive(false);
+        // prefab.SetActive(true);
 
         GameObject parentObject = SetParentObject(pt);
         obj.transform.SetParent(parentObject.transform);
