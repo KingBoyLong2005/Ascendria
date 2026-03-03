@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Item4Collect1000Gold
   m_EditorClassIdentifier: 
   id: Item4Collect1000Gold
+  Icon: {fileID: -1332601973, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   displayName: Collect 1000 gold
   description: Collect 1000 gold to unlock this item
   target: 1000

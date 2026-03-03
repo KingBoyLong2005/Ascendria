@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     private TMP_Text killCount;
     private TMP_Text coinCount;
     private TMP_Text countdownTimer;
+    private TMP_Text SilverCount;
 
     //Boss HP Bars Container
     private GameObject bossHPBarPrefab; 
@@ -43,6 +44,9 @@ public class UIManager : MonoBehaviour
         go = GameObject.FindWithTag("Coin Counter");
         coinCount = go.GetComponentInChildren<TMP_Text>();
 
+        go = GameObject.FindWithTag("Silver Counter");
+        SilverCount = go.GetComponentInChildren<TMP_Text>();
+
         go = GameObject.FindWithTag("Countdown Timer");
         countdownTimer = go.GetComponentInChildren<TMP_Text>();
 
@@ -67,6 +71,7 @@ public class UIManager : MonoBehaviour
         InventoryManager.Instance.OnInventoryChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveWeaponsChanged += HandleInventoryChanged;
         InventoryManager.Instance.OnActiveBookBuffsChanged += HandleInventoryChanged;
+        InventoryManager.Instance.OnSilverChanged += HandleSilverChanged;
 
         BossManager.Instance.OnBossSpawned += BossManager_OnBossSpawned;
         BossManager.Instance.OnBossDie += BossManager_OnBossDie;
@@ -91,6 +96,7 @@ public class UIManager : MonoBehaviour
         InventoryManager.Instance.OnInventoryChanged -= HandleInventoryChanged;
         InventoryManager.Instance.OnActiveWeaponsChanged -= HandleInventoryChanged;
         InventoryManager.Instance.OnActiveBookBuffsChanged -= HandleInventoryChanged;
+        InventoryManager.Instance.OnSilverChanged -= HandleSilverChanged;
 
         BossManager.Instance.OnBossSpawned -= BossManager_OnBossSpawned;
         BossManager.Instance.OnBossDie -= BossManager_OnBossDie;
@@ -105,7 +111,10 @@ public class UIManager : MonoBehaviour
         killCount.text = $"{EnemyManager.Instance.GetKillCount()}";
         coinCount.text = $"{InventoryManager.Instance.GetTotalCoins()}";
     }
-
+    private void HandleSilverChanged(object sender, InventoryManager.SilverProgressEventArgs e)
+    {
+        SilverCount.text = $"{InventoryManager.Instance.GetTotalSilver()}";
+    }
     private void LevelManager_OnXPChanged(object sender, LevelManager.XPProgressEventArgs e)
     {
         xpBarUI.SetXP(e.currXP, e.xpToNext);

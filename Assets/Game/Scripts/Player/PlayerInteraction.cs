@@ -1,27 +1,26 @@
 using System;
-using System.Linq.Expressions;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private float raycastDistance = 30f;
     [SerializeField] private LayerMask interactableLayer;
+    [SerializeField] private InteractDetector interactDetector;
+    private InteractionUI interactionUI;
 
-    [Header("Debug")]
-    [SerializeField] private bool showRaycastGizmos = true;
+    private void Awake()
+    {
+        interactionUI = InteractionUI.Instance;
+
+        if (interactionUI == null)
+            interactionUI = FindFirstObjectByType<InteractionUI>();
+    }
 
     private void Update()
     {
-        if (showRaycastGizmos)
-        {
-            Vector3 rayOrigin = transform.position + Vector3.up * 0.5f;
-            Vector3 direction = transform.forward;
-
-            Debug.DrawRay(rayOrigin, direction * raycastDistance, Color.red, 0f); 
-        }    
-
         if (Input.GetKeyDown(KeyCode.E))
         {
+            if (interactionUI != null && !interactionUI.IsShowing)
+                return;
             Debug.Log("Bấm E");
             TryInteract();
         }
@@ -29,19 +28,26 @@ public class PlayerInteraction : MonoBehaviour
 
     private void TryInteract()
     {
-        Vector3 rayOrigin = transform.position + Vector3.up * 0.5f;
-        Vector3 direction = transform.forward;
-
         Debug.Log("Thử interact");
 
-        if (Physics.Raycast(rayOrigin, direction, out RaycastHit hit, raycastDistance, interactableLayer))
+        if (interactDetector == null)
         {
-            if (hit.collider.TryGetComponent<Interactable>(out var interactable))
-            {
-                GameEventSystem.Trigger(this, new InteractionEventArgs(interactable, interactable.interactType));
-                //Log
-                Debug.Log($"Đã tương tác với {interactable.interactType}");
-            }
+            return;
         }
+
+        var interactable = interactDetector.Current;
+
+        if (interactable == null)
+        {
+            return;
+        }
+
+        interactionUI?.Hide();
+
+        GameEventSystem.Trigger(this,
+            new InteractionEventArgs(interactable, interactable.interactType));
+
+
+        Debug.Log($"Đã tương tác với {interactable.interactType}");
     }
 }

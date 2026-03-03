@@ -120,7 +120,7 @@ public class LevelManager : MonoBehaviour
         // 2. Weapon Drops (cho weapons CHƯA có)
         foreach (var w in upgradeDB.allWeapons)
         {
-            if (!inv.HasWeapon(w))
+            if (!inv.HasWeapon(w) && GameSaveSystem.Instance.IsItemUnlocked(w.weaponName))
             {
                 pool.Add(new UpgradeOption(
                     UpgradeOption.Kind.WeaponDrop,
@@ -133,11 +133,14 @@ public class LevelManager : MonoBehaviour
         // 3. Buffs (cả đã có và chưa có)
         foreach (var b in upgradeDB.allBuffs)
         {
-            pool.Add(new UpgradeOption(
-                UpgradeOption.Kind.Buff,
-                PickTier(),
-                null,
-                b));
+            if (GameSaveSystem.Instance.IsItemUnlocked(b.buffId)) // ← THÊM CHECK NÀY
+            {
+                pool.Add(new UpgradeOption(
+                    UpgradeOption.Kind.Buff,
+                    PickTier(),
+                    null,
+                    b));
+            }
         }
 
         // Shuffle

@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class ShopUIManager : MonoBehaviour
 {
     private const int ITEMS_PER_ROW = 7;
@@ -22,7 +21,7 @@ public class ShopUIManager : MonoBehaviour
     [SerializeField] private GameObject emptySlotPrefab;
 
     [Header("Spacing")]
-    [SerializeField] private float sectionSpacing = 24f;  // khoảng trống giữa các section
+    [SerializeField] private float sectionSpacing = 24f;
 
     [Header("Detail Panel")]
     [SerializeField] private ShopUI detailPanel;
@@ -30,13 +29,10 @@ public class ShopUIManager : MonoBehaviour
     [Header("Top Bar")]
     [SerializeField] private TMP_Text coinText;
 
-    // Runtime
     private readonly List<ShopSlotUI> statSlots   = new List<ShopSlotUI>();
     private readonly List<ShopSlotUI> weaponSlots = new List<ShopSlotUI>();
     private readonly List<ShopSlotUI> charSlots   = new List<ShopSlotUI>();
     private ShopSlotUI selectedSlot;
-
-    // ── Lifecycle ──────────────────────────────────────────────────
 
     private void Start()
     {
@@ -47,9 +43,9 @@ public class ShopUIManager : MonoBehaviour
 
         BuildStatSection();
         SpawnSpacer();
-        BuildUnlockSection("VŨ KHÍ",   unlockDB.weapons,    weaponSlots, isWeapon: true);
+        BuildUnlockSection("Weapons & Books", unlockDB.weapons,    weaponSlots, isWeapon: true);
         SpawnSpacer();
-        BuildUnlockSection("NHÂN VẬT", unlockDB.characters, charSlots,   isWeapon: false);
+        BuildUnlockSection("Characters",      unlockDB.characters, charSlots,   isWeapon: false);
 
         detailPanel.ShowEmpty();
         RefreshCoin();
@@ -63,11 +59,6 @@ public class ShopUIManager : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(content as RectTransform);
     }
 
-    // ══════════════════════════════════════════════════════════════
-    //  SPAWN HELPERS
-    // ══════════════════════════════════════════════════════════════
-
-    /// Spawn tiêu đề section
     private void SpawnHeader(string title)
     {
         var go   = Instantiate(sectionHeaderPrefab, content);
@@ -75,21 +66,18 @@ public class ShopUIManager : MonoBehaviour
         if (text != null) text.text = title;
     }
 
-    /// Spawn khoảng trắng giữa các section
     private void SpawnSpacer()
     {
-        var go = new GameObject("Spacer", typeof(RectTransform));
+        var go   = new GameObject("Spacer", typeof(RectTransform));
         go.transform.SetParent(content, false);
         var rect = go.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(0, sectionSpacing);
 
-        // Thêm LayoutElement để VerticalLayoutGroup nhận diện height
-        var le = go.AddComponent<LayoutElement>();
+        var le            = go.AddComponent<LayoutElement>();
         le.minHeight      = sectionSpacing;
         le.preferredHeight = sectionSpacing;
     }
 
-    /// Chia items thành hàng ITEMS_PER_ROW
     private void SpawnRows(int totalItems, System.Action<Transform, int> spawnSlot)
     {
         if (totalItems <= 0) return;
@@ -113,7 +101,7 @@ public class ShopUIManager : MonoBehaviour
     {
         var go   = Instantiate(slotPrefab, parent);
         var slot = go.GetComponent<ShopSlotUI>();
-        if (slot == null) Debug.LogError("slotPrefab thiếu ShopSlotUI!");
+        if (slot == null) Debug.LogError("slotPrefab is missing ShopSlotUI component!");
         return slot;
     }
 
@@ -124,13 +112,9 @@ public class ShopUIManager : MonoBehaviour
         selectedSlot?.SetHighlight(true);
     }
 
-    // ══════════════════════════════════════════════════════════════
-    //  STAT SECTION
-    // ══════════════════════════════════════════════════════════════
-
     private void BuildStatSection()
     {
-        SpawnHeader("STAT");
+        SpawnHeader("STATS");
 
         var items = shopDB.items;
         SpawnRows(items.Length, (row, i) =>
@@ -158,13 +142,9 @@ public class ShopUIManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("[Shop] Nâng cấp thất bại — không đủ coin hoặc đã MAX.");
+            Debug.Log("[Shop] Upgrade failed — not enough coins or already MAX.");
         }
     }
-
-    // ══════════════════════════════════════════════════════════════
-    //  WEAPON / CHARACTER SECTION
-    // ══════════════════════════════════════════════════════════════
 
     private void BuildUnlockSection(
         string                 header,
@@ -179,7 +159,6 @@ public class ShopUIManager : MonoBehaviour
         SpawnRows(defs.Length, (row, i) =>
         {
             var slot = SpawnSlot(row);
-            // Bấm slot → mở detail (không mua thẳng)
             slot.Init(defs[i], isWeapon, OnUnlockSlotClicked);
             slotList.Add(slot);
         });
@@ -189,8 +168,6 @@ public class ShopUIManager : MonoBehaviour
     {
         var allSlots = isWeapon ? weaponSlots : charSlots;
         SetSelected(allSlots.Find(s => s.itemId == def.id));
-
-        // Mở detail panel với thông tin unlock
         detailPanel.ShowUnlockItem(def, isWeapon, OnBuyFromDetail);
     }
 
@@ -199,7 +176,7 @@ public class ShopUIManager : MonoBehaviour
         int coin = GameSaveSystem.Instance.GetCoin();
         if (coin < def.unlockCost)
         {
-            Debug.Log($"[Shop] Không đủ coin — cần {def.unlockCost}, có {coin}");
+            Debug.Log($"[Shop] Not enough coins — need {def.unlockCost}, have {coin}");
             return;
         }
 
@@ -208,20 +185,17 @@ public class ShopUIManager : MonoBehaviour
         if (isWeapon) GameSaveSystem.Instance.UnlockItem(def.id);
         else          GameSaveSystem.Instance.UnlockCharacter(def.id);
 
-        // Refresh slot + detail
         foreach (var s in weaponSlots) s.Refresh();
         foreach (var s in charSlots)   s.Refresh();
         detailPanel.Refresh();
 
         RefreshCoin();
-        Debug.Log($"[Shop] Đã mở khóa '{def.DisplayName}'!");
+        Debug.Log($"[Shop] Unlocked '{def.DisplayName}'!");
     }
-
-    // ── Coin ───────────────────────────────────────────────────────
 
     private void RefreshCoin()
     {
         if (coinText == null) return;
-        coinText.text = $"Coin: {GameSaveSystem.Instance.GetCoin()}";
+        coinText.text = $"Coins: {GameSaveSystem.Instance.GetCoin()}";
     }
 }

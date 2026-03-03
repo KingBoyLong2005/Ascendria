@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
     [Header("Weapons")]
     public List<Weapon> ownedWeapons = new List<Weapon>();
     public List<Weapon> activeWeapons = new List<Weapon>();
-    public int maxActiveWeapons = 6;
+    public int maxActiveWeapons = 3;
 
     [Header("Book Buffs")]
     public List<BookBuff> ownedBookBuffs = new List<BookBuff>();
@@ -24,6 +24,9 @@ public class InventoryManager : MonoBehaviour
 
     [Header("Coins")]
     private float totalCoins = 0f;
+    [Header("Coins")]
+
+    private float totalSilver = 0f;
 
     // ---- EVENTS ----
     public event EventHandler OnInventoryChanged;
@@ -31,6 +34,9 @@ public class InventoryManager : MonoBehaviour
     public event EventHandler OnActiveBookBuffsChanged;
     public event EventHandler OnActiveItemsChanged;
     public event EventHandler OnInventoryReady;
+
+    public event EventHandler<SilverProgressEventArgs> OnSilverChanged;
+    public Action OnSilverChange;
 
     private bool readyInvoked = false;
     public bool IsReady { get; private set; } = false;
@@ -302,6 +308,31 @@ public class InventoryManager : MonoBehaviour
         return totalCoins;
     }
     
+    #endregion
+
+    #region Silver OPERATIONS
+
+    public void AddSilver(float amount)
+    {
+        totalSilver += PlayerStatManager.Instance.Silver + amount;
+        OnSilverChanged?.Invoke(this, new SilverProgressEventArgs(totalSilver));
+        OnSilverChange?.Invoke(); // giữ lại Action cũ nếu đang dùng chỗ khác
+    }
+
+    public float GetTotalSilver()
+    {
+        return totalSilver;
+    }
+
+    public class SilverProgressEventArgs : EventArgs
+    {
+        public float currSilver;
+
+        public SilverProgressEventArgs(float currentSilver)
+        {
+            currSilver = currentSilver;
+        }
+    }
     #endregion
 
     private void OnEnable()

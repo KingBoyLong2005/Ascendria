@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class ShopSlotUI : MonoBehaviour
 {
     public enum SlotMode { Stat, Unlock }
@@ -20,12 +19,8 @@ public class ShopSlotUI : MonoBehaviour
     private bool                 isWeapon;
     private UnlockItemDefinition unlockDef;
 
-    private System.Action<string>                          onStatClick;
-    private System.Action<UnlockItemDefinition, bool>      onUnlockClick;
-
-    // ══════════════════════════════════════════════════════════════
-    //  INIT — STAT
-    // ══════════════════════════════════════════════════════════════
+    private System.Action<string>                     onStatClick;
+    private System.Action<UnlockItemDefinition, bool> onUnlockClick;
 
     public void Init(ShopItemDefinition def, System.Action<string> onClickCallback)
     {
@@ -44,10 +39,6 @@ public class ShopSlotUI : MonoBehaviour
         button.onClick.AddListener(() => onStatClick?.Invoke(itemId));
     }
 
-    // ══════════════════════════════════════════════════════════════
-    //  INIT — UNLOCK
-    // ══════════════════════════════════════════════════════════════
-
     public void Init(UnlockItemDefinition def, bool weapon, System.Action<UnlockItemDefinition, bool> onClickCallback)
     {
         mode          = SlotMode.Unlock;
@@ -56,26 +47,11 @@ public class ShopSlotUI : MonoBehaviour
         isWeapon      = weapon;
         onUnlockClick = onClickCallback;
 
-        // if (iconImage != null)
-        // {
-        //     var icon = def.Icon;
-        //     Debug.Log($"[ShopSlot] id={def.id} | sourceWeapon={def.sourceWeapon} | sourceCharacter={def.sourceCharacter} | icon={icon}");
-        //     if (icon != null) iconImage.sprite = icon;
-        // }
-        // else
-        // {
-        //     Debug.LogWarning($"[ShopSlot] iconImage là NULL trên slot {def.id}!");
-        // }
-        // Lấy icon từ source SO
         if (iconImage != null)
         {
-            var icon = def.Icon;   // IUnlockable property, đọc từ sourceWeapon/sourceCharacter
+            var icon = def.Icon;
             if (icon != null)
-            {
                 iconImage.sprite = icon;
-                Debug.Log($"[ShopSlot] Đã set sprite: {icon.name} vào {iconImage.gameObject.name}");
-                Debug.Log($"[ShopSlot] iconImage color: {iconImage.color} | enabled: {iconImage.enabled} | gameObject active: {iconImage.gameObject.activeSelf}");
-            }
         }
 
         SetHighlight(false);
@@ -84,10 +60,6 @@ public class ShopSlotUI : MonoBehaviour
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() => onUnlockClick?.Invoke(unlockDef, isWeapon));
     }
-
-    // ══════════════════════════════════════════════════════════════
-    //  REFRESH
-    // ══════════════════════════════════════════════════════════════
 
     public void Refresh()
     {
@@ -101,9 +73,9 @@ public class ShopSlotUI : MonoBehaviour
         var def   = ShopSystem.Instance.GetDefinition(itemId);
         if (def == null) return;
 
-        levelText.text = level <= 0                             ? "Chưa mua"
-                       : ShopSystem.Instance.IsMaxLevel(itemId) ? $"MAX (Lv {level})"
-                       :                                          $"Lv {level} / {def.maxLevel}";
+        levelText.text = level <= 0                              ? "Not bought"
+                       : ShopSystem.Instance.IsMaxLevel(itemId)  ? $"MAX (Lv {level})"
+                       :                                           $"Lv {level} / {def.maxLevel}";
     }
 
     private void RefreshUnlock()
@@ -115,12 +87,8 @@ public class ShopSlotUI : MonoBehaviour
             : GameSaveSystem.Instance.IsCharacterUnlocked(itemId);
 
         SetDim(unlocked ? 0f : 0.6f);
-        levelText.text = unlocked ? "Đã mở" : $"{unlockDef.unlockCost} coin";
+        levelText.text = unlocked ? "Owned" : $"{unlockDef.unlockCost} coins";
     }
-
-    // ══════════════════════════════════════════════════════════════
-    //  HELPERS
-    // ══════════════════════════════════════════════════════════════
 
     public void SetHighlight(bool on)
     {
@@ -130,8 +98,8 @@ public class ShopSlotUI : MonoBehaviour
     private void SetDim(float alpha)
     {
         if (dimOverlay == null) return;
-        var c = dimOverlay.color;
-        c.a = alpha;
+        var c   = dimOverlay.color;
+        c.a     = alpha;
         dimOverlay.color = c;
     }
 }

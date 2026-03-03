@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Item8Reach100Hp
   m_EditorClassIdentifier: 
   id: Item8Reach100Hp
+  Icon: {fileID: 290175183, guid: 3e432985a9190a74ab0a8200f90d79b8, type: 3}
   displayName: Reach 100 HP
   description: Reach 100 HP to unlock this item
   target: 100
