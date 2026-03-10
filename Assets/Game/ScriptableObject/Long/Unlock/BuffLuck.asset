@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuffLuck
   m_EditorClassIdentifier: 
   id: Buff Luck
-  displayName: Book Luck
+  displayName: Buff Luck
   description: 
   image: {fileID: 0}
   levels: []

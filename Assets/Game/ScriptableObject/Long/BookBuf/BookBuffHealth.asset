@@ -15,6 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: a054f9dd9e50b754fbdad653417e857a, type: 3}
   level: 1
   description: Increase Health
-  buffId: Book Health
-  statTarget: Book Health
+  buffId: Buff Health
+  statTarget: Buff  Health
   amount: 10

@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
-
 [Serializable]
 public class UnlockEntry
 {

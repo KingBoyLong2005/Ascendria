@@ -23,6 +23,7 @@ public class OpenChestUI : MonoBehaviour
         currentItem = item;
         itemIcon.sprite = item.Icon;
         itemName.text = item.Name;
+        // itemDescription.text = item.
         //itemDescription = item.des;
         discardAttempt.text = "Remain: " + PlayerStatManager.Instance.Discard.ToString();
 

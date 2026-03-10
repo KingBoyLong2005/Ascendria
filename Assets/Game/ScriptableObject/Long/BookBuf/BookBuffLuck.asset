@@ -15,6 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 121b78fc348af2242bcf83c000c4377f, type: 3}
   level: 1
   description: Buff Luck
-  buffId: Book Luck
-  statTarget: Book Luck
+  buffId: Buff Luck
+  statTarget: Buff Luck
   amount: 7

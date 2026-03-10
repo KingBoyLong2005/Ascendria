@@ -48,7 +48,12 @@ public class GameSaveSystem
                 new UnlockEntry ("Lightning Strike",false),
                 new UnlockEntry ("Dice",false),
                 new UnlockEntry ("Aura",false),
-                new UnlockEntry ("Bullet Bounce",false)
+                new UnlockEntry ("Bullet Bounce",false),
+                new UnlockEntry ("Buff Damage",true),
+                new UnlockEntry ("Buff Speed",false),
+                new UnlockEntry ("Buff Luck",false),
+                new UnlockEntry ("Buff Health",true),
+                new UnlockEntry ("Buff Cooldown",true),
             },
             characters = new List<UnlockEntry>
             {

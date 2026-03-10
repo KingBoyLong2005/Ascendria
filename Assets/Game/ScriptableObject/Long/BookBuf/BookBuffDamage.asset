@@ -15,6 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: dafea790912a27a4eb59ffeb91330f7d, type: 3}
   level: 1
   description: "Increase Damage\t"
-  buffId: Book Damage
-  statTarget: Book Damage
+  buffId: Buff Damage
+  statTarget: Buff Damage
   amount: 10

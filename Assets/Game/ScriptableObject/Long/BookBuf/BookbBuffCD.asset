@@ -15,7 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 2e78506f8acfcba4f8cfd446d1e606f9, type: 3}
   level: 1
   description: Cooldown decrease
-  buffId: Cooldown
-  value: 1
-  statTarget: Cooldown
+  buffId: Buff Cooldown
+  statTarget: Buff Cooldown
   amount: 0.05

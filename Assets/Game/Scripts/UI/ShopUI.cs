@@ -5,6 +5,7 @@ using TMPro;
 public class ShopUI : MonoBehaviour
 {
     [Header("Stat Group")]
+    [SerializeField] private GameObject statGroup;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text descText;
     [SerializeField] private TMP_Text levelText;
@@ -14,6 +15,7 @@ public class ShopUI : MonoBehaviour
     [SerializeField] private TMP_Text upgradeBtnText;
 
     [Header("Unlock Group (Weapon / Character)")]
+    [SerializeField] private GameObject unlockGroup;
     [SerializeField] private TMP_Text nameUnlockText;
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text costText;
@@ -41,6 +43,10 @@ public class ShopUI : MonoBehaviour
         currentMode   = PanelMode.Stat;
         currentStatId = itemId;
         onUpgrade     = upgradeCallback;
+
+        if (statGroup   != null) statGroup.SetActive(true);
+        if (unlockGroup != null) unlockGroup.SetActive(false);
+
         RefreshStat();
     }
 
@@ -50,6 +56,10 @@ public class ShopUI : MonoBehaviour
         currentUnlockDef = def;
         currentIsWeapon  = isWeapon;
         onBuy            = buyCallback;
+
+        if (statGroup   != null) statGroup.SetActive(false);
+        if (unlockGroup != null) unlockGroup.SetActive(true);
+
         RefreshUnlock();
     }
 
@@ -64,6 +74,9 @@ public class ShopUI : MonoBehaviour
         currentMode                = PanelMode.None;
         upgradeButton.interactable = false;
         buyButton.interactable     = false;
+
+        if (statGroup   != null) statGroup.SetActive(false);
+        if (unlockGroup != null) unlockGroup.SetActive(false);
     }
 
     private void RefreshStat()
@@ -123,7 +136,7 @@ public class ShopUI : MonoBehaviour
         {
             statusText.text        = "Locked";
             costText.gameObject.SetActive(true);
-            costText.text          = $"Price: {currentUnlockDef.unlockCost} coins";
+            costText.text          = $"{currentUnlockDef.unlockCost}";
             buyButton.gameObject.SetActive(true);
             buyBtnText.text        = "Unlock";
             buyButton.interactable = true;

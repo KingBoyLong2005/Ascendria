@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
     {
         PanelGameOver.SetActive(true);
         FindFirstObjectByType<TPCameraController>().isUIOpen = true;
+        Time.timeScale = 0f;
     }
     public void PlayAgain()
     {

@@ -25,7 +25,7 @@ public class LevelUpOptionUI : MonoBehaviour
                 $"{option.tier} Weapon {option.targetWeapon.weaponName}",
 
             LevelManager.UpgradeOption.Kind.Buff =>
-                $"{option.tier} {option.targetBuff.name}",
+                $"{option.tier} {option.targetBuff.statTarget}",
 
             _ => "Upgrade"
         };
