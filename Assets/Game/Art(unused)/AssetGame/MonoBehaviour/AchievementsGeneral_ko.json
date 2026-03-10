@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsGeneral_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4166224902727595466
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517847771578485
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 363196448768,
+      "m_Localized": "벽에 껴안는 자",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Localized": "벽에 달라붙어 {value}번 추락 피해 피하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Localized": "{forest}에서 모든 붐박스 찾고 활성화하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Localized": "{value}개의 잠금 해제를 구매",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Localized": "{value}개의 {quests} 완료하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Localized": "도전 과제",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578485
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Localized": "무기 슬롯",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Localized": "고서 슬롯",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517847771578485,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae54e2f2cb413144f9aa47d697c67544, type: 3}
+  m_Name: ItemWealth
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 505ca89769101104b994f74d0f9616b4, type: 3}
+  Name: Debit Card
+  rarity: 1
+  isStackable: 1
+  isTimed: 0
+  duration: 30
+  wealthPercentIncrease: 5

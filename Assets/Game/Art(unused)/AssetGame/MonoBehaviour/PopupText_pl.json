@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PopupText_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 9026924380927958244
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607508251181157
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1510908600320,
+      "m_Localized": "Potrzebujesz więcej przedmiotów o rzadkości {rarity}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Localized": "Maks {maxAmount} {itemName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 412076449792,
+      "m_Localized": "Nie stać cię",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Localized": "Nie można wygnać tego przedmiotu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Localized": "Brak wygnania",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Localized": "Postać nie została jeszcze odblokowana",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Localized": "Maksymalny poziom",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Localized": "Brakuje ci srebra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Localized": "Nie można zwrócić",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181157,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

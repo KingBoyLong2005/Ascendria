@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464686
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "{axe}를 {value}레벨로 업그레이드하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "{value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "{shrine_succ}를 {value}번 사용하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "{sir_oofie}로서 적 {value}명을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "{aegis}로 {value}번 공격을 막기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "적 처치 시 {value}% 확률로 드롭",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "한 번의 플레이에서 {value}개의 항아리를 깨뜨려라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "{tier} 3 런에서 모든 {charge_shrine}을 충전 구역을 떠나지 않고 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "{value}분 내에 {stage_boss}를 물리쳐라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "{value}개의 투사체를 발사하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464686
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464686,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

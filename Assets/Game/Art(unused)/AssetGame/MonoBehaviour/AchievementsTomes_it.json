@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_it",
+  "m_LocaleId": {
+    "m_Code": "it"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464682
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "Potenzia {axe} al livello {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "Elimina {value} nemici",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "Usa {shrine_succ} {value} volte",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "Uccidi {value} nemici nei panni di {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "Blocca {value} attacchi con {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "{value}% di probabilità di drop uccidendo un nemico",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "Rompi {value} vasi in un'unica partita",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "Carica tutti i {charge_shrine} in una partita di livello {tier} 3 su tutti i 3 stadi senza uscire dalla zona di carica",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "Sconfiggi il {stage_boss} in meno di {value} minuti",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "Spara {value} proiettili",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464682
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464682,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

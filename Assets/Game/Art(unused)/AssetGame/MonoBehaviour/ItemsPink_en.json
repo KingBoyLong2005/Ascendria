@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350981
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Beefy Ring",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Increase {stat1} by {value1} per {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Dead)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "For every {value1} units moved, summon Bob (he's dead)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Demonic Soul",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Increase {stat1} by {value1} per kill (max {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Increase {stat1} the lower your HP is. chat im locking in",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Gamer Goggles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Gas Mask",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Gain {stat1} and {stat2} for every enemy infected with poison",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Grandma's Secret Tonic",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Crits have a {value1} chance to explode and damage nearby enemies for {value2} damage",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Mirror",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Reflect any incoming damage back to the attacker, and gain a short invulnerability.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "The faster you move, the more {stat1} you gain. Max {value1} per stack.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Turbo Skates",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Deal {value1} more {stat1} while airborne",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Scarf",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Shattered Knowledge",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "XP shards now slice through enemies, dealing damage as they pass. Knowledge really hurts.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Slutty Cannon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} chance to spawn missiles upon killing an enemy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Spiky Shield",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Gain {value1} {stat1} for every {value2} {stat2}. Also gain {value3} {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Release toxic waste upon taking damage, poisoning all nearby enemies",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Toxic Barrel",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Upon taking damage that would kill you, freeze time. Breaks after one use.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Slurp Gloves",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Cursed Grabbies",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Cast blood magic upon hitting an enemy, damaging nearby enemies and healing you for {value}. {time_seconds} cooldown.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} to cast cursed magic upon hitting an enemy, damaging nearby enemies.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Quin's Mask",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Thorns damage has a {value1} chance to explode and damage nearby enemies",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350981
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350981,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

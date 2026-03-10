@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350865
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} pour toutes les armes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Frappez les ennemis proches avec {value1} dégâts en plus.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Rester immobile te soigne",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Augmente {stat1} en prenant des dégâts. Gagne aussi {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Augmente {stat1} de {value1} en ouvrant un coffre.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Les crits ont {value1} chance de te soigner",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Augmente {stat1} de {value1} par kill (Max {value2} cumuls)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} chance de faire apparaître un éclat d'XP supplémentaire en tuant un ennemi",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "En prenant des dégâts, envoie un choc électrique aux ennemis proches.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Saut plus haut et plus loin",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Gagne de l'or supplémentaire en prenant des dégâts",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Gagne de l'argent en te déplaçant",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Plus tu restes immobile, plus tu fais de dégâts. Max {value1} dégâts.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin te déteste. {value1} chance que Kevin te colle une baffe à chaque fois que tu touches un ennemi. Kevin ne peut pas te tuer, mais il en a bien envie.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Après esquive, inflige {value1} dégâts lors de la prochaine attaque et augmente temporairement {stat1} et {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Sac à dos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Bière",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Poings américains",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Feu de camp",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Cape de lâche",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Carte de crédit (Verte)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Carte de crédit (Rouge)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Lame démoniaque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Sang démoniaque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Éclat d'écho",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Fiche électrique",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Plumes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Bouclier doré",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Baskets en or",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Jus d'oisiveté",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Cristal sangsue",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Linceul fantôme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Moufles-Foudre",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Gants Moisis",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Quand tu frappes un ennemi, claque-lui les joues si fort que ça déclenche un éclair. Recharge de {time_seconds} secondes.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Crée un nuage toxique moisi en touchant un ennemi. Les gants sont recouverts d'une texture humide, moisie et visqueuse.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Charger un {charge_shrine} le transforme en zone de soin. Fais aussi pop {value} {charge_shrine} en plus pour les prochains niveaux.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350865
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Phare",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350865,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

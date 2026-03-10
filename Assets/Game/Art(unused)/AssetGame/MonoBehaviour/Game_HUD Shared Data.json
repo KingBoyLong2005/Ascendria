@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7442561414784416887
+  },
+  "m_Name": "Game_HUD Shared Data",
+  "m_TableCollectionName": "Game_HUD",
+  "m_TableCollectionNameGuidString": "adae2dacc81bb784b9b9b9ecdda3c5d0",
+  "m_Entries": [
+    {
+      "m_Id": 145574567936,
+      "m_Key": "LEVEL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 237371105280,
+      "m_Key": "ALERT_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 575486533632,
+      "m_Key": "ALERT_SWARM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 588438544384,
+      "m_Key": "ALERT_FINAL_SWARM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 56157383925760,
+      "m_Key": "CHALLENGE_COMPLETED",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262338014584832,
+      "m_Key": "OBJECTIVE_FIND_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262395514298368,
+      "m_Key": "OBJECTIVE_DEFEAT_BOSS",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262437713190912,
+      "m_Key": "OBJECTIVE_SURVIVE",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262459607457792,
+      "m_Key": "OBJECTIVE_ENTER_PORTAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 262638976868352,
+      "m_Key": "OBJECTIVE_DEFEAT_BOSS_FINAL",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16595682113748992,
+      "m_Key": "FINAL_SWARM",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "m_Metadata": {
+    "m_Items": []
+  },
+  "m_KeyGenerator": {
+    "rid": 4887607514405273684
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607514405273684,
+        "type": {
+          "class": "DistributedUIDGenerator",
+          "ns": "UnityEngine.Localization.Tables",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

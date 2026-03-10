@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a7d10ce484e3a44a0698f9b4541dd1, type: 3}
+  m_Name: ProfileCowboyRobot
+  m_EditorClassIdentifier: 
+  iconChar: {fileID: 21300000, guid: af77e715a068b1f4099ffc409aff7106, type: 3}
+  displayName: Cowboy Robot
+  maxHP: 20
+  CharacterAttack: 4
+  Armor: 4
+  MoveSpeed: 4
+  Luck: 1
+  Wealth: 1
+  Wise: 1
+  modelPrefab: {fileID: 7938895017008558258, guid: 7aa98070b2fcc1e46862b698cc4b51bd, type: 3}
+  animatorController: {fileID: 9100000, guid: 93a40ddb4158ba24ab1e213c0f8a6956, type: 2}
+  startingWeapon: {fileID: 11400000, guid: 34aa538fa6b6c24469f3dd3aaebf30a0, type: 2}

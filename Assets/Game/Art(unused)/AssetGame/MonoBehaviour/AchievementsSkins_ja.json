@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188644
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "{character}で敵を{value}体倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188644
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "{character}でラン中にレベル{value}に到達せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188644
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "{character}で{tier} 3の{final_boss}を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188644
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "{character}で{stage_boss}を{value}分以内に撃破しろ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188644
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "{character}でランク{rank}{value}まで到達せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188644
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188644,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "SettingsUi_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -601287146742928815
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607415118495851
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 4549484544,
+      "m_Localized": "Juego",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 89098264576,
+      "m_Localized": "Video",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 101454684160,
+      "m_Localized": "Controles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 120538767360,
+      "m_Localized": "Audio",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 133721464832,
+      "m_Localized": "Efectos",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 187881711443968,
+      "m_Localized": "¿Quieres mantener esta resolución?",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 195232963207168,
+      "m_Localized": "Pulsa cualquier tecla para {action}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607415118495851
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 195424751951872,
+      "m_Localized": "[ESC] para dejarlo en blanco",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 219294200471552,
+      "m_Localized": "Idioma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4177956665270272,
+      "m_Localized": "Restablecer Controles",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607415118495851,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179449
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "Güç başına {value1} {stat1} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "Kaslarını göster, hasarı durdur! CD -{value1}s. +{valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "Hedef Noktası",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "Kritik Zamanı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "Rastgele düşmanlar işaretlenir. Ayrıca seviye başına {value1} {stat1} kazanırsın",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "Dayanıklı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "Fleks",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "Süzülme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "\"Zıplama\" tuşuna basılı tutarak havada süzül. Her seviyede {value1} hava {stat1} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "Akış Modu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "Güçlendirilmiş",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "Şansın Gücü",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "Hız Canavarı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "Hız zamanla artar ama hasar alınca yarıya iner. Daha hızlıysan, daha çok vurursun.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "Maymun Tırmanışı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "Duvarlara tırman! Her seviyede {value1}{stat1} bonus.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "Savaşçı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "Veba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "Zehirlenen düşmanlar öldüğünde patlar ve çevresindeki düşmanları zehirler.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "Kuantum XP Teorisi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} düşmanı sıyrıldığın anda. Ayrıca her seviyede {value1} {stat1} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "Karabasma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "Gamba",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "Oyun zarları ve seviye atlarken rastgele bir stat yükselt!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "Vampir",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "Lanet",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "Stonks",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "Her seviyede {value1} {stat1} kazan. Ayrıca envanterindeki toplam {gold} ile {damage} biraz artar.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "Kilitlen",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "Düşük can puanında daha fazla hasar ver. Her seviyede {value1} {stat1} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "Zap",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "Etrafta dolaşarak elektrikli bir saldırı hazırla. Seviye başına {value1} {stat1} kazan.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "Her seviyede {value1} {stat1} kazan. Donmuş her düşman için {damage} artar.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179449
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179449,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

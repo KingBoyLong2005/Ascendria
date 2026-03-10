@@ -1,0 +1,380 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsYellow_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 6815838929466677391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350992
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8138576232448,
+      "m_Localized": "무기 업그레이드에 +1 스탯 추가!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8188253569024,
+      "m_Localized": "{stat1}가 이제 {bloodmark} 스택을 발동해! 또한 {value1} 확률로 {bloodmark}을 적용한다.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9759620202496,
+      "m_Localized": "{value1} 확률로 적에게 BONK, {value2} {stat1} 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 9920144605184,
+      "m_Localized": "{stat1} 이상 회복 시 {stat2} {value1} 증가, 추가로 {value2} {stat3}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10333291937792,
+      "m_Localized": "적을 공격하면 {value1} 확률로 드래곤파이어 소환. 불 피해가 화상 효과 부여",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 10851166846976,
+      "m_Localized": "공중의 적에게 {value1} {stat1} 피해. {value2} 확률로 적을 공중으로 띄움",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11024613900288,
+      "m_Localized": "적에게 에너지 오브를 발사",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11351337598976,
+      "m_Localized": "크리티컬이 메가크리티컬이 될 확률. 이 포크로 스파게티를 많이 먹을 수 있음",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11546175602688,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. 치유 시 주변 적들에게 피해를 방사함!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11799800971264,
+      "m_Localized": "적을 공격하면 {value1} 확률로 얼음 피해. 얼음 피해로 적을 얼릴 수 있음",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 11985210179584,
+      "m_Localized": "{value1} 확률로 적을 {execute}. {execute} 시 {stat1} 증가 ({value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12363993579520,
+      "m_Localized": "적을 공격하면 {value1} 확률로 번개 소환. 번개가 적을 기절시킬 수 있음",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12828001042432,
+      "m_Localized": "공격 시 발동 효과 확률 +1!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13069458735104,
+      "m_Localized": "적 처치 시 {value1} 추적 소울 소환",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13201382178816,
+      "m_Localized": "체력이 {value1}{stat1} 이하일 때 피해를 받으면 시간이 느려지고 {value2} 피해를 준다!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13549991755776,
+      "m_Localized": "공격 시 {value1} 확률로 폭발하여 주변 적에게 {value2} {stat1} 피해",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 13710050590720,
+      "m_Localized": "주기적으로 주변의 XP를 끌어당김",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8135954792448,
+      "m_Localized": "모루",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8184919097344,
+      "m_Localized": "피 묻은 식칼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9755270709248,
+      "m_Localized": "빅 봉크",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9917565108224,
+      "m_Localized": "청크플레이트",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10330838269952,
+      "m_Localized": "드래곤 파이어",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10848155336704,
+      "m_Localized": "독수리 발톱",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11023976366080,
+      "m_Localized": "에너지 코어",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11350154805248,
+      "m_Localized": "자이언트 포크",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11545651314688,
+      "m_Localized": "성서",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11799201185792,
+      "m_Localized": "아이스 큐브",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 11983926722560,
+      "m_Localized": "조의 단검",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12362613653504,
+      "m_Localized": "라이트닝 오브",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12827237679104,
+      "m_Localized": "오버파워드 램프",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13068942835712,
+      "m_Localized": "영혼 수확자",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13200639787008,
+      "m_Localized": "스피드 보이",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13201898078208,
+      "m_Localized": "매운 미트볼",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 13709513719808,
+      "m_Localized": "서키 자석",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717634392064000,
+      "m_Localized": "파워 장갑",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7717635641966592,
+      "m_Localized": "적 타격 시 {chance} 확률로 대폭발! 피해+넉백.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350992
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8711271682801664,
+      "m_Localized": "골든 링",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 8711273603792896,
+      "m_Localized": "뭔가 해줄 것 같지는 않네…",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350992,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

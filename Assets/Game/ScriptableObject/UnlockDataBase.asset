@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97058d3bfe76422479b9d74ed86e27e2, type: 3}
+  m_Name: UnlockDataBase
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 11400000, guid: e415a2aacb3242f47a2c59e1ef6160f8, type: 2}
+  - {fileID: 11400000, guid: 64230e1cecdc86244a9d5dcf4e4e2cd8, type: 2}
+  - {fileID: 11400000, guid: ff62c9fba226e9f46854f5bda7588d4d, type: 2}
+  - {fileID: 11400000, guid: 493a3ba86a69ee540990a596883665aa, type: 2}
+  - {fileID: 11400000, guid: 5d98f49a98cfe4448baab48395303eba, type: 2}
+  - {fileID: 11400000, guid: 00a3a3d89d24e9945a573b5316529fe6, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 909fa648e08d90446bfb03d6f97f699e, type: 2}

@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsGeneral_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4166224902727595466
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517847771578481
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 363196448768,
+      "m_Localized": "AmoureuxDesMurs",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Localized": "Évite les dégâts de chute {value} fois en te collant aux murs",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Localized": "Trouve et active tous les boombox dans {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Localized": "Achète {value} déblocages",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Localized": "Achève {value} {quests}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Localized": "Défis",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578481
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Localized": "Emplacement d'Arme",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Localized": "Emplacement de grimoire",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517847771578481,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

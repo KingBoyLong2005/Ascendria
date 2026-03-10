@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Maps_en",
+  "m_LocaleId": {
+    "m_Code": "en"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6096067254600861082
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160207927763009741
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 89479946240,
+      "m_Localized": "Green Forest",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1017352265728,
+      "m_Localized": "Deep Forest",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1027032719360,
+      "m_Localized": "Cursed Forest",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48052805632,
+      "m_Localized": "Forest",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1411541344256,
+      "m_Localized": "A green place full of trees, birds, and great vibes. Also everything will try to kill you.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148044894871552,
+      "m_Localized": "Time to cook",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148086942769152,
+      "m_Localized": "The vibes are off",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148098963644416,
+      "m_Localized": "uh oh",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12064487162118144,
+      "m_Localized": "{mapname} (Rift)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160207927763009741
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12346566399524864,
+      "m_Localized": "Crusty Desert",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346612180353024,
+      "m_Localized": "Twilight Desert",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346663346667520,
+      "m_Localized": "Scorched Desert",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346721592967168,
+      "m_Localized": "Smells like warm sand.. I fucking hate warm sand.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346478096842752,
+      "m_Localized": "Desert",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346536393474048,
+      "m_Localized": "A hot, dry and dusty place. ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346969312755712,
+      "m_Localized": "o fuck",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346967676977152,
+      "m_Localized": "Dry and crusty.... Reminds me of last night.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160207927763009741,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

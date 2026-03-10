@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PopupText_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 9026924380927958244
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607508251181151
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1510908600320,
+      "m_Localized": "Potrebuješ více předmětů vzácnosti {rarity}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181151
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Localized": "Max {maxAmount} {itemName}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181151
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 412076449792,
+      "m_Localized": "Nemáš na to peníze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Localized": "Nemůžeš vyhnat vlastněný předmět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Localized": "Už žádné vyhnání",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Localized": "Postava ještě není odemčena",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Localized": "Max úroveň",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Localized": "Nemáš dost stříbra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Localized": "Nelze vrátit zpět",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181151,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

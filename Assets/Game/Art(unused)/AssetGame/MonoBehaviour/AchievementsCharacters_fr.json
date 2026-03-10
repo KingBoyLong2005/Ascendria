@@ -1,0 +1,240 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsCharacters_fr",
+  "m_LocaleId": {
+    "m_Code": "fr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4235409041572963376
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208413698818171
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 533179006976,
+      "m_Localized": "Tue {value} squelettes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758847406768128,
+      "m_Localized": "Amène le {damage_tome} au niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758851462660096,
+      "m_Localized": "Termine {forest} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758855422083072,
+      "m_Localized": "Termine {forest} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758878843076608,
+      "m_Localized": "Tue {value} gobelins",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758882047524864,
+      "m_Localized": "Amène le {thorns_tome} au niveau {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758884346003456,
+      "m_Localized": "Bats {value} minibosses en tant que {calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758887076495360,
+      "m_Localized": "Trouve et libère {monke} dans {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758890226417664,
+      "m_Localized": "Tue {value} ennemis avec l’arme {tornado} en étant emporté par une tornade sur {desert}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758894005485568,
+      "m_Localized": "Utilise un {microwave} pour dupliquer {ice_crystal} {value} fois d’affilée",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758896127803392,
+      "m_Localized": "Termine {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758898321424384,
+      "m_Localized": "Monte {attraction_tome} et {xp_tome} tous deux au niveau {value} dans une partie",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758901068693504,
+      "m_Localized": "Termine {desert} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758902310207488,
+      "m_Localized": "Empoisonne {value} ennemis avec {moldy_cheese}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758903568498688,
+      "m_Localized": "Termine {forest} {tier} 3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758904776458240,
+      "m_Localized": "Termine {value} {quests}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758906001195008,
+      "m_Localized": "Trouve et vaincs {bandit} dans {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758907108491264,
+      "m_Localized": "Trouve et vaincs {bush} dans {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818171
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208413698818171,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

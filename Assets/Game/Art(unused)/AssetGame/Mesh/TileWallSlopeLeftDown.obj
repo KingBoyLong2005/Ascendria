@@ -1,0 +1,12 @@
+g TileWallSlopeLeftDown
+v -1 1.9106855E-15 4.371139E-08
+v -1 1 -8.742278E-08
+v 1 1.9106855E-15 4.371139E-08
+vt 0 0.5
+vt 0 1
+vt 1 1
+vn -0 0 1
+vn -0 0 1
+vn -0 0 1
+g TileWallSlopeLeftDown_0
+f 3/3/3 2/2/2 1/1/1

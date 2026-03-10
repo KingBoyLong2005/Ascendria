@@ -1,0 +1,240 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsCharacters_zh-Hans",
+  "m_LocaleId": {
+    "m_Code": "zh-Hans"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4235409041572963376
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208413698818157
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 533179006976,
+      "m_Localized": "击杀 {value} 个骷髅",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758847406768128,
+      "m_Localized": "将 {damage_tome} 升级到 {value} 级",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758851462660096,
+      "m_Localized": "完成 {forest} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758855422083072,
+      "m_Localized": "完成 {forest} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758878843076608,
+      "m_Localized": "击杀 {value} 个哥布林",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758882047524864,
+      "m_Localized": "将 {thorns_tome} 升级到 {value} 级",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758884346003456,
+      "m_Localized": "作为 {calcium} 击败 {value} 个小Boss",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758887076495360,
+      "m_Localized": "在 {forest} 中找到并释放 {monke}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758890226417664,
+      "m_Localized": "在{desert}被龙卷风托起时，使用{tornado}武器击杀{value}个敌人。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758894005485568,
+      "m_Localized": "使用 {microwave} 连续复制 {ice_crystal} {value} 次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758896127803392,
+      "m_Localized": "完成 {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758898321424384,
+      "m_Localized": "在一次游戏中，将 {attraction_tome} 和 {xp_tome} 都升级到 {value} 级",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758901068693504,
+      "m_Localized": "完成 {desert} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758902310207488,
+      "m_Localized": "用 {moldy_cheese} 毒到 {value} 个敌人",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758903568498688,
+      "m_Localized": "完成 {forest} {tier} 3",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758904776458240,
+      "m_Localized": "完成 {value} 个 {quests}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758906001195008,
+      "m_Localized": "在 {desert} 中找到并打败 {bandit}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758907108491264,
+      "m_Localized": "在 {forest} 中找到并打败 {bush}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818157
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208413698818157,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55da43bd67e337346906b8f72252db78, type: 3}
+  m_Name: ShopDB
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: a6a258c4e907f5f49a06ca376a991088, type: 2}
+  - {fileID: 11400000, guid: 9c108fb076667f149b9688a556323ddf, type: 2}
+  - {fileID: 11400000, guid: 53ea653749928f441a9cd21f07a4a287, type: 2}
+  - {fileID: 11400000, guid: 3e9cdf2f9922f134b8002b7c676d2082, type: 2}
+  - {fileID: 11400000, guid: cc7249779b6e4be4ab024e45168b0997, type: 2}
+  - {fileID: 11400000, guid: 3f02a55312fd7984e91e7657b086e6c3, type: 2}
+  - {fileID: 11400000, guid: ef88764a842337f4d9a091ab129cfbbe, type: 2}

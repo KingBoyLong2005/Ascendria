@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464684
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "{axe}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "{value}体の敵を倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "{shrine_succ}を{value}回使用せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "{sir_oofie} として {value} 体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "{aegis}で{value}回攻撃をブロック",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "敵を倒すと{value}%の確率でドロップ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "1回のプレイで{value}個の壺を壊せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "{tier} 3ランで{charge_shrine}を全て充電ゾーンから離れずに完了せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "{stage_boss}を{value}分以内に倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "{value}個の弾を発射せよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464684
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464684,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464687
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "Прокачай {axe} до рівня {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "Знищ {value} ворогів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "Використай {shrine_succ} {value} разів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "Вбий {value} ворогів, граючи за {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "Заблокуйте {value} атак за допомогою {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "Шанс {value}% на випадіння при знищенні ворога",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "Розбий {value} глечиків за одну гру",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "Заряди всі {charge_shrine} на пробіжці {tier} 3 через усі 3 етапи, не покидаючи зону зарядки",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "Переможи {stage_boss} менш ніж за {value} хвилин",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "Випусти {value} снарядів",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464687
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464687,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+// DamageManager.cs � listens for hits, calculates damage, applies to player
+using UnityEngine;
+using System;
+
+public class DamageManager : MonoBehaviour
+{
+    public static DamageManager Instance { get; private set; }
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+    // }
+    // public void Start()
+    // {
+        EnemyManager.Instance.OnEnemyHitPlayer += EnemyManager_OnEnemyHitPlayer;
+        WeaponManager.Instance.OnWeaponHitEnemy += WeaponManager_OnWeaponHitEnemy;
+        Debug.Log("✅ DamageManager subscribed to events");
+    }
+
+    private void OnDisable()
+    {
+        EnemyManager.Instance.OnEnemyHitPlayer -= EnemyManager_OnEnemyHitPlayer;
+        WeaponManager.Instance.OnWeaponHitEnemy -= WeaponManager_OnWeaponHitEnemy;
+    }
+
+    private void EnemyManager_OnEnemyHitPlayer(object sender, EnemyManager.OnEnemyHitPlayerEventArgs e)
+    {
+        Debug.Log($"🎯 [DAMAGE EVENT] Enemy hit player detected!");
+        Debug.Log($"   └─ Enemy Attack Value: {e.enemyAttack}");
+        Debug.Log($"   └─ Player Armor: {PlayerStatManager.Instance.Armor}");
+        
+        float finalDamage = CalculateEnemyDamage(e.enemyAttack);
+        
+        Debug.Log($"   └─ Final Damage Calculated: {finalDamage}");
+        Debug.Log($"   └─ Player Health BEFORE: {PlayerStatManager.Instance.MaxHealth}"); // Note: Should track current health
+
+        // then apply damage to player
+        PlayerStatManager.Instance.TakeDamage(finalDamage);
+        
+        Debug.Log($"   └─ Damage Applied to Player ✓");
+    }
+
+    private void WeaponManager_OnWeaponHitEnemy(object sender, WeaponManager.OnWeaponHitEnemyEventArgs e)
+    {
+        var enemyHit = e.enemy.GetComponent<EnemyStats>();
+
+        float finalDamage = CalculateWeaponDamage(e.weaponAttack, enemyHit.Armor);
+
+        // then apply damage to enemy
+        enemyHit.TakeDamage(finalDamage);
+    }
+
+    private float CalculateEnemyDamage(float enemyAttack)
+    {
+        float charArmor = PlayerStatManager.Instance.Armor;
+
+        float finalDamage = enemyAttack - charArmor;
+        if (finalDamage <= 0) finalDamage = 1f;
+        Debug.Log($"Final enemy damage: {finalDamage}");
+
+        return finalDamage;
+    }
+
+    private float CalculateWeaponDamage(float weaponAttack, float enemyArmor)
+    {
+        float playerAttack = PlayerStatManager.Instance.Attack;
+        float bonusDmg = PlayerStatManager.Instance.Damage;
+
+        float finalDamage = playerAttack + weaponAttack + bonusDmg - enemyArmor;
+        if(finalDamage <= 0) finalDamage = 1f;
+
+        return finalDamage;
+    }
+
+    public void CalculateBossSkillDamage(float multi, float baseAtk)
+    {
+        float charArmor = PlayerStatManager.Instance.Armor;
+
+        float finalDamage = baseAtk*multi - charArmor;
+        if (finalDamage <= 0) finalDamage = 1f;
+
+        // then apply damage to player
+        PlayerStatManager.Instance.TakeDamage(finalDamage);
+    }
+}
+

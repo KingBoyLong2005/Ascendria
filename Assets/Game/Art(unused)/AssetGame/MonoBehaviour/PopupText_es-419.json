@@ -1,0 +1,113 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PopupText_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 9026924380927958244
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607508251181161
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 1510908600320,
+      "m_Localized": "¡Más objetos {rarity}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5310826389504,
+      "m_Localized": "¡Máximo {maxAmount} {itemName}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607508251181161
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 412076449792,
+      "m_Localized": "Sin dinero",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 4702778138624,
+      "m_Localized": "No puedes desterrar un objeto que ya tienes",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5023466233856,
+      "m_Localized": "¡No te quedan destierros!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5913770172416,
+      "m_Localized": "Personaje aún no desbloqueado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26125898850304,
+      "m_Localized": "Nivel Máximo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26195708846080,
+      "m_Localized": "No tienes suficiente plata",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 26295839465472,
+      "m_Localized": "No se puede devolver",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607508251181161,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

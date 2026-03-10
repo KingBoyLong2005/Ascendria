@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350972
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "{value2} {stat2}ごとに{stat1}が{value1}増加",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "{value1}ユニット移動するごとにボブを召喚（彼は死んでいる）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "{value1}ごとに{stat1}が増加（最大{value2}）",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "HPが低いほど{stat1}増加。チャット、ロックイン！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "毒に感染した敵ごとに{stat1}と{stat2}を獲得",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "クリティカルの{value1}の確率で爆発。周囲の敵に{value2}ダメージ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "受けたダメージを反射し、短時間の無敵を獲得",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "速く動くほど{stat1}が増加。スタックごとに最大{value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "空中で{stat1}が{value1}増加",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "XPシャードが敵を切り裂きダメージを与える。知識は痛い！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "敵を倒すと{value1}の確率でミサイルを発射する",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "{value2} {stat2}ごとに{stat1}が{value1}増加。また{stat2}が{value3}増加",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "ダメージを受けると毒を放出し、近くの敵を毒状態に",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "致命傷を受けた時、時間を止める。一度だけ使用可能",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "ムキムキリング",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "ボブ（死亡）",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "悪魔の魂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "ゲーマーゴーグル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "ガスマスク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "おばあちゃんの秘密トニック",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "ミラー",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "ローラーブレード",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "スカーフ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "砕けた知識",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "ルーズキャノン",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "トゲ付きシールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "毒バレル",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "ザ・ワールド",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "スラープグローブ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "呪いのグラビィ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "敵を殴ると血の魔法発動！周囲にダメージ＋{value}回復。クール{time_seconds}秒。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}、{value2} {stat2}。敵ヒットで{chance}の確率で呪い魔法発動！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "クインのマスク",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "トゲダメージで{value1}の確率で爆発し、周囲の敵にダメージを与えるぜ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350972
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350972,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

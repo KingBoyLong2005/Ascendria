@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aac043334ac242419d2303b22b45d8c, type: 3}
+  m_Name: PrefabDatabase
+  m_EditorClassIdentifier: 
+  firstMapIcon: {fileID: 21300000, guid: 7ddf13f437dbf4646b4438cda22fd930, type: 3}
+  secondMapIcon: {fileID: 0}
+  thirdMapIcon: {fileID: 0}
+  firstMapPrefab: {fileID: 6762503122751749967, guid: 133fe98ff1adf4041b9b8e98548eb7b1, type: 3}
+  secondMapPrefab: {fileID: 0}
+  thirdMapPrefab: {fileID: 0}
+  bossGatePrefab: {fileID: 8447943796691374367, guid: ad93c7ab889e4814b9f647f1aa7858e4, type: 3}
+  playerPrefab: {fileID: 8730884717223232046, guid: e0963c17bcfe30642ac9f59c8344f2b6, type: 3}
+  bossPrefab: {fileID: 601743529567691592, guid: d7c0447c7e6dcd442be9d7e1f9fa59fc, type: 3}
+  enemyPrefab: {fileID: 7027193393448012647, guid: 11c7568a8b3a2cd4794b1ad78e565360, type: 3}
+  enemyDemonPrefab: {fileID: 5416048564006381984, guid: 5db4d9fcfce4be745897b7d413d73f02, type: 3}
+  chest: {fileID: 6478668858015884597, guid: f3f3166069f7d89479bf29acb3ea433c, type: 3}
+  eventCaptureObject: {fileID: 6478668858015884597, guid: d5b88b48156e85040a79c19d2729d7d8, type: 3}
+  eventGreedAltar: {fileID: 6478668858015884597, guid: bd2b8cf48099dca49ac4ac651d29284b, type: 3}
+  eventMiniBoss: {fileID: 6478668858015884597, guid: 43e0535ae6442ae42be6f05dd0ab00d9, type: 3}
+  eventSacrificialAltar: {fileID: 6478668858015884597, guid: 535dd104c049f04408f276ce03655bb0, type: 3}
+  eventTravelingMerchant: {fileID: 6478668858015884597, guid: a14c0c92bc7a36f469c691d7e6980458, type: 3}
+  eventCatchOrb: {fileID: 6478668858015884597, guid: 3a1bfcb64495d6f40bde53232b5c7bb3, type: 3}
+  health: {fileID: 5040817921139094699, guid: 3ce7abd64711b2c48b6314c774e317cb, type: 3}
+  exp: {fileID: 5275001666003650064, guid: f4b5d2f2e9a382846823c9a78a94bd7d, type: 3}
+  coin: {fileID: 5275001666003650064, guid: 27ebb049b89e0cd44861d5651270464b, type: 3}
+  lootChest: {fileID: 8477327709802427949, guid: 184f1abc05b5506448395c6e5bedfc93, type: 3}
+  mapTheme: {fileID: 8300000, guid: 7cbd6b20de85815499a1137dbc598454, type: 3}
+  bossTheme: {fileID: 8300000, guid: a6056a1376e5b3543b60dbfcb6f0234a, type: 3}
+  menuTheme: {fileID: 8300000, guid: d72154ab1bbfcda4b8c6b5797f2420f2, type: 3}
+  gateOpenSfx: {fileID: 8300000, guid: 87fb92344153fec4a9ff52b665be8f8c, type: 3}
+  playerSpawnSfx: {fileID: 8300000, guid: 5f8cb811026f2f54b98914e6eb5c37e4, type: 3}
+  bossSpawnSfx: {fileID: 8300000, guid: d33cac9a79e8e2840b73b0df9a93f577, type: 3}
+  fireBallSfx: {fileID: 8300000, guid: 7e3bf0f6ee22ab3479a5c0b444932585, type: 3}
+  swordSfx: {fileID: 8300000, guid: fff3624973609864480a7f25d72ef730, type: 3}
+  bulletSfx: {fileID: 8300000, guid: 38d69ed5223e40c43a9df5e94d4c2042, type: 3}
+  lightningSfx: {fileID: 8300000, guid: 91e6bd0bfd2841047be30c3a36f968d2, type: 3}
+  auraSfx: {fileID: 8300000, guid: c5a43edfaa9268b42ad990e3790a3dfd, type: 3}
+  diceSfx: {fileID: 8300000, guid: 01b3ba2b3774c8c4e890e1539361abeb, type: 3}
+  aoeDamageSfx: {fileID: 8300000, guid: e76d4023da7a9c94db410cffc6dc702e, type: 3}
+  bloodSfx: {fileID: 8300000, guid: 286ad12fb14905a49957697c16947008, type: 3}
+  clickSfx: {fileID: 8300000, guid: 8ea675f85d69b674caa08f8703ba05dc, type: 3}
+  chestOpenSfx: {fileID: 8300000, guid: d2164d27da15792498ac10862f805494, type: 3}
+  levelUpSfx: {fileID: 8300000, guid: db9ea90cfe64337499a2c02fd3b4c03e, type: 3}
+  expCollectSfx: {fileID: 8300000, guid: c195e84de8fde2341a37a6fc0d2f9dc8, type: 3}
+  coinCollectSfx: {fileID: 8300000, guid: df064dcd34fe30a49aadd07754644609, type: 3}
+  healthCollectSfx: {fileID: 8300000, guid: b97cfc95a6878f040a97d56809dea674, type: 3}
+  bossHPBar: {fileID: 1300022261346222137, guid: f02d32bfba421a84a8521f268b8a47f7, type: 3}
+  selectedCharacter: {fileID: 11400000, guid: 31e03eb03b8ce8b42986149067e762c5, type: 2}
+  selectedMapIndex: 0

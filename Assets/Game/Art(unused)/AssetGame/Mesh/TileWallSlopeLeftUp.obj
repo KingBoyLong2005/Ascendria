@@ -1,0 +1,12 @@
+g TileWallSlopeLeftUp
+v 1 1 -1.7484555E-07
+v -1 1 8.742278E-08
+v 1 -5.7320566E-15 -1.3113416E-07
+vt 1 1
+vt 0 1
+vt 1 0.5
+vn -0 0 -1
+vn -0 0 -1
+vn -0 0 -1
+g TileWallSlopeLeftUp_0
+f 3/3/3 2/2/2 1/1/1

@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409167
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Nimm keinen Schaden für {value} Minuten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Blocke {value} Schaden mit {armor_stat} als {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Töte {value} Gegner",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Finde die versteckte Banane",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Töte {value} Gegner mit {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Bring {precision_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Töte {value} Gegner als {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% Chance, einen zu finden, wenn du einen {tumbleweed} in {desert} {tier} 2 zerlegst",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Bring den {lightning_staff} auf Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Lade ein {charge_shrine} während eines Sandsturms in {desert} auf",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Friere {value} Gegner ein mit dem {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Töte {value} Gegner mit {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Töte {value} Gegner mit dem {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% Chance, etwas zu finden, wenn du ein {tumbleweed} in {desert} {tier} 1 zerstörst",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Bring den {bloody_tome} auf Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Bring den {knockback_tome} auf Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Töte {scorpionussy} {miniboss} in {desert} {value} Mal",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Bring den {luck_tome} auf Level {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Töte {value} {wisp} als {fox} in {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Beende {desert} {tier} 2 als {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Bezwinge einen {stage_boss}, ohne Items einzusammeln, Power-Ups zu nehmen oder Schreine zu benutzen.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Erreiche {difficulty_tome} auf Stufe {value} in unter 10 Minuten",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409167
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409167,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464677
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "อัพเกรด {axe} เป็นระดับ {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "สังหารศัตรู {value} ตัว",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "ใช้ {shrine_succ} {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "ฆ่าศัตรู {value} ตัวในฐานะ {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "ใช้{aegis}บล็อกการโจมตี {value} ครั้ง",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "{value}% โอกาสในการแจกเมื่อสังหารศัตรู",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "ทำลายหม้อ {value} ใบในหนึ่งรอบ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "ชาร์จ {charge_shrine} ทั้งหมดในการวิ่งระดับ {tier} 3 ผ่าน 3 สเตจโดยไม่ออกจากโซนการชาร์จ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "จัดการ {stage_boss} ภายใน {value} นาที",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "ยิงกระสุน {value} นัด",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464677
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464677,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

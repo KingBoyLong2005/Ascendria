@@ -1,0 +1,348 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsPink_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 1888353767688545702
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350973
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 184527486976,
+      "m_Localized": "Zvyšte {stat1} o {value1} za každých {value2} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 380124659712,
+      "m_Localized": "Za každých {value1} jednotek pohybu přivolá Boba (je mrtvý)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 502292152320,
+      "m_Localized": "Zvyšuj {stat1} o {value1} za každé zabití (max {value2})",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 731628306432,
+      "m_Localized": "Zvyšuj {stat1}, čím míň máš života. Je to tutovka",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 968900083712,
+      "m_Localized": "Získáváš {stat1} a {stat2} za každého protivníka nakaženého jedem",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1195308613632,
+      "m_Localized": "Kritické zásahy mají {value1} šanci vybouchnout a poškodit okolní nepřátele za {value2} poškození",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1646720581632,
+      "m_Localized": "Odrážej každé poškození zpět na útočníka a získej krátkou neporazitelnost",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1879848386560,
+      "m_Localized": "Čím rychleji se pohybuješ, tím více {stat1} získáváš. Max {value1} na stack",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2023423606784,
+      "m_Localized": "Zvyš {value1} {stat1}, když jsi ve vzduchu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2205368320000,
+      "m_Localized": "XP úlomky nyní proříznou nepřátele a způsobí jim poškození při průchodu. Vědění bolí",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2400780943360,
+      "m_Localized": "{value1} šance na spuštění raket při zabití nepřítele",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2685372858368,
+      "m_Localized": "Získávej {value1} {stat1} za každou {value2} {stat2}. Navíc získáváš {value3} {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3058330370048,
+      "m_Localized": "Vypusť toxický odpad po přijetí poškození, otrávení všech blízkých nepřátel",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3184427925504,
+      "m_Localized": "Při přijetí poškození, které by tě zabilo, zmraz čas. Rozbije se po jednom použití",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 181566308352,
+      "m_Localized": "Beefáč Prsten",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 377796820992,
+      "m_Localized": "Bob (Mrtvý)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 499863650304,
+      "m_Localized": "Démonická Duše",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 729455656960,
+      "m_Localized": "Pařanské Brýle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 963128721408,
+      "m_Localized": "Plynová Maska",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1191869284352,
+      "m_Localized": "Babiččin Tajný Elixír",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1645118357504,
+      "m_Localized": "Zrcadlo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1878405545984,
+      "m_Localized": "Kolečkové Brusle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2022786072576,
+      "m_Localized": "Šátek",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2204877586432,
+      "m_Localized": "Rozlámané Vědění",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2399711395840,
+      "m_Localized": "Zběsilé Dělo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2684777267200,
+      "m_Localized": "Trnitý Štít",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3057550229504,
+      "m_Localized": "Toxický Sud",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3183886860288,
+      "m_Localized": "Za Warudo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716253438443520,
+      "m_Localized": "Slurp Rukavice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716255283937280,
+      "m_Localized": "Prokleté Drápky",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7716254239555584,
+      "m_Localized": "Sesílej krvavou magii při zásahu nepřítele, poškodíš nepřátele v okolí a vyléčíš se o {value}. {time_seconds} do nabití.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7716256340901888,
+      "m_Localized": "{value1} {stat1}, {value2} {stat2}. {chance} šance seslat prokletou magii při zásahu, zasáhne okolní nepřátele.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12707964644360192,
+      "m_Localized": "Quinova Maska",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12707965701324800,
+      "m_Localized": "Šance na explodující poškození trnů {value1} a zasažení okolních nepřátel",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350973
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350973,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

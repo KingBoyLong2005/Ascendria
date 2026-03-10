@@ -1,0 +1,284 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsWeapons_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5055169295050342670
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208407041409172
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 594365513728,
+      "m_Localized": "Nie bierz żadnych obrażeń przez {value} minut",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638733751582720,
+      "m_Localized": "Zablokuj {value} obrażeń {armor_stat} jako {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638802051629056,
+      "m_Localized": "Zabij {value} wrogów",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638808401805312,
+      "m_Localized": "Znajdź ukrytą banan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638810691895296,
+      "m_Localized": "Zabij {value} wrogów używając {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638812965208064,
+      "m_Localized": "Podnieś {precision_tome} na poziom {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638814991056896,
+      "m_Localized": "Zabij {value} wrogów jako {clank}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638817985789952,
+      "m_Localized": "{value}% szans na znalezienie po rozbiciu {tumbleweed} w {desert} {tier} 2",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638820410097664,
+      "m_Localized": "Podnieś {lightning_staff} na poziom {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638822821822464,
+      "m_Localized": "Naładuj {charge_shrine} podczas burzy piaskowej na {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638825590063104,
+      "m_Localized": "Zamroź {value} wrogów używając {ice_cube}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638828786122752,
+      "m_Localized": "Zabij {value} wrogów z {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638831965405184,
+      "m_Localized": "Zabij {value} wrogów używając {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638833194336256,
+      "m_Localized": "{value}% szans na znalezienie po rozbiciu {tumbleweed} w {desert} {tier} 1",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638834515542016,
+      "m_Localized": "Podnieś {bloody_tome} na poziom {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638835715112960,
+      "m_Localized": "Podnieś {knockback_tome} na poziom {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638836910489600,
+      "m_Localized": "Zabij {scorpionussy} {miniboss} na {desert} {value} razy",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638838114254848,
+      "m_Localized": "Podnieś {luck_tome} na poziom {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638839393517568,
+      "m_Localized": "Zabij {value} {wisp} jako {fox} na {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638840500813824,
+      "m_Localized": "Ukończ {desert} {tier} 2 jako {tony}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3638841717161984,
+      "m_Localized": "Pokonaj {stage_boss} bez zbierania przedmiotów, power-upów ani używania kapliczek.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3639213588348928,
+      "m_Localized": "Ulepsz {difficulty_tome} do poziomu {value} w mniej niż 10 minut",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208407041409172
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208407041409172,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

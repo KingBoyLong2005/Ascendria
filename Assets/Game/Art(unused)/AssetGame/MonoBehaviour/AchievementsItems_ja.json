@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_ja",
+  "m_LocaleId": {
+    "m_Code": "ja"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151669
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "{agility_tome}をレベル{value}にアップグレードせよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "{value}回やられろ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "{miniboss}を{value}秒以内に倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "{difficulty_stat}を{value}%獲得せよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "{final_swarm}を{value}秒耐え抜け！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "チェストを{value}個購入せよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "{value}回クリティカルヒットせよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "{thorns_stat}ダメージで{value}匹のサボテン敵を倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "{stage_boss}を{value}秒以内に倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "{cooldown_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "{regen_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "じっとしたままで{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "一回のランで{value}個の{leeching_crystal}を獲得せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "{sword}を使って{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "{blood_magic}を{value}回使用して{max_hp}を増加せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "{lifesteal_stat}で{value}のHPを回復せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "{value}個の壺を破壊せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "{xp_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "{cooldown_tome}と{agility_tome}を両方レベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "{final_swarm}を{value}分生き残れ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "{poison}ダメージで{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "{attraction_tome}をレベル{value}に強化せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "{slutty_rockets}で{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "{sniper_rifle}で{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "{Amog}を使って{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "{stage_boss}をHP{value}%未満で倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "{Calcium}としてレベル{value}に到達せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "{Birdo}として{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "{final_swarm}を{value}分生き残れ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "{value} {challenges} をクリア！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "火ダメージで{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "{final_boss}を{value}回ぶっ倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "{vlad}としてレベル{value}に達せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "最初の{stage_boss}をダメージなしで倒せ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "{dexecutioner}を使って{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "雷のダメージで{value}体の敵を倒せ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "ステージをクリア！{value}個以上の{cursed_shrine}を起動せよ。",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "{maxhp_stat}を{value}に達せよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "マップ上の全{charge_shrine}をクリアせよ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "{frostwalker}で{value}体の敵をキルせよ！",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "{athena}で{stage_boss}を倒して、{aegis}の一撃でトドメを決めろ!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151669
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151669,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

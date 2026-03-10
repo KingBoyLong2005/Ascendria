@@ -1,0 +1,240 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsCharacters_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4235409041572963376
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208413698818160
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 533179006976,
+      "m_Localized": "Töte {value} Skelette",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758847406768128,
+      "m_Localized": "Bringe {damage_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758851462660096,
+      "m_Localized": "Schließe {forest} {tier} 1 ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758855422083072,
+      "m_Localized": "Schließe {forest} {tier} 2 ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758878843076608,
+      "m_Localized": "Töte {value} Goblins",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758882047524864,
+      "m_Localized": "Bringe {thorns_tome} auf Stufe {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758884346003456,
+      "m_Localized": "Besiege {value} Minibosse als {calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758887076495360,
+      "m_Localized": "Finde und befreie {monke} im {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758890226417664,
+      "m_Localized": "Eliminiere {value} Gegner mit der {tornado}-Waffe, während du auf {desert} von einem Tornado mitgerissen wirst.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758894005485568,
+      "m_Localized": "Benutze eine {microwave}, um {ice_crystal} {value}-mal hintereinander zu duplizieren",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758896127803392,
+      "m_Localized": "Schließe {desert} {tier} 2 ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758898321424384,
+      "m_Localized": "Bringe {attraction_tome} und {xp_tome} beide auf Level {value} in einem Durchgang",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758901068693504,
+      "m_Localized": "Schließe {desert} {tier} 1 ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758902310207488,
+      "m_Localized": "Verseuche {value} Gegner mit {moldy_cheese}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758903568498688,
+      "m_Localized": "Schließe {forest} {tier} 3 ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758904776458240,
+      "m_Localized": "Schließe {value} {quests} ab",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758906001195008,
+      "m_Localized": "Finde und besiege {bandit} in der {desert}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758907108491264,
+      "m_Localized": "Finde und besiege {bush} im {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818160
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208413698818160,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

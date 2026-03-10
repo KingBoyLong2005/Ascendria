@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151672
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "Zvyš {agility_tome} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "Zemři {value}krát",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "Poraž {miniboss} za {value} sekund",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "Získej {value}% z {difficulty_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "Přežij {final_swarm} po dobu {value} sekund",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "Kup {value} truhly",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "Kritni {value}krát",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "Zabij {value} kaktusových nepřátel s {thorns_stat} poškozením",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "Poraž {stage_boss} za méně než {value} sekund",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "Zvyš {cooldown_tome} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "Vylepši {regen_tome} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "Zabij {value} nepřátel, zatímco stojíš na místě",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "Získej {value} {leeching_crystal} během jednoho běhu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "Zabij {value} nepřátel s {sword}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "Zvýš {max_hp} pomocí {blood_magic} {value}krát",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "Vyléč se za {value} HP pomocí {lifesteal_stat}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "Rozbij {value} hrnců",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "Vylepši {xp_tome} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "Vylepši jak {cooldown_tome}, tak {agility_tome} na úroveň {value} během jednoho běhu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "Přežij {final_swarm} po dobu {value} minut",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "Zabij {value} nepřátel pomocí {poison} poškození",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "Vylepši {attraction_tome} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "Zabij {value} nepřátel s {slutty_rockets}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "Zlikviduj {value} nepřátel s {sniper_rifle}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "Zabij {value} nepřátel pomocí {Amog}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "Poraz {stage_boss} s méně než {value}% zbývajícími HP",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "Dosaž úroveň {value} jako {Calcium}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "Zabij {value} nepřátel jako {Birdo}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "Přežij {final_swarm} po dobu {value} minut",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "Splň {value} {challenges}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "Zabij {value} nepřátel pomocí ohnivého poškození",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "Poraz {final_boss} {value} krát",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "Dosaž úroveň {value} jako {vlad}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "Poraz prvního {stage_boss} bez toho, abys utrpěl jakékoli zranění v tomto běhu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "Zabij {value} nepřátel pomocí {dexecutioner}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "Zabij {value} nepřátel pomocí bleskového poškození",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "Dokonči úroveň s aspoň {value} {cursed_shrine} aktivovaných",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "Získej {maxhp_stat} na {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "Kompletuj všechny {charge_shrine} na mapě",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "Získej {value} zabití s {frostwalker}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "Poraz {stage_boss} jako {athena} a zasad mu finální úder pomocí {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151672
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151672,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

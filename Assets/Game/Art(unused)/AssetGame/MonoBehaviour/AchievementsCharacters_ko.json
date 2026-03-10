@@ -1,0 +1,240 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsCharacters_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 4235409041572963376
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208413698818158
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 533179006976,
+      "m_Localized": "{value}명의 해골을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758847406768128,
+      "m_Localized": "{damage_tome}를 레벨 {value}까지 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758851462660096,
+      "m_Localized": "{forest} {tier} 1을 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758855422083072,
+      "m_Localized": "{forest} {tier} 2을 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758878843076608,
+      "m_Localized": "{value}명의 고블린을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758882047524864,
+      "m_Localized": "{thorns_tome}를 레벨 {value}까지 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758884346003456,
+      "m_Localized": "{calcium}로 미니보스 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758887076495360,
+      "m_Localized": "{forest}에서 {monke}를 발견하고 풀어주어라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758890226417664,
+      "m_Localized": "{desert}에서 토네이도에 실려 가는 동안 {tornado} 무기로 적 {value}명을 처치하라.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758894005485568,
+      "m_Localized": "{microwave}를 사용해 {ice_crystal}를 {value}번 연속으로 복제해봐",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758896127803392,
+      "m_Localized": "{desert} {tier} 2를 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758898321424384,
+      "m_Localized": "한 판에서 {attraction_tome}와 {xp_tome}를 둘 다 레벨 {value}까지 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758901068693504,
+      "m_Localized": "{desert} {tier} 1을 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758902310207488,
+      "m_Localized": "{moldy_cheese}로 적 {value}명을 중독시켜라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758903568498688,
+      "m_Localized": "{forest} {tier} 3을 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758904776458240,
+      "m_Localized": "{value}개의 {quests}를 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758906001195008,
+      "m_Localized": "{desert}에서 {bandit}를 찾아내어 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3758907108491264,
+      "m_Localized": "{forest}에서 {bush}를 찾아내어 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208413698818158
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208413698818158,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

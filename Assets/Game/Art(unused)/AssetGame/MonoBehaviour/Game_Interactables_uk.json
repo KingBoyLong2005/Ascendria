@@ -1,0 +1,235 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_Interactables_uk",
+  "m_LocaleId": {
+    "m_Code": "uk"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 2275801272863999494
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607532830326901
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 876520120320,
+      "m_Localized": "Використай Мікрохвильовку",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 902474473472,
+      "m_Localized": "Взяти {item}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607532830326901
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 233172606976,
+      "m_Localized": "Розбий горщик",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 328890818560,
+      "m_Localized": "Доторкнись до сяючого банана",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 598844612608,
+      "m_Localized": "Виклик Боса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 640930258944,
+      "m_Localized": "Бийся з Фінальним Босом",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2057841647616,
+      "m_Localized": "Увійди в Портал",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2464471031808,
+      "m_Localized": "Залишити",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2561594335232,
+      "m_Localized": "Поговорити з Підозрілим",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2620230705152,
+      "m_Localized": "Дякую, дурнику",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2943762538496,
+      "m_Localized": "Святилище Балансу",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3076302544896,
+      "m_Localized": "Заклич випробування!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3221341577216,
+      "m_Localized": "Святилище Сак",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 3366309306368,
+      "m_Localized": "Порадься з Моаї",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 102210636324864,
+      "m_Localized": "Мікрохвильовка",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108906825883648,
+      "m_Localized": "Вибери предмет для клонування.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 108965088960512,
+      "m_Localized": "Це використає випадковий предмет того ж рівня.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10864125864443904,
+      "m_Localized": "Розваликуй перекотиполе",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305293611892736,
+      "m_Localized": "Святилище Сак",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16305348158816256,
+      "m_Localized": "Святилище Заряду",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 16307420941910016,
+      "m_Localized": "Перекотиполе",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 17746737476272128,
+      "m_Localized": "Відкрий клітку",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058737481809920,
+      "m_Localized": "Струси таємничий кущ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18058864309174272,
+      "m_Localized": "Торкнись статуї",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 18499026583420928,
+      "m_Localized": "Прокляття Боса",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20729263719317504,
+      "m_Localized": "Врубити музику",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25306747039252480,
+      "m_Localized": "Святиня Жадібності",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607532830326901,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsTomes_cs",
+  "m_LocaleId": {
+    "m_Code": "cs"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3414090423183049274
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208389309464689
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 18756009984,
+      "m_Localized": "Vylepši {axe} na úroveň {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 79963488256,
+      "m_Localized": "Zlikviduj {value} nepřátel",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 82186469376,
+      "m_Localized": "Použij {shrine_succ} {value} krát",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 85923594240,
+      "m_Localized": "Zabij {value} nepřátel jako {sir_oofie}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 88104632320,
+      "m_Localized": "Zablokuj {value} útoků pomocí {aegis}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 91351023616,
+      "m_Localized": "{value}% šance na drop po zničení nepřítele",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 93662085120,
+      "m_Localized": "Prolom {value} hrnce v jednom běhu",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 95914426368,
+      "m_Localized": "Nabij všechny {charge_shrine} při běhu {tier} 3 ve všech 3 úrovních bez opuštění nabíjecí zóny",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 99240509440,
+      "m_Localized": "Poraz {stage_boss} za méně než {value} minut",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2516011057152,
+      "m_Localized": "Vypál {value} projektilů",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208389309464689
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208389309464689,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

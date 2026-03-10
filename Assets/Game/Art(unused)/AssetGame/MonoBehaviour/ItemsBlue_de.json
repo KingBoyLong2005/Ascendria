@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_de",
+  "m_LocaleId": {
+    "m_Code": "de"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350866
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} für alle Waffen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Füge nahen Gegnern {value1} mehr Schaden zu.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Sich still verhalten heilt dich",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Erhöhe {stat1}, wenn du Schaden nimmst. Erziele außerdem {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Erhöhe {stat1} um {value1}, wenn du eine Truhe öffnest.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Kritische Treffer haben eine {value1} Chance, dich zu heilen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Erhöhe {stat1} um {value1} pro Kill (Maximal {value2} Stapel)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} Chance, beim Töten eines Gegners einen zusätzlichen XP-Splitter zu erzeugen",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Bei erlittenem Schaden wird ein elektrischer Schock an nahe Feinde ausgeschickt.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Springe höher und weiter",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Erhalte zusätzliches Gold, wenn du Schaden nimmst",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Verdiene Geld, indem du dich bewegst",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Je länger du stillstehst, desto mehr Schaden. Max {value1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin hasst dich. {value1} Chance, dass Kevin dir eine verpasst, wenn du einen Gegner triffst. Kevin kann dich nicht töten, aber er will es unbedingt.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Nach Ausweichen: Nächster Angriff macht {value1} Schaden und gibt kurzzeitig {stat1} & {stat2}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Rucksack",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Bier",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Schlagringe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Lagerfeuer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Feiglingsumhang",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Kreditkarte (Grün)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Kreditkarte (Rot)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Dämonenklinge",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Dämonenblut",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Echosplitter",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Elektrostecker",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Federn",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Goldener Schild",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Goldene Sneakers",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Ruhe Saft",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Blutsauger-Kristall",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Phantomumhang",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Donnerschlag-Handschuhe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Schimmel-Handschuhe",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Triffst du einen Gegner, kracht ein Blitz! Abklingzeit {time_seconds} Sek.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Erzeuge eine schimmelige Giftwolke, wenn du einen Gegner triffst. Die Handschuhe sind feucht, schimmelig und glitschig überzogen.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Wird ein {charge_shrine} aufgeladen, verwandelt er sich in eine Heilzone! Außerdem erscheinen {value} extra {charge_shrine} in zukünftigen Levels!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350866
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Leuchtfeuer",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350866,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

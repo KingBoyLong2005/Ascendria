@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_pl",
+  "m_LocaleId": {
+    "m_Code": "pl"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350870
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "{value1} {stat1} dla wszystkich broni",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Zadaj {value1} więcej obrażeń pobliskim wrogom.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Stojąc w miejscu, leczy cię",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Podbij {stat1} po otrzymaniu obrażeń. Zyskaj także {value1} {stat1}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Zwiększ {stat1} o {value1} przy otwieraniu skrzyni.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Krytyki mają {value1} szans na wyleczenie cię",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Zwiększ {stat1} o {value1} za każde zabicie (max {value2} stosy)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "{value1} szans na pojawienie się dodatkowego kryształka XP przy zabiciu wroga",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Po otrzymaniu obrażeń wyślij impuls elektryczny do pobliskich wrogów.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Skacz wyżej i dalej",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Zdobądź dodatkowe złoto, gdy otrzymujesz obrażenia",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Zarób kasę, poruszając się",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Im dłużej stoisz, tym więcej obrażeń zadajesz. Maks {value1} obrażeń.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin cię nie znosi. {value1} szans, że Kevin cię uderzy za każdym razem, gdy uderzysz wroga. Kevin nie może cię zabić, ale bardzo chce.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Po uniknięciu zadaj {value1} obrażeń przy następnym ataku i tymczasowo zwiększ {stat1} oraz {stat2}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Piwo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Kastety",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Ognisko",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Płaszcz tchórza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Zielona karta kredytowa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Czerwona karta kredytowa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Demoniczne ostrze",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Demoniczna krew",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Odłamki Echa",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Wtyczka elektryczna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Pióra",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Złota tarcza",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Złote trampki",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Sok bezczynności",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Kryształ wysysający",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Upiorna peleryna",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Plecak",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Piorunowe Rękawice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Pleśniowe Rękawice",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Uderz wroga tak mocno, że aż zagrzmi piorunem. Odstęp {time_seconds} sekund.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Walnij wroga i puść chmurę spleśniałego jadu!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Ładując {charge_shrine} zmienisz go w strefę leczenia i dostaniesz {value} kolejne na następnym etapie.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350870
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Beacon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350870,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

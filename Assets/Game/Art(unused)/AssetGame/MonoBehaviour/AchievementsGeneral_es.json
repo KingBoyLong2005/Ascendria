@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsGeneral_es",
+  "m_LocaleId": {
+    "m_Code": "es"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4166224902727595466
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517847771578489
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 363196448768,
+      "m_Localized": "AbrazaMuros",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Localized": "Evita Daño por Caída {value} veces agarrándote a las paredes",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Localized": "Encuentra y activa todos los boomboxes en {forest}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Localized": "Compra {value} desbloqueos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Localized": "Completa {value} {quests}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Localized": "Retos",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578489
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Localized": "Espacio de Arma",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Localized": "Ranura de tomo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517847771578489,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

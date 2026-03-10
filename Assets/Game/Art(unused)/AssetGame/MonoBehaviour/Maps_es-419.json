@@ -1,0 +1,165 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Maps_es-419",
+  "m_LocaleId": {
+    "m_Code": "es-419"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -6096067254600861082
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160207927763009754
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 89479946240,
+      "m_Localized": "Bosque Verde",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1017352265728,
+      "m_Localized": "Bosque Profundo",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1027032719360,
+      "m_Localized": "Bosque Maldito",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 48052805632,
+      "m_Localized": "Bosque",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1411541344256,
+      "m_Localized": "Un lugar verde lleno de árboles, pájaros y buenas vibras. También, todo intentará matarte.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148044894871552,
+      "m_Localized": "Puras buenas vibras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148086942769152,
+      "m_Localized": "Las vibras están raras",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2148098963644416,
+      "m_Localized": "uy",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12064487162118144,
+      "m_Localized": "{mapname} (Falla)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160207927763009754
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12346566399524864,
+      "m_Localized": "Desierto Polvoriento",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346612180353024,
+      "m_Localized": "Desierto Crepuscular",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346663346667520,
+      "m_Localized": "Desierto Calcinado",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346721592967168,
+      "m_Localized": "Huele a arena caliente... Cómo odio la arena caliente.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346478096842752,
+      "m_Localized": "Desierto",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346536393474048,
+      "m_Localized": "Un lugar caliente, seco y polvoriento.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346969312755712,
+      "m_Localized": "¡Oh, no!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 12346967676977152,
+      "m_Localized": "Seco y polvoriento... Me recuerda a la noche pasada.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160207927763009754,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

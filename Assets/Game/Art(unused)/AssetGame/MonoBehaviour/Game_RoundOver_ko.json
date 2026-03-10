@@ -1,0 +1,156 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "Game_RoundOver_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -3880100333228994816
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607539022430311
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6856351744,
+      "m_Localized": "너 죽었어{newline}혹시 걔 실력 문제?",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430311
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173345767923712,
+      "m_Localized": "새 기록!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 173450159955968,
+      "m_Localized": "{kills} 킬",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430311
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173467704729600,
+      "m_Localized": "#{rank} 세계 랭킹",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430311
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 173567650799616,
+      "m_Localized": "상위 {percentile}%의 플레이어",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607539022430311
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 177146872700928,
+      "m_Localized": "실버 획득",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 176936297668608,
+      "m_Localized": "클리어 완료",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177964535488512,
+      "m_Localized": "공격 원천",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177697538678784,
+      "m_Localized": "총정리",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 177755860475904,
+      "m_Localized": "데미지",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180895024390144,
+      "m_Localized": "생존 시간",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 180687569920000,
+      "m_Localized": "처치",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181037488119808,
+      "m_Localized": "LV",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 181081519923200,
+      "m_Localized": "골드 획득",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607539022430311,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

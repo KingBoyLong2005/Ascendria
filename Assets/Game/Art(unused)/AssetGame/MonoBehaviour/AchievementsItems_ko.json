@@ -1,0 +1,493 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsItems_ko",
+  "m_LocaleId": {
+    "m_Code": "ko"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -613016219827920391
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208339136151674
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8521908224,
+      "m_Localized": "업그레이드 {agility_tome}를 {value}레벨로 강화하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4801701216256,
+      "m_Localized": "{value}번 죽기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4860673130496,
+      "m_Localized": "{miniboss}를 {value}초 안에 쓰러뜨리기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 4958987616256,
+      "m_Localized": "{difficulty_stat} {value}% 획득하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5063153156096,
+      "m_Localized": "{final_swarm}에서 {value}초 동안 생존하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5177695404032,
+      "m_Localized": "{value}개의 상자 사기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5225225256960,
+      "m_Localized": "{value}번 크리티컬 맞추기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5309094559744,
+      "m_Localized": "{thorns_stat} 데미지로 {value}마리의 선인장 적 처치하기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5421472546816,
+      "m_Localized": "{stage_boss}를 {value}초 이내에 쓰러뜨리기",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 5505866137600,
+      "m_Localized": "{cooldown_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34309435162624,
+      "m_Localized": "{regen_tome}를 {value}레벨로 업그레이드",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 34640084729856,
+      "m_Localized": "서있는 동안 {value}명 적 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35200678625280,
+      "m_Localized": "게임 내에서 {value}개의 {leeching_crystal} 획득",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 35438793457664,
+      "m_Localized": "{sword}로 {value}명 적 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36144342499328,
+      "m_Localized": "{blood_magic}로 {max_hp}를 {value}번 증가시켜라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36273657085952,
+      "m_Localized": "{lifesteal_stat}로 HP {value} 회복",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36359271219200,
+      "m_Localized": "{value}개의 항아리를 부숴라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 36412828286976,
+      "m_Localized": "{xp_tome}를 {value}레벨로 강화하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58261716992000,
+      "m_Localized": "{cooldown_tome}와 {agility_tome}를 {value} 레벨로 업그레이드",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58263528931328,
+      "m_Localized": "{final_swarm}에서 {value}분간 생존",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264304877568,
+      "m_Localized": "{poison} 피해로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58264959188992,
+      "m_Localized": "{attraction_tome}를 {value}레벨로 업그레이드",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58265592528896,
+      "m_Localized": "{slutty_rockets}로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58266288783360,
+      "m_Localized": "{sniper_rifle}로 {value}명의 적을 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58267446411264,
+      "m_Localized": "{Amog}으로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58268042002432,
+      "m_Localized": "체력이 {value}% 이하일 때 {stage_boss}를 물리쳐라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58499580166144,
+      "m_Localized": "{Calcium}으로 {value}레벨 달성",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 58500272226304,
+      "m_Localized": "{Birdo}로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63615414697984,
+      "m_Localized": "{final_swarm}에서 {value}분간 생존",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63616949813248,
+      "m_Localized": "{value} {challenges}를 완료하라!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63617616707584,
+      "m_Localized": "(Dragonfire) = 화염 피해로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63618220687360,
+      "m_Localized": "{final_boss}를 {value}번 처치하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63619940352000,
+      "m_Localized": "{vlad}로 {value}레벨 달성",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63620544331776,
+      "m_Localized": "이번 플레이에서 {stage_boss}를 한 대도 안 맞고 쓰러뜨려라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621181865984,
+      "m_Localized": "{dexecutioner}로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63621743902720,
+      "m_Localized": "번개 피해로 적 {value}명 처치",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831090003968,
+      "m_Localized": "스테이지 클리어, 최소 {value}개의 {cursed_shrine} 활성화.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63831748509696,
+      "m_Localized": "{maxhp_stat}를 {value}까지 증가시켜라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 63832381849600,
+      "m_Localized": "맵의 모든 {charge_shrine}를 완료하라",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6127159545561088,
+      "m_Localized": "{frostwalker}로 {value}킬 하라!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 12354450302828544,
+      "m_Localized": "{athena}로 {stage_boss}를 물리치고 {aegis}로 마무리 일격을 먹여봐!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208339136151674
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208339136151674,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

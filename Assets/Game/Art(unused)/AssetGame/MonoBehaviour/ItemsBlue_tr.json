@@ -1,0 +1,383 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ItemsBlue_tr",
+  "m_LocaleId": {
+    "m_Code": "tr"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 3371076242112429970
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208315039350876
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 2347068686336,
+      "m_Localized": "Tüm Silahlar için {value1} {stat1}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42098337382400,
+      "m_Localized": "Yakındakilere {value1} fazladan hasar ver",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42292055506944,
+      "m_Localized": "Hareketsiz durarak iyileşirsin",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42514454282240,
+      "m_Localized": "Hasar aldığında {stat1} yükselir. Ayrıca {value1} {stat1} kazanırsın.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 42954235445248,
+      "m_Localized": "Sandık açınca {value1} {stat1} kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43471762227200,
+      "m_Localized": "Kritik vuruşlar {value1} şansla seni iyileştirir",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43507740966912,
+      "m_Localized": "Her öldürmede {stat1} {value1} artar (Maks {value2} yığın)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 43850231054336,
+      "m_Localized": "Düşmanı öldürdüğünde {value1} şansla ekstra XP parçası doğar",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44018707857408,
+      "m_Localized": "Hasar aldığında, yakınındaki düşmanlara elektrik şoku yay.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44116615495680,
+      "m_Localized": "Daha yükseğe ve uzağa zıpla",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44426897522688,
+      "m_Localized": "Hasar aldığında ekstra altın kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44585307996160,
+      "m_Localized": "Hareket ederek para kazan",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44710906429440,
+      "m_Localized": "Ne kadar çok durursan, o kadar çok hasar verirsin. Max {value1} hasar.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 44909192151040,
+      "m_Localized": "Kevin senden nefret ediyor. Düşmana vurduğunda Kevin'in seni yumruklama şansı var: {value1}. Kevin seni öldüremez ama bunu gerçekten istiyor.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 45762040954880,
+      "m_Localized": "Kaçındıktan sonra, bir sonraki saldırında {value1} hasar ver ve geçici olarak {stat1} ve {stat2} arttır.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 523674714112,
+      "m_Localized": "Sırt Çantası",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 41881105989632,
+      "m_Localized": "Bira",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42094017249280,
+      "m_Localized": "Pirinç Knuckle",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42289819942912,
+      "m_Localized": "Kamp Ateşi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42507063918592,
+      "m_Localized": "Korkak Pelerini",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 42951085522944,
+      "m_Localized": "Kredi Kartı (Yeşil)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43145151774720,
+      "m_Localized": "Kredi Kartı (Kırmızı)",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43259488501760,
+      "m_Localized": "Şeytan Kılıcı",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43506054856704,
+      "m_Localized": "Şeytani Kan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43849685794816,
+      "m_Localized": "Yankı Parçası",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 43989033156608,
+      "m_Localized": "Elektrik Fişi",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44112882565120,
+      "m_Localized": "Tüyler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44425421127680,
+      "m_Localized": "Altın Kalkan",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44583961624576,
+      "m_Localized": "Altın Spor Ayakkabılar",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44710247923712,
+      "m_Localized": "Bekleme Suyu",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 44907694784512,
+      "m_Localized": "Kevin",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45162670718976,
+      "m_Localized": "Hortum Kristali",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 45163492802560,
+      "m_Localized": "Fantom Pelerini",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766597883265024,
+      "m_Localized": "Yıldırım Eldivenleri",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766608486465536,
+      "m_Localized": "Küflü Eldivenler",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7766605747585024,
+      "m_Localized": "Bir düşmanı vurduğunda suratına öyle bir tokat at ki şimşek çaksın. {time_seconds} saniye bekleme süresi.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7766609216274432,
+      "m_Localized": "Bir düşmanı vurduğunda küflü bir zehir bulutu oluştur. Eldivenler ıslak, küflü ve kaygan bir dokuya sahip.",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 7989712290709504,
+      "m_Localized": "Bir {charge_shrine} şarj edince, iyileştirme alanına dönüşür ve sonraki aşama için {value} tane daha oluşturur.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208315039350876
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7989711195996160,
+      "m_Localized": "Beacon",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208315039350876,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

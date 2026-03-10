@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "ChallengesUi_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -7979068589700917366
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607398296715400
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 6814408704,
+      "m_Localized": "ภารกิจสุดโหด ระดับ {tier}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 169918308352,
+      "m_Localized": "โปรเพลเยอร์เสนอ: {name}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8487600627712,
+      "m_Localized": "ภารกิจท้าทายจะไม่อยู่บนลีดเดอร์บอร์ดออนไลน์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 15160163672064,
+      "m_Localized": "ด่าน: {numStages}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 20745779609206784,
+      "m_Localized": "เอาชีวิตรอดจนถึงฝูงสุดท้าย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 20745721778143232,
+      "m_Localized": "กำจัดบอสทุกตัว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 22771343908012032,
+      "m_Localized": "{reward_icon} {value} (ถาวร)",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715400
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 24002582677684224,
+      "m_Localized": "ทำเควสให้ครบเพื่อปลดล็อก!\\n{value} / {target_value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607398296715400
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607398296715400,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

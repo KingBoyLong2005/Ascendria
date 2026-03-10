@@ -1,0 +1,97 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsSkins_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -1302294248732568685
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4160208461326188645
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 9377546240,
+      "m_Localized": "กำจัดศัตรู {value} ตัว ในฐานะ {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188645
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 48296493056,
+      "m_Localized": "ถึงเลเวล {value} ในการเล่นครั้งเดียวที่ใช้ {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188645
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 50540445696,
+      "m_Localized": "ปราบ {final_boss} ระดับ {tier} 3 ในฐานะ {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188645
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 52708900864,
+      "m_Localized": "เอาชนะ {stage_boss} แรก ภายใน {value} นาที ในฐานะ {character}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188645
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 55573610496,
+      "m_Localized": "ให้ {character} ขึ้นเป็น {rank} {value}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4160208461326188645
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4160208461326188645,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

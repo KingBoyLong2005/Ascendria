@@ -1,0 +1,118 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "AchievementsGeneral_zh-Hant",
+  "m_LocaleId": {
+    "m_Code": "zh-Hant"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": -4166224902727595466
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 1118517847771578479
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 363196448768,
+      "m_Localized": "牆壁貼貼狂",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6601609701359616,
+      "m_Localized": "貼牆避免摔落傷害 {value} 次",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6933270091661312,
+      "m_Localized": "在{forest}找到並激活所有音響機",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6993160164212736,
+      "m_Localized": "購買 {value} 個解鎖",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 7249505744453632,
+      "m_Localized": "完成 {value} 個 {quests}",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 8123430540017664,
+      "m_Localized": "挑戰",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 1118517847771578479
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 14861726259478528,
+      "m_Localized": "武器插槽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 14861800175697920,
+      "m_Localized": "書卷插槽",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 1118517847771578479,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}

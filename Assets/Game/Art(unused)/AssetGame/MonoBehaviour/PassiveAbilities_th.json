@@ -1,0 +1,313 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2378050947708348859
+  },
+  "m_Name": "PassiveAbilities_th",
+  "m_LocaleId": {
+    "m_Code": "th"
+  },
+  "m_SharedData": {
+    "m_FileID": 1,
+    "m_PathID": 5025964401982787113
+  },
+  "m_Metadata": {
+    "m_Items": [
+      {
+        "rid": 4887607393822179448
+      }
+    ]
+  },
+  "m_TableData": [
+    {
+      "m_Id": 8336941056,
+      "m_Localized": "เพิ่ม {value1} {stat1} ต่อเลเวล",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1572267073536,
+      "m_Localized": "โชว์กล้ามกันดาเมจ! คูลดาวน์ -{value1}s รับ {valueDamage} {statDamage}.",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 753341800448,
+      "m_Localized": "ยิงแม่น",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1122016927744,
+      "m_Localized": "คริติคัลแบบยิ้มๆ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 786753626112,
+      "m_Localized": "ศัตรูแบบสุ่มจะถูกทำเครื่องหมาย และได้รับ {value1} {stat1} ต่อเลเวล",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 1483360411648,
+      "m_Localized": "ตื้อไหนต่อ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 1559981957120,
+      "m_Localized": "โชว์กล้าม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2321780809728,
+      "m_Localized": "ลอยตัว",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2346682392576,
+      "m_Localized": "กดค้าง \"Jump\" เพื่อลอยตัวในอากาศ แถมยังได้ {value1} Airborne {stat1} ต่อเลเวลด้วยนะ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 2422716735488,
+      "m_Localized": "ลื่นไหล",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2492870664192,
+      "m_Localized": "เสริมแกร่ง",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2564576485376,
+      "m_Localized": "โชคลาภเทพสุ่ม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2656582737920,
+      "m_Localized": "ปีศาจสปีด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2694956425216,
+      "m_Localized": "ความเร็วเพิ่มขึ้นเมื่อเวลาผ่านไป แต่ลดครึ่งเมื่อโดนตี ความเร็วสูงยิ่งแรง!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2789525397504,
+      "m_Localized": "จับแบบมองกี้",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 2791169564672,
+      "m_Localized": "ปีนกำแพงได้ แถมทุกเลเวล +{value1}{stat1}!",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 3002679926784,
+      "m_Localized": "นักรบ",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533104142843904,
+      "m_Localized": "โรคระบาด",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5533106495848448,
+      "m_Localized": "ศัตรูที่โดนพิษจะระเบิดตอนตายและทำให้ศัตรูที่อยู่ใกล้ๆ โดนพิษไปด้วย",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 5954035122307072,
+      "m_Localized": "ทฤษฎี XP ควอนตัม",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 6559807355092992,
+      "m_Localized": "{Execute} ศัตรูทันทีหลังจากหลบหลีก สำเร็จแต่ละครั้งเพิ่ม {value1} {stat1} ในแต่ละเลเวล",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 6559805111140352,
+      "m_Localized": "ก้าวเงา",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176705020329984,
+      "m_Localized": "กัมบ้า",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9176706677080064,
+      "m_Localized": "โยนลูกเต๋าแล้วอัปเกรดสเตตัสแบบสุ่มเวลาคุณเลเวลอัพ!",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 9847599027847168,
+      "m_Localized": "แวมไพร์",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 10258414105133056,
+      "m_Localized": "คำสาป",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057104783081472,
+      "m_Localized": "กำไร",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057106032984064,
+      "m_Localized": "เลเวลอัพได้ {value1} {stat1} แถมเพิ่ม {damage} เบาๆ ตามจำนวน {gold} ในกระเป๋า",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057107920420864,
+      "m_Localized": "ลุยเต็มที่",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057108864139264,
+      "m_Localized": "ทำดาเมจมากขึ้นเมือ HP ลดลง รับ {value1} {stat1} ต่อเลเวล",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 25057110395060224,
+      "m_Localized": "ช็อต",
+      "m_Metadata": {
+        "m_Items": []
+      }
+    },
+    {
+      "m_Id": 25057111464607744,
+      "m_Localized": "ชาร์จการโจมตีไฟฟ้าด้วยการเคลื่อนที่ไปมา รับ {value1} {stat1} ต่อระดับ",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    },
+    {
+      "m_Id": 39646635070980096,
+      "m_Localized": "เพิ่ม {value1} {stat1} ต่อเลเวล และเพิ่ม {damage} ต่อศัตรูที่โดนแช่แข็งอยู่ตอนนี้",
+      "m_Metadata": {
+        "m_Items": [
+          {
+            "rid": 4887607393822179448
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 4887607393822179448,
+        "type": {
+          "class": "SmartFormatTag",
+          "ns": "UnityEngine.Localization.Metadata",
+          "asm": "Unity.Localization"
+        },
+        "data": {}
+      }
+    ]
+  }
+}
